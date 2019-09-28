@@ -1,0 +1,210 @@
+{
+  "entity_tags": [
+    {
+      "id": "Ontological argument",
+      "relevance_score": 0.7442,
+      "confidence_score": 13.33
+    },
+    {
+      "id": "Existence of God",
+      "relevance_score": 0.6395,
+      "confidence_score": 6.604
+    },
+    {
+      "id": "Ontology",
+      "relevance_score": 0.6254,
+      "confidence_score": 10.11
+    },
+    {
+      "id": "Concept",
+      "relevance_score": 0.5862,
+      "confidence_score": 3.375
+    },
+    {
+      "id": "Existence",
+      "relevance_score": 0.5642,
+      "confidence_score": 3.579
+    },
+    {
+      "id": "God",
+      "relevance_score": 0.4392,
+      "confidence_score": 12.45
+    }
+  ],
+  "topics": [
+    {
+      "label": "Concept",
+      "score": 1
+    },
+    {
+      "label": "Ontological argument",
+      "score": 1
+    },
+    {
+      "label": "Philosophical theories",
+      "score": 1
+    },
+    {
+      "label": "Theology",
+      "score": 1
+    },
+    {
+      "label": "Culture",
+      "score": 1
+    },
+    {
+      "label": "Philosophical movements",
+      "score": 1
+    },
+    {
+      "label": "Religious philosophy",
+      "score": 1
+    },
+    {
+      "label": "Reasoning",
+      "score": 1
+    },
+    {
+      "label": "Western philosophy",
+      "score": 1
+    },
+    {
+      "label": "God",
+      "score": 1
+    },
+    {
+      "label": "Arguments",
+      "score": 1
+    },
+    {
+      "label": "Religion",
+      "score": 1
+    },
+    {
+      "label": "Theoretical philosophy",
+      "score": 1
+    },
+    {
+      "label": "Metaphysics",
+      "score": 1
+    },
+    {
+      "label": "Philosophy",
+      "score": 1
+    },
+    {
+      "label": "Philosophical methodology",
+      "score": 1
+    },
+    {
+      "label": "Religious belief and doctrine",
+      "score": 1
+    },
+    {
+      "label": "Epistemology",
+      "score": 1
+    },
+    {
+      "label": "Metaphilosophy",
+      "score": 0.9784
+    },
+    {
+      "label": "Assumption",
+      "score": 0.9341
+    },
+    {
+      "label": "Logic",
+      "score": 0.8956
+    },
+    {
+      "label": "Theism",
+      "score": 0.8766
+    },
+    {
+      "label": "Existence of God",
+      "score": 0.8751
+    },
+    {
+      "label": "Critical thinking skills",
+      "score": 0.8732
+    },
+    {
+      "label": "Truth",
+      "score": 0.8598
+    },
+    {
+      "label": "Ontology",
+      "score": 0.8559
+    },
+    {
+      "label": "Cognition",
+      "score": 0.8401
+    },
+    {
+      "label": "Monotheism",
+      "score": 0.8261
+    },
+    {
+      "label": "Persuasion techniques",
+      "score": 0.8256
+    },
+    {
+      "label": "Metaphysics of religion",
+      "score": 0.8204
+    },
+    {
+      "label": "Cognitive science",
+      "score": 0.8087
+    },
+    {
+      "label": "Existence",
+      "score": 0.7721
+    },
+    {
+      "label": "Philosophical arguments",
+      "score": 0.7712
+    },
+    {
+      "label": "Religious faiths, traditions, and movements",
+      "score": 0.7447
+    },
+    {
+      "label": "Human activities",
+      "score": 0.7309
+    }
+  ],
+  "categories": [
+    {
+      "label": "science and technology>philosophical science",
+      "score": 0.6067
+    },
+    {
+      "label": "science and technology>science (general)",
+      "score": 0.4508
+    },
+    {
+      "label": "religion and belief",
+      "score": 0.4219
+    },
+    {
+      "label": "science and technology",
+      "score": 0.3954
+    },
+    {
+      "label": "religion and belief>philosophy",
+      "score": 0.3659
+    },
+    {
+      "label": "religion and belief>christianity",
+      "score": 0.3637
+    },
+    {
+      "label": "science and technology>applied science>cosmology",
+      "score": 0.356
+    },
+    {
+      "label": "science and technology>human science>psychology",
+      "score": 0.3512
+    }
+  ]
+}
