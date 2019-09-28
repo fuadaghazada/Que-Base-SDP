@@ -1,0 +1,5803 @@
+[
+    {
+        "id": 2532,
+        "title": "Solve Me First",
+        "difficulty": "Easy",
+        "tags": [
+            "Easy",
+            "Basic Programming",
+            "Core CS",
+            "General Programming"
+        ],
+        "uri": "solve-me-first"
+    },
+    {
+        "id": 9828,
+        "title": "Simple Array Sum",
+        "difficulty": "Easy",
+        "tags": [
+            "Easy",
+            "Basic Programming",
+            "problem-solving",
+            "Core CS",
+            "General Programming"
+        ],
+        "uri": "simple-array-sum"
+    },
+    {
+        "id": 21400,
+        "title": "Compare the Triplets",
+        "difficulty": "Easy",
+        "tags": [
+            "Easy",
+            "Basic Programming",
+            "problem-solving",
+            "Core CS",
+            "General Programming"
+        ],
+        "uri": "compare-the-triplets"
+    },
+    {
+        "id": 8781,
+        "title": "A Very Big Sum",
+        "difficulty": "Easy",
+        "tags": [
+            "Easy",
+            "Basic Programming",
+            "Core CS",
+            "General Programming"
+        ],
+        "uri": "a-very-big-sum"
+    },
+    {
+        "id": 8662,
+        "title": "Diagonal Difference",
+        "difficulty": "Easy",
+        "tags": [
+            "Easy",
+            "Basic Programming",
+            "problem-solving",
+            "Core CS",
+            "General Programming"
+        ],
+        "uri": "diagonal-difference"
+    },
+    {
+        "id": 8654,
+        "title": "Plus Minus",
+        "difficulty": "Easy",
+        "tags": [
+            "Easy",
+            "Basic Programming",
+            "problem-solving",
+            "Core CS",
+            "General Programming"
+        ],
+        "uri": "plus-minus"
+    },
+    {
+        "id": 8636,
+        "title": "Staircase",
+        "difficulty": "Easy",
+        "tags": [
+            "Easy",
+            "Basic Programming",
+            "problem-solving",
+            "Core CS",
+            "General Programming"
+        ],
+        "uri": "staircase"
+    },
+    {
+        "id": 26276,
+        "title": "Mini-Max Sum",
+        "difficulty": "Easy",
+        "tags": [
+            "Algorithms",
+            "Easy",
+            "adhoc",
+            "Basic Programming",
+            "problem-solving",
+            "Core CS",
+            "General Programming"
+        ],
+        "uri": "mini-max-sum"
+    },
+    {
+        "id": 23074,
+        "title": "Birthday Cake Candles",
+        "difficulty": "Easy",
+        "tags": [
+            "Easy",
+            "Brute Force",
+            "Basic Programming",
+            "problem-solving",
+            "Core CS",
+            "General Programming",
+            "Language Proficiency"
+        ],
+        "uri": "birthday-cake-candles"
+    },
+    {
+        "id": 8649,
+        "title": "Time Conversion",
+        "difficulty": "Easy",
+        "tags": [
+            "Easy",
+            "Basic Programming",
+            "problem-solving",
+            "Core CS",
+            "General Programming"
+        ],
+        "uri": "time-conversion"
+    },
+    {
+        "id": 30508,
+        "title": "Grading Students",
+        "difficulty": "Easy",
+        "tags": [
+            "Easy",
+            "Basic Programming",
+            "problem-solving",
+            "Core CS",
+            "General Programming"
+        ],
+        "uri": "grading"
+    },
+    {
+        "id": 25220,
+        "title": "Apple and Orange",
+        "difficulty": "Easy",
+        "tags": [
+            "Algorithms",
+            "Easy",
+            "simple",
+            "Basic Programming",
+            "problem-solving",
+            "Core CS",
+            "General Programming"
+        ],
+        "uri": "apple-and-orange"
+    },
+    {
+        "id": 22477,
+        "title": "Kangaroo",
+        "difficulty": "Easy",
+        "tags": [
+            "Easy",
+            "Basic Programming",
+            "problem-solving",
+            "Core CS",
+            "General Programming"
+        ],
+        "uri": "kangaroo"
+    },
+    {
+        "id": 26081,
+        "title": "Between Two Sets",
+        "difficulty": "Easy",
+        "tags": [
+            "Math",
+            "Algorithms",
+            "Easy",
+            "gcd",
+            "Data Structures",
+            "LCM",
+            "sets",
+            "problem-solving",
+            "Core CS",
+            "greatest common divisor",
+            "Least Common Multiple"
+        ],
+        "uri": "between-two-sets"
+    },
+    {
+        "id": 32335,
+        "title": "Breaking the Records",
+        "difficulty": "Easy",
+        "tags": [
+            "Easy",
+            "Basic Programming",
+            "problem-solving",
+            "Core CS",
+            "General Programming"
+        ],
+        "uri": "breaking-best-and-worst-records"
+    },
+    {
+        "id": 35155,
+        "title": "Birthday Chocolate",
+        "difficulty": "Easy",
+        "tags": [
+            "Loops",
+            "Arrays",
+            "Basic Programming",
+            "problem-solving",
+            "Core CS",
+            "General Programming"
+        ],
+        "uri": "the-birthday-bar"
+    },
+    {
+        "id": 21634,
+        "title": "Divisible Sum Pairs",
+        "difficulty": "Easy",
+        "tags": [
+            "Easy",
+            "Brute Force",
+            "Basic Programming",
+            "problem-solving",
+            "Core CS",
+            "General Programming"
+        ],
+        "uri": "divisible-sum-pairs"
+    },
+    {
+        "id": 33294,
+        "title": "Migratory Birds",
+        "difficulty": "Easy",
+        "tags": [
+            "Easy",
+            "Basic Programming",
+            "problem-solving",
+            "Core CS",
+            "General Programming"
+        ],
+        "uri": "migratory-birds"
+    },
+    {
+        "id": 30377,
+        "title": "Day of the Programmer",
+        "difficulty": "Easy",
+        "tags": [
+            "Easy",
+            "Basic Programming",
+            "problem-solving",
+            "Core CS",
+            "General Programming",
+            "Conditionals"
+        ],
+        "uri": "day-of-the-programmer"
+    },
+    {
+        "id": 24060,
+        "title": "Bon Appétit",
+        "difficulty": "Easy",
+        "tags": [
+            "Algorithms",
+            "Easy",
+            "Basic Programming",
+            "problem-solving",
+            "Core CS",
+            "General Programming"
+        ],
+        "uri": "bon-appetit"
+    },
+    {
+        "id": 25168,
+        "title": "Sock Merchant",
+        "difficulty": "Easy",
+        "tags": [
+            "Easy",
+            "Basic Programming",
+            "problem-solving",
+            "Core CS",
+            "General Programming"
+        ],
+        "uri": "sock-merchant"
+    },
+    {
+        "id": 22564,
+        "title": "Drawing Book ",
+        "difficulty": "Easy",
+        "tags": [
+            "Easy",
+            "Simple Maths",
+            "Brute Force",
+            "Basic Programming",
+            "problem-solving",
+            "Core CS",
+            "General Programming"
+        ],
+        "uri": "drawing-book"
+    },
+    {
+        "id": 22936,
+        "title": "Counting Valleys",
+        "difficulty": "Easy",
+        "tags": [
+            "Easy",
+            "Basic Programming",
+            "problem-solving",
+            "Core CS",
+            "General Programming"
+        ],
+        "uri": "counting-valleys"
+    },
+    {
+        "id": 28389,
+        "title": "Electronics Shop",
+        "difficulty": "Easy",
+        "tags": [
+            "Easy",
+            "Loops",
+            "Basic Programming",
+            "Nested for-loops",
+            "problem-solving",
+            "Core CS",
+            "General Programming"
+        ],
+        "uri": "electronics-shop"
+    },
+    {
+        "id": 29054,
+        "title": "Cats and a Mouse",
+        "difficulty": "Easy",
+        "tags": [
+            "Easy",
+            "Basic Programming",
+            "problem-solving",
+            "Core CS",
+            "General Programming"
+        ],
+        "uri": "cats-and-a-mouse"
+    },
+    {
+        "id": 22937,
+        "title": "Forming a Magic Square",
+        "difficulty": "Medium",
+        "tags": [
+            "Algorithms",
+            "Easy",
+            "Implementation",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "magic-square-forming"
+    },
+    {
+        "id": 29526,
+        "title": "Picking Numbers",
+        "difficulty": "Easy",
+        "tags": [
+            "Easy",
+            "bruteforce",
+            "Basic Programming",
+            "problem-solving",
+            "Core CS",
+            "General Programming"
+        ],
+        "uri": "picking-numbers"
+    },
+    {
+        "id": 29530,
+        "title": "Climbing the Leaderboard",
+        "difficulty": "Medium",
+        "tags": [
+            "Sorting",
+            "Algorithms",
+            "Easy",
+            "Implementation",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "climbing-the-leaderboard"
+    },
+    {
+        "id": 32958,
+        "title": "The Hurdle Race",
+        "difficulty": "Easy",
+        "tags": [
+            "Easy",
+            "brute",
+            "Basic Programming",
+            "problem-solving",
+            "Core CS",
+            "General Programming"
+        ],
+        "uri": "the-hurdle-race"
+    },
+    {
+        "id": 22869,
+        "title": "Designer PDF Viewer",
+        "difficulty": "Easy",
+        "tags": [
+            "Easy",
+            "ad-hoc",
+            "Implementation",
+            "Basic Programming",
+            "problem-solving",
+            "Core CS",
+            "General Programming"
+        ],
+        "uri": "designer-pdf-viewer"
+    },
+    {
+        "id": 1308,
+        "title": "Utopian Tree",
+        "difficulty": "Easy",
+        "tags": [
+            "Easy",
+            "Basic Programming",
+            "problem-solving",
+            "Core CS",
+            "General Programming"
+        ],
+        "uri": "utopian-tree"
+    },
+    {
+        "id": 6024,
+        "title": "Angry Professor",
+        "difficulty": "Easy",
+        "tags": [
+            "Easy",
+            "Basic Programming",
+            "problem-solving",
+            "Core CS",
+            "General Programming"
+        ],
+        "uri": "angry-professor"
+    },
+    {
+        "id": 27191,
+        "title": "Beautiful Days at the Movies",
+        "difficulty": "Easy",
+        "tags": [
+            "Easy",
+            "Implementation",
+            "bruteforce",
+            "Basic Programming",
+            "problem-solving",
+            "Core CS",
+            "General Programming"
+        ],
+        "uri": "beautiful-days-at-the-movies"
+    },
+    {
+        "id": 26216,
+        "title": "Viral Advertising",
+        "difficulty": "Easy",
+        "tags": [
+            "Easy",
+            "Implementation",
+            "Basic Programming",
+            "problem-solving",
+            "Core CS",
+            "General Programming"
+        ],
+        "uri": "strange-advertising"
+    },
+    {
+        "id": 13489,
+        "title": "Save the Prisoner!",
+        "difficulty": "Easy",
+        "tags": [
+            "Easy",
+            "Logic",
+            "Basic Programming",
+            "problem-solving",
+            "Core CS",
+            "General Programming"
+        ],
+        "uri": "save-the-prisoner"
+    },
+    {
+        "id": 1884,
+        "title": "Circular Array Rotation",
+        "difficulty": "Easy",
+        "tags": [
+            "Easy",
+            "Basic Programming",
+            "problem-solving",
+            "Core CS",
+            "General Programming"
+        ],
+        "uri": "circular-array-rotation"
+    },
+    {
+        "id": 32362,
+        "title": "Sequence Equation",
+        "difficulty": "Easy",
+        "tags": [
+            "Easy",
+            "Basic Programming",
+            "problem-solving",
+            "Core CS",
+            "General Programming"
+        ],
+        "uri": "permutation-equation"
+    },
+    {
+        "id": 21277,
+        "title": "Jumping on the Clouds: Revisited",
+        "difficulty": "Easy",
+        "tags": [
+            "Easy",
+            "Basic Programming",
+            "problem-solving",
+            "Core CS",
+            "General Programming"
+        ],
+        "uri": "jumping-on-the-clouds-revisited"
+    },
+    {
+        "id": 127,
+        "title": "Find Digits",
+        "difficulty": "Easy",
+        "tags": [
+            "Math",
+            "Algorithms",
+            "Easy",
+            "Basic Programming",
+            "problem-solving",
+            "Core CS",
+            "General Programming"
+        ],
+        "uri": "find-digits"
+    },
+    {
+        "id": 8782,
+        "title": "Extra Long Factorials",
+        "difficulty": "Medium",
+        "tags": [
+            "Medium",
+            "Basic Programming",
+            "problem-solving",
+            "Core CS",
+            "General Programming"
+        ],
+        "uri": "extra-long-factorials"
+    },
+    {
+        "id": 26066,
+        "title": "Append and Delete",
+        "difficulty": "Easy",
+        "tags": [
+            "Easy",
+            "if-else",
+            "Basic Programming",
+            "problem-solving",
+            "cases",
+            "Core CS",
+            "General Programming"
+        ],
+        "uri": "append-and-delete"
+    },
+    {
+        "id": 2040,
+        "title": "Sherlock and Squares",
+        "difficulty": "Easy",
+        "tags": [
+            "Algorithms",
+            "Easy",
+            "Implementation",
+            "Basic Programming",
+            "problem-solving",
+            "Core CS",
+            "General Programming"
+        ],
+        "uri": "sherlock-and-squares"
+    },
+    {
+        "id": 8656,
+        "title": "Library Fine",
+        "difficulty": "Easy",
+        "tags": [
+            "Easy",
+            "Basic Programming",
+            "problem-solving",
+            "Core CS",
+            "General Programming"
+        ],
+        "uri": "library-fine"
+    },
+    {
+        "id": 1957,
+        "title": "Cut the sticks",
+        "difficulty": "Easy",
+        "tags": [
+            "Search",
+            "Easy",
+            "Basic Programming",
+            "problem-solving",
+            "Core CS",
+            "General Programming"
+        ],
+        "uri": "cut-the-sticks"
+    },
+    {
+        "id": 17610,
+        "title": "Non-Divisible Subset",
+        "difficulty": "Medium",
+        "tags": [
+            "Easy",
+            "ad-hoc",
+            "Basic Programming",
+            "problem-solving",
+            "Core CS",
+            "General Programming"
+        ],
+        "uri": "non-divisible-subset"
+    },
+    {
+        "id": 24548,
+        "title": "Repeated String",
+        "difficulty": "Easy",
+        "tags": [
+            "Easy",
+            "Implementation",
+            "Basic Programming",
+            "problem-solving",
+            "Core CS",
+            "General Programming"
+        ],
+        "uri": "repeated-string"
+    },
+    {
+        "id": 20832,
+        "title": "Jumping on the Clouds",
+        "difficulty": "Easy",
+        "tags": [
+            "Easy",
+            "Basic Programming",
+            "Core CS",
+            "General Programming"
+        ],
+        "uri": "jumping-on-the-clouds"
+    },
+    {
+        "id": 21555,
+        "title": "Equalize the Array",
+        "difficulty": "Easy",
+        "tags": [
+            "Easy",
+            "Implementation",
+            "Basic Programming",
+            "problem-solving",
+            "Core CS",
+            "General Programming"
+        ],
+        "uri": "equality-in-a-array"
+    },
+    {
+        "id": 28833,
+        "title": "Queen's Attack II",
+        "difficulty": "Medium",
+        "tags": [
+            "Algorithms",
+            "Medium",
+            "adhoc",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "queens-attack-2"
+    },
+    {
+        "id": 3179,
+        "title": "ACM ICPC Team",
+        "difficulty": "Easy",
+        "tags": [
+            "Easy",
+            "Or Operation",
+            "Basic Programming",
+            "problem-solving",
+            "Core CS",
+            "General Programming"
+        ],
+        "uri": "acm-icpc-team"
+    },
+    {
+        "id": 5705,
+        "title": "Taum and B'day",
+        "difficulty": "Easy",
+        "tags": [
+            "Easy",
+            "Basic Programming",
+            "problem-solving",
+            "Core CS",
+            "General Programming"
+        ],
+        "uri": "taum-and-bday"
+    },
+    {
+        "id": 32644,
+        "title": "Organizing Containers of Balls",
+        "difficulty": "Medium",
+        "tags": [
+            "Sorting",
+            "Algorithms",
+            "Implementation",
+            "Observation",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "organizing-containers-of-balls"
+    },
+    {
+        "id": 144,
+        "title": "Encryption",
+        "difficulty": "Medium",
+        "tags": [
+            "Search",
+            "Medium",
+            "Basic Programming",
+            "problem-solving",
+            "Core CS",
+            "General Programming"
+        ],
+        "uri": "encryption"
+    },
+    {
+        "id": 4187,
+        "title": "Bigger is Greater",
+        "difficulty": "Medium",
+        "tags": [
+            "Medium",
+            "Basic Programming",
+            "problem-solving",
+            "Core CS",
+            "General Programming"
+        ],
+        "uri": "bigger-is-greater"
+    },
+    {
+        "id": 6715,
+        "title": "Modified Kaprekar Numbers",
+        "difficulty": "Easy",
+        "tags": [
+            "Easy",
+            "Basic Programming",
+            "problem-solving",
+            "Core CS",
+            "General Programming"
+        ],
+        "uri": "kaprekar-numbers"
+    },
+    {
+        "id": 20732,
+        "title": "Beautiful Triplets",
+        "difficulty": "Easy",
+        "tags": [
+            "Easy",
+            "Basic Programming",
+            "problem-solving",
+            "Core CS",
+            "General Programming"
+        ],
+        "uri": "beautiful-triplets"
+    },
+    {
+        "id": 15335,
+        "title": "Minimum Distances",
+        "difficulty": "Easy",
+        "tags": [
+            "Easy",
+            "adhoc",
+            "Very easy",
+            "Basic Programming",
+            "problem-solving",
+            "Core CS",
+            "General Programming"
+        ],
+        "uri": "minimum-distances"
+    },
+    {
+        "id": 45345,
+        "title": "Halloween Sale",
+        "difficulty": "Easy",
+        "tags": [
+            "Easy",
+            "Loops",
+            "Basic Programming",
+            "Core CS",
+            "General Programming"
+        ],
+        "uri": "halloween-sale"
+    },
+    {
+        "id": 6716,
+        "title": "The Time in Words",
+        "difficulty": "Medium",
+        "tags": [
+            "Medium",
+            "Basic Programming",
+            "problem-solving",
+            "Core CS",
+            "General Programming"
+        ],
+        "uri": "the-time-in-words"
+    },
+    {
+        "id": 1104,
+        "title": "Chocolate Feast ",
+        "difficulty": "Easy",
+        "tags": [
+            "Easy",
+            "Basic Programming",
+            "problem-solving",
+            "Core CS",
+            "General Programming"
+        ],
+        "uri": "chocolate-feast"
+    },
+    {
+        "id": 1331,
+        "title": "Service Lane",
+        "difficulty": "Easy",
+        "tags": [
+            "Algorithms",
+            "Easy",
+            "Basic Programming",
+            "problem-solving",
+            "Core CS",
+            "General Programming"
+        ],
+        "uri": "service-lane"
+    },
+    {
+        "id": 17892,
+        "title": "Lisa's Workbook",
+        "difficulty": "Easy",
+        "tags": [
+            "Easy",
+            "iteration",
+            "Basic Programming",
+            "Core CS",
+            "General Programming"
+        ],
+        "uri": "lisa-workbook"
+    },
+    {
+        "id": 15233,
+        "title": "Flatland Space Stations",
+        "difficulty": "Easy",
+        "tags": [
+            "Easy",
+            "adhoc",
+            "Basic Programming",
+            "problem-solving",
+            "Core CS",
+            "General Programming"
+        ],
+        "uri": "flatland-space-stations"
+    },
+    {
+        "id": 21254,
+        "title": "Fair Rations",
+        "difficulty": "Easy",
+        "tags": [
+            "Easy",
+            "Basic Programming",
+            "problem-solving",
+            "Core CS",
+            "General Programming"
+        ],
+        "uri": "fair-rations"
+    },
+    {
+        "id": 3305,
+        "title": "Cavity Map",
+        "difficulty": "Easy",
+        "tags": [
+            "Easy",
+            "Basic Programming",
+            "problem-solving",
+            "Core CS",
+            "General Programming"
+        ],
+        "uri": "cavity-map"
+    },
+    {
+        "id": 2336,
+        "title": "Manasa and Stones",
+        "difficulty": "Easy",
+        "tags": [
+            "Easy",
+            "Basic Programming",
+            "problem-solving",
+            "Core CS",
+            "General Programming"
+        ],
+        "uri": "manasa-and-stones"
+    },
+    {
+        "id": 4432,
+        "title": "The Grid Search",
+        "difficulty": "Medium",
+        "tags": [
+            "Medium",
+            "Basic Programming",
+            "problem-solving",
+            "Core CS",
+            "General Programming"
+        ],
+        "uri": "the-grid-search"
+    },
+    {
+        "id": 21763,
+        "title": "Happy Ladybugs",
+        "difficulty": "Easy",
+        "tags": [
+            "problem-solving"
+        ],
+        "uri": "happy-ladybugs"
+    },
+    {
+        "id": 22185,
+        "title": "Strange Counter",
+        "difficulty": "Easy",
+        "tags": [
+            "Easy",
+            "Basic Programming",
+            "problem-solving",
+            "Core CS",
+            "General Programming"
+        ],
+        "uri": "strange-code"
+    },
+    {
+        "id": 44591,
+        "title": "3D Surface Area",
+        "difficulty": "Medium",
+        "tags": [
+            "Brute Force",
+            "looping"
+        ],
+        "uri": "3d-surface-area"
+    },
+    {
+        "id": 16007,
+        "title": "Absolute Permutation",
+        "difficulty": "Medium",
+        "tags": [
+            "Medium",
+            "Basic Programming",
+            "problem-solving",
+            "Core CS",
+            "General Programming"
+        ],
+        "uri": "absolute-permutation"
+    },
+    {
+        "id": 22193,
+        "title": "The Bomberman Game",
+        "difficulty": "Medium",
+        "tags": [
+            "Medium",
+            "Basic Programming",
+            "veryunlikelytag2",
+            "problem-solving",
+            "Core CS",
+            "General Programming"
+        ],
+        "uri": "bomber-man"
+    },
+    {
+        "id": 13512,
+        "title": "Ema's Supercomputer",
+        "difficulty": "Medium",
+        "tags": [
+            "Medium",
+            "Brute Force",
+            "Basic Programming",
+            "problem-solving",
+            "Core CS",
+            "General Programming"
+        ],
+        "uri": "two-pluses"
+    },
+    {
+        "id": 16411,
+        "title": "Larry's Array",
+        "difficulty": "Medium",
+        "tags": [
+            "Medium",
+            "inversions",
+            "Basic Programming",
+            "problem-solving",
+            "Core CS",
+            "General Programming"
+        ],
+        "uri": "larrys-array"
+    },
+    {
+        "id": 4504,
+        "title": "Almost Sorted",
+        "difficulty": "Medium",
+        "tags": [
+            "Medium",
+            "Basic Programming",
+            "problem-solving",
+            "Core CS",
+            "General Programming"
+        ],
+        "uri": "almost-sorted"
+    },
+    {
+        "id": 8965,
+        "title": "Matrix Layer Rotation ",
+        "difficulty": "Hard",
+        "tags": [
+            "Hard",
+            "Basic Programming",
+            "problem-solving",
+            "Core CS",
+            "General Programming"
+        ],
+        "uri": "matrix-rotation-algo"
+    },
+    {
+        "id": 33593,
+        "title": "Big Sorting",
+        "difficulty": "Easy",
+        "tags": [
+            "Sorting",
+            "Strings",
+            "Algorithms",
+            "Easy",
+            "Data Structures",
+            "Arrays",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "big-sorting"
+    },
+    {
+        "id": 20055,
+        "title": "Super Reduced String",
+        "difficulty": "Easy",
+        "tags": [
+            "Strings",
+            "Algorithms",
+            "Easy",
+            "adhoc",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "reduced-string"
+    },
+    {
+        "id": 447,
+        "title": "Intro to Tutorial Challenges",
+        "difficulty": "Easy",
+        "tags": [
+            "Sorting",
+            "Algorithms",
+            "Easy",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "tutorial-intro"
+    },
+    {
+        "id": 22578,
+        "title": "CamelCase",
+        "difficulty": "Easy",
+        "tags": [
+            "Strings",
+            "Algorithms",
+            "Easy",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "camelcase"
+    },
+    {
+        "id": 342,
+        "title": "Insertion Sort - Part 1",
+        "difficulty": "Easy",
+        "tags": [
+            "Sorting",
+            "Tutorial",
+            "Algorithms",
+            "Easy",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "insertionsort1"
+    },
+    {
+        "id": 47135,
+        "title": "Strong Password",
+        "difficulty": "Easy",
+        "tags": [
+            "Strings",
+            "Easy",
+            "Basic Programming",
+            "Core CS",
+            "General Programming"
+        ],
+        "uri": "strong-password"
+    },
+    {
+        "id": 21405,
+        "title": "Two Characters",
+        "difficulty": "Easy",
+        "tags": [
+            "Strings",
+            "Algorithms",
+            "Easy",
+            "Greedy Algorithms",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "two-characters"
+    },
+    {
+        "id": 343,
+        "title": "Insertion Sort - Part 2",
+        "difficulty": "Easy",
+        "tags": [
+            "Sorting",
+            "Tutorial",
+            "Algorithms",
+            "Easy",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "insertionsort2"
+    },
+    {
+        "id": 344,
+        "title": "Correctness and the Loop Invariant",
+        "difficulty": "Easy",
+        "tags": [
+            "Sorting",
+            "Algorithms",
+            "Easy",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "correctness-invariant"
+    },
+    {
+        "id": 8640,
+        "title": "Caesar Cipher",
+        "difficulty": "Easy",
+        "tags": [
+            "Strings",
+            "Algorithms",
+            "Easy",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "caesar-cipher-1"
+    },
+    {
+        "id": 16032,
+        "title": "Mars Exploration",
+        "difficulty": "Easy",
+        "tags": [
+            "Strings",
+            "Algorithms",
+            "Easy",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "mars-exploration"
+    },
+    {
+        "id": 345,
+        "title": "Running Time of Algorithms",
+        "difficulty": "Easy",
+        "tags": [
+            "Sorting",
+            "Tutorial",
+            "Algorithms",
+            "Easy",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "runningtime"
+    },
+    {
+        "id": 33299,
+        "title": "HackerRank in a String!",
+        "difficulty": "Easy",
+        "tags": [
+            "RegEx",
+            "Algorithms",
+            "Easy",
+            "Basic Programming",
+            "problem-solving",
+            "Core CS",
+            "General Programming"
+        ],
+        "uri": "hackerrank-in-a-string"
+    },
+    {
+        "id": 360,
+        "title": "Quicksort 1 - Partition",
+        "difficulty": "Easy",
+        "tags": [
+            "Sorting",
+            "Tutorial",
+            "Algorithms",
+            "Easy",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "quicksort1"
+    },
+    {
+        "id": 3418,
+        "title": "Pangrams",
+        "difficulty": "Easy",
+        "tags": [
+            "Strings",
+            "Algorithms",
+            "Easy",
+            "Implementation",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "pangrams"
+    },
+    {
+        "id": 32212,
+        "title": "Weighted Uniform Strings",
+        "difficulty": "Easy",
+        "tags": [
+            "Strings",
+            "Algorithms",
+            "Easy",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "weighted-uniform-string"
+    },
+    {
+        "id": 33549,
+        "title": "Separate the Numbers",
+        "difficulty": "Easy",
+        "tags": [
+            "Strings",
+            "Algorithms",
+            "Easy",
+            "Prefix",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "separate-the-numbers"
+    },
+    {
+        "id": 6568,
+        "title": "Funny String",
+        "difficulty": "Easy",
+        "tags": [
+            "Strings",
+            "Algorithms",
+            "Easy",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "funny-string"
+    },
+    {
+        "id": 433,
+        "title": "Counting Sort 1",
+        "difficulty": "Easy",
+        "tags": [
+            "Sorting",
+            "Algorithms",
+            "Easy",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "countingsort1"
+    },
+    {
+        "id": 435,
+        "title": "Counting Sort 2",
+        "difficulty": "Easy",
+        "tags": [
+            "Sorting",
+            "Algorithms",
+            "Easy",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "countingsort2"
+    },
+    {
+        "id": 2223,
+        "title": "Gemstones",
+        "difficulty": "Easy",
+        "tags": [
+            "Strings",
+            "Algorithms",
+            "Easy",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "gem-stones"
+    },
+    {
+        "id": 4099,
+        "title": "Alternating Characters ",
+        "difficulty": "Easy",
+        "tags": [
+            "Strings",
+            "Algorithms",
+            "Easy",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "alternating-characters"
+    },
+    {
+        "id": 444,
+        "title": "The Full Counting Sort",
+        "difficulty": "Medium",
+        "tags": [
+            "Sorting",
+            "Algorithms",
+            "Medium",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "countingsort4"
+    },
+    {
+        "id": 20389,
+        "title": "Beautiful Binary String",
+        "difficulty": "Easy",
+        "tags": [
+            "Strings",
+            "Algorithms",
+            "Easy",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "beautiful-binary-string"
+    },
+    {
+        "id": 462,
+        "title": "Closest Numbers",
+        "difficulty": "Easy",
+        "tags": [
+            "Sorting",
+            "Search",
+            "Algorithms",
+            "Easy",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "closest-numbers"
+    },
+    {
+        "id": 2343,
+        "title": "The Love-Letter Mystery",
+        "difficulty": "Easy",
+        "tags": [
+            "Strings",
+            "Algorithms",
+            "Easy",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "the-love-letter-mystery"
+    },
+    {
+        "id": 457,
+        "title": "Find the Median",
+        "difficulty": "Easy",
+        "tags": [
+            "Sorting",
+            "Search",
+            "Algorithms",
+            "Easy",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "find-the-median"
+    },
+    {
+        "id": 32614,
+        "title": "Determining DNA Health",
+        "difficulty": "Hard",
+        "tags": [
+            "Strings",
+            "Algorithms",
+            "RangeQuery",
+            "Hard",
+            "Core CS"
+        ],
+        "uri": "determining-dna-health"
+    },
+    {
+        "id": 49,
+        "title": "Insertion Sort Advanced Analysis",
+        "difficulty": "Advanced",
+        "tags": [
+            "Sorting",
+            "Algorithms",
+            "Expert",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "insertion-sort"
+    },
+    {
+        "id": 1854,
+        "title": "Palindrome Index",
+        "difficulty": "Easy",
+        "tags": [
+            "Strings",
+            "Algorithms",
+            "Easy",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "palindrome-index"
+    },
+    {
+        "id": 26114,
+        "title": "Fraudulent Activity Notifications",
+        "difficulty": "Medium",
+        "tags": [
+            "Algorithms",
+            "Medium",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "fraudulent-activity-notifications"
+    },
+    {
+        "id": 708,
+        "title": "Anagram",
+        "difficulty": "Easy",
+        "tags": [
+            "Strings",
+            "Algorithms",
+            "Easy",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "anagram"
+    },
+    {
+        "id": 1364,
+        "title": "Making Anagrams",
+        "difficulty": "Easy",
+        "tags": [
+            "Strings",
+            "Algorithms",
+            "Easy",
+            "Implementation",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "making-anagrams"
+    },
+    {
+        "id": 27262,
+        "title": "Lily's Homework",
+        "difficulty": "Medium",
+        "tags": [
+            "Sorting",
+            "Algorithms",
+            "Medium",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "lilys-homework"
+    },
+    {
+        "id": 745,
+        "title": "Game of Thrones - I",
+        "difficulty": "Easy",
+        "tags": [
+            "Strings",
+            "Math",
+            "Algorithms",
+            "Easy",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "game-of-thrones"
+    },
+    {
+        "id": 5187,
+        "title": "Two Strings",
+        "difficulty": "Easy",
+        "tags": [
+            "Strings",
+            "Algorithms",
+            "Easy",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "two-strings"
+    },
+    {
+        "id": 21584,
+        "title": "String Construction ",
+        "difficulty": "Easy",
+        "tags": [
+            "Strings",
+            "Algorithms",
+            "Easy",
+            "processing",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "string-construction"
+    },
+    {
+        "id": 8816,
+        "title": "Sherlock and the Valid String",
+        "difficulty": "Medium",
+        "tags": [
+            "Strings",
+            "Algorithms",
+            "Medium",
+            "Data Structures",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "sherlock-and-valid-string"
+    },
+    {
+        "id": 21083,
+        "title": "Highest Value Palindrome",
+        "difficulty": "Medium",
+        "tags": [
+            "Strings",
+            "Algorithms",
+            "Medium",
+            "simple",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "richie-rich"
+    },
+    {
+        "id": 44458,
+        "title": "Maximum Palindromes",
+        "difficulty": "Medium",
+        "tags": [
+            "Math",
+            "Medium",
+            "Combinatorics",
+            "Core CS"
+        ],
+        "uri": "maximum-palindromes"
+    },
+    {
+        "id": 5393,
+        "title": "Sherlock and Anagrams",
+        "difficulty": "Medium",
+        "tags": [
+            "Strings",
+            "Algorithms",
+            "Medium",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "sherlock-and-anagrams"
+    },
+    {
+        "id": 660,
+        "title": "Common Child",
+        "difficulty": "Medium",
+        "tags": [
+            "Strings",
+            "Algorithms",
+            "Medium",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "common-child"
+    },
+    {
+        "id": 17338,
+        "title": "Bear and Steady Gene",
+        "difficulty": "Medium",
+        "tags": [
+            "Strings",
+            "Segment Tree",
+            "Algorithms",
+            "Medium",
+            "Two pointers",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "bear-and-steady-gene"
+    },
+    {
+        "id": 2335,
+        "title": "Morgan and a String",
+        "difficulty": "Expert",
+        "tags": [
+            "Strings",
+            "Algorithms",
+            "Expert",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "morgan-and-a-string"
+    },
+    {
+        "id": 68,
+        "title": "Count Strings",
+        "difficulty": "Hard",
+        "tags": [
+            "Strings",
+            "RegEx",
+            "Algorithms",
+            "Hard",
+            "Core CS"
+        ],
+        "uri": "count-strings"
+    },
+    {
+        "id": 2576,
+        "title": "String Function Calculation",
+        "difficulty": "Advanced",
+        "tags": [
+            "Strings",
+            "Algorithms",
+            "Medium",
+            "SuffixArray",
+            "Core CS"
+        ],
+        "uri": "string-function-calculation"
+    },
+    {
+        "id": 20191,
+        "title": "Build a Palindrome",
+        "difficulty": "Advanced",
+        "tags": [
+            "Strings",
+            "Algorithms",
+            "palindromes",
+            "Expert",
+            "Core CS"
+        ],
+        "uri": "challenging-palindromes"
+    },
+    {
+        "id": 14452,
+        "title": "Build a String",
+        "difficulty": "Hard",
+        "tags": [
+            "Strings",
+            "Algorithms",
+            "SuffixArray",
+            "Hard",
+            "Core CS"
+        ],
+        "uri": "build-a-string"
+    },
+    {
+        "id": 20359,
+        "title": "Gridland Provinces",
+        "difficulty": "Hard",
+        "tags": [
+            "Strings",
+            "Algorithms",
+            "Brute Force",
+            "Hard",
+            "Hashing",
+            "Core CS"
+        ],
+        "uri": "gridland-provinces"
+    },
+    {
+        "id": 48866,
+        "title": "Cards Permutation",
+        "difficulty": "Expert",
+        "tags": [
+            "Data Structures",
+            "Expert",
+            "Fenwick tree",
+            "Core CS"
+        ],
+        "uri": "cards-permutation"
+    },
+    {
+        "id": 2067,
+        "title": "Ashton and String",
+        "difficulty": "Advanced",
+        "tags": [
+            "Strings",
+            "Algorithms",
+            "Expert",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "ashton-and-string"
+    },
+    {
+        "id": 63,
+        "title": "String Similarity",
+        "difficulty": "Expert",
+        "tags": [
+            "Strings",
+            "Knuth Morris Prat Algorithm",
+            "Algorithms",
+            "Expert",
+            "Core CS"
+        ],
+        "uri": "string-similarity"
+    },
+    {
+        "id": 20589,
+        "title": "Super Functional Strings",
+        "difficulty": "Advanced",
+        "tags": [
+            "Sorting",
+            "Dynamic Programming",
+            "Strings",
+            "Algorithms",
+            "Expert",
+            "Suffix Array",
+            "Core CS"
+        ],
+        "uri": "super-functional-strings"
+    },
+    {
+        "id": 15622,
+        "title": "Circular Palindromes",
+        "difficulty": "Advanced",
+        "tags": [
+            "Strings",
+            "Algorithms",
+            "Expert",
+            "Core CS"
+        ],
+        "uri": "circular-palindromes"
+    },
+    {
+        "id": 16979,
+        "title": "Similar Strings",
+        "difficulty": "Advanced",
+        "tags": [
+            "Strings",
+            "Algorithms",
+            "Hash",
+            "Expert",
+            "Core CS"
+        ],
+        "uri": "similar-strings"
+    },
+    {
+        "id": 81,
+        "title": "Save Humanity",
+        "difficulty": "Expert",
+        "tags": [
+            "Strings",
+            "Knuth Morris Prat Algorithm",
+            "Algorithms",
+            "Expert",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "save-humanity"
+    },
+    {
+        "id": 66,
+        "title": "Find Strings",
+        "difficulty": "Expert",
+        "tags": [
+            "Strings",
+            "Lowest Common Prefix",
+            "Algorithms",
+            "Expert",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "find-strings"
+    },
+    {
+        "id": 4510,
+        "title": "Palindromic Border",
+        "difficulty": "Expert",
+        "tags": [
+            "Strings",
+            "Math",
+            "Algorithms",
+            "Data Structures",
+            "Expert",
+            "Core CS"
+        ],
+        "uri": "palindromic-border"
+    },
+    {
+        "id": 1847,
+        "title": "Two Two",
+        "difficulty": "Advanced",
+        "tags": [
+            "Strings",
+            "Algorithms",
+            "Expert",
+            "Core CS"
+        ],
+        "uri": "two-two"
+    },
+    {
+        "id": 1878,
+        "title": "Two Strings Game",
+        "difficulty": "Expert",
+        "tags": [
+            "Strings",
+            "Algorithms",
+            "Expert",
+            "Core CS"
+        ],
+        "uri": "two-strings-game"
+    },
+    {
+        "id": 3278,
+        "title": "Letter Islands",
+        "difficulty": "Expert",
+        "tags": [
+            "Strings",
+            "Algorithms",
+            "Expert",
+            "Core CS"
+        ],
+        "uri": "letter-islands"
+    },
+    {
+        "id": 1031,
+        "title": "Pseudo-Isomorphic Substrings",
+        "difficulty": "Expert",
+        "tags": [
+            "Strings",
+            "Algorithms",
+            "Expert",
+            "Core CS"
+        ],
+        "uri": "pseudo-isomorphic-substrings"
+    },
+    {
+        "id": 26447,
+        "title": "How Many Substrings?",
+        "difficulty": "Expert",
+        "tags": [
+            "Strings",
+            "Algorithms",
+            "Expert",
+            "Core CS"
+        ],
+        "uri": "how-many-substrings"
+    },
+    {
+        "id": 26945,
+        "title": "Hackerland Radio Transmitters",
+        "difficulty": "Medium",
+        "tags": [
+            "Algorithms",
+            "Medium",
+            "Binary Search",
+            "problem-solving",
+            "Core CS",
+            "Two Pointer"
+        ],
+        "uri": "hackerland-radio-transmitters"
+    },
+    {
+        "id": 21767,
+        "title": "Gridland Metro",
+        "difficulty": "Medium",
+        "tags": [
+            "Easy",
+            "Implementation",
+            "Greedy Algorithms",
+            "Basic Programming",
+            "problem-solving",
+            "Core CS",
+            "General Programming"
+        ],
+        "uri": "gridland-metro"
+    },
+    {
+        "id": 500,
+        "title": "Ice Cream Parlor",
+        "difficulty": "Easy",
+        "tags": [
+            "Search",
+            "Math",
+            "Algorithms",
+            "Easy",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "icecream-parlor"
+    },
+    {
+        "id": 33387,
+        "title": "KnightL on a Chessboard",
+        "difficulty": "Medium",
+        "tags": [
+            "Search",
+            "Algorithms",
+            "Medium",
+            "bfs",
+            "Core CS"
+        ],
+        "uri": "knightl-on-chessboard"
+    },
+    {
+        "id": 27771,
+        "title": "Minimum Loss",
+        "difficulty": "Medium",
+        "tags": [
+            "Search",
+            "Algorithms",
+            "Medium",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "minimum-loss"
+    },
+    {
+        "id": 458,
+        "title": "Missing Numbers",
+        "difficulty": "Easy",
+        "tags": [
+            "Search",
+            "Algorithms",
+            "Medium",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "missing-numbers"
+    },
+    {
+        "id": 41,
+        "title": "Pairs",
+        "difficulty": "Medium",
+        "tags": [
+            "Search",
+            "Algorithms",
+            "Medium",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "pairs"
+    },
+    {
+        "id": 2490,
+        "title": "Sherlock and Array",
+        "difficulty": "Easy",
+        "tags": [
+            "Search",
+            "Algorithms",
+            "Easy",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "sherlock-and-array"
+    },
+    {
+        "id": 2619,
+        "title": "Maximum Subarray Sum",
+        "difficulty": "Hard",
+        "tags": [
+            "Search",
+            "Algorithms",
+            "Hard",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "maximum-subarray-sum"
+    },
+    {
+        "id": 6774,
+        "title": "Connected Cells in a Grid",
+        "difficulty": "Medium",
+        "tags": [
+            "Search",
+            "Algorithms",
+            "Medium",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "connected-cell-in-a-grid"
+    },
+    {
+        "id": 14104,
+        "title": "Short Palindrome",
+        "difficulty": "Medium",
+        "tags": [
+            "Search",
+            "Dynamic Programming",
+            "Strings",
+            "Algorithms",
+            "Medium",
+            "Core CS"
+        ],
+        "uri": "short-palindrome"
+    },
+    {
+        "id": 32587,
+        "title": "Maximizing Mission Points",
+        "difficulty": "Hard",
+        "tags": [
+            "Search",
+            "Divide and Conquer",
+            "Algorithms",
+            "Hard",
+            "Core CS"
+        ],
+        "uri": "maximizing-mission-points"
+    },
+    {
+        "id": 1315,
+        "title": "Count Luck",
+        "difficulty": "Medium",
+        "tags": [
+            "Search",
+            "Algorithms",
+            "Medium",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "count-luck"
+    },
+    {
+        "id": 1629,
+        "title": "Cut the Tree",
+        "difficulty": "Medium",
+        "tags": [
+            "Search",
+            "Algorithms",
+            "Medium",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "cut-the-tree"
+    },
+    {
+        "id": 14002,
+        "title": "Making Candies",
+        "difficulty": "Hard",
+        "tags": [
+            "Algorithms",
+            "Binary Search",
+            "Hard",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "making-candies"
+    },
+    {
+        "id": 11782,
+        "title": "Gena Playing Hanoi",
+        "difficulty": "Medium",
+        "tags": [
+            "Search",
+            "Algorithms",
+            "Medium",
+            "Bitmask",
+            "Core CS"
+        ],
+        "uri": "gena"
+    },
+    {
+        "id": 13331,
+        "title": "Beautiful Quadruples",
+        "difficulty": "Medium",
+        "tags": [
+            "Search",
+            "Algorithms",
+            "Medium",
+            "Brute Force",
+            "Core CS"
+        ],
+        "uri": "xor-quadruples"
+    },
+    {
+        "id": 28492,
+        "title": "Red Knight's Shortest Path",
+        "difficulty": "Medium",
+        "tags": [
+            "Medium",
+            "bfs",
+            "Core CS",
+            "Graph Algorithms"
+        ],
+        "uri": "red-knights-shortest-path"
+    },
+    {
+        "id": 1543,
+        "title": "Bike Racers",
+        "difficulty": "Hard",
+        "tags": [
+            "Search",
+            "Algorithms",
+            "Hard",
+            "Core CS"
+        ],
+        "uri": "bike-racers"
+    },
+    {
+        "id": 47,
+        "title": "Task Scheduling ",
+        "difficulty": "Advanced",
+        "tags": [
+            "Search",
+            "Algorithms",
+            "Expert",
+            "Core CS"
+        ],
+        "uri": "task-scheduling"
+    },
+    {
+        "id": 599,
+        "title": "Similar Pair",
+        "difficulty": "Advanced",
+        "tags": [
+            "Search",
+            "Math",
+            "Algorithms",
+            "Expert",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "similarpair"
+    },
+    {
+        "id": 3470,
+        "title": "Absolute Element Sums",
+        "difficulty": "Hard",
+        "tags": [
+            "Search",
+            "Algorithms",
+            "Hard",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "playing-with-numbers"
+    },
+    {
+        "id": 28479,
+        "title": "Almost Integer Rock Garden",
+        "difficulty": "Expert",
+        "tags": [
+            "Algorithms",
+            "Expert",
+            "Core CS",
+            "Randomized Algorithm",
+            "Meet in the Middle Algorithm"
+        ],
+        "uri": "almost-integer-rock-garden"
+    },
+    {
+        "id": 22270,
+        "title": "Sorted Subsegments",
+        "difficulty": "Hard",
+        "tags": [
+            "Sorting",
+            "Algorithms",
+            "Medium",
+            "RangeUpdate",
+            "RangeQuery",
+            "Core CS"
+        ],
+        "uri": "sorted-subsegments"
+    },
+    {
+        "id": 29995,
+        "title": "Distant Pairs",
+        "difficulty": "Expert",
+        "tags": [
+            "Search",
+            "Segment Tree",
+            "Algorithms",
+            "Binary Search",
+            "Expert",
+            "Core CS"
+        ],
+        "uri": "distant-pairs"
+    },
+    {
+        "id": 19174,
+        "title": "King Richard's Knights",
+        "difficulty": "Hard",
+        "tags": [
+            "Search",
+            "Algorithms",
+            "Hard",
+            "veryunlikelytag",
+            "Core CS"
+        ],
+        "uri": "king-richards-knights"
+    },
+    {
+        "id": 13776,
+        "title": "Frog in Maze",
+        "difficulty": "Hard",
+        "tags": [
+            "Math",
+            "Algorithms",
+            "Probability",
+            "linear algebra",
+            "Hard",
+            "Core CS"
+        ],
+        "uri": "frog-in-maze"
+    },
+    {
+        "id": 25952,
+        "title": "Roads and Libraries",
+        "difficulty": "Medium",
+        "tags": [
+            "Graph Theory",
+            "Algorithms",
+            "Medium",
+            "Greedy Algorithms",
+            "Graphs",
+            "problem-solving",
+            "Core CS",
+            "components"
+        ],
+        "uri": "torque-and-development"
+    },
+    {
+        "id": 784,
+        "title": "Journey to the Moon",
+        "difficulty": "Medium",
+        "tags": [
+            "Graph Theory",
+            "Algorithms",
+            "Medium",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "journey-to-the-moon"
+    },
+    {
+        "id": 19049,
+        "title": "Synchronous Shopping",
+        "difficulty": "Medium",
+        "tags": [
+            "Graph Theory",
+            "Algorithms",
+            "Medium",
+            "shortest-path",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "synchronous-shopping"
+    },
+    {
+        "id": 774,
+        "title": "Subset Component",
+        "difficulty": "Hard",
+        "tags": [
+            "Graph Theory",
+            "Algorithms",
+            "Hard",
+            "Core CS"
+        ],
+        "uri": "subset-component"
+    },
+    {
+        "id": 5580,
+        "title": "Breadth First Search: Shortest Reach",
+        "difficulty": "Medium",
+        "tags": [
+            "Graph Theory",
+            "Algorithms",
+            "Medium",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "bfsshortreach"
+    },
+    {
+        "id": 5686,
+        "title": "Kruskal (MST): Really Special Subtree",
+        "difficulty": "Medium",
+        "tags": [
+            "Graph Theory",
+            "Algorithms",
+            "Hard",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "kruskalmstrsub"
+    },
+    {
+        "id": 110,
+        "title": "Even Tree",
+        "difficulty": "Medium",
+        "tags": [
+            "Graph Theory",
+            "Tree",
+            "Algorithms",
+            "Medium",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "even-tree"
+    },
+    {
+        "id": 626,
+        "title": "Snakes and Ladders: The Quickest Way Up",
+        "difficulty": "Medium",
+        "tags": [
+            "Graph Theory",
+            "Tutorial",
+            "Algorithms",
+            "Medium",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "the-quickest-way-up"
+    },
+    {
+        "id": 5595,
+        "title": "Dijkstra: Shortest Reach 2",
+        "difficulty": "Hard",
+        "tags": [
+            "Graph Theory",
+            "Algorithms",
+            "Hard",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "dijkstrashortreach"
+    },
+    {
+        "id": 29036,
+        "title": "The Story of a Tree",
+        "difficulty": "Medium",
+        "tags": [
+            "Graph Theory",
+            "Math",
+            "Algorithms",
+            "Medium",
+            "Data Structures",
+            "DFS",
+            "Probability",
+            "Core CS"
+        ],
+        "uri": "the-story-of-a-tree"
+    },
+    {
+        "id": 5670,
+        "title": "Prim's (MST) : Special Subtree",
+        "difficulty": "Medium",
+        "tags": [
+            "Graph Theory",
+            "Algorithms",
+            "Medium",
+            "Greedy Algorithms",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "primsmstsub"
+    },
+    {
+        "id": 19177,
+        "title": "Toll Cost Digits",
+        "difficulty": "Hard",
+        "tags": [
+            "Graph Theory",
+            "Algorithms",
+            "Hard",
+            "Core CS"
+        ],
+        "uri": "toll-cost-digits"
+    },
+    {
+        "id": 28277,
+        "title": "Real Estate Broker",
+        "difficulty": "Hard",
+        "tags": [
+            "Graph Theory",
+            "Max Flow",
+            "Algorithms",
+            "Hard",
+            "Core CS"
+        ],
+        "uri": "real-estate-broker"
+    },
+    {
+        "id": 54,
+        "title": "Clique",
+        "difficulty": "Medium",
+        "tags": [
+            "Graph Theory",
+            "Algorithms",
+            "Medium",
+            "Core CS"
+        ],
+        "uri": "clique"
+    },
+    {
+        "id": 17276,
+        "title": "Minimum Penalty Path",
+        "difficulty": "Medium",
+        "tags": [
+            "Graph Theory",
+            "Bit Manipulation",
+            "Algorithms",
+            "Medium",
+            "Graph",
+            "shortest-path",
+            "Core CS"
+        ],
+        "uri": "beautiful-path"
+    },
+    {
+        "id": 22036,
+        "title": "Demanding Money",
+        "difficulty": "Hard",
+        "tags": [
+            "Graph Theory",
+            "Algorithms",
+            "Combinatorics",
+            "Hard",
+            "Core CS"
+        ],
+        "uri": "borrowing-money"
+    },
+    {
+        "id": 22938,
+        "title": "The Value of Friendship",
+        "difficulty": "Hard",
+        "tags": [
+            "Graph Theory",
+            "Math",
+            "Algorithms",
+            "Greedy Algorithms",
+            "Hard",
+            "Core CS"
+        ],
+        "uri": "value-of-friendship"
+    },
+    {
+        "id": 25664,
+        "title": "Coprime Paths",
+        "difficulty": "Expert",
+        "tags": [
+            "Mo's Algorithm",
+            "Inclusion Exclusion Principle",
+            "Euler Tour of Tree"
+        ],
+        "uri": "coprime-paths"
+    },
+    {
+        "id": 24474,
+        "title": "Minimum MST Graph",
+        "difficulty": "Expert",
+        "tags": [
+            "Graph Theory",
+            "Algorithms",
+            "Expert",
+            "Core CS",
+            "MST"
+        ],
+        "uri": "minimum-mst-graph"
+    },
+    {
+        "id": 924,
+        "title": "Jack goes to Rapture ",
+        "difficulty": "Medium",
+        "tags": [
+            "Graph Theory",
+            "Algorithms",
+            "Medium",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "jack-goes-to-rapture"
+    },
+    {
+        "id": 71,
+        "title": "Crab Graphs",
+        "difficulty": "Medium",
+        "tags": [
+            "Graph Theory",
+            "Max Flow",
+            "Min Cost",
+            "Algorithms",
+            "Medium",
+            "Core CS"
+        ],
+        "uri": "crab-graphs"
+    },
+    {
+        "id": 339,
+        "title": "Bead Ornaments",
+        "difficulty": "Advanced",
+        "tags": [
+            "Graph Theory",
+            "Maths Cayley's Forumula",
+            "Algorithms",
+            "Expert",
+            "Core CS"
+        ],
+        "uri": "beadornaments"
+    },
+    {
+        "id": 9931,
+        "title": "Jeanie's Route",
+        "difficulty": "Medium",
+        "tags": [
+            "Graph Theory",
+            "Tree",
+            "Algorithms",
+            "Medium",
+            "Core CS"
+        ],
+        "uri": "jeanies-route"
+    },
+    {
+        "id": 5697,
+        "title": "Floyd : City of Blinding Lights",
+        "difficulty": "Hard",
+        "tags": [
+            "Graph Theory",
+            "Algorithms",
+            "Hard",
+            "Core CS"
+        ],
+        "uri": "floyd-city-of-blinding-lights"
+    },
+    {
+        "id": 14676,
+        "title": "Roads in HackerLand",
+        "difficulty": "Medium",
+        "tags": [
+            "Graph Theory",
+            "Algorithms",
+            "Medium",
+            "Graph",
+            "Core CS"
+        ],
+        "uri": "johnland"
+    },
+    {
+        "id": 84,
+        "title": "Kingdom Connectivity",
+        "difficulty": "Hard",
+        "tags": [
+            "Graph Theory",
+            "Depth First Search",
+            "Tree",
+            "Algorithms",
+            "Hard",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "kingdom-connectivity"
+    },
+    {
+        "id": 744,
+        "title": "Computer Game",
+        "difficulty": "Hard",
+        "tags": [
+            "Graph Theory",
+            "Algorithms",
+            "Hard",
+            "Core CS"
+        ],
+        "uri": "computer-game"
+    },
+    {
+        "id": 5545,
+        "title": "Rust & Murderer",
+        "difficulty": "Medium",
+        "tags": [
+            "Graph Theory",
+            "Algorithms",
+            "Medium",
+            "Core CS"
+        ],
+        "uri": "rust-murderer"
+    },
+    {
+        "id": 60,
+        "title": "Problem solving",
+        "difficulty": "Hard",
+        "tags": [
+            "Graph Theory",
+            "Depth First Search",
+            "Algorithms",
+            "Hard",
+            "Core CS"
+        ],
+        "uri": "problem-solving"
+    },
+    {
+        "id": 5186,
+        "title": "Journey Scheduling",
+        "difficulty": "Hard",
+        "tags": [
+            "Graph Theory",
+            "Algorithms",
+            "Hard",
+            "Core CS"
+        ],
+        "uri": "journey-scheduling"
+    },
+    {
+        "id": 93,
+        "title": "Matrix",
+        "difficulty": "Hard",
+        "tags": [
+            "Graph Theory",
+            "Tree",
+            "Algorithms",
+            "Hard",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "matrix"
+    },
+    {
+        "id": 17340,
+        "title": "Recording Episodes",
+        "difficulty": "Hard",
+        "tags": [
+            "Graph Theory",
+            "Algorithms",
+            "Graph",
+            "2-SAT",
+            "Two pointers",
+            "Hard",
+            "Core CS"
+        ],
+        "uri": "episode-recording"
+    },
+    {
+        "id": 57,
+        "title": "Repair Roads",
+        "difficulty": "Hard",
+        "tags": [
+            "Graph Theory",
+            "Algorithms",
+            "Hard",
+            "Core CS"
+        ],
+        "uri": "repair-roads"
+    },
+    {
+        "id": 791,
+        "title": "Kth Ancestor",
+        "difficulty": "Hard",
+        "tags": [
+            "Graph Theory",
+            "Algorithms",
+            "Hard",
+            "Core CS"
+        ],
+        "uri": "kth-ancestor"
+    },
+    {
+        "id": 52,
+        "title": "ByteLandian Tours",
+        "difficulty": "Hard",
+        "tags": [
+            "Graph Theory",
+            "Travelling Salseman",
+            "Algorithms",
+            "Hard",
+            "Core CS"
+        ],
+        "uri": "bytelandian-tours"
+    },
+    {
+        "id": 14770,
+        "title": "Find the Path",
+        "difficulty": "Hard",
+        "tags": [
+            "Graph Theory",
+            "Divide and Conquer",
+            "Algorithms",
+            "Dijkstra's algorithm",
+            "Hard",
+            "Core CS"
+        ],
+        "uri": "shortest-path"
+    },
+    {
+        "id": 3242,
+        "title": "Savita And Friends",
+        "difficulty": "Hard",
+        "tags": [
+            "Graph Theory",
+            "Algorithms",
+            "Hard",
+            "Core CS"
+        ],
+        "uri": "savita-and-friends"
+    },
+    {
+        "id": 96,
+        "title": "Liars",
+        "difficulty": "Advanced",
+        "tags": [
+            "Dynamic Programming",
+            "Graph Theory",
+            "Algorithms",
+            "Expert",
+            "Core CS"
+        ],
+        "uri": "liars"
+    },
+    {
+        "id": 24358,
+        "title": "Jumping Rooks",
+        "difficulty": "Advanced",
+        "tags": [
+            "Max Flow",
+            "Algorithms",
+            "Expert",
+            "Core CS"
+        ],
+        "uri": "jumping-rooks"
+    },
+    {
+        "id": 21484,
+        "title": "Tripartite Matching",
+        "difficulty": "Hard",
+        "tags": [
+            "Algorithms",
+            "Graphs",
+            "Hard",
+            "Core CS"
+        ],
+        "uri": "tripartite-matching"
+    },
+    {
+        "id": 19024,
+        "title": "Tree Flow",
+        "difficulty": "Hard",
+        "tags": [
+            "Algorithms",
+            "Graph",
+            "Hard",
+            "MaxFlow",
+            "Core CS"
+        ],
+        "uri": "tree-flow"
+    },
+    {
+        "id": 25943,
+        "title": "DAG Queries",
+        "difficulty": "Expert",
+        "tags": [
+            "query",
+            "sqrt-decomposition",
+            "dag"
+        ],
+        "uri": "dag-queries"
+    },
+    {
+        "id": 3518,
+        "title": "Favorite sequence",
+        "difficulty": "Advanced",
+        "tags": [
+            "Graph Theory",
+            "Algorithms",
+            "Expert",
+            "Core CS"
+        ],
+        "uri": "favourite-sequence"
+    },
+    {
+        "id": 18769,
+        "title": "Jogging Cats",
+        "difficulty": "Advanced",
+        "tags": [
+            "Graph Theory",
+            "Algorithms",
+            "Graphs",
+            "Expert",
+            "Core CS"
+        ],
+        "uri": "cat-jogging"
+    },
+    {
+        "id": 42,
+        "title": "Quadrant Queries",
+        "difficulty": "Advanced",
+        "tags": [
+            "Graph Theory",
+            "Trees",
+            "Algorithms",
+            "Expert",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "quadrant-queries"
+    },
+    {
+        "id": 1574,
+        "title": "Hacker Country",
+        "difficulty": "Hard",
+        "tags": [
+            "Graph Theory",
+            "Algorithms",
+            "Hard",
+            "Core CS"
+        ],
+        "uri": "hacker-country"
+    },
+    {
+        "id": 1090,
+        "title": "HackerX",
+        "difficulty": "Hard",
+        "tags": [
+            "Graph Theory",
+            "Algorithms",
+            "Hard",
+            "Core CS"
+        ],
+        "uri": "missile-defend"
+    },
+    {
+        "id": 2249,
+        "title": "Huarongdao",
+        "difficulty": "Expert",
+        "tags": [
+            "Graph Theory",
+            "Algorithms",
+            "Expert",
+            "Core CS"
+        ],
+        "uri": "huarongdao"
+    },
+    {
+        "id": 3437,
+        "title": "Training the army",
+        "difficulty": "Hard",
+        "tags": [
+            "Graph Theory",
+            "Max Flow",
+            "Algorithms",
+            "Hard",
+            "Core CS"
+        ],
+        "uri": "training-the-army"
+    },
+    {
+        "id": 3585,
+        "title": "Jim and his LAN Party",
+        "difficulty": "Hard",
+        "tags": [
+            "Graph Theory",
+            "Algorithms",
+            "Binary Search",
+            "ufds",
+            "Hard",
+            "Core CS"
+        ],
+        "uri": "jim-and-his-lan-party"
+    },
+    {
+        "id": 12233,
+        "title": "Travel in HackerLand",
+        "difficulty": "Hard",
+        "tags": [
+            "Graph Theory",
+            "Algorithms",
+            "Hard",
+            "Core CS"
+        ],
+        "uri": "travel-in-hackerland"
+    },
+    {
+        "id": 3349,
+        "title": "Alex vs Fedor",
+        "difficulty": "Expert",
+        "tags": [
+            "Graph Theory",
+            "Algorithms",
+            "Expert",
+            "Core CS"
+        ],
+        "uri": "alex-vs-fedor"
+    },
+    {
+        "id": 13888,
+        "title": "Vertical Paths",
+        "difficulty": "Expert",
+        "tags": [
+            "Graph Theory",
+            "Trees",
+            "Algorithms",
+            "Expert",
+            "Core CS"
+        ],
+        "uri": "vertical-paths"
+    },
+    {
+        "id": 1545,
+        "title": "Drive",
+        "difficulty": "Expert",
+        "tags": [
+            "Graph Theory",
+            "Algorithms",
+            "Expert",
+            "Core CS"
+        ],
+        "uri": "drive"
+    },
+    {
+        "id": 2109,
+        "title": "Travelling Salesman in a Grid",
+        "difficulty": "Expert",
+        "tags": [
+            "Graph Theory",
+            "Algorithms",
+            "Expert",
+            "Core CS"
+        ],
+        "uri": "tsp-grid"
+    },
+    {
+        "id": 2265,
+        "title": "Road Network",
+        "difficulty": "Expert",
+        "tags": [
+            "Graph Theory",
+            "Algorithms",
+            "Expert",
+            "Core CS"
+        ],
+        "uri": "road-network"
+    },
+    {
+        "id": 86,
+        "title": "Going to the Office",
+        "difficulty": "Expert",
+        "tags": [
+            "Graph Theory",
+            "Segment Tree",
+            "Tree",
+            "Algorithms",
+            "Expert",
+            "Core CS"
+        ],
+        "uri": "going-office"
+    },
+    {
+        "id": 21497,
+        "title": "Tree Splitting",
+        "difficulty": "Advanced",
+        "tags": [
+            "Trees",
+            "Algorithms",
+            "Graph",
+            "Expert",
+            "Core CS"
+        ],
+        "uri": "tree-splitting"
+    },
+    {
+        "id": 772,
+        "title": "Ticket",
+        "difficulty": "Expert",
+        "tags": [
+            "Graph Theory",
+            "Algorithms",
+            "Expert",
+            "Core CS"
+        ],
+        "uri": "ticket"
+    },
+    {
+        "id": 15582,
+        "title": "DFS Edges",
+        "difficulty": "Expert",
+        "tags": [
+            "Graph Theory",
+            "Algorithms",
+            "DFS",
+            "Expert",
+            "Core CS"
+        ],
+        "uri": "dfs-edges"
+    },
+    {
+        "id": 29999,
+        "title": "Diameter Minimization",
+        "difficulty": "Expert",
+        "tags": [
+            "Algorithms",
+            "bfs",
+            "Data Structures",
+            "Graphs",
+            "Expert",
+            "Core CS",
+            "Graph Construction"
+        ],
+        "uri": "diameter-minimization"
+    },
+    {
+        "id": 43509,
+        "title": "Airports",
+        "difficulty": "Expert",
+        "tags": [
+            "Graph connectivity",
+            "optimization"
+        ],
+        "uri": "airports"
+    },
+    {
+        "id": 25134,
+        "title": "Definite Random Walks",
+        "difficulty": "Expert",
+        "tags": [
+            "Graph Theory",
+            "Algorithms",
+            "FFT",
+            "Expert",
+            "sqrt-decomposition",
+            "Core CS"
+        ],
+        "uri": "definite-random-walks"
+    },
+    {
+        "id": 33296,
+        "title": "Minimum Absolute Difference in an Array",
+        "difficulty": "Easy",
+        "tags": [
+            "Sorting",
+            "Algorithms",
+            "Easy",
+            "Data Structures",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "minimum-absolute-difference-in-an-array"
+    },
+    {
+        "id": 32559,
+        "title": "Marc's Cakewalk",
+        "difficulty": "Easy",
+        "tags": [
+            "Sorting",
+            "Algorithms",
+            "Easy",
+            "Greedy Algorithms",
+            "Arrays",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "marcs-cakewalk"
+    },
+    {
+        "id": 4941,
+        "title": "Grid Challenge",
+        "difficulty": "Easy",
+        "tags": [
+            "Algorithms",
+            "Easy",
+            "Greedy Algorithms",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "grid-challenge"
+    },
+    {
+        "id": 21067,
+        "title": "Luck Balance",
+        "difficulty": "Easy",
+        "tags": [
+            "Sorting",
+            "Algorithms",
+            "Easy",
+            "Greedy Algorithms",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "luck-balance"
+    },
+    {
+        "id": 21401,
+        "title": "Maximum Perimeter Triangle",
+        "difficulty": "Easy",
+        "tags": [
+            "Algorithms",
+            "Easy",
+            "Greedy Algorithms",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "maximum-perimeter-triangle"
+    },
+    {
+        "id": 16828,
+        "title": "Beautiful Pairs",
+        "difficulty": "Easy",
+        "tags": [
+            "Algorithms",
+            "Easy",
+            "Greedy Algorithms",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "beautiful-pairs"
+    },
+    {
+        "id": 106,
+        "title": "Candies",
+        "difficulty": "Medium",
+        "tags": [
+            "Dynamic Programming",
+            "Algorithms",
+            "Medium",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "candies"
+    },
+    {
+        "id": 898,
+        "title": "Sherlock and The Beast",
+        "difficulty": "Easy",
+        "tags": [
+            "Math",
+            "Algorithms",
+            "Easy",
+            "Greedy Algorithms",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "sherlock-and-the-beast"
+    },
+    {
+        "id": 2149,
+        "title": "Priyanka and Toys",
+        "difficulty": "Easy",
+        "tags": [
+            "Algorithms",
+            "Easy",
+            "Greedy Algorithms",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "priyanka-and-toys"
+    },
+    {
+        "id": 3187,
+        "title": "Largest Permutation",
+        "difficulty": "Easy",
+        "tags": [
+            "Algorithms",
+            "Easy",
+            "Greedy Algorithms",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "largest-permutation"
+    },
+    {
+        "id": 789,
+        "title": "Mark and Toys",
+        "difficulty": "Easy",
+        "tags": [
+            "Algorithmic Puzzle",
+            "Sorting",
+            "Algorithms",
+            "Easy",
+            "Greedy Algorithms",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "mark-and-toys"
+    },
+    {
+        "id": 105,
+        "title": "Greedy Florist",
+        "difficulty": "Medium",
+        "tags": [
+            "Search",
+            "Algorithms",
+            "Medium",
+            "Greedy Algorithms",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "greedy-florist"
+    },
+    {
+        "id": 1019,
+        "title": "Max Min",
+        "difficulty": "Medium",
+        "tags": [
+            "Algorithms",
+            "Medium",
+            "Greedy Algorithms",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "angry-children"
+    },
+    {
+        "id": 3583,
+        "title": "Jim and the Orders",
+        "difficulty": "Easy",
+        "tags": [
+            "Sorting",
+            "Algorithms",
+            "Easy",
+            "Greedy Algorithms",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "jim-and-the-orders"
+    },
+    {
+        "id": 833,
+        "title": "Permuting Two Arrays",
+        "difficulty": "Easy",
+        "tags": [
+            "Sorting",
+            "Algorithms",
+            "Easy",
+            "Greedy Algorithms",
+            "Arrays",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "two-arrays"
+    },
+    {
+        "id": 1319,
+        "title": "Cutting Boards",
+        "difficulty": "Hard",
+        "tags": [
+            "Algorithms",
+            "Medium",
+            "Greedy Algorithms",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "board-cutting"
+    },
+    {
+        "id": 674,
+        "title": "Reverse Shuffle Merge",
+        "difficulty": "Advanced",
+        "tags": [
+            "Strings",
+            "Algorithms",
+            "Greedy Algorithms",
+            "Expert",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "reverse-shuffle-merge"
+    },
+    {
+        "id": 21552,
+        "title": "Goodland Electricity",
+        "difficulty": "Medium",
+        "tags": [
+            "Algorithms",
+            "Medium",
+            "Greedy Algorithms",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "pylons"
+    },
+    {
+        "id": 24761,
+        "title": "Cloudy Day ",
+        "difficulty": "Medium",
+        "tags": [
+            "Algorithms",
+            "Medium",
+            "Greedy Algorithms",
+            "Core CS"
+        ],
+        "uri": "cloudy-day"
+    },
+    {
+        "id": 4879,
+        "title": "Chief Hopper",
+        "difficulty": "Hard",
+        "tags": [
+            "Algorithms",
+            "Greedy Algorithms",
+            "Hard",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "chief-hopper"
+    },
+    {
+        "id": 2491,
+        "title": "Sherlock and MiniMax",
+        "difficulty": "Hard",
+        "tags": [
+            "Algorithms",
+            "Greedy Algorithms",
+            "Hard",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "sherlock-and-minimax"
+    },
+    {
+        "id": 19310,
+        "title": "Accessory Collection",
+        "difficulty": "Hard",
+        "tags": [
+            "Algorithms",
+            "Greedy Algorithms",
+            "Hard",
+            "veryunlikelytag",
+            "Core CS"
+        ],
+        "uri": "accessory-collection"
+    },
+    {
+        "id": 3765,
+        "title": "Team Formation",
+        "difficulty": "Advanced",
+        "tags": [
+            "Algorithms",
+            "Greedy Algorithms",
+            "Expert",
+            "Core CS"
+        ],
+        "uri": "team-formation"
+    },
+    {
+        "id": 22662,
+        "title": "Fighting Pits",
+        "difficulty": "Hard",
+        "tags": [
+            "Math",
+            "Algorithms",
+            "Implementation",
+            "Expert",
+            "Core CS"
+        ],
+        "uri": "fighting-pits"
+    },
+    {
+        "id": 30599,
+        "title": "Lena Sort",
+        "difficulty": "Medium",
+        "tags": [
+            "Algorithms",
+            "Medium",
+            "ad-hoc",
+            "Constructive Algorithms",
+            "Core CS"
+        ],
+        "uri": "lena-sort"
+    },
+    {
+        "id": 1716,
+        "title": "The Coin Change Problem",
+        "difficulty": "Medium",
+        "tags": [
+            "Dynamic Programming",
+            "Algorithms",
+            "Hard",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "coin-change"
+    },
+    {
+        "id": 676,
+        "title": "Equal",
+        "difficulty": "Medium",
+        "tags": [
+            "Dynamic Programming",
+            "Algorithms",
+            "Medium",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "equal"
+    },
+    {
+        "id": 22923,
+        "title": "Flipping the Matrix",
+        "difficulty": "Medium",
+        "tags": [
+            "Algorithms",
+            "Medium",
+            "Greedy Algorithms",
+            "Constructive Algorithms",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "flipping-the-matrix"
+    },
+    {
+        "id": 2496,
+        "title": "Sherlock and Cost",
+        "difficulty": "Medium",
+        "tags": [
+            "Dynamic Programming",
+            "Algorithms",
+            "Medium",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "sherlock-and-cost"
+    },
+    {
+        "id": 28615,
+        "title": "Gaming Array",
+        "difficulty": "Medium",
+        "tags": [
+            "Algorithms",
+            "Medium",
+            "Observation",
+            "Constructive Algorithms",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "an-interesting-game-1"
+    },
+    {
+        "id": 15305,
+        "title": "New Year Chaos",
+        "difficulty": "Medium",
+        "tags": [
+            "Medium",
+            "Bit",
+            "Constructive Algorithms",
+            "#queue",
+            "inversions",
+            "Basic Programming",
+            "problem-solving",
+            "Core CS",
+            "General Programming"
+        ],
+        "uri": "new-year-chaos"
+    },
+    {
+        "id": 37902,
+        "title": "Construct the Array",
+        "difficulty": "Medium",
+        "tags": [
+            "Dynamic Programming",
+            "Algorithms",
+            "Medium",
+            "Arrays",
+            "Core CS"
+        ],
+        "uri": "construct-the-array"
+    },
+    {
+        "id": 21649,
+        "title": "Bonetrousle",
+        "difficulty": "Medium",
+        "tags": [
+            "Medium",
+            "Implementation",
+            "Basic Programming",
+            "problem-solving",
+            "Core CS",
+            "General Programming"
+        ],
+        "uri": "bonetrousle"
+    },
+    {
+        "id": 15203,
+        "title": "Kingdom Division",
+        "difficulty": "Medium",
+        "tags": [
+            "Dynamic Programming",
+            "Tree",
+            "Algorithms",
+            "Medium",
+            "Core CS"
+        ],
+        "uri": "kingdom-division"
+    },
+    {
+        "id": 9000,
+        "title": "Yet Another KMP Problem",
+        "difficulty": "Hard",
+        "tags": [
+            "Strings",
+            "Algorithms",
+            "Medium",
+            "Constructive Algorithms",
+            "kmp",
+            "Core CS"
+        ],
+        "uri": "kmp-problem"
+    },
+    {
+        "id": 1905,
+        "title": "Sam and substrings",
+        "difficulty": "Medium",
+        "tags": [
+            "Dynamic Programming",
+            "Algorithms",
+            "Medium",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "sam-and-substrings"
+    },
+    {
+        "id": 14803,
+        "title": "Beautiful 3 Set",
+        "difficulty": "Hard",
+        "tags": [
+            "Number Theory",
+            "Algorithms",
+            "difficult",
+            "Constructive Algorithms",
+            "Core CS"
+        ],
+        "uri": "beautiful-3-set"
+    },
+    {
+        "id": 4395,
+        "title": "Fibonacci Modified",
+        "difficulty": "Medium",
+        "tags": [
+            "Dynamic Programming",
+            "Algorithms",
+            "Medium",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "fibonacci-modified"
+    },
+    {
+        "id": 15896,
+        "title": "Inverse RMQ",
+        "difficulty": "Hard",
+        "tags": [
+            "Segment Tree",
+            "Algorithms",
+            "Hard",
+            "Constructive",
+            "Core CS"
+        ],
+        "uri": "inverse-rmq"
+    },
+    {
+        "id": 15427,
+        "title": "Abbreviation",
+        "difficulty": "Medium",
+        "tags": [
+            "Algorithms",
+            "Medium",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "abbr"
+    },
+    {
+        "id": 29356,
+        "title": "Two Subarrays",
+        "difficulty": "Expert",
+        "tags": [
+            "Dynamic Programming",
+            "Algorithms",
+            "RMQ",
+            "Expert",
+            "Constructive Algorithms",
+            "Core CS"
+        ],
+        "uri": "two-subarrays"
+    },
+    {
+        "id": 15577,
+        "title": "Prime XOR",
+        "difficulty": "Medium",
+        "tags": [
+            "Dynamic Programming",
+            "Algorithms",
+            "Memoization",
+            "Medium",
+            "Pigeonhole",
+            "Core CS"
+        ],
+        "uri": "prime-xor"
+    },
+    {
+        "id": 18055,
+        "title": "Lovely Triplets",
+        "difficulty": "Advanced",
+        "tags": [
+            "Graph Theory",
+            "Algorithms",
+            "Graph",
+            "Hard",
+            "Core CS"
+        ],
+        "uri": "lovely-triplets"
+    },
+    {
+        "id": 22032,
+        "title": "Array Construction",
+        "difficulty": "Advanced",
+        "tags": [
+            "Algorithms",
+            "Expert",
+            "Constructive Algorithms",
+            "Core CS"
+        ],
+        "uri": "array-construction"
+    },
+    {
+        "id": 21650,
+        "title": "Decibinary Numbers",
+        "difficulty": "Hard",
+        "tags": [
+            "Dynamic Programming",
+            "Algorithms",
+            "Hard",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "decibinary-numbers"
+    },
+    {
+        "id": 24357,
+        "title": "Fair Cut",
+        "difficulty": "Medium",
+        "tags": [
+            "Dynamic Programming",
+            "Algorithms",
+            "Medium",
+            "Core CS"
+        ],
+        "uri": "fair-cut"
+    },
+    {
+        "id": 1975,
+        "title": "The Maximum Subarray",
+        "difficulty": "Medium",
+        "tags": [
+            "Dynamic Programming",
+            "Algorithms",
+            "Medium",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "maxsubarray"
+    },
+    {
+        "id": 1049,
+        "title": "Angry Children 2",
+        "difficulty": "Hard",
+        "tags": [
+            "Dynamic Programming",
+            "Algorithms",
+            "Hard",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "angry-children-2"
+    },
+    {
+        "id": 9543,
+        "title": "Sherlock's Array Merging Algorithm",
+        "difficulty": "Hard",
+        "tags": [
+            "Dynamic Programming",
+            "Algorithms",
+            "Combinatorics",
+            "Hard",
+            "Core CS"
+        ],
+        "uri": "sherlocks-array-merging-algorithm"
+    },
+    {
+        "id": 19178,
+        "title": "Prime Digit Sums",
+        "difficulty": "Medium",
+        "tags": [
+            "Dynamic Programming",
+            "Algorithms",
+            "Medium",
+            "Core CS"
+        ],
+        "uri": "prime-digit-sums"
+    },
+    {
+        "id": 15974,
+        "title": "HackerRank City",
+        "difficulty": "Medium",
+        "tags": [
+            "Dynamic Programming",
+            "Algorithms",
+            "Medium",
+            "Implementation",
+            "Core CS"
+        ],
+        "uri": "hr-city"
+    },
+    {
+        "id": 11859,
+        "title": "Summing Pieces",
+        "difficulty": "Medium",
+        "tags": [
+            "Dynamic Programming",
+            "Math",
+            "Algorithms",
+            "Medium",
+            "Core CS"
+        ],
+        "uri": "summing-pieces"
+    },
+    {
+        "id": 658,
+        "title": "Mr K marsh",
+        "difficulty": "Medium",
+        "tags": [
+            "Dynamic Programming",
+            "Math",
+            "Algorithms",
+            "Medium",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "mr-k-marsh"
+    },
+    {
+        "id": 64,
+        "title": "Substring Diff",
+        "difficulty": "Medium",
+        "tags": [
+            "Dynamic Programming",
+            "Algorithms",
+            "Medium",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "substring-diff"
+    },
+    {
+        "id": 3234,
+        "title": "Xor and Sum",
+        "difficulty": "Medium",
+        "tags": [
+            "Dynamic Programming",
+            "Algorithms",
+            "Medium",
+            "Core CS"
+        ],
+        "uri": "xor-and-sum"
+    },
+    {
+        "id": 61,
+        "title": "Lego Blocks",
+        "difficulty": "Medium",
+        "tags": [
+            "Dynamic Programming",
+            "Algorithms",
+            "Medium",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "lego-blocks"
+    },
+    {
+        "id": 85,
+        "title": "Brick Tiling",
+        "difficulty": "Hard",
+        "tags": [
+            "Dynamic Programming",
+            "Depth First Search",
+            "Algorithms",
+            "Hard",
+            "Core CS"
+        ],
+        "uri": "brick-tiling"
+    },
+    {
+        "id": 530,
+        "title": "Alien Languages",
+        "difficulty": "Hard",
+        "tags": [
+            "Dynamic Programming",
+            "Algorithms",
+            "Hard",
+            "Core CS"
+        ],
+        "uri": "alien-languages"
+    },
+    {
+        "id": 330,
+        "title": "Stock Maximize",
+        "difficulty": "Medium",
+        "tags": [
+            "Dynamic Programming",
+            "Algorithms",
+            "Medium",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "stockmax"
+    },
+    {
+        "id": 9200,
+        "title": "Two Robots",
+        "difficulty": "Medium",
+        "tags": [
+            "Dynamic Programming",
+            "Algorithms",
+            "Medium",
+            "Core CS"
+        ],
+        "uri": "two-robots"
+    },
+    {
+        "id": 514,
+        "title": "Cut Tree",
+        "difficulty": "Medium",
+        "tags": [
+            "Dynamic Programming",
+            "Algorithms",
+            "Medium",
+            "Core CS"
+        ],
+        "uri": "cuttree"
+    },
+    {
+        "id": 29079,
+        "title": "Tara's Beautiful Permutations",
+        "difficulty": "Hard",
+        "tags": [
+            "Dynamic Programming",
+            "Math",
+            "Algorithms",
+            "Memoization and Dynamic Programming",
+            "Combinatorics",
+            "Observation",
+            "Hard",
+            "Core CS"
+        ],
+        "uri": "taras-beautiful-permutations"
+    },
+    {
+        "id": 5553,
+        "title": "Wet Shark and Two Subsequences",
+        "difficulty": "Medium",
+        "tags": [
+            "Dynamic Programming",
+            "Algorithms",
+            "Medium",
+            "Core CS"
+        ],
+        "uri": "wet-shark-and-two-subsequences"
+    },
+    {
+        "id": 16423,
+        "title": "Nikita and the Game",
+        "difficulty": "Medium",
+        "tags": [
+            "Dynamic Programming",
+            "Algorithms",
+            "Easy",
+            "Medium",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "array-splitting"
+    },
+    {
+        "id": 23797,
+        "title": "Choosing White Balls",
+        "difficulty": "Hard",
+        "tags": [
+            "Dynamic Programming",
+            "Algorithms",
+            "Hard",
+            "Core CS"
+        ],
+        "uri": "choosing-white-balls"
+    },
+    {
+        "id": 19358,
+        "title": "Mandragora Forest",
+        "difficulty": "Medium",
+        "tags": [
+            "Dynamic Programming",
+            "Algorithms",
+            "Medium",
+            "veryunlikelytag",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "mandragora"
+    },
+    {
+        "id": 776,
+        "title": "Red John is Back",
+        "difficulty": "Medium",
+        "tags": [
+            "Dynamic Programming",
+            "Algorithms",
+            "Medium",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "red-john-is-back"
+    },
+    {
+        "id": 20053,
+        "title": "LCS Returns",
+        "difficulty": "Medium",
+        "tags": [
+            "Dynamic Programming",
+            "Algorithms",
+            "Medium",
+            "Core CS"
+        ],
+        "uri": "tutzki-and-lcs"
+    },
+    {
+        "id": 43,
+        "title": "Grid Walking",
+        "difficulty": "Medium",
+        "tags": [
+            "Dynamic Programming",
+            "Graph Theory",
+            "Algorithms",
+            "Medium",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "grid-walking"
+    },
+    {
+        "id": 33054,
+        "title": "Matrix Land",
+        "difficulty": "Hard",
+        "tags": [
+            "Memoization and Dynamic Programming"
+        ],
+        "uri": "matrix-land"
+    },
+    {
+        "id": 5680,
+        "title": "Knapsack",
+        "difficulty": "Medium",
+        "tags": [
+            "Dynamic Programming",
+            "Algorithms",
+            "Medium",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "unbounded-knapsack"
+    },
+    {
+        "id": 1617,
+        "title": "Bricks Game",
+        "difficulty": "Medium",
+        "tags": [
+            "Dynamic Programming",
+            "Algorithms",
+            "Medium",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "play-game"
+    },
+    {
+        "id": 1431,
+        "title": "The Longest Increasing Subsequence",
+        "difficulty": "Advanced",
+        "tags": [
+            "Dynamic Programming",
+            "Algorithms",
+            "Expert",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "longest-increasing-subsequent"
+    },
+    {
+        "id": 100,
+        "title": "Coin on the Table",
+        "difficulty": "Medium",
+        "tags": [
+            "Search",
+            "Dynamic Programming",
+            "Algorithms",
+            "Medium",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "coin-on-the-table"
+    },
+    {
+        "id": 5235,
+        "title": "The Longest Common Subsequence",
+        "difficulty": "Medium",
+        "tags": [
+            "Dynamic Programming",
+            "Algorithms",
+            "Medium",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "dynamic-programming-classics-the-longest-common-subsequence"
+    },
+    {
+        "id": 3514,
+        "title": "Play with words",
+        "difficulty": "Medium",
+        "tags": [
+            "Dynamic Programming",
+            "Algorithms",
+            "Medium",
+            "Core CS"
+        ],
+        "uri": "strplay"
+    },
+    {
+        "id": 16422,
+        "title": "Black and White Tree",
+        "difficulty": "Hard",
+        "tags": [
+            "Dynamic Programming",
+            "Graph Theory",
+            "Algorithms",
+            "Hard",
+            "Core CS"
+        ],
+        "uri": "black-n-white-tree-1"
+    },
+    {
+        "id": 8762,
+        "title": "Counting Special Sub-Cubes",
+        "difficulty": "Medium",
+        "tags": [
+            "Dynamic Programming",
+            "Algorithms",
+            "Medium",
+            "Core CS"
+        ],
+        "uri": "counting-special-sub-cubes"
+    },
+    {
+        "id": 101,
+        "title": "Interval Selection",
+        "difficulty": "Medium",
+        "tags": [
+            "Search",
+            "Dynamic Programming",
+            "Algorithms",
+            "Medium",
+            "Core CS"
+        ],
+        "uri": "interval-selection"
+    },
+    {
+        "id": 58,
+        "title": "String Reduction",
+        "difficulty": "Hard",
+        "tags": [
+            "Dynamic Programming",
+            "Strings",
+            "Math",
+            "Depth First Search",
+            "Algorithms",
+            "Hard",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "string-reduction"
+    },
+    {
+        "id": 103,
+        "title": "Far Vertices",
+        "difficulty": "Hard",
+        "tags": [
+            "Dynamic Programming",
+            "Algorithms",
+            "Hard",
+            "Core CS"
+        ],
+        "uri": "far-vertices"
+    },
+    {
+        "id": 32594,
+        "title": "Counting Road Networks",
+        "difficulty": "Expert",
+        "tags": [
+            "Dynamic Programming",
+            "Math",
+            "Algorithms",
+            "FFT",
+            "Expert",
+            "Core CS"
+        ],
+        "uri": "counting-road-networks"
+    },
+    {
+        "id": 5138,
+        "title": "Superman Celebrates Diwali ",
+        "difficulty": "Hard",
+        "tags": [
+            "Dynamic Programming",
+            "Algorithms",
+            "Hard",
+            "Core CS"
+        ],
+        "uri": "superman-celebrates-diwali"
+    },
+    {
+        "id": 2176,
+        "title": "Hexagonal Grid",
+        "difficulty": "Hard",
+        "tags": [
+            "Dynamic Programming",
+            "Algorithms",
+            "Medium",
+            "DFS",
+            "Core CS"
+        ],
+        "uri": "hexagonal-grid"
+    },
+    {
+        "id": 51,
+        "title": "Queens on Board",
+        "difficulty": "Hard",
+        "tags": [
+            "Search",
+            "Dynamic Programming",
+            "Algorithms",
+            "Hard",
+            "Core CS"
+        ],
+        "uri": "queens-on-board"
+    },
+    {
+        "id": 16094,
+        "title": "Shashank and the Palindromic Strings",
+        "difficulty": "Advanced",
+        "tags": [
+            "Dynamic Programming",
+            "Algorithms",
+            "Hard",
+            "Core CS"
+        ],
+        "uri": "shashank-and-palindromic-strings"
+    },
+    {
+        "id": 48,
+        "title": "Points in a Plane",
+        "difficulty": "Advanced",
+        "tags": [
+            "Dynamic Programming",
+            "Graph Theory",
+            "Algorithms",
+            "Expert",
+            "Core CS"
+        ],
+        "uri": "points-in-a-plane"
+    },
+    {
+        "id": 21288,
+        "title": "Turn Off the Lights",
+        "difficulty": "Hard",
+        "tags": [
+            "Dynamic Programming"
+        ],
+        "uri": "turn-off-the-lights"
+    },
+    {
+        "id": 16614,
+        "title": "Animal Transport",
+        "difficulty": "Hard",
+        "tags": [
+            "Dynamic Programming",
+            "Algorithms",
+            "Hard",
+            "Core CS"
+        ],
+        "uri": "animal-transport"
+    },
+    {
+        "id": 1317,
+        "title": "The Indian Job",
+        "difficulty": "Medium",
+        "tags": [
+            "Dynamic Programming",
+            "Algorithms",
+            "Medium",
+            "Core CS"
+        ],
+        "uri": "the-indian-job"
+    },
+    {
+        "id": 88,
+        "title": "Requirement",
+        "difficulty": "Advanced",
+        "tags": [
+            "Search",
+            "Dynamic Programming",
+            "Algorithms",
+            "Expert",
+            "Core CS"
+        ],
+        "uri": "requirement"
+    },
+    {
+        "id": 3993,
+        "title": "A Super Hero",
+        "difficulty": "Hard",
+        "tags": [
+            "Sorting",
+            "Dynamic Programming",
+            "Algorithms",
+            "Hard",
+            "Core CS"
+        ],
+        "uri": "a-super-hero"
+    },
+    {
+        "id": 27225,
+        "title": "Clues on a Binary Path",
+        "difficulty": "Hard",
+        "tags": [
+            "Algorithms",
+            "Medium",
+            "Core CS",
+            "Meeting in the middle"
+        ],
+        "uri": "clues-on-a-binary-path"
+    },
+    {
+        "id": 15611,
+        "title": "Road Maintenance",
+        "difficulty": "Hard",
+        "tags": [
+            "Dynamic Programming",
+            "Trees",
+            "Algorithms",
+            "Hard",
+            "Core CS"
+        ],
+        "uri": "road-maintenance"
+    },
+    {
+        "id": 80,
+        "title": "Billboards",
+        "difficulty": "Advanced",
+        "tags": [
+            "Search",
+            "Dynamic Programming",
+            "Trees",
+            "Algorithms",
+            "Expert",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "billboards"
+    },
+    {
+        "id": 16725,
+        "title": "Beautiful Strings",
+        "difficulty": "Hard",
+        "tags": [
+            "Dynamic Programming",
+            "Strings",
+            "Algorithms",
+            "Hard",
+            "Core CS"
+        ],
+        "uri": "beautiful-string"
+    },
+    {
+        "id": 4002,
+        "title": "Covering the stains",
+        "difficulty": "Hard",
+        "tags": [
+            "Dynamic Programming",
+            "Algorithms",
+            "Hard",
+            "Core CS"
+        ],
+        "uri": "covering-the-stains"
+    },
+    {
+        "id": 32645,
+        "title": "GCD Matrix",
+        "difficulty": "Hard",
+        "tags": [
+            "Sorting",
+            "Dynamic Programming",
+            "Algorithms",
+            "Memoization",
+            "gcd",
+            "Mathematics",
+            "Core CS"
+        ],
+        "uri": "gcd-matrix"
+    },
+    {
+        "id": 78,
+        "title": "Fairy Chess",
+        "difficulty": "Advanced",
+        "tags": [
+            "Dynamic Programming",
+            "Algorithms",
+            "Expert",
+            "Core CS"
+        ],
+        "uri": "fairy-chess"
+    },
+    {
+        "id": 16333,
+        "title": "Suffix Rotation",
+        "difficulty": "Expert",
+        "tags": [
+            "Dynamic Programming",
+            "Strings"
+        ],
+        "uri": "suffix-rotation"
+    },
+    {
+        "id": 15259,
+        "title": "New Year Present",
+        "difficulty": "Hard",
+        "tags": [
+            "Dynamic Programming",
+            "Algorithms",
+            "Hard",
+            "Core CS"
+        ],
+        "uri": "newyear-present"
+    },
+    {
+        "id": 2186,
+        "title": "Travel around the world",
+        "difficulty": "Medium",
+        "tags": [
+            "Dynamic Programming",
+            "Algorithms",
+            "Medium",
+            "Core CS"
+        ],
+        "uri": "travel-around-the-world"
+    },
+    {
+        "id": 19667,
+        "title": "Longest Palindromic Subsequence",
+        "difficulty": "Hard",
+        "tags": [
+            "Dynamic Programming",
+            "Strings",
+            "Algorithms",
+            "Core CS"
+        ],
+        "uri": "longest-palindromic-subsequence"
+    },
+    {
+        "id": 4847,
+        "title": "Candles Counting",
+        "difficulty": "Medium",
+        "tags": [
+            "Dynamic Programming",
+            "Algorithms",
+            "Medium",
+            "PIE",
+            "Core CS"
+        ],
+        "uri": "candles-2"
+    },
+    {
+        "id": 90,
+        "title": "Hyper Strings",
+        "difficulty": "Advanced",
+        "tags": [
+            "Dynamic Programming",
+            "Strings",
+            "Algorithms",
+            "Expert",
+            "Core CS"
+        ],
+        "uri": "hyper-strings"
+    },
+    {
+        "id": 2529,
+        "title": "Swap Permutation",
+        "difficulty": "Medium",
+        "tags": [
+            "Dynamic Programming",
+            "Algorithms",
+            "Medium",
+            "Core CS"
+        ],
+        "uri": "swappermutation"
+    },
+    {
+        "id": 2113,
+        "title": "Extremum Permutations",
+        "difficulty": "Medium",
+        "tags": [
+            "Dynamic Programming",
+            "Algorithms",
+            "Medium",
+            "Core CS"
+        ],
+        "uri": "extremum-permutations"
+    },
+    {
+        "id": 82,
+        "title": "Square Subsequences",
+        "difficulty": "Hard",
+        "tags": [
+            "Dynamic Programming",
+            "Strings",
+            "Algorithms",
+            "Hard",
+            "Core CS"
+        ],
+        "uri": "square-subsequences"
+    },
+    {
+        "id": 1051,
+        "title": "Dorsey Thief",
+        "difficulty": "Advanced",
+        "tags": [
+            "Dynamic Programming",
+            "Algorithms",
+            "Expert",
+            "Core CS"
+        ],
+        "uri": "dorsey-thief"
+    },
+    {
+        "id": 11882,
+        "title": "Mining",
+        "difficulty": "Advanced",
+        "tags": [
+            "Dynamic Programming",
+            "Divide and Conquer",
+            "Algorithms",
+            "Expert",
+            "Core CS"
+        ],
+        "uri": "mining"
+    },
+    {
+        "id": 3994,
+        "title": "Police Operation",
+        "difficulty": "Hard",
+        "tags": [
+            "Dynamic Programming",
+            "Algorithms",
+            "Hard",
+            "Core CS"
+        ],
+        "uri": "police-operation"
+    },
+    {
+        "id": 9844,
+        "title": "Zurikela's Graph",
+        "difficulty": "Hard",
+        "tags": [
+            "Dynamic Programming",
+            "Algorithms",
+            "Hard",
+            "Core CS"
+        ],
+        "uri": "zurikela"
+    },
+    {
+        "id": 1197,
+        "title": "Modify The Sequence",
+        "difficulty": "Advanced",
+        "tags": [
+            "Dynamic Programming",
+            "Algorithms",
+            "Expert",
+            "Core CS"
+        ],
+        "uri": "modify-the-sequence"
+    },
+    {
+        "id": 19176,
+        "title": "Longest Mod Path",
+        "difficulty": "Hard",
+        "tags": [
+            "Dynamic Programming",
+            "Algorithms",
+            "Hard",
+            "veryunlikelytag",
+            "Core CS"
+        ],
+        "uri": "longest-mod-path"
+    },
+    {
+        "id": 2293,
+        "title": "P-sequences",
+        "difficulty": "Hard",
+        "tags": [
+            "Dynamic Programming",
+            "Algorithms",
+            "Hard",
+            "Core CS"
+        ],
+        "uri": "p-sequences"
+    },
+    {
+        "id": 3260,
+        "title": "Robot",
+        "difficulty": "Advanced",
+        "tags": [
+            "Dynamic Programming",
+            "Algorithms",
+            "Data Structures",
+            "Expert",
+            "Core CS"
+        ],
+        "uri": "robot"
+    },
+    {
+        "id": 76,
+        "title": "Lucky Numbers",
+        "difficulty": "Expert",
+        "tags": [
+            "Dynamic Programming",
+            "Primes",
+            "Algorithms",
+            "Expert",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "lucky-numbers"
+    },
+    {
+        "id": 102,
+        "title": "Unfair Game",
+        "difficulty": "Advanced",
+        "tags": [
+            "Dynamic Programming",
+            "Graph Theory",
+            "Algorithms",
+            "Expert",
+            "Core CS"
+        ],
+        "uri": "unfair-game"
+    },
+    {
+        "id": 779,
+        "title": "Oil Well",
+        "difficulty": "Hard",
+        "tags": [
+            "Dynamic Programming",
+            "Algorithms",
+            "Hard",
+            "Core CS"
+        ],
+        "uri": "oil-well"
+    },
+    {
+        "id": 3434,
+        "title": "Find the Seed",
+        "difficulty": "Advanced",
+        "tags": [
+            "Dynamic Programming",
+            "Math",
+            "Algorithms",
+            "Expert",
+            "Core CS"
+        ],
+        "uri": "find-the-seed"
+    },
+    {
+        "id": 3435,
+        "title": "The Blacklist",
+        "difficulty": "Advanced",
+        "tags": [
+            "Dynamic Programming",
+            "Algorithms",
+            "Expert",
+            "Core CS"
+        ],
+        "uri": "the-blacklist"
+    },
+    {
+        "id": 2231,
+        "title": "Tree Pruning",
+        "difficulty": "Advanced",
+        "tags": [
+            "Dynamic Programming",
+            "Algorithms",
+            "Expert",
+            "Core CS"
+        ],
+        "uri": "tree-pruning"
+    },
+    {
+        "id": 1767,
+        "title": "Ones and Twos",
+        "difficulty": "Hard",
+        "tags": [
+            "Dynamic Programming",
+            "Algorithms",
+            "Hard",
+            "Core CS"
+        ],
+        "uri": "ones-and-twos"
+    },
+    {
+        "id": 83,
+        "title": "Count Scorecards",
+        "difficulty": "Expert",
+        "tags": [
+            "Dynamic Programming",
+            "Algorithms",
+            "Expert",
+            "Core CS"
+        ],
+        "uri": "count-scorecards"
+    },
+    {
+        "id": 6530,
+        "title": "Vim War",
+        "difficulty": "Advanced",
+        "tags": [
+            "Dynamic Programming",
+            "Algorithms",
+            "Expert",
+            "Core CS"
+        ],
+        "uri": "vim-war"
+    },
+    {
+        "id": 2562,
+        "title": "Best spot",
+        "difficulty": "Advanced",
+        "tags": [
+            "Dynamic Programming",
+            "Algorithms",
+            "Digital Image Analysis",
+            "Expert",
+            "Core CS"
+        ],
+        "uri": "best-spot"
+    },
+    {
+        "id": 1555,
+        "title": "Divisible Numbers",
+        "difficulty": "Expert",
+        "tags": [
+            "Dynamic Programming",
+            "Math",
+            "Algorithms",
+            "Expert",
+            "Core CS"
+        ],
+        "uri": "divisible-numbers"
+    },
+    {
+        "id": 17916,
+        "title": "Unique Divide And Conquer       ",
+        "difficulty": "Advanced",
+        "tags": [
+            "Dynamic Programming",
+            "Algorithms",
+            "Combinatorics",
+            "Expert",
+            "Core CS"
+        ],
+        "uri": "unique-divide-and-conquer"
+    },
+    {
+        "id": 16833,
+        "title": "King and Four Sons",
+        "difficulty": "Expert",
+        "tags": [
+            "Dynamic Programming",
+            "Algorithms",
+            "Expert",
+            "Core CS"
+        ],
+        "uri": "happy-king"
+    },
+    {
+        "id": 3124,
+        "title": "Dortmund Dilemma",
+        "difficulty": "Advanced",
+        "tags": [
+            "Dynamic Programming",
+            "Algorithms",
+            "Expert",
+            "Core CS"
+        ],
+        "uri": "dortmund-dilemma"
+    },
+    {
+        "id": 19130,
+        "title": "Super Kth LIS",
+        "difficulty": "Advanced",
+        "tags": [
+            "Dynamic Programming",
+            "Math",
+            "Algorithms",
+            "Combinatorics",
+            "Expert",
+            "Core CS"
+        ],
+        "uri": "super-kth-lis"
+    },
+    {
+        "id": 20981,
+        "title": "Counting the Ways",
+        "difficulty": "Expert",
+        "tags": [
+            "Dynamic Programming",
+            "Algorithms",
+            "Expert",
+            "Core CS"
+        ],
+        "uri": "count-ways-1"
+    },
+    {
+        "id": 22736,
+        "title": "Hard Disk Drives",
+        "difficulty": "Expert",
+        "tags": [
+            "Dynamic Programming",
+            "Algorithms",
+            "Expert",
+            "optimization",
+            "Core CS"
+        ],
+        "uri": "hard-drive-disks"
+    },
+    {
+        "id": 1776,
+        "title": "Separate the chocolate",
+        "difficulty": "Expert",
+        "tags": [
+            "Dynamic Programming",
+            "Algorithms",
+            "Expert",
+            "Core CS"
+        ],
+        "uri": "separate-the-chocolate"
+    },
+    {
+        "id": 915,
+        "title": "Lonely Integer",
+        "difficulty": "Easy",
+        "tags": [
+            "Search",
+            "Bit Manipulation",
+            "Algorithms",
+            "Easy",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "lonely-integer"
+    },
+    {
+        "id": 2381,
+        "title": "Maximizing XOR",
+        "difficulty": "Easy",
+        "tags": [
+            "Bit Manipulation",
+            "Algorithms",
+            "Easy",
+            "Simple Maths",
+            "XOR",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "maximizing-xor"
+    },
+    {
+        "id": 3396,
+        "title": "Counter game",
+        "difficulty": "Medium",
+        "tags": [
+            "Bit Manipulation",
+            "Algorithms",
+            "Medium",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "counter-game"
+    },
+    {
+        "id": 16469,
+        "title": "Xor-sequence",
+        "difficulty": "Medium",
+        "tags": [
+            "Math",
+            "Bit Manipulation",
+            "Algorithms",
+            "Medium",
+            "XOR",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "xor-se"
+    },
+    {
+        "id": 25113,
+        "title": "Sum vs XOR",
+        "difficulty": "Easy",
+        "tags": [
+            "Math",
+            "Algorithms",
+            "Easy",
+            "problem-solving",
+            "Core CS",
+            "bit operations"
+        ],
+        "uri": "sum-vs-xor"
+    },
+    {
+        "id": 27667,
+        "title": "The Great XOR",
+        "difficulty": "Medium",
+        "tags": [
+            "Bit Manipulation",
+            "Algorithms",
+            "Medium",
+            "XOR",
+            "Basic Maths",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "the-great-xor"
+    },
+    {
+        "id": 5529,
+        "title": "Flipping bits",
+        "difficulty": "Easy",
+        "tags": [
+            "Bit Manipulation",
+            "Algorithms",
+            "Easy",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "flipping-bits"
+    },
+    {
+        "id": 21397,
+        "title": "Yet Another Minimax Problem",
+        "difficulty": "Medium",
+        "tags": [
+            "Algorithms",
+            "Easy",
+            "Greedy Algorithms",
+            "trie",
+            "Bitwise Manipulation",
+            "Core CS"
+        ],
+        "uri": "yet-another-minimax-problem"
+    },
+    {
+        "id": 2624,
+        "title": "Sansa and XOR",
+        "difficulty": "Medium",
+        "tags": [
+            "Bit Manipulation",
+            "Algorithms",
+            "Medium",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "sansa-and-xor"
+    },
+    {
+        "id": 5518,
+        "title": "AND Product",
+        "difficulty": "Medium",
+        "tags": [
+            "Bit Manipulation",
+            "Algorithms",
+            "Medium",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "and-product"
+    },
+    {
+        "id": 49794,
+        "title": "Winning Lottery Ticket",
+        "difficulty": "Medium",
+        "tags": [
+            "Strings",
+            "Bitmasks"
+        ],
+        "uri": "winning-lottery-ticket"
+    },
+    {
+        "id": 1148,
+        "title": "Xoring Ninja",
+        "difficulty": "Hard",
+        "tags": [
+            "Bit Manipulation",
+            "Algorithms",
+            "Hard",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "xoring-ninja"
+    },
+    {
+        "id": 2326,
+        "title": "Cipher",
+        "difficulty": "Medium",
+        "tags": [
+            "Bit Manipulation",
+            "Algorithms",
+            "Medium",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "cipher"
+    },
+    {
+        "id": 24512,
+        "title": "XOR Matrix",
+        "difficulty": "Hard",
+        "tags": [
+            "Bit Manipulation",
+            "Algorithms",
+            "XOR",
+            "Hard",
+            "Core CS"
+        ],
+        "uri": "xor-matrix"
+    },
+    {
+        "id": 13530,
+        "title": "What's Next?",
+        "difficulty": "Medium",
+        "tags": [
+            "Bit Manipulation",
+            "Algorithms",
+            "Medium",
+            "simulation",
+            "Core CS"
+        ],
+        "uri": "whats-next"
+    },
+    {
+        "id": 45,
+        "title": "String Transmission",
+        "difficulty": "Hard",
+        "tags": [
+            "Bit Manipulation",
+            "Prime",
+            "Algorithms",
+            "Hard",
+            "Core CS"
+        ],
+        "uri": "string-transmission"
+    },
+    {
+        "id": 16865,
+        "title": "A or B",
+        "difficulty": "Medium",
+        "tags": [
+            "Bit Manipulation",
+            "Algorithms",
+            "Medium",
+            "or",
+            "Core CS"
+        ],
+        "uri": "aorb"
+    },
+    {
+        "id": 94,
+        "title": "Manipulative Numbers",
+        "difficulty": "Hard",
+        "tags": [
+            "Bit Manipulation",
+            "Hamiltonian",
+            "Algorithms",
+            "Hard",
+            "Core CS"
+        ],
+        "uri": "manipulative-numbers"
+    },
+    {
+        "id": 328,
+        "title": "Stone Game",
+        "difficulty": "Hard",
+        "tags": [
+            "Bit Manipulation",
+            "Algorithms",
+            "Hard",
+            "Core CS"
+        ],
+        "uri": "stonegame"
+    },
+    {
+        "id": 56,
+        "title": "2's complement",
+        "difficulty": "Advanced",
+        "tags": [
+            "Bit Manipulation",
+            "Algorithms",
+            "Expert",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "2s-complement"
+    },
+    {
+        "id": 77,
+        "title": "Changing Bits",
+        "difficulty": "Advanced",
+        "tags": [
+            "Bit Manipulation",
+            "Segment Tree",
+            "Algorithms",
+            "Binary Search",
+            "Expert",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "changing-bits"
+    },
+    {
+        "id": 62,
+        "title": "XOR key",
+        "difficulty": "Advanced",
+        "tags": [
+            "Bit Manipulation",
+            "Trees",
+            "B-Trees",
+            "Algorithms",
+            "Expert",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "xor-key"
+    },
+    {
+        "id": 21548,
+        "title": "Maximizing the Function ",
+        "difficulty": "Hard",
+        "tags": [
+            "Bit Manipulation",
+            "Algorithms",
+            "Implementation",
+            "Hard",
+            "Core CS"
+        ],
+        "uri": "maximizing-the-function"
+    },
+    {
+        "id": 3263,
+        "title": "XOR Subsequences",
+        "difficulty": "Advanced",
+        "tags": [
+            "Bit Manipulation",
+            "Algorithms",
+            "Expert",
+            "Core CS"
+        ],
+        "uri": "xor-subsequence"
+    },
+    {
+        "id": 21862,
+        "title": "Iterate It",
+        "difficulty": "Expert",
+        "tags": [
+            "Bit Manipulation",
+            "Number Theory",
+            "Algorithms",
+            "Expert",
+            "Core CS"
+        ],
+        "uri": "iterate-it"
+    },
+    {
+        "id": 3898,
+        "title": "Hamming Distance",
+        "difficulty": "Expert",
+        "tags": [
+            "Bit Manipulation",
+            "Algorithms",
+            "Expert",
+            "Core CS"
+        ],
+        "uri": "hamming-distance"
+    },
+    {
+        "id": 2056,
+        "title": "Mixing proteins",
+        "difficulty": "Hard",
+        "tags": [
+            "Math",
+            "Bit Manipulation",
+            "Number Theory",
+            "ad-hoc",
+            "Hard",
+            "Core CS"
+        ],
+        "uri": "pmix"
+    },
+    {
+        "id": 36028,
+        "title": "The Power Sum",
+        "difficulty": "Medium",
+        "tags": [
+            "Algorithms",
+            "Recursion",
+            "Easy",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "the-power-sum"
+    },
+    {
+        "id": 35931,
+        "title": "Crossword Puzzle",
+        "difficulty": "Medium",
+        "tags": [
+            "Algorithms",
+            "Recursion",
+            "Medium",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "crossword-puzzle"
+    },
+    {
+        "id": 35933,
+        "title": "Recursive Digit Sum",
+        "difficulty": "Medium",
+        "tags": [
+            "Algorithms",
+            "Recursion",
+            "Medium",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "recursive-digit-sum"
+    },
+    {
+        "id": 16694,
+        "title": "Simplified Chess Engine",
+        "difficulty": "Medium",
+        "tags": [
+            "Algorithms",
+            "Recursion",
+            "Medium",
+            "chess",
+            "Core CS"
+        ],
+        "uri": "simplified-chess-engine"
+    },
+    {
+        "id": 36024,
+        "title": "Password Cracker",
+        "difficulty": "Medium",
+        "tags": [
+            "Depth First Search",
+            "Algorithms",
+            "Recursion",
+            "Memoization",
+            "Medium",
+            "problem-solving",
+            "Core CS",
+            "Dynamic Progamming"
+        ],
+        "uri": "password-cracker"
+    },
+    {
+        "id": 36022,
+        "title": "Arithmetic Expressions",
+        "difficulty": "Hard",
+        "tags": [
+            "Algorithms",
+            "Recursion",
+            "Hard",
+            "Core CS"
+        ],
+        "uri": "arithmetic-expressions"
+    },
+    {
+        "id": 27769,
+        "title": " Stone Division, Revisited",
+        "difficulty": "Medium",
+        "tags": [
+            "Dynamic Programming",
+            "Algorithms",
+            "Recursion",
+            "Medium",
+            "Core CS"
+        ],
+        "uri": "stone-division-2"
+    },
+    {
+        "id": 36029,
+        "title": "K Factorization",
+        "difficulty": "Hard",
+        "tags": [
+            "Algorithms",
+            "Recursion",
+            "Hard",
+            "Core CS"
+        ],
+        "uri": "k-factorization"
+    },
+    {
+        "id": 35940,
+        "title": "Bowling Pins",
+        "difficulty": "Hard",
+        "tags": [
+            "Algorithms",
+            "Recursion",
+            "Medium",
+            "Core CS"
+        ],
+        "uri": "bowling-pins"
+    },
+    {
+        "id": 17191,
+        "title": "Simplified Chess Engine II",
+        "difficulty": "Hard",
+        "tags": [
+            "Algorithms",
+            "Recursion",
+            "Memoization",
+            "chess",
+            "Backtracking",
+            "games",
+            "Core CS"
+        ],
+        "uri": "simplified-chess-engine-ii"
+    },
+    {
+        "id": 350,
+        "title": "Repetitive K-Sums",
+        "difficulty": "Advanced",
+        "tags": [
+            "Algorithms",
+            "Recursion",
+            "Expert",
+            "Core CS"
+        ],
+        "uri": "repeat-k-sums"
+    },
+    {
+        "id": 21904,
+        "title": "Game of Stones",
+        "difficulty": "Easy",
+        "tags": [
+            "Game",
+            "Game Theory",
+            "Algorithms",
+            "Easy",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "game-of-stones-1"
+    },
+    {
+        "id": 21908,
+        "title": "Tower Breakers ",
+        "difficulty": "Easy",
+        "tags": [
+            "Game Theory",
+            "Algorithms",
+            "Easy",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "tower-breakers-1"
+    },
+    {
+        "id": 21916,
+        "title": "A Chessboard Game",
+        "difficulty": "Easy",
+        "tags": [
+            "Game",
+            "Game Theory",
+            "Algorithms",
+            "Easy",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "a-chessboard-game-1"
+    },
+    {
+        "id": 21912,
+        "title": "Introduction to Nim Game",
+        "difficulty": "Easy",
+        "tags": [
+            "Game Theory",
+            "Algorithms",
+            "Easy",
+            "Nim",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "nim-game-1"
+    },
+    {
+        "id": 21905,
+        "title": "Misère Nim",
+        "difficulty": "Easy",
+        "tags": [
+            "Game",
+            "Game Theory",
+            "Algorithms",
+            "Easy",
+            "Core CS"
+        ],
+        "uri": "misere-nim-1"
+    },
+    {
+        "id": 21906,
+        "title": "Nimble Game",
+        "difficulty": "Easy",
+        "tags": [
+            "Game",
+            "Game Theory",
+            "Algorithms",
+            "Easy",
+            "Core CS"
+        ],
+        "uri": "nimble-game-1"
+    },
+    {
+        "id": 16638,
+        "title": "Alice and Bob's Silly Game",
+        "difficulty": "Medium",
+        "tags": [
+            "Game Theory",
+            "Algorithms",
+            "Medium",
+            "prime number",
+            "Core CS"
+        ],
+        "uri": "alice-and-bobs-silly-game"
+    },
+    {
+        "id": 21907,
+        "title": "Poker Nim",
+        "difficulty": "Easy",
+        "tags": [
+            "Game",
+            "Game Theory",
+            "Algorithms",
+            "Easy",
+            "Core CS"
+        ],
+        "uri": "poker-nim-1"
+    },
+    {
+        "id": 21910,
+        "title": "Tower Breakers, Revisited!",
+        "difficulty": "Medium",
+        "tags": [
+            "Game Theory",
+            "Algorithms",
+            "Medium",
+            "nim-sum",
+            "Core CS"
+        ],
+        "uri": "tower-breakers-revisited-1"
+    },
+    {
+        "id": 21911,
+        "title": "Tower Breakers, Again!",
+        "difficulty": "Medium",
+        "tags": [
+            "Game Theory",
+            "Algorithms",
+            "Medium",
+            "sprague_grundy",
+            "Core CS"
+        ],
+        "uri": "tower-breakers-again-1"
+    },
+    {
+        "id": 22357,
+        "title": "Zero-Move Nim",
+        "difficulty": "Medium",
+        "tags": [
+            "Game Theory",
+            "Algorithms",
+            "Medium",
+            "Core CS"
+        ],
+        "uri": "zero-move-nim"
+    },
+    {
+        "id": 21914,
+        "title": "Chessboard Game, Again!",
+        "difficulty": "Medium",
+        "tags": [
+            "Game",
+            "Game Theory",
+            "Algorithms",
+            "Medium",
+            "Core CS"
+        ],
+        "uri": "chessboard-game-again-1"
+    },
+    {
+        "id": 21917,
+        "title": "Digits Square Board",
+        "difficulty": "Medium",
+        "tags": [
+            "Game Theory",
+            "Algorithms",
+            "Medium",
+            "games",
+            "grundy",
+            "Core CS"
+        ],
+        "uri": "digits-square-board-1"
+    },
+    {
+        "id": 21909,
+        "title": "Fun Game",
+        "difficulty": "Medium",
+        "tags": [
+            "Game Theory",
+            "Algorithms",
+            "Medium",
+            "Greedy Algorithms",
+            "sortings",
+            "games",
+            "Core CS"
+        ],
+        "uri": "fun-game-1"
+    },
+    {
+        "id": 26005,
+        "title": "Stone Division",
+        "difficulty": "Hard",
+        "tags": [
+            "Game Theory",
+            "Algorithms",
+            "Hard",
+            "grundy",
+            "Core CS"
+        ],
+        "uri": "stone-division"
+    },
+    {
+        "id": 2594,
+        "title": "Chocolate in Box",
+        "difficulty": "Medium",
+        "tags": [
+            "Game Theory",
+            "Algorithms",
+            "Medium",
+            "nim-sum",
+            "Core CS"
+        ],
+        "uri": "chocolate-in-box"
+    },
+    {
+        "id": 18182,
+        "title": "Kitty and Katty",
+        "difficulty": "Medium",
+        "tags": [
+            "Game Theory",
+            "Algorithms",
+            "Medium",
+            "Observation",
+            "Core CS"
+        ],
+        "uri": "kitty-and-katty"
+    },
+    {
+        "id": 21913,
+        "title": "Powers Game",
+        "difficulty": "Medium",
+        "tags": [
+            "Math",
+            "Game Theory",
+            "Algorithms",
+            "Medium",
+            "games",
+            "Core CS"
+        ],
+        "uri": "powers-game-1"
+    },
+    {
+        "id": 21915,
+        "title": "Deforestation",
+        "difficulty": "Medium",
+        "tags": [
+            "Game Theory",
+            "Algorithms",
+            "Medium",
+            "hackenbush",
+            "Core CS"
+        ],
+        "uri": "deforestation-1"
+    },
+    {
+        "id": 15132,
+        "title": "Bob and Ben",
+        "difficulty": "Medium",
+        "tags": [
+            "Game Theory",
+            "Algorithms",
+            "Medium",
+            "Core CS"
+        ],
+        "uri": "bob-and-ben"
+    },
+    {
+        "id": 21918,
+        "title": "Tower Breakers - The Final Battle",
+        "difficulty": "Medium",
+        "tags": [
+            "Game Theory",
+            "Algorithms",
+            "Medium",
+            "Core CS"
+        ],
+        "uri": "tower-breakers-the-final-battle-1"
+    },
+    {
+        "id": 19051,
+        "title": "Simple Game",
+        "difficulty": "Hard",
+        "tags": [
+            "Game",
+            "Game Theory",
+            "Algorithms",
+            "Hard",
+            "Core CS"
+        ],
+        "uri": "simple-game"
+    },
+    {
+        "id": 59,
+        "title": "Permutation game",
+        "difficulty": "Medium",
+        "tags": [
+            "Math",
+            "Game Theory",
+            "Combinations",
+            "Algorithms",
+            "Medium",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "permutation-game"
+    },
+    {
+        "id": 19994,
+        "title": "Move the Coins",
+        "difficulty": "Hard",
+        "tags": [
+            "Game",
+            "Game Theory",
+            "Algorithms",
+            "Medium",
+            "Core CS"
+        ],
+        "uri": "move-the-coins"
+    },
+    {
+        "id": 2385,
+        "title": "Play on benders",
+        "difficulty": "Medium",
+        "tags": [
+            "Game Theory",
+            "Algorithms",
+            "Medium",
+            "Core CS"
+        ],
+        "uri": "benders-play"
+    },
+    {
+        "id": 15141,
+        "title": "New Year Game",
+        "difficulty": "Medium",
+        "tags": [
+            "Dynamic Programming",
+            "Math",
+            "Game Theory",
+            "Algorithms",
+            "Medium",
+            "games",
+            "Core CS"
+        ],
+        "uri": "newyear-game"
+    },
+    {
+        "id": 46,
+        "title": "Stone Piles",
+        "difficulty": "Hard",
+        "tags": [
+            "Math",
+            "Sparaj-Grundy Theory",
+            "Game Theory",
+            "Algorithms",
+            "Hard",
+            "Core CS"
+        ],
+        "uri": "stone-piles"
+    },
+    {
+        "id": 800,
+        "title": "Chocolate Game",
+        "difficulty": "Hard",
+        "tags": [
+            "Math",
+            "Game Theory",
+            "Algorithms",
+            "Hard",
+            "Core CS"
+        ],
+        "uri": "chocolate-game"
+    },
+    {
+        "id": 3568,
+        "title": "The Prime Game ",
+        "difficulty": "Hard",
+        "tags": [
+            "Game Theory",
+            "Algorithms",
+            "Hard",
+            "Core CS"
+        ],
+        "uri": "the-prime-game"
+    },
+    {
+        "id": 823,
+        "title": "Vertical Rooks",
+        "difficulty": "Medium",
+        "tags": [
+            "Math",
+            "Game Theory",
+            "Algorithms",
+            "Medium",
+            "Core CS"
+        ],
+        "uri": "vertical-rooks"
+    },
+    {
+        "id": 2497,
+        "title": "A stones game",
+        "difficulty": "Medium",
+        "tags": [
+            "Game Theory",
+            "Algorithms",
+            "Medium",
+            "Core CS"
+        ],
+        "uri": "half"
+    },
+    {
+        "id": 26946,
+        "title": "Tastes Like Winning",
+        "difficulty": "Expert",
+        "tags": [
+            "Game Theory",
+            "Algorithms",
+            "Combinatorics",
+            "Expert",
+            "Core CS",
+            "Sprague Grundy Theorm"
+        ],
+        "uri": "taste-of-win"
+    },
+    {
+        "id": 27425,
+        "title": "Walking the Approximate Longest Path",
+        "difficulty": "Hard",
+        "tags": [
+            "Algorithms",
+            "Graph",
+            "Hard",
+            "Core CS"
+        ],
+        "uri": "walking-the-approximate-longest-path"
+    },
+    {
+        "id": 28719,
+        "title": "Sam's Puzzle (Approximate)",
+        "difficulty": "Advanced",
+        "tags": [
+            "NP Complete",
+            "Algorithms",
+            "Expert",
+            "approximation",
+            "Core CS"
+        ],
+        "uri": "sams-puzzle"
+    },
+    {
+        "id": 113,
+        "title": "Spies, Revised",
+        "difficulty": "Expert",
+        "tags": [
+            "Search",
+            "NP Complete",
+            "NP Complete problems",
+            "N Queeens",
+            "Algorithms",
+            "Expert",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "spies-revised"
+    },
+    {
+        "id": 331,
+        "title": "TBS Problem",
+        "difficulty": "Expert",
+        "tags": [
+            "Search",
+            "NP Complete",
+            "Travelling Salseman",
+            "NP Complete problems",
+            "Algorithms",
+            "Expert",
+            "Core CS"
+        ],
+        "uri": "tbsp"
+    },
+    {
+        "id": 63495,
+        "title": "Prime Dates",
+        "difficulty": "Medium",
+        "tags": [
+            "prime number",
+            "#date"
+        ],
+        "uri": "prime-date"
+    },
+    {
+        "id": 37967,
+        "title": "Minimum Operations",
+        "difficulty": "Medium",
+        "tags": [
+            "Debugging",
+            "Core CS",
+            "Implementation Bugs"
+        ],
+        "uri": "minimum-operations"
+    },
+    {
+        "id": 37949,
+        "title": "XOR Strings",
+        "difficulty": "Easy",
+        "tags": [
+            "CoreCS",
+            "Missing Lines"
+        ],
+        "uri": "strings-xor"
+    },
+    {
+        "id": 63282,
+        "title": "Zig Zag Sequence",
+        "difficulty": "Medium",
+        "tags": [
+            "adhoc",
+            "implemention"
+        ],
+        "uri": "zig-zag-sequence"
+    },
+    {
+        "id": 37953,
+        "title": "Smart Number",
+        "difficulty": "Easy",
+        "tags": [
+            "Algorithms",
+            "Easy",
+            "Debugging",
+            "CoreCS"
+        ],
+        "uri": "smart-number"
+    }
+]

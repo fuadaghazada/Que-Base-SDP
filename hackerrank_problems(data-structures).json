@@ -1,0 +1,1555 @@
+[
+    {
+        "id": 13579,
+        "title": "Arrays - DS",
+        "difficulty": "Easy",
+        "tags": [
+            "Algorithms",
+            "Data Structures",
+            "Arrays",
+            "Core CS"
+        ],
+        "uri": "arrays-ds"
+    },
+    {
+        "id": 13581,
+        "title": "2D Array - DS",
+        "difficulty": "Easy",
+        "tags": [
+            "Algorithms",
+            "Easy",
+            "Data Structures",
+            "Arrays",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "2d-array"
+    },
+    {
+        "id": 13642,
+        "title": "Dynamic Array",
+        "difficulty": "Easy",
+        "tags": [
+            "Algorithms",
+            "Data Structures",
+            "Arrays",
+            "Core CS"
+        ],
+        "uri": "dynamic-array"
+    },
+    {
+        "id": 22538,
+        "title": "Left Rotation",
+        "difficulty": "Easy",
+        "tags": [
+            "Algorithms",
+            "Data Structures",
+            "Arrays",
+            "Core CS"
+        ],
+        "uri": "array-left-rotation"
+    },
+    {
+        "id": 13724,
+        "title": "Sparse Arrays",
+        "difficulty": "Medium",
+        "tags": [
+            "Algorithms",
+            "Medium",
+            "Data Structures",
+            "Arrays",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "sparse-arrays"
+    },
+    {
+        "id": 1636,
+        "title": "Array Manipulation",
+        "difficulty": "Hard",
+        "tags": [
+            "Algorithms",
+            "Greedy Algorithms",
+            "Hard",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "crush"
+    },
+    {
+        "id": 1082,
+        "title": "Print the Elements of a Linked List",
+        "difficulty": "Easy",
+        "tags": [
+            "Algorithms",
+            "Linked Lists",
+            "Data Structures",
+            "Core CS"
+        ],
+        "uri": "print-the-elements-of-a-linked-list"
+    },
+    {
+        "id": 1087,
+        "title": "Insert a Node at the Tail of a Linked List",
+        "difficulty": "Easy",
+        "tags": [
+            "Algorithms",
+            "Linked Lists",
+            "Data Structures",
+            "Core CS"
+        ],
+        "uri": "insert-a-node-at-the-tail-of-a-linked-list"
+    },
+    {
+        "id": 1085,
+        "title": "Insert a node at the head of a linked list",
+        "difficulty": "Easy",
+        "tags": [
+            "Algorithms",
+            "Linked Lists",
+            "Data Structures",
+            "Core CS"
+        ],
+        "uri": "insert-a-node-at-the-head-of-a-linked-list"
+    },
+    {
+        "id": 1088,
+        "title": "Insert a node at a specific position in a linked list",
+        "difficulty": "Easy",
+        "tags": [
+            "Algorithms",
+            "Linked Lists",
+            "Easy",
+            "Data Structures",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "insert-a-node-at-a-specific-position-in-a-linked-list"
+    },
+    {
+        "id": 1112,
+        "title": "Delete a Node",
+        "difficulty": "Easy",
+        "tags": [
+            "Algorithms",
+            "Linked Lists",
+            "Data Structures",
+            "Core CS"
+        ],
+        "uri": "delete-a-node-from-a-linked-list"
+    },
+    {
+        "id": 1147,
+        "title": "Print in Reverse",
+        "difficulty": "Easy",
+        "tags": [
+            "Algorithms",
+            "Linked Lists",
+            "Data Structures",
+            "Core CS"
+        ],
+        "uri": "print-the-elements-of-a-linked-list-in-reverse"
+    },
+    {
+        "id": 1149,
+        "title": "Reverse a linked list",
+        "difficulty": "Easy",
+        "tags": [
+            "Algorithms",
+            "Linked Lists",
+            "Data Structures",
+            "Core CS"
+        ],
+        "uri": "reverse-a-linked-list"
+    },
+    {
+        "id": 1150,
+        "title": "Compare two linked lists",
+        "difficulty": "Easy",
+        "tags": [
+            "Algorithms",
+            "Linked Lists",
+            "Data Structures",
+            "Core CS"
+        ],
+        "uri": "compare-two-linked-lists"
+    },
+    {
+        "id": 1155,
+        "title": "Merge two sorted linked lists",
+        "difficulty": "Easy",
+        "tags": [
+            "Algorithms",
+            "Linked Lists",
+            "Data Structures",
+            "Core CS"
+        ],
+        "uri": "merge-two-sorted-linked-lists"
+    },
+    {
+        "id": 1156,
+        "title": "Get Node Value",
+        "difficulty": "Easy",
+        "tags": [
+            "Algorithms",
+            "Linked Lists",
+            "Data Structures",
+            "Core CS"
+        ],
+        "uri": "get-the-value-of-the-node-at-a-specific-position-from-the-tail"
+    },
+    {
+        "id": 1157,
+        "title": "Delete duplicate-value nodes from a sorted linked list",
+        "difficulty": "Easy",
+        "tags": [
+            "Algorithms",
+            "Linked Lists",
+            "Data Structures",
+            "Core CS"
+        ],
+        "uri": "delete-duplicate-value-nodes-from-a-sorted-linked-list"
+    },
+    {
+        "id": 1163,
+        "title": "Cycle Detection",
+        "difficulty": "Medium",
+        "tags": [
+            "Algorithms",
+            "Linked Lists",
+            "Data Structures",
+            "Core CS"
+        ],
+        "uri": "detect-whether-a-linked-list-contains-a-cycle"
+    },
+    {
+        "id": 1167,
+        "title": "Find Merge Point of Two Lists",
+        "difficulty": "Easy",
+        "tags": [
+            "Algorithms",
+            "Linked Lists",
+            "Easy",
+            "Data Structures",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "find-the-merge-point-of-two-joined-linked-lists"
+    },
+    {
+        "id": 1168,
+        "title": "Inserting a Node Into a Sorted Doubly Linked List",
+        "difficulty": "Easy",
+        "tags": [
+            "Algorithms",
+            "Linked Lists",
+            "Easy",
+            "Data Structures",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "insert-a-node-into-a-sorted-doubly-linked-list"
+    },
+    {
+        "id": 1169,
+        "title": "Reverse a doubly linked list",
+        "difficulty": "Easy",
+        "tags": [
+            "Algorithms",
+            "Linked Lists",
+            "Easy",
+            "Data Structures",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "reverse-a-doubly-linked-list"
+    },
+    {
+        "id": 8131,
+        "title": "Tree: Preorder Traversal",
+        "difficulty": "Easy",
+        "tags": [
+            "Trees",
+            "Algorithms",
+            "Data Structures",
+            "Core CS"
+        ],
+        "uri": "tree-preorder-traversal"
+    },
+    {
+        "id": 8133,
+        "title": "Tree: Postorder Traversal",
+        "difficulty": "Easy",
+        "tags": [
+            "Trees",
+            "Algorithms",
+            "Data Structures",
+            "Core CS"
+        ],
+        "uri": "tree-postorder-traversal"
+    },
+    {
+        "id": 8132,
+        "title": "Tree: Inorder Traversal",
+        "difficulty": "Easy",
+        "tags": [
+            "Trees",
+            "Algorithms",
+            "Data Structures",
+            "Core CS"
+        ],
+        "uri": "tree-inorder-traversal"
+    },
+    {
+        "id": 8793,
+        "title": "Tree: Height of a Binary Tree",
+        "difficulty": "Easy",
+        "tags": [
+            "Trees",
+            "Algorithms",
+            "Easy",
+            "Data Structures",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "tree-height-of-a-binary-tree"
+    },
+    {
+        "id": 8796,
+        "title": "Tree : Top View",
+        "difficulty": "Easy",
+        "tags": [
+            "Trees",
+            "Algorithms",
+            "Data Structures",
+            "Core CS"
+        ],
+        "uri": "tree-top-view"
+    },
+    {
+        "id": 8794,
+        "title": "Tree: Level Order Traversal",
+        "difficulty": "Easy",
+        "tags": [
+            "Trees",
+            "Algorithms",
+            "Data Structures",
+            "Core CS"
+        ],
+        "uri": "tree-level-order-traversal"
+    },
+    {
+        "id": 8829,
+        "title": "Binary Search Tree : Insertion",
+        "difficulty": "Easy",
+        "tags": [
+            "Trees",
+            "Algorithms",
+            "Data Structures",
+            "Core CS"
+        ],
+        "uri": "binary-search-tree-insertion"
+    },
+    {
+        "id": 8795,
+        "title": "Tree: Huffman Decoding ",
+        "difficulty": "Medium",
+        "tags": [
+            "Trees",
+            "Algorithms",
+            "Medium",
+            "Data Structures",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "tree-huffman-decoding"
+    },
+    {
+        "id": 8831,
+        "title": "Binary Search Tree : Lowest Common Ancestor",
+        "difficulty": "Easy",
+        "tags": [
+            "Trees",
+            "Algorithms",
+            "Easy",
+            "Data Structures",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "binary-search-tree-lowest-common-ancestor"
+    },
+    {
+        "id": 6375,
+        "title": "Swap Nodes [Algo]",
+        "difficulty": "Medium",
+        "tags": [
+            "Trees",
+            "Algorithms",
+            "Medium",
+            "Data Structures",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "swap-nodes-algo"
+    },
+    {
+        "id": 29033,
+        "title": "Kitty's Calculations on a Tree",
+        "difficulty": "Advanced",
+        "tags": [
+            "Trees",
+            "Algorithms",
+            "Data Structures",
+            "Memoization and Dynamic Programming",
+            "Hard",
+            "Core CS"
+        ],
+        "uri": "kittys-calculations-on-a-tree"
+    },
+    {
+        "id": 22541,
+        "title": "Is This a Binary Search Tree?",
+        "difficulty": "Medium",
+        "tags": [
+            "Trees",
+            "Algorithms",
+            "Data Structures",
+            "Core CS"
+        ],
+        "uri": "is-binary-search-tree"
+    },
+    {
+        "id": 13850,
+        "title": "Square-Ten Tree",
+        "difficulty": "Hard",
+        "tags": [
+            "Trees",
+            "Algorithms",
+            "Data Structures",
+            "ad-hoc",
+            "big integers",
+            "Core CS"
+        ],
+        "uri": "square-ten-tree"
+    },
+    {
+        "id": 22258,
+        "title": "Balanced Forest",
+        "difficulty": "Hard",
+        "tags": [
+            "Trees",
+            "Algorithms",
+            "Data Structures",
+            "Hard",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "balanced-forest"
+    },
+    {
+        "id": 18364,
+        "title": "Jenny's Subtrees",
+        "difficulty": "Hard",
+        "tags": [
+            "Trees",
+            "Algorithms",
+            "Data Structures",
+            "Core CS"
+        ],
+        "uri": "jenny-subtrees"
+    },
+    {
+        "id": 20906,
+        "title": "Tree Coordinates",
+        "difficulty": "Expert",
+        "tags": [
+            "Trees",
+            "Algorithms",
+            "Data Structures",
+            "Expert",
+            "Core CS"
+        ],
+        "uri": "tree-coordinates"
+    },
+    {
+        "id": 21128,
+        "title": "Array Pairs",
+        "difficulty": "Advanced",
+        "tags": [
+            "RangeQuery"
+        ],
+        "uri": "array-pairs"
+    },
+    {
+        "id": 9191,
+        "title": "Self Balancing Tree",
+        "difficulty": "Medium",
+        "tags": [
+            "Trees",
+            "Algorithms",
+            "Data Structures",
+            "avl",
+            "binary search tree",
+            "Core CS",
+            "Balanced Trees"
+        ],
+        "uri": "self-balancing-tree"
+    },
+    {
+        "id": 8949,
+        "title": "Array and simple queries",
+        "difficulty": "Hard",
+        "tags": [
+            "Algorithms",
+            "Data Structures",
+            "Core CS",
+            "Balanced Trees"
+        ],
+        "uri": "array-and-simple-queries"
+    },
+    {
+        "id": 104,
+        "title": "Median Updates",
+        "difficulty": "Hard",
+        "tags": [
+            "Search",
+            "Trees",
+            "Algorithms",
+            "Data Structures",
+            "Core CS",
+            "Balanced Trees"
+        ],
+        "uri": "median"
+    },
+    {
+        "id": 8223,
+        "title": "Merging Communities ",
+        "difficulty": "Hard",
+        "tags": [
+            "Algorithms",
+            "Data Structures",
+            "Disjoint Set",
+            "Core CS"
+        ],
+        "uri": "merging-communities"
+    },
+    {
+        "id": 15379,
+        "title": "QHEAP1",
+        "difficulty": "Easy",
+        "tags": [
+            "Algorithms",
+            "Data Structures",
+            "Min Heap",
+            "Heaps",
+            "Core CS",
+            "Heap"
+        ],
+        "uri": "qheap1"
+    },
+    {
+        "id": 14717,
+        "title": "Maximum Element",
+        "difficulty": "Easy",
+        "tags": [
+            "Algorithms",
+            "Data Structures",
+            "stack",
+            "Stacks",
+            "Core CS"
+        ],
+        "uri": "maximum-element"
+    },
+    {
+        "id": 23151,
+        "title": "Queue using Two Stacks",
+        "difficulty": "Medium",
+        "tags": [
+            "Algorithms",
+            "Data Structures",
+            "Queues",
+            "Core CS"
+        ],
+        "uri": "queue-using-two-stacks"
+    },
+    {
+        "id": 8947,
+        "title": "Components in a graph",
+        "difficulty": "Medium",
+        "tags": [
+            "Algorithms",
+            "Data Structures",
+            "Disjoint Set",
+            "Core CS"
+        ],
+        "uri": "components-in-graph"
+    },
+    {
+        "id": 15095,
+        "title": "Balanced Brackets",
+        "difficulty": "Medium",
+        "tags": [
+            "Algorithms",
+            "Medium",
+            "Data Structures",
+            "stack",
+            "Stacks",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "balanced-brackets"
+    },
+    {
+        "id": 14856,
+        "title": "Castle on the Grid",
+        "difficulty": "Medium",
+        "tags": [
+            "Algorithms",
+            "Medium",
+            "Data Structures",
+            "#queue",
+            "Queues",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "castle-on-the-grid"
+    },
+    {
+        "id": 16183,
+        "title": "Jesse and Cookies",
+        "difficulty": "Easy",
+        "tags": [
+            "Algorithms",
+            "Data Structures",
+            "Core CS",
+            "Heap"
+        ],
+        "uri": "jesse-and-cookies"
+    },
+    {
+        "id": 2557,
+        "title": "Kundu and Tree",
+        "difficulty": "Hard",
+        "tags": [
+            "Algorithms",
+            "Data Structures",
+            "Disjoint Set",
+            "Core CS"
+        ],
+        "uri": "kundu-and-tree"
+    },
+    {
+        "id": 8175,
+        "title": "Find the Running Median",
+        "difficulty": "Hard",
+        "tags": [
+            "Algorithms",
+            "Data Structures",
+            "Core CS",
+            "Heap"
+        ],
+        "uri": "find-the-running-median"
+    },
+    {
+        "id": 15592,
+        "title": "Down to Zero II",
+        "difficulty": "Medium",
+        "tags": [
+            "Algorithms",
+            "Data Structures",
+            "Queues",
+            "Core CS"
+        ],
+        "uri": "down-to-zero-ii"
+    },
+    {
+        "id": 21404,
+        "title": "Equal Stacks",
+        "difficulty": "Easy",
+        "tags": [
+            "Algorithms",
+            "Data Structures",
+            "Greedy Algorithms",
+            "Stacks",
+            "Core CS"
+        ],
+        "uri": "equal-stacks"
+    },
+    {
+        "id": 2141,
+        "title": "Minimum Average Waiting Time",
+        "difficulty": "Hard",
+        "tags": [
+            "Algorithms",
+            "Data Structures",
+            "Core CS",
+            "Heap"
+        ],
+        "uri": "minimum-average-waiting-time"
+    },
+    {
+        "id": 8138,
+        "title": "Truck Tour",
+        "difficulty": "Hard",
+        "tags": [
+            "Algorithms",
+            "Data Structures",
+            "Queues",
+            "Core CS"
+        ],
+        "uri": "truck-tour"
+    },
+    {
+        "id": 33183,
+        "title": "Game of Two Stacks",
+        "difficulty": "Medium",
+        "tags": [
+            "Algorithms",
+            "Medium",
+            "Data Structures",
+            "Stacks",
+            "Core CS"
+        ],
+        "uri": "game-of-two-stacks"
+    },
+    {
+        "id": 8136,
+        "title": "Largest Rectangle ",
+        "difficulty": "Medium",
+        "tags": [
+            "Algorithms",
+            "Medium",
+            "Data Structures",
+            "Stacks",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "largest-rectangle"
+    },
+    {
+        "id": 14789,
+        "title": "Queries with Fixed Length",
+        "difficulty": "Hard",
+        "tags": [
+            "Algorithms",
+            "Data Structures",
+            "#queue",
+            "Queues",
+            "Core CS"
+        ],
+        "uri": "queries-with-fixed-length"
+    },
+    {
+        "id": 20577,
+        "title": "Super Maximum Cost Queries",
+        "difficulty": "Hard",
+        "tags": [
+            "Sorting",
+            "Algorithms",
+            "Binary Search",
+            "data structure",
+            "Disjoint Set",
+            "Hard",
+            "Core CS"
+        ],
+        "uri": "maximum-cost-queries"
+    },
+    {
+        "id": 15366,
+        "title": "Simple Text Editor",
+        "difficulty": "Medium",
+        "tags": [
+            "Algorithms",
+            "Data Structures",
+            "stack",
+            "Stacks",
+            "Core CS"
+        ],
+        "uri": "simple-text-editor"
+    },
+    {
+        "id": 8763,
+        "title": "Poisonous Plants",
+        "difficulty": "Hard",
+        "tags": [
+            "Algorithms",
+            "Data Structures",
+            "stack",
+            "Hard",
+            "Stacks",
+            "problem-solving",
+            "Core CS"
+        ],
+        "uri": "poisonous-plants"
+    },
+    {
+        "id": 9056,
+        "title": "AND xor OR",
+        "difficulty": "Hard",
+        "tags": [
+            "Algorithms",
+            "Data Structures",
+            "Stacks",
+            "Core CS"
+        ],
+        "uri": "and-xor-or"
+    },
+    {
+        "id": 15512,
+        "title": "Waiter",
+        "difficulty": "Medium",
+        "tags": [
+            "Algorithms",
+            "Data Structures",
+            "stack",
+            "Stacks",
+            "Core CS"
+        ],
+        "uri": "waiter"
+    },
+    {
+        "id": 15825,
+        "title": "Contacts",
+        "difficulty": "Medium",
+        "tags": [
+            "Algorithms",
+            "Data Structures",
+            "Tries",
+            "trie",
+            "Core CS"
+        ],
+        "uri": "contacts"
+    },
+    {
+        "id": 8938,
+        "title": "No Prefix Set",
+        "difficulty": "Hard",
+        "tags": [
+            "Algorithms",
+            "Medium",
+            "Data Structures",
+            "DataStructures",
+            "trie",
+            "Core CS"
+        ],
+        "uri": "no-prefix-set"
+    },
+    {
+        "id": 9091,
+        "title": " Data Structures MCQ 1",
+        "difficulty": "Hard",
+        "tags": [
+            "Algorithms",
+            "Data Structures",
+            "Core CS"
+        ],
+        "uri": "how-well-do-you-know-trees"
+    },
+    {
+        "id": 9093,
+        "title": " Data Structures MCQ 2",
+        "difficulty": "Hard",
+        "tags": [
+            "Algorithms",
+            "Data Structures",
+            "Core CS"
+        ],
+        "uri": "are-you-an-expert-on-data-structures"
+    },
+    {
+        "id": 9094,
+        "title": " Data Structures MCQ 3",
+        "difficulty": "Hard",
+        "tags": [
+            "Algorithms",
+            "Data Structures",
+            "Core CS"
+        ],
+        "uri": "are-you-an-expert-on-data-structures-1"
+    },
+    {
+        "id": 12860,
+        "title": "Kindergarten Adventures",
+        "difficulty": "Medium",
+        "tags": [
+            "Segment Tree",
+            "Algorithms",
+            "Medium",
+            "data structure",
+            "Core CS"
+        ],
+        "uri": "kindergarten-adventures"
+    },
+    {
+        "id": 1058,
+        "title": "Cube Summation",
+        "difficulty": "Hard",
+        "tags": [
+            "Algorithms",
+            "Data Structures",
+            "Core CS",
+            "Advanced Data Structures"
+        ],
+        "uri": "cube-summation"
+    },
+    {
+        "id": 8943,
+        "title": "Mr. X and His Shots",
+        "difficulty": "Medium",
+        "tags": [
+            "Algorithms",
+            "Data Structures",
+            "Core CS",
+            "Advanced Data Structures"
+        ],
+        "uri": "x-and-his-shots"
+    },
+    {
+        "id": 70,
+        "title": "Direct Connections",
+        "difficulty": "Hard",
+        "tags": [
+            "Graph Theory",
+            "Algorithms",
+            "Data Structures",
+            "Core CS",
+            "Advanced Data Structures"
+        ],
+        "uri": "direct-connections"
+    },
+    {
+        "id": 73,
+        "title": "Subsequence Weighting",
+        "difficulty": "Advanced",
+        "tags": [
+            "Math",
+            "Trees",
+            "Algorithms",
+            "Data Structures",
+            "Core CS",
+            "Advanced Data Structures"
+        ],
+        "uri": "subsequence-weighting"
+    },
+    {
+        "id": 3654,
+        "title": "Jim and the Skyscrapers",
+        "difficulty": "Medium",
+        "tags": [
+            "Algorithms",
+            "Data Structures",
+            "Core CS",
+            "Advanced Data Structures"
+        ],
+        "uri": "jim-and-the-skyscrapers"
+    },
+    {
+        "id": 26442,
+        "title": "Palindromic Subsets",
+        "difficulty": "Hard",
+        "tags": [
+            "Segment Tree",
+            "Algorithms",
+            "Data Structures",
+            "Combinatorics",
+            "Hard",
+            "Core CS",
+            "Advanced Data Structures"
+        ],
+        "uri": "palindromic-subsets"
+    },
+    {
+        "id": 20188,
+        "title": "Counting On a Tree",
+        "difficulty": "Expert",
+        "tags": [
+            "Segment Tree",
+            "Tree",
+            "Algorithms",
+            "Expert",
+            "Core CS",
+            "HLD"
+        ],
+        "uri": "counting-on-a-tree"
+    },
+    {
+        "id": 29885,
+        "title": "Polynomial Division",
+        "difficulty": "Hard",
+        "tags": [
+            "Algorithms",
+            "Data Structures",
+            "Hard",
+            "Polynomials",
+            "Core CS",
+            "Advanced Data Structures"
+        ],
+        "uri": "polynomial-division"
+    },
+    {
+        "id": 50297,
+        "title": "Costly Intervals",
+        "difficulty": "Hard",
+        "tags": [
+            "Trees",
+            "Data Structures",
+            "Hard",
+            "Core CS"
+        ],
+        "uri": "costly-intervals"
+    },
+    {
+        "id": 44461,
+        "title": "The Strange Function",
+        "difficulty": "Hard",
+        "tags": [
+            "Trees",
+            "Segment Tree",
+            "Data Structures",
+            "Hard",
+            "Core CS"
+        ],
+        "uri": "the-strange-function"
+    },
+    {
+        "id": 13863,
+        "title": "Self-Driving Bus",
+        "difficulty": "Advanced",
+        "tags": [
+            "Trees",
+            "Algorithms",
+            "Data Structures",
+            "Core CS",
+            "Advanced Data Structures"
+        ],
+        "uri": "self-driving-bus"
+    },
+    {
+        "id": 17417,
+        "title": "Unique Colors",
+        "difficulty": "Advanced",
+        "tags": [
+            "Trees",
+            "Algorithms",
+            "Data Structures",
+            "Core CS",
+            "Advanced Data Structures"
+        ],
+        "uri": "unique-colors"
+    },
+    {
+        "id": 15909,
+        "title": "Fibonacci Numbers Tree",
+        "difficulty": "Expert",
+        "tags": [
+            "Trees",
+            "Algorithms",
+            "bfs",
+            "Data Structures",
+            "Mathematics",
+            "DFS",
+            "lca",
+            "heavy light decomposition",
+            "linear linearisation",
+            "fibonacci number",
+            "matrix exponentiation",
+            "Core CS",
+            "Advanced Data Structures"
+        ],
+        "uri": "fibonacci-numbers-tree"
+    },
+    {
+        "id": 9077,
+        "title": "Pair Sums",
+        "difficulty": "Expert",
+        "tags": [
+            "Dynamic Programming",
+            "Algorithms",
+            "Expert",
+            "Core CS"
+        ],
+        "uri": "pair-sums"
+    },
+    {
+        "id": 18647,
+        "title": "Functional Palindromes",
+        "difficulty": "Advanced",
+        "tags": [
+            "Sorting",
+            "Algorithms",
+            "Core CS",
+            "Advanced Data Structures"
+        ],
+        "uri": "functional-palindromes"
+    },
+    {
+        "id": 15812,
+        "title": "Lazy White Falcon",
+        "difficulty": "Hard",
+        "tags": [
+            "Algorithms",
+            "Data Structures",
+            "Core CS",
+            "Advanced Data Structures"
+        ],
+        "uri": "lazy-white-falcon"
+    },
+    {
+        "id": 9335,
+        "title": "Ticket to Ride",
+        "difficulty": "Expert",
+        "tags": [
+            "Tree",
+            "Algorithms",
+            "Data Structures",
+            "Core CS",
+            "Advanced Data Structures"
+        ],
+        "uri": "ticket-to-ride"
+    },
+    {
+        "id": 15870,
+        "title": "Heavy Light White Falcon",
+        "difficulty": "Hard",
+        "tags": [
+            "Algorithms",
+            "Data Structures",
+            "Core CS",
+            "Advanced Data Structures"
+        ],
+        "uri": "heavy-light-white-falcon"
+    },
+    {
+        "id": 15697,
+        "title": "Sum of the Maximums",
+        "difficulty": "Advanced",
+        "tags": [
+            "Algorithms",
+            "Data Structures",
+            "Core CS",
+            "Advanced Data Structures"
+        ],
+        "uri": "little-alexey-and-sum-of-maximums"
+    },
+    {
+        "id": 32598,
+        "title": "Number Game on a Tree",
+        "difficulty": "Expert",
+        "tags": [
+            "Game",
+            "Tree",
+            "Algorithms",
+            "Medium",
+            "Data Structures",
+            "DFS",
+            "XOR",
+            "Hashing",
+            "Core CS",
+            "Advanced Data Structures"
+        ],
+        "uri": "number-game-on-a-tree"
+    },
+    {
+        "id": 15872,
+        "title": "Heavy Light 2 White Falcon",
+        "difficulty": "Hard",
+        "tags": [
+            "Algorithms",
+            "Data Structures",
+            "Core CS",
+            "Advanced Data Structures"
+        ],
+        "uri": "heavy-light-2-white-falcon"
+    },
+    {
+        "id": 1760,
+        "title": "Library Query",
+        "difficulty": "Advanced",
+        "tags": [
+            "Algorithms",
+            "Medium",
+            "Data Structures",
+            "Core CS",
+            "Advanced Data Structures"
+        ],
+        "uri": "library-query"
+    },
+    {
+        "id": 863,
+        "title": "Starfleet",
+        "difficulty": "Advanced",
+        "tags": [
+            "Math",
+            "Algorithms",
+            "Data Structures",
+            "Core CS",
+            "Advanced Data Structures"
+        ],
+        "uri": "starfleet"
+    },
+    {
+        "id": 1361,
+        "title": "Almost Equal - Advanced",
+        "difficulty": "Expert",
+        "tags": [
+            "Algorithms",
+            "Data Structures",
+            "Core CS",
+            "Advanced Data Structures"
+        ],
+        "uri": "almost-equal-advanced"
+    },
+    {
+        "id": 1769,
+        "title": "Almost sorted interval",
+        "difficulty": "Expert",
+        "tags": [
+            "Algorithms",
+            "Data Structures",
+            "Core CS",
+            "Advanced Data Structures"
+        ],
+        "uri": "almost-sorted-interval"
+    },
+    {
+        "id": 4932,
+        "title": "Burger Happiness ",
+        "difficulty": "Hard",
+        "tags": [
+            "Segment Tree",
+            "Algorithms",
+            "Data Structures",
+            "lazy propagation",
+            "Core CS",
+            "Advanced Data Structures"
+        ],
+        "uri": "burger-happiness"
+    },
+    {
+        "id": 2413,
+        "title": "Roy and alpha-beta trees",
+        "difficulty": "Hard",
+        "tags": [
+            "Algorithms",
+            "Medium",
+            "Data Structures",
+            "bst",
+            "Core CS",
+            "Advanced Data Structures"
+        ],
+        "uri": "roy-and-alpha-beta-trees"
+    },
+    {
+        "id": 1071,
+        "title": "Coloring Tree",
+        "difficulty": "Hard",
+        "tags": [
+            "Algorithms",
+            "Data Structures",
+            "Core CS",
+            "Advanced Data Structures"
+        ],
+        "uri": "coloring-tree"
+    },
+    {
+        "id": 959,
+        "title": "Recalling Early Days GP with Trees",
+        "difficulty": "Hard",
+        "tags": [
+            "Algorithms",
+            "Data Structures",
+            "Core CS",
+            "Advanced Data Structures"
+        ],
+        "uri": "recalling-early-days-gp-with-trees"
+    },
+    {
+        "id": 4171,
+        "title": "Swaps and Sum",
+        "difficulty": "Advanced",
+        "tags": [
+            "Algorithms",
+            "Data Structures",
+            "Core CS",
+            "Advanced Data Structures"
+        ],
+        "uri": "swaps-and-sum"
+    },
+    {
+        "id": 67,
+        "title": "Arithmetic Progressions",
+        "difficulty": "Advanced",
+        "tags": [
+            "Search",
+            "Trees",
+            "Segment Tree",
+            "Algorithms",
+            "Data Structures",
+            "Core CS",
+            "Advanced Data Structures"
+        ],
+        "uri": "arithmetic-progressions"
+    },
+    {
+        "id": 15822,
+        "title": "Coolguy and Two Subsequences",
+        "difficulty": "Advanced",
+        "tags": [
+            "Segment Tree",
+            "Algorithms",
+            "Data Structures",
+            "Core CS",
+            "Advanced Data Structures"
+        ],
+        "uri": "coolguy-and-two-subsequences"
+    },
+    {
+        "id": 4529,
+        "title": "White Falcon And Tree",
+        "difficulty": "Hard",
+        "tags": [
+            "Algorithms",
+            "Data Structures",
+            "Core CS",
+            "Advanced Data Structures"
+        ],
+        "uri": "white-falcon-and-tree"
+    },
+    {
+        "id": 4939,
+        "title": "Subtrees And Paths",
+        "difficulty": "Advanced",
+        "tags": [
+            "Algorithms",
+            "Data Structures",
+            "Core CS",
+            "Advanced Data Structures"
+        ],
+        "uri": "subtrees-and-paths"
+    },
+    {
+        "id": 119,
+        "title": "Triplets",
+        "difficulty": "Advanced",
+        "tags": [
+            "Search",
+            "Algorithms",
+            "Data Structures",
+            "Core CS",
+            "Advanced Data Structures"
+        ],
+        "uri": "triplets"
+    },
+    {
+        "id": 16719,
+        "title": "Beautiful Segments",
+        "difficulty": "Expert",
+        "tags": [
+            "Bit Manipulation",
+            "Algorithms",
+            "Data Structures",
+            "Core CS",
+            "Advanced Data Structures"
+        ],
+        "uri": "beautiful-segments"
+    },
+    {
+        "id": 4520,
+        "title": "Divisibility",
+        "difficulty": "Expert",
+        "tags": [
+            "Algorithms",
+            "Data Structures",
+            "Core CS",
+            "Advanced Data Structures"
+        ],
+        "uri": "ab0"
+    },
+    {
+        "id": 2297,
+        "title": "BST maintenance",
+        "difficulty": "Advanced",
+        "tags": [
+            "Algorithms",
+            "Data Structures",
+            "Core CS",
+            "Advanced Data Structures"
+        ],
+        "uri": "bst-maintenance"
+    },
+    {
+        "id": 5641,
+        "title": "Find Maximum Index Product",
+        "difficulty": "Medium",
+        "tags": [
+            "Algorithms",
+            "Data Structures",
+            "Core CS",
+            "Advanced Data Structures"
+        ],
+        "uri": "find-maximum-index-product"
+    },
+    {
+        "id": 4940,
+        "title": "Taxicab Driver's Problem",
+        "difficulty": "Advanced",
+        "tags": [
+            "Tree",
+            "Algorithms",
+            "Data Structures",
+            "sweep line",
+            "Geometry",
+            "Core CS",
+            "Advanced Data Structures"
+        ],
+        "uri": "taxicab-drivers-problem"
+    },
+    {
+        "id": 2580,
+        "title": "Jaggu Playing with Balloons",
+        "difficulty": "Advanced",
+        "tags": [
+            "Algorithms",
+            "Data Structures",
+            "Core CS",
+            "Advanced Data Structures"
+        ],
+        "uri": "jagia-playing-with-numbers"
+    },
+    {
+        "id": 2535,
+        "title": "Dynamic Summation",
+        "difficulty": "Hard",
+        "tags": [
+            "Algorithms",
+            "Data Structures",
+            "Core CS",
+            "Advanced Data Structures"
+        ],
+        "uri": "dynamic-summation"
+    },
+    {
+        "id": 3902,
+        "title": "Two Array Problem",
+        "difficulty": "Hard",
+        "tags": [
+            "Algorithms",
+            "Data Structures",
+            "Core CS",
+            "Advanced Data Structures"
+        ],
+        "uri": "weird-queries"
+    },
+    {
+        "id": 2212,
+        "title": "Rooted Tree",
+        "difficulty": "Hard",
+        "tags": [
+            "Algorithms",
+            "Data Structures",
+            "Core CS",
+            "Advanced Data Structures"
+        ],
+        "uri": "rooted-tree"
+    },
+    {
+        "id": 2593,
+        "title": "The crazy helix",
+        "difficulty": "Advanced",
+        "tags": [
+            "Algorithms",
+            "Data Structures",
+            "Core CS",
+            "Advanced Data Structures"
+        ],
+        "uri": "helix"
+    },
+    {
+        "id": 3164,
+        "title": "Network administration",
+        "difficulty": "Hard",
+        "tags": [
+            "Graph Theory",
+            "Algorithms",
+            "Data Structures",
+            "Tarjan trees",
+            "Core CS",
+            "Advanced Data Structures"
+        ],
+        "uri": "net-admin"
+    },
+    {
+        "id": 2566,
+        "title": "Easy Addition",
+        "difficulty": "Expert",
+        "tags": [
+            "Algorithms",
+            "Data Structures",
+            "Core CS",
+            "Advanced Data Structures"
+        ],
+        "uri": "easy-addition"
+    },
+    {
+        "id": 6411,
+        "title": "Find the permutation",
+        "difficulty": "Expert",
+        "tags": [
+            "Algorithms",
+            "Data Structures",
+            "Implementation",
+            "Core CS",
+            "Advanced Data Structures"
+        ],
+        "uri": "find-the-permutation"
+    },
+    {
+        "id": 21545,
+        "title": "Company Retreat",
+        "difficulty": "Advanced",
+        "tags": [
+            "Algorithms",
+            "Data Structures",
+            "Expert",
+            "Core CS"
+        ],
+        "uri": "company-retreat"
+    },
+    {
+        "id": 25034,
+        "title": "Box Operations",
+        "difficulty": "Expert",
+        "tags": [
+            "Segment Tree",
+            "Algorithms",
+            "query",
+            "data structure",
+            "Expert",
+            "range-query",
+            "Core CS",
+            "Advanced Data Structures"
+        ],
+        "uri": "box-operations"
+    },
+    {
+        "id": 46176,
+        "title": "Max Transform",
+        "difficulty": "Expert",
+        "tags": [
+            "Data Structures",
+            "Expert",
+            "Stacks",
+            "Core CS"
+        ],
+        "uri": "max-transform"
+    },
+    {
+        "id": 44590,
+        "title": "Array and Queries",
+        "difficulty": "Hard",
+        "tags": [
+            "Arrays"
+        ],
+        "uri": "array-and-queries-1"
+    }
+]
