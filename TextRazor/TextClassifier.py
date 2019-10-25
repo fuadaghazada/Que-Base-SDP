@@ -22,15 +22,12 @@ class TextClassifier:
         # Set the API key
         textrazor.api_key = api_key
 
-        # We will interact with TextRazor using this "client" variable later
-        self.client = None
-
     def analyze(self, input_file_name, output_file_name):
 
         """Given the name of the input file specifying the classification input, returns the classification result.
         Additionally, it saves the result to an output file (in JSON format).
 
-        :param input_file_name: name of the JSON file storing the classification input (see "SampleInput.json")
+        :param input_file_name: name of the JSON file storing the classification input (see "input_1.json")
         :param output_file_name: name of the output file (again, in JSON format)
         :return: result of the classification
         """
@@ -50,17 +47,17 @@ class TextClassifier:
         if topics["extract_topics"] is True:
             extractors.append("topics")
 
-        self.client = textrazor.TextRazor(extractors=extractors)  # Set the extractors
+        client = textrazor.TextRazor(extractors=extractors)  # Set the extractors
 
         if categories["extract_categories"] is True:
-            self.client.set_classifiers(["textrazor_newscodes"])
+            client.set_classifiers(["textrazor_newscodes"])
 
         # **************************************************************************************************************
         # Run the analysis/classification on the text
         # **************************************************************************************************************
 
         # Classify the text
-        response = self.client.analyze(text_to_analyze)
+        response = client.analyze(text_to_analyze)
 
         # Process the results (apply the score thresholds specified in the input file)
         processed_results = self.process_results(response, entity_tags, topics, categories)
@@ -76,7 +73,7 @@ class TextClassifier:
 
         """
         Reads the classification input from the input file, and returns its fields.
-        :param input_file_name: name of the JSON file storing the classification input (e.g. "SampleInput.json")
+        :param input_file_name: name of the JSON file storing the classification input (e.g. "input_1.json")
         :return: the text to run the analysis on, plus, the properties regarding entity tags, topics, and categories
         """
 
@@ -85,7 +82,7 @@ class TextClassifier:
             properties = json.load(read_file)
 
         # Extract the fields, and return them
-        # (You may want to see "SampleInput.json" to understand the following fields better)
+        # (You may want to see "input_1.json" to understand the following fields better)
 
         text_to_analyze = properties["text_to_analyze"]
         entity_tags = properties["entity_tags"]
@@ -108,9 +105,9 @@ class TextClassifier:
 
         # Template of the output JSON file
         results = {
-            "entity_tags": dict(),
-            "topics": dict(),
-            "categories": dict()
+            "entity_tags": list(),
+            "topics": list(),
+            "categories": list()
         }
 
         # Process entity tags
@@ -129,6 +126,7 @@ class TextClassifier:
 
     @staticmethod
     def process_entity_tags(original_ones, properties):
+
         """
         Given the original entity tags (resulting from classification), processes and returns those tags.
 
@@ -158,9 +156,9 @@ class TextClassifier:
                 # Check that current tag's relevance score is greater than the threshold
                 if entity.relevance_score >= relevance_threshold:
 
-                    # Create a dictionary containing the id, relevance score and confidence score
+                    # Create a dictionary containing the id/label, relevance score and confidence score
                     entity_dict = {
-                        "id": entity.id,
+                        "label": entity.id,
                         "relevance_score": entity.relevance_score,
                         "confidence_score": entity.confidence_score
                     }
@@ -173,6 +171,7 @@ class TextClassifier:
 
     @staticmethod
     def process_items(original_ones, properties):
+
         """
         Similar to "process_entity_tags", this one processes topics or categories. As they share the same structure,
         this function is reused for both topics and categories. Processing involves applying a threshold on the score.

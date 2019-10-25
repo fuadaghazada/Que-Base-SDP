@@ -1,0 +1,15 @@
+{
+  "text_to_analyze": "The examples of social structure in Sociology are the family, religion, economic, political and education institutions. Besides there is another one as well and that is called as recreational institution. The above mentioned five basic social institutions makes the structure of the society and thus called as social structure. Like a living organism these social institutions have structures as well as functions.",
+  "entity_tags": {
+    "extract_entity_tags": true,
+    "relevance_threshold": 0.0
+  },
+  "topics": {
+    "extract_topics": true,
+    "score_threshold": 0.6
+  },
+  "categories": {
+    "extract_categories": true,
+    "score_threshold": 0.4
+  }
+}

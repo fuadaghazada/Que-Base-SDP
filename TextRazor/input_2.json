@@ -1,0 +1,15 @@
+{
+  "text_to_analyze": "_____________ set up an experiment, known as the Stanford Prison experiment, where people played the role of a prison guard. The goal was to observe if this authority position would cause them to act differently.",
+  "entity_tags": {
+    "extract_entity_tags": true,
+    "relevance_threshold": 0.0
+  },
+  "topics": {
+    "extract_topics": true,
+    "score_threshold": 0.6
+  },
+  "categories": {
+    "extract_categories": true,
+    "score_threshold": 0.4
+  }
+}
