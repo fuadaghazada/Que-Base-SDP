@@ -98,3 +98,18 @@ def findSimilarQuestions(questionBody):
     except Exception as e:
 
         return []
+
+
+'''
+    Removal of non-analyzed documents
+'''
+def removeOnesWithoutAttrs():
+
+    # DB collection
+    questionCollection = getDb()["questions"]
+
+    query = { "$and": [{"topics": None}, {"entity_tags": None}, {"categories": None}] }
+    x = questionCollection.delete_many(query)
+
+
+removeOnesWithoutAttrs()

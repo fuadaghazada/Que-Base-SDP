@@ -11,7 +11,10 @@ try:
 
             for filename in filenames:
                 with open(f'all/{label}/{filename}', 'rb') as readFile:
-                    txt = str(readFile.read()).strip().replace('\n', ' ')
+                    txt = str(readFile.read()).encode('utf-8')
+                    txt = txt.decode('utf-8')
+                    txt = str(txt).strip().replace('\n', ' ')
+                    txt = txt[2:-1]                                 # Removes b
                     lbl = 0 if label is 'neg' else 1
                     writeFile.write(f"__label__{lbl} {txt}\n")
 
