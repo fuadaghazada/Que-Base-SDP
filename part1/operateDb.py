@@ -47,45 +47,54 @@ def insertQuestion(questionObj, analyze = False):
 '''
 def findSimilarQuestions(questionBody):
 
-    # Analyzing the question
-    entity_tags, topics, categories = analyzeQuestion(questionBody)
+    try:
+        # Analyzing the question
+        entity_tags, topics, categories = analyzeQuestion(questionBody)
 
-    # DB collection
-    questionCollection = getDb()["questions"]
+        # DB collection
+        questionCollection = getDb()["questions"]
 
-    # Search query
-    query = {"$or": []}
+        # Search query
+        query = {"$or": []}
 
-    # Generating the query (topic)
-    for topic in topics:
-        query["$or"].append({"topics": {
-            "$elemMatch": {
-                "label": topic["label"]
-            }
-        }})
+        # Generating the query (topic)
+        for topic in topics:
+            query["$or"].append({"topics": {
+                "$elemMatch": {
+                    "label": topic["label"]
+                }
+            }})
 
-    # Results after checking topic similarity
-    questionsFromSimilarTopic = questionCollection.find(query)
-    questionsFromSimilarTopicIds = set([q['_id'] for q in questionsFromSimilarTopic])
+        # Results after checking topic similarity
+        questionsFromSimilarTopic = questionCollection.find(query)
+        questionsFromSimilarTopicIds = set([q['_id'] for q in questionsFromSimilarTopic])
 
-    # Search query
-    query = {"$or": []}
+        # Search query
+        query = {"$or": []}
 
-    # Generating the query (entity_tags)
-    for entity_tag in entity_tags:
-        query["$or"].append({"entity_tags": {
-            "$elemMatch": {
-                "label": entity_tag["label"]
-            }
-        }})
+        # Generating the query (entity_tags)
+        for entity_tag in entity_tags:
+            query["$or"].append({"entity_tags": {
+                "$elemMatch": {
+                    "label": entity_tag["label"]
+                }
+            }})
 
-    # Results after checking entity_tag similarity
-    questionsFromSimilarEntityTags = questionCollection.find(query)
-    questionsFromSimilarEntityTagsIds = set([q['_id'] for q in questionsFromSimilarEntityTags])
+        # Results after checking entity_tag similarity
+        questionsFromSimilarEntityTags = questionCollection.find(query)
+        questionsFromSimilarEntityTagsIds = set([q['_id'] for q in questionsFromSimilarEntityTags])
 
-    # Intersection results
-    common = questionsFromSimilarEntityTagsIds.intersection(questionsFromSimilarTopicIds)
+        # Intersection results
+        common = questionsFromSimilarEntityTagsIds.intersection(questionsFromSimilarTopicIds)
 
-    print(common)
+        # TEMP - Getting the questons from the common ids
+        query = {"_id": {"$in": list(common)}}
+        questions = questionCollection.find(query)
+        for q in questions:
+            print(q['body'], "\n")
 
-    return common
+        return common
+
+    except Exception as e:
+
+        return []
