@@ -13,9 +13,11 @@ try:
     # Reading the file
     with open(filename, 'r') as readFile:
         txt = str(readFile.read()).strip()
-        questions = [question.replace('\n', ' ') for question in txt.split(SPLITTER)]
+        questions = [question.replace('\n', ' ').strip() for question in txt.split(SPLITTER)]
 
+        print(f"Number of questions: {len(questions)}\n")
         print(questions)
+
         # TODO: Add questions to the db
         # for question in questions:
         #     insertQuestion({'body': question})
