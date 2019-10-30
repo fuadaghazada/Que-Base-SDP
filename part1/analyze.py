@@ -15,7 +15,7 @@ classifier = TextClassifier(config['TEXT_RAZOR_API_KEY'])
     :param (str) questionBody: question text itself
     :return (tuple): entity_tags, topics, categories
 '''
-def analyzeQuestion(questionBody, thresholds = {"entity_tags": 0.0, "topics": 0.7,  "categories": 0.35}):
+def analyzeQuestion(questionBody, thresholds = {"entity_tags": 0.0, "topics": 0.0,  "categories": 0.0}):
 
     properties = {
       "text_to_analyze": questionBody,

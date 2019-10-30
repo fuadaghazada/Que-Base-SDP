@@ -3,6 +3,7 @@ from copy import deepcopy
 from connectDb import getDb
 from analyze import analyzeQuestion
 
+from pprint import pprint
 
 '''
     Inserting the question to the DB
@@ -50,6 +51,12 @@ def findSimilarQuestions(questionBody):
     try:
         # Analyzing the question
         entity_tags, topics, categories = analyzeQuestion(questionBody)
+        maxTopicScore = calculateMaxPossibleScore(topics)
+
+        # Creating dict from input question topics
+        topicsDict = {}
+        for topic in topics:
+            topicsDict[topic['label']] = topic['score']
 
         # DB collection
         questionCollection = getDb()["questions"]
@@ -61,43 +68,76 @@ def findSimilarQuestions(questionBody):
         for topic in topics:
             query["$or"].append({"topics": {
                 "$elemMatch": {
-                    "label": topic["label"]
+                    "label": topic["label"],
+                    "score": {"$gte": 0}
                 }
             }})
 
         # Results after checking topic similarity
         questionsFromSimilarTopic = questionCollection.find(query)
-        questionsFromSimilarTopicIds = set([q['_id'] for q in questionsFromSimilarTopic])
 
-        # Search query
-        query = {"$or": []}
+        # Score algorithm
+        foundQuestions = []
+        for question in questionsFromSimilarTopic:
+            topicScore = 0.0
+            for topic in question['topics']:
+                if topicsDict.get(topic['label']) is not None:
+                    topicScore += topic['score'] * topicsDict[topic['label']]
 
-        # Generating the query (entity_tags)
-        for entity_tag in entity_tags:
-            query["$or"].append({"entity_tags": {
-                "$elemMatch": {
-                    "label": entity_tag["label"]
-                }
-            }})
+            foundQuestions.append({'question': question, 'score': topicScore})
 
-        # Results after checking entity_tag similarity
-        questionsFromSimilarEntityTags = questionCollection.find(query)
-        questionsFromSimilarEntityTagsIds = set([q['_id'] for q in questionsFromSimilarEntityTags])
+        # Sorting according to the topic score
+        foundQuestions = sorted(foundQuestions, key = lambda x: x['score'], reverse = True)
 
-        # Intersection results
-        common = questionsFromSimilarEntityTagsIds.intersection(questionsFromSimilarTopicIds)
 
-        # TEMP - Getting the questons from the common ids
-        query = {"_id": {"$in": list(common)}}
-        questions = questionCollection.find(query)
-        for q in questions:
-            print(q['body'], "\n")
+        for i in range(len(foundQuestions)):
+            foundQuestions[i]['similarity_rate'] = round((foundQuestions[i]['score'] / maxTopicScore) * 100, 2)
 
-        return common
+        for question in foundQuestions:
+            print(f"{question['question']['body']} --- {question['similarity_rate']}% \n\n")
+
+        # # Search query
+        # query = {"$or": []}
+        #
+        # # Generating the query (entity_tags)
+        # for entity_tag in entity_tags:
+        #     query["$or"].append({"entity_tags": {
+        #         "$elemMatch": {
+        #             "label": entity_tag["label"]
+        #         }
+        #     }})
+        #
+        # # Results after checking entity_tag similarity
+        # questionsFromSimilarEntityTags = questionCollection.find(query)
+        # questionsFromSimilarEntityTagsIds = set([q['_id'] for q in questionsFromSimilarEntityTags])
+        #
+        # # Intersection results
+        # common = questionsFromSimilarEntityTagsIds.intersection(questionsFromSimilarTopicIds)
+        #
+        # # TEMP - Getting the questons from the common ids
+        # query = {"_id": {"$in": list(common)}}
+        # questions = questionCollection.find(query)
+        # for q in questions:
+        #     print(q['body'], "\n")
+        #
+        # return common
+        return foundQuestions
 
     except Exception as e:
-
+        raise e
         return []
+
+
+'''
+    Given the topics calculates the maximum possible score
+'''
+def calculateMaxPossibleScore(topics):
+
+    maxScore = 0.0
+    for topic in topics:
+        maxScore += topic['score'] ** 2
+
+    return maxScore
 
 
 '''
