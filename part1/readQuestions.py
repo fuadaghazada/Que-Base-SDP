@@ -19,8 +19,8 @@ try:
         print(questions)
 
         # TODO: Add questions to the db
-        # for question in questions:
-        #     insertQuestion({'body': question})
+        for question in questions:
+            insertQuestion({'body': question}, True)
 
 
 except Exception as e:

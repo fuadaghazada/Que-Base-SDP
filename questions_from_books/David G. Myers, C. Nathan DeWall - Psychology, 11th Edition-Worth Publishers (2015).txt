@@ -44,7 +44,7 @@ d. Adolescents who frequently see smoking in movies are more likely to smoke. (O
 !!!
 To explain behaviors and clarify cause and effect, psychologists use _____.
 !!!
-To test the effect of a new drug on depression, we randomly assign people to control and experimental groups. Those in the control group take a pill that contains no medication. This is a _____. 
+To test the effect of a new drug on depression, we randomly assign people to control and experimental groups. Those in the control group take a pill that contains no medication. This is a _____.
 !!!
 In a double-blind procedure,
 a. only the participants know whether they are in the control group or the experimental group.
@@ -196,7 +196,7 @@ c. reticular formation.
 d. medulla.
 !!!
 The part of the brain that coordinates voluntary movement
-and enables nonverbal learning and memory is the _____. 
+and enables nonverbal learning and memory is the _____.
 !!!
 Two parts of the limbic system are the amygdala and the
 a. cerebral hemispheres.
@@ -206,7 +206,7 @@ d. pituitary.
 !!!
 A cat’s ferocious response to electrical brain stimulation
 would lead you to suppose the electrode had touched the
-_____ . 
+_____ .
 !!!
 The neural structure that most directly regulates eating,
 drinking, and body temperature is the
@@ -240,7 +240,7 @@ Judging and planning are enabled by the _____ lobes.
 !!!
 What would it be like to talk on the phone if you didn’t have
 temporal lobe association areas? What would you hear? What
-would you understand? 
+would you understand?
 !!!
 The “uncommitted” areas that make up about three-fourths
 of the cerebral cortex are called _____ _____.
@@ -255,7 +255,7 @@ An experimenter flashes the word HERON across the visual
 field of a man whose corpus callosum has been severed.
 HER is transmitted to his right hemisphere and ON to his left
 hemisphere. When asked to indicate what he saw, the man
-says he saw _____ but points to _____. 
+says he saw _____ but points to _____.
 !!!
 Studies of people with split brains and brain scans of those
 with undivided brains indicate that the left hemisphere excels
@@ -278,13 +278,13 @@ occupied elsewhere is called _____ _____.
 We register and react to stimuli outside of our awareness
 by means of _____  processing. When we devote
 deliberate attention to stimuli, we use _____
-processing. 
+processing.
 !!!
 _____ blindness and change blindness are forms of
 selective attention.
 !!!
 Our body temperature tends to rise and fall in sync with
-a biological clock, which is referred to as _____ _____ . 
+a biological clock, which is referred to as _____ _____ .
 !!!
 During the NREM-1 sleep stage, a person is most likely to
 experience
@@ -326,7 +326,7 @@ deprivation is referred to as _____ _____.
 !!!
 After continued use of a psychoactive drug, the drug user
 needs to take larger doses to get the desired effect. This is
-referred to as _____. 
+referred to as _____.
 !!!
 The depressants include alcohol, barbiturates,
 a. and opiates.
@@ -335,7 +335,7 @@ c. caffeine, nicotine, and marijuana.
 d. and amphetamines.
 !!!
 Why might alcohol make a person more helpful or more
-aggressive? 
+aggressive?
 !!!
 Long-term use of Ecstasy can
 a. depress sympathetic nervous system activity.
@@ -399,7 +399,7 @@ _____ is the proportion of variation among individuals
 that we can attribute to genes.
 !!!
 Epigenetics is the study of the molecular mechanisms by
-which _____ trigger or block genetic expression. 
+which _____ trigger or block genetic expression.
 !!!
 Behavior geneticists are most interested in exploring
 _____ (commonalities/differences) in our behaviors.
@@ -496,7 +496,7 @@ d. continuity
 !!!
 Between ages 3 and 6, the human brain experiences the
 greatest growth in the _____ lobes, which enable
-rational planning and aid memory. 
+rational planning and aid memory.
 !!!
 Which of the following is true of motor-skill development?
 a. It is determined solely by genetic factors.
@@ -740,7 +740,7 @@ example of
 a. sensory adaptation.
 b. chemical sensation.
 c. kinesthesia.
-d. sensory interaction. 
+d. sensory interaction.
 !!!
 Which of the following ESP phenomena is supported by solid,
 replicable scientific evidence?
@@ -797,7 +797,7 @@ d. negative punishment.
 !!!
 How could your psychology instructor use negative
 reinforcement to encourage your attentive behavior during
-class? 
+class?
 !!!
 Reinforcing a desired response only some of the times it
 occurs is called _____ reinforcement.
@@ -1220,3 +1220,693 @@ withdrawn, frightened, and speechless.
 What are some ways to manage our social networking time
 successfully?
 !!!
+People who view their work as a calling often experience
+_____, a focused state of consciousness, with
+diminished awareness of themselves and of time.
+a. stress
+b. apathy
+c. flow
+d. facilitation
+!!!
+_____ psychologists study the recruitment, selection,
+placement, training, appraisal, and development of
+employees; _____ _____ psychologists focus on
+how people and machines interact, and on optimizing devices
+and work environments.
+!!!
+A personnel psychologist scripted a set of questions to ask
+all applicants for a job opening. She then trained the firm’s
+interviewers to ask only these questions, to take notes, and
+to rate applicants’ responses. This technique is known as
+a(n)
+a. structured interview.
+b. unstructured interview.
+c. performance appraisal checklist.
+d. behavior rating scale.
+!!!
+In your job, you rate your own performance, your manager’s,
+and your peers’. Your manager, your peers, and your
+customers also rate your performance. Your organization is
+using a form of performance appraisal called
+a. flow procedure.
+b. graphic feedback.
+c. structured interviews.
+d. 360-degree feedback.
+!!!
+What type of goals will best help you stay focused and
+motivated to do your best work in this class?
+!!!
+Research indicates that women are more likely than men to
+have a _____ leadership style.
+!!!
+Effective managers often exhibit
+a. only task leadership.
+b. only social leadership.
+c. both task and social leadership, depending on the situation
+and the person.
+d. task leadership for building teams and social leadership
+for setting standards.
+!!!
+To reduce users’ frustration and to avoid accidents, human
+factors psychologists help organizations avoid the curse of
+knowledge, which is the tendency for
+a. a little bit of knowledge to be dangerous for the user.
+b. users to override machines and resort to familiar habits.
+c. engineers and designers to assume that users are idiots
+and need overly detailed instructions.
+d. engineers and designers to assume that others will share
+their knowledge.
+!!!
+A therapist who helps patients search for the unconscious
+roots of their problem and offers interpretations of their
+behaviors, feelings, and dreams, is drawing from
+a. psychoanalysis.
+b. humanistic therapies.
+c. client-centered therapy.
+d. behavior therapy.
+!!!
+_____ therapies are designed to help individuals
+discover the thoughts and feelings that guide their motivation
+and behavior.
+!!!
+Compared with psychoanalysts, humanistic therapists are
+more likely to emphasize
+a. hidden or repressed feelings.
+b. childhood experiences.
+c. psychological disorders.
+d. self-fulfillment and growth.
+!!!
+A therapist who restates and clarifies the client’s statements
+is practicing _____ _____ .
+!!!
+The goal of behavior therapy is to
+a. identify and treat the underlying causes of the problem.
+b. improve learning and insight.
+c. eliminate the unwanted behavior.
+d. improve communication and social sensitivity.
+!!!
+Behavior therapies often use techniques such
+as systematic desensitization and aversive conditioning to
+encourage clients to produce new responses to old stimuli.
+!!!
+The technique of _____ _____ teaches people
+to relax in the presence of progressively more anxiety-provoking stimuli.
+!!!
+After a near-fatal car accident, Rico developed such an
+intense fear of driving on the freeway that he takes lengthy
+alternative routes to work each day. Which psychological
+therapy might best help Rico overcome his phobia, and why?
+!!!
+At a treatment center, people who display a desired behavior
+receive coins that they can later exchange for other rewards.
+This is an example of a(n) _____ _____ .
+!!!
+Cognitive therapy has been especially effective in treating
+a. nail biting.
+b. phobias.
+c. alcohol use disorder.
+d. depression.
+!!!
+_____ - _____ therapy helps people to change
+their self-defeating ways of thinking and to act out those
+changes in their daily behavior.
+!!!
+In family therapy, the therapist assumes that
+a. only one family member needs to change.
+b. each person’s actions trigger reactions from other family
+members.
+c. dysfunctional families must improve their interactions or
+give up their children.
+d. all of the above are true.
+!!!
+The most enthusiastic or optimistic view of the effectiveness
+of psychotherapy comes from
+a. outcome research.
+b. randomized clinical trials.
+c. reports of clinicians and clients.
+d. a government study of treatment for depression.
+!!!
+Studies show that _____ therapy is the most effective
+treatment for most psychological disorders.
+a. behavior
+b. humanistic
+c. psychodynamic
+d. no one type of
+!!!
+What are the three components of evidence-based practice?
+!!!
+How does the placebo effect bias patients’ attitudes about
+the effectiveness of drug therapies?
+!!!
+Some antipsychotic drugs, used to calm people with
+schizophrenia, can have unpleasant side effects, most
+notably
+a. hyperactivity.
+b. convulsions and momentary memory loss.
+c. sluggishness, tremors, and twitches.
+d. paranoia.
+!!!
+Drugs like Xanax and Ativan, which depress central nervous
+system activity, can become addictive when used as ongoing
+treatment. These drugs are referred to as _____ drugs.
+!!!
+A simple salt that often brings relief to patients suffering the
+highs and lows of bipolar disorder is _____.
+!!!
+When drug therapies have not been effective,
+electroconvulsive therapy (ECT) may be used as treatment,
+largely for people with
+a. severe obsessive-compulsive disorder.
+b. severe depression.
+c. schizophrenia.
+d. anxiety disorders.
+!!!
+An approach that seeks to identify and alleviate conditions
+that put people at high risk for developing psychological
+disorders is called
+a. deep-brain stimulation.
+b. the mood-stabilizing perspective.
+c. spontaneous recovery.
+d. preventive mental health.
+!!!
+Two disorders are found worldwide. One is schizophrenia,
+and the other is _____.
+!!!
+Anna is embarrassed that it takes her several minutes to
+parallel park her car. She usually gets out of the car once
+or twice to inspect her distance both from the curb and
+from the nearby cars. Should she worry about having a
+psychological disorder?
+!!!
+What is susto, and is this a culture-specific or universal
+psychological disorder?
+!!!
+A therapist says that psychological disorders are sicknesses
+and people with these disorders should be treated as
+patients in a hospital. This therapist believes in the _____ model.
+!!!
+Many psychologists reject the “disorders-as-illness”
+view and instead contend that other factors may also be
+involved—for example, the person’s bad habits and poor
+social skills. This view represents the _____ approach.
+a. medical
+b. evil spirits
+c. biopsychosocial
+d. diagnostic labels
+!!!
+Why is the DSM, and the DSM-5 in particular, considered
+controversial?
+!!!
+One predictor of psychiatric disorders that crosses ethnic
+and gender lines is _____.
+!!!
+The symptoms of _____ appear around age 10;
+_____ tend[s] to appear later, around age 25.
+a. schizophrenia; bipolar disorder
+b. bipolar disorder; schizophrenia
+c. major depressive disorder; phobias
+d. phobias; major depressive disorder
+!!!
+Anxiety that takes the form of an irrational and maladaptive
+fear of a specific object, activity, or situation is called a
+_____ .
+!!!
+An episode of intense dread, accompanied by trembling,
+dizziness, chest pains, or choking sensations and by feelings
+of terror, is called
+a. a specific phobia.
+b. compulsion.
+c. a panic attack.
+d. an obsessive fear.
+!!!
+Marina became consumed with the need to clean the entire
+house and refused to participate in any other activities. Her
+family consulted a therapist, who diagnosed her as having
+_____ - _____ disorder.
+!!!
+The learning perspective proposes that phobias are
+a. the result of individual genetic makeup.
+b. a way of repressing unacceptable impulses.
+c. conditioned fears.
+d. a symptom of having been abused as a child.
+!!!
+The “gender gap” in depression refers to the finding that
+_____ risk of depression is nearly double that of
+_____ .
+!!!
+Rates of bipolar disorder have risen dramatcally in the
+twenty-first century, especially among
+a. middle-aged women.
+b. middle-aged men.
+c. females 19 and under.
+d. males 19 and under.
+!!!
+Treatment for depression often includes drugs that
+increase supplies of the neurotransmitters _____ and
+_____ .
+!!!
+Psychologists who emphasize the importance of negative
+perceptions, beliefs, and thoughts in depression are working
+within the _____ - _____ perspective.
+!!!
+Victor exclaimed, “The weather has been so schizophrenic
+lately: It’s hot one day and freezing the next!” Is this an
+accurate comparison? Why or why not?
+!!!
+A person with positive symptoms of schizophrenia is most
+likely to experience
+a. catatonia.
+b. delusions.
+c. withdrawal.
+d. flat emotion.
+!!!
+People with schizophrenia may hear voices urging selfdestruction, an example of a(n) _____ .
+!!!
+Chances for recovery from schizophrenia are best when
+a. onset is sudden, in response to stress.
+b. deterioration occurs gradually, during childhood.
+c. no environmental causes can be identified.
+d. there is a detectable brain abnormality.
+!!!
+Dissociative identity disorder is controversial because
+a. dissociation is actually quite rare.
+b. it was reported frequently in the 1920s but rarely today.
+c. it is almost never reported outside North America.
+d. its symptoms are nearly identical to those of obsessivecompulsive disorder.
+!!!
+A personality disorder, such as antisocial personality, is
+characterized by
+a. depression.
+b. hallucinations.
+c. inflexible and enduring behavior patterns that impair
+social functioning.
+d. an elevated level of autonomic nervous system arousal.
+!!!
+PET scans of murderers’ brains have revealed
+a. higher-than-normal activation in the frontal lobes.
+b. lower-than-normal activation in the frontal lobes.
+c. more frontal lobe tissue than normal.
+d. no differences in brain structures or activity.
+!!!
+Which of the following statements is true of bulimia nervosa?
+a. People with bulimia continue to want to lose weight even
+when they are underweight.
+b. Bulimia is marked by weight fluctuations within or above
+normal ranges.
+c. Bulimia patients often come from middle-class families
+that are competitive, high-achieving, and protective.
+d. If one twin is diagnosed with bulimia, the chances of the
+other twin’s sharing the disorder are greater if they are
+fraternal rather than identical twins.
+!!!
+Freud believed that we may block painful or unacceptable
+thoughts, wishes, feelings, or memories from consciousness
+through an unconscious process called _____.
+!!!
+According to Freud’s view of personality structure, the
+“executive” system, the _____, seeks to gratify the
+impulses of the _____ in more acceptable ways.
+a. id; ego
+b. ego; superego
+c. ego; id
+d. id; superego
+!!!
+Freud proposed that the development of the “voice of
+conscience” is related to the _____, which internalizes
+ideals and provides standards for judgments.
+!!!
+According to the psychoanalytic view of development, we all
+pass through a series of psychosexual stages, including the
+oral, anal, and phallic stages. Conflicts unresolved at any of
+these stages may lead to
+a. dormant sexual feelings.
+b. fixation at that stage.
+c. preconscious blocking of impulses.
+d. a distorted gender identity.
+!!!
+Freud believed that defense mechanisms are unconscious
+attempts to distort or disguise reality, all in an effort to
+reduce our _____.
+!!!
+_____ tests ask test-takers to respond to an ambiguous
+stimulus, for example, by describing it or telling a story about
+it.
+!!!
+In general, neo-Freudians such as Adler and Horney
+accepted many of Freud’s views but placed more emphasis
+than he did on
+a. development throughout the life span.
+b. the collective unconscious.
+c. the role of the id.
+d. social interactions.
+!!!
+Modern-day psychodynamic theorists and therapists agree
+with Freud about
+a. the existence of unconscious mental processes.
+b. the Oedipus complex.
+c. the predictive value of Freudian theory.
+d. the superego’s role as the executive part of personality.
+!!!
+Which of the following is NOT part of the contemporary view
+of the unconscious?
+a. Repressed memories of anxiety-provoking events
+b. Schemas that influence our perceptions and
+interpretations
+c. Parallel processing that occurs without our conscious
+knowledge
+d. Instantly activated emotions and implicit memories of
+learned skills
+!!!
+Maslow’s hierarchy of needs proposes that we must satisfy
+basic physiological and safety needs before we seek ultimate
+psychological needs, such as self-actualization. Maslow
+based his ideas on
+a. Freudian theory.
+b. his experiences with patients.
+c. a series of laboratory experiments.
+d. his study of healthy, creative people.
+!!!
+How might Rogers explain how environment influences the
+development of a criminal?
+!!!
+The total acceptance Rogers advocated as part of a growthpromoting environment is called _____ _____ _____
+!!!
+_____ theories of personality focus on describing
+characteristic behavior patterns, such as agreeableness or
+extraversion.
+!!!
+One famous personality inventory is the
+a. Extraversion–Introversion Scale.
+b. Person–Situation Inventory.
+c. MMPI.
+d. Rorschach.
+!!!
+Which of the following is NOT one of the Big Five personality
+factors?
+a. Conscientiousness
+b. Anxiety
+c. Extraversion
+d. Agreeableness
+!!!
+Our scores on personality tests best predict
+a. our behavior on a specific occasion.
+b. our average behavior across many situations.
+c. behavior involving a single trait, such as
+conscientiousness.
+d. behavior that depends on the situation or context.
+!!!
+The social-cognitive perspective proposes our personality
+is shaped by a process called reciprocal determinism, as
+personal factors, environmental factors, and behaviors
+interact. An example of an environmental factor is
+a. the presence of books in a home.
+b. a preference for outdoor play.
+c. the ability to read at a fourth-grade level.
+d. the fear of violent action on television.
+!!!
+Critics say that _____ - _____ personality theory
+is very sensitive to an individual’s interactions with particular
+situations, but that it gives too little attention to the person’s
+enduring traits.
+!!!
+Researchers have found that low self-esteem tends to
+be linked with life problems. How should this link be
+interpreted?
+a. Life problems cause low self-esteem.
+b. The answer isn’t clear because the link is correlational
+and does not indicate cause and effect.
+c. Low self-esteem leads to life problems.
+d. Because of the self-serving bias, we must assume that
+external factors cause low self-esteem
+!!!
+A fortune cookie advises, “Love yourself and happiness will
+follow.” Is this good advice?
+!!!
+The tendency to overestimate others’ attention to and
+evaluation of our appearance, performance, and blunders is
+called the _____ _____.
+!!!
+If we encounter a person who appears to be high on drugs,
+and we make the fundamental attribution error, we will
+probably attribute the person’s behavior to
+a. moral weakness or an addictive personality.
+b. peer pressure.
+c. the easy availability of drugs on city streets.
+d. society’s acceptance of drug use.
+!!!
+Celebrity endorsements in advertising often lead consumers
+to purchase products through _____ (central/
+peripheral) route persuasion.
+!!!
+We tend to agree to a larger request more readily if we have
+already agreed to a small request. This tendency is called
+the _____ - _____ - _____ -
+phenomenon.
+!!!
+Jamal’s therapist has suggested that Jamal should “act
+as if” he is confident, even though he feels insecure and
+shy. Which social psychological theory would best support
+this suggestion, and what might the therapist be hoping to
+achieve?
+!!!
+Researchers have found that a person is most likely to
+conform to a group if
+a. the group members have diverse opinions.
+b. the person feels competent and secure.
+c. the person admires the group’s status.
+d. no one else will observe the person’s behavior.
+!!!
+In Milgram’s experiments, the rate of compliance was highest
+when
+a. the “learner” was at a distance from the “teacher.”
+b. the “learner” was close at hand.
+c. other “teachers” refused to go along with the
+experimenter.
+d. the “teacher” disliked the “learner.”
+!!!
+Dr. Huang, a popular music professor, delivers fascinating
+lectures on music history but gets nervous and makes
+mistakes when describing exam statistics in front of the
+class. Why does his performance vary by task?
+!!!
+In a group situation that fosters arousal and anonymity, a
+person sometimes loses self-consciousness and self-control.
+This phenomenon is called _____.
+!!!
+Sharing our opinions with like-minded others tends to
+strengthen our views, a phenomenon referred to as
+_____ _____ .
+!!!
+Prejudice toward a group involves negative feelings, a
+tendency to discriminate, and overly generalized beliefs
+referred to as _____.
+!!!
+If several well-publicized murders are committed by
+members of a particular group, we may tend to react with
+fear and suspicion toward all members of that group. What
+psychological principle can help explain this reaction?
+!!!
+The other-race effect occurs when we assume that other
+groups are _____ (more/less) homogeneous than our
+own group.
+!!!
+Evidence of a biochemical influence on aggression is the
+finding that
+a. aggressive behavior varies widely from culture to culture.
+b. animals can be bred for aggressiveness.
+c. stimulation of an area of the brain’s limbic system
+produces aggressive behavior.
+d. a higher-than-average level of the hormone testosterone
+is associated with violent behavior in males.
+!!!
+Studies show that parents of delinquent young people tend
+to use beatings to enforce discipline. This suggests that
+aggression can be
+a. learned through direct rewards.
+b. triggered by exposure to violent media.
+c. learned through observation of aggressive models.
+d. caused by hormone changes at puberty.
+!!!
+A conference of social scientists studying the effects of
+pornography unanimously agreed that violent pornography
+a. has little effect on most viewers.
+b. is the primary cause of reported and unreported rapes.
+c. leads viewers to be more accepting of coercion in sexual
+relations.
+d. has no effect, other than short-term arousal and
+entertainment.
+!!!
+The aspect of pornographic films that most directly
+influences men’s aggression toward women seems to be the
+a. length of the film.
+b. eroticism portrayed.
+c. depictions of sexual violence.
+d. attractiveness of the actors.
+!!!
+The more familiar a stimulus becomes, the more we tend to
+like it. This exemplifies _____ _____ the effect.
+!!!
+A happy couple celebrating their 50th wedding anniversary
+is likely to experience deep _____ love, even though
+their _____ love has probably decreased over the
+years.
+!!!
+After vigorous exercise, you meet an attractive person, and
+you are suddenly seized by romantic feelings for that person.
+This response supports the two-factor theory of emotion,
+which assumes that emotions, such as passionate love,
+consist of physical arousal plus
+a. a reward.
+b. proximity.
+c. companionate love.
+d. our interpretation of that arousal.
+!!!
+The bystander effect states that a particular bystander is
+less likely to give aid if
+a. the victim is similar to the bystander in appearance.
+b. no one else is present.
+c. other people are present.
+d. the incident occurs in a deserted or rural area.
+!!!
+Our enemies often have many of the same negative
+impressions of us as we have of them. This exemplifies the
+concept of _____ - _____ perceptions.
+!!!
+One way of resolving conflicts and fostering cooperation is
+by giving rival groups shared goals that help them override
+their differences. These are called goals.
+!!!
+The _____ - _____ theory of emotion maintains
+that a physiological response happens BEFORE we know
+what we are feeling.
+!!!
+Assume that after spending an hour on a treadmill, you
+receive a letter saying that your scholarship request has
+been approved. The two-factor theory of emotion would
+predict that your physical arousal will
+a. weaken your happiness.
+b. intensify your happiness.
+c. transform your happiness into relief.
+d. have no particular effect on your happiness.
+!!!
+Zajonc and LeDoux maintain that some emotional reactions
+occur before we have had the chance to label or interpret
+them. Lazarus disagreed. These psychologists differ about
+whether emotional responses occur in the absence of
+a. physical arousal.
+b. the hormone epinephrine.
+c. cognitive processing.
+d. learning.
+!!!
+What does a polygraph measure and why are its results
+questionable?
+!!!
+When people are induced to assume fearful expressions,
+they often report feeling a little fear. This result is known as
+the _____ _____ effect.
+!!!
+One of the most consistent findings of psychological
+research is that happy people are also
+a. more likely to express anger.
+b. generally luckier than others.
+c. concentrated in the wealthier nations.
+d. more likely to help others.
+!!!
+_____ psychology is a scientific field of study focused
+on how humans thrive and flourish.
+!!!
+After moving to a new apartment, you find the street noise
+irritatingly loud, but after a while, it no longer bothers you.
+This reaction illustrates the
+a. relative deprivation principle.
+b. adaptation-level phenomenon.
+c. feel-good, do-good phenomenon.
+d. catharsis principle.
+!!!
+A philosopher observed that we cannot escape envy,
+because there will always be someone more successful,
+more accomplished, or richer with whom to compare
+ourselves. In psychology, this observation is embodied in the _____
+_____ principle.
+!!!
+Selye’s general adaptation syndrome (GAS) consists of an
+alarm reaction followed by _____, then _____.
+!!!
+When faced with stress, women are more likely than men to
+experience the _____-and-_____ response.
+!!!
+. The number of short-term illnesses and stress-related
+psychological disorders was higher than usual in the months
+following an earthquake. Such findings suggest that
+a. daily hassles have adverse health consequences.
+b. experiencing a very stressful event increases a person’s
+vulnerability to illness.
+c. the amount of stress a person feels is directly related to
+the number of stressors experienced.
+d. small, bad events don’t cause stress, but large ones can
+be toxic.
+!!!
+Which of the following is NOT one of the three main types of
+stressors?
+a. Catastrophes
+b. Significant life changes
+c. Daily hassles
+d. Threatening events that we hear about
+!!!
+Research has shown that people are at increased risk
+for cancer a year or so after experiencing depression,
+helplessness, or bereavement. In describing this link,
+researchers are quick to point out that
+a. accumulated stress causes cancer.
+b. anger is the negative emotion most closely linked to
+cancer.
+c. stress does not create cancer cells, but it weakens the
+body’s natural defenses against them.
+d. feeling optimistic about chances of survival ensures that a
+cancer patient will get well.
+!!!
+A Chinese proverb warns, “The fire you kindle for your
+enemy often burns you more than him.” How is this true of
+Type A individuals?
+!!!
+The components of the Type A personality that have been
+linked most closely to coronary heart disease are anger and
+other _____ feelings.
+!!!
+When faced with a situation over which you feel you have
+no sense of control, it is most effective to use _____
+(emotion/problem)-focused coping
+!!!
+Seligman’s research showed that a dog will respond with
+learned helplessness if it has received repeated shocks and has
+had
+a. the opportunity to escape.
+b. no control over the shocks.
+c. pain or discomfort.
+d. no food or water prior to the shocks.
+!!!
+When elderly patients take an active part in managing their
+own care and surroundings, their morale and health tend to
+improve. Such findings indicate that people do better when
+they experience an _____ (internal/external) locus of
+control.
+!!!
+People who have close relationships are less likely to die
+prematurely than those who do not, supporting the idea that
+a. social ties can be a source of stress.
+b. gender influences longevity.
+c. Type A behavior is responsible for many premature deaths.
+d. social support has a beneficial effect on health
+!!!
+Because it triggers the release of mood-boosting
+neurotransmitters such as norepinephrine, serotonin, and the
+endorphins, _____ exercise raises energy levels and
+helps alleviate depression and anxiety.
+!!!
+Research on the faith factor has found that
+a. pessimists tend to be healthier than optimists.
+b. our expectations influence our feelings of stress.
+c. religiously active people tend to outlive those who are not
+religiously active.
+d. religious engagement promotes isolation, repression, and
+ill health.
