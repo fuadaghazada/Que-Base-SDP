@@ -21,11 +21,22 @@ def insertQuestion(questionObj, analyze = False):
     if "body" not in questionObj:
         raise ValueError("Question dictionary missed 'body' key")
 
+    # Collection of questions
+    questionCollection = getDb()["questions"]
+
+    # Question properties
     questionBody = questionObj["body"]
+
+    # Check if exists in db
+    existingQuestion = questionCollection.find_one({"body": questionBody})
+
+    if existingQuestion is not None:
+        print("The question already exists in the DB")
+        return
 
     # Question to be inserted
     question = deepcopy(questionObj)
-
+    
     # Analyze part (Text Razor)
     if analyze is True:
         # Getting keywords from Text Razor
@@ -35,10 +46,12 @@ def insertQuestion(questionObj, analyze = False):
         question["entity_tags"] = entity_tags
         question["topics"] = topics
         question["categories"] = categories
+        print("The question is analyzed")
 
     # Inserting the question to the DB
-    questionCollection = getDb()["questions"]
     questionCollection.insert_one(question)
+    print(f"A new question is inserted")
+    print("---------------------------")
 
 
 '''
@@ -96,31 +109,6 @@ def findSimilarQuestions(questionBody):
         for question in foundQuestions:
             print(f"{question['question']['body']} --- {question['similarity_rate']}% \n\n")
 
-        # # Search query
-        # query = {"$or": []}
-        #
-        # # Generating the query (entity_tags)
-        # for entity_tag in entity_tags:
-        #     query["$or"].append({"entity_tags": {
-        #         "$elemMatch": {
-        #             "label": entity_tag["label"]
-        #         }
-        #     }})
-        #
-        # # Results after checking entity_tag similarity
-        # questionsFromSimilarEntityTags = questionCollection.find(query)
-        # questionsFromSimilarEntityTagsIds = set([q['_id'] for q in questionsFromSimilarEntityTags])
-        #
-        # # Intersection results
-        # common = questionsFromSimilarEntityTagsIds.intersection(questionsFromSimilarTopicIds)
-        #
-        # # TEMP - Getting the questons from the common ids
-        # query = {"_id": {"$in": list(common)}}
-        # questions = questionCollection.find(query)
-        # for q in questions:
-        #     print(q['body'], "\n")
-        #
-        # return common
         return foundQuestions
 
     except Exception as e:
@@ -150,6 +138,3 @@ def removeOnesWithoutAttrs():
 
     query = { "$and": [{"topics": None}, {"entity_tags": None}, {"categories": None}] }
     x = questionCollection.delete_many(query)
-
-
-removeOnesWithoutAttrs()

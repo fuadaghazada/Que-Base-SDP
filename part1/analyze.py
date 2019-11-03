@@ -1,4 +1,4 @@
-from TextClassifier import TextClassifier
+from utils.TextClassifier import TextClassifier
 from configReader import getConfig
 
 # the Text Classifier

@@ -33,6 +33,3 @@ def convert_pdf_to_txt(path):
     device.close()
     retstr.close()
     return text
-
-txt = convert_pdf_to_txt("Design Report.pdf")
-
