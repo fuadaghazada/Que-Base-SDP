@@ -1,0 +1,5 @@
+Flask==1.1.1
+Flask-PyMongo==2.3.0
+beautifulsoup4==4.7.1
+textrazor==1.4.0
+requests==2.22.0
