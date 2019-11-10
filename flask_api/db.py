@@ -33,4 +33,4 @@ def getDb():
             return None
 
     else:
-        return mydb
+        return db

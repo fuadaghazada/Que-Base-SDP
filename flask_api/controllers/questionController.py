@@ -5,7 +5,9 @@ from flask import redirect
 from flask import url_for
 
 from db import getDb
-from helpers.operateDb import findSimilarQuestions, insertQuestion
+from models.question import Question
+
+from helpers.operateDb import findSimilarQuestions
 from utils.JSONEncoder import customEncode
 
 # Blue print
@@ -18,16 +20,7 @@ bluePrint = Blueprint('questions', __name__, url_prefix='/questions')
 @bluePrint.route("/findSimilarQuestions", methods=["GET"])
 def getSimilarQuestions():
 
-    # DB
-    db = getDb()
     requestData = request.json
-
-    # Error in DB
-    if db is None:
-        return jsonify({
-            'success': False,
-            'message' : 'DB connection cannot be established'
-        })
 
     # Error in parameters
     if "questionBody" not in dict(requestData):
@@ -41,7 +34,7 @@ def getSimilarQuestions():
     questionBody = requestData['questionBody']
 
     # Finding process...
-    foundQuestions = findSimilarQuestions(questionBody, db)
+    foundQuestions = findSimilarQuestions(questionBody)
 
     # Response
     return jsonify({
@@ -57,24 +50,15 @@ def getSimilarQuestions():
 @bluePrint.route("/insertQuestion", methods=["POST"])
 def postInsertQuestion():
 
-    # DB
-    db = getDb()
     requestData = request.json
-
-    # Error in DB
-    if db is None:
-        return jsonify({
-            'success': False,
-            'message' : 'DB connection cannot be established'
-        })
 
     try:
         # Inserting
-        status, msg = insertQuestion(requestData, db)
+        status, msg = Question(requestData["body"]).insert_one()
 
         # Response obj
         response = {
-            "status": status,
+            "success": status,
             "message": msg
         }
 
@@ -86,7 +70,9 @@ def postInsertQuestion():
         return jsonify(response)
 
     except Exception as e:
+
         # Response
         return jsonify({
+            "success": False,
             "message": str(e)
         })
