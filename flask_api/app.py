@@ -1,7 +1,11 @@
 from flask import Flask
+from flask_bcrypt import Bcrypt
 
 from utils.configReader import getConfig
-from controllers import questionController
+from utils.JSONEncoder import JSONEncoder
+
+from controllers import questionController, authController
+
 
 '''
     Creating / Configuring the Flask app
@@ -13,9 +17,11 @@ __config = getConfig()
 # Flask app
 app = Flask("Quesbase")
 
+# App Configurations
+app.json_encoder = JSONEncoder
+
+encrypter = Bcrypt(app)
+
 # Controllers
 app.register_blueprint(questionController.bluePrint)
-
-# Running the server
-if __name__ == '__main__':
-    app.run(host = __config['HOST'], port = __config['PORT'], debug = True)
+app.register_blueprint(authController.bluePrint)

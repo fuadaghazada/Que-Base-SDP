@@ -52,6 +52,12 @@ def findSimilarQuestions(questionBody):
         for i in range(len(foundQuestions)):
             foundQuestions[i]['similarity_rate'] = round((foundQuestions[i]['score'] / maxTopicScore) * 100, 2)
 
+            # We do not need them in the response (probably)
+            del foundQuestions[i]['question']['entity_tags']
+            del foundQuestions[i]['question']['topics']
+            del foundQuestions[i]['question']['categories']
+
+
         for question in foundQuestions:
             print(f"{question['question']['body']} --- {question['similarity_rate']}% \n\n")
 

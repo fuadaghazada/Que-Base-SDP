@@ -57,7 +57,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"body\": \"Another question for test\"\n}",
+					"raw": "{\n\t\"body\": \"A question for test\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -73,6 +73,41 @@
 					"path": [
 						"questions",
 						"insertQuestion"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"firstname\": \"Fuad\",\n\t\"lastname\": \"Aghazada\",\n\t\"username\": \"fuadaghazada\",\n\t\"email\": \"fuad@gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/users/register",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"users",
+						"register"
 					]
 				}
 			},
