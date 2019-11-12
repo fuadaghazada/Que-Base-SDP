@@ -36,6 +36,7 @@ userSchema = {
 # Login schema: only email and password is required
 _loginSchema = deepcopy(userSchema)
 _loginSchema["required"] = ["email", "password"]
+del _loginSchema["properties"]["password"]["minLength"]
 
 '''
     Validating the question data

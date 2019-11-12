@@ -1,3 +1,5 @@
+from copy import deepcopy
+
 from app.utils.db import getDb
 from app.utils.encrypt import hashPassword, validatePassword
 
@@ -18,7 +20,7 @@ class User():
         self.lastname = userObj["lastname"]
         self.username = userObj["username"]
         self.email = userObj["email"]
-        self.password = hashPassword(userObj["password"])         # TODO: Hash the password
+        self.password = hashPassword(userObj["password"])
 
 
     '''
@@ -39,6 +41,29 @@ class User():
             db[COLLECTION_NAME].insert_one(vars(self))
 
             return True, "User is created successfully"
+
+
+    '''
+        Getting the user
+    '''
+    @staticmethod
+    def find_one(email, password):
+        db = getDb()
+
+        # Fetching...
+        user = db[COLLECTION_NAME].find_one({"email": email})
+        userPassword = user['password']
+
+        # Password validation
+        isCorrectPassword = validatePassword(userPassword, password)
+
+        if isCorrectPassword is True:
+            userData = deepcopy(user)
+            del userData['password']     # Removing the password
+
+            return userData
+        else:
+            return None
 
 
     '''

@@ -3,5 +3,6 @@
     "DB_NAME": "quebaseTest",
     "TEXT_RAZOR_API_KEY": "a1d06d38ab618db113866db22344e6eccc49af1d4603088f11a6cd43",
     "HOST": "localhost",
-    "PORT": "8000"
+    "PORT": "8000",
+    "SECRET_KEY": " a very very very secret key"
 }

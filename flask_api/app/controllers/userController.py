@@ -4,6 +4,7 @@ from flask import request
 
 from app.models.user import User
 from app.schemas.user import validateUser
+from app.utils.token import encode_token, decode_token
 
 # Blue print
 bluePrint = Blueprint('users', __name__, url_prefix='/users')
@@ -67,10 +68,27 @@ def login():
         return jsonify(validation)
 
     try:
-        # TODO: Login operations...
-        pass
+        user = User.find_one(requestData['email'], requestData['password'])
+
+        if user is None:
+            return jsonify({
+                "success": False,
+                "message": "User not found"
+            }), 400
+
+        # Generating a token with user data as payload
+        token = encode_token(user)
+
+        # Response
+        return jsonify({
+            "success": True,
+            "message": "User is obtained successfully",
+            "token": str(token)
+        }), 200
 
     except Exception as e:
+
+        raise e
 
         # Response
         return jsonify({
