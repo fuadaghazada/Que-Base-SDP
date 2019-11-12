@@ -1,6 +1,8 @@
 from app.utils.db import getDb
+from app.utils.encrypt import hashPassword, validatePassword
 
 COLLECTION_NAME = "users"
+
 
 '''
     Model class for user
@@ -16,7 +18,7 @@ class User():
         self.lastname = userObj["lastname"]
         self.username = userObj["username"]
         self.email = userObj["email"]
-        self.password = userObj["password"]         # TODO: Hash the password
+        self.password = hashPassword(userObj["password"])         # TODO: Hash the password
 
 
     '''
