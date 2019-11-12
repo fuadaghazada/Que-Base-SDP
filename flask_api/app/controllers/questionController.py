@@ -5,6 +5,7 @@ from flask import request
 from app.models.question import Question
 from app.schemas.question import validateQuestion
 from app.helpers.operateDb import findSimilarQuestions
+from app.helpers.isAuth import isAuth
 
 # Blue print
 bluePrint = Blueprint('questions', __name__, url_prefix='/questions')
@@ -14,7 +15,8 @@ bluePrint = Blueprint('questions', __name__, url_prefix='/questions')
 '''
 
 @bluePrint.route("/findSimilarQuestions", methods=["GET"])
-def getSimilarQuestions():
+@isAuth(request)
+def getSimilarQuestions(user):
 
     requestData = request.get_json()
 

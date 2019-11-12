@@ -4,7 +4,7 @@ from flask import request
 
 from app.models.user import User
 from app.schemas.user import validateUser
-from app.utils.token import encode_token, decode_token
+from app.utils.token import encode_token
 
 # Blue print
 bluePrint = Blueprint('users', __name__, url_prefix='/users')
