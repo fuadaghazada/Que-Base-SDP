@@ -46,7 +46,8 @@ def getSimilarQuestions(user):
 '''
 
 @bluePrint.route("/insertQuestion", methods=["POST"])
-def postInsertQuestion():
+@isAuth(request)
+def postInsertQuestion(user):
 
     requestData = request.get_json()
     validation = validateQuestion(requestData)
