@@ -1,10 +1,10 @@
 from flask import Flask
 from flask_bcrypt import Bcrypt
 
-from utils.configReader import getConfig
-from utils.JSONEncoder import JSONEncoder
+from .utils.configReader import getConfig
+from .utils.JSONEncoder import JSONEncoder
 
-from controllers import questionController, authController
+from .controllers import questionController, userController
 
 
 '''
@@ -24,4 +24,4 @@ encrypter = Bcrypt(app)
 
 # Controllers
 app.register_blueprint(questionController.bluePrint)
-app.register_blueprint(authController.bluePrint)
+app.register_blueprint(userController.bluePrint)

@@ -1,4 +1,4 @@
-from db import getDb
+from app.utils.db import getDb
 
 COLLECTION_NAME = "users"
 

@@ -1,7 +1,7 @@
 from flask import current_app as app
 from flask_pymongo import PyMongo
 
-from utils.configReader import getConfig
+from app.utils.configReader import getConfig
 
 # DB
 db = None

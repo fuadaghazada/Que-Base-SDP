@@ -1,5 +1,5 @@
-from utils.TextClassifier import TextClassifier
-from utils.configReader import getConfig
+from app.utils.TextClassifier import TextClassifier
+from app.utils.configReader import getConfig
 
 # the Text Classifier
 config = getConfig()

@@ -2,8 +2,8 @@ from flask import Blueprint
 from flask import jsonify
 from flask import request
 
-from models.user import User
-from schemas.user import validateUser
+from app.models.user import User
+from app.schemas.user import validateUser
 
 # Blue print
 bluePrint = Blueprint('users', __name__, url_prefix='/users')

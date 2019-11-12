@@ -1,5 +1,5 @@
 import sys
-from operateDb import insertQuestion
+from .helpers.operateDb import insertQuestion
 
 SPLITTER = "!!!"
 

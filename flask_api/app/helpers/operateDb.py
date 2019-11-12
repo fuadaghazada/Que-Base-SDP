@@ -1,7 +1,7 @@
 from copy import deepcopy
 
-from models.question import Question
-from helpers.analyze import analyzeQuestion
+from app.models.question import Question
+from app.helpers.analyze import analyzeQuestion
 
 
 '''

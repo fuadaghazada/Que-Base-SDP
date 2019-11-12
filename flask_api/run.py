@@ -1,4 +1,4 @@
-from utils.configReader import getConfig
+from app.utils.configReader import getConfig
 from app import app
 
 # Config

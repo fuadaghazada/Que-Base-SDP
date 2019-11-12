@@ -2,9 +2,9 @@ from flask import Blueprint
 from flask import jsonify
 from flask import request
 
-from models.question import Question
-from schemas.question import validateQuestion
-from helpers.operateDb import findSimilarQuestions
+from app.models.question import Question
+from app.schemas.question import validateQuestion
+from app.helpers.operateDb import findSimilarQuestions
 
 # Blue print
 bluePrint = Blueprint('questions', __name__, url_prefix='/questions')
@@ -71,7 +71,7 @@ def postInsertQuestion():
         return jsonify(response), 200
 
     except Exception as e:
-        
+
         # Response
         return jsonify({
             "success": False,

@@ -1,5 +1,5 @@
-from db import getDb
-from helpers.analyze import analyzeQuestion
+from app.utils.db import getDb
+from app.helpers.analyze import analyzeQuestion
 
 COLLECTION_NAME = "questions"
 
