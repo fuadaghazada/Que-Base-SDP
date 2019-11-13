@@ -1,4 +1,5 @@
 from flask import Flask
+from flask_cors import CORS
 
 from .utils.configReader import getConfig
 from .utils.JSONEncoder import JSONEncoder
@@ -17,6 +18,7 @@ app = Flask("Quesbase")
 
 # App Configurations
 app.json_encoder = JSONEncoder
+cors = CORS(app)
 
 # Controllers
 app.register_blueprint(questionBluePrint)
