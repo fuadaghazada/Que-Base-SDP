@@ -1,5 +1,0 @@
-beautifulsoup4==4.7.1
-pymongo[tls,srv]==3.9.0
-requests==2.22.0
-textrazor==1.4.0
-urllib3==1.25.6

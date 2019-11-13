@@ -28,7 +28,8 @@ def encode_token(data, algorithm='HS256', timeDelta=datetime.timedelta(days=0, h
             payload,
             secretKey,
             algorithm=algorithm
-        )
+        ).decode('utf-8')
+
     except Exception as e:
         return e
 
