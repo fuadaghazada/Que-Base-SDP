@@ -16,14 +16,14 @@ def isAuth(request):
             token = request.headers.get('Authorization')
 
             # Check conditions...
-            if token is None:
+            if token is None or "Bearer" not in token:
                 return jsonify({
                     "success": False,
                     "message": "Authentication is required"
                 }), 400
 
             # Decoding
-            status, msg, data = decode_token(token)
+            status, msg, data = decode_token(token.replace("Bearer", "").strip())
 
             if status is True:
                 # Continue...

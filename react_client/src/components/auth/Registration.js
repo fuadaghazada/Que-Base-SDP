@@ -56,8 +56,8 @@ class Registration extends Component {
 
         // Adding keys and values to form data
         const data = {
-            firstName: this.state.firstName,
-            lastName: this.state.lastName,
+            firstname: this.state.firstName,
+            lastname: this.state.lastName,
             username: this.state.username,
             email: this.state.email,
             password: this.state.password,

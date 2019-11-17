@@ -5,6 +5,7 @@ from flask import request
 from app.models.user import User
 from app.schemas.user import validateUser
 from app.utils.token import encode_token
+from app.helpers.isAuth import isAuth
 
 # Blue print
 bluePrint = Blueprint('users', __name__, url_prefix='/users')
@@ -50,7 +51,7 @@ def register():
         return jsonify({
             "success": False,
             "message": str(e)
-        }), 400
+        })
 
 
 '''
@@ -74,7 +75,7 @@ def login():
             return jsonify({
                 "success": False,
                 "message": "User not found"
-            }), 400
+            })
 
         # Generating a token with user data as payload
         token = encode_token(user)
@@ -94,4 +95,26 @@ def login():
         return jsonify({
             "success": False,
             "message": str(e)
-        }), 400
+        })
+
+
+'''
+    [POST] Log out of the user
+'''
+
+@bluePrint.route("/logout", methods=["POST"])
+@isAuth(request)
+def logout(user):
+
+    if user is not None:
+        # Response
+        return jsonify({
+            "success": True,
+            "message": "Successful logout"
+        }), 200
+    else:
+        # Response
+        return jsonify({
+            "success": False,
+            "message": "User not found"
+        })

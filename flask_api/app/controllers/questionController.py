@@ -26,7 +26,7 @@ def getSimilarQuestions(user):
         return jsonify({
             'success': False,
             "message": "Please provide the 'questionBody' field in the body"
-        }), 400
+        })
 
     # Extracting question body from the request
     questionBody = requestData['questionBody']
@@ -79,4 +79,4 @@ def postInsertQuestion(user):
         return jsonify({
             "success": False,
             "message": str(e)
-        }), 400
+        })

@@ -1,6 +1,10 @@
 import sys
 import json
 
+if len(sys.argv) < 2:
+    print("Please provide a config file")
+    sys.exit()
+
 configOptions = None
 configFileName = sys.argv[1]
 

@@ -11,10 +11,12 @@ userSchema = {
     "type": "object",
     "properties": {
         "firstname": {
-            "type": "string"
+            "type": "string",
+            "minLength": 1
         },
         "lastname": {
-            "type": "string"
+            "type": "string",
+            "minLength": 1
         },
         "username": {
             "type": "string",
@@ -22,14 +24,17 @@ userSchema = {
         },
         "email": {
             "type": "string",
-            "format": "email"
+            "pattern": "^[a-z0-9\._%+!$&*=^|~#%{}/\-]+@([a-z0-9\-]+\.){1,}([a-z]{2,22})$"
         },
         "password": {
             "type": "string",
             "minLength": 6
-        }
+        },
+        "confirmPassword": {
+            "type": "string"
+        },
     },
-    "required": ["firstname", "lastname", "username", "email", "password"],
+    "required": ["firstname", "lastname", "username", "email", "password", "confirmPassword"],
     "additionalProperties": True
 }
 
@@ -37,6 +42,7 @@ userSchema = {
 _loginSchema = deepcopy(userSchema)
 _loginSchema["required"] = ["email", "password"]
 del _loginSchema["properties"]["password"]["minLength"]
+
 
 '''
     Validating the question data
@@ -50,15 +56,19 @@ def validateUser(data, isLogin = False):
         else:
             validate(data, userSchema)
 
+            # Confirming the password
+            if data["confirmPassword"] != data["password"]:
+                raise ValidationError("No matching passwords")
+
     except ValidationError as e:
         return {
             'success': False,
-            'message': str(e)
+            'message': str(e.message)
         }
     except SchemaError as e:
         return {
             'success': False,
-            'message': str(e)
+            'message': str(e.message)
         }
 
     # Success!

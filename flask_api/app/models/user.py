@@ -52,6 +52,11 @@ class User():
 
         # Fetching...
         user = db[COLLECTION_NAME].find_one({"email": email})
+
+        # If no user
+        if user is None:
+            return None
+
         userPassword = user['password']
 
         # Password validation

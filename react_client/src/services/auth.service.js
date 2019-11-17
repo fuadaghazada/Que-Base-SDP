@@ -7,7 +7,7 @@ import getHeaders from '../utils/getHeaders';
  *  Handling Authentication services
  */
 
-const AUTH_API_URL = "http://localhost:8000/users";
+const AUTH_API_URL = "http://localhost:8000/users";     // TODO: This should be handled by 'setupProxy'
 
 
 /**
@@ -95,7 +95,7 @@ const signOut = () => {
     return axios({
         method: 'post',
         headers: getHeaders.auth(),
-        url: `${AUTH_API_URL}/signOut`,
+        url: `${AUTH_API_URL}/logout`,
     })
         .then(response => {
             if (response.data.success) {
@@ -109,6 +109,9 @@ const signOut = () => {
             }
         })
         .catch(err => {
+
+            console.log(getHeaders.auth())
+
             console.log(err);
             return { redirect: false };
         });
