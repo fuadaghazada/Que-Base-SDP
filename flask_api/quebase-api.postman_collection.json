@@ -18,11 +18,16 @@
 						"name": "Content-Type",
 						"value": "application/json",
 						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzM1NjI4MTAsImlhdCI6MTU3MzU1OTIxMCwic3ViIjoie1wiX2lkXCI6IFwiNWRjYTg0MzYxNmEyOThkNTNmODA3ZDc0XCIsIFwiZmlyc3RuYW1lXCI6IFwiRnVhZFwiLCBcImxhc3RuYW1lXCI6IFwiQWdoYXphZGFcIiwgXCJ1c2VybmFtZVwiOiBcImZ1YWRhZ2hhemFkYVwiLCBcImVtYWlsXCI6IFwiZnVhZEBnbWFpbC5jb21cIn0ifQ.8ERejW2p5mVG1mtEvk0twzNqxzfWSbACU_urUqfmRh0",
+						"type": "text"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "",
+					"raw": "{\n\t\"body\": \"What is the primary end or purpose of government? Do you think Locke was misguided in trying to account for the legitimate functions of government in terms of the preservation of property?\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -53,11 +58,16 @@
 						"name": "Content-Type",
 						"value": "application/json",
 						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQwNzA1OTIsImlhdCI6MTU3NDA2Njk5Miwic3ViIjoie1wiX2lkXCI6IFwiNWRjYTg0MzYxNmEyOThkNTNmODA3ZDc0XCIsIFwiZmlyc3RuYW1lXCI6IFwiRnVhZFwiLCBcImxhc3RuYW1lXCI6IFwiQWdoYXphZGFcIiwgXCJ1c2VybmFtZVwiOiBcImZ1YWRhZ2hhemFkYVwiLCBcImVtYWlsXCI6IFwiZnVhZEBnbWFpbC5jb21cIn0ifQ.vmYunx0hLB-PH6esMeAddO3tSZ4N3HenLwc90JuK_TM",
+						"type": "text"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"body\": \"A question for test\"\n}",
+					"raw": "{\n\t\"a\": \"A question for testt\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -88,11 +98,17 @@
 						"name": "Content-Type",
 						"value": "application/json",
 						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQwMjUxMzUsImlhdCI6MTU3NDAyMTUzNSwic3ViIjoie1wiX2lkXCI6IFwiNWRjYTg0MzYxNmEyOThkNTNmODA3ZDc0XCIsIFwiZmlyc3RuYW1lXCI6IFwiRnVhZFwiLCBcImxhc3RuYW1lXCI6IFwiQWdoYXphZGFcIiwgXCJ1c2VybmFtZVwiOiBcImZ1YWRhZ2hhemFkYVwiLCBcImVtYWlsXCI6IFwiZnVhZEBnbWFpbC5jb21cIn0ifQ.RSdrTQOWXd0cwhffN-9ZiT1rE839Mi6NfWOjvLqVfGM",
+						"type": "text",
+						"disabled": true
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"firstname\": \"Fuad\",\n\t\"lastname\": \"Aghazada\",\n\t\"username\": \"fuadaghazada\",\n\t\"email\": \"fuad@gmail.com\"\n}",
+					"raw": "{\n\t\"firstname\": \"Fuad\",\n\t\"lastname\": \"Aghazada\",\n\t\"username\": \"fuadaghazada\",\n\t\"email\": \"fuad@gmail.com\",\n\t\"password\": \"1234567\",\n\t\"confirmPassword\": \"1234567\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -144,6 +160,49 @@
 						"users",
 						"login"
 					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logout User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8000/users/logout",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"users",
+						"logout"
+					],
+					"query": [
+						{
+							"key": "Authorization",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Admin insert questions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
 				}
 			},
 			"response": []
