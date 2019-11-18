@@ -23,3 +23,4 @@ cors = CORS(app)
 # Controllers
 app.register_blueprint(questionBluePrint)
 app.register_blueprint(userBluePrint)
+app.register_blueprint(adminBluePrint)

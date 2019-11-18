@@ -10,10 +10,10 @@ class Question():
     '''
         Initializing a question
 
-        :param: (string) body - text body of the question
+        :param: (string) question - the question with its properties
     '''
-    def __init__(self, body):
-        self.body = body
+    def __init__(self, question):
+        self.body = question['body']
 
 
     '''

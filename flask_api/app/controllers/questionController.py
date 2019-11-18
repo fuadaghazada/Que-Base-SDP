@@ -19,17 +19,14 @@ bluePrint = Blueprint('questions', __name__, url_prefix='/questions')
 def getSimilarQuestions(user):
 
     requestData = request.get_json()
+    validation = validateQuestion(requestData)
 
-    # Error in parameters
-    if "questionBody" not in dict(requestData):
-        # Response
-        return jsonify({
-            'success': False,
-            "message": "Please provide the 'questionBody' field in the body"
-        })
+    # Invalid
+    if validation['success'] is False:
+        return jsonify(validation)
 
     # Extracting question body from the request
-    questionBody = requestData['questionBody']
+    questionBody = requestData['body']
 
     # Finding process...
     foundQuestions = findSimilarQuestions(questionBody)
@@ -58,7 +55,7 @@ def postInsertQuestion(user):
 
     try:
         # Inserting
-        status, msg = Question(requestData["body"]).insert_one()
+        status, msg = Question(requestData).insert_one()
 
         # Response obj
         response = {

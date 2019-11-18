@@ -1,27 +1,22 @@
 import sys
-from .helpers.operateDb import insertQuestion
 
 SPLITTER = "!!!"
 
-try:
-    if len(sys.argv) < 3:
-        raise Exception("Please provide a file name in the arguments or check the directory")
+'''
+    Read the questions from the given filename
 
-    # Name of the file
-    filename = sys.argv[2]
+    :param: (str) filename: the given filename
+'''
+def readQuestions(filename):
 
-    # Reading the file
-    with open(filename, 'r') as readFile:
-        txt = str(readFile.read()).strip()
-        questions = [question.replace('\n', ' ').strip() for question in txt.split(SPLITTER)]
+    try:
+        # Reading the file
+        with open(f'../questions_from_books/{filename}', 'r') as readFile:
+            txt = str(readFile.read()).strip()
+            questions = [question.replace('\n', ' ').strip() for question in txt.split(SPLITTER)]
 
-        print(f"Number of questions: {len(questions)}\n")
-        print(questions)
+        return questions
 
-        # TODO: Add questions to the db
-        for question in questions:
-            insertQuestion({'body': question}, True)
-
-
-except Exception as e:
-    raise
+    except Exception as e:
+        raise
+        return []

@@ -20,7 +20,7 @@ def isAuth(request):
                 return jsonify({
                     "success": False,
                     "message": "Authentication is required"
-                }), 400
+                })
 
             # Decoding
             status, msg, data = decode_token(token)
@@ -32,7 +32,31 @@ def isAuth(request):
                 return jsonify({
                     "success": False,
                     "message": msg
-                }), 400
+                })
+
+        return wrapped
+    return decorator
+
+
+'''
+    Simple and funny admin decorator/middleware
+'''
+
+def isAdmin(request):
+    def decorator(f):
+        @wraps(f)
+        def wrapped(*args, **kwargs):
+
+            isAdmin = request.headers.get('Admin')
+
+            if isAdmin:
+                # Continue...
+                return f(*args, **kwargs)
+            else:
+                return jsonify({
+                    "success": False,
+                    "message": "You are not an admin"
+                })
 
         return wrapped
     return decorator
