@@ -1,78 +1,53 @@
-from copy import deepcopy
-
-from jsonschema import validate
-from jsonschema.exceptions import ValidationError, SchemaError
+from marshmallow import Schema, fields, validate, validates_schema, ValidationError
+from marshmallow.validate import Length, Range, Email, Equal
 
 '''
-    Schema of User object for validation
+    User schema for validation (Registration)
 '''
 
-userSchema = {
-    "type": "object",
-    "properties": {
-        "firstname": {
-            "type": "string",
-            "minLength": 1
-        },
-        "lastname": {
-            "type": "string",
-            "minLength": 1
-        },
-        "username": {
-            "type": "string",
-            "minLength": 6
-        },
-        "email": {
-            "type": "string",
-            "pattern": "^[a-z0-9\._%+!$&*=^|~#%{}/\-]+@([a-z0-9\-]+\.){1,}([a-z]{2,22})$"
-        },
-        "password": {
-            "type": "string",
-            "minLength": 6
-        },
-        "confirmPassword": {
-            "type": "string"
-        },
-    },
-    "required": ["firstname", "lastname", "username", "email", "password", "confirmPassword"],
-    "additionalProperties": True
-}
+class RegisterSchema(Schema):
 
-# Login schema: only email and password is required
-_loginSchema = deepcopy(userSchema)
-_loginSchema["required"] = ["email", "password"]
-del _loginSchema["properties"]["password"]["minLength"]
+    # Fields
+    firstname = fields.Str(required = True, validate = Length(min = 1, max = 50))
+    lastname = fields.Str(required = True, validate = Length(min = 1, max = 50))
+    username = fields.Str(required = True, validate = Length(min = 6, max = 50))
+    email = fields.Email(required = True, error = "Not a valid email address")
+    password = fields.Str(required = True, validate = Length(min = 1, max = 50))
+    confirmPassword = fields.Str(required = True)
+
+    @validates_schema
+    def checkConfirmPassword(self, instance, **kwargs):
+        if instance['password'] != instance['confirmPassword']:
+            raise ValidationError("No matching password")
 
 
 '''
-    Validating the question data
+    User schema for validation (Login)
+'''
+
+class LoginSchema(Schema):
+
+    # Fields
+    email = fields.Email(required = True, error = "Not a valid email address")
+    password = fields.Str(required = True, validate = Length(min = 1, max = 50))
+
+
+'''
+    Validating the given data via the predefined user schema
 '''
 
 def validateUser(data, isLogin = False):
-    try:
-        # Validating here...
-        if isLogin is True:
-            validate(data, _loginSchema)
-        else:
-            validate(data, userSchema)
 
-            # Confirming the password
-            if data["confirmPassword"] != data["password"]:
-                raise ValidationError("No matching passwords")
+    # Validation...
+    errors = RegisterSchema().validate(data) if isLogin is False else LoginSchema().validate(data)
 
-    except ValidationError as e:
+    if errors:
         return {
             'success': False,
-            'message': str(e.message)
+            'message': str(errors)
         }
-    except SchemaError as e:
+    else:
         return {
-            'success': False,
-            'message': str(e.message)
+            'success': True,
+            'data': data
         }
-
-    # Success!
-    return {
-        'success': True,
-        'data': data
-    }

@@ -1,44 +1,31 @@
-from jsonschema import validate
-from jsonschema.exceptions import ValidationError, SchemaError
+from marshmallow import Schema, fields, validate
 
 '''
-    Schema of Question object for validation
+    User schema for validation (Registration)
 '''
 
-questionSchema = {
-    "type": "object",
-    "properties": {
-        "body": {
-            "type": "string",
-        }
-    },
-    "required": ["body"],
-    "additionalProperties": False
-}
+class QuestionSchema(Schema):
+
+    # Fields
+    body = fields.Str(required = True)
 
 
 '''
-    Validating the question data
+    Validating the given data via the predefined question schema
 '''
 
-def validateQuestion(data):
-    try:
-        # Validating here...
-        validate(data, questionSchema)
+def validateQuestion(data, isLogin = False):
 
-    except ValidationError as e:
+    # Validation...
+    errors = QuestionSchema().validate(data)
+
+    if errors:
         return {
             'success': False,
-            'message': str(e)
+            'message': str(errors)
         }
-    except SchemaError as e:
+    else:
         return {
-            'success': False,
-            'message': str(e)
+            'success': True,
+            'data': data
         }
-
-    # Success!
-    return {
-        'success': True,
-        'data': data
-    }

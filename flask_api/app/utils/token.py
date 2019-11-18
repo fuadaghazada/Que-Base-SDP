@@ -44,6 +44,10 @@ def encode_token(data, algorithm='HS256', timeDelta=datetime.timedelta(days=0, h
 def decode_token(token):
 
     try:
+        if "Bearer" not in token:
+            raise jwt.InvalidTokenError()
+
+        token = token.replace("Bearer", "").strip()
         payload = jwt.decode(token, secretKey)
 
         return True, "Decode is successful", payload['sub']
