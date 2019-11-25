@@ -14,7 +14,7 @@ class QuestionSchema(Schema):
     Validating the given data via the predefined question schema
 '''
 
-def validateQuestion(data, isLogin = False):
+def validateQuestion(data):
 
     # Validation...
     errors = QuestionSchema().validate(data)
