@@ -55,6 +55,7 @@ def postInsertQuestion(user):
 
     try:
         # Inserting
+        requestData['userId'] = user["_id"]
         status, msg = Question(requestData).insert_one()
 
         # Response obj

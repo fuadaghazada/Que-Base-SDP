@@ -1,6 +1,7 @@
 from copy import deepcopy
 
 from app.utils.db import getDb
+from app.utils.titleGeneration import generateTitleFromText
 from app.helpers.analyze import analyzeQuestion
 
 COLLECTION_NAME = "questions"
@@ -16,6 +17,7 @@ class Question():
     '''
     def __init__(self, question):
         self.body = question['body']
+        self.title = question['title'] if question.get('title') else generateTitleFromText(self.body)
         self.source = question['source'] if question.get('source') else None
         self.userId = question['userId'] if question.get('userId') else None
         self.viewCount = question['viewCount'] if question.get('viewCount') else 0
@@ -39,7 +41,6 @@ class Question():
             newValues = {"$set": obj}
 
             x = db[COLLECTION_NAME].update_one({"body": self.body}, newValues)
-            print(x.raw_result)
 
             return False, "Question already exists"
         else:

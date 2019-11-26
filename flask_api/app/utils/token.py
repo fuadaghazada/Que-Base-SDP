@@ -1,5 +1,6 @@
-import jwt
+import json
 import datetime
+import jwt
 
 from .configReader import getConfig
 from .JSONEncoder import customEncode
@@ -50,7 +51,7 @@ def decode_token(token):
         token = token.replace("Bearer", "").strip()
         payload = jwt.decode(token, secretKey)
 
-        return True, "Decode is successful", payload['sub']
+        return True, "Decode is successful", json.loads(payload['sub'])
 
     except jwt.ExpiredSignatureError as e:
         return False, "Token has been expired", None

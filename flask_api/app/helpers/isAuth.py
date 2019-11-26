@@ -24,7 +24,7 @@ def isAuth(request):
 
             # Decoding
             status, msg, data = decode_token(token)
-
+            
             if status is True:
                 # Continue...
                 return f(data, *args, **kwargs)

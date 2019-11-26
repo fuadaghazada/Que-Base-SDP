@@ -21,7 +21,7 @@ bluePrint = Blueprint('admin', __name__, url_prefix='/admin')
 def postInsertQuestion():
 
     requestData = request.get_json()
-    
+
     # Error in parameters
     if "filename" not in dict(requestData):
         # Response
@@ -45,8 +45,6 @@ def postInsertQuestion():
 
             status, msg = Question(questionObj).insert_one()
             print(f"-- {msg} ---")
-            break
-
 
         return jsonify({
             "success": True,
