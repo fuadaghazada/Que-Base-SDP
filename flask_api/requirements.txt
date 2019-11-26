@@ -7,3 +7,4 @@ textrazor==1.4.0
 requests==2.22.0
 marshmallow==3.2.2
 PyJWT==1.7.1
+nltk==3.4.5
