@@ -1,3 +1,5 @@
+from copy import deepcopy
+
 from flask import Blueprint
 from flask import jsonify
 from flask import request
@@ -19,7 +21,7 @@ bluePrint = Blueprint('admin', __name__, url_prefix='/admin')
 def postInsertQuestion():
 
     requestData = request.get_json()
-
+    
     # Error in parameters
     if "filename" not in dict(requestData):
         # Response
@@ -29,12 +31,22 @@ def postInsertQuestion():
         })
 
     filename = requestData['filename']
+
+    # Other question propertiess
+    questionObj = deepcopy(requestData)
+    del questionObj["filename"]
+
+    # Reading the questions from the given file
     questions = readQuestions(filename)
 
     try:
         for question in questions:
-            status, msg = Question({"body": question}).insert_one()
+            questionObj["body"] = question
+
+            status, msg = Question(questionObj).insert_one()
             print(f"-- {msg} ---")
+            break
+
 
         return jsonify({
             "success": True,

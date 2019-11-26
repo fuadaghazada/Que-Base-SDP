@@ -1,3 +1,5 @@
+from copy import deepcopy
+
 from app.utils.db import getDb
 from app.helpers.analyze import analyzeQuestion
 
@@ -14,6 +16,10 @@ class Question():
     '''
     def __init__(self, question):
         self.body = question['body']
+        self.source = question['source'] if question.get('source') else None
+        self.userId = question['userId'] if question.get('userId') else None
+        self.viewCount = question['viewCount'] if question.get('viewCount') else 0
+        self.favCount = question['favCount'] if question.get('favCount') else 0
 
 
     '''
@@ -27,6 +33,14 @@ class Question():
 
         # Check if the same question exists
         if self.check_exists():
+            
+            obj = deepcopy(vars(self))
+            del obj['body']
+            newValues = {"$set": obj}
+            
+            x = db[COLLECTION_NAME].update_one({"body": self.body}, newValues)
+            print(x.raw_result)
+            
             return False, "Question already exists"
         else:
             # Analyze
