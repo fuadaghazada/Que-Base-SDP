@@ -1,6 +1,6 @@
 {
     "DB_URL": "mongodb://localhost:27017/",
-    "DB_NAME": "quebase",
+    "DB_NAME": "quebaseTest",
     "TEXT_RAZOR_API_KEY": "3242807cdbc0def78ed65a861b16bebd8bfdceaa1caab913d5049275",
     "HOST": "localhost",
     "PORT": "8000",

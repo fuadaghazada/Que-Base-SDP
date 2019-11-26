@@ -199,10 +199,39 @@
 		{
 			"name": "Admin insert questions",
 			"request": {
-				"method": "GET",
-				"header": [],
+				"method": "POST",
+				"header": [
+					{
+						"key": "Admin",
+						"value": "True",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"filename\": \"\",\n\t\"source\": {\n\t\t\"reference\": \"blabla\"\n\t}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
-					"raw": ""
+					"raw": "localhost:8000/admin/insertQuestion",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"admin",
+						"insertQuestion"
+					]
 				}
 			},
 			"response": []

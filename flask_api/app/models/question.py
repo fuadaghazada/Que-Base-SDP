@@ -33,14 +33,14 @@ class Question():
 
         # Check if the same question exists
         if self.check_exists():
-            
+
             obj = deepcopy(vars(self))
             del obj['body']
             newValues = {"$set": obj}
-            
+
             x = db[COLLECTION_NAME].update_one({"body": self.body}, newValues)
             print(x.raw_result)
-            
+
             return False, "Question already exists"
         else:
             # Analyze
