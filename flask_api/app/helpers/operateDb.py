@@ -60,10 +60,6 @@ def findSimilarQuestions(questionBody):
             del foundQuestions[i]['question']['topics']
             del foundQuestions[i]['question']['categories']
 
-
-        for question in foundQuestions:
-            print(f"{question['question']['body']} --- {question['similarity_rate']}% \n\n")
-
         return foundQuestions
 
     except Exception as e:
@@ -85,7 +81,7 @@ def filterQuestionsByAttributes(attr):
     query.addElemMatchFields('entity_tags', attr['entityTag'])
     query.addElemMatchFields('topics', attr['topic'])
     query.addElemMatchFields('categories', attr['category'])
-    
+
     # Get the final query
     isQueryValid, q = query.getCompleteQuery()
 

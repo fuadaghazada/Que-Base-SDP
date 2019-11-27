@@ -83,5 +83,5 @@ class Question():
     def find(query):
         db = getDb()
         db[COLLECTION_NAME].create_index([("body", "text")])
-        
+
         return db[COLLECTION_NAME].find(query)
