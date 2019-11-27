@@ -2,6 +2,9 @@ from copy import deepcopy
 
 from app.models.question import Question
 from app.helpers.analyze import analyzeQuestion
+from app.utils.queryGenerator import CustomQueryGenerator
+
+from bson.json_util import dumps
 
 
 '''
@@ -66,6 +69,35 @@ def findSimilarQuestions(questionBody):
     except Exception as e:
         raise e
         return []
+
+
+'''
+    Filtering questions by their attributes (by the specified category, view count, etc.)
+'''
+def filterQuestionsByAttributes(attr):
+
+    query = CustomQueryGenerator(attr['logicalOp'])
+
+    query.addStringField('body', attr['body'], elastic=True)
+    query.addNumberComparisonField('viewCount', attr['viewCount'])
+    query.addNumberComparisonField('favCount', attr['favCount'])
+    # TODO: Filtering by the "source"
+    query.addElemMatchFields('entity_tags', attr['entityTag'])
+    query.addElemMatchFields('topics', attr['topic'])
+    query.addElemMatchFields('categories', attr['category'])
+    
+    # Get the final query
+    isQueryValid, q = query.getCompleteQuery()
+
+    # If there is at least 1 filter, perform the query
+    if isQueryValid:
+        results = Question.find(q)
+
+        # Print the titles of the resulting items
+        for res in results:
+            print(res['title'])
+
+    return "..."
 
 
 '''

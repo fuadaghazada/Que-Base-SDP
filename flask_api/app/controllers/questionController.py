@@ -4,7 +4,9 @@ from flask import request
 
 from app.models.question import Question
 from app.schemas.question import validateQuestion
+from app.schemas.questionQuery import validateQuestionQuery
 from app.helpers.operateDb import findSimilarQuestions
+from app.helpers.operateDb import filterQuestionsByAttributes
 from app.helpers.isAuth import isAuth
 
 # Blue print
@@ -78,3 +80,24 @@ def postInsertQuestion(user):
             "success": False,
             "message": str(e)
         })
+
+@bluePrint.route("/getQuestions", methods=["GET"])
+@isAuth(request)
+def getQuestions(user):
+
+    # Get the request and validate it
+    requestData = request.get_json()
+    validation = validateQuestionQuery(requestData)
+
+    if validation['success'] is False:
+        return jsonify(validation)
+
+    # Perform the filtering operation
+    results = filterQuestionsByAttributes(requestData)
+
+    # Return the response
+    return jsonify({
+        'success': True,
+        "results": results
+    }), 200
+

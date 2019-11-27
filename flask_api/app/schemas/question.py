@@ -8,7 +8,7 @@ class QuestionSchema(Schema):
 
     # Fields
     body = fields.Str(required = True)
-    source = fields.Dict(required = True)
+    source = fields.Dict(required = False)
     title = fields.Str(required = False)
     userId = fields.Str(required = False)
     viewCount = fields.Integer(required = False)
