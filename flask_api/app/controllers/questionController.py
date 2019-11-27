@@ -3,11 +3,16 @@ from flask import jsonify
 from flask import request
 
 from app.models.question import Question
+from app.models.searchCache import SearchedQuestion
 from app.schemas.question import validateQuestion
 from app.schemas.questionQuery import validateQuestionQuery
 from app.helpers.operateDb import findSimilarQuestions
 from app.helpers.operateDb import filterQuestionsByAttributes
 from app.helpers.isAuth import isAuth
+
+
+MIN_THRESHOLD = 40  # Minimum threshold for similarity RATE
+
 
 # Blue print
 bluePrint = Blueprint('questions', __name__, url_prefix='/questions')
@@ -23,6 +28,9 @@ def getSimilarQuestions(user):
     requestData = request.get_json()
     validation = validateQuestion(requestData)
 
+    # Threshold parameter
+    threshold = int(request.args.get('threshold')) if request.args.get('threshold') is not None else MIN_THRESHOLD
+
     # Invalid
     if validation['success'] is False:
         return jsonify(validation)
@@ -30,13 +38,30 @@ def getSimilarQuestions(user):
     # Extracting question body from the request
     questionBody = requestData['body']
 
-    # Finding process...
-    foundQuestions = findSimilarQuestions(questionBody)
+    # Questions response list
+    questions = []
+
+    searchedQuestion = SearchedQuestion(requestData)
+    if not searchedQuestion.check_exists():
+        # Finding process...
+        foundQuestions = findSimilarQuestions(questionBody)
+
+        questionsData = list(map(lambda x: {"questionId": x['question']['_id'], "similarityRate": x['similarity_rate']}, foundQuestions))
+
+        searchedQuestion.setCacheData(questionsData)
+        searchedQuestion.insert_one()
+
+    # Result questions
+    questions = searchedQuestion.get()
+
+    # Filtering
+    if threshold:
+        questions = list(filter(lambda x: x['similarityRate'] > threshold, questions))
 
     # Response
     return jsonify({
         'success': True,
-        "results": foundQuestions
+        "results": questions
     }), 200
 
 
@@ -81,6 +106,11 @@ def postInsertQuestion(user):
             "message": str(e)
         })
 
+
+'''
+    Getting the questions by filtering according to the fields
+'''
+
 @bluePrint.route("/getQuestions", methods=["GET"])
 @isAuth(request)
 def getQuestions(user):
@@ -100,4 +130,3 @@ def getQuestions(user):
         'success': True,
         "results": results
     }), 200
-
