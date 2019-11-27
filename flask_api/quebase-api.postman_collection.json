@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "d2a07ce4-e54a-44e1-b87d-6254e31fc356",
+		"_postman_id": "0b1a75e4-1adc-42ab-83a7-aaa61e9f1700",
 		"name": "quebase-api",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -176,7 +176,7 @@
 					}
 				],
 				"url": {
-					"raw": "localhost:8000/users/logout",
+					"raw": "localhost:8000/users/logout?",
 					"host": [
 						"localhost"
 					],
@@ -231,6 +231,43 @@
 					"path": [
 						"admin",
 						"insertQuestion"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Question",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ4NTU3MjUsImlhdCI6MTU3NDg1MjEyNSwic3ViIjoie1wiX2lkXCI6IFwiNWRkZDIyOTRiNTMzN2JhNTk3ODljMDA1XCIsIFwiZmlyc3RuYW1lXCI6IFwiRnVhZFwiLCBcImxhc3RuYW1lXCI6IFwiQWdoYXphZGFcIiwgXCJ1c2VybmFtZVwiOiBcImZ1YWRhZ2hhemFkYVwiLCBcImVtYWlsXCI6IFwiZnVhZEBnbWFpbC5jb21cIn0ifQ.53deiyRJQcpAiDePGleT2avIQv-KCDSD3KIudQ-4UwA",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"logicalOp\": \"and\",\n\t\"body\": \"\",\n\t\"source\": {},\n\t\"viewCount\": {\n\t\t\"comparisonOperator\": \"gte\",\n\t\t\"value\": -1\n\t},\n\t\"favCount\": {\n\t\t\"comparisonOperator\": \"gte\",\n\t\t\"value\": -1\n\t},\n\t\"entityTag\": {\n\t\t\"logicalOp\": \"or\",\n\t\t\"stringsToMatch\": []\n\t},\n\t\"topic\": {\n\t\t\"logicalOp\": \"and\",\n\t\t\"stringsToMatch\": []\n\t},\n\t\"category\": {\n\t\t\"logicalOp\": \"and\",\n\t\t\"stringsToMatch\": []\n\t}\n}"
+				},
+				"url": {
+					"raw": "localhost:8000/questions/getQuestions",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"questions",
+						"getQuestions"
 					]
 				}
 			},
