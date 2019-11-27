@@ -93,11 +93,9 @@ def filterQuestionsByAttributes(attr):
     if isQueryValid:
         results = Question.find(q)
 
-        # Print the titles of the resulting items
-        for res in results:
-            print(res['title'])
+        return True, "Questions are filtered", list(results)
 
-    return "..."
+    return False, "Query is not valid", None
 
 
 '''

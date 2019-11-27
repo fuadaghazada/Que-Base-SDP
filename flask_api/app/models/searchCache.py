@@ -1,7 +1,7 @@
 from copy import deepcopy
-from datetime import datetime
+from datetime import datetime, timedelta
 
-from .question import COLLECTION_NAME as QUESTIONS
+from .question import Question
 from app.utils.db import getDb
 
 
@@ -37,7 +37,7 @@ class SearchedQuestion():
             return False, "This question has already been searched"
         else:
             insertData = deepcopy(vars(self))
-            insertData['createdAt'] = datetime.now()
+            insertData['createdAt'] = datetime.utcnow() + timedelta(hours = 3)
 
             db[COLLECTION_NAME].insert_one(insertData)
 
@@ -73,7 +73,7 @@ class SearchedQuestion():
     '''
         Static method for returning the results with the given query
     '''
-    def get(self):
+    def get(self, pageNumber = 1):
         db = getDb()
 
         if self.questionsData:
@@ -81,12 +81,14 @@ class SearchedQuestion():
             questionsIds = list(map(lambda x: x['questionId'], self.questionsData))
             similarityRates = list(map(lambda x: x['similarityRate'], self.questionsData))
 
-            questions = list(db[QUESTIONS].find({"_id": {"$in": questionsIds}}))
+            questions = list(Question.find({"_id": {"$in": questionsIds}}, pageNumber))
             questions.sort(key = lambda question: questionsIds.index(question['_id']))
 
             # Adding the similarity rates to the result
             for i in range(len(questions)):
                 questions[i]['similarityRate'] = similarityRates[i]
+
+            print(f"\n\n\n\nLENGTH = {len(questions)}\n\n\n\n")
 
             return questions
 

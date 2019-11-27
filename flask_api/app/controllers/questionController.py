@@ -28,8 +28,9 @@ def getSimilarQuestions(user):
     requestData = request.get_json()
     validation = validateQuestion(requestData)
 
-    # Threshold parameter
+    # Parameters
     threshold = int(request.args.get('threshold')) if request.args.get('threshold') is not None else MIN_THRESHOLD
+    page = int(request.args.get('page')) if request.args.get('page') is not None else 1
 
     # Invalid
     if validation['success'] is False:
@@ -59,7 +60,8 @@ def getSimilarQuestions(user):
             })
 
     # Result questions
-    questions = searchedQuestion.get()
+    questions = searchedQuestion.get(page)
+    questions.sort(key = lambda x: x['similarityRate'])
 
     # Filtering
     if threshold:
@@ -126,14 +128,18 @@ def getQuestions(user):
     requestData = request.get_json()
     validation = validateQuestionQuery(requestData)
 
+    # Parameters
+    page = int(request.args.get('page')) if request.args.get('page') is not None else 1
+
     if validation['success'] is False:
         return jsonify(validation)
 
     # Perform the filtering operation
-    results = filterQuestionsByAttributes(requestData)
+    status, message, results = filterQuestionsByAttributes(requestData, page)
 
     # Return the response
     return jsonify({
-        'success': True,
-        "results": results
+        'success': status,
+        "results": results,
+        "message": message
     }), 200

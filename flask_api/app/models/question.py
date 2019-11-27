@@ -5,6 +5,7 @@ from app.utils.titleGeneration import generateTitleFromText
 from app.helpers.analyze import analyzeQuestion
 
 COLLECTION_NAME = "questions"
+LIMIT = 5
 
 '''
     Model class for question
@@ -78,10 +79,14 @@ class Question():
         Static method for returning the result with the given query
 
         :param: query - the given query (Mongo)
+        :param: pageNumber - page number for pagination
     '''
     @staticmethod
-    def find(query):
+    def find(query, pageNumber = 1):
         db = getDb()
         db[COLLECTION_NAME].create_index([("body", "text")])
 
-        return db[COLLECTION_NAME].find(query)
+        offset = (pageNumber - 1) * LIMIT
+        results = db[COLLECTION_NAME].find(query).sort("_id", 1).skip(offset).limit(LIMIT)
+
+        return list(results)
