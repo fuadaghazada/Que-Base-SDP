@@ -36,6 +36,10 @@ def findSimilarQuestions(questionBody):
                 }
             }})
 
+        # No topic is found
+        if len(topics) == 0:
+            return None
+
         # Results after checking topic similarity
         questionsFromSimilarTopic = Question.find(query)
 

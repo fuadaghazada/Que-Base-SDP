@@ -46,10 +46,17 @@ def getSimilarQuestions(user):
         # Finding process...
         foundQuestions = findSimilarQuestions(questionBody)
 
-        questionsData = list(map(lambda x: {"questionId": x['question']['_id'], "similarityRate": x['similarity_rate']}, foundQuestions))
+        if foundQuestions:
+            questionsData = list(map(lambda x: {"questionId": x['question']['_id'], "similarityRate": x['similarity_rate']}, foundQuestions))
 
-        searchedQuestion.setCacheData(questionsData)
-        searchedQuestion.insert_one()
+            searchedQuestion.setCacheData(questionsData)
+            searchedQuestion.insert_one()
+        else:
+            # Response
+            return jsonify({
+                'success': False,
+                "message": "Analyze is not successful"
+            })
 
     # Result questions
     questions = searchedQuestion.get()
