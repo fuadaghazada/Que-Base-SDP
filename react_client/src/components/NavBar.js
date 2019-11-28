@@ -10,6 +10,7 @@ const NavBar = () => {
     return (
         <div>
             <Link to='/'>Home</Link>
+            <Link to='/uploadQuestion'>Upload Question</Link>
             <SignOut />
         </div>
     );

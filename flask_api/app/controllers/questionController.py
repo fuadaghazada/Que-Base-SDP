@@ -16,18 +16,22 @@ from app.helpers.constant import MIN_THRESHOLD
 bluePrint = Blueprint('questions', __name__, url_prefix='/questions')
 
 '''
-    [GET] Retrieving similar questions with request
+    [POST] Retrieving similar questions with request
 '''
 
-@bluePrint.route("/findSimilarQuestions", methods=["GET"])
+@bluePrint.route("/findSimilarQuestions", methods=["POST"])
 @isAuth(request)
 def getSimilarQuestions(user):
 
     requestData = request.get_json()
     validation = validateQuestion(requestData)
 
-    # Parameters
+    # -- Parameters --
+    # Threshold
     threshold = int(request.args.get('threshold')) if request.args.get('threshold') is not None else MIN_THRESHOLD
+    threshold = MIN_THRESHOLD if threshold < MIN_THRESHOLD else threshold
+
+    # Page
     page = int(request.args.get('page')) if request.args.get('page') is not None else 1
 
     # Invalid
@@ -115,15 +119,16 @@ def postInsertQuestion(user):
 
 
 '''
-    Getting the questions by filtering according to the fields
+    [POST] Getting the questions by filtering according to the fields
 '''
 
-@bluePrint.route("/getQuestions", methods=["GET"])
+@bluePrint.route("/getQuestions", methods=["POST"])
 @isAuth(request)
 def getQuestions(user):
 
     # Get the request and validate it
     requestData = request.get_json()
+
     validation = validateQuestionQuery(requestData)
 
     # Parameters

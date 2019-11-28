@@ -41,7 +41,7 @@ def findSimilarQuestions(questionBody):
             return None
 
         # Results after checking topic similarity
-        questionsFromSimilarTopic = Question.find(query)["results"]
+        questionsFromSimilarTopic = Question.find(query)["data"]
 
         # Score algorithm
         foundQuestions = []

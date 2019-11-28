@@ -5,6 +5,8 @@ import PrivateRoute from './components/custom/PrivateRoute'
 import Login from './components/auth/Login';
 import SignUp from './components/auth/Registration';
 import Home from "./components/Home";
+import UploadQuestion from "./components/questions/UploadQuestion";
+import FilterQuestions from "./components/questions/FilterQuestions";
 
 /***
  *  Application interface
@@ -20,6 +22,8 @@ const App = () => {
 
         {/* Private Routes */}
         <PrivateRoute path={'/'} component={Home} exact />
+        <PrivateRoute path={'/uploadQuestion'} component={UploadQuestion} />
+        <PrivateRoute path={'/filterQuestions'} component={FilterQuestions} />
 
       </Router>
   );
