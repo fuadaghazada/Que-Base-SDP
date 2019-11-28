@@ -41,7 +41,7 @@ def findSimilarQuestions(questionBody):
             return None
 
         # Results after checking topic similarity
-        questionsFromSimilarTopic = Question.find(query)
+        questionsFromSimilarTopic = Question.find(query)["results"]
 
         # Score algorithm
         foundQuestions = []
@@ -74,9 +74,9 @@ def findSimilarQuestions(questionBody):
 '''
     Filtering questions by their attributes (by the specified category, view count, etc.)
 '''
-def filterQuestionsByAttributes(attr):
+def filterQuestionsByAttributes(attr, page = 1):
 
-    query = CustomQueryGenerator(attr['logicalOp'])
+    query = CustomQueryGenerator()
 
     query.addStringField('body', attr['body'], elastic=True)
     query.addNumberComparisonField('viewCount', attr['viewCount'])
@@ -91,9 +91,9 @@ def filterQuestionsByAttributes(attr):
 
     # If there is at least 1 filter, perform the query
     if isQueryValid:
-        results = Question.find(q)
+        results = Question.find(q, page)
 
-        return True, "Questions are filtered", list(results)
+        return True, "Questions are filtered", results
 
     return False, "Query is not valid", None
 

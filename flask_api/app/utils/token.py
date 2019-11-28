@@ -17,7 +17,7 @@ secretKey = __config['SECRET_KEY']
     :return: (string) token
 '''
 
-def encode_token(data, algorithm='HS256', timeDelta=datetime.timedelta(days=0, hours=1)):
+def encode_token(data, algorithm='HS256', timeDelta=datetime.timedelta(days=1)):
 
     try:
         payload = {

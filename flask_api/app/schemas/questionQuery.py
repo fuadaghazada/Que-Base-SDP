@@ -5,7 +5,6 @@ from marshmallow import Schema, fields, validate
 '''
 class QuestionQuerySchema(Schema):
 
-    logicalOp = fields.Str(required = True)
     body = fields.Str(required = False)
     source = fields.Dict(required = False)
     viewCount = fields.Dict(required = False)

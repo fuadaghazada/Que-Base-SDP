@@ -1,13 +1,10 @@
 class CustomQueryGenerator:
-    
-    def __init__(self, logicalOperator):
+
+    def __init__(self):
 
         # Filtering conditions are combined using a logical operator
         # <FILTER_1>  LOGICAL_OPERATOR  <FILTER_2>  LOGICAL_OPERATOR  ...  <FILTER_N>
         # e.g. (topic is conformity) AND (viewCount > 20)
-
-        # Logical operator to use (one of "and" or "or")
-        self.logicalOperator = logicalOperator
 
         # list of individual filters that will be connected by logical operators
         self.conditions = []
@@ -59,9 +56,9 @@ class CustomQueryGenerator:
     def getCompleteQuery(self):
 
         if len(self.conditions) > 0:
-        
+
             # Prepare the query
-            operator = '$' + self.logicalOperator
+            operator = '$and'
             self.query[operator] = self.conditions
 
             return True, self.query

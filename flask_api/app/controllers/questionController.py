@@ -9,9 +9,7 @@ from app.schemas.questionQuery import validateQuestionQuery
 from app.helpers.operateDb import findSimilarQuestions
 from app.helpers.operateDb import filterQuestionsByAttributes
 from app.helpers.isAuth import isAuth
-
-
-MIN_THRESHOLD = 40  # Minimum threshold for similarity RATE
+from app.helpers.constant import MIN_THRESHOLD
 
 
 # Blue print
@@ -60,17 +58,17 @@ def getSimilarQuestions(user):
             })
 
     # Result questions
-    questions = searchedQuestion.get(page)
+    results = searchedQuestion.get(threshold, page)
+    questions = results["data"]
     questions.sort(key = lambda x: x['similarityRate'])
 
-    # Filtering
-    if threshold:
-        questions = list(filter(lambda x: x['similarityRate'] > threshold, questions))
+    # Updating the results in dict
+    results["data"] = questions
 
     # Response
     return jsonify({
         'success': True,
-        "results": questions
+        "questions": results
     }), 200
 
 
@@ -140,6 +138,6 @@ def getQuestions(user):
     # Return the response
     return jsonify({
         'success': status,
-        "results": results,
+        "questions": results,
         "message": message
     }), 200

@@ -73,24 +73,29 @@ class SearchedQuestion():
     '''
         Static method for returning the results with the given query
     '''
-    def get(self, pageNumber = 1):
+    def get(self, threshold, pageNumber = 1):
         db = getDb()
 
         if self.questionsData:
+            # Filtering according to threshold
+            filterThreshold = list(filter(lambda x: x['similarityRate'] >= threshold, self.questionsData))
 
-            questionsIds = list(map(lambda x: x['questionId'], self.questionsData))
-            similarityRates = list(map(lambda x: x['similarityRate'], self.questionsData))
+            # Splitting according to ids and rates
+            questionsIds = list(map(lambda x: x['questionId'], filterThreshold))
+            similarityRates = list(map(lambda x: x['similarityRate'], filterThreshold))
 
-            questions = list(Question.find({"_id": {"$in": questionsIds}}, pageNumber))
+            results = Question.find({"_id": {"$in": questionsIds}}, pageNumber)
+            questions = list(results["data"])
             questions.sort(key = lambda question: questionsIds.index(question['_id']))
 
             # Adding the similarity rates to the result
             for i in range(len(questions)):
                 questions[i]['similarityRate'] = similarityRates[i]
 
-            print(f"\n\n\n\nLENGTH = {len(questions)}\n\n\n\n")
+            # Updating the questions in the dict
+            results["data"] = questions
 
-            return questions
+            return results
 
         else:
             return None

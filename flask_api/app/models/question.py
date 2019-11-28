@@ -1,11 +1,12 @@
+import math
 from copy import deepcopy
 
 from app.utils.db import getDb
 from app.utils.titleGeneration import generateTitleFromText
 from app.helpers.analyze import analyzeQuestion
+from app.helpers.constant import LIMIT
 
 COLLECTION_NAME = "questions"
-LIMIT = 5
 
 '''
     Model class for question
@@ -87,6 +88,12 @@ class Question():
         db[COLLECTION_NAME].create_index([("body", "text")])
 
         offset = (pageNumber - 1) * LIMIT
-        results = db[COLLECTION_NAME].find(query).sort("_id", 1).skip(offset).limit(LIMIT)
+        cursor = db[COLLECTION_NAME].find(query)
+        count = cursor.count()
+        results = cursor.sort("_id", 1).skip(offset).limit(LIMIT)
+        numberOfPages = math.ceil(count / LIMIT)
 
-        return list(results)
+        return {
+            "data": list(results),
+            "numberOfPages": numberOfPages
+        }
