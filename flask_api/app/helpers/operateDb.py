@@ -81,7 +81,7 @@ def filterQuestionsByAttributes(attr, page = 1):
     query.addStringField('body', attr['body'], elastic=True)
     query.addNumberComparisonField('viewCount', attr['viewCount'])
     query.addNumberComparisonField('favCount', attr['favCount'])
-    # TODO: Filtering by the "source"
+    query.addSourceField(attr['source'])
     query.addElemMatchFields('entity_tags', attr['entityTag'])
     query.addElemMatchFields('topics', attr['topic'])
     query.addElemMatchFields('categories', attr['category'])

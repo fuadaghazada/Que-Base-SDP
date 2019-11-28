@@ -52,6 +52,19 @@ class CustomQueryGenerator:
         else:
             self.conditions.append(elemMatchquery)
 
+    def addSourceField(self, fieldValues):
+
+        reference = fieldValues["reference"]
+        university = fieldValues["university"]
+        course = fieldValues["course"]
+
+        sourceQuery = {   
+            "source.reference": {"$regex": reference, "$options": "i"},
+            "source.university": {"$regex": university, "$options": "i"},
+            "source.course": {"$regex": course, "$options": "i"}
+        }
+        self.conditions.append(sourceQuery)
+        
 
     def getCompleteQuery(self):
 
@@ -60,7 +73,7 @@ class CustomQueryGenerator:
             # Prepare the query
             operator = '$and'
             self.query[operator] = self.conditions
-
+            print(self.query)
             return True, self.query
 
         return False, None
