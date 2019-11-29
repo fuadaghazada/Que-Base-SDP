@@ -36,7 +36,7 @@ class FilterQuestions extends Component {
             },
             entityTag: {
                 logicalOp: "or",
-                stringsToMatch: ["religion"]
+                stringsToMatch: []
             },
             topic: {
                 logicalOp: "or",
@@ -61,6 +61,103 @@ class FilterQuestions extends Component {
         this.setState({[e.target.name]: e.target.value})
     };
 
+    /**
+     *  Handling change for source
+     *
+     *  @param e: input event
+     */
+
+    handleSource = (e) => {
+
+        const name = e.target.name;
+        const value = e.target.value;
+
+        this.setState(prevState => ({
+            source: {
+                ...prevState.source,
+                [name]: value
+            }
+        }));
+    };
+
+
+    /**
+     *  Handling change for comparison operator
+     *
+     *  @param e: input event
+     */
+
+    handleComparisonOp = (e) => {
+
+        const name = e.target.name;
+        const value = e.target.value;
+
+        this.setState(prevState => ({
+            [name]: {
+                ...prevState[name],
+                comparisonOperator: value
+            }
+        }));
+    };
+
+    /**
+     *  Handling change for Value for count
+     *
+     *  @param e: input event
+     */
+
+    handleValue = (e) => {
+
+        const name = e.target.name;
+        const value = e.target.value;
+
+        this.setState(prevState => ({
+            [name]: {
+                ...prevState[name],
+                value: value
+            }
+        }));
+    };
+
+    /**
+     *  Handling logical operator for array filters
+     *
+     *  @param e: input event
+     */
+
+     handleLogicalOp = (e) => {
+
+         const name = e.target.name;
+         const value = e.target.value;
+
+         this.setState(prevState => ({
+             [name]: {
+                 ...prevState[name],
+                 logicalOp: value
+             }
+         }));
+     };
+
+     /**
+      *  Handling array elements
+      *
+      *  @param e: input event
+      */
+
+     handleArrayFields = (e) => {
+
+         const name = e.target.name;
+         const value = e.target.value;
+
+         const fields = value.split(',').map(el => el.trim()).filter(el => el !== "");
+
+         this.setState(prevState => ({
+             [name]: {
+                 ...prevState[name],
+                 stringsToMatch: fields
+             }
+         }));
+     }
 
     /**
      *  Handling the submit action
@@ -84,7 +181,7 @@ class FilterQuestions extends Component {
             })
             .catch(err => {
                 console.log(err);
-            })
+            });
     };
 
     render() {
@@ -93,67 +190,79 @@ class FilterQuestions extends Component {
                 <NavBar />
                 <h1>Filter Questions</h1>
 
-                <form onChange={this.handleChange} onSubmit={this.handleSubmit}>
+                <form onSubmit={this.handleSubmit}>
 
                     {/* Body */}
                     <label htmlFor="body">Question Text</label>
-                    <input type="text" name="body"/>
+                    <input type="text" name="body" onChange={this.handleChange}/>
 
                     <br/>
 
                     {/* Reference */}
-                    <label htmlFor="source.reference">Reference</label>
-                    <input type="text" name="source.reference"/>
+                    <label htmlFor="reference">Reference</label>
+                    <input type="text" name="reference" onChange={this.handleSource}/>
 
                     <br/>
 
                     {/* University */}
-                    <label htmlFor="source.university">University</label>
-                    <input type="text" name="source.university"/>
+                    <label htmlFor="university">University</label>
+                    <input type="text" name="university" onChange={this.handleSource}/>
 
                     <br/>
 
                     {/* Course */}
-                    <label htmlFor="source.course">Course</label>
-                    <input type="text" name="source.course"/>
+                    <label htmlFor="course">Course</label>
+                    <input type="text" name="course" onChange={this.handleSource}/>
 
                     <br/>
 
                     {/* View Count */}
                     <label htmlFor="viewCount">View Count</label>
-                    <select name="viewCount.comparisonOperator">
+                    <select name="viewCount" onChange={this.handleComparisonOp}>
                         <option value="gte">GTE</option>
                         <option value="lte">LTE</option>
                     </select>
-                    <input type="number" name="viewCount.value"/>
+                    <input type="number" name="viewCount" onChange={this.handleValue}/>
 
                     <br/>
 
                     {/* Fav Count */}
                     <label htmlFor="favCount">Favorite Count</label>
-                    <select name="favCount.comparisonOperator">
+                    <select name="favCount" onChange={this.handleComparisonOp}>
                         <option value="gte">GTE</option>
                         <option value="lte">LTE</option>
                     </select>
-                    <input type="number" name="favCount.value"/>
+                    <input type="number" name="favCount" onChange={this.handleValue}/>
 
                     <br/>
 
                     {/* Entity Tags */}
-                    <label htmlFor="source.stringsToMatch">Keywords</label>
-                    <input type="text" name="source.stringsToMatch"/>
+                    <label htmlFor="entityTag">Keywords</label>
+                    <select name="entityTag" onChange={this.handleLogicalOp}>
+                        <option value="or">Or</option>
+                        <option value="and">And</option>
+                    </select>
+                    <input type="text" name="entityTag" onChange={this.handleArrayFields}/>
 
                     <br/>
 
                     {/* Topics */}
                     <label htmlFor="source.topic">Topics</label>
-                    <input type="text" name="source.topic"/>
+                    <select name="topic" onChange={this.handleLogicalOp}>
+                        <option value="or">Or</option>
+                        <option value="and">And</option>
+                    </select>
+                    <input type="text" name="topic" onChange={this.handleArrayFields}/>
 
                     <br/>
 
                     {/* Categories */}
-                    <label htmlFor="source.category">Categories</label>
-                    <input type="text" name="source.category"/>
+                    <label htmlFor="category">Categories</label>
+                    <select name="category" onChange={this.handleLogicalOp}>
+                        <option value="or">Or</option>
+                        <option value="and">And</option>
+                    </select>
+                    <input type="text" name="category" onChange={this.handleArrayFields}/>
 
                     <br/>
 

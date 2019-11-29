@@ -1,3 +1,5 @@
+from bson.objectid import ObjectId
+
 from flask import Blueprint
 from flask import jsonify
 from flask import request
@@ -145,4 +147,30 @@ def getQuestions(user):
         'success': status,
         "questions": results,
         "message": message
+    }), 200
+
+
+'''
+    [GET] Getting a question according to its id
+'''
+
+@bluePrint.route("/getQuestion", methods=["GET"])
+@isAuth(request)
+def getQuestion(user):
+
+    # ID as parameter
+    id = request.args.get('id')
+
+    result = None
+    try:
+        result = Question.find_one({"_id": ObjectId(id)})
+    except Exception as e:
+        print("NO SUCH QUESTION ID")
+
+    status = result is not None
+
+    # Return the response
+    return jsonify({
+        'success': status,
+        "question": result
     }), 200

@@ -97,3 +97,17 @@ class Question():
             "data": list(results),
             "numberOfPages": numberOfPages
         }
+
+
+    '''
+        Static method for returning the (one) result with the given query
+
+        :param: query - the given query (Mongo)
+    '''
+    @staticmethod
+    def find_one(query):
+        db = getDb()
+
+        result = db[COLLECTION_NAME].find_one(query)
+
+        return result
