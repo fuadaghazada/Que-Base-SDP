@@ -71,16 +71,32 @@ class CustomQueryGenerator:
 
     def addSourceField(self, fieldValues):
 
-        reference = fieldValues["reference"]
-        university = fieldValues["university"]
-        course = fieldValues["course"]
+        # In the source object, there are the following fields
+        sourceFields = ["reference", "university", "course"]
+        
+        # A flag indicating whether any filtering is done here
+        # (If all sourceFields are empty strings, no filtering is needed and the flag remains "False")
+        isSourceFilterUsed = False
 
-        sourceQuery = {
-            "source.reference": {"$regex": reference, "$options": "i"},
-            "source.university": {"$regex": university, "$options": "i"},
-            "source.course": {"$regex": course, "$options": "i"}
-        }
-        self.conditions.append(sourceQuery)
+        # Dictionary object storing the subquery
+        sourceQuery = dict()
+
+        # For each field in the "source" object
+        for field in sourceFields:
+
+            # If the field is not equal to empty string, add that field to the query
+            if fieldValues[field] != "":
+
+                name = "source." + field
+                sourceQuery[name] = {
+                    "$regex": fieldValues[field],
+                    "$options": "i"
+                }
+
+                isSourceFilterUsed = True
+                
+        if isSourceFilterUsed:
+            self.conditions.append(sourceQuery)
 
 
     def getCompleteQuery(self):
