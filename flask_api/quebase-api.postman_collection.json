@@ -7,11 +7,8 @@
 	"item": [
 		{
 			"name": "Find Similiar Questions",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
 			"request": {
-				"method": "GET",
+				"method": "POST",
 				"header": [
 					{
 						"key": "Content-Type",
@@ -21,13 +18,13 @@
 					},
 					{
 						"key": "Authorization",
-						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzM1NjI4MTAsImlhdCI6MTU3MzU1OTIxMCwic3ViIjoie1wiX2lkXCI6IFwiNWRjYTg0MzYxNmEyOThkNTNmODA3ZDc0XCIsIFwiZmlyc3RuYW1lXCI6IFwiRnVhZFwiLCBcImxhc3RuYW1lXCI6IFwiQWdoYXphZGFcIiwgXCJ1c2VybmFtZVwiOiBcImZ1YWRhZ2hhemFkYVwiLCBcImVtYWlsXCI6IFwiZnVhZEBnbWFpbC5jb21cIn0ifQ.8ERejW2p5mVG1mtEvk0twzNqxzfWSbACU_urUqfmRh0",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzUwNTQwMTUsImlhdCI6MTU3NDk2NzYxNSwic3ViIjoie1wiX2lkXCI6IFwiNWRkZDE0NzljODY1MTg2MGYyOGNiMWQzXCIsIFwiZmlyc3RuYW1lXCI6IFwiRnVhZFwiLCBcImxhc3RuYW1lXCI6IFwiQWdoYXphZGFcIiwgXCJ1c2VybmFtZVwiOiBcImZ1YWRhZ2hhemFkYVwiLCBcImVtYWlsXCI6IFwiZnVhZEBnbWFpbC5jb21cIn0ifQ.CX-u5qL_LnGFCrx6NKD_svvC_8YXC33HbA8qOFUFHxE",
 						"type": "text"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"body\": \"What is the primary end or purpose of government? Do you think Locke was misguided in trying to account for the legitimate functions of government in terms of the preservation of property?\"\n}",
+					"raw": "{\n\t\"body\": \"Society brings about acceptance of basic norms through techniques and strategies for preventing deviant human behavior. This process is termed a. stigmatization. b. labeling. c. law. d. social control\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -35,7 +32,7 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8000/questions/findSimilarQuestions",
+					"raw": "localhost:8000/questions/findSimilarQuestions?page=1",
 					"host": [
 						"localhost"
 					],
@@ -43,6 +40,12 @@
 					"path": [
 						"questions",
 						"findSimilarQuestions"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						}
 					]
 				}
 			},
@@ -237,13 +240,13 @@
 			"response": []
 		},
 		{
-			"name": "Get Question",
+			"name": "Get Questions",
 			"request": {
 				"method": "POST",
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzUwNTQwMTUsImlhdCI6MTU3NDk2NzYxNSwic3ViIjoie1wiX2lkXCI6IFwiNWRkZDE0NzljODY1MTg2MGYyOGNiMWQzXCIsIFwiZmlyc3RuYW1lXCI6IFwiRnVhZFwiLCBcImxhc3RuYW1lXCI6IFwiQWdoYXphZGFcIiwgXCJ1c2VybmFtZVwiOiBcImZ1YWRhZ2hhemFkYVwiLCBcImVtYWlsXCI6IFwiZnVhZEBnbWFpbC5jb21cIn0ifQ.CX-u5qL_LnGFCrx6NKD_svvC_8YXC33HbA8qOFUFHxE ",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzUxMTgzMDQsImlhdCI6MTU3NTAzMTkwNCwic3ViIjoie1wiX2lkXCI6IFwiNWRkZDE0NzljODY1MTg2MGYyOGNiMWQzXCIsIFwiZmlyc3RuYW1lXCI6IFwiRnVhZFwiLCBcImxhc3RuYW1lXCI6IFwiQWdoYXphZGFcIiwgXCJ1c2VybmFtZVwiOiBcImZ1YWRhZ2hhemFkYVwiLCBcImVtYWlsXCI6IFwiZnVhZEBnbWFpbC5jb21cIn0ifQ.Nw3ga1bz59hllhyYa8725iodrwb_8lOgS4kan9LIcyQ",
 						"type": "text"
 					},
 					{
@@ -254,7 +257,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"body\": \"\",\n\t\"source\": {\n\t\t\"reference\": \"\",\n\t\t\"university\": \"\",\n\t\t\"course\": \"\"\n\t},\n\t\"viewCount\": {\n\t\t\"comparisonOperator\": \"gte\",\n\t\t\"value\": -1\n\t},\n\t\"favCount\": {\n\t\t\"comparisonOperator\": \"gte\",\n\t\t\"value\": -1\n\t},\n\t\"entityTag\": {\n\t\t\"logicalOp\": \"or\",\n\t\t\"stringsToMatch\": [\"religion\"]\n\t},\n\t\"topic\": {\n\t\t\"logicalOp\": \"and\",\n\t\t\"stringsToMatch\": []\n\t},\n\t\"category\": {\n\t\t\"logicalOp\": \"and\",\n\t\t\"stringsToMatch\": []\n\t}\n}"
+					"raw": "{\n\t\"body\": \"\",\n\t\"source\": {\n\t\t\"reference\": \"\",\n\t\t\"university\": \"\",\n\t\t\"course\": \"\"\n\t},\n\t\"viewCount\": {\n\t\t\"comparisonOperator\": \"gte\",\n\t\t\"value\": -1\n\t},\n\t\"favCount\": {\n\t\t\"comparisonOperator\": \"gte\",\n\t\t\"value\": -1\n\t},\n\t\"entityTag\": {\n\t\t\"logicalOp\": \"ors\",\n\t\t\"stringsToMatch\": []\n\t},\n\t\"topic\": {\n\t\t\"logicalOp\": \"and\",\n\t\t\"stringsToMatch\": []\n\t},\n\t\"category\": {\n\t\t\"logicalOp\": \"and\",\n\t\t\"stringsToMatch\": []\n\t}\n}"
 				},
 				"url": {
 					"raw": "localhost:8000/questions/getQuestions",
@@ -266,6 +269,17 @@
 						"questions",
 						"getQuestions"
 					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Question",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
 				}
 			},
 			"response": []
