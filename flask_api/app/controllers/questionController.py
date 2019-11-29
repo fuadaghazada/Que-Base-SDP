@@ -64,7 +64,7 @@ def getSimilarQuestions(user):
             })
 
     # Result questions
-    results = searchedQuestion.get(threshold, page)
+    results = searchedQuestion.get(threshold, pageNumber=page)
     questions = results["data"]
     questions.sort(key = lambda x: x['similarityRate'])
 
@@ -139,8 +139,13 @@ def getQuestions(user):
     if validation['success'] is False:
         return jsonify(validation)
 
+    # Extract sorting properties
+    sortingProperties = requestData['sort']
+    sortingAttr = sortingProperties['attr']
+    sortOrder = sortingProperties['order']
+
     # Perform the filtering operation
-    status, message, results = filterQuestionsByAttributes(requestData, page)
+    status, message, results = filterQuestionsByAttributes(requestData, sortingAttr, sortOrder, page)
 
     # Return the response
     return jsonify({

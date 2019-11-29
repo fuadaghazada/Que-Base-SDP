@@ -83,14 +83,16 @@ class Question():
         :param: pageNumber - page number for pagination
     '''
     @staticmethod
-    def find(query, pageNumber = 1):
+    def find(query, sortingAttr="_id", sortOrder=1, pageNumber = 1):
         db = getDb()
         db[COLLECTION_NAME].create_index([("body", "text")])
 
         offset = (pageNumber - 1) * LIMIT
         cursor = db[COLLECTION_NAME].find(query)
+        if sortingAttr != "":
+            cursor = cursor.sort(sortingAttr, sortOrder)
         count = cursor.count()
-        results = cursor.sort("_id", 1).skip(offset).limit(LIMIT)
+        results = cursor.skip(offset).limit(LIMIT)
         numberOfPages = math.ceil(count / LIMIT)
 
         return {

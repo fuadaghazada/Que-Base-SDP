@@ -74,10 +74,11 @@ def findSimilarQuestions(questionBody):
 '''
     Filtering questions by their attributes (by the specified category, view count, etc.)
 '''
-def filterQuestionsByAttributes(attr, page = 1):
+def filterQuestionsByAttributes(attr, sortingAttr, sortOrder, page = 1):
 
     query = CustomQueryGenerator()
 
+    # Extract the relevant fields from the request
     query.addStringField('body', attr['body'], elastic=True)
     query.addNumberComparisonField('viewCount', attr['viewCount'])
     query.addNumberComparisonField('favCount', attr['favCount'])
@@ -85,13 +86,16 @@ def filterQuestionsByAttributes(attr, page = 1):
     query.addElemMatchFields('entity_tags', attr['entityTag'])
     query.addElemMatchFields('topics', attr['topic'])
     query.addElemMatchFields('categories', attr['category'])
+    sortingProperties = attr['sort']
+    sortingAttr = sortingProperties['attr']
+    sortOrder = sortingProperties['order']
 
     # Get the final query
     isQueryValid, q = query.getCompleteQuery()
 
     # If there is at least 1 filter, perform the query
     if isQueryValid:
-        results = Question.find(q, page)
+        results = Question.find(q, sortingAttr, sortOrder, page)
 
         return True, "Questions are filtered", results
 

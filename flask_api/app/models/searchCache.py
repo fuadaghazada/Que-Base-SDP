@@ -84,9 +84,9 @@ class SearchedQuestion():
             questionsIds = list(map(lambda x: x['questionId'], filterThreshold))
             similarityRates = list(map(lambda x: x['similarityRate'], filterThreshold))
 
-            results = Question.find({"_id": {"$in": questionsIds}}, pageNumber)
+            query = {"_id": {"$in": questionsIds}}
+            results = Question.find(query, pageNumber=pageNumber)
             questions = list(results["data"])
-            questions.sort(key = lambda question: questionsIds.index(question['_id']))
 
             # Adding the similarity rates to the result
             for i in range(len(questions)):

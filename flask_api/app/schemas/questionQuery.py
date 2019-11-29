@@ -12,6 +12,7 @@ class QuestionQuerySchema(Schema):
     entityTag = fields.Dict(required = False)
     topic = fields.Dict(required = False)
     category = fields.Dict(required = False)
+    sort = fields.Dict(required = False)
 
 
 '''
