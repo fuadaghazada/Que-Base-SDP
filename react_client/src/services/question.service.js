@@ -71,6 +71,30 @@ const getQuestions = (data, page = null) => {
         .catch(err => console.log(err));
 };
 
+const getQuestion = (id) => {
+
+    // Preparing the request URL
+    let requestURL = `${QUESTIONS_API_URL}/getQuestion`;
+
+    if (id && typeof(id) === 'string')
+        requestURL += `?id=${id}`;
+
+    // Headers
+    const headers = {...{'Content-Type': 'application/json'}, ...getHeaders.auth()};
+
+    // Sending GET request
+    return axios({
+        method: 'get',
+        headers: headers,
+        url: requestURL
+    })
+        .then(response => {
+            return response.data;
+        })
+        .catch(err => console.log(err));
+};
+
+
 
 
 /**
@@ -79,5 +103,6 @@ const getQuestions = (data, page = null) => {
 
 export default {
     findSimilarQuestions: findSimilarQuestions,
-    getQuestions: getQuestions
+    getQuestions: getQuestions,
+    getQuestion: getQuestion
 };
