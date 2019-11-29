@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import NavBar from "../NavBar";
+import QuestionContainer from "./QuestionContainer";
 
 import questionServices from "../../services/question.service";
+
 
 
 /***
@@ -47,6 +49,10 @@ class FilterQuestions extends Component {
                 stringsToMatch: []
             },
 
+            // Component states
+            isLoading: false,
+            data: null,
+            page: 1,
             error: null
         }
     }
@@ -157,7 +163,7 @@ class FilterQuestions extends Component {
                  stringsToMatch: fields
              }
          }));
-     }
+     };
 
     /**
      *  Handling the submit action
@@ -168,16 +174,34 @@ class FilterQuestions extends Component {
     handleSubmit = (e) => {
         e.preventDefault();
 
+        this.handleRequest()
+    };
+
+    /**
+     *  Handle request
+     */
+
+    handleRequest = (page = 1) => {
+
         // Data body for request
         const data = this.state;
+
         delete data.error;
+        delete data.data;
+        delete data.isLoading;
+        delete data.page;
+
+        this.setState({isLoading: true});
 
         // Request
-        questionServices.getQuestions(data)
+        questionServices.getQuestions(data, page)
             .then(response => {
 
-                console.log(response);
-
+                this.setState({
+                    isLoading: false,
+                    data: response['questions'],
+                    page: page
+                });
             })
             .catch(err => {
                 console.log(err);
@@ -270,6 +294,9 @@ class FilterQuestions extends Component {
                     <button type="submit">Filter</button>
 
                 </form>
+
+                {/* Results */}
+                {this.state.data && <QuestionContainer questions={this.state.data} page={this.state.page} handleRequest={this.handleRequest}/>}
 
             </div>
         );
