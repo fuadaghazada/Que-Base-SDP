@@ -73,6 +73,7 @@ node_modules/
 # macOS file
 .DS_Store
 
+/scraper/.ipynb_checkpoints
 # All XML files - if ugrently necessary DELETE IT
 *.xml
 

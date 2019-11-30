@@ -1,0 +1,3281 @@
+__label__neg Complete the function solveMeFirst to compute the sum of two integers.
+Function prototype: 
+int solveMeFirst(int a, int b);
+where,
+a is the first integer input.
+b is the second integer input
+Return values 
+ sum of the above two integers   
+Sample Input
+a = 2
+b = 3
+
+Sample Output
+5
+
+Explanation
+The sum of the two integers  and  is computed as: . 
+__label__neg Complete the function solveMeFirst to compute the sum of two integers.
+Function prototype: 
+int solveMeFirst(int a, int b);
+where,
+a is the first integer input.
+b is the second integer input
+Return values 
+ sum of the above two integers   
+Sample Input
+a = 2
+b = 3
+
+Sample Output
+5
+
+Explanation
+The sum of the two integers  and  is computed as: . 
+__label__neg Complete the function solveMeFirst to compute the sum of two integers.
+Function prototype: 
+int solveMeFirst(int a, int b);
+where,
+a is the first integer input.
+b is the second integer input
+Return values 
+ sum of the above two integers   
+Sample Input
+a = 2
+b = 3
+
+Sample Output
+5
+
+Explanation
+The sum of the two integers  and  is computed as: . 
+__label__neg Complete the function solveMeFirst to compute the sum of two integers.
+Function prototype: 
+int solveMeFirst(int a, int b);
+where,
+a is the first integer input.
+b is the second integer input
+Return values 
+ sum of the above two integers   
+Sample Input
+a = 2
+b = 3
+
+Sample Output
+5
+
+Explanation
+The sum of the two integers  and  is computed as: . 
+__label__neg Given an array of integers, find the sum of its elements.
+For example, if the array , , so return .  
+Function Description
+Complete the simpleArraySum function in the editor below.  It must return the sum of the array elements as an integer.  
+simpleArraySum has the following parameter(s):  
+ar: an array of integers  
+Input Format
+The first line contains an integer, , denoting the size of the array. 
+The second line contains  space-separated integers representing the array's elements.  
+Constraints
+ 
+Output Format
+Print the sum of the array's elements as a single integer.  
+Sample Input
+6
+1 2 3 4 10 11
+
+Sample Output
+31
+
+Explanation
+We print the sum of the array's elements: .
+__label__neg Given an array of integers, find the sum of its elements.
+For example, if the array , , so return .  
+Function Description
+Complete the simpleArraySum function in the editor below.  It must return the sum of the array elements as an integer.  
+simpleArraySum has the following parameter(s):  
+ar: an array of integers  
+Input Format
+The first line contains an integer, , denoting the size of the array. 
+The second line contains  space-separated integers representing the array's elements.  
+Constraints
+ 
+Output Format
+Print the sum of the array's elements as a single integer.  
+Sample Input
+6
+1 2 3 4 10 11
+
+Sample Output
+31
+
+Explanation
+We print the sum of the array's elements: .
+__label__neg Given an array of integers, find the sum of its elements.
+For example, if the array , , so return .  
+Function Description
+Complete the simpleArraySum function in the editor below.  It must return the sum of the array elements as an integer.  
+simpleArraySum has the following parameter(s):  
+ar: an array of integers  
+Input Format
+The first line contains an integer, , denoting the size of the array. 
+The second line contains  space-separated integers representing the array's elements.  
+Constraints
+ 
+Output Format
+Print the sum of the array's elements as a single integer.  
+Sample Input
+6
+1 2 3 4 10 11
+
+Sample Output
+31
+
+Explanation
+We print the sum of the array's elements: .
+__label__neg Given an array of integers, find the sum of its elements.
+For example, if the array , , so return .  
+Function Description
+Complete the simpleArraySum function in the editor below.  It must return the sum of the array elements as an integer.  
+simpleArraySum has the following parameter(s):  
+ar: an array of integers  
+Input Format
+The first line contains an integer, , denoting the size of the array. 
+The second line contains  space-separated integers representing the array's elements.  
+Constraints
+ 
+Output Format
+Print the sum of the array's elements as a single integer.  
+Sample Input
+6
+1 2 3 4 10 11
+
+Sample Output
+31
+
+Explanation
+We print the sum of the array's elements: .
+__label__neg Given an array of integers, find the sum of its elements.
+For example, if the array , , so return .  
+Function Description
+Complete the simpleArraySum function in the editor below.  It must return the sum of the array elements as an integer.  
+simpleArraySum has the following parameter(s):  
+ar: an array of integers  
+Input Format
+The first line contains an integer, , denoting the size of the array. 
+The second line contains  space-separated integers representing the array's elements.  
+Constraints
+ 
+Output Format
+Print the sum of the array's elements as a single integer.  
+Sample Input
+6
+1 2 3 4 10 11
+
+Sample Output
+31
+
+Explanation
+We print the sum of the array's elements: .
+__label__neg Alice and Bob each created one problem for HackerRank. A reviewer rates the two challenges, awarding points on a scale from  to  for three categories: problem clarity, originality, and difficulty. 
+We define the rating for Alice's challenge to be the triplet , and the rating for Bob's challenge to be the triplet .
+Your task is to find their comparison points by comparing  with ,  with , and  with . 
+If , then Alice is awarded  point. 
+If , then Bob is awarded  point. 
+If , then neither person receives a point.
+Comparison points is the total points a person earned.
+Given  and , determine their respective comparison points.
+For example,  and .  For elements , Bob is awarded a point because .  For the equal elements  and , no points are earned.  Finally, for elements ,  so Alice receives a point.  Your return array would be  with Alice's score first and Bob's second.  
+Function Description
+Complete the function compareTriplets in the editor below.  It must return an array of two integers, the first being Alice's score and the second being Bob's.  
+compareTriplets has the following parameter(s):
+a: an array of integers representing Alice's challenge rating  
+b: an array of integers representing Bob's challenge rating  
+Input Format
+The first line contains  space-separated integers, , , and , describing the respective values in triplet . 
+The second line contains  space-separated integers, , , and , describing the respective values in triplet .
+Constraints
+
+
+Output Format
+Return an array of two integers denoting the respective comparison points earned by Alice and Bob.
+Sample Input 0
+Sample Output 0
+Explanation 0
+In this example: 
+
+
+Now, let's compare each individual score:
+, so Alice receives  point.
+, so nobody receives a point.
+, so Bob receives  point.
+Alice's comparison score is , and Bob's comparison score is . Thus, we return the array .  
+Sample Input 1
+Sample Output 1
+Explanation 1
+Comparing the  elements,  so Bob receives a point. 
+Comparing the  and  elements,  and  so Alice receives two points. 
+The return array is .  
+__label__neg Alice and Bob each created one problem for HackerRank. A reviewer rates the two challenges, awarding points on a scale from  to  for three categories: problem clarity, originality, and difficulty. 
+We define the rating for Alice's challenge to be the triplet , and the rating for Bob's challenge to be the triplet .
+Your task is to find their comparison points by comparing  with ,  with , and  with . 
+If , then Alice is awarded  point. 
+If , then Bob is awarded  point. 
+If , then neither person receives a point.
+Comparison points is the total points a person earned.
+Given  and , determine their respective comparison points.
+For example,  and .  For elements , Bob is awarded a point because .  For the equal elements  and , no points are earned.  Finally, for elements ,  so Alice receives a point.  Your return array would be  with Alice's score first and Bob's second.  
+Function Description
+Complete the function compareTriplets in the editor below.  It must return an array of two integers, the first being Alice's score and the second being Bob's.  
+compareTriplets has the following parameter(s):
+a: an array of integers representing Alice's challenge rating  
+b: an array of integers representing Bob's challenge rating  
+Input Format
+The first line contains  space-separated integers, , , and , describing the respective values in triplet . 
+The second line contains  space-separated integers, , , and , describing the respective values in triplet .
+Constraints
+
+
+Output Format
+Return an array of two integers denoting the respective comparison points earned by Alice and Bob.
+Sample Input 0
+Sample Output 0
+Explanation 0
+In this example: 
+
+
+Now, let's compare each individual score:
+, so Alice receives  point.
+, so nobody receives a point.
+, so Bob receives  point.
+Alice's comparison score is , and Bob's comparison score is . Thus, we return the array .  
+Sample Input 1
+Sample Output 1
+Explanation 1
+Comparing the  elements,  so Bob receives a point. 
+Comparing the  and  elements,  and  so Alice receives two points. 
+The return array is .  
+__label__neg Alice and Bob each created one problem for HackerRank. A reviewer rates the two challenges, awarding points on a scale from  to  for three categories: problem clarity, originality, and difficulty. 
+We define the rating for Alice's challenge to be the triplet , and the rating for Bob's challenge to be the triplet .
+Your task is to find their comparison points by comparing  with ,  with , and  with . 
+If , then Alice is awarded  point. 
+If , then Bob is awarded  point. 
+If , then neither person receives a point.
+Comparison points is the total points a person earned.
+Given  and , determine their respective comparison points.
+For example,  and .  For elements , Bob is awarded a point because .  For the equal elements  and , no points are earned.  Finally, for elements ,  so Alice receives a point.  Your return array would be  with Alice's score first and Bob's second.  
+Function Description
+Complete the function compareTriplets in the editor below.  It must return an array of two integers, the first being Alice's score and the second being Bob's.  
+compareTriplets has the following parameter(s):
+a: an array of integers representing Alice's challenge rating  
+b: an array of integers representing Bob's challenge rating  
+Input Format
+The first line contains  space-separated integers, , , and , describing the respective values in triplet . 
+The second line contains  space-separated integers, , , and , describing the respective values in triplet .
+Constraints
+
+
+Output Format
+Return an array of two integers denoting the respective comparison points earned by Alice and Bob.
+Sample Input 0
+Sample Output 0
+Explanation 0
+In this example: 
+
+
+Now, let's compare each individual score:
+, so Alice receives  point.
+, so nobody receives a point.
+, so Bob receives  point.
+Alice's comparison score is , and Bob's comparison score is . Thus, we return the array .  
+Sample Input 1
+Sample Output 1
+Explanation 1
+Comparing the  elements,  so Bob receives a point. 
+Comparing the  and  elements,  and  so Alice receives two points. 
+The return array is .  
+__label__neg Alice and Bob each created one problem for HackerRank. A reviewer rates the two challenges, awarding points on a scale from  to  for three categories: problem clarity, originality, and difficulty. 
+We define the rating for Alice's challenge to be the triplet , and the rating for Bob's challenge to be the triplet .
+Your task is to find their comparison points by comparing  with ,  with , and  with . 
+If , then Alice is awarded  point. 
+If , then Bob is awarded  point. 
+If , then neither person receives a point.
+Comparison points is the total points a person earned.
+Given  and , determine their respective comparison points.
+For example,  and .  For elements , Bob is awarded a point because .  For the equal elements  and , no points are earned.  Finally, for elements ,  so Alice receives a point.  Your return array would be  with Alice's score first and Bob's second.  
+Function Description
+Complete the function compareTriplets in the editor below.  It must return an array of two integers, the first being Alice's score and the second being Bob's.  
+compareTriplets has the following parameter(s):
+a: an array of integers representing Alice's challenge rating  
+b: an array of integers representing Bob's challenge rating  
+Input Format
+The first line contains  space-separated integers, , , and , describing the respective values in triplet . 
+The second line contains  space-separated integers, , , and , describing the respective values in triplet .
+Constraints
+
+
+Output Format
+Return an array of two integers denoting the respective comparison points earned by Alice and Bob.
+Sample Input 0
+Sample Output 0
+Explanation 0
+In this example: 
+
+
+Now, let's compare each individual score:
+, so Alice receives  point.
+, so nobody receives a point.
+, so Bob receives  point.
+Alice's comparison score is , and Bob's comparison score is . Thus, we return the array .  
+Sample Input 1
+Sample Output 1
+Explanation 1
+Comparing the  elements,  so Bob receives a point. 
+Comparing the  and  elements,  and  so Alice receives two points. 
+The return array is .  
+__label__neg Alice and Bob each created one problem for HackerRank. A reviewer rates the two challenges, awarding points on a scale from  to  for three categories: problem clarity, originality, and difficulty. 
+We define the rating for Alice's challenge to be the triplet , and the rating for Bob's challenge to be the triplet .
+Your task is to find their comparison points by comparing  with ,  with , and  with . 
+If , then Alice is awarded  point. 
+If , then Bob is awarded  point. 
+If , then neither person receives a point.
+Comparison points is the total points a person earned.
+Given  and , determine their respective comparison points.
+For example,  and .  For elements , Bob is awarded a point because .  For the equal elements  and , no points are earned.  Finally, for elements ,  so Alice receives a point.  Your return array would be  with Alice's score first and Bob's second.  
+Function Description
+Complete the function compareTriplets in the editor below.  It must return an array of two integers, the first being Alice's score and the second being Bob's.  
+compareTriplets has the following parameter(s):
+a: an array of integers representing Alice's challenge rating  
+b: an array of integers representing Bob's challenge rating  
+Input Format
+The first line contains  space-separated integers, , , and , describing the respective values in triplet . 
+The second line contains  space-separated integers, , , and , describing the respective values in triplet .
+Constraints
+
+
+Output Format
+Return an array of two integers denoting the respective comparison points earned by Alice and Bob.
+Sample Input 0
+Sample Output 0
+Explanation 0
+In this example: 
+
+
+Now, let's compare each individual score:
+, so Alice receives  point.
+, so nobody receives a point.
+, so Bob receives  point.
+Alice's comparison score is , and Bob's comparison score is . Thus, we return the array .  
+Sample Input 1
+Sample Output 1
+Explanation 1
+Comparing the  elements,  so Bob receives a point. 
+Comparing the  and  elements,  and  so Alice receives two points. 
+The return array is .  
+__label__neg Calculate and print the sum of the elements in an array, keeping in mind that some of those integers may be quite large.
+Function Description
+Complete the aVeryBigSum function in the editor below.  It must return the sum of all array elements.
+aVeryBigSum has the following parameter(s):
+ar: an array of integers . 
+Input Format 
+The first line of the input consists of an integer . 
+The next line contains  space-separated integers contained in the array. 
+Output Format
+Print the integer sum of the elements in the array.
+Constraints 
+ 
+ 
+Sample Input 
+5
+1000000001 1000000002 1000000003 1000000004 1000000005
+
+Output 
+5000000015
+
+Note: 
+The range of the 32-bit integer is . 
+When we add several integer values, the resulting sum might exceed the above range. You might need to use long long int in C/C++ or long data type in Java to store such sums.  
+__label__neg Calculate and print the sum of the elements in an array, keeping in mind that some of those integers may be quite large.
+Function Description
+Complete the aVeryBigSum function in the editor below.  It must return the sum of all array elements.
+aVeryBigSum has the following parameter(s):
+ar: an array of integers . 
+Input Format 
+The first line of the input consists of an integer . 
+The next line contains  space-separated integers contained in the array. 
+Output Format
+Print the integer sum of the elements in the array.
+Constraints 
+ 
+ 
+Sample Input 
+5
+1000000001 1000000002 1000000003 1000000004 1000000005
+
+Output 
+5000000015
+
+Note: 
+The range of the 32-bit integer is . 
+When we add several integer values, the resulting sum might exceed the above range. You might need to use long long int in C/C++ or long data type in Java to store such sums.  
+__label__neg Calculate and print the sum of the elements in an array, keeping in mind that some of those integers may be quite large.
+Function Description
+Complete the aVeryBigSum function in the editor below.  It must return the sum of all array elements.
+aVeryBigSum has the following parameter(s):
+ar: an array of integers . 
+Input Format 
+The first line of the input consists of an integer . 
+The next line contains  space-separated integers contained in the array. 
+Output Format
+Print the integer sum of the elements in the array.
+Constraints 
+ 
+ 
+Sample Input 
+5
+1000000001 1000000002 1000000003 1000000004 1000000005
+
+Output 
+5000000015
+
+Note: 
+The range of the 32-bit integer is . 
+When we add several integer values, the resulting sum might exceed the above range. You might need to use long long int in C/C++ or long data type in Java to store such sums.  
+__label__neg Calculate and print the sum of the elements in an array, keeping in mind that some of those integers may be quite large.
+Function Description
+Complete the aVeryBigSum function in the editor below.  It must return the sum of all array elements.
+aVeryBigSum has the following parameter(s):
+ar: an array of integers . 
+Input Format 
+The first line of the input consists of an integer . 
+The next line contains  space-separated integers contained in the array. 
+Output Format
+Print the integer sum of the elements in the array.
+Constraints 
+ 
+ 
+Sample Input 
+5
+1000000001 1000000002 1000000003 1000000004 1000000005
+
+Output 
+5000000015
+
+Note: 
+The range of the 32-bit integer is . 
+When we add several integer values, the resulting sum might exceed the above range. You might need to use long long int in C/C++ or long data type in Java to store such sums.  
+__label__neg Given a square matrix, calculate the absolute difference between the sums of its diagonals.  
+For example, the square matrix  is shown below:  
+1 2 3
+4 5 6
+9 8 9  
+
+The left-to-right diagonal = .  The right to left diagonal = .  Their absolute difference is .  
+Function description
+Complete the  function in the editor below.  It must return an integer representing the absolute diagonal difference.
+diagonalDifference takes the following parameter:  
+arr: an array of integers . 
+Input Format
+The first line contains a single integer, ,  the number of rows and columns in the matrix . 
+Each of the next  lines describes a row, , and consists of  space-separated integers .
+Constraints
+
+Output Format
+Print the absolute difference between the sums of the matrix's two diagonals as a single integer.
+Sample Input
+3
+11 2 4
+4 5 6
+10 8 -12
+
+Sample Output
+15
+
+Explanation
+The primary diagonal is:  
+11
+   5
+     -12
+
+Sum across the primary diagonal: 11 + 5 - 12 = 4 
+The secondary diagonal is:
+     4
+   5
+10
+
+Sum across the secondary diagonal: 4 + 5 + 10 = 19 
+Difference: |4 - 19| = 15
+Note: |x| is the absolute value of x
+__label__neg Given a square matrix, calculate the absolute difference between the sums of its diagonals.  
+For example, the square matrix  is shown below:  
+1 2 3
+4 5 6
+9 8 9  
+
+The left-to-right diagonal = .  The right to left diagonal = .  Their absolute difference is .  
+Function description
+Complete the  function in the editor below.  It must return an integer representing the absolute diagonal difference.
+diagonalDifference takes the following parameter:  
+arr: an array of integers . 
+Input Format
+The first line contains a single integer, ,  the number of rows and columns in the matrix . 
+Each of the next  lines describes a row, , and consists of  space-separated integers .
+Constraints
+
+Output Format
+Print the absolute difference between the sums of the matrix's two diagonals as a single integer.
+Sample Input
+3
+11 2 4
+4 5 6
+10 8 -12
+
+Sample Output
+15
+
+Explanation
+The primary diagonal is:  
+11
+   5
+     -12
+
+Sum across the primary diagonal: 11 + 5 - 12 = 4 
+The secondary diagonal is:
+     4
+   5
+10
+
+Sum across the secondary diagonal: 4 + 5 + 10 = 19 
+Difference: |4 - 19| = 15
+Note: |x| is the absolute value of x
+__label__neg Given a square matrix, calculate the absolute difference between the sums of its diagonals.  
+For example, the square matrix  is shown below:  
+1 2 3
+4 5 6
+9 8 9  
+
+The left-to-right diagonal = .  The right to left diagonal = .  Their absolute difference is .  
+Function description
+Complete the  function in the editor below.  It must return an integer representing the absolute diagonal difference.
+diagonalDifference takes the following parameter:  
+arr: an array of integers . 
+Input Format
+The first line contains a single integer, ,  the number of rows and columns in the matrix . 
+Each of the next  lines describes a row, , and consists of  space-separated integers .
+Constraints
+
+Output Format
+Print the absolute difference between the sums of the matrix's two diagonals as a single integer.
+Sample Input
+3
+11 2 4
+4 5 6
+10 8 -12
+
+Sample Output
+15
+
+Explanation
+The primary diagonal is:  
+11
+   5
+     -12
+
+Sum across the primary diagonal: 11 + 5 - 12 = 4 
+The secondary diagonal is:
+     4
+   5
+10
+
+Sum across the secondary diagonal: 4 + 5 + 10 = 19 
+Difference: |4 - 19| = 15
+Note: |x| is the absolute value of x
+__label__neg Given a square matrix, calculate the absolute difference between the sums of its diagonals.  
+For example, the square matrix  is shown below:  
+1 2 3
+4 5 6
+9 8 9  
+
+The left-to-right diagonal = .  The right to left diagonal = .  Their absolute difference is .  
+Function description
+Complete the  function in the editor below.  It must return an integer representing the absolute diagonal difference.
+diagonalDifference takes the following parameter:  
+arr: an array of integers . 
+Input Format
+The first line contains a single integer, ,  the number of rows and columns in the matrix . 
+Each of the next  lines describes a row, , and consists of  space-separated integers .
+Constraints
+
+Output Format
+Print the absolute difference between the sums of the matrix's two diagonals as a single integer.
+Sample Input
+3
+11 2 4
+4 5 6
+10 8 -12
+
+Sample Output
+15
+
+Explanation
+The primary diagonal is:  
+11
+   5
+     -12
+
+Sum across the primary diagonal: 11 + 5 - 12 = 4 
+The secondary diagonal is:
+     4
+   5
+10
+
+Sum across the secondary diagonal: 4 + 5 + 10 = 19 
+Difference: |4 - 19| = 15
+Note: |x| is the absolute value of x
+__label__neg Given a square matrix, calculate the absolute difference between the sums of its diagonals.  
+For example, the square matrix  is shown below:  
+1 2 3
+4 5 6
+9 8 9  
+
+The left-to-right diagonal = .  The right to left diagonal = .  Their absolute difference is .  
+Function description
+Complete the  function in the editor below.  It must return an integer representing the absolute diagonal difference.
+diagonalDifference takes the following parameter:  
+arr: an array of integers . 
+Input Format
+The first line contains a single integer, ,  the number of rows and columns in the matrix . 
+Each of the next  lines describes a row, , and consists of  space-separated integers .
+Constraints
+
+Output Format
+Print the absolute difference between the sums of the matrix's two diagonals as a single integer.
+Sample Input
+3
+11 2 4
+4 5 6
+10 8 -12
+
+Sample Output
+15
+
+Explanation
+The primary diagonal is:  
+11
+   5
+     -12
+
+Sum across the primary diagonal: 11 + 5 - 12 = 4 
+The secondary diagonal is:
+     4
+   5
+10
+
+Sum across the secondary diagonal: 4 + 5 + 10 = 19 
+Difference: |4 - 19| = 15
+Note: |x| is the absolute value of x
+__label__neg Given an array of integers, calculate the fractions of its elements that are positive,  negative, and are zeros. Print the decimal value of each fraction on a new line.
+Note: This challenge introduces precision problems. The test cases are scaled to six decimal places, though answers with absolute error of up to  are acceptable.
+For example, given the array  there are  elements, two positive, two negative and one zero.  Their ratios would be ,  and .  It should be printed as  
+0.400000
+0.400000
+0.200000
+
+Function Description
+Complete the plusMinus function in the editor below.  It should print out the ratio of positive, negative and zero items in the array, each on a separate line rounded to six decimals.  
+plusMinus has the following parameter(s):
+arr: an array of integers
+Input Format
+The first line contains an integer, , denoting the size of the array. 
+The second line contains  space-separated integers describing an array of numbers .
+Constraints
+ 
+ 
+Output Format
+You must print the following  lines:
+A decimal representing of the fraction of positive numbers in the array compared to its size.
+A decimal representing of the fraction of negative numbers in the array compared to its size.
+A decimal representing of the fraction of zeros in the array compared to its size.
+Sample Input
+6
+-4 3 -9 0 4 1         
+
+Sample Output
+0.500000
+0.333333
+0.166667
+
+Explanation
+There are  positive numbers,  negative numbers, and  zero in the array. 
+The proportions of occurrence are positive:  , negative:   and zeros:  .  
+__label__neg Given an array of integers, calculate the fractions of its elements that are positive,  negative, and are zeros. Print the decimal value of each fraction on a new line.
+Note: This challenge introduces precision problems. The test cases are scaled to six decimal places, though answers with absolute error of up to  are acceptable.
+For example, given the array  there are  elements, two positive, two negative and one zero.  Their ratios would be ,  and .  It should be printed as  
+0.400000
+0.400000
+0.200000
+
+Function Description
+Complete the plusMinus function in the editor below.  It should print out the ratio of positive, negative and zero items in the array, each on a separate line rounded to six decimals.  
+plusMinus has the following parameter(s):
+arr: an array of integers
+Input Format
+The first line contains an integer, , denoting the size of the array. 
+The second line contains  space-separated integers describing an array of numbers .
+Constraints
+ 
+ 
+Output Format
+You must print the following  lines:
+A decimal representing of the fraction of positive numbers in the array compared to its size.
+A decimal representing of the fraction of negative numbers in the array compared to its size.
+A decimal representing of the fraction of zeros in the array compared to its size.
+Sample Input
+6
+-4 3 -9 0 4 1         
+
+Sample Output
+0.500000
+0.333333
+0.166667
+
+Explanation
+There are  positive numbers,  negative numbers, and  zero in the array. 
+The proportions of occurrence are positive:  , negative:   and zeros:  .  
+__label__neg Given an array of integers, calculate the fractions of its elements that are positive,  negative, and are zeros. Print the decimal value of each fraction on a new line.
+Note: This challenge introduces precision problems. The test cases are scaled to six decimal places, though answers with absolute error of up to  are acceptable.
+For example, given the array  there are  elements, two positive, two negative and one zero.  Their ratios would be ,  and .  It should be printed as  
+0.400000
+0.400000
+0.200000
+
+Function Description
+Complete the plusMinus function in the editor below.  It should print out the ratio of positive, negative and zero items in the array, each on a separate line rounded to six decimals.  
+plusMinus has the following parameter(s):
+arr: an array of integers
+Input Format
+The first line contains an integer, , denoting the size of the array. 
+The second line contains  space-separated integers describing an array of numbers .
+Constraints
+ 
+ 
+Output Format
+You must print the following  lines:
+A decimal representing of the fraction of positive numbers in the array compared to its size.
+A decimal representing of the fraction of negative numbers in the array compared to its size.
+A decimal representing of the fraction of zeros in the array compared to its size.
+Sample Input
+6
+-4 3 -9 0 4 1         
+
+Sample Output
+0.500000
+0.333333
+0.166667
+
+Explanation
+There are  positive numbers,  negative numbers, and  zero in the array. 
+The proportions of occurrence are positive:  , negative:   and zeros:  .  
+__label__neg Given an array of integers, calculate the fractions of its elements that are positive,  negative, and are zeros. Print the decimal value of each fraction on a new line.
+Note: This challenge introduces precision problems. The test cases are scaled to six decimal places, though answers with absolute error of up to  are acceptable.
+For example, given the array  there are  elements, two positive, two negative and one zero.  Their ratios would be ,  and .  It should be printed as  
+0.400000
+0.400000
+0.200000
+
+Function Description
+Complete the plusMinus function in the editor below.  It should print out the ratio of positive, negative and zero items in the array, each on a separate line rounded to six decimals.  
+plusMinus has the following parameter(s):
+arr: an array of integers
+Input Format
+The first line contains an integer, , denoting the size of the array. 
+The second line contains  space-separated integers describing an array of numbers .
+Constraints
+ 
+ 
+Output Format
+You must print the following  lines:
+A decimal representing of the fraction of positive numbers in the array compared to its size.
+A decimal representing of the fraction of negative numbers in the array compared to its size.
+A decimal representing of the fraction of zeros in the array compared to its size.
+Sample Input
+6
+-4 3 -9 0 4 1         
+
+Sample Output
+0.500000
+0.333333
+0.166667
+
+Explanation
+There are  positive numbers,  negative numbers, and  zero in the array. 
+The proportions of occurrence are positive:  , negative:   and zeros:  .  
+__label__neg Given an array of integers, calculate the fractions of its elements that are positive,  negative, and are zeros. Print the decimal value of each fraction on a new line.
+Note: This challenge introduces precision problems. The test cases are scaled to six decimal places, though answers with absolute error of up to  are acceptable.
+For example, given the array  there are  elements, two positive, two negative and one zero.  Their ratios would be ,  and .  It should be printed as  
+0.400000
+0.400000
+0.200000
+
+Function Description
+Complete the plusMinus function in the editor below.  It should print out the ratio of positive, negative and zero items in the array, each on a separate line rounded to six decimals.  
+plusMinus has the following parameter(s):
+arr: an array of integers
+Input Format
+The first line contains an integer, , denoting the size of the array. 
+The second line contains  space-separated integers describing an array of numbers .
+Constraints
+ 
+ 
+Output Format
+You must print the following  lines:
+A decimal representing of the fraction of positive numbers in the array compared to its size.
+A decimal representing of the fraction of negative numbers in the array compared to its size.
+A decimal representing of the fraction of zeros in the array compared to its size.
+Sample Input
+6
+-4 3 -9 0 4 1         
+
+Sample Output
+0.500000
+0.333333
+0.166667
+
+Explanation
+There are  positive numbers,  negative numbers, and  zero in the array. 
+The proportions of occurrence are positive:  , negative:   and zeros:  .  
+__label__neg Consider a staircase of size :
+   #
+  ##
+ ###
+####
+
+Observe that its base and height are both equal to , and the image is drawn using # symbols and spaces. The last line is not preceded by any spaces. 
+#
+Write a program that prints a staircase of size .  
+Function Description
+Complete the staircase function in the editor below.  It should print a staircase as described above.  
+staircase has the following parameter(s):  
+n: an integer
+Input Format
+A single integer, , denoting the size of the staircase.
+Constraints
+ .  
+Output Format
+Print a staircase of size  using # symbols and spaces.
+#
+Note: The last line must have  spaces in it.  
+Sample Input
+6 
+
+Sample Output
+     #
+    ##
+   ###
+  ####
+ #####
+######
+
+Explanation
+The staircase is right-aligned, composed of # symbols and spaces, and has a height and width of .
+#
+__label__neg Consider a staircase of size :
+   #
+  ##
+ ###
+####
+
+Observe that its base and height are both equal to , and the image is drawn using # symbols and spaces. The last line is not preceded by any spaces. 
+#
+Write a program that prints a staircase of size .  
+Function Description
+Complete the staircase function in the editor below.  It should print a staircase as described above.  
+staircase has the following parameter(s):  
+n: an integer
+Input Format
+A single integer, , denoting the size of the staircase.
+Constraints
+ .  
+Output Format
+Print a staircase of size  using # symbols and spaces.
+#
+Note: The last line must have  spaces in it.  
+Sample Input
+6 
+
+Sample Output
+     #
+    ##
+   ###
+  ####
+ #####
+######
+
+Explanation
+The staircase is right-aligned, composed of # symbols and spaces, and has a height and width of .
+#
+__label__neg Consider a staircase of size :
+   #
+  ##
+ ###
+####
+
+Observe that its base and height are both equal to , and the image is drawn using # symbols and spaces. The last line is not preceded by any spaces. 
+#
+Write a program that prints a staircase of size .  
+Function Description
+Complete the staircase function in the editor below.  It should print a staircase as described above.  
+staircase has the following parameter(s):  
+n: an integer
+Input Format
+A single integer, , denoting the size of the staircase.
+Constraints
+ .  
+Output Format
+Print a staircase of size  using # symbols and spaces.
+#
+Note: The last line must have  spaces in it.  
+Sample Input
+6 
+
+Sample Output
+     #
+    ##
+   ###
+  ####
+ #####
+######
+
+Explanation
+The staircase is right-aligned, composed of # symbols and spaces, and has a height and width of .
+#
+__label__neg Consider a staircase of size :
+   #
+  ##
+ ###
+####
+
+Observe that its base and height are both equal to , and the image is drawn using # symbols and spaces. The last line is not preceded by any spaces. 
+#
+Write a program that prints a staircase of size .  
+Function Description
+Complete the staircase function in the editor below.  It should print a staircase as described above.  
+staircase has the following parameter(s):  
+n: an integer
+Input Format
+A single integer, , denoting the size of the staircase.
+Constraints
+ .  
+Output Format
+Print a staircase of size  using # symbols and spaces.
+#
+Note: The last line must have  spaces in it.  
+Sample Input
+6 
+
+Sample Output
+     #
+    ##
+   ###
+  ####
+ #####
+######
+
+Explanation
+The staircase is right-aligned, composed of # symbols and spaces, and has a height and width of .
+#
+__label__neg Consider a staircase of size :
+   #
+  ##
+ ###
+####
+
+Observe that its base and height are both equal to , and the image is drawn using # symbols and spaces. The last line is not preceded by any spaces. 
+#
+Write a program that prints a staircase of size .  
+Function Description
+Complete the staircase function in the editor below.  It should print a staircase as described above.  
+staircase has the following parameter(s):  
+n: an integer
+Input Format
+A single integer, , denoting the size of the staircase.
+Constraints
+ .  
+Output Format
+Print a staircase of size  using # symbols and spaces.
+#
+Note: The last line must have  spaces in it.  
+Sample Input
+6 
+
+Sample Output
+     #
+    ##
+   ###
+  ####
+ #####
+######
+
+Explanation
+The staircase is right-aligned, composed of # symbols and spaces, and has a height and width of .
+#
+__label__neg Given five positive integers, find the minimum and maximum values that can be calculated by summing exactly four of the five integers. Then print the respective minimum and maximum values as a single line of two space-separated long integers.  
+For example, .  Our minimum sum is  and our maximum sum is .  We would print  
+16 24
+
+Function Description 
+Complete the miniMaxSum function in the editor below.  It should print two space-separated integers on one line: the minimum sum and the maximum sum of  of  elements.  
+miniMaxSum has the following parameter(s):
+arr: an array of  integers  
+Input Format
+A single line of five space-separated integers.
+Constraints
+ 
+Output Format
+Print two space-separated long integers denoting the respective minimum and maximum values that can be calculated by summing exactly four of the five integers. (The output can be greater than a 32 bit integer.)
+Sample Input
+1 2 3 4 5
+
+Sample Output
+10 14
+
+Explanation
+Our initial numbers are , , , , and . We can calculate the following sums using four of the five integers:
+If we sum everything except , our sum is .
+If we sum everything except , our sum is .
+If we sum everything except , our sum is .
+If we sum everything except , our sum is .
+If we sum everything except , our sum is .
+Hints: Beware of integer overflow! Use 64-bit Integer.
+Need help to get started? Try the Solve Me First problem
+__label__neg Given five positive integers, find the minimum and maximum values that can be calculated by summing exactly four of the five integers. Then print the respective minimum and maximum values as a single line of two space-separated long integers.  
+For example, .  Our minimum sum is  and our maximum sum is .  We would print  
+16 24
+
+Function Description 
+Complete the miniMaxSum function in the editor below.  It should print two space-separated integers on one line: the minimum sum and the maximum sum of  of  elements.  
+miniMaxSum has the following parameter(s):
+arr: an array of  integers  
+Input Format
+A single line of five space-separated integers.
+Constraints
+ 
+Output Format
+Print two space-separated long integers denoting the respective minimum and maximum values that can be calculated by summing exactly four of the five integers. (The output can be greater than a 32 bit integer.)
+Sample Input
+1 2 3 4 5
+
+Sample Output
+10 14
+
+Explanation
+Our initial numbers are , , , , and . We can calculate the following sums using four of the five integers:
+If we sum everything except , our sum is .
+If we sum everything except , our sum is .
+If we sum everything except , our sum is .
+If we sum everything except , our sum is .
+If we sum everything except , our sum is .
+Hints: Beware of integer overflow! Use 64-bit Integer.
+Need help to get started? Try the Solve Me First problem
+__label__neg Given five positive integers, find the minimum and maximum values that can be calculated by summing exactly four of the five integers. Then print the respective minimum and maximum values as a single line of two space-separated long integers.  
+For example, .  Our minimum sum is  and our maximum sum is .  We would print  
+16 24
+
+Function Description 
+Complete the miniMaxSum function in the editor below.  It should print two space-separated integers on one line: the minimum sum and the maximum sum of  of  elements.  
+miniMaxSum has the following parameter(s):
+arr: an array of  integers  
+Input Format
+A single line of five space-separated integers.
+Constraints
+ 
+Output Format
+Print two space-separated long integers denoting the respective minimum and maximum values that can be calculated by summing exactly four of the five integers. (The output can be greater than a 32 bit integer.)
+Sample Input
+1 2 3 4 5
+
+Sample Output
+10 14
+
+Explanation
+Our initial numbers are , , , , and . We can calculate the following sums using four of the five integers:
+If we sum everything except , our sum is .
+If we sum everything except , our sum is .
+If we sum everything except , our sum is .
+If we sum everything except , our sum is .
+If we sum everything except , our sum is .
+Hints: Beware of integer overflow! Use 64-bit Integer.
+Need help to get started? Try the Solve Me First problem
+__label__neg Complete the function solveMeFirst to compute the sum of two integers.
+Function prototype: 
+int solveMeFirst(int a, int b);
+where,
+a is the first integer input.
+b is the second integer input
+Return values 
+ sum of the above two integers   
+Sample Input
+a = 2
+b = 3
+
+Sample Output
+5
+
+Explanation
+The sum of the two integers  and  is computed as: . 
+__label__neg Complete the function solveMeFirst to compute the sum of two integers.
+Function prototype: 
+int solveMeFirst(int a, int b);
+where,
+a is the first integer input.
+b is the second integer input
+Return values 
+ sum of the above two integers   
+Sample Input
+a = 2
+b = 3
+
+Sample Output
+5
+
+Explanation
+The sum of the two integers  and  is computed as: . 
+__label__neg Complete the function solveMeFirst to compute the sum of two integers.
+Function prototype: 
+int solveMeFirst(int a, int b);
+where,
+a is the first integer input.
+b is the second integer input
+Return values 
+ sum of the above two integers   
+Sample Input
+a = 2
+b = 3
+
+Sample Output
+5
+
+Explanation
+The sum of the two integers  and  is computed as: . 
+__label__neg Complete the function solveMeFirst to compute the sum of two integers.
+Function prototype: 
+int solveMeFirst(int a, int b);
+where,
+a is the first integer input.
+b is the second integer input
+Return values 
+ sum of the above two integers   
+Sample Input
+a = 2
+b = 3
+
+Sample Output
+5
+
+Explanation
+The sum of the two integers  and  is computed as: . 
+__label__neg Given an array of integers, find the sum of its elements.
+For example, if the array , , so return .  
+Function Description
+Complete the simpleArraySum function in the editor below.  It must return the sum of the array elements as an integer.  
+simpleArraySum has the following parameter(s):  
+ar: an array of integers  
+Input Format
+The first line contains an integer, , denoting the size of the array. 
+The second line contains  space-separated integers representing the array's elements.  
+Constraints
+ 
+Output Format
+Print the sum of the array's elements as a single integer.  
+Sample Input
+6
+1 2 3 4 10 11
+
+Sample Output
+31
+
+Explanation
+We print the sum of the array's elements: .
+__label__neg Given an array of integers, find the sum of its elements.
+For example, if the array , , so return .  
+Function Description
+Complete the simpleArraySum function in the editor below.  It must return the sum of the array elements as an integer.  
+simpleArraySum has the following parameter(s):  
+ar: an array of integers  
+Input Format
+The first line contains an integer, , denoting the size of the array. 
+The second line contains  space-separated integers representing the array's elements.  
+Constraints
+ 
+Output Format
+Print the sum of the array's elements as a single integer.  
+Sample Input
+6
+1 2 3 4 10 11
+
+Sample Output
+31
+
+Explanation
+We print the sum of the array's elements: .
+__label__neg Given an array of integers, find the sum of its elements.
+For example, if the array , , so return .  
+Function Description
+Complete the simpleArraySum function in the editor below.  It must return the sum of the array elements as an integer.  
+simpleArraySum has the following parameter(s):  
+ar: an array of integers  
+Input Format
+The first line contains an integer, , denoting the size of the array. 
+The second line contains  space-separated integers representing the array's elements.  
+Constraints
+ 
+Output Format
+Print the sum of the array's elements as a single integer.  
+Sample Input
+6
+1 2 3 4 10 11
+
+Sample Output
+31
+
+Explanation
+We print the sum of the array's elements: .
+__label__neg Given an array of integers, find the sum of its elements.
+For example, if the array , , so return .  
+Function Description
+Complete the simpleArraySum function in the editor below.  It must return the sum of the array elements as an integer.  
+simpleArraySum has the following parameter(s):  
+ar: an array of integers  
+Input Format
+The first line contains an integer, , denoting the size of the array. 
+The second line contains  space-separated integers representing the array's elements.  
+Constraints
+ 
+Output Format
+Print the sum of the array's elements as a single integer.  
+Sample Input
+6
+1 2 3 4 10 11
+
+Sample Output
+31
+
+Explanation
+We print the sum of the array's elements: .
+__label__neg Given an array of integers, find the sum of its elements.
+For example, if the array , , so return .  
+Function Description
+Complete the simpleArraySum function in the editor below.  It must return the sum of the array elements as an integer.  
+simpleArraySum has the following parameter(s):  
+ar: an array of integers  
+Input Format
+The first line contains an integer, , denoting the size of the array. 
+The second line contains  space-separated integers representing the array's elements.  
+Constraints
+ 
+Output Format
+Print the sum of the array's elements as a single integer.  
+Sample Input
+6
+1 2 3 4 10 11
+
+Sample Output
+31
+
+Explanation
+We print the sum of the array's elements: .
+__label__neg Alice and Bob each created one problem for HackerRank. A reviewer rates the two challenges, awarding points on a scale from  to  for three categories: problem clarity, originality, and difficulty. 
+We define the rating for Alice's challenge to be the triplet , and the rating for Bob's challenge to be the triplet .
+Your task is to find their comparison points by comparing  with ,  with , and  with . 
+If , then Alice is awarded  point. 
+If , then Bob is awarded  point. 
+If , then neither person receives a point.
+Comparison points is the total points a person earned.
+Given  and , determine their respective comparison points.
+For example,  and .  For elements , Bob is awarded a point because .  For the equal elements  and , no points are earned.  Finally, for elements ,  so Alice receives a point.  Your return array would be  with Alice's score first and Bob's second.  
+Function Description
+Complete the function compareTriplets in the editor below.  It must return an array of two integers, the first being Alice's score and the second being Bob's.  
+compareTriplets has the following parameter(s):
+a: an array of integers representing Alice's challenge rating  
+b: an array of integers representing Bob's challenge rating  
+Input Format
+The first line contains  space-separated integers, , , and , describing the respective values in triplet . 
+The second line contains  space-separated integers, , , and , describing the respective values in triplet .
+Constraints
+
+
+Output Format
+Return an array of two integers denoting the respective comparison points earned by Alice and Bob.
+Sample Input 0
+Sample Output 0
+Explanation 0
+In this example: 
+
+
+Now, let's compare each individual score:
+, so Alice receives  point.
+, so nobody receives a point.
+, so Bob receives  point.
+Alice's comparison score is , and Bob's comparison score is . Thus, we return the array .  
+Sample Input 1
+Sample Output 1
+Explanation 1
+Comparing the  elements,  so Bob receives a point. 
+Comparing the  and  elements,  and  so Alice receives two points. 
+The return array is .  
+__label__neg Alice and Bob each created one problem for HackerRank. A reviewer rates the two challenges, awarding points on a scale from  to  for three categories: problem clarity, originality, and difficulty. 
+We define the rating for Alice's challenge to be the triplet , and the rating for Bob's challenge to be the triplet .
+Your task is to find their comparison points by comparing  with ,  with , and  with . 
+If , then Alice is awarded  point. 
+If , then Bob is awarded  point. 
+If , then neither person receives a point.
+Comparison points is the total points a person earned.
+Given  and , determine their respective comparison points.
+For example,  and .  For elements , Bob is awarded a point because .  For the equal elements  and , no points are earned.  Finally, for elements ,  so Alice receives a point.  Your return array would be  with Alice's score first and Bob's second.  
+Function Description
+Complete the function compareTriplets in the editor below.  It must return an array of two integers, the first being Alice's score and the second being Bob's.  
+compareTriplets has the following parameter(s):
+a: an array of integers representing Alice's challenge rating  
+b: an array of integers representing Bob's challenge rating  
+Input Format
+The first line contains  space-separated integers, , , and , describing the respective values in triplet . 
+The second line contains  space-separated integers, , , and , describing the respective values in triplet .
+Constraints
+
+
+Output Format
+Return an array of two integers denoting the respective comparison points earned by Alice and Bob.
+Sample Input 0
+Sample Output 0
+Explanation 0
+In this example: 
+
+
+Now, let's compare each individual score:
+, so Alice receives  point.
+, so nobody receives a point.
+, so Bob receives  point.
+Alice's comparison score is , and Bob's comparison score is . Thus, we return the array .  
+Sample Input 1
+Sample Output 1
+Explanation 1
+Comparing the  elements,  so Bob receives a point. 
+Comparing the  and  elements,  and  so Alice receives two points. 
+The return array is .  
+__label__neg Alice and Bob each created one problem for HackerRank. A reviewer rates the two challenges, awarding points on a scale from  to  for three categories: problem clarity, originality, and difficulty. 
+We define the rating for Alice's challenge to be the triplet , and the rating for Bob's challenge to be the triplet .
+Your task is to find their comparison points by comparing  with ,  with , and  with . 
+If , then Alice is awarded  point. 
+If , then Bob is awarded  point. 
+If , then neither person receives a point.
+Comparison points is the total points a person earned.
+Given  and , determine their respective comparison points.
+For example,  and .  For elements , Bob is awarded a point because .  For the equal elements  and , no points are earned.  Finally, for elements ,  so Alice receives a point.  Your return array would be  with Alice's score first and Bob's second.  
+Function Description
+Complete the function compareTriplets in the editor below.  It must return an array of two integers, the first being Alice's score and the second being Bob's.  
+compareTriplets has the following parameter(s):
+a: an array of integers representing Alice's challenge rating  
+b: an array of integers representing Bob's challenge rating  
+Input Format
+The first line contains  space-separated integers, , , and , describing the respective values in triplet . 
+The second line contains  space-separated integers, , , and , describing the respective values in triplet .
+Constraints
+
+
+Output Format
+Return an array of two integers denoting the respective comparison points earned by Alice and Bob.
+Sample Input 0
+Sample Output 0
+Explanation 0
+In this example: 
+
+
+Now, let's compare each individual score:
+, so Alice receives  point.
+, so nobody receives a point.
+, so Bob receives  point.
+Alice's comparison score is , and Bob's comparison score is . Thus, we return the array .  
+Sample Input 1
+Sample Output 1
+Explanation 1
+Comparing the  elements,  so Bob receives a point. 
+Comparing the  and  elements,  and  so Alice receives two points. 
+The return array is .  
+__label__neg Alice and Bob each created one problem for HackerRank. A reviewer rates the two challenges, awarding points on a scale from  to  for three categories: problem clarity, originality, and difficulty. 
+We define the rating for Alice's challenge to be the triplet , and the rating for Bob's challenge to be the triplet .
+Your task is to find their comparison points by comparing  with ,  with , and  with . 
+If , then Alice is awarded  point. 
+If , then Bob is awarded  point. 
+If , then neither person receives a point.
+Comparison points is the total points a person earned.
+Given  and , determine their respective comparison points.
+For example,  and .  For elements , Bob is awarded a point because .  For the equal elements  and , no points are earned.  Finally, for elements ,  so Alice receives a point.  Your return array would be  with Alice's score first and Bob's second.  
+Function Description
+Complete the function compareTriplets in the editor below.  It must return an array of two integers, the first being Alice's score and the second being Bob's.  
+compareTriplets has the following parameter(s):
+a: an array of integers representing Alice's challenge rating  
+b: an array of integers representing Bob's challenge rating  
+Input Format
+The first line contains  space-separated integers, , , and , describing the respective values in triplet . 
+The second line contains  space-separated integers, , , and , describing the respective values in triplet .
+Constraints
+
+
+Output Format
+Return an array of two integers denoting the respective comparison points earned by Alice and Bob.
+Sample Input 0
+Sample Output 0
+Explanation 0
+In this example: 
+
+
+Now, let's compare each individual score:
+, so Alice receives  point.
+, so nobody receives a point.
+, so Bob receives  point.
+Alice's comparison score is , and Bob's comparison score is . Thus, we return the array .  
+Sample Input 1
+Sample Output 1
+Explanation 1
+Comparing the  elements,  so Bob receives a point. 
+Comparing the  and  elements,  and  so Alice receives two points. 
+The return array is .  
+__label__neg Alice and Bob each created one problem for HackerRank. A reviewer rates the two challenges, awarding points on a scale from  to  for three categories: problem clarity, originality, and difficulty. 
+We define the rating for Alice's challenge to be the triplet , and the rating for Bob's challenge to be the triplet .
+Your task is to find their comparison points by comparing  with ,  with , and  with . 
+If , then Alice is awarded  point. 
+If , then Bob is awarded  point. 
+If , then neither person receives a point.
+Comparison points is the total points a person earned.
+Given  and , determine their respective comparison points.
+For example,  and .  For elements , Bob is awarded a point because .  For the equal elements  and , no points are earned.  Finally, for elements ,  so Alice receives a point.  Your return array would be  with Alice's score first and Bob's second.  
+Function Description
+Complete the function compareTriplets in the editor below.  It must return an array of two integers, the first being Alice's score and the second being Bob's.  
+compareTriplets has the following parameter(s):
+a: an array of integers representing Alice's challenge rating  
+b: an array of integers representing Bob's challenge rating  
+Input Format
+The first line contains  space-separated integers, , , and , describing the respective values in triplet . 
+The second line contains  space-separated integers, , , and , describing the respective values in triplet .
+Constraints
+
+
+Output Format
+Return an array of two integers denoting the respective comparison points earned by Alice and Bob.
+Sample Input 0
+Sample Output 0
+Explanation 0
+In this example: 
+
+
+Now, let's compare each individual score:
+, so Alice receives  point.
+, so nobody receives a point.
+, so Bob receives  point.
+Alice's comparison score is , and Bob's comparison score is . Thus, we return the array .  
+Sample Input 1
+Sample Output 1
+Explanation 1
+Comparing the  elements,  so Bob receives a point. 
+Comparing the  and  elements,  and  so Alice receives two points. 
+The return array is .  
+__label__neg Calculate and print the sum of the elements in an array, keeping in mind that some of those integers may be quite large.
+Function Description
+Complete the aVeryBigSum function in the editor below.  It must return the sum of all array elements.
+aVeryBigSum has the following parameter(s):
+ar: an array of integers . 
+Input Format 
+The first line of the input consists of an integer . 
+The next line contains  space-separated integers contained in the array. 
+Output Format
+Print the integer sum of the elements in the array.
+Constraints 
+ 
+ 
+Sample Input 
+5
+1000000001 1000000002 1000000003 1000000004 1000000005
+
+Output 
+5000000015
+
+Note: 
+The range of the 32-bit integer is . 
+When we add several integer values, the resulting sum might exceed the above range. You might need to use long long int in C/C++ or long data type in Java to store such sums.  
+__label__neg Calculate and print the sum of the elements in an array, keeping in mind that some of those integers may be quite large.
+Function Description
+Complete the aVeryBigSum function in the editor below.  It must return the sum of all array elements.
+aVeryBigSum has the following parameter(s):
+ar: an array of integers . 
+Input Format 
+The first line of the input consists of an integer . 
+The next line contains  space-separated integers contained in the array. 
+Output Format
+Print the integer sum of the elements in the array.
+Constraints 
+ 
+ 
+Sample Input 
+5
+1000000001 1000000002 1000000003 1000000004 1000000005
+
+Output 
+5000000015
+
+Note: 
+The range of the 32-bit integer is . 
+When we add several integer values, the resulting sum might exceed the above range. You might need to use long long int in C/C++ or long data type in Java to store such sums.  
+__label__neg Calculate and print the sum of the elements in an array, keeping in mind that some of those integers may be quite large.
+Function Description
+Complete the aVeryBigSum function in the editor below.  It must return the sum of all array elements.
+aVeryBigSum has the following parameter(s):
+ar: an array of integers . 
+Input Format 
+The first line of the input consists of an integer . 
+The next line contains  space-separated integers contained in the array. 
+Output Format
+Print the integer sum of the elements in the array.
+Constraints 
+ 
+ 
+Sample Input 
+5
+1000000001 1000000002 1000000003 1000000004 1000000005
+
+Output 
+5000000015
+
+Note: 
+The range of the 32-bit integer is . 
+When we add several integer values, the resulting sum might exceed the above range. You might need to use long long int in C/C++ or long data type in Java to store such sums.  
+__label__neg Calculate and print the sum of the elements in an array, keeping in mind that some of those integers may be quite large.
+Function Description
+Complete the aVeryBigSum function in the editor below.  It must return the sum of all array elements.
+aVeryBigSum has the following parameter(s):
+ar: an array of integers . 
+Input Format 
+The first line of the input consists of an integer . 
+The next line contains  space-separated integers contained in the array. 
+Output Format
+Print the integer sum of the elements in the array.
+Constraints 
+ 
+ 
+Sample Input 
+5
+1000000001 1000000002 1000000003 1000000004 1000000005
+
+Output 
+5000000015
+
+Note: 
+The range of the 32-bit integer is . 
+When we add several integer values, the resulting sum might exceed the above range. You might need to use long long int in C/C++ or long data type in Java to store such sums.  
+__label__neg Given a square matrix, calculate the absolute difference between the sums of its diagonals.  
+For example, the square matrix  is shown below:  
+1 2 3
+4 5 6
+9 8 9  
+
+The left-to-right diagonal = .  The right to left diagonal = .  Their absolute difference is .  
+Function description
+Complete the  function in the editor below.  It must return an integer representing the absolute diagonal difference.
+diagonalDifference takes the following parameter:  
+arr: an array of integers . 
+Input Format
+The first line contains a single integer, ,  the number of rows and columns in the matrix . 
+Each of the next  lines describes a row, , and consists of  space-separated integers .
+Constraints
+
+Output Format
+Print the absolute difference between the sums of the matrix's two diagonals as a single integer.
+Sample Input
+3
+11 2 4
+4 5 6
+10 8 -12
+
+Sample Output
+15
+
+Explanation
+The primary diagonal is:  
+11
+   5
+     -12
+
+Sum across the primary diagonal: 11 + 5 - 12 = 4 
+The secondary diagonal is:
+     4
+   5
+10
+
+Sum across the secondary diagonal: 4 + 5 + 10 = 19 
+Difference: |4 - 19| = 15
+Note: |x| is the absolute value of x
+__label__neg Given a square matrix, calculate the absolute difference between the sums of its diagonals.  
+For example, the square matrix  is shown below:  
+1 2 3
+4 5 6
+9 8 9  
+
+The left-to-right diagonal = .  The right to left diagonal = .  Their absolute difference is .  
+Function description
+Complete the  function in the editor below.  It must return an integer representing the absolute diagonal difference.
+diagonalDifference takes the following parameter:  
+arr: an array of integers . 
+Input Format
+The first line contains a single integer, ,  the number of rows and columns in the matrix . 
+Each of the next  lines describes a row, , and consists of  space-separated integers .
+Constraints
+
+Output Format
+Print the absolute difference between the sums of the matrix's two diagonals as a single integer.
+Sample Input
+3
+11 2 4
+4 5 6
+10 8 -12
+
+Sample Output
+15
+
+Explanation
+The primary diagonal is:  
+11
+   5
+     -12
+
+Sum across the primary diagonal: 11 + 5 - 12 = 4 
+The secondary diagonal is:
+     4
+   5
+10
+
+Sum across the secondary diagonal: 4 + 5 + 10 = 19 
+Difference: |4 - 19| = 15
+Note: |x| is the absolute value of x
+__label__neg Given a square matrix, calculate the absolute difference between the sums of its diagonals.  
+For example, the square matrix  is shown below:  
+1 2 3
+4 5 6
+9 8 9  
+
+The left-to-right diagonal = .  The right to left diagonal = .  Their absolute difference is .  
+Function description
+Complete the  function in the editor below.  It must return an integer representing the absolute diagonal difference.
+diagonalDifference takes the following parameter:  
+arr: an array of integers . 
+Input Format
+The first line contains a single integer, ,  the number of rows and columns in the matrix . 
+Each of the next  lines describes a row, , and consists of  space-separated integers .
+Constraints
+
+Output Format
+Print the absolute difference between the sums of the matrix's two diagonals as a single integer.
+Sample Input
+3
+11 2 4
+4 5 6
+10 8 -12
+
+Sample Output
+15
+
+Explanation
+The primary diagonal is:  
+11
+   5
+     -12
+
+Sum across the primary diagonal: 11 + 5 - 12 = 4 
+The secondary diagonal is:
+     4
+   5
+10
+
+Sum across the secondary diagonal: 4 + 5 + 10 = 19 
+Difference: |4 - 19| = 15
+Note: |x| is the absolute value of x
+__label__neg Given a square matrix, calculate the absolute difference between the sums of its diagonals.  
+For example, the square matrix  is shown below:  
+1 2 3
+4 5 6
+9 8 9  
+
+The left-to-right diagonal = .  The right to left diagonal = .  Their absolute difference is .  
+Function description
+Complete the  function in the editor below.  It must return an integer representing the absolute diagonal difference.
+diagonalDifference takes the following parameter:  
+arr: an array of integers . 
+Input Format
+The first line contains a single integer, ,  the number of rows and columns in the matrix . 
+Each of the next  lines describes a row, , and consists of  space-separated integers .
+Constraints
+
+Output Format
+Print the absolute difference between the sums of the matrix's two diagonals as a single integer.
+Sample Input
+3
+11 2 4
+4 5 6
+10 8 -12
+
+Sample Output
+15
+
+Explanation
+The primary diagonal is:  
+11
+   5
+     -12
+
+Sum across the primary diagonal: 11 + 5 - 12 = 4 
+The secondary diagonal is:
+     4
+   5
+10
+
+Sum across the secondary diagonal: 4 + 5 + 10 = 19 
+Difference: |4 - 19| = 15
+Note: |x| is the absolute value of x
+__label__neg Complete the function solveMeFirst to compute the sum of two integers.
+Function prototype: 
+int solveMeFirst(int a, int b);
+where,
+a is the first integer input.
+b is the second integer input
+Return values 
+ sum of the above two integers   
+Sample Input
+a = 2
+b = 3
+
+Sample Output
+5
+
+Explanation
+The sum of the two integers  and  is computed as: . 
+__label__neg Complete the function solveMeFirst to compute the sum of two integers.
+Function prototype: 
+int solveMeFirst(int a, int b);
+where,
+a is the first integer input.
+b is the second integer input
+Return values 
+ sum of the above two integers   
+Sample Input
+a = 2
+b = 3
+
+Sample Output
+5
+
+Explanation
+The sum of the two integers  and  is computed as: . 
+__label__neg Complete the function solveMeFirst to compute the sum of two integers.
+Function prototype: 
+int solveMeFirst(int a, int b);
+where,
+a is the first integer input.
+b is the second integer input
+Return values 
+ sum of the above two integers   
+Sample Input
+a = 2
+b = 3
+
+Sample Output
+5
+
+Explanation
+The sum of the two integers  and  is computed as: . 
+__label__neg Complete the function solveMeFirst to compute the sum of two integers.
+Function prototype: 
+int solveMeFirst(int a, int b);
+where,
+a is the first integer input.
+b is the second integer input
+Return values 
+ sum of the above two integers   
+Sample Input
+a = 2
+b = 3
+
+Sample Output
+5
+
+Explanation
+The sum of the two integers  and  is computed as: . 
+__label__neg Given an array of integers, find the sum of its elements.
+For example, if the array , , so return .  
+Function Description
+Complete the simpleArraySum function in the editor below.  It must return the sum of the array elements as an integer.  
+simpleArraySum has the following parameter(s):  
+ar: an array of integers  
+Input Format
+The first line contains an integer, , denoting the size of the array. 
+The second line contains  space-separated integers representing the array's elements.  
+Constraints
+ 
+Output Format
+Print the sum of the array's elements as a single integer.  
+Sample Input
+6
+1 2 3 4 10 11
+
+Sample Output
+31
+
+Explanation
+We print the sum of the array's elements: .
+__label__neg Given an array of integers, find the sum of its elements.
+For example, if the array , , so return .  
+Function Description
+Complete the simpleArraySum function in the editor below.  It must return the sum of the array elements as an integer.  
+simpleArraySum has the following parameter(s):  
+ar: an array of integers  
+Input Format
+The first line contains an integer, , denoting the size of the array. 
+The second line contains  space-separated integers representing the array's elements.  
+Constraints
+ 
+Output Format
+Print the sum of the array's elements as a single integer.  
+Sample Input
+6
+1 2 3 4 10 11
+
+Sample Output
+31
+
+Explanation
+We print the sum of the array's elements: .
+__label__neg Given an array of integers, find the sum of its elements.
+For example, if the array , , so return .  
+Function Description
+Complete the simpleArraySum function in the editor below.  It must return the sum of the array elements as an integer.  
+simpleArraySum has the following parameter(s):  
+ar: an array of integers  
+Input Format
+The first line contains an integer, , denoting the size of the array. 
+The second line contains  space-separated integers representing the array's elements.  
+Constraints
+ 
+Output Format
+Print the sum of the array's elements as a single integer.  
+Sample Input
+6
+1 2 3 4 10 11
+
+Sample Output
+31
+
+Explanation
+We print the sum of the array's elements: .
+__label__neg Given an array of integers, find the sum of its elements.
+For example, if the array , , so return .  
+Function Description
+Complete the simpleArraySum function in the editor below.  It must return the sum of the array elements as an integer.  
+simpleArraySum has the following parameter(s):  
+ar: an array of integers  
+Input Format
+The first line contains an integer, , denoting the size of the array. 
+The second line contains  space-separated integers representing the array's elements.  
+Constraints
+ 
+Output Format
+Print the sum of the array's elements as a single integer.  
+Sample Input
+6
+1 2 3 4 10 11
+
+Sample Output
+31
+
+Explanation
+We print the sum of the array's elements: .
+__label__neg Given an array of integers, find the sum of its elements.
+For example, if the array , , so return .  
+Function Description
+Complete the simpleArraySum function in the editor below.  It must return the sum of the array elements as an integer.  
+simpleArraySum has the following parameter(s):  
+ar: an array of integers  
+Input Format
+The first line contains an integer, , denoting the size of the array. 
+The second line contains  space-separated integers representing the array's elements.  
+Constraints
+ 
+Output Format
+Print the sum of the array's elements as a single integer.  
+Sample Input
+6
+1 2 3 4 10 11
+
+Sample Output
+31
+
+Explanation
+We print the sum of the array's elements: .
+__label__neg Alice and Bob each created one problem for HackerRank. A reviewer rates the two challenges, awarding points on a scale from  to  for three categories: problem clarity, originality, and difficulty. 
+We define the rating for Alice's challenge to be the triplet , and the rating for Bob's challenge to be the triplet .
+Your task is to find their comparison points by comparing  with ,  with , and  with . 
+If , then Alice is awarded  point. 
+If , then Bob is awarded  point. 
+If , then neither person receives a point.
+Comparison points is the total points a person earned.
+Given  and , determine their respective comparison points.
+For example,  and .  For elements , Bob is awarded a point because .  For the equal elements  and , no points are earned.  Finally, for elements ,  so Alice receives a point.  Your return array would be  with Alice's score first and Bob's second.  
+Function Description
+Complete the function compareTriplets in the editor below.  It must return an array of two integers, the first being Alice's score and the second being Bob's.  
+compareTriplets has the following parameter(s):
+a: an array of integers representing Alice's challenge rating  
+b: an array of integers representing Bob's challenge rating  
+Input Format
+The first line contains  space-separated integers, , , and , describing the respective values in triplet . 
+The second line contains  space-separated integers, , , and , describing the respective values in triplet .
+Constraints
+
+
+Output Format
+Return an array of two integers denoting the respective comparison points earned by Alice and Bob.
+Sample Input 0
+Sample Output 0
+Explanation 0
+In this example: 
+
+
+Now, let's compare each individual score:
+, so Alice receives  point.
+, so nobody receives a point.
+, so Bob receives  point.
+Alice's comparison score is , and Bob's comparison score is . Thus, we return the array .  
+Sample Input 1
+Sample Output 1
+Explanation 1
+Comparing the  elements,  so Bob receives a point. 
+Comparing the  and  elements,  and  so Alice receives two points. 
+The return array is .  
+__label__neg Alice and Bob each created one problem for HackerRank. A reviewer rates the two challenges, awarding points on a scale from  to  for three categories: problem clarity, originality, and difficulty. 
+We define the rating for Alice's challenge to be the triplet , and the rating for Bob's challenge to be the triplet .
+Your task is to find their comparison points by comparing  with ,  with , and  with . 
+If , then Alice is awarded  point. 
+If , then Bob is awarded  point. 
+If , then neither person receives a point.
+Comparison points is the total points a person earned.
+Given  and , determine their respective comparison points.
+For example,  and .  For elements , Bob is awarded a point because .  For the equal elements  and , no points are earned.  Finally, for elements ,  so Alice receives a point.  Your return array would be  with Alice's score first and Bob's second.  
+Function Description
+Complete the function compareTriplets in the editor below.  It must return an array of two integers, the first being Alice's score and the second being Bob's.  
+compareTriplets has the following parameter(s):
+a: an array of integers representing Alice's challenge rating  
+b: an array of integers representing Bob's challenge rating  
+Input Format
+The first line contains  space-separated integers, , , and , describing the respective values in triplet . 
+The second line contains  space-separated integers, , , and , describing the respective values in triplet .
+Constraints
+
+
+Output Format
+Return an array of two integers denoting the respective comparison points earned by Alice and Bob.
+Sample Input 0
+Sample Output 0
+Explanation 0
+In this example: 
+
+
+Now, let's compare each individual score:
+, so Alice receives  point.
+, so nobody receives a point.
+, so Bob receives  point.
+Alice's comparison score is , and Bob's comparison score is . Thus, we return the array .  
+Sample Input 1
+Sample Output 1
+Explanation 1
+Comparing the  elements,  so Bob receives a point. 
+Comparing the  and  elements,  and  so Alice receives two points. 
+The return array is .  
+__label__neg Alice and Bob each created one problem for HackerRank. A reviewer rates the two challenges, awarding points on a scale from  to  for three categories: problem clarity, originality, and difficulty. 
+We define the rating for Alice's challenge to be the triplet , and the rating for Bob's challenge to be the triplet .
+Your task is to find their comparison points by comparing  with ,  with , and  with . 
+If , then Alice is awarded  point. 
+If , then Bob is awarded  point. 
+If , then neither person receives a point.
+Comparison points is the total points a person earned.
+Given  and , determine their respective comparison points.
+For example,  and .  For elements , Bob is awarded a point because .  For the equal elements  and , no points are earned.  Finally, for elements ,  so Alice receives a point.  Your return array would be  with Alice's score first and Bob's second.  
+Function Description
+Complete the function compareTriplets in the editor below.  It must return an array of two integers, the first being Alice's score and the second being Bob's.  
+compareTriplets has the following parameter(s):
+a: an array of integers representing Alice's challenge rating  
+b: an array of integers representing Bob's challenge rating  
+Input Format
+The first line contains  space-separated integers, , , and , describing the respective values in triplet . 
+The second line contains  space-separated integers, , , and , describing the respective values in triplet .
+Constraints
+
+
+Output Format
+Return an array of two integers denoting the respective comparison points earned by Alice and Bob.
+Sample Input 0
+Sample Output 0
+Explanation 0
+In this example: 
+
+
+Now, let's compare each individual score:
+, so Alice receives  point.
+, so nobody receives a point.
+, so Bob receives  point.
+Alice's comparison score is , and Bob's comparison score is . Thus, we return the array .  
+Sample Input 1
+Sample Output 1
+Explanation 1
+Comparing the  elements,  so Bob receives a point. 
+Comparing the  and  elements,  and  so Alice receives two points. 
+The return array is .  
+__label__neg Alice and Bob each created one problem for HackerRank. A reviewer rates the two challenges, awarding points on a scale from  to  for three categories: problem clarity, originality, and difficulty. 
+We define the rating for Alice's challenge to be the triplet , and the rating for Bob's challenge to be the triplet .
+Your task is to find their comparison points by comparing  with ,  with , and  with . 
+If , then Alice is awarded  point. 
+If , then Bob is awarded  point. 
+If , then neither person receives a point.
+Comparison points is the total points a person earned.
+Given  and , determine their respective comparison points.
+For example,  and .  For elements , Bob is awarded a point because .  For the equal elements  and , no points are earned.  Finally, for elements ,  so Alice receives a point.  Your return array would be  with Alice's score first and Bob's second.  
+Function Description
+Complete the function compareTriplets in the editor below.  It must return an array of two integers, the first being Alice's score and the second being Bob's.  
+compareTriplets has the following parameter(s):
+a: an array of integers representing Alice's challenge rating  
+b: an array of integers representing Bob's challenge rating  
+Input Format
+The first line contains  space-separated integers, , , and , describing the respective values in triplet . 
+The second line contains  space-separated integers, , , and , describing the respective values in triplet .
+Constraints
+
+
+Output Format
+Return an array of two integers denoting the respective comparison points earned by Alice and Bob.
+Sample Input 0
+Sample Output 0
+Explanation 0
+In this example: 
+
+
+Now, let's compare each individual score:
+, so Alice receives  point.
+, so nobody receives a point.
+, so Bob receives  point.
+Alice's comparison score is , and Bob's comparison score is . Thus, we return the array .  
+Sample Input 1
+Sample Output 1
+Explanation 1
+Comparing the  elements,  so Bob receives a point. 
+Comparing the  and  elements,  and  so Alice receives two points. 
+The return array is .  
+__label__neg Alice and Bob each created one problem for HackerRank. A reviewer rates the two challenges, awarding points on a scale from  to  for three categories: problem clarity, originality, and difficulty. 
+We define the rating for Alice's challenge to be the triplet , and the rating for Bob's challenge to be the triplet .
+Your task is to find their comparison points by comparing  with ,  with , and  with . 
+If , then Alice is awarded  point. 
+If , then Bob is awarded  point. 
+If , then neither person receives a point.
+Comparison points is the total points a person earned.
+Given  and , determine their respective comparison points.
+For example,  and .  For elements , Bob is awarded a point because .  For the equal elements  and , no points are earned.  Finally, for elements ,  so Alice receives a point.  Your return array would be  with Alice's score first and Bob's second.  
+Function Description
+Complete the function compareTriplets in the editor below.  It must return an array of two integers, the first being Alice's score and the second being Bob's.  
+compareTriplets has the following parameter(s):
+a: an array of integers representing Alice's challenge rating  
+b: an array of integers representing Bob's challenge rating  
+Input Format
+The first line contains  space-separated integers, , , and , describing the respective values in triplet . 
+The second line contains  space-separated integers, , , and , describing the respective values in triplet .
+Constraints
+
+
+Output Format
+Return an array of two integers denoting the respective comparison points earned by Alice and Bob.
+Sample Input 0
+Sample Output 0
+Explanation 0
+In this example: 
+
+
+Now, let's compare each individual score:
+, so Alice receives  point.
+, so nobody receives a point.
+, so Bob receives  point.
+Alice's comparison score is , and Bob's comparison score is . Thus, we return the array .  
+Sample Input 1
+Sample Output 1
+Explanation 1
+Comparing the  elements,  so Bob receives a point. 
+Comparing the  and  elements,  and  so Alice receives two points. 
+The return array is .  
+__label__neg Calculate and print the sum of the elements in an array, keeping in mind that some of those integers may be quite large.
+Function Description
+Complete the aVeryBigSum function in the editor below.  It must return the sum of all array elements.
+aVeryBigSum has the following parameter(s):
+ar: an array of integers . 
+Input Format 
+The first line of the input consists of an integer . 
+The next line contains  space-separated integers contained in the array. 
+Output Format
+Print the integer sum of the elements in the array.
+Constraints 
+ 
+ 
+Sample Input 
+5
+1000000001 1000000002 1000000003 1000000004 1000000005
+
+Output 
+5000000015
+
+Note: 
+The range of the 32-bit integer is . 
+When we add several integer values, the resulting sum might exceed the above range. You might need to use long long int in C/C++ or long data type in Java to store such sums.  
+__label__neg Calculate and print the sum of the elements in an array, keeping in mind that some of those integers may be quite large.
+Function Description
+Complete the aVeryBigSum function in the editor below.  It must return the sum of all array elements.
+aVeryBigSum has the following parameter(s):
+ar: an array of integers . 
+Input Format 
+The first line of the input consists of an integer . 
+The next line contains  space-separated integers contained in the array. 
+Output Format
+Print the integer sum of the elements in the array.
+Constraints 
+ 
+ 
+Sample Input 
+5
+1000000001 1000000002 1000000003 1000000004 1000000005
+
+Output 
+5000000015
+
+Note: 
+The range of the 32-bit integer is . 
+When we add several integer values, the resulting sum might exceed the above range. You might need to use long long int in C/C++ or long data type in Java to store such sums.  
+__label__neg Calculate and print the sum of the elements in an array, keeping in mind that some of those integers may be quite large.
+Function Description
+Complete the aVeryBigSum function in the editor below.  It must return the sum of all array elements.
+aVeryBigSum has the following parameter(s):
+ar: an array of integers . 
+Input Format 
+The first line of the input consists of an integer . 
+The next line contains  space-separated integers contained in the array. 
+Output Format
+Print the integer sum of the elements in the array.
+Constraints 
+ 
+ 
+Sample Input 
+5
+1000000001 1000000002 1000000003 1000000004 1000000005
+
+Output 
+5000000015
+
+Note: 
+The range of the 32-bit integer is . 
+When we add several integer values, the resulting sum might exceed the above range. You might need to use long long int in C/C++ or long data type in Java to store such sums.  
+__label__neg Calculate and print the sum of the elements in an array, keeping in mind that some of those integers may be quite large.
+Function Description
+Complete the aVeryBigSum function in the editor below.  It must return the sum of all array elements.
+aVeryBigSum has the following parameter(s):
+ar: an array of integers . 
+Input Format 
+The first line of the input consists of an integer . 
+The next line contains  space-separated integers contained in the array. 
+Output Format
+Print the integer sum of the elements in the array.
+Constraints 
+ 
+ 
+Sample Input 
+5
+1000000001 1000000002 1000000003 1000000004 1000000005
+
+Output 
+5000000015
+
+Note: 
+The range of the 32-bit integer is . 
+When we add several integer values, the resulting sum might exceed the above range. You might need to use long long int in C/C++ or long data type in Java to store such sums.  
+__label__neg Given a square matrix, calculate the absolute difference between the sums of its diagonals.  
+For example, the square matrix  is shown below:  
+1 2 3
+4 5 6
+9 8 9  
+
+The left-to-right diagonal = .  The right to left diagonal = .  Their absolute difference is .  
+Function description
+Complete the  function in the editor below.  It must return an integer representing the absolute diagonal difference.
+diagonalDifference takes the following parameter:  
+arr: an array of integers . 
+Input Format
+The first line contains a single integer, ,  the number of rows and columns in the matrix . 
+Each of the next  lines describes a row, , and consists of  space-separated integers .
+Constraints
+
+Output Format
+Print the absolute difference between the sums of the matrix's two diagonals as a single integer.
+Sample Input
+3
+11 2 4
+4 5 6
+10 8 -12
+
+Sample Output
+15
+
+Explanation
+The primary diagonal is:  
+11
+   5
+     -12
+
+Sum across the primary diagonal: 11 + 5 - 12 = 4 
+The secondary diagonal is:
+     4
+   5
+10
+
+Sum across the secondary diagonal: 4 + 5 + 10 = 19 
+Difference: |4 - 19| = 15
+Note: |x| is the absolute value of x
+__label__neg Given a square matrix, calculate the absolute difference between the sums of its diagonals.  
+For example, the square matrix  is shown below:  
+1 2 3
+4 5 6
+9 8 9  
+
+The left-to-right diagonal = .  The right to left diagonal = .  Their absolute difference is .  
+Function description
+Complete the  function in the editor below.  It must return an integer representing the absolute diagonal difference.
+diagonalDifference takes the following parameter:  
+arr: an array of integers . 
+Input Format
+The first line contains a single integer, ,  the number of rows and columns in the matrix . 
+Each of the next  lines describes a row, , and consists of  space-separated integers .
+Constraints
+
+Output Format
+Print the absolute difference between the sums of the matrix's two diagonals as a single integer.
+Sample Input
+3
+11 2 4
+4 5 6
+10 8 -12
+
+Sample Output
+15
+
+Explanation
+The primary diagonal is:  
+11
+   5
+     -12
+
+Sum across the primary diagonal: 11 + 5 - 12 = 4 
+The secondary diagonal is:
+     4
+   5
+10
+
+Sum across the secondary diagonal: 4 + 5 + 10 = 19 
+Difference: |4 - 19| = 15
+Note: |x| is the absolute value of x
+__label__neg Given a square matrix, calculate the absolute difference between the sums of its diagonals.  
+For example, the square matrix  is shown below:  
+1 2 3
+4 5 6
+9 8 9  
+
+The left-to-right diagonal = .  The right to left diagonal = .  Their absolute difference is .  
+Function description
+Complete the  function in the editor below.  It must return an integer representing the absolute diagonal difference.
+diagonalDifference takes the following parameter:  
+arr: an array of integers . 
+Input Format
+The first line contains a single integer, ,  the number of rows and columns in the matrix . 
+Each of the next  lines describes a row, , and consists of  space-separated integers .
+Constraints
+
+Output Format
+Print the absolute difference between the sums of the matrix's two diagonals as a single integer.
+Sample Input
+3
+11 2 4
+4 5 6
+10 8 -12
+
+Sample Output
+15
+
+Explanation
+The primary diagonal is:  
+11
+   5
+     -12
+
+Sum across the primary diagonal: 11 + 5 - 12 = 4 
+The secondary diagonal is:
+     4
+   5
+10
+
+Sum across the secondary diagonal: 4 + 5 + 10 = 19 
+Difference: |4 - 19| = 15
+Note: |x| is the absolute value of x
+__label__neg Given a square matrix, calculate the absolute difference between the sums of its diagonals.  
+For example, the square matrix  is shown below:  
+1 2 3
+4 5 6
+9 8 9  
+
+The left-to-right diagonal = .  The right to left diagonal = .  Their absolute difference is .  
+Function description
+Complete the  function in the editor below.  It must return an integer representing the absolute diagonal difference.
+diagonalDifference takes the following parameter:  
+arr: an array of integers . 
+Input Format
+The first line contains a single integer, ,  the number of rows and columns in the matrix . 
+Each of the next  lines describes a row, , and consists of  space-separated integers .
+Constraints
+
+Output Format
+Print the absolute difference between the sums of the matrix's two diagonals as a single integer.
+Sample Input
+3
+11 2 4
+4 5 6
+10 8 -12
+
+Sample Output
+15
+
+Explanation
+The primary diagonal is:  
+11
+   5
+     -12
+
+Sum across the primary diagonal: 11 + 5 - 12 = 4 
+The secondary diagonal is:
+     4
+   5
+10
+
+Sum across the secondary diagonal: 4 + 5 + 10 = 19 
+Difference: |4 - 19| = 15
+Note: |x| is the absolute value of x
+__label__neg Given a square matrix, calculate the absolute difference between the sums of its diagonals.  
+For example, the square matrix  is shown below:  
+1 2 3
+4 5 6
+9 8 9  
+
+The left-to-right diagonal = .  The right to left diagonal = .  Their absolute difference is .  
+Function description
+Complete the  function in the editor below.  It must return an integer representing the absolute diagonal difference.
+diagonalDifference takes the following parameter:  
+arr: an array of integers . 
+Input Format
+The first line contains a single integer, ,  the number of rows and columns in the matrix . 
+Each of the next  lines describes a row, , and consists of  space-separated integers .
+Constraints
+
+Output Format
+Print the absolute difference between the sums of the matrix's two diagonals as a single integer.
+Sample Input
+3
+11 2 4
+4 5 6
+10 8 -12
+
+Sample Output
+15
+
+Explanation
+The primary diagonal is:  
+11
+   5
+     -12
+
+Sum across the primary diagonal: 11 + 5 - 12 = 4 
+The secondary diagonal is:
+     4
+   5
+10
+
+Sum across the secondary diagonal: 4 + 5 + 10 = 19 
+Difference: |4 - 19| = 15
+Note: |x| is the absolute value of x
+__label__neg Given an array of integers, calculate the fractions of its elements that are positive,  negative, and are zeros. Print the decimal value of each fraction on a new line.
+Note: This challenge introduces precision problems. The test cases are scaled to six decimal places, though answers with absolute error of up to  are acceptable.
+For example, given the array  there are  elements, two positive, two negative and one zero.  Their ratios would be ,  and .  It should be printed as  
+0.400000
+0.400000
+0.200000
+
+Function Description
+Complete the plusMinus function in the editor below.  It should print out the ratio of positive, negative and zero items in the array, each on a separate line rounded to six decimals.  
+plusMinus has the following parameter(s):
+arr: an array of integers
+Input Format
+The first line contains an integer, , denoting the size of the array. 
+The second line contains  space-separated integers describing an array of numbers .
+Constraints
+ 
+ 
+Output Format
+You must print the following  lines:
+A decimal representing of the fraction of positive numbers in the array compared to its size.
+A decimal representing of the fraction of negative numbers in the array compared to its size.
+A decimal representing of the fraction of zeros in the array compared to its size.
+Sample Input
+6
+-4 3 -9 0 4 1         
+
+Sample Output
+0.500000
+0.333333
+0.166667
+
+Explanation
+There are  positive numbers,  negative numbers, and  zero in the array. 
+The proportions of occurrence are positive:  , negative:   and zeros:  .  
+__label__neg Given an array of integers, calculate the fractions of its elements that are positive,  negative, and are zeros. Print the decimal value of each fraction on a new line.
+Note: This challenge introduces precision problems. The test cases are scaled to six decimal places, though answers with absolute error of up to  are acceptable.
+For example, given the array  there are  elements, two positive, two negative and one zero.  Their ratios would be ,  and .  It should be printed as  
+0.400000
+0.400000
+0.200000
+
+Function Description
+Complete the plusMinus function in the editor below.  It should print out the ratio of positive, negative and zero items in the array, each on a separate line rounded to six decimals.  
+plusMinus has the following parameter(s):
+arr: an array of integers
+Input Format
+The first line contains an integer, , denoting the size of the array. 
+The second line contains  space-separated integers describing an array of numbers .
+Constraints
+ 
+ 
+Output Format
+You must print the following  lines:
+A decimal representing of the fraction of positive numbers in the array compared to its size.
+A decimal representing of the fraction of negative numbers in the array compared to its size.
+A decimal representing of the fraction of zeros in the array compared to its size.
+Sample Input
+6
+-4 3 -9 0 4 1         
+
+Sample Output
+0.500000
+0.333333
+0.166667
+
+Explanation
+There are  positive numbers,  negative numbers, and  zero in the array. 
+The proportions of occurrence are positive:  , negative:   and zeros:  .  
+__label__neg Given an array of integers, calculate the fractions of its elements that are positive,  negative, and are zeros. Print the decimal value of each fraction on a new line.
+Note: This challenge introduces precision problems. The test cases are scaled to six decimal places, though answers with absolute error of up to  are acceptable.
+For example, given the array  there are  elements, two positive, two negative and one zero.  Their ratios would be ,  and .  It should be printed as  
+0.400000
+0.400000
+0.200000
+
+Function Description
+Complete the plusMinus function in the editor below.  It should print out the ratio of positive, negative and zero items in the array, each on a separate line rounded to six decimals.  
+plusMinus has the following parameter(s):
+arr: an array of integers
+Input Format
+The first line contains an integer, , denoting the size of the array. 
+The second line contains  space-separated integers describing an array of numbers .
+Constraints
+ 
+ 
+Output Format
+You must print the following  lines:
+A decimal representing of the fraction of positive numbers in the array compared to its size.
+A decimal representing of the fraction of negative numbers in the array compared to its size.
+A decimal representing of the fraction of zeros in the array compared to its size.
+Sample Input
+6
+-4 3 -9 0 4 1         
+
+Sample Output
+0.500000
+0.333333
+0.166667
+
+Explanation
+There are  positive numbers,  negative numbers, and  zero in the array. 
+The proportions of occurrence are positive:  , negative:   and zeros:  .  
+__label__neg Given an array of integers, calculate the fractions of its elements that are positive,  negative, and are zeros. Print the decimal value of each fraction on a new line.
+Note: This challenge introduces precision problems. The test cases are scaled to six decimal places, though answers with absolute error of up to  are acceptable.
+For example, given the array  there are  elements, two positive, two negative and one zero.  Their ratios would be ,  and .  It should be printed as  
+0.400000
+0.400000
+0.200000
+
+Function Description
+Complete the plusMinus function in the editor below.  It should print out the ratio of positive, negative and zero items in the array, each on a separate line rounded to six decimals.  
+plusMinus has the following parameter(s):
+arr: an array of integers
+Input Format
+The first line contains an integer, , denoting the size of the array. 
+The second line contains  space-separated integers describing an array of numbers .
+Constraints
+ 
+ 
+Output Format
+You must print the following  lines:
+A decimal representing of the fraction of positive numbers in the array compared to its size.
+A decimal representing of the fraction of negative numbers in the array compared to its size.
+A decimal representing of the fraction of zeros in the array compared to its size.
+Sample Input
+6
+-4 3 -9 0 4 1         
+
+Sample Output
+0.500000
+0.333333
+0.166667
+
+Explanation
+There are  positive numbers,  negative numbers, and  zero in the array. 
+The proportions of occurrence are positive:  , negative:   and zeros:  .  
+__label__neg Given an array of integers, calculate the fractions of its elements that are positive,  negative, and are zeros. Print the decimal value of each fraction on a new line.
+Note: This challenge introduces precision problems. The test cases are scaled to six decimal places, though answers with absolute error of up to  are acceptable.
+For example, given the array  there are  elements, two positive, two negative and one zero.  Their ratios would be ,  and .  It should be printed as  
+0.400000
+0.400000
+0.200000
+
+Function Description
+Complete the plusMinus function in the editor below.  It should print out the ratio of positive, negative and zero items in the array, each on a separate line rounded to six decimals.  
+plusMinus has the following parameter(s):
+arr: an array of integers
+Input Format
+The first line contains an integer, , denoting the size of the array. 
+The second line contains  space-separated integers describing an array of numbers .
+Constraints
+ 
+ 
+Output Format
+You must print the following  lines:
+A decimal representing of the fraction of positive numbers in the array compared to its size.
+A decimal representing of the fraction of negative numbers in the array compared to its size.
+A decimal representing of the fraction of zeros in the array compared to its size.
+Sample Input
+6
+-4 3 -9 0 4 1         
+
+Sample Output
+0.500000
+0.333333
+0.166667
+
+Explanation
+There are  positive numbers,  negative numbers, and  zero in the array. 
+The proportions of occurrence are positive:  , negative:   and zeros:  .  
+__label__neg Consider a staircase of size :
+   #
+  ##
+ ###
+####
+
+Observe that its base and height are both equal to , and the image is drawn using # symbols and spaces. The last line is not preceded by any spaces. 
+#
+Write a program that prints a staircase of size .  
+Function Description
+Complete the staircase function in the editor below.  It should print a staircase as described above.  
+staircase has the following parameter(s):  
+n: an integer
+Input Format
+A single integer, , denoting the size of the staircase.
+Constraints
+ .  
+Output Format
+Print a staircase of size  using # symbols and spaces.
+#
+Note: The last line must have  spaces in it.  
+Sample Input
+6 
+
+Sample Output
+     #
+    ##
+   ###
+  ####
+ #####
+######
+
+Explanation
+The staircase is right-aligned, composed of # symbols and spaces, and has a height and width of .
+#
+__label__neg Consider a staircase of size :
+   #
+  ##
+ ###
+####
+
+Observe that its base and height are both equal to , and the image is drawn using # symbols and spaces. The last line is not preceded by any spaces. 
+#
+Write a program that prints a staircase of size .  
+Function Description
+Complete the staircase function in the editor below.  It should print a staircase as described above.  
+staircase has the following parameter(s):  
+n: an integer
+Input Format
+A single integer, , denoting the size of the staircase.
+Constraints
+ .  
+Output Format
+Print a staircase of size  using # symbols and spaces.
+#
+Note: The last line must have  spaces in it.  
+Sample Input
+6 
+
+Sample Output
+     #
+    ##
+   ###
+  ####
+ #####
+######
+
+Explanation
+The staircase is right-aligned, composed of # symbols and spaces, and has a height and width of .
+#
+__label__neg Consider a staircase of size :
+   #
+  ##
+ ###
+####
+
+Observe that its base and height are both equal to , and the image is drawn using # symbols and spaces. The last line is not preceded by any spaces. 
+#
+Write a program that prints a staircase of size .  
+Function Description
+Complete the staircase function in the editor below.  It should print a staircase as described above.  
+staircase has the following parameter(s):  
+n: an integer
+Input Format
+A single integer, , denoting the size of the staircase.
+Constraints
+ .  
+Output Format
+Print a staircase of size  using # symbols and spaces.
+#
+Note: The last line must have  spaces in it.  
+Sample Input
+6 
+
+Sample Output
+     #
+    ##
+   ###
+  ####
+ #####
+######
+
+Explanation
+The staircase is right-aligned, composed of # symbols and spaces, and has a height and width of .
+#
+__label__neg Complete the function solveMeFirst to compute the sum of two integers.
+Function prototype: 
+int solveMeFirst(int a, int b);
+where,
+a is the first integer input.
+b is the second integer input
+Return values 
+ sum of the above two integers   
+Sample Input
+a = 2
+b = 3
+
+Sample Output
+5
+
+Explanation
+The sum of the two integers  and  is computed as: . 
+__label__neg Complete the function solveMeFirst to compute the sum of two integers.
+Function prototype: 
+int solveMeFirst(int a, int b);
+where,
+a is the first integer input.
+b is the second integer input
+Return values 
+ sum of the above two integers   
+Sample Input
+a = 2
+b = 3
+
+Sample Output
+5
+
+Explanation
+The sum of the two integers  and  is computed as: . 
+__label__neg Complete the function solveMeFirst to compute the sum of two integers.
+Function prototype: 
+int solveMeFirst(int a, int b);
+where,
+a is the first integer input.
+b is the second integer input
+Return values 
+ sum of the above two integers   
+Sample Input
+a = 2
+b = 3
+
+Sample Output
+5
+
+Explanation
+The sum of the two integers  and  is computed as: . 
+__label__neg Complete the function solveMeFirst to compute the sum of two integers.
+Function prototype: 
+int solveMeFirst(int a, int b);
+where,
+a is the first integer input.
+b is the second integer input
+Return values 
+ sum of the above two integers   
+Sample Input
+a = 2
+b = 3
+
+Sample Output
+5
+
+Explanation
+The sum of the two integers  and  is computed as: . 
+__label__neg Given an array of integers, find the sum of its elements.
+For example, if the array , , so return .  
+Function Description
+Complete the simpleArraySum function in the editor below.  It must return the sum of the array elements as an integer.  
+simpleArraySum has the following parameter(s):  
+ar: an array of integers  
+Input Format
+The first line contains an integer, , denoting the size of the array. 
+The second line contains  space-separated integers representing the array's elements.  
+Constraints
+ 
+Output Format
+Print the sum of the array's elements as a single integer.  
+Sample Input
+6
+1 2 3 4 10 11
+
+Sample Output
+31
+
+Explanation
+We print the sum of the array's elements: .
+__label__neg Given an array of integers, find the sum of its elements.
+For example, if the array , , so return .  
+Function Description
+Complete the simpleArraySum function in the editor below.  It must return the sum of the array elements as an integer.  
+simpleArraySum has the following parameter(s):  
+ar: an array of integers  
+Input Format
+The first line contains an integer, , denoting the size of the array. 
+The second line contains  space-separated integers representing the array's elements.  
+Constraints
+ 
+Output Format
+Print the sum of the array's elements as a single integer.  
+Sample Input
+6
+1 2 3 4 10 11
+
+Sample Output
+31
+
+Explanation
+We print the sum of the array's elements: .
+__label__neg Given an array of integers, find the sum of its elements.
+For example, if the array , , so return .  
+Function Description
+Complete the simpleArraySum function in the editor below.  It must return the sum of the array elements as an integer.  
+simpleArraySum has the following parameter(s):  
+ar: an array of integers  
+Input Format
+The first line contains an integer, , denoting the size of the array. 
+The second line contains  space-separated integers representing the array's elements.  
+Constraints
+ 
+Output Format
+Print the sum of the array's elements as a single integer.  
+Sample Input
+6
+1 2 3 4 10 11
+
+Sample Output
+31
+
+Explanation
+We print the sum of the array's elements: .
+__label__neg Given an array of integers, find the sum of its elements.
+For example, if the array , , so return .  
+Function Description
+Complete the simpleArraySum function in the editor below.  It must return the sum of the array elements as an integer.  
+simpleArraySum has the following parameter(s):  
+ar: an array of integers  
+Input Format
+The first line contains an integer, , denoting the size of the array. 
+The second line contains  space-separated integers representing the array's elements.  
+Constraints
+ 
+Output Format
+Print the sum of the array's elements as a single integer.  
+Sample Input
+6
+1 2 3 4 10 11
+
+Sample Output
+31
+
+Explanation
+We print the sum of the array's elements: .
+__label__neg Given an array of integers, find the sum of its elements.
+For example, if the array , , so return .  
+Function Description
+Complete the simpleArraySum function in the editor below.  It must return the sum of the array elements as an integer.  
+simpleArraySum has the following parameter(s):  
+ar: an array of integers  
+Input Format
+The first line contains an integer, , denoting the size of the array. 
+The second line contains  space-separated integers representing the array's elements.  
+Constraints
+ 
+Output Format
+Print the sum of the array's elements as a single integer.  
+Sample Input
+6
+1 2 3 4 10 11
+
+Sample Output
+31
+
+Explanation
+We print the sum of the array's elements: .
+__label__neg Alice and Bob each created one problem for HackerRank. A reviewer rates the two challenges, awarding points on a scale from  to  for three categories: problem clarity, originality, and difficulty. 
+We define the rating for Alice's challenge to be the triplet , and the rating for Bob's challenge to be the triplet .
+Your task is to find their comparison points by comparing  with ,  with , and  with . 
+If , then Alice is awarded  point. 
+If , then Bob is awarded  point. 
+If , then neither person receives a point.
+Comparison points is the total points a person earned.
+Given  and , determine their respective comparison points.
+For example,  and .  For elements , Bob is awarded a point because .  For the equal elements  and , no points are earned.  Finally, for elements ,  so Alice receives a point.  Your return array would be  with Alice's score first and Bob's second.  
+Function Description
+Complete the function compareTriplets in the editor below.  It must return an array of two integers, the first being Alice's score and the second being Bob's.  
+compareTriplets has the following parameter(s):
+a: an array of integers representing Alice's challenge rating  
+b: an array of integers representing Bob's challenge rating  
+Input Format
+The first line contains  space-separated integers, , , and , describing the respective values in triplet . 
+The second line contains  space-separated integers, , , and , describing the respective values in triplet .
+Constraints
+
+
+Output Format
+Return an array of two integers denoting the respective comparison points earned by Alice and Bob.
+Sample Input 0
+Sample Output 0
+Explanation 0
+In this example: 
+
+
+Now, let's compare each individual score:
+, so Alice receives  point.
+, so nobody receives a point.
+, so Bob receives  point.
+Alice's comparison score is , and Bob's comparison score is . Thus, we return the array .  
+Sample Input 1
+Sample Output 1
+Explanation 1
+Comparing the  elements,  so Bob receives a point. 
+Comparing the  and  elements,  and  so Alice receives two points. 
+The return array is .  
+__label__neg Alice and Bob each created one problem for HackerRank. A reviewer rates the two challenges, awarding points on a scale from  to  for three categories: problem clarity, originality, and difficulty. 
+We define the rating for Alice's challenge to be the triplet , and the rating for Bob's challenge to be the triplet .
+Your task is to find their comparison points by comparing  with ,  with , and  with . 
+If , then Alice is awarded  point. 
+If , then Bob is awarded  point. 
+If , then neither person receives a point.
+Comparison points is the total points a person earned.
+Given  and , determine their respective comparison points.
+For example,  and .  For elements , Bob is awarded a point because .  For the equal elements  and , no points are earned.  Finally, for elements ,  so Alice receives a point.  Your return array would be  with Alice's score first and Bob's second.  
+Function Description
+Complete the function compareTriplets in the editor below.  It must return an array of two integers, the first being Alice's score and the second being Bob's.  
+compareTriplets has the following parameter(s):
+a: an array of integers representing Alice's challenge rating  
+b: an array of integers representing Bob's challenge rating  
+Input Format
+The first line contains  space-separated integers, , , and , describing the respective values in triplet . 
+The second line contains  space-separated integers, , , and , describing the respective values in triplet .
+Constraints
+
+
+Output Format
+Return an array of two integers denoting the respective comparison points earned by Alice and Bob.
+Sample Input 0
+Sample Output 0
+Explanation 0
+In this example: 
+
+
+Now, let's compare each individual score:
+, so Alice receives  point.
+, so nobody receives a point.
+, so Bob receives  point.
+Alice's comparison score is , and Bob's comparison score is . Thus, we return the array .  
+Sample Input 1
+Sample Output 1
+Explanation 1
+Comparing the  elements,  so Bob receives a point. 
+Comparing the  and  elements,  and  so Alice receives two points. 
+The return array is .  
+__label__neg Alice and Bob each created one problem for HackerRank. A reviewer rates the two challenges, awarding points on a scale from  to  for three categories: problem clarity, originality, and difficulty. 
+We define the rating for Alice's challenge to be the triplet , and the rating for Bob's challenge to be the triplet .
+Your task is to find their comparison points by comparing  with ,  with , and  with . 
+If , then Alice is awarded  point. 
+If , then Bob is awarded  point. 
+If , then neither person receives a point.
+Comparison points is the total points a person earned.
+Given  and , determine their respective comparison points.
+For example,  and .  For elements , Bob is awarded a point because .  For the equal elements  and , no points are earned.  Finally, for elements ,  so Alice receives a point.  Your return array would be  with Alice's score first and Bob's second.  
+Function Description
+Complete the function compareTriplets in the editor below.  It must return an array of two integers, the first being Alice's score and the second being Bob's.  
+compareTriplets has the following parameter(s):
+a: an array of integers representing Alice's challenge rating  
+b: an array of integers representing Bob's challenge rating  
+Input Format
+The first line contains  space-separated integers, , , and , describing the respective values in triplet . 
+The second line contains  space-separated integers, , , and , describing the respective values in triplet .
+Constraints
+
+
+Output Format
+Return an array of two integers denoting the respective comparison points earned by Alice and Bob.
+Sample Input 0
+Sample Output 0
+Explanation 0
+In this example: 
+
+
+Now, let's compare each individual score:
+, so Alice receives  point.
+, so nobody receives a point.
+, so Bob receives  point.
+Alice's comparison score is , and Bob's comparison score is . Thus, we return the array .  
+Sample Input 1
+Sample Output 1
+Explanation 1
+Comparing the  elements,  so Bob receives a point. 
+Comparing the  and  elements,  and  so Alice receives two points. 
+The return array is .  
+__label__neg Alice and Bob each created one problem for HackerRank. A reviewer rates the two challenges, awarding points on a scale from  to  for three categories: problem clarity, originality, and difficulty. 
+We define the rating for Alice's challenge to be the triplet , and the rating for Bob's challenge to be the triplet .
+Your task is to find their comparison points by comparing  with ,  with , and  with . 
+If , then Alice is awarded  point. 
+If , then Bob is awarded  point. 
+If , then neither person receives a point.
+Comparison points is the total points a person earned.
+Given  and , determine their respective comparison points.
+For example,  and .  For elements , Bob is awarded a point because .  For the equal elements  and , no points are earned.  Finally, for elements ,  so Alice receives a point.  Your return array would be  with Alice's score first and Bob's second.  
+Function Description
+Complete the function compareTriplets in the editor below.  It must return an array of two integers, the first being Alice's score and the second being Bob's.  
+compareTriplets has the following parameter(s):
+a: an array of integers representing Alice's challenge rating  
+b: an array of integers representing Bob's challenge rating  
+Input Format
+The first line contains  space-separated integers, , , and , describing the respective values in triplet . 
+The second line contains  space-separated integers, , , and , describing the respective values in triplet .
+Constraints
+
+
+Output Format
+Return an array of two integers denoting the respective comparison points earned by Alice and Bob.
+Sample Input 0
+Sample Output 0
+Explanation 0
+In this example: 
+
+
+Now, let's compare each individual score:
+, so Alice receives  point.
+, so nobody receives a point.
+, so Bob receives  point.
+Alice's comparison score is , and Bob's comparison score is . Thus, we return the array .  
+Sample Input 1
+Sample Output 1
+Explanation 1
+Comparing the  elements,  so Bob receives a point. 
+Comparing the  and  elements,  and  so Alice receives two points. 
+The return array is .  
+__label__neg Alice and Bob each created one problem for HackerRank. A reviewer rates the two challenges, awarding points on a scale from  to  for three categories: problem clarity, originality, and difficulty. 
+We define the rating for Alice's challenge to be the triplet , and the rating for Bob's challenge to be the triplet .
+Your task is to find their comparison points by comparing  with ,  with , and  with . 
+If , then Alice is awarded  point. 
+If , then Bob is awarded  point. 
+If , then neither person receives a point.
+Comparison points is the total points a person earned.
+Given  and , determine their respective comparison points.
+For example,  and .  For elements , Bob is awarded a point because .  For the equal elements  and , no points are earned.  Finally, for elements ,  so Alice receives a point.  Your return array would be  with Alice's score first and Bob's second.  
+Function Description
+Complete the function compareTriplets in the editor below.  It must return an array of two integers, the first being Alice's score and the second being Bob's.  
+compareTriplets has the following parameter(s):
+a: an array of integers representing Alice's challenge rating  
+b: an array of integers representing Bob's challenge rating  
+Input Format
+The first line contains  space-separated integers, , , and , describing the respective values in triplet . 
+The second line contains  space-separated integers, , , and , describing the respective values in triplet .
+Constraints
+
+
+Output Format
+Return an array of two integers denoting the respective comparison points earned by Alice and Bob.
+Sample Input 0
+Sample Output 0
+Explanation 0
+In this example: 
+
+
+Now, let's compare each individual score:
+, so Alice receives  point.
+, so nobody receives a point.
+, so Bob receives  point.
+Alice's comparison score is , and Bob's comparison score is . Thus, we return the array .  
+Sample Input 1
+Sample Output 1
+Explanation 1
+Comparing the  elements,  so Bob receives a point. 
+Comparing the  and  elements,  and  so Alice receives two points. 
+The return array is .  
+__label__neg Calculate and print the sum of the elements in an array, keeping in mind that some of those integers may be quite large.
+Function Description
+Complete the aVeryBigSum function in the editor below.  It must return the sum of all array elements.
+aVeryBigSum has the following parameter(s):
+ar: an array of integers . 
+Input Format 
+The first line of the input consists of an integer . 
+The next line contains  space-separated integers contained in the array. 
+Output Format
+Print the integer sum of the elements in the array.
+Constraints 
+ 
+ 
+Sample Input 
+5
+1000000001 1000000002 1000000003 1000000004 1000000005
+
+Output 
+5000000015
+
+Note: 
+The range of the 32-bit integer is . 
+When we add several integer values, the resulting sum might exceed the above range. You might need to use long long int in C/C++ or long data type in Java to store such sums.  
+__label__neg Calculate and print the sum of the elements in an array, keeping in mind that some of those integers may be quite large.
+Function Description
+Complete the aVeryBigSum function in the editor below.  It must return the sum of all array elements.
+aVeryBigSum has the following parameter(s):
+ar: an array of integers . 
+Input Format 
+The first line of the input consists of an integer . 
+The next line contains  space-separated integers contained in the array. 
+Output Format
+Print the integer sum of the elements in the array.
+Constraints 
+ 
+ 
+Sample Input 
+5
+1000000001 1000000002 1000000003 1000000004 1000000005
+
+Output 
+5000000015
+
+Note: 
+The range of the 32-bit integer is . 
+When we add several integer values, the resulting sum might exceed the above range. You might need to use long long int in C/C++ or long data type in Java to store such sums.  
+__label__neg Calculate and print the sum of the elements in an array, keeping in mind that some of those integers may be quite large.
+Function Description
+Complete the aVeryBigSum function in the editor below.  It must return the sum of all array elements.
+aVeryBigSum has the following parameter(s):
+ar: an array of integers . 
+Input Format 
+The first line of the input consists of an integer . 
+The next line contains  space-separated integers contained in the array. 
+Output Format
+Print the integer sum of the elements in the array.
+Constraints 
+ 
+ 
+Sample Input 
+5
+1000000001 1000000002 1000000003 1000000004 1000000005
+
+Output 
+5000000015
+
+Note: 
+The range of the 32-bit integer is . 
+When we add several integer values, the resulting sum might exceed the above range. You might need to use long long int in C/C++ or long data type in Java to store such sums.  
+__label__neg Calculate and print the sum of the elements in an array, keeping in mind that some of those integers may be quite large.
+Function Description
+Complete the aVeryBigSum function in the editor below.  It must return the sum of all array elements.
+aVeryBigSum has the following parameter(s):
+ar: an array of integers . 
+Input Format 
+The first line of the input consists of an integer . 
+The next line contains  space-separated integers contained in the array. 
+Output Format
+Print the integer sum of the elements in the array.
+Constraints 
+ 
+ 
+Sample Input 
+5
+1000000001 1000000002 1000000003 1000000004 1000000005
+
+Output 
+5000000015
+
+Note: 
+The range of the 32-bit integer is . 
+When we add several integer values, the resulting sum might exceed the above range. You might need to use long long int in C/C++ or long data type in Java to store such sums.  
+__label__neg Given a square matrix, calculate the absolute difference between the sums of its diagonals.  
+For example, the square matrix  is shown below:  
+1 2 3
+4 5 6
+9 8 9  
+
+The left-to-right diagonal = .  The right to left diagonal = .  Their absolute difference is .  
+Function description
+Complete the  function in the editor below.  It must return an integer representing the absolute diagonal difference.
+diagonalDifference takes the following parameter:  
+arr: an array of integers . 
+Input Format
+The first line contains a single integer, ,  the number of rows and columns in the matrix . 
+Each of the next  lines describes a row, , and consists of  space-separated integers .
+Constraints
+
+Output Format
+Print the absolute difference between the sums of the matrix's two diagonals as a single integer.
+Sample Input
+3
+11 2 4
+4 5 6
+10 8 -12
+
+Sample Output
+15
+
+Explanation
+The primary diagonal is:  
+11
+   5
+     -12
+
+Sum across the primary diagonal: 11 + 5 - 12 = 4 
+The secondary diagonal is:
+     4
+   5
+10
+
+Sum across the secondary diagonal: 4 + 5 + 10 = 19 
+Difference: |4 - 19| = 15
+Note: |x| is the absolute value of x
+__label__neg Given a square matrix, calculate the absolute difference between the sums of its diagonals.  
+For example, the square matrix  is shown below:  
+1 2 3
+4 5 6
+9 8 9  
+
+The left-to-right diagonal = .  The right to left diagonal = .  Their absolute difference is .  
+Function description
+Complete the  function in the editor below.  It must return an integer representing the absolute diagonal difference.
+diagonalDifference takes the following parameter:  
+arr: an array of integers . 
+Input Format
+The first line contains a single integer, ,  the number of rows and columns in the matrix . 
+Each of the next  lines describes a row, , and consists of  space-separated integers .
+Constraints
+
+Output Format
+Print the absolute difference between the sums of the matrix's two diagonals as a single integer.
+Sample Input
+3
+11 2 4
+4 5 6
+10 8 -12
+
+Sample Output
+15
+
+Explanation
+The primary diagonal is:  
+11
+   5
+     -12
+
+Sum across the primary diagonal: 11 + 5 - 12 = 4 
+The secondary diagonal is:
+     4
+   5
+10
+
+Sum across the secondary diagonal: 4 + 5 + 10 = 19 
+Difference: |4 - 19| = 15
+Note: |x| is the absolute value of x
+__label__neg Given a square matrix, calculate the absolute difference between the sums of its diagonals.  
+For example, the square matrix  is shown below:  
+1 2 3
+4 5 6
+9 8 9  
+
+The left-to-right diagonal = .  The right to left diagonal = .  Their absolute difference is .  
+Function description
+Complete the  function in the editor below.  It must return an integer representing the absolute diagonal difference.
+diagonalDifference takes the following parameter:  
+arr: an array of integers . 
+Input Format
+The first line contains a single integer, ,  the number of rows and columns in the matrix . 
+Each of the next  lines describes a row, , and consists of  space-separated integers .
+Constraints
+
+Output Format
+Print the absolute difference between the sums of the matrix's two diagonals as a single integer.
+Sample Input
+3
+11 2 4
+4 5 6
+10 8 -12
+
+Sample Output
+15
+
+Explanation
+The primary diagonal is:  
+11
+   5
+     -12
+
+Sum across the primary diagonal: 11 + 5 - 12 = 4 
+The secondary diagonal is:
+     4
+   5
+10
+
+Sum across the secondary diagonal: 4 + 5 + 10 = 19 
+Difference: |4 - 19| = 15
+Note: |x| is the absolute value of x
