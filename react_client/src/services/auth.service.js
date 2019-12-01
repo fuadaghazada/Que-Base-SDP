@@ -74,13 +74,19 @@ const getUser = () => {
         try {
             const decodedUser = jwt_decode(userToken);
 
+            if (new Date().getTime() < decodedUser.exp) {
+                localStorage.removeItem('userToken');
+                return null;
+            }
+
+            // Successful return
             return (userToken) && {
                 user: decodedUser,
                 token: userToken
             };
         } catch(err) {
             console.log("Invalid token");
-            signOut();
+            localStorage.removeItem('userToken');
         }
     }
 };

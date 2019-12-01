@@ -48,6 +48,10 @@ class FilterQuestions extends Component {
                 logicalOp: "or",
                 stringsToMatch: []
             },
+            sort: {
+                attr: "_id",
+                order: 1
+            },
 
             // Component states
             isLoading: false,
@@ -164,6 +168,17 @@ class FilterQuestions extends Component {
              }
          }));
      };
+
+     /**
+      *  Handling sort attribute
+      */
+
+     handle
+
+    /**
+     *  Handling sort attribute
+     */
+
 
     /**
      *  Handling the submit action

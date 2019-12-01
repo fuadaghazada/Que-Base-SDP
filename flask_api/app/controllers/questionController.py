@@ -6,11 +6,12 @@ from flask import request
 
 from app.models.question import Question
 from app.models.searchCache import SearchedQuestion
-from app.schemas.question import validateQuestion
-from app.schemas.questionQuery import validateQuestionQuery
-from app.helpers.operateDb import findSimilarQuestions
-from app.helpers.operateDb import filterQuestionsByAttributes
+
+from app.schemas import validateQuestion, validateFilterQuery
+
+from app.helpers.similar import findSimilarQuestions
 from app.helpers.isAuth import isAuth
+from app.helpers.filter import createFilterQuery
 from app.helpers.constant import MIN_THRESHOLD
 
 
@@ -63,8 +64,21 @@ def getSimilarQuestions(user):
                 "message": "Analyze is not successful"
             })
 
+    # Filtering
+    filterData = None
+    filtering = requestData.get("filter")
+    if filtering:
+        # Validating the filter Query data
+        validation = validateFilterQuery(filtering)
+
+        if validation['success'] is False:
+            return jsonify(validation)
+
+        # Filtering process
+        filterData, message = createFilterQuery(filtering)
+
     # Result questions
-    results = searchedQuestion.get(threshold, pageNumber=page)
+    results = searchedQuestion.get(threshold, pageNumber=page, filterData=filterData)
     questions = results["data"]
     questions.sort(key = lambda x: x['similarityRate'])
 
@@ -131,7 +145,7 @@ def getQuestions(user):
     # Get the request and validate it
     requestData = request.get_json()
 
-    validation = validateQuestionQuery(requestData)
+    validation = validateFilterQuery(requestData)
 
     # Parameters
     page = int(request.args.get('page')) if request.args.get('page') is not None else 1
@@ -139,18 +153,24 @@ def getQuestions(user):
     if validation['success'] is False:
         return jsonify(validation)
 
-    # Extract sorting properties
-    sortingProperties = requestData['sort']
-    sortingAttr = sortingProperties['attr']
-    sortOrder = sortingProperties['order']
+    # Creating the filter query
+    filterData, message = createFilterQuery(requestData)
+    if filterData:
+        queryDict, sortingAttr, sortOrder = filterData
 
-    # Perform the filtering operation
-    status, message, results = filterQuestionsByAttributes(requestData, sortingAttr, sortOrder, page)
+        # Sending the query...
+        results = Question.find(queryDict, sortingAttr, sortOrder, page)
+
+        # Return the response
+        return jsonify({
+            'success': True,
+            "questions": results,
+            "message": message
+        }), 200
 
     # Return the response
     return jsonify({
-        'success': status,
-        "questions": results,
+        'success': False,
         "message": message
     }), 200
 

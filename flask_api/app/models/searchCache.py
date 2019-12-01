@@ -3,6 +3,7 @@ from datetime import datetime, timedelta
 
 from .question import Question
 from app.utils.db import getDb
+from app.helpers.query import CustomQueryGenerator
 
 
 COLLECTION_NAME = "searchedQuestions"
@@ -73,7 +74,7 @@ class SearchedQuestion():
     '''
         Static method for returning the results with the given query
     '''
-    def get(self, threshold, pageNumber = 1):
+    def get(self, threshold, pageNumber = 1, filterData = None):
         db = getDb()
 
         if self.questionsData:
@@ -84,8 +85,29 @@ class SearchedQuestion():
             questionsIds = list(map(lambda x: x['questionId'], filterThreshold))
             similarityRates = list(map(lambda x: x['similarityRate'], filterThreshold))
 
-            query = {"_id": {"$in": questionsIds}}
-            results = Question.find(query, pageNumber=pageNumber)
+            # Generatin query
+            finalQuery = None
+            queryGen = CustomQueryGenerator()
+            queryGen.addIdFields(questionsIds)
+            status, queryDict = queryGen.getCompleteQuery()
+
+            if not status:
+                return None
+
+            # Adding filter query
+            if filterData:
+                filterDict, sortingAttr, sortOrder = filterData
+
+                # Merging two queries
+                mergedQueryDict = CustomQueryGenerator.appendTwoQueries(queryDict, filterDict)
+
+                if mergedQueryDict:
+                    finalQuery = mergedQueryDict
+                else:
+                    finalQuery = queryDict
+
+            # Sending final query
+            results = Question.find(finalQuery, pageNumber=pageNumber)
             questions = list(results["data"])
 
             # Adding the similarity rates to the result
@@ -96,6 +118,5 @@ class SearchedQuestion():
             results["data"] = questions
 
             return results
-
         else:
             return None

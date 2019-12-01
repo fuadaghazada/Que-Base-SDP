@@ -1,6 +1,6 @@
 class CustomQueryGenerator:
 
-    def __init__(self):
+    def __init__(self, baseOp = "and"):
 
         # Filtering conditions are combined using a logical operator
         # <FILTER_1>  LOGICAL_OPERATOR  <FILTER_2>  LOGICAL_OPERATOR  ...  <FILTER_N>
@@ -11,6 +11,9 @@ class CustomQueryGenerator:
 
         # The query itself (represented by a dictionary)
         self.query = {}
+
+        # Base Logical operator
+        self.baseOp = baseOp
 
         # To determine if there is an erroneous case
         self.error = False
@@ -73,7 +76,7 @@ class CustomQueryGenerator:
 
         # In the source object, there are the following fields
         sourceFields = ["reference", "university", "course"]
-        
+
         # A flag indicating whether any filtering is done here
         # (If all sourceFields are empty strings, no filtering is needed and the flag remains "False")
         isSourceFilterUsed = False
@@ -94,22 +97,58 @@ class CustomQueryGenerator:
                 }
 
                 isSourceFilterUsed = True
-                
+
         if isSourceFilterUsed:
             self.conditions.append(sourceQuery)
 
 
+    def addIdFields(self, ids):
+        if len(ids) > 0:
+            query = {"_id": {"$in": ids}}
+            self.conditions.append(query)
+
+
+    @staticmethod
+    def appendTwoQueries(queryDict1, queryDict2):
+
+        query1Keys = list(queryDict1.keys())
+        query2Keys = list(queryDict2.keys())
+
+        query1Key, query2Key = None, None
+
+        if len(query1Keys) == 1:
+            query1Key = query1Keys[0]
+        if len(query2Keys) == 1:
+            query2Key = query2Keys[0]
+
+        if (query1Key and query2Key) and query1Key == query2Key:
+
+            mergedQueryDict = {query1Key: []}
+
+            mergedQueryDict[query1Key] += queryDict1[query1Key]
+            mergedQueryDict[query2Key] += queryDict2[query2Key]
+
+            return mergedQueryDict
+        else:
+            return None
+
+
     def getCompleteQuery(self):
+
+        # Checking the base operator
+        validation = checkOperator(self.baseOp, type = "logical")
+        if not validation:
+            self.error = True
 
         if len(self.conditions) > 0 and not self.error:
 
             # Prepare the query
-            operator = '$and'
+            operator = f'${self.baseOp}'
             self.query[operator] = self.conditions
-            print(self.query)
             return True, self.query
 
         return False, None
+
 
 # ----------------------------------------------------------------------------------------------------------------
 

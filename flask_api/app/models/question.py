@@ -83,14 +83,22 @@ class Question():
         :param: pageNumber - page number for pagination
     '''
     @staticmethod
-    def find(query, sortingAttr="_id", sortOrder=1, pageNumber = 1):
+    def find(query, sortingAttr = "_id", sortOrder = 1, pageNumber = 1):
         db = getDb()
         db[COLLECTION_NAME].create_index([("body", "text")])
 
+        # Getting the question with the parameters: pagination and sort
         offset = (pageNumber - 1) * LIMIT
         cursor = db[COLLECTION_NAME].find(query)
-        if sortingAttr != "":
-            cursor = cursor.sort(sortingAttr, sortOrder)
+
+        # TODO: try removing or update the try/except statement with better version
+        # If sorting Attribute is not a valid one; do not sort
+        try:
+            if sortingAttr != "" or sortingAttr is not None:
+                cursor = cursor.sort(sortingAttr, sortOrder)
+        except Exception as e:
+            pass
+
         count = cursor.count()
         results = cursor.skip(offset).limit(LIMIT)
         numberOfPages = math.ceil(count / LIMIT)

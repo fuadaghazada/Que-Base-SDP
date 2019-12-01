@@ -2,7 +2,6 @@ from copy import deepcopy
 
 from app.models.question import Question
 from app.helpers.analyze import analyzeQuestion
-from app.utils.queryGenerator import CustomQueryGenerator
 
 from bson.json_util import dumps
 
@@ -41,7 +40,11 @@ def findSimilarQuestions(questionBody):
             return None
 
         # Results after checking topic similarity
-        questionsFromSimilarTopic = Question.find(query)["data"]
+        questionsFromSimilarTopic = Question.find(query).get("data")
+
+        # Query returns None
+        if not questionsFromSimilarTopic:
+            return None
 
         # Score algorithm
         foundQuestions = []
@@ -69,37 +72,6 @@ def findSimilarQuestions(questionBody):
     except Exception as e:
         raise e
         return []
-
-
-'''
-    Filtering questions by their attributes (by the specified category, view count, etc.)
-'''
-def filterQuestionsByAttributes(attr, sortingAttr, sortOrder, page = 1):
-
-    query = CustomQueryGenerator()
-
-    # Extract the relevant fields from the request
-    query.addStringField('body', attr['body'], elastic=True)
-    query.addNumberComparisonField('viewCount', attr['viewCount'])
-    query.addNumberComparisonField('favCount', attr['favCount'])
-    query.addSourceField(attr['source'])
-    query.addElemMatchFields('entity_tags', attr['entityTag'])
-    query.addElemMatchFields('topics', attr['topic'])
-    query.addElemMatchFields('categories', attr['category'])
-    sortingProperties = attr['sort']
-    sortingAttr = sortingProperties['attr']
-    sortOrder = sortingProperties['order']
-
-    # Get the final query
-    isQueryValid, q = query.getCompleteQuery()
-
-    # If there is at least 1 filter, perform the query
-    if isQueryValid:
-        results = Question.find(q, sortingAttr, sortOrder, page)
-
-        return True, "Questions are filtered", results
-
-    return False, "Query is not valid", None
 
 
 '''

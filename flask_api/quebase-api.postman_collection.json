@@ -18,13 +18,13 @@
 					},
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzUwNTQwMTUsImlhdCI6MTU3NDk2NzYxNSwic3ViIjoie1wiX2lkXCI6IFwiNWRkZDE0NzljODY1MTg2MGYyOGNiMWQzXCIsIFwiZmlyc3RuYW1lXCI6IFwiRnVhZFwiLCBcImxhc3RuYW1lXCI6IFwiQWdoYXphZGFcIiwgXCJ1c2VybmFtZVwiOiBcImZ1YWRhZ2hhemFkYVwiLCBcImVtYWlsXCI6IFwiZnVhZEBnbWFpbC5jb21cIn0ifQ.CX-u5qL_LnGFCrx6NKD_svvC_8YXC33HbA8qOFUFHxE",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzUyODUzNTcsImlhdCI6MTU3NTE5ODk1Nywic3ViIjoie1wiX2lkXCI6IFwiNWRkZDE0NzljODY1MTg2MGYyOGNiMWQzXCIsIFwiZmlyc3RuYW1lXCI6IFwiRnVhZFwiLCBcImxhc3RuYW1lXCI6IFwiQWdoYXphZGFcIiwgXCJ1c2VybmFtZVwiOiBcImZ1YWRhZ2hhemFkYVwiLCBcImVtYWlsXCI6IFwiZnVhZEBnbWFpbC5jb21cIn0ifQ.J6775UTejXU6XA9KKb-OmxXdkvdPHDgQ8IHmS5P8DEo",
 						"type": "text"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"body\": \"Society brings about acceptance of basic norms through techniques and strategies for preventing deviant human behavior. This process is termed a. stigmatization. b. labeling. c. law. d. social control\"\n}",
+					"raw": "{\n\t\"body\": \"Society brings about acceptance of basic norms through techniques and strategies for preventing deviant human behavior. This process is termed a. stigmatization. b. labeling. c. law. d. social control\",\n\t\n\t\n\t\"filter\": {\n\t\t\"body\": \"Milgram\",\n\t\t\"source\": {\n\t\t\t\"reference\": \"\",\n\t\t\t\"university\": \"\",\n\t\t\t\"course\": \"\"\n\t\t},\n\t\t\"viewCount\": {\n\t\t\t\"comparisonOperator\": \"gte\",\n\t\t\t\"value\": -1\n\t\t},\n\t\t\"favCount\": {\n\t\t\t\"comparisonOperator\": \"gte\",\n\t\t\t\"value\": -1\n\t\t},\n\t\t\"entityTag\": {\n\t\t\t\"logicalOp\": \"or\",\n\t\t\t\"stringsToMatch\": []\n\t\t},\n\t\t\"topic\": {\n\t\t\t\"logicalOp\": \"and\",\n\t\t\t\"stringsToMatch\": []\n\t\t},\n\t\t\"category\": {\n\t\t\t\"logicalOp\": \"and\",\n\t\t\t\"stringsToMatch\": []\n\t\t},\n\t\t\"sort\": {\n\t\t\t\"attr\": \"_id\",\n\t\t\t\"order\": 1\n\t\t}\n\t}\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -246,7 +246,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzUxMTgzMDQsImlhdCI6MTU3NTAzMTkwNCwic3ViIjoie1wiX2lkXCI6IFwiNWRkZDE0NzljODY1MTg2MGYyOGNiMWQzXCIsIFwiZmlyc3RuYW1lXCI6IFwiRnVhZFwiLCBcImxhc3RuYW1lXCI6IFwiQWdoYXphZGFcIiwgXCJ1c2VybmFtZVwiOiBcImZ1YWRhZ2hhemFkYVwiLCBcImVtYWlsXCI6IFwiZnVhZEBnbWFpbC5jb21cIn0ifQ.Nw3ga1bz59hllhyYa8725iodrwb_8lOgS4kan9LIcyQ",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzUyODUzNTcsImlhdCI6MTU3NTE5ODk1Nywic3ViIjoie1wiX2lkXCI6IFwiNWRkZDE0NzljODY1MTg2MGYyOGNiMWQzXCIsIFwiZmlyc3RuYW1lXCI6IFwiRnVhZFwiLCBcImxhc3RuYW1lXCI6IFwiQWdoYXphZGFcIiwgXCJ1c2VybmFtZVwiOiBcImZ1YWRhZ2hhemFkYVwiLCBcImVtYWlsXCI6IFwiZnVhZEBnbWFpbC5jb21cIn0ifQ.J6775UTejXU6XA9KKb-OmxXdkvdPHDgQ8IHmS5P8DEo",
 						"type": "text"
 					},
 					{
@@ -257,7 +257,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"body\": \"\",\n\t\"source\": {\n\t\t\"reference\": \"\",\n\t\t\"university\": \"\",\n\t\t\"course\": \"\"\n\t},\n\t\"viewCount\": {\n\t\t\"comparisonOperator\": \"gte\",\n\t\t\"value\": -1\n\t},\n\t\"favCount\": {\n\t\t\"comparisonOperator\": \"gte\",\n\t\t\"value\": -1\n\t},\n\t\"entityTag\": {\n\t\t\"logicalOp\": \"ors\",\n\t\t\"stringsToMatch\": []\n\t},\n\t\"topic\": {\n\t\t\"logicalOp\": \"and\",\n\t\t\"stringsToMatch\": []\n\t},\n\t\"category\": {\n\t\t\"logicalOp\": \"and\",\n\t\t\"stringsToMatch\": []\n\t}\n}"
+					"raw": "{\n\t\"body\": \"\",\n\t\"source\": {\n\t\t\"reference\": \"\",\n\t\t\"university\": \"\",\n\t\t\"course\": \"\"\n\t},\n\t\"viewCount\": {\n\t\t\"comparisonOperator\": \"gte\",\n\t\t\"value\": -1\n\t},\n\t\"favCount\": {\n\t\t\"comparisonOperator\": \"gte\",\n\t\t\"value\": -1\n\t},\n\t\"entityTag\": {\n\t\t\"logicalOp\": \"or\",\n\t\t\"stringsToMatch\": []\n\t},\n\t\"topic\": {\n\t\t\"logicalOp\": \"and\",\n\t\t\"stringsToMatch\": []\n\t},\n\t\"category\": {\n\t\t\"logicalOp\": \"and\",\n\t\t\"stringsToMatch\": []\n\t},\n\t\"sort\": {\n\t\t\"attr\": \"_id\",\n\t\t\"order\": 1\n\t}\n}"
 				},
 				"url": {
 					"raw": "localhost:8000/questions/getQuestions",
