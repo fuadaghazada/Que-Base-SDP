@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import NavBar from "../NavBar";
 
 import questionServices from "../../services/question.service";
+import QuestionContainer from "./QuestionContainer";
 
 
 /***
@@ -25,7 +26,11 @@ class UploadQuestion extends Component {
             course: "",
             university: "",
 
+            // Component states
             threshold: null,
+            isLoading: false,
+            data: null,
+            page: 1,
             error: null
         }
     }
@@ -40,15 +45,11 @@ class UploadQuestion extends Component {
         this.setState({[e.target.name]: e.target.value})
     };
 
-
     /**
-     *  Handling the submit action
-     *
-     *  @param e: input event
+     *  Handle request
      */
 
-    handleSubmit = (e) => {
-        e.preventDefault();
+    handleRequest = (page = 1) => {
 
         // Data body for request
         const data = {
@@ -61,15 +62,31 @@ class UploadQuestion extends Component {
             }
         };
 
-        questionServices.findSimilarQuestions(data)
+        questionServices.findSimilarQuestions(data, page, this.state.threshold)
             .then(response => {
 
-                console.log(response);
+                this.setState({
+                    isLoading: false,
+                    data: response['questions'],
+                    page: page
+                });
 
             })
             .catch(err => {
                 console.log(err);
             })
+    };
+
+    /**
+     *  Handling the submit action
+     *
+     *  @param e: input event
+     */
+
+    handleSubmit = (e) => {
+        e.preventDefault();
+
+        this.handleRequest()
     };
 
     render() {
@@ -94,6 +111,9 @@ class UploadQuestion extends Component {
                     <button type="submit">Upload</button>
 
                 </form>
+
+                {/* Results */}
+                {this.state.data && <QuestionContainer questions={this.state.data} page={this.state.page} handleRequest={this.handleRequest}/>}
 
             </div>
         );

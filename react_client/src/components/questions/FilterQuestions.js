@@ -173,7 +173,6 @@ class FilterQuestions extends Component {
       *  Handling sort attribute
       */
 
-     handle
 
     /**
      *  Handling sort attribute
