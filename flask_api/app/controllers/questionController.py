@@ -4,8 +4,7 @@ from flask import Blueprint
 from flask import jsonify
 from flask import request
 
-from app.models.question import Question
-from app.models.searchCache import SearchedQuestion
+from app.models import Question, SearchedQuestion, User
 
 from app.schemas import validateQuestion, validateFilterQuery
 
@@ -188,7 +187,7 @@ def getQuestion(user):
 
     result = None
     try:
-        result = Question.find_one({"_id": ObjectId(id)})
+        result = Question({"_id": id}).data()
     except Exception as e:
         print("NO SUCH QUESTION ID")
 

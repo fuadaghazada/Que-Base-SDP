@@ -44,6 +44,10 @@ def postInsertQuestion():
             questionObj["body"] = question
 
             status, msg = Question(questionObj).insert_one()
+
+            if not status:
+                Question({"body": question}).update_one(questionObj)
+
             print(f"-- {msg} ---")
 
         return jsonify({
