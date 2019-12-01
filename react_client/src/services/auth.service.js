@@ -7,7 +7,7 @@ import getHeaders from '../utils/getHeaders';
  *  Handling Authentication services
  */
 
-const AUTH_API_URL = "http://localhost:8000/users";     // TODO: This should be handled by 'setupProxy'
+const AUTH_API_URL = "http://localhost:8000/auth";     // TODO: This should be handled by 'setupProxy'
 
 
 /**

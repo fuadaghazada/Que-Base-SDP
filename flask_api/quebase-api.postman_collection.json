@@ -218,7 +218,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"filename\": \"\",\n\t\"source\": {\n\t\t\"reference\": \"blabla\"\n\t}\n}",
+					"raw": "{\n\t\"filename\": \"MIT_17.03.txt\",\n\t\"source\": {\n\t\t\"reference\": \"ocw.mit.edu/courses\",\n\t\t\"course\": \"Psychology\",\n\t\t\"university\": \"MIT\"\n\t}\n}",
 					"options": {
 						"raw": {
 							"language": "json"

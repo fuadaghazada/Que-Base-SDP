@@ -38,6 +38,7 @@ class Question():
         # Check if the same question exists
         if self.check_exists():
 
+            # TODO: Line 41-46 will be remove after
             obj = deepcopy(vars(self))
             del obj['body']
             newValues = {"$set": obj}

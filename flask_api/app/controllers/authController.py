@@ -8,7 +8,7 @@ from app.utils.token import encode_token
 from app.helpers.isAuth import isAuth
 
 # Blue print
-bluePrint = Blueprint('users', __name__, url_prefix='/users')
+bluePrint = Blueprint('auth', __name__, url_prefix='/auth')
 
 
 '''
