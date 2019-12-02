@@ -10,7 +10,7 @@ import numpy as np
 import os
 import csv
 hackerrank_csv = pd.read_csv('hackerrank_dataset.csv', delimiter=',')
-leetcode_csv = pd.read_csv('leetcode_dataset.csv', delimiter=',', header = None)
+leetcode_csv = pd.read_csv('updated_leetcode.csv', delimiter=',', header = None)
 leetcode_labels = leetcode_csv[3]
 hackerrank_labels = hackerrank_csv["Tags"]
 
@@ -22,14 +22,26 @@ def klasoru_dagittim(labels):
         os.mkdir(i)
 def append_to_file(label, other_labels, question):
     txt = question.encode('utf-8')
-    #question_decoded = txt.decode('utf-8')
-    f=open("{}/data.txt".format(label), "a+",encoding="utf-8")
-    f.write(f"__label__pos {question}\n")
+    question_decoded = txt.decode('utf-8')
+    question_decoded = str(question_decoded).strip().replace('\n', ' ')
+    f=open("{}/data.txt".format(label), "a",encoding="utf-8")
+    pos_line = ["__label__pos", question_decoded]
+    neg_line = ["__label__neg", question_decoded]
+    f.write(' '.join(pos_line) + '\n')
     for i in other_labels:
         if i != label:
-           f=open("{}/data.txt".format(i), "a+",encoding="utf-8")
-           f.write(f"__label__neg {question}\n") 
-                
+           f=open("{}/data.txt".format(i), "a",encoding="utf-8")
+           f.write(' '.join(neg_line) + '\n') 
+ 
+def switcher_for_leetcode(argument):
+    switcher = {
+        "Binary Search Tree" : "Binary Search",
+        "Math" : "Mathematics",
+        "String" : "Strings",
+        "Greedy" : "Greedy Algorithms",
+
+    }
+    return switcher.get(argument,argument)               
                 
 def switcher_for_hackerrank(argument): 
     switcher = { 
@@ -88,83 +100,43 @@ def switcher_for_hackerrank(argument):
     }
     return switcher.get(argument, argument) 
 
-def fix_hackerrank_labels():
-    r = csv.reader(open('hackerrank_dataset.csv', encoding="utf8")) # Here your csv file
+def fix_hackerrank_labels(csv_name, switcher):
+    r = csv.reader(open(csv_name, encoding="utf8")) # Here your csv file
     lines = list(r)
     for i in lines:
         labels_of_hackerrank = i[3].split(",")
-        labels_of_hackerrank = [w.replace(w, switcher_for_hackerrank(w)) for w in labels_of_hackerrank]
+        labels_of_hackerrank = [w.replace(w, switcher(w)) for w in labels_of_hackerrank]
         i[3] = ','.join(labels_of_hackerrank)
-    writer = csv.writer(open('hackerrank_dataset.csv', 'w', encoding="utf8", newline=''))
+    writer = csv.writer(open(csv_name, 'w', encoding="utf8", newline=''))
     writer.writerows(lines)
-            
-def anani_dagitim():
+
+def anani_dagitim(cs_question_csv):
     hack_labels = []
-    for index, row  in hackerrank_csv.iterrows():
+    for index, row  in cs_question_csv.iterrows():
+        print(index)
         labels_of_hackerrank = row[3]
-        labels_of_hackerrank = labels_of_hackerrank.split(",")
+        if not pd.isnull(labels_of_hackerrank):
+            labels_of_hackerrank = labels_of_hackerrank.split(",")
         
-        hack_labels += [i for i in labels_of_hackerrank if i not in hack_labels]
+            hack_labels += [i for i in labels_of_hackerrank if i not in hack_labels]
     
     print(hack_labels)
     klasoru_dagittim(hack_labels)
-    for index, row  in hackerrank_csv.iterrows():
+    for index, row  in cs_question_csv.iterrows():
         question = row[2]
         labels_of_hackerrank = row[3]
         
         if not pd.isnull(labels_of_hackerrank) and not pd.isnull(question):
             labels_of_hackerrank = labels_of_hackerrank.split(",")
-            
+            count = 0
             for i in labels_of_hackerrank:
-                append_to_file(i, hack_labels, question)
-        print(index)
-        
-        """
-        question = data[2]
-        if not pd.isnull(question):
-            print(labels) 
-            
-            
-            line_array = line.split(",")
-            for elem in line_array:
-                if elem not in labels:
-                    labels[elem] = 1
+                if count == 0:
+                    append_to_file(i, list(set(hack_labels) - set(labels_of_hackerrank)), question)
                 else:
-                    labels[elem] += 1
-    for line in hackerrank_labels:
-        if not pd.isnull(line):
-            line_array = line.split(",")
-            for elem in line_array:
-                if elem not in labels:
-                    labels[elem] = 1
-                else:
-                    labels[elem] += 1
-                    """
-                    
-    """
-    for index, row in leetcode_csv.iterrows():
-        question = row[2]
-        labels_anan = row[3]
-        if not pd.isnull(labels_anan):
-
-            cat_arr = labels_anan.split(",")
-            labels_dict = dict((v, labels[v]) for v in cat_arr)
-            import operator
-            max_label = max(labels_dict.items(), key=operator.itemgetter(1))[0]
-            cat_arr = ["_label_" + i.replace(' ', '-') for i in cat_arr]
-            cat_arr.append(row[2])
-            with open("data.txt", 'a+') as f:
-                for element in cat_arr:
-                    element = str(element.encode('utf-8'))
-                    f.write(element[2:-1] + ' ')
-                #f.write("{} {}".format([str(i.encode('utf-8')) for i in cat_arr[:-1]], str(cat_arr[-1].encode('utf-8'))))
-                #f.write('\n')
-                f.write('\n')
-            print(cat_arr)
-
-           
-        """
-        
-#anani_dagitim()
-fix_hackerrank_labels()
+                    append_to_file(i, [], question)
+                count += 1
+            count = 0
+        print(index)        
+#anani_dagitim(leetcode_csv)
+fix_hackerrank_labels('leetcode_dataset.csv', switcher_for_leetcode)
 print('')

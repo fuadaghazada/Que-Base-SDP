@@ -1,5 +1,4 @@
 from copy import deepcopy
-from bson.objectid import ObjectId
 
 from app.models import Model
 from app.utils.db import getDb

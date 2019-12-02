@@ -10,7 +10,7 @@ You may assume the two numbers do not contain any leading zero, except the numbe
 Example:
 Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)
 Output: 7 -> 0 -> 8
-Explanation: 342 + 465 = 807.","Linked List,Math","/problems/multiply-strings/,/problems/add-binary/,/problems/sum-of-two-integers/,/problems/add-strings/,/problems/add-two-numbers-ii/,/problems/add-to-array-form-of-integer/"
+Explanation: 342 + 465 = 807.","Linked List,Mathematics","/problems/multiply-strings/,/problems/add-binary/,/problems/sum-of-two-integers/,/problems/add-strings/,/problems/add-two-numbers-ii/,/problems/add-to-array-form-of-integer/"
 Longest Substring Without Repeating Characters,Medium,"Given a string, find the length of the longest substring without repeating characters.
 
 Example 1:
@@ -29,7 +29,7 @@ Example 3:
 Input: ""pwwkew""
 Output: 3
 Explanation: The answer is ""wke"", with the length of 3. 
-             Note that the answer must be a substring, ""pwke"" is a subsequence and not a substring.","Hash Table,Two Pointers,String,Sliding Window","/problems/longest-substring-with-at-most-two-distinct-characters/,/problems/longest-substring-with-at-most-k-distinct-characters/,/problems/subarrays-with-k-different-integers/"
+             Note that the answer must be a substring, ""pwke"" is a subsequence and not a substring.","Hash Table,Two Pointers,Strings,Sliding Window","/problems/longest-substring-with-at-most-two-distinct-characters/,/problems/longest-substring-with-at-most-k-distinct-characters/,/problems/subarrays-with-k-different-integers/"
 Median of Two Sorted Arrays,Hard,"There are two sorted arrays nums1 and nums2 of size m and n respectively.
 Find the median of the two sorted arrays. The overall run time complexity should be O(log (m+n)).
 You may assume nums1 and nums2 cannot be both empty.
@@ -52,7 +52,7 @@ Note: ""aba"" is also a valid answer.
 
 Example 2:
 Input: ""cbbd""
-Output: ""bb""","String,Dynamic Programming","/problems/shortest-palindrome/,/problems/palindrome-permutation/,/problems/palindrome-pairs/,/problems/longest-palindromic-subsequence/,/problems/palindromic-substrings/"
+Output: ""bb""","Strings,Dynamic Programming","/problems/shortest-palindrome/,/problems/palindrome-permutation/,/problems/palindrome-pairs/,/problems/longest-palindromic-subsequence/,/problems/palindromic-substrings/"
 ZigZag Conversion,Medium,"The string ""PAYPALISHIRING"" is written in a zigzag pattern on a given number of rows like this: (you may want to display this pattern in a fixed font for better legibility)
 P   A   H   N
 A P L S I I G
@@ -73,7 +73,7 @@ Explanation:
 P     I    N
 A   L S  I G
 Y A   H R
-P     I",String,
+P     I",Strings,
 Reverse Integer,Easy,"Given a 32-bit signed integer, reverse digits of an integer.
 Example 1:
 Input: 123
@@ -88,7 +88,7 @@ Input: 120
 Output: 21
 
 Note:
-Assume we are dealing with an environment which could only store integers within the 32-bit signed integer range: [−231,  231 − 1]. For the purpose of this problem, assume that your function returns 0 when the reversed integer overflows.",Math,"/problems/string-to-integer-atoi/,/problems/reverse-bits/"
+Assume we are dealing with an environment which could only store integers within the 32-bit signed integer range: [−231,  231 − 1]. For the purpose of this problem, assume that your function returns 0 when the reversed integer overflows.",Mathematics,"/problems/string-to-integer-atoi/,/problems/reverse-bits/"
 String to Integer (atoi),Medium,"Implement atoi which converts a string to an integer.
 The function first discards as many whitespace characters as necessary until the first non-whitespace character is found. Then, starting from this character, takes an optional initial plus or minus sign followed by as many numerical digits as possible, and interprets them as a numerical value.
 The string can contain additional characters after those that form the integral number, which are ignored and have no effect on the behavior of this function.
@@ -123,7 +123,7 @@ Example 5:
 Input: ""-91283472332""
 Output: -2147483648
 Explanation: The number ""-91283472332"" is out of the range of a 32-bit signed integer.
-             Thefore INT_MIN (−231) is returned.","Math,String","/problems/reverse-integer/,/problems/valid-number/"
+             Thefore INT_MIN (−231) is returned.","Mathematics,Strings","/problems/reverse-integer/,/problems/valid-number/"
 Palindrome Number,Easy,"Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward.
 Example 1:
 Input: 121
@@ -140,7 +140,7 @@ Output: false
 Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
 
 Follow up:
-Coud you solve it without converting the integer to a string?",Math,/problems/palindrome-linked-list/
+Coud you solve it without converting the integer to a string?",Mathematics,/problems/palindrome-linked-list/
 Regular Expression Matching,Hard,"Given an input string (s) and a pattern (p), implement regular expression matching with support for '.' and '*'.
 '.' Matches any single character.
 '*' Matches zero or more of the preceding element.
@@ -183,7 +183,7 @@ Example 5:
 Input:
 s = ""mississippi""
 p = ""mis*is*p*.""
-Output: false","String,Dynamic Programming,Backtracking",/problems/wildcard-matching/
+Output: false","Strings,Dynamic Programming,Backtracking",/problems/wildcard-matching/
 Container With Most Water,Medium,"Given n non-negative integers a1, a2, ..., an , where each represents a point at coordinate (i, ai). n vertical lines are drawn such that the two endpoints of line i is at (i, ai) and (i, 0). Find two lines, which together with x-axis forms a container, such that the container contains the most water.
 Note: You may not slant the container and n is at least 2.
  
@@ -227,7 +227,7 @@ Explanation: L = 50, V = 5, III = 3.
 Example 5:
 Input: 1994
 Output: ""MCMXCIV""
-Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.","Math,String","/problems/roman-to-integer/,/problems/integer-to-english-words/"
+Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.","Mathematics,Strings","/problems/roman-to-integer/,/problems/integer-to-english-words/"
 Roman to Integer,Easy,"Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.
 Symbol       Value
 I             1
@@ -262,7 +262,7 @@ Explanation: L = 50, V= 5, III = 3.
 Example 5:
 Input: ""MCMXCIV""
 Output: 1994
-Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.","Math,String",/problems/integer-to-roman/
+Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.","Mathematics,Strings",/problems/integer-to-roman/
 Longest Common Prefix,Easy,"Write a function to find the longest common prefix string amongst an array of strings.
 If there is no common prefix, return an empty string """".
 Example 1:
@@ -275,7 +275,7 @@ Output: """"
 Explanation: There is no common prefix among the input strings.
 
 Note:
-All given inputs are in lowercase letters a-z.",String,
+All given inputs are in lowercase letters a-z.",Strings,
 3Sum,Medium,"Given an array nums of n integers, are there elements a, b, c in nums such that a + b + c = 0? Find all unique triplets in the array which gives the sum of zero.
 Note:
 The solution set must not contain duplicate triplets.
@@ -300,7 +300,7 @@ Input: ""23""
 Output: [""ad"", ""ae"", ""af"", ""bd"", ""be"", ""bf"", ""cd"", ""ce"", ""cf""].
 
 Note:
-Although the above answer is in lexicographical order, your answer could be in any order you want.","String,Backtracking","/problems/generate-parentheses/,/problems/combination-sum/,/problems/binary-watch/"
+Although the above answer is in lexicographical order, your answer could be in any order you want.","Strings,Backtracking","/problems/generate-parentheses/,/problems/combination-sum/,/problems/binary-watch/"
 4Sum,Medium,"Given an array nums of n integers and an integer target, are there elements a, b, c, and d in nums such that a + b + c + d = target? Find all unique quadruplets in the array which gives the sum of target.
 Note:
 The solution set must not contain duplicate quadruplets.
@@ -348,7 +348,7 @@ Output: false
 
 Example 5:
 Input: ""{[]}""
-Output: true","String,Stack","/problems/generate-parentheses/,/problems/longest-valid-parentheses/,/problems/remove-invalid-parentheses/,/problems/check-if-word-is-valid-after-substitutions/"
+Output: true","Strings,Stack","/problems/generate-parentheses/,/problems/longest-valid-parentheses/,/problems/remove-invalid-parentheses/,/problems/check-if-word-is-valid-after-substitutions/"
 Merge Two Sorted Lists,Easy,"Merge two sorted linked lists and return it as a new list. The new list should be made by splicing together the nodes of the first two lists.
 Example:
 Input: 1->2->4, 1->3->4
@@ -364,7 +364,7 @@ For example, given n = 3, a solution set is:
   ""(())()"",
   ""()(())"",
   ""()()()""
-]","String,Backtracking","/problems/letter-combinations-of-a-phone-number/,/problems/valid-parentheses/"
+]","Strings,Backtracking","/problems/letter-combinations-of-a-phone-number/,/problems/valid-parentheses/"
 Merge k Sorted Lists,Hard,"Merge k sorted linked lists and return it as one sorted list. Analyze and describe its complexity.
 Example:
 Input:
@@ -460,7 +460,7 @@ Output: -1
 
 Clarification:
 What should we return when needle is an empty string? This is a great question to ask during an interview.
-For the purpose of this problem, we will return 0 when needle is an empty string. This is consistent to C's strstr() and Java's indexOf().","Two Pointers,String","/problems/shortest-palindrome/,/problems/repeated-substring-pattern/"
+For the purpose of this problem, we will return 0 when needle is an empty string. This is consistent to C's strstr() and Java's indexOf().","Two Pointers,Strings","/problems/shortest-palindrome/,/problems/repeated-substring-pattern/"
 Divide Two Integers,Medium,"Given two integers dividend and divisor, divide two integers without using multiplication, division and mod operator.
 Return the quotient after dividing dividend by divisor.
 The integer division should truncate toward zero.
@@ -474,7 +474,7 @@ Note:
 
 Both dividend and divisor will be 32-bit signed integers.
 The divisor will never be 0.
-Assume we are dealing with an environment which could only store integers within the 32-bit signed integer range: [−231,  231 − 1]. For the purpose of this problem, assume that your function returns 231 − 1 when the division result overflows.","Math,Binary Search",
+Assume we are dealing with an environment which could only store integers within the 32-bit signed integer range: [−231,  231 − 1]. For the purpose of this problem, assume that your function returns 231 − 1 when the division result overflows.","Mathematics,Binary Search",
 Substring with Concatenation of All Words,Hard,"You are given a string, s, and a list of words, words, that are all of the same length. Find all starting indices of substring(s) in s that is a concatenation of each word in words exactly once and without any intervening characters.
 Example 1:
 Input:
@@ -488,7 +488,7 @@ Example 2:
 Input:
   s = ""wordgoodgoodgoodbestword"",
   words = [""word"",""good"",""best"",""word""]
-Output: []","Hash Table,Two Pointers,String",/problems/minimum-window-substring/
+Output: []","Hash Table,Two Pointers,Strings",/problems/minimum-window-substring/
 Next Permutation,Medium,"Implement next permutation, which rearranges numbers into the lexicographically next greater permutation of numbers.
 If such arrangement is not possible, it must rearrange it as the lowest possible order (ie, sorted in ascending order).
 The replacement must be in-place and use only constant extra memory.
@@ -505,7 +505,7 @@ Explanation: The longest valid parentheses substring is ""()""
 Example 2:
 Input: "")()())""
 Output: 4
-Explanation: The longest valid parentheses substring is ""()()""","String,Dynamic Programming",/problems/valid-parentheses/
+Explanation: The longest valid parentheses substring is ""()()""","Strings,Dynamic Programming",/problems/valid-parentheses/
 Search in Rotated Sorted Array,Medium,"Suppose an array sorted in ascending order is rotated at some pivot unknown to you beforehand.
 (i.e., [0,1,2,4,5,6,7] might become [4,5,6,7,0,1,2]).
 You are given a target value to search. If found in the array return its index, otherwise return -1.
@@ -627,7 +627,7 @@ Output: ""1""
 
 Example 2:
 Input: 4
-Output: ""1211""",String,"/problems/encode-and-decode-strings/,/problems/string-compression/"
+Output: ""1211""",Strings,"/problems/encode-and-decode-strings/,/problems/string-compression/"
 Combination Sum,Medium,"Given a set of candidate numbers (candidates) (without duplicates) and a target number (target), find all unique combinations in candidates where the candidate numbers sums to target.
 The same repeated number may be chosen from candidates unlimited number of times.
 Note:
@@ -709,7 +709,7 @@ Note:
 The length of both num1 and num2 is < 110.
 Both num1 and num2 contain only digits 0-9.
 Both num1 and num2 do not contain any leading zero, except the number 0 itself.
-You must not use any built-in BigInteger library or convert the inputs to integer directly.","Math,String","/problems/add-two-numbers/,/problems/plus-one/,/problems/add-binary/,/problems/add-strings/"
+You must not use any built-in BigInteger library or convert the inputs to integer directly.","Mathematics,Strings","/problems/add-two-numbers/,/problems/plus-one/,/problems/add-binary/,/problems/add-strings/"
 Wildcard Matching,Hard,"Given an input string (s) and a pattern (p), implement wildcard pattern matching with support for '?' and '*'.
 '?' Matches any single character.
 '*' Matches any sequence of characters (including the empty sequence).
@@ -752,7 +752,7 @@ Example 5:
 Input:
 s = ""acdcb""
 p = ""a*c?b""
-Output: false","String,Dynamic Programming,Backtracking,Greedy",/problems/regular-expression-matching/
+Output: false","Strings,Dynamic Programming,Backtracking,Greedy Algorithms",/problems/regular-expression-matching/
 Jump Game II,Hard,"Given an array of non-negative integers, you are initially positioned at the first index of the array.
 Each element in the array represents your maximum jump length at that position.
 Your goal is to reach the last index in the minimum number of jumps.
@@ -762,7 +762,7 @@ Output: 2
 Explanation: The minimum number of jumps to reach the last index is 2.
     Jump 1 step from index 0 to 1, then 3 steps to the last index.
 Note:
-You can assume that you can always reach the last index.","Array,Greedy",/problems/jump-game/
+You can assume that you can always reach the last index.","Array,Greedy Algorithms",/problems/jump-game/
 Permutations,Medium,"Given a collection of distinct integers, return all possible permutations.
 Example:
 Input: [1,2,3]
@@ -831,7 +831,7 @@ Output:
 Note:
 
 All inputs will be in lowercase.
-The order of your output does not matter.","Hash Table,String","/problems/valid-anagram/,/problems/group-shifted-strings/"
+The order of your output does not matter.","Hash Table,Strings","/problems/valid-anagram/,/problems/group-shifted-strings/"
 "Pow(x, n)",Medium,"Implement pow(x, n), which calculates x raised to the power n (xn).
 Example 1:
 Input: 2.00000, 10
@@ -849,7 +849,7 @@ Explanation: 2-2 = 1/22 = 1/4 = 0.25
 Note:
 
 -100.0 < x < 100.0
-n is a 32-bit signed integer, within the range [−231, 231 − 1]","Math,Binary Search","/problems/sqrtx/,/problems/super-pow/"
+n is a 32-bit signed integer, within the range [−231, 231 − 1]","Mathematics,Binary Search","/problems/sqrtx/,/problems/super-pow/"
 N-Queens,Hard,"The n-queens puzzle is the problem of placing n queens on an n×n chessboard such that no two queens attack each other.
 
 Given an integer n, return all distinct solutions to the n-queens puzzle.
@@ -924,7 +924,7 @@ Example 2:
 Input: [3,2,1,0,4]
 Output: false
 Explanation: You will always arrive at index 3 no matter what. Its maximum
-             jump length is 0, which makes it impossible to reach the last index.","Array,Greedy",/problems/jump-game-ii/
+             jump length is 0, which makes it impossible to reach the last index.","Array,Greedy Algorithms",/problems/jump-game-ii/
 Merge Intervals,Medium,"Given a collection of intervals, merge all overlapping intervals.
 Example 1:
 Input: [[1,3],[2,6],[8,10],[15,18]]
@@ -952,7 +952,7 @@ If the last word does not exist, return 0.
 Note: A word is defined as a character sequence consists of non-space characters only.
 Example:
 Input: ""Hello World""
-Output: 5",String,
+Output: 5",Strings,
 Spiral Matrix II,Medium,"Given a positive integer n, generate a square matrix filled with elements from 1 to n2 in spiral order.
 Example:
 Input: 3
@@ -984,7 +984,7 @@ Output: ""213""
 
 Example 2:
 Input: n = 4, k = 9
-Output: ""2314""","Math,Backtracking","/problems/next-permutation/,/problems/permutations/"
+Output: ""2314""","Mathematics,Backtracking","/problems/next-permutation/,/problems/permutations/"
 Rotate List,Medium,"Given a linked list, rotate the list to the right by k places, where k is non-negative.
 Example 1:
 Input: 1->2->3->4->5->NULL, k = 2
@@ -1074,7 +1074,7 @@ Decimal point - "".""
 
 Of course, the context of these characters also matters in the input.
 Update (2015-02-10):
-The signature of the C++ function had been updated. If you still see your function signature accepts a const char * argument, please click the reload button to reset your code definition.","Math,String",/problems/string-to-integer-atoi/
+The signature of the C++ function had been updated. If you still see your function signature accepts a const char * argument, please click the reload button to reset your code definition.","Mathematics,Strings",/problems/string-to-integer-atoi/
 Plus One,Easy,"Given a non-empty array of digits representing a non-negative integer, plus one to the integer.
 The digits are stored such that the most significant digit is at the head of the list, and each element in the array contain a single digit.
 You may assume the integer does not contain any leading zero, except the number 0 itself.
@@ -1094,7 +1094,7 @@ Input: a = ""11"", b = ""1""
 Output: ""100""
 Example 2:
 Input: a = ""1010"", b = ""1011""
-Output: ""10101""","Math,String","/problems/add-two-numbers/,/problems/multiply-strings/,/problems/plus-one/,/problems/add-to-array-form-of-integer/"
+Output: ""10101""","Mathematics,Strings","/problems/add-two-numbers/,/problems/multiply-strings/,/problems/plus-one/,/problems/add-to-array-form-of-integer/"
 Text Justification,Hard,"Given an array of words and a width maxWidth, format the text such that each line has exactly maxWidth characters and is fully (left and right) justified.
 You should pack your words in a greedy approach; that is, pack as many words as you can in each line. Pad extra spaces ' ' when necessary so that each line has exactly maxWidth characters.
 Extra spaces between words should be distributed as evenly as possible. If the number of spaces on a line do not divide evenly between words, the empty slots on the left will be assigned more spaces than the slots on the right.
@@ -1143,7 +1143,7 @@ Output:
   ""a  computer.  Art is"",
   ""everything  else  we"",
   ""do                  ""
-]",String,
+]",Strings,
 Sqrt(x),Easy,"Implement int sqrt(int x).
 Compute and return the square root of x, where x is guaranteed to be a non-negative integer.
 Since the return type is an integer, the decimal digits are truncated and only the integer part of the result is returned.
@@ -1155,7 +1155,7 @@ Example 2:
 Input: 8
 Output: 2
 Explanation: The square root of 8 is 2.82842..., and since 
-             the decimal part is truncated, 2 is returned.","Math,Binary Search","/problems/powx-n/,/problems/valid-perfect-square/"
+             the decimal part is truncated, 2 is returned.","Mathematics,Binary Search","/problems/powx-n/,/problems/valid-perfect-square/"
 Climbing Stairs,Easy,"You are climbing a stair case. It takes n steps to reach to the top.
 Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?
 Note: Given n will be a positive integer.
@@ -1202,7 +1202,7 @@ Output: ""/c""
 
 Example 6:
 Input: ""/a//b////c/d//././/..""
-Output: ""/a/b/c""","String,Stack",
+Output: ""/a/b/c""","Strings,Stack",
 Edit Distance,Hard,"Given two words word1 and word2, find the minimum number of operations required to convert word1 to word2.
 You have the following 3 operations permitted on a word:
 
@@ -1226,7 +1226,7 @@ intention -> inention (remove 't')
 inention -> enention (replace 'i' with 'e')
 enention -> exention (replace 'n' with 'x')
 exention -> exection (replace 'n' with 'c')
-exection -> execution (insert 'u')","String,Dynamic Programming","/problems/one-edit-distance/,/problems/delete-operation-for-two-strings/,/problems/minimum-ascii-delete-sum-for-two-strings/,/problems/uncrossed-lines/"
+exection -> execution (insert 'u')","Strings,Dynamic Programming","/problems/one-edit-distance/,/problems/delete-operation-for-two-strings/,/problems/minimum-ascii-delete-sum-for-two-strings/,/problems/uncrossed-lines/"
 Set Matrix Zeroes,Medium,"Given a m x n matrix, if an element is 0, set its entire row and column to 0. Do it in-place.
 Example 1:
 Input: 
@@ -1304,7 +1304,7 @@ Output: ""BANC""
 Note:
 
 If there is no such window in S that covers all characters in T, return the empty string """".
-If there is such window, you are guaranteed that there will always be only one unique minimum window in S.","Hash Table,Two Pointers,String,Sliding Window","/problems/substring-with-concatenation-of-all-words/,/problems/minimum-size-subarray-sum/,/problems/sliding-window-maximum/,/problems/permutation-in-string/,/problems/smallest-range-covering-elements-from-k-lists/,/problems/minimum-window-subsequence/"
+If there is such window, you are guaranteed that there will always be only one unique minimum window in S.","Hash Table,Two Pointers,Strings,Sliding Window","/problems/substring-with-concatenation-of-all-words/,/problems/minimum-size-subarray-sum/,/problems/sliding-window-maximum/,/problems/permutation-in-string/,/problems/smallest-range-covering-elements-from-k-lists/,/problems/minimum-window-subsequence/"
 Combinations,Medium,"Given two integers n and k, return all possible combinations of k numbers out of 1 ... n.
 Example:
 Input: n = 4, k = 2
@@ -1466,7 +1466,7 @@ Output: true
 
 Example 2:
 Input: s1 = ""abcde"", s2 = ""caebd""
-Output: false","String,Dynamic Programming",
+Output: false","Strings,Dynamic Programming",
 Merge Sorted Array,Easy,"Given two sorted integer arrays nums1 and nums2, merge nums2 into nums1 as one sorted array.
 Note:
 
@@ -1532,7 +1532,7 @@ Explanation: It could be decoded as ""AB"" (1 2) or ""L"" (12).
 Example 2:
 Input: ""226""
 Output: 3
-Explanation: It could be decoded as ""BZ"" (2 26), ""VF"" (22 6), or ""BBF"" (2 2 6).","String,Dynamic Programming",/problems/decode-ways-ii/
+Explanation: It could be decoded as ""BZ"" (2 26), ""VF"" (22 6), or ""BBF"" (2 2 6).","Strings,Dynamic Programming",/problems/decode-ways-ii/
 Reverse Linked List II,Medium,"Reverse a linked list from position m to n. Do it in one-pass.
 Note: 1 ≤ m ≤ n ≤ length of list.
 Example:
@@ -1541,7 +1541,7 @@ Output: 1->4->3->2->5->NULL",Linked List,/problems/reverse-linked-list/
 Restore IP Addresses,Medium,"Given a string containing only digits, restore it by returning all possible valid IP address combinations.
 Example:
 Input: ""25525511135""
-Output: [""255.255.11.135"", ""255.255.111.35""]","String,Backtracking",/problems/ip-to-cidr/
+Output: [""255.255.11.135"", ""255.255.111.35""]","Strings,Backtracking",/problems/ip-to-cidr/
 Binary Tree Inorder Traversal,Medium,"Given a binary tree, return the inorder traversal of its nodes' values.
 Example:
 Input: [1,null,2,3]
@@ -1591,7 +1591,7 @@ Output: true
 
 Example 2:
 Input: s1 = ""aabcc"", s2 = ""dbbca"", s3 = ""aadbbbaccc""
-Output: false","String,Dynamic Programming",
+Output: false","Strings,Dynamic Programming",
 Validate Binary Search Tree,Medium,"Given a binary tree, determine if it is a valid binary search tree (BST).
 Assume a BST is defined as follows:
 
@@ -1938,7 +1938,7 @@ babgbag
 babgbag
   ^  ^^
 babgbag
-    ^^^","String,Dynamic Programming",
+    ^^^","Strings,Dynamic Programming",
 Populating Next Right Pointers in Each Node,Medium,"You are given a perfect binary tree where all leaves are on the same level, and every parent has two children. The binary tree has the following definition:
 struct Node {
   int val;
@@ -2054,7 +2054,7 @@ Explanation: Buy on day 1 (price = 1) and sell on day 5 (price = 5), profit = 5-
 Example 3:
 Input: [7,6,4,3,1]
 Output: 0
-Explanation: In this case, no transaction is done, i.e. max profit = 0.","Array,Greedy","/problems/best-time-to-buy-and-sell-stock/,/problems/best-time-to-buy-and-sell-stock-iii/,/problems/best-time-to-buy-and-sell-stock-iv/,/problems/best-time-to-buy-and-sell-stock-with-cooldown/,/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/"
+Explanation: In this case, no transaction is done, i.e. max profit = 0.","Array,Greedy Algorithms","/problems/best-time-to-buy-and-sell-stock/,/problems/best-time-to-buy-and-sell-stock-iii/,/problems/best-time-to-buy-and-sell-stock-iv/,/problems/best-time-to-buy-and-sell-stock-with-cooldown/,/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/"
 Best Time to Buy and Sell Stock III,Hard,"Say you have an array for which the ith element is the price of a given stock on day i.
 Design an algorithm to find the maximum profit. You may complete at most two transactions.
 Note: You may not engage in multiple transactions at the same time (i.e., you must sell the stock before you buy again).
@@ -2103,7 +2103,7 @@ Output: true
 
 Example 2:
 Input: ""race a car""
-Output: false","Two Pointers,String","/problems/palindrome-linked-list/,/problems/valid-palindrome-ii/"
+Output: false","Two Pointers,Strings","/problems/palindrome-linked-list/,/problems/valid-palindrome-ii/"
 Word Ladder II,Hard,"Given two words (beginWord and endWord), and a dictionary's word list, find all shortest transformation sequence(s) from beginWord to endWord, such that:
 
 Only one letter can be changed at a time
@@ -2137,7 +2137,7 @@ wordList = [""hot"",""dot"",""dog"",""lot"",""log""]
 
 Output: []
 
-Explanation: The endWord ""cog"" is not in wordList, therefore no possible transformation.","Array,String,Backtracking,Breadth-first Search",/problems/word-ladder/
+Explanation: The endWord ""cog"" is not in wordList, therefore no possible transformation.","Array,Strings,Backtracking,Breadth-first Search",/problems/word-ladder/
 Word Ladder,Medium,"Given two words (beginWord and endWord), and a dictionary's word list, find the length of shortest transformation sequence from beginWord to endWord, such that:
 
 Only one letter can be changed at a time.
@@ -2293,7 +2293,7 @@ Let's start at station 2 and fill up with 4 unit of gas. Your tank = 0 + 4 = 4
 Travel to station 0. Your tank = 4 - 3 + 2 = 3
 Travel to station 1. Your tank = 3 - 3 + 3 = 3
 You cannot travel back to station 2, as it requires 4 unit of gas but you only have 3.
-Therefore, you can't travel around the circuit once no matter where you start.",Greedy,
+Therefore, you can't travel around the circuit once no matter where you start.",Greedy Algorithms,
 Candy,Hard,"There are N children standing in a line. Each child is assigned a rating value.
 You are giving candies to these children subjected to the following requirements:
 
@@ -2310,7 +2310,7 @@ Example 2:
 Input: [1,2,2]
 Output: 4
 Explanation: You can allocate to the first, second and third child with 1, 2, 1 candies respectively.
-             The third child gets 1 candy because it satisfies the above two conditions.",Greedy,
+             The third child gets 1 candy because it satisfies the above two conditions.",Greedy Algorithms,
 Single Number,Easy,"Given a non-empty array of integers, every element appears twice except for one. Find that single one.
 Note:
 Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?
@@ -2562,7 +2562,7 @@ Explanation:
 +------------------->
 0  1  2  3  4  5  6
 
-NOTE: input types have been changed on April 15, 2019. Please reset to default code definition to get new method signature.","Hash Table,Math",/problems/line-reflection/
+NOTE: input types have been changed on April 15, 2019. Please reset to default code definition to get new method signature.","Hash Table,Mathematics",/problems/line-reflection/
 Evaluate Reverse Polish Notation,Medium,"Evaluate the value of an arithmetic expression in Reverse Polish Notation.
 Valid operators are +, -, *, /. Each operand may be an integer or another expression.
 Note:
@@ -2616,7 +2616,7 @@ You need to reduce multiple spaces between two words to a single space in the re
 
  
 Follow up:
-For C programmers, try to solve it in-place in O(1) extra space.",String,/problems/reverse-words-in-a-string-ii/
+For C programmers, try to solve it in-place in O(1) extra space.",Strings,/problems/reverse-words-in-a-string-ii/
 Maximum Product Subarray,Medium,"Given an integer array nums, find the contiguous subarray within an array (containing at least one number) which has the largest product.
 Example 1:
 Input: [2,3,-2,4]
@@ -2760,7 +2760,7 @@ Explanation: The first version number does not have a third level revision numbe
 Note:
 
 Version strings are composed of numeric strings separated by dots . and this numeric strings may have leading zeroes. 
-Version strings do not start or end with dots, and they will not be two consecutive dots.",String,
+Version strings do not start or end with dots, and they will not be two consecutive dots.",Strings,
 Fraction to Recurring Decimal,Medium,"Given two integers representing the numerator and denominator of a fraction, return the fraction in string format.
 If the fractional part is repeating, enclose the repeating part in parentheses.
 Example 1:
@@ -2772,7 +2772,7 @@ Input: numerator = 2, denominator = 1
 Output: ""2""
 Example 3:
 Input: numerator = 2, denominator = 3
-Output: ""0.(6)""","Hash Table,Math",
+Output: ""0.(6)""","Hash Table,Mathematics",
 Two Sum II - Input array is sorted,Easy,"Given an array of integers that is already sorted in ascending order, find two numbers such that they add up to a specific target number.
 The function twoSum should return indices of the two numbers such that they add up to the target, where index1 must be less than index2.
 Note:
@@ -2805,7 +2805,7 @@ Output: ""AB""
 
 Example 3:
 Input: 701
-Output: ""ZY""",Math,/problems/excel-sheet-column-number/
+Output: ""ZY""",Mathematics,/problems/excel-sheet-column-number/
 Majority Element,Easy,"Given an array of size n, find the majority element. The majority element is the element that appears more than ⌊ n/2 ⌋ times.
 You may assume that the array is non-empty and the majority element always exist in the array.
 Example 1:
@@ -2835,7 +2835,7 @@ Output: 28
 
 Example 3:
 Input: ""ZY""
-Output: 701",Math,/problems/excel-sheet-column-title/
+Output: 701",Mathematics,/problems/excel-sheet-column-title/
 Factorial Trailing Zeroes,Easy,"Given an integer n, return the number of trailing zeroes in n!.
 Example 1:
 Input: 3
@@ -2845,7 +2845,7 @@ Example 2:
 Input: 5
 Output: 1
 Explanation: 5! = 120, one trailing zero.
-Note: Your solution should be in logarithmic time complexity.",Math,"/problems/number-of-digit-one/,/problems/preimage-size-of-factorial-zeroes-function/"
+Note: Your solution should be in logarithmic time complexity.",Mathematics,"/problems/number-of-digit-one/,/problems/preimage-size-of-factorial-zeroes-function/"
 Binary Search Tree Iterator,Medium,"Implement an iterator over a binary search tree (BST). Your iterator will be initialized with the root node of a BST.
 Calling next() will return the next smallest number in the BST.
  
@@ -3384,7 +3384,7 @@ Explanation:
 12 + 92 = 82
 82 + 22 = 68
 62 + 82 = 100
-12 + 02 + 02 = 1","Hash Table,Math","/problems/linked-list-cycle/,/problems/add-digits/,/problems/ugly-number/"
+12 + 02 + 02 = 1","Hash Table,Mathematics","/problems/linked-list-cycle/,/problems/add-digits/,/problems/ugly-number/"
 Remove Linked List Elements,Easy,"Remove all elements from a linked list of integers that have value val.
 Example:
 Input:  1->2->6->3->4->5->6, val = 6
@@ -3393,7 +3393,7 @@ Count Primes,Easy,"Count the number of prime numbers less than a non-negative nu
 Example:
 Input: 10
 Output: 4
-Explanation: There are 4 prime numbers less than 10, they are 2, 3, 5, 7.","Hash Table,Math","/problems/ugly-number/,/problems/ugly-number-ii/,/problems/perfect-squares/"
+Explanation: There are 4 prime numbers less than 10, they are 2, 3, 5, 7.","Hash Table,Mathematics","/problems/ugly-number/,/problems/ugly-number-ii/,/problems/perfect-squares/"
 Isomorphic Strings,Easy,"Given two strings s and t, determine if they are isomorphic.
 Two strings are isomorphic if the characters in s can be replaced to get t.
 All occurrences of a character must be replaced with another character while preserving the order of characters. No two characters may map to the same character but a character may map to itself.
@@ -3532,7 +3532,7 @@ Output: ""aaacecaaa""
 
 Example 2:
 Input: ""abcd""
-Output: ""dcbabcd""",String,"/problems/longest-palindromic-substring/,/problems/implement-strstr/,/problems/palindrome-pairs/"
+Output: ""dcbabcd""",Strings,"/problems/longest-palindromic-substring/,/problems/implement-strstr/,/problems/palindrome-pairs/"
 Kth Largest Element in an Array,Medium,"Find the kth largest element in an unsorted array. Note that it is the kth largest element in the sorted order, not the kth distinct element.
 Example 1:
 Input: [3,2,1,5,6,4] and k = 2
@@ -3639,7 +3639,7 @@ Example:
 Input: A = -3, B = 0, C = 3, D = 4, E = 0, F = -1, G = 9, H = 2
 Output: 45
 Note:
-Assume that the total area is never beyond the maximum possible value of int.",Math,/problems/rectangle-overlap/
+Assume that the total area is never beyond the maximum possible value of int.",Mathematics,/problems/rectangle-overlap/
 Basic Calculator,Hard,"Implement a basic calculator to evaluate a simple expression string.
 The expression string may contain open ( and closing parentheses ), the plus + or minus sign -, non-negative integers and empty spaces  .
 Example 1:
@@ -3655,7 +3655,7 @@ Output: 23
 Note:
 
 You may assume that the given expression is always valid.
-Do not use the eval built-in library function.","Math,Stack","/problems/evaluate-reverse-polish-notation/,/problems/basic-calculator-ii/,/problems/different-ways-to-add-parentheses/,/problems/expression-add-operators/,/problems/basic-calculator-iii/"
+Do not use the eval built-in library function.","Mathematics,Stack","/problems/evaluate-reverse-polish-notation/,/problems/basic-calculator-ii/,/problems/different-ways-to-add-parentheses/,/problems/expression-add-operators/,/problems/basic-calculator-iii/"
 Implement Stack using Queues,Easy,"Implement the following operations of a stack using queues.
 
 push(x) -- Push element x onto stack.
@@ -3709,7 +3709,7 @@ Output: 5
 Note:
 
 You may assume that the given expression is always valid.
-Do not use the eval built-in library function.",String,"/problems/basic-calculator/,/problems/expression-add-operators/,/problems/basic-calculator-iii/"
+Do not use the eval built-in library function.",Strings,"/problems/basic-calculator/,/problems/expression-add-operators/,/problems/basic-calculator-iii/"
 Summary Ranges,Medium,"Given a sorted integer array without duplicates, return the summary of its ranges.
 Example 1:
 Input:  [0,1,2,4,5,7]
@@ -3764,7 +3764,7 @@ Output: true
 Explanation: 24 = 16
 Example 3:
 Input: 218
-Output: false","Math,Bit Manipulation","/problems/number-of-1-bits/,/problems/power-of-three/,/problems/power-of-four/"
+Output: false","Mathematics,Bit Manipulation","/problems/number-of-1-bits/,/problems/power-of-three/,/problems/power-of-four/"
 Implement Queue using Stacks,Easy,"Implement the following operations of a queue using stacks.
 
 push(x) -- Push element x to the back of queue.
@@ -3789,7 +3789,7 @@ Number of Digit One,Hard,"Given an integer n, count the total number of digit 1 
 Example:
 Input: 13
 Output: 6 
-Explanation: Digit 1 occurred in the following numbers: 1, 10, 11, 12, 13.",Math,"/problems/factorial-trailing-zeroes/,/problems/digit-count-in-range/"
+Explanation: Digit 1 occurred in the following numbers: 1, 10, 11, 12, 13.",Mathematics,"/problems/factorial-trailing-zeroes/,/problems/digit-count-in-range/"
 Palindrome Linked List,Easy,"Given a singly linked list, determine if it is a palindrome.
 Example 1:
 Input: 1->2
@@ -3955,7 +3955,7 @@ Explanation: The process is like: 3 + 8 = 11, 1 + 1 = 2.
              Since 2 has only one digit, return it.
 
 Follow up:
-Could you do it without any loop/recursion in O(1) runtime?",Math,"/problems/happy-number/,/problems/sum-of-digits-in-the-minimum-number/"
+Could you do it without any loop/recursion in O(1) runtime?",Mathematics,"/problems/happy-number/,/problems/sum-of-digits-in-the-minimum-number/"
 Single Number III,Medium,"Given an array of numbers nums, in which exactly two elements appear only once and all the other elements appear exactly twice. Find the two elements that appear only once.
 Example:
 Input:  [1,2,1,3,2,5]
@@ -4025,7 +4025,7 @@ Explanation: 14 is not ugly since it includes another prime factor 7.
 Note:
 
 1 is typically treated as an ugly number.
-Input is within the 32-bit signed integer range: [−231,  231 − 1].",Math,"/problems/happy-number/,/problems/count-primes/,/problems/ugly-number-ii/"
+Input is within the 32-bit signed integer range: [−231,  231 − 1].",Mathematics,"/problems/happy-number/,/problems/count-primes/,/problems/ugly-number-ii/"
 Ugly Number II,Medium,"Write a program to find the n-th ugly number.
 Ugly numbers are positive numbers whose prime factors only include 2, 3, 5. 
 Example:
@@ -4035,7 +4035,7 @@ Explanation: 1, 2, 3, 4, 5, 6, 8, 9, 10, 12 is the sequence of the first 10 ugly
 Note:  
 
 1 is typically treated as an ugly number.
-n does not exceed 1690.","Math,Dynamic Programming,Heap","/problems/merge-k-sorted-lists/,/problems/count-primes/,/problems/ugly-number/,/problems/perfect-squares/,/problems/super-ugly-number/,/problems/ugly-number-iii/"
+n does not exceed 1690.","Mathematics,Dynamic Programming,Heap","/problems/merge-k-sorted-lists/,/problems/count-primes/,/problems/ugly-number/,/problems/perfect-squares/,/problems/super-ugly-number/,/problems/ugly-number-iii/"
 Missing Number,Easy,"Given an array containing n distinct numbers taken from 0, 1, 2, ..., n, find the one that is missing from the array.
 Example 1:
 Input: [3,0,1]
@@ -4046,7 +4046,7 @@ Input: [9,6,4,2,3,5,7,0,1]
 Output: 8
 
 Note:
-Your algorithm should run in linear runtime complexity. Could you implement it using only constant extra space complexity?","Array,Math,Bit Manipulation","/problems/first-missing-positive/,/problems/single-number/,/problems/find-the-duplicate-number/,/problems/couples-holding-hands/"
+Your algorithm should run in linear runtime complexity. Could you implement it using only constant extra space complexity?","Array,Mathematics,Bit Manipulation","/problems/first-missing-positive/,/problems/single-number/,/problems/find-the-duplicate-number/,/problems/couples-holding-hands/"
 Integer to English Words,Hard,"Convert a non-negative integer to its english words representation. Given input is guaranteed to be less than 231 - 1.
 Example 1:
 Input: 123
@@ -4061,7 +4061,7 @@ Output: ""One Million Two Hundred Thirty Four Thousand Five Hundred Sixty Seven"
 
 Example 4:
 Input: 1234567891
-Output: ""One Billion Two Hundred Thirty Four Million Five Hundred Sixty Seven Thousand Eight Hundred Ninety One""","Math,String",/problems/integer-to-roman/
+Output: ""One Billion Two Hundred Thirty Four Million Five Hundred Sixty Seven Thousand Eight Hundred Ninety One""","Mathematics,Strings",/problems/integer-to-roman/
 H-Index,Medium,"Given an array of citations (each citation is a non-negative integer) of a researcher, write a function to compute the researcher's h-index.
 According to the definition of h-index on Wikipedia: ""A scientist has index h if h of his/her N papers have at least h citations each, and the other N − h papers have no more than h citations each.""
 Example:
@@ -4106,7 +4106,7 @@ Explanation: 12 = 4 + 4 + 4.
 Example 2:
 Input: n = 13
 Output: 2
-Explanation: 13 = 4 + 9.","Math,Dynamic Programming,Breadth-first Search","/problems/count-primes/,/problems/ugly-number-ii/"
+Explanation: 13 = 4 + 9.","Mathematics,Dynamic Programming,Breadth-first Search","/problems/count-primes/,/problems/ugly-number-ii/"
 Expression Add Operators,Hard,"Given a string that contains only digits 0-9 and a target value, return all possibilities to add binary operators (not unary) +, -, or * between the digits so they evaluate to the target value.
 Example 1:
 Input: num = ""123"", target = 6
@@ -4428,7 +4428,7 @@ Note:
 1 is a super ugly number for any given primes.
 The given numbers in primes are in ascending order.
 0 < k ≤ 100, 0 < n ≤ 106, 0 < primes[i] < 1000.
-The nth super ugly number is guaranteed to fit in a 32-bit signed integer.","Math,Heap",/problems/ugly-number-ii/
+The nth super ugly number is guaranteed to fit in a 32-bit signed integer.","Mathematics,Heap",/problems/ugly-number-ii/
 Count of Smaller Numbers After Self,Hard,"You are given an integer array nums and you have to return a new counts array. The counts array has the property where counts[i] is the number of smaller elements to the right of nums[i].
 Example:
 Input: [5,2,6,1]
@@ -4445,7 +4445,7 @@ Output: ""abc""
 
 Example 2:
 Input: ""cbacdcbc""
-Output: ""acdb""","Stack,Greedy",
+Output: ""acdb""","Stack,Greedy Algorithms",
 Maximum Product of Word Lengths,Medium,"Given a string array words, find the maximum value of length(word[i]) * length(word[j]) where the two words do not share common letters. You may assume that each word will contain only lower case letters. If no such two words exist, return 0.
 Example 1:
 Input: [""abcw"",""baz"",""foo"",""bar"",""xtfn"",""abcdef""]
@@ -4469,7 +4469,7 @@ After first round, the three bulbs are [on, on, on].
 After second round, the three bulbs are [on, off, on].
 After third round, the three bulbs are [on, off, off]. 
 
-So you should return 1, because there is only one bulb is on.","Math,Brainteaser","/problems/bulb-switcher-ii/,/problems/minimum-number-of-k-consecutive-bit-flips/"
+So you should return 1, because there is only one bulb is on.","Mathematics,Brainteaser","/problems/bulb-switcher-ii/,/problems/minimum-number-of-k-consecutive-bit-flips/"
 Create Maximum Number,Hard,"Given two arrays of length m and n with digits 0-9 representing two numbers. Create the maximum number of length k <= m + n from digits of the two. The relative order of the digits from the same array must be preserved. Return an array of the k digits.
 Note: You should try to optimize your time and space complexity.
 Example 1:
@@ -4492,7 +4492,7 @@ nums1 = [3, 9]
 nums2 = [8, 9]
 k = 3
 Output:
-[9, 8, 9]","Dynamic Programming,Greedy","/problems/remove-k-digits/,/problems/maximum-swap/"
+[9, 8, 9]","Dynamic Programming,Greedy Algorithms","/problems/remove-k-digits/,/problems/maximum-swap/"
 Coin Change,Medium,"You are given coins of different denominations and a total amount of money amount. Write a function to compute the fewest number of coins that you need to make up that amount. If that amount of money cannot be made up by any combination of the coins, return -1.
 Example 1:
 Input: coins = [1, 2, 5], amount = 11
@@ -4530,7 +4530,7 @@ Example 4:
 Input: 45
 Output: false
 Follow up:
-Could you do it without using any loop / recursion?",Math,"/problems/power-of-two/,/problems/power-of-four/"
+Could you do it without using any loop / recursion?",Mathematics,"/problems/power-of-two/,/problems/power-of-four/"
 Count of Range Sum,Hard,"Given an integer array nums, return the number of range sums that lie in [lower, upper] inclusive.
 Range sum S(i, j) is defined as the sum of the elements in nums between indices i and j (i ≤ j), inclusive.
 Note:
@@ -4590,7 +4590,7 @@ Explanation: The two patches can be [2, 4].
 
 Example 3:
 Input: nums = [1,2,2], n = 5
-Output: 0",Greedy,
+Output: 0",Greedy Algorithms,
 Verify Preorder Serialization of a Binary Tree,Medium,"One way to serialize a binary tree is to use pre-order traversal. When we encounter a non-null node, we record the node's value. If it is a null node, we record using a sentinel value such as #.
      _9_
     /   \
@@ -4672,7 +4672,7 @@ Example 3:
 └───┼>
 
 Input: [1,1,1,1]
-Output: true",Math,
+Output: true",Mathematics,
 Palindrome Pairs,Hard,"Given a list of unique words, find all pairs of distinct indices (i, j) in the given list, so that the concatenation of the two words, i.e. words[i] + words[j] is a palindrome.
 Example 1:
 
@@ -4684,7 +4684,7 @@ Explanation: The palindromes are [""dcbaabcd"",""abcddcba"",""slls"",""llssssll"
 Example 2:
 Input: [""bat"",""tab"",""cat""]
 Output: [[0,1],[1,0]] 
-Explanation: The palindromes are [""battab"",""tabbat""]","Hash Table,String,Trie","/problems/longest-palindromic-substring/,/problems/shortest-palindrome/"
+Explanation: The palindromes are [""battab"",""tabbat""]","Hash Table,Strings,Trie","/problems/longest-palindromic-substring/,/problems/shortest-palindrome/"
 House Robber III,Medium,"The thief has found himself a new place for his thievery again. There is only one entrance to this area, called the ""root."" Besides the root, each house has one and only one parent house. After a tour, the smart thief realized that ""all houses in this place forms a binary tree"". It will automatically contact the police if two directly-linked houses were broken into on the same night.
 Determine the maximum amount of money the thief can rob tonight without alerting the police.
 Example 1:
@@ -4758,7 +4758,7 @@ Example 2:
 Input: 10
 Output: 36
 Explanation: 10 = 3 + 3 + 4, 3 × 3 × 4 = 36.
-Note: You may assume that n is not less than 2 and not larger than 58.","Math,Dynamic Programming",
+Note: You may assume that n is not less than 2 and not larger than 58.","Mathematics,Dynamic Programming",
 Reverse String,Easy,"Write a function that reverses a string. The input string is given as an array of characters char[].
 Do not allocate extra space for another array, you must do this by modifying the input array in-place with O(1) extra memory.
 You may assume all the characters consist of printable ascii characters.
@@ -4771,7 +4771,7 @@ Output: [""o"",""l"",""l"",""e"",""h""]
 
 Example 2:
 Input: [""H"",""a"",""n"",""n"",""a"",""h""]
-Output: [""h"",""a"",""n"",""n"",""a"",""H""]","Two Pointers,String","/problems/reverse-vowels-of-a-string/,/problems/reverse-string-ii/"
+Output: [""h"",""a"",""n"",""n"",""a"",""H""]","Two Pointers,Strings","/problems/reverse-vowels-of-a-string/,/problems/reverse-string-ii/"
 Reverse Vowels of a String,Easy,"Write a function that takes a string as input and reverse only the vowels of a string.
 Example 1:
 Input: ""hello""
@@ -4783,7 +4783,7 @@ Input: ""leetcode""
 Output: ""leotcede""
 
 Note:
-The vowels does not include the letter ""y"".","Two Pointers,String","/problems/reverse-string/,/problems/remove-vowels-from-a-string/"
+The vowels does not include the letter ""y"".","Two Pointers,Strings","/problems/reverse-string/,/problems/remove-vowels-from-a-string/"
 Top K Frequent Elements,Medium,"Given a non-empty array of integers, return the k most frequent elements.
 Example 1:
 Input: nums = [1,1,1,2,2,3], k = 2
@@ -4892,7 +4892,7 @@ Example:
 Input: 2
 Output: 91 
 Explanation: The answer should be the total numbers in the range of 0 ≤ x < 100, 
-             excluding 11,22,33,44,55,66,77,88,99","Math,Dynamic Programming,Backtracking",
+             excluding 11,22,33,44,55,66,77,88,99","Mathematics,Dynamic Programming,Backtracking",
 Max Sum of Rectangle No Larger Than K,Hard,"Given a non-empty 2D matrix matrix and an integer k, find the max sum of a rectangle in the matrix such that its sum is no larger than k.
 Example:
 Input: matrix = [[1,0,1],[0,-2,3]], k = 2
@@ -4917,7 +4917,7 @@ Output: True
 
 Example 2:
 Input: x = 2, y = 6, z = 5
-Output: False",Math,
+Output: False",Mathematics,
 Valid Perfect Square,Easy,"Given a positive integer num, write a function which returns True if num is a perfect square else False.
 Note: Do not use any built-in library function such as sqrt.
 Example 1:
@@ -4928,7 +4928,7 @@ Output: true
 
 Example 2:
 Input: 14
-Output: false","Math,Binary Search","/problems/sqrtx/,/problems/sum-of-square-numbers/"
+Output: false","Mathematics,Binary Search","/problems/sqrtx/,/problems/sum-of-square-numbers/"
 Largest Divisible Subset,Medium,"Given a set of distinct positive integers, find the largest subset such that every pair (Si, Sj) of elements in this subset satisfies:
 Si % Sj = 0 or Sj % Si = 0.
 If there are multiple solutions, return any subset is fine.
@@ -4940,7 +4940,7 @@ Output: [1,2] (of course, [1,3] will also be ok)
 
 Example 2:
 Input: [1,2,4,8]
-Output: [1,2,4,8]","Math,Dynamic Programming",
+Output: [1,2,4,8]","Mathematics,Dynamic Programming",
 Sum of Two Integers,Easy,"Calculate the sum of two integers a and b, but you are not allowed to use the operator + and -.
 
 Example 1:
@@ -4960,7 +4960,7 @@ Output: 8
 
 Example 2:
 Input: a = 2, b = [1,0]
-Output: 1024",Math,/problems/powx-n/
+Output: 1024",Mathematics,/problems/powx-n/
 Find K Pairs with Smallest Sums,Medium,"You are given two integer arrays nums1 and nums2 sorted in ascending order and an integer k.
 Define a pair (u,v) which consists of one element from the first array and one element from the second array.
 Find the k pairs (u1,v1),(u2,v2) ...(uk,vk) with the smallest sums.
@@ -5023,7 +5023,7 @@ Example 3:
 Input: [1,2,3,4,5,6,7,8,9]
 Output: 2
 Follow up:
-Can you do it in O(n) time?","Dynamic Programming,Greedy",
+Can you do it in O(n) time?","Dynamic Programming,Greedy Algorithms",
 Combination Sum IV,Medium,"Given an integer array with all positive numbers and no duplicates, find the number of possible combinations that add up to a positive integer target.
 Example:
 nums = [1, 2, 3]
@@ -5152,7 +5152,7 @@ You may assume that both strings contain only lowercase letters.
 
 canConstruct(""a"", ""b"") -> false
 canConstruct(""aa"", ""ab"") -> false
-canConstruct(""aa"", ""aab"") -> true",String,/problems/stickers-to-spell-word/
+canConstruct(""aa"", ""aab"") -> true",Strings,/problems/stickers-to-spell-word/
 Shuffle an Array,Medium,"Shuffle a set of numbers without duplicates.
 
 Example:
@@ -5193,7 +5193,7 @@ Return a NestedInteger object containing a nested list with 2 elements:
 2. A nested list containing two elements:
     i.  An integer containing value 456.
     ii. A nested list with one element:
-         a. An integer containing value 789.","String,Stack","/problems/flatten-nested-list-iterator/,/problems/ternary-expression-parser/,/problems/remove-comments/"
+         a. An integer containing value 789.","Strings,Stack","/problems/flatten-nested-list-iterator/,/problems/ternary-expression-parser/,/problems/remove-comments/"
 Lexicographical Numbers,Medium,"Given an integer n, return 1 - n in lexicographical order.
 For example, given 13, return: [1,10,11,12,13,2,3,4,5,6,7,8,9].
 Please optimize your algorithm to use less time and space. The input size may be as large as 5,000,000.",,
@@ -5208,7 +5208,7 @@ return 2.
 
 
 
-Note: You may assume the string contain only lowercase letters.","Hash Table,String",/problems/sort-characters-by-frequency/
+Note: You may assume the string contain only lowercase letters.","Hash Table,Strings",/problems/sort-characters-by-frequency/
 Longest Absolute File Path,Medium,"Suppose we abstract our file system by a string in the following manner:
 The string ""dir\n\tsubdir1\n\tsubdir2\n\t\tfile.ext"" represents:
 dir
@@ -5338,7 +5338,7 @@ Return false.
 
 Follow up:
 If there are lots of incoming S, say S1, S2, ... , Sk where k >= 1B, and you want to check one by one to see if T has its subsequence. In this scenario, how would you change your code?
-Credits:Special thanks to @pbrother for adding this problem and creating all test cases.","Binary Search,Dynamic Programming,Greedy","/problems/number-of-matching-subsequences/,/problems/shortest-way-to-form-string/"
+Credits:Special thanks to @pbrother for adding this problem and creating all test cases.","Binary Search,Dynamic Programming,Greedy Algorithms","/problems/number-of-matching-subsequences/,/problems/shortest-way-to-form-string/"
 UTF-8 Validation,Medium,"A character in UTF8 can be from 1 to 4 bytes long, subjected to the following rules:
 
 For 1-byte character, the first bit is a 0, followed by its unicode code.
@@ -5424,7 +5424,7 @@ F(1) = (0 * 6) + (1 * 4) + (2 * 3) + (3 * 2) = 0 + 4 + 6 + 6 = 16
 F(2) = (0 * 2) + (1 * 6) + (2 * 4) + (3 * 3) = 0 + 6 + 8 + 9 = 23
 F(3) = (0 * 3) + (1 * 2) + (2 * 6) + (3 * 4) = 0 + 2 + 12 + 12 = 26
 
-So the maximum value of F(0), F(1), F(2), F(3) is F(3) = 26.",Math,
+So the maximum value of F(0), F(1), F(2), F(3) is F(3) = 26.",Mathematics,
 Integer Replacement,Medium,"Given a positive integer n and you can do operations as follow:
 
 
@@ -5458,7 +5458,7 @@ Output:
 Explanation:
 7 -> 8 -> 4 -> 2 -> 1
 or
-7 -> 6 -> 3 -> 2 -> 1","Math,Bit Manipulation",
+7 -> 6 -> 3 -> 2 -> 1","Mathematics,Bit Manipulation",
 Random Pick Index,Medium,"Given an array of integers with possible duplicates, randomly output the index of a given target number. You can assume that the given target number must exist in the array.
 Note:
 The array size can be very large. Solution that uses too much extra space will not pass the judge.
@@ -5503,7 +5503,7 @@ Output:
 0
 
 Explanation:
-The 11th digit of the sequence 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, ... is a 0, which is part of the number 10.",Math,
+The 11th digit of the sequence 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, ... is a 0, which is part of the number 10.",Mathematics,
 Binary Watch,Easy,"A binary watch has 4 LEDs on the top which represent the hours (0-11), and the 6 LEDs on the bottom represent the minutes (0-59).
 Each LED represents a zero or one, with the least significant bit on the right.
 
@@ -5540,7 +5540,7 @@ Explanation: Remove the leading 1 and the number is 200. Note that the output mu
 Example 3:
 Input: num = ""10"", k = 2
 Output: ""0""
-Explanation: Remove all the digits from the number and it is left with nothing which is 0.","Stack,Greedy","/problems/create-maximum-number/,/problems/monotone-increasing-digits/"
+Explanation: Remove all the digits from the number and it is left with nothing which is 0.","Stack,Greedy Algorithms","/problems/create-maximum-number/,/problems/monotone-increasing-digits/"
 Frog Jump,Hard,"A frog is crossing a river. The river is divided into x units and at each unit there may or may not exist a stone. The frog can jump on a stone, but it must not jump into the water.
 Given a list of stones' positions (in units) in sorted ascending order, determine if the frog is able to cross the river by landing on the last stone. Initially, the frog is on the first stone and assume the first jump must be 1 unit.
 
@@ -5614,7 +5614,7 @@ Input:
 [[7,0], [4,4], [7,1], [5,0], [6,1], [5,2]]
 
 Output:
-[[5,0], [7,0], [5,2], [6,1], [4,4], [7,1]]",Greedy,/problems/count-of-smaller-numbers-after-self/
+[[5,0], [7,0], [5,2], [6,1], [4,4], [7,1]]",Greedy Algorithms,/problems/count-of-smaller-numbers-after-self/
 Trapping Rain Water II,Hard,"Given an m x n matrix of positive integers representing the height of each unit cell in a 2D elevation map, compute the volume of water it is able to trap after raining.
  
 Note:
@@ -5708,7 +5708,7 @@ The function should return the number of arithmetic slices in the array A.
 Example:
 A = [1, 2, 3, 4]
 
-return: 3, for 3 arithmetic slices in A: [1, 2, 3], [2, 3, 4] and [1, 2, 3, 4] itself.","Math,Dynamic Programming",/problems/arithmetic-slices-ii-subsequence/
+return: 3, for 3 arithmetic slices in A: [1, 2, 3], [2, 3, 4] and [1, 2, 3, 4] itself.","Mathematics,Dynamic Programming",/problems/arithmetic-slices-ii-subsequence/
 Third Maximum Number,Easy,"Given a non-empty array of integers, return the third maximum number in this array. If it does not exist, return the maximum number. The time complexity must be in O(n).
 Example 1:
 Input: [3, 2, 1]
@@ -5739,7 +5739,7 @@ Note:
 The length of both num1 and num2 is < 5100.
 Both num1 and num2 contains only digits 0-9.
 Both num1 and num2 does not contain any leading zero.
-You must not use any built-in BigInteger library or convert the inputs to integer directly.",String,"/problems/add-two-numbers/,/problems/multiply-strings/,/problems/add-to-array-form-of-integer/"
+You must not use any built-in BigInteger library or convert the inputs to integer directly.",Strings,"/problems/add-two-numbers/,/problems/multiply-strings/,/problems/add-to-array-form-of-integer/"
 Partition Equal Subset Sum,Medium,"Given a non-empty array containing only positive integers, find if the array can be partitioned into two subsets such that the sum of elements in both subsets is equal.
 Note:
 
@@ -5840,7 +5840,7 @@ Output: ""012""
 Example 2:
 Input: ""fviefuro""
 
-Output: ""45""",Math,
+Output: ""45""",Mathematics,
 Longest Repeating Character Replacement,Medium,"Given a string s that consists of only uppercase English letters, you can perform at most k operations on that string.
 In one operation, you can choose any character of the string and change it to any other uppercase English character.
 Find the length of the longest sub-string containing all repeating letters you can get after performing the above operations.
@@ -5968,7 +5968,7 @@ Number of Segments in a String,Easy,"Count the number of segments in a string, w
 Please note that the string does not contain any non-printable characters.
 Example:
 Input: ""Hello, my name is John""
-Output: 5",String,
+Output: 5",Strings,
 Non-overlapping Intervals,Medium,"Given a collection of intervals, find the minimum number of intervals you need to remove to make the rest of the intervals non-overlapping.
 
 
@@ -5992,7 +5992,7 @@ Explanation: You don't need to remove any of the intervals since they're already
 Note:
 
 You may assume the interval's end point is always bigger than its start point.
-Intervals like [1,2] and [2,3] have borders ""touching"" but they don't overlap each other.",Greedy,/problems/minimum-number-of-arrows-to-burst-balloons/
+Intervals like [1,2] and [2,3] have borders ""touching"" but they don't overlap each other.",Greedy Algorithms,/problems/minimum-number-of-arrows-to-burst-balloons/
 Find Right Interval,Medium,"Given a set of intervals, for each of the interval i, check if there exists an interval j whose start point is bigger than or equal to the end point of the interval i, which can be called that j is on the ""right"" of i.
 For any interval i, you need to store the minimum interval j's index, which means that the interval j has the minimum start point to build the ""right"" relationship for interval i. If the interval j doesn't exist, store -1 for the interval i. Finally, you need output the stored value of each interval as an array.
 Note:
@@ -6110,7 +6110,7 @@ The coins can form the following rows:
 ¤ ¤ ¤
 ¤ ¤
 
-Because the 4th row is incomplete, we return 3.","Math,Binary Search",
+Because the 4th row is incomplete, we return 3.","Mathematics,Binary Search",
 Find All Duplicates in an Array,Medium,"Given an array of integers, 1 ≤ a[i] ≤ n (n = size of array), some elements appear twice and others appear once.
 Find all the elements that appear twice in this array.
 Could you do it without extra space and in O(n) runtime?
@@ -6168,7 +6168,7 @@ Notice each digit has it's own entry in the array.
 Note:
 
 All characters have an ASCII value in [35, 126].
-1 <= len(chars) <= 1000.",String,"/problems/count-and-say/,/problems/encode-and-decode-strings/,/problems/design-compressed-string-iterator/"
+1 <= len(chars) <= 1000.",Strings,"/problems/count-and-say/,/problems/encode-and-decode-strings/,/problems/design-compressed-string-iterator/"
 Add Two Numbers II,Medium,"You are given two non-empty linked lists representing two non-negative integers. The most significant digit comes first and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.
 You may assume the two numbers do not contain any leading zero, except the number 0 itself.
 Follow up:
@@ -6311,7 +6311,7 @@ Output:
 2
 
 Explanation:
-One way is to shoot one arrow for example at x = 6 (bursting the balloons [2,8] and [1,6]) and another arrow at x = 11 (bursting the other two balloons).",Greedy,"/problems/meeting-rooms-ii/,/problems/non-overlapping-intervals/"
+One way is to shoot one arrow for example at x = 6 (bursting the balloons [2,8] and [1,6]) and another arrow at x = 11 (bursting the other two balloons).",Greedy Algorithms,"/problems/meeting-rooms-ii/,/problems/non-overlapping-intervals/"
 Minimum Moves to Equal Array Elements,Easy,"Given a non-empty integer array of size n, find the minimum number of moves required to make all array elements equal, where a move is incrementing n - 1 elements by 1.
 Example:
 Input:
@@ -6323,7 +6323,7 @@ Output:
 Explanation:
 Only three moves are needed (remember each move increments two elements):
 
-[1,2,3]  =>  [2,3,3]  =>  [3,4,3]  =>  [4,4,4]",Math,/problems/minimum-moves-to-equal-array-elements-ii/
+[1,2,3]  =>  [2,3,3]  =>  [3,4,3]  =>  [4,4,4]",Mathematics,/problems/minimum-moves-to-equal-array-elements-ii/
 4Sum II,Medium,"Given four lists A, B, C, D of integer values, compute how many tuples (i, j, k, l) there are such that A[i] + B[j] + C[k] + D[l] is zero.
 To make problem a bit easier, all A, B, C, D have same length of N where 0 ≤ N ≤ 500. All integers are in the range of -228 to 228 - 1 and the result is guaranteed to be at most 231 - 1.
 Example:
@@ -6363,7 +6363,7 @@ Output: 2
 
 Explanation: You have 2 children and 3 cookies. The greed factors of 2 children are 1, 2. 
 You have 3 cookies and their sizes are big enough to gratify all of the children, 
-You need to output 2.",Greedy,
+You need to output 2.",Greedy Algorithms,
 132 Pattern,Medium,"Given a sequence of n integers a1, a2, ..., an, a 132 pattern is a subsequence ai, aj, ak such
 that i < j < k and ai < ak < aj. Design an algorithm that takes a list of n numbers as input and checks whether there is a 132 pattern in the list.
 Note: n will be less than 15,000.
@@ -6426,7 +6426,7 @@ Note:
 
 A pig can be allowed to drink simultaneously on as many buckets as one would like, and the feeding takes no time.
 After a pig has instantly finished drinking buckets, there has to be a cool down time of m minutes. During this time, only observation is allowed and no feedings at all.
-Any given bucket can be sampled an infinite number of times (by an unlimited number of pigs).",Math,
+Any given bucket can be sampled an infinite number of times (by an unlimited number of pigs).",Mathematics,
 Repeated Substring Pattern,Easy,"Given a non-empty string check if it can be constructed by taking a substring of it and appending multiple copies of the substring together. You may assume the given string consists of lowercase English letters only and its length will not exceed 10000.
  
 Example 1:
@@ -6441,7 +6441,7 @@ Output: False
 Example 3:
 Input: ""abcabcabcabc""
 Output: True
-Explanation: It's the substring ""abc"" four times. (And the substring ""abcabc"" twice.)",String,"/problems/implement-strstr/,/problems/repeated-string-match/"
+Explanation: It's the substring ""abc"" four times. (And the substring ""abcabc"" twice.)",Strings,"/problems/implement-strstr/,/problems/repeated-string-match/"
 LFU Cache,Hard,"Design and implement a data structure for Least Frequently Used (LFU) cache. It should support the following operations: get and put.
 get(key) - Get the value (will always be positive) of the key if the key exists in the cache, otherwise return -1.
 put(key, value) - Set or insert the value if the key is not already present. When the cache reaches its capacity, it should invalidate the least frequently used item before inserting a new item. For the purpose of this problem, when there is a tie (i.e., two or more keys that have the same frequency), the least recently used key would be evicted.
@@ -6491,7 +6491,7 @@ Output:
 Explanation:
 Only two moves are needed (remember each move increments or decrements one element):
 
-[1,2,3]  =>  [2,2,3]  =>  [2,2,2]",Math,"/problems/best-meeting-point/,/problems/minimum-moves-to-equal-array-elements/"
+[1,2,3]  =>  [2,2,3]  =>  [2,2,2]",Mathematics,"/problems/best-meeting-point/,/problems/minimum-moves-to-equal-array-elements/"
 Island Perimeter,Easy,"You are given a map in form of a two-dimensional integer grid where 1 represents land and 0 represents water.
 Grid cells are connected horizontally/vertically (not diagonally). The grid is completely surrounded by water, and there is exactly one island (i.e., one or more connected land cells).
 The island doesn't have ""lakes"" (water inside that isn't connected to the water around the island). One cell is a square with side length 1. The grid is rectangular, width and height don't exceed 100. Determine the perimeter of the island.
@@ -6597,7 +6597,7 @@ Input: ""256.256.256.256""
 
 Output: ""Neither""
 
-Explanation: This is neither a IPv4 address nor a IPv6 address.",String,/problems/ip-to-cidr/
+Explanation: This is neither a IPv4 address nor a IPv6 address.",Strings,/problems/ip-to-cidr/
 Implement Rand10() Using Rand7(),Medium,"Given a function rand7 which generates a uniform random integer in the range 1 to 7, write a function rand10 which generates a uniform random integer in the range 1 to 10.
 Do NOT use system's Math.random().
 
@@ -6765,7 +6765,7 @@ Input:
 Output: [null,[11.52438,-8.33273],[2.46992,-16.21705],[11.13430,-12.42337]]
 
 Explanation of Input Syntax:
-The input is two lists: the subroutines called and their arguments. Solution's constructor has three arguments, the radius, x-position of the center, and y-position of the center of the circle. randPoint has no arguments. Arguments are always wrapped with a list, even if there aren't any.","Math,Random,Rejection Sampling",/problems/random-point-in-non-overlapping-rectangles/
+The input is two lists: the subroutines called and their arguments. Solution's constructor has three arguments, the radius, x-position of the center, and y-position of the center of the circle. randPoint has no arguments. Arguments are always wrapped with a list, even if there aren't any.","Mathematics,Random,Rejection Sampling",/problems/random-point-in-non-overlapping-rectangles/
 Largest Palindrome Product,Hard,"Find the largest palindrome made from the product of two n-digit numbers.
 Since the result could be very large, you should return the largest palindrome mod 1337.
  
@@ -6877,7 +6877,7 @@ Explanation: 1000000000000000000 base 999999999999999999 is 11.
 Note:
 
 The range of n is [3, 10^18].
-The string representing n is always valid and will not have leading zeros.","Math,Binary Search",
+The string representing n is always valid and will not have leading zeros.","Mathematics,Binary Search",
 Max Consecutive Ones,Easy,"Given a binary array, find the maximum number of consecutive 1s in this array.
 Example 1:
 Input: [1,1,0,1,1,1]
@@ -7162,7 +7162,7 @@ Note:
 
 You may assume all numbers in the input are non-negative integers.
 The length of Profits array and Capital array will not exceed 50,000.
-The answer is guaranteed to fit in a 32-bit signed integer.","Heap,Greedy",
+The answer is guaranteed to fit in a 32-bit signed integer.","Heap,Greedy Algorithms",
 Next Greater Element II,Medium,"Given a circular array (the next element of the last element is the first element of the array), print the Next Greater Number for every element. The Next Greater Number of a number x is the first greater number to its traversing-order next in the array, which means you could search circularly to find its next greater number. If it doesn't exist, output -1 for this number.
 
 Example 1:
@@ -7208,7 +7208,7 @@ Explanation: 28 = 1 + 2 + 4 + 7 + 14
 
 
 Note:
-The input number n will not exceed 100,000,000. (1e8)",Math,/problems/self-dividing-numbers/
+The input number n will not exceed 100,000,000. (1e8)",Mathematics,/problems/self-dividing-numbers/
 Most Frequent Subtree Sum,Medium,"Given the root of a tree, you are asked to find the most frequent subtree sum. The subtree sum of a node is defined as the sum of all the node values formed by the subtree rooted at that node (including the node itself). So what is the most frequent subtree sum value? If there is a tie, return all the values with the highest frequency in any order.
 
 Examples 1
@@ -7373,7 +7373,7 @@ It's impossible to make all the three washing machines have the same number of d
 Note:
 
 The range of n is [1, 10000].
-The range of dresses number in a super washing machine is [0, 1e5].","Math,Dynamic Programming",
+The range of dresses number in a super washing machine is [0, 1e5].","Mathematics,Dynamic Programming",
 Coin Change 2,Medium,"You are given coins of different denominations and a total amount of money. Write a function to compute the number of combinations that make up that amount. You may assume that you have infinite number of each kind of coin.
 
 
@@ -7447,7 +7447,7 @@ Input: ""FlaG""
 Output: False
 
  
-Note: The input will be a non-empty word consisting of uppercase and lowercase latin letters.",String,
+Note: The input will be a non-empty word consisting of uppercase and lowercase latin letters.",Strings,
 Longest Uncommon Subsequence I,Easy,"Given a group of two strings, you need to find the longest uncommon subsequence of this group of two strings.
 The longest uncommon subsequence is defined as the longest subsequence of one of these strings and this subsequence should not be any subsequence of the other strings.
 
@@ -7466,7 +7466,7 @@ Explanation: The longest uncommon subsequence is ""aba"" (or ""cdc""), because "
 Note:
 
 Both strings' lengths will not exceed 100.
-Only letters from a ~ z will appear in input strings.",String,/problems/longest-uncommon-subsequence-ii/
+Only letters from a ~ z will appear in input strings.",Strings,/problems/longest-uncommon-subsequence-ii/
 Longest Uncommon Subsequence II,Medium,"Given a list of strings, you need to find the longest uncommon subsequence among them. The longest uncommon subsequence is defined as the longest subsequence of one of these strings and this subsequence should not be any subsequence of the other strings.
 
 
@@ -7483,7 +7483,7 @@ Output: 3
 Note:
 
 All the given strings' lengths will not exceed 10.
-The length of the given list will be in the range of [2, 50].",String,/problems/longest-uncommon-subsequence-i/
+The length of the given list will be in the range of [2, 50].",Strings,/problems/longest-uncommon-subsequence-i/
 Continuous Subarray Sum,Medium,"Given a list of non-negative numbers and a target integer k, write a function to check if the array has a continuous subarray of size at least 2 that sums up to a multiple of k, that is, sums up to n*k where n is also an integer.
  
 Example 1:
@@ -7500,7 +7500,7 @@ Explanation: Because [23, 2, 6, 4, 7] is an continuous subarray of size 5 and su
 Note:
 
 The length of the array won't exceed 10,000.
-You may assume the sum of all the numbers is in the range of a signed 32-bit integer.","Math,Dynamic Programming",/problems/subarray-sum-equals-k/
+You may assume the sum of all the numbers is in the range of a signed 32-bit integer.","Mathematics,Dynamic Programming",/problems/subarray-sum-equals-k/
 Longest Word in Dictionary through Deleting,Medium,"Given a string and a string dictionary, find the longest string in the dictionary that can be formed by deleting some characters of the given string. If there are more than one possible results, return the longest word with the smallest lexicographical order. If there is no possible result, return the empty string.
 
 Example 1:
@@ -7692,7 +7692,7 @@ The length of the array won't exceed 10,000.
 All the integers in the given input belong to the range: [-1e7, 1e7].","Array,Two Pointers",/problems/minimum-absolute-difference-in-bst/
 Encode and Decode TinyURL,Medium,"Note: This is a companion problem to the System Design problem: Design TinyURL.
 TinyURL is a URL shortening service where you enter a URL such as https://leetcode.com/problems/design-tinyurl and it returns a short URL such as http://tinyurl.com/4e9iAk.
-Design the encode and decode methods for the TinyURL service. There is no restriction on how your encode/decode algorithm should work. You just need to ensure that a URL can be encoded to a tiny URL and the tiny URL can be decoded to the original URL.","Hash Table,Math",
+Design the encode and decode methods for the TinyURL service. There is no restriction on how your encode/decode algorithm should work. You just need to ensure that a URL can be encoded to a tiny URL and the tiny URL can be decoded to the original URL.","Hash Table,Mathematics",
 Complex Number Multiplication,Medium,"Given two strings representing two complex numbers.
 
 You need to return a string representing their multiplication. Note i2 = -1 according to the definition.
@@ -7712,7 +7712,7 @@ Explanation: (1 - i) * (1 - i) = 1 + i2 - 2 * i = -2i, and you need convert it t
 Note:
 
 The input strings will not have extra blank.
-The input strings will be given in the form of a+bi, where the integer a and b will both belong to the range of [-100, 100]. And the output should be also in this form.","Math,String",
+The input strings will be given in the form of a+bi, where the integer a and b will both belong to the range of [-100, 100]. And the output should be also in this form.","Mathematics,Strings",
 Convert BST to Greater Tree,Easy,"Given a Binary Search Tree (BST), convert it to a Greater Tree such that every key of the original BST is changed to the original key plus sum of all keys greater than the original key in BST.
 
 Example:
@@ -7735,7 +7735,7 @@ Output: 1
 Note:
 
 The number of time points in the given list is at least 2 and won't exceed 20000.
-The input time is legal and ranges from 00:00 to 23:59.",String,
+The input time is legal and ranges from 00:00 to 23:59.",Strings,
 Single Element in a Sorted Array,Medium,"You are given a sorted array consisting of only integers where every element appears exactly twice, except for one element which appears exactly once. Find this single element that appears only once.
  
 Example 1:
@@ -7758,7 +7758,7 @@ Output: ""bacdfeg""
 Restrictions:
 
  The string consists of lower English letters only.
- Length of the given string and k will in the range [1, 10000]",String,"/problems/reverse-string/,/problems/reverse-words-in-a-string-iii/"
+ Length of the given string and k will in the range [1, 10000]",Strings,"/problems/reverse-string/,/problems/reverse-words-in-a-string-iii/"
 01 Matrix,Medium,"Given a matrix consists of 0 and 1, find the distance of the nearest 0 for each cell.
 The distance between two adjacent cells is 1.
  
@@ -7875,7 +7875,7 @@ Output: True
 
 Example 2:
 Input: ""PPALLL""
-Output: False",String,/problems/student-attendance-record-ii/
+Output: False",Strings,/problems/student-attendance-record-ii/
 Student Attendance Record II,Hard,"Given a positive integer n, return the number of all possible attendance records with length n, which will be regarded as rewardable. The answer may be very large, return it after mod 109 + 7.
 A student attendance record is a string that only contains the following three characters:
 
@@ -7918,7 +7918,7 @@ Note:
 
 The length of the input array is [1, 10].
 Elements in the given array will be in range [2, 1000].
-There is only one optimal division for each test case.","Math,String",
+There is only one optimal division for each test case.","Mathematics,Strings",
 Brick Wall,Medium,"There is a brick wall in front of you. The wall is rectangular and has several rows of bricks. The bricks have the same height but different width. You want to draw a vertical line from the top to the bottom and cross the least bricks.
 The brick wall is represented by a list of rows. Each row is a list of integers representing the width of each brick in this row from left to right.
 If your line go through the edge of a brick, then the brick is not considered as crossed. You need to find out how to draw the line to cross the least bricks and return the number of crossed bricks.
@@ -7950,7 +7950,7 @@ Output: 21
  
 Example 2:
 Input: 21
-Output: -1",String,"/problems/next-greater-element-i/,/problems/next-greater-element-ii/"
+Output: -1",Strings,"/problems/next-greater-element-i/,/problems/next-greater-element-ii/"
 Reverse Words in a String III,Easy,"Given a string, you need to reverse the order of characters in each word within a sentence while still preserving whitespace and initial word order.
 Example 1:
 Input: ""Let's take LeetCode contest""
@@ -7958,7 +7958,7 @@ Output: ""s'teL ekat edoCteeL tsetnoc""
 
 
 Note:
-In the string, each word is separated by single space and there will not be any extra space in the string.",String,/problems/reverse-string-ii/
+In the string, each word is separated by single space and there will not be any extra space in the string.",Strings,/problems/reverse-string-ii/
 Quad Tree Intersection,Easy,"A quadtree is a tree data in which each internal node has exactly four children: topLeft, topRight, bottomLeft and bottomRight. Quad trees are often used to partition a two-dimensional space by recursively subdividing it into four quadrants or regions.
 We want to store True/False information in our quad tree. The quad tree is used to represent a N * N boolean grid. For each node, it will be subdivided into four children nodes until the values in the region it represents are all the same. Each node has another two boolean attributes : isLeaf and val. isLeaf is true if and only if the node is a leaf node. The val attribute for a leaf node contains the value of the region it represents.
 For example, below are two quad trees A and B:
@@ -8081,7 +8081,7 @@ Output: ""121""
 Note:
 
 The input n is a positive integer represented by string, whose length will not exceed 18.
-If there is a tie, return the smaller one as answer.",String,
+If there is a tie, return the smaller one as answer.",Strings,
 Array Nesting,Medium,"A zero-indexed array A of length N contains all integers from 0 to N-1. Find and return the longest length of set S, where S[i] = {A[i], A[A[i]], A[A[A[i]]], ... } subjected to the rule below.
 Suppose the first element in S starts with the selection of element A[i] of index = i, the next element in S should be A[A[i]], and then A[A[A[i]]]… By that analogy, we stop adding right before a duplicate element occurs in S.
  
@@ -8252,7 +8252,7 @@ Explanation: You need one step to make ""sea"" to ""ea"" and another step to mak
 Note:
 
 The length of given words won't exceed 500.
-Characters in given words can only be lower-case letters.",String,"/problems/edit-distance/,/problems/minimum-ascii-delete-sum-for-two-strings/,/problems/longest-common-subsequence/"
+Characters in given words can only be lower-case letters.",Strings,"/problems/edit-distance/,/problems/minimum-ascii-delete-sum-for-two-strings/,/problems/longest-common-subsequence/"
 Erect the Fence,Hard,"There are some trees, where each tree is represented by (x,y) coordinate in a two-dimensional garden. Your job is to fence the entire garden using the minimum length of rope as it is expensive. The garden is well fenced only if all the trees are enclosed. Your task is to help find the coordinates of trees which are exactly located on the fence perimeter.
  
 Example 1:
@@ -8354,7 +8354,7 @@ Output: False
 
 Note:
 
-For simplicity, you could assume the input code (including the any characters mentioned above) only contain letters, digits, '<','>','/','!','[',']' and ' '.","String,Stack",/problems/add-bold-tag-in-string/
+For simplicity, you could assume the input code (including the any characters mentioned above) only contain letters, digits, '<','>','/','!','[',']' and ' '.","Strings,Stack",/problems/add-bold-tag-in-string/
 Fraction Addition and Subtraction,Medium,"Given a string representing an expression of fraction addition and subtraction, you need to return the calculation result in string format. The final result should be irreducible fraction. If your final result is an integer, say 2, you need to change it to the format of fraction that has denominator 1. So in this case, 2 should be converted to 2/1.
 Example 1:
 Input:""-1/2+1/2""
@@ -8382,7 +8382,7 @@ The input string only contains '0' to '9', '/', '+' and '-'. So does the output.
 Each fraction (input and output) has format ±numerator/denominator. If the first input fraction or the output is positive, then '+' will be omitted.
 The input only contains valid irreducible fractions, where the numerator and denominator of each fraction will always be in the range [1,10]. If the denominator is 1, it means this fraction is actually an integer in a fraction format defined above.
 The number of given fractions will be in the range [1,10].
-The numerator and denominator of the final result are guaranteed to be valid and in the range of 32-bit int.",Math,/problems/solve-the-equation/
+The numerator and denominator of the final result are guaranteed to be valid and in the range of 32-bit int.",Mathematics,/problems/solve-the-equation/
 Valid Square,Medium,"Given the coordinates of four points in 2D space, return whether the four points could construct a square.
 The coordinate (x,y) of a point is represented by an integer array with two integers.
 Example:
@@ -8394,7 +8394,7 @@ Note:
 
 All the input integers are in the range [-10000, 10000].
 A valid square has four equal sides with positive length and four equal angles (90-degree angles).
-Input points have no order.",Math,
+Input points have no order.",Mathematics,
 Longest Harmonious Subsequence,Easy,"We define a harmounious array as an array where the difference between its maximum value and its minimum value is exactly 1.
 Now, given an integer array, you need to find the length of its longest harmonious subsequence among all its possible subsequences.
 Example 1:
@@ -8482,7 +8482,7 @@ Note:
 
 The range of m and n is [1,40000].
 The range of a is [1,m], and the range of b is [1,n].
-The range of operations size won't exceed 10,000.",Math,/problems/range-addition/
+The range of operations size won't exceed 10,000.",Mathematics,/problems/range-addition/
 Minimum Index Sum of Two Lists,Easy,"Suppose Andy and Doris want to choose a restaurant for dinner, and they both have a list of favorite restaurants represented by strings. 
 
 
@@ -8596,7 +8596,7 @@ Input: Binary tree: [1,2,3,null,4]
       4 
 
 Output: ""1(2()(4))(3)""
-Explanation: Almost the same as the first example, except we can't omit the first parenthesis pair to break the one-to-one mapping relationship between the input and the output.","String,Tree","/problems/construct-binary-tree-from-string/,/problems/find-duplicate-subtrees/"
+Explanation: Almost the same as the first example, except we can't omit the first parenthesis pair to break the one-to-one mapping relationship between the input and the output.","Strings,Tree","/problems/construct-binary-tree-from-string/,/problems/find-duplicate-subtrees/"
 Find Duplicate File in System,Medium,"Given a list of directory info including directory path, and all the files with contents in this directory, you need to find out all the groups of duplicate files in the file system in terms of their paths.
 A group of duplicate files consists of at least two files that have exactly the same content.
 A single directory info string in the input list has the following format:
@@ -8626,7 +8626,7 @@ Imagine you are given a real file system, how will you search files? DFS or BFS?
 If the file content is very large (GB level), how will you modify your solution?
 If you can only read the file by 1kb each time, how will you modify your solution?
 What is the time complexity of your modified solution? What is the most time-consuming part and memory consuming part of it? How to optimize?
-How to make sure the duplicated files you find are not false positive?","Hash Table,String",
+How to make sure the duplicated files you find are not false positive?","Hash Table,Strings",
 Valid Triangle Number,Medium,"Given an array consists of non-negative integers,  your task is to count the number of triplets chosen from the array that can make triangles if we take them as side lengths of a triangle.
 
 Example 1:
@@ -8698,7 +8698,7 @@ Explanation: A -> B -> idle -> A -> B -> idle -> A -> B.
 Note:
 
 The number of tasks is in the range [1, 10000].
-The integer n is in the range [0, 100].","Array,Greedy,Queue","/problems/rearrange-string-k-distance-apart/,/problems/reorganize-string/"
+The integer n is in the range [0, 100].","Array,Greedy Algorithms,Queue","/problems/rearrange-string-k-distance-apart/,/problems/reorganize-string/"
 Design Circular Queue,Medium,"Design your implementation of the circular queue. The circular queue is a linear data structure in which the operations are performed based on FIFO (First In First Out) principle and the last position is connected back to the first position to make a circle. It is also called ""Ring Buffer"".
 One of the benefits of the circular queue is that we can make use of the spaces in front of the queue. In a normal queue, once the queue becomes full, we cannot insert the next element even if there is a space in front of the queue. But using the circular queue, we can use the space to store new values.
 Your implementation should support following operations:
@@ -8852,7 +8852,7 @@ Output: 24
 Note:
 
 The length of the given array will be in range [3,104] and all elements are in the range [-1000, 1000].
-Multiplication of any three numbers in the input won't exceed the range of 32-bit signed integer.","Array,Math",/problems/maximum-product-subarray/
+Multiplication of any three numbers in the input won't exceed the range of 32-bit signed integer.","Array,Mathematics",/problems/maximum-product-subarray/
 K Inverse Pairs Array,Hard,"Given two integers n and k, find how many different arrays consist of numbers from 1 to n such that there are exactly k inverse pairs.
 We define an inverse pair as following: For ith and jth element in the array, if i < j and a[i] > a[j] then it's an inverse pair; Otherwise, it's not.
 Since the answer may be very large, the answer should be modulo 109 + 7.
@@ -8889,7 +8889,7 @@ The 4th course cannot be taken now, since you will finish it on the 3300th day, 
 Note:
 
 The integer 1 <= d, t, n <= 10,000.
-You can't take two courses simultaneously.",Greedy,"/problems/course-schedule/,/problems/course-schedule-ii/"
+You can't take two courses simultaneously.",Greedy Algorithms,"/problems/course-schedule/,/problems/course-schedule-ii/"
 Smallest Range Covering Elements from K Lists,Hard,"You have k lists of sorted integers in ascending order. Find the smallest range that includes at least one number from each of the k lists.
 We define the range [a,b] is smaller than range [c,d] if b-a < d-c or a < c if b-a == d-c.
  
@@ -8906,7 +8906,7 @@ Note:
 
 The given list may contain duplicates, so ascending order means >= here.
 1 <= k <= 3500
--105 <= value of elements <= 105.","Hash Table,Two Pointers,String",/problems/minimum-window-substring/
+-105 <= value of elements <= 105.","Hash Table,Two Pointers,Strings",/problems/minimum-window-substring/
 Sum of Square Numbers,Easy,"Given a non-negative integer c, your task is to decide whether there're two integers a and b such that a2 + b2 = c.
 Example 1:
 Input: 5
@@ -8916,7 +8916,7 @@ Explanation: 1 * 1 + 2 * 2 = 5
  
 Example 2:
 Input: 3
-Output: False",Math,/problems/valid-perfect-square/
+Output: False",Mathematics,/problems/valid-perfect-square/
 Exclusive Time of Functions,Medium,"On a single threaded CPU, we execute some functions.  Each function has a unique id between 0 and N-1.
 We store logs in timestamp order that describe when a function is entered or exited.
 Each log is a string with this format: ""{function_id}:{""start"" | ""end""}:{timestamp}"".  For example, ""0:start:3"" means the function with id 0 started at the beginning of timestamp 3.  ""1:end:2"" means the function with id 1 ended at the end of timestamp 2.
@@ -9061,7 +9061,7 @@ Output: ""x=-1""
 
 Example 5:
 Input: ""x=x+2""
-Output: ""No solution""",Math,/problems/fraction-addition-and-subtraction/
+Output: ""No solution""",Mathematics,/problems/fraction-addition-and-subtraction/
 Design Circular Deque,Medium,"Design your implementation of the circular double-ended queue (deque).
 Your implementation should support following operations:
 
@@ -9118,7 +9118,7 @@ Output: [2,3]
 Note:
 
 The given array size will in the range [2, 10000].
-The given array's numbers won't have any order.","Hash Table,Math",/problems/find-the-duplicate-number/
+The given array's numbers won't have any order.","Hash Table,Mathematics",/problems/find-the-duplicate-number/
 Maximum Length of Pair Chain,Medium,"You are given n pairs of numbers. In every pair, the first number is always smaller than the second number.
 
 
@@ -9152,7 +9152,7 @@ Explanation: Six palindromic strings: ""a"", ""a"", ""a"", ""aa"", ""aa"", ""aaa
  
 Note:
 
-The input string length won't exceed 1000.","String,Dynamic Programming","/problems/longest-palindromic-substring/,/problems/longest-palindromic-subsequence/,/problems/palindromic-substrings/"
+The input string length won't exceed 1000.","Strings,Dynamic Programming","/problems/longest-palindromic-substring/,/problems/longest-palindromic-subsequence/,/problems/palindromic-substrings/"
 Replace Words,Medium,"In English, we have a concept called root, which can be followed by some other words to form another longer word - let's call this word successor. For example, the root an, followed by other, which can form another word another.
 Now, given a dictionary consisting of many roots and a sentence. You need to replace all the successor in the sentence with the root forming it. If a successor has many roots can form it, replace it with the root with the shortest length.
 You need to output the sentence after the replacement.
@@ -9201,7 +9201,7 @@ And in the round 2, the third senator can just announce the victory since he is 
  
 Note:
 
-The length of the given string will in the range [1, 10,000].",Greedy,/problems/teemo-attacking/
+The length of the given string will in the range [1, 10,000].",Greedy Algorithms,/problems/teemo-attacking/
 2 Keys Keyboard,Medium,"Initially on a notepad only one character 'A' is present. You can perform two operations on this notepad for each step:
 
 Copy All: You can copy all the characters present on the notepad (partial copy is not allowed).
@@ -9355,7 +9355,7 @@ Explanation: The robot moves up once, and then down once. All moves have the sam
 Example 2:
 Input: ""LL""
 Output: false
-Explanation: The robot moves left twice. It ends up two ""moves"" to the left of the origin. We return false because it is not at the origin at the end of its moves.",String,/problems/friend-circles/
+Explanation: The robot moves left twice. It ends up two ""moves"" to the left of the origin. We return false because it is not at the origin at the end of its moves.",Strings,/problems/friend-circles/
 Find K Closest Elements,Medium,"Given a sorted array, two integers k and x, find the k closest elements to x in the array.  The result should also be sorted in ascending order.
 If there is a tie,  the smaller elements are always preferred.
 
@@ -9407,7 +9407,7 @@ Output: False
  
 Constraints:
 
-1 <= nums.length <= 10000","Heap,Greedy",/problems/top-k-frequent-elements/
+1 <= nums.length <= 10000","Heap,Greedy Algorithms",/problems/top-k-frequent-elements/
 Image Smoother,Easy,"Given a 2D integer matrix M representing the gray scale of an image, you need to design a smoother to make the gray scale of each cell becomes the average gray scale (rounding down) of all the 8 surrounding cells and itself.  If a cell has less than 8 surrounding cells, then use as many as you can.
 Example 1:
 Input:
@@ -9630,7 +9630,7 @@ Explanation: No swap.
 
 Note:
 
-The given number is in the range [0, 108]","Array,Math",/problems/create-maximum-number/
+The given number is in the range [0, 108]","Array,Mathematics",/problems/create-maximum-number/
 Second Minimum Node In a Binary Tree,Easy,"Given a non-empty special binary tree consisting of nodes with the non-negative value, where each node in this tree has exactly two or zero sub-node. If the node has two sub-nodes, then this node's value is the smaller value among its two sub-nodes. More formally, the property root.val = min(root.left.val, root.right.val) always holds.
 Given such a binary tree, you need to output the second minimum value in the set made of all the nodes' value in the whole tree.
 If no such second minimum value exists, output -1 instead.
@@ -9681,7 +9681,7 @@ Output: 4
 Explanation: Status can be: [off, on, off], [on, off, on], [off, off, off], [off, on, on].
 
  
-Note: n and m both fit in range [0, 1000].",Math,/problems/bulb-switcher/
+Note: n and m both fit in range [0, 1000].",Mathematics,/problems/bulb-switcher/
 Number of Longest Increasing Subsequence,Medium,"Given an unsorted array of integers, find the number of longest increasing subsequence.
 
 Example 1:
@@ -9817,7 +9817,7 @@ Output: True
 
 Note:
 
-The string size will be in the range [1, 100].",String,/problems/special-binary-string/
+The string size will be in the range [1, 100].",Strings,/problems/special-binary-string/
 24 Game,Hard,"You have 4 cards each containing a number from 1 to 9.  You need to judge whether they could operated through *, /, +, -, (, ) to get the value of 24.
 
 Example 1:
@@ -9852,7 +9852,7 @@ Explanation: You could delete the character 'c'.
 Note:
 
 The string will only contain lowercase characters a-z.
-The maximum length of the string is 50000.",String,/problems/valid-palindrome/
+The maximum length of the string is 50000.",Strings,/problems/valid-palindrome/
 Baseball Game,Easy,"You're now a baseball game point recorder.
 
 
@@ -9965,7 +9965,7 @@ Repeated String Match,Easy,"Given two strings A and B, find the minimum number o
 For example, with A = ""abcd"" and B = ""cdabcdab"".
 Return 3, because by repeating A three times (“abcdabcdabcd”), B is a substring of it; and B is not a substring of A repeated two times (""abcdabcd"").
 Note:
-The length of A and B will be between 1 and 10000.",String,/problems/repeated-substring-pattern/
+The length of A and B will be between 1 and 10000.",Strings,/problems/repeated-substring-pattern/
 Longest Univalue Path,Easy,"Given a binary tree, find the length of the longest path where each node in the path has the same value. This path may or may not pass through the root.
 The length of path between two nodes is represented by the number of edges between them.
  
@@ -10160,7 +10160,7 @@ Explanation: There are 4 substrings: ""10"", ""01"", ""10"", ""01"" that have eq
 
 Note:
 s.length will be between 1 and 50,000.
-s will only consist of ""0"" or ""1"" characters.",String,/problems/encode-and-decode-strings/
+s will only consist of ""0"" or ""1"" characters.",Strings,/problems/encode-and-decode-strings/
 Degree of an Array,Easy,"Given a non-empty array of non-negative integers nums, the degree of this array is defined as the maximum frequency of any one of its elements.
 Your task is to find the smallest possible length of a (contiguous) subarray of nums, that has the same degree as nums.
 Example 1:
@@ -10387,7 +10387,7 @@ Output: ""here""
 
 Example 3:
 Input: ""LOVELY""
-Output: ""lovely""",String,
+Output: ""lovely""",Strings,
 Random Pick with Blacklist,Hard,"Given a blacklist B containing unique integers from [0, N), write a function to return a uniform random integer from [0, N) which is NOT in B.
 Optimize it such that it minimizes the call to system’s Math.random().
 Note:
@@ -10469,7 +10469,7 @@ Buying at prices[0] = 1Selling at prices[3] = 8Buying at prices[4] = 4Selling at
 Note:
 0 < prices.length <= 50000.
 0 < prices[i] < 50000.
-0 <= fee < 50000.","Array,Dynamic Programming,Greedy",/problems/best-time-to-buy-and-sell-stock-ii/
+0 <= fee < 50000.","Array,Dynamic Programming,Greedy Algorithms",/problems/best-time-to-buy-and-sell-stock-ii/
 Range Module,Hard,"A Range Module is a module that tracks ranges of numbers. Your task is to design and implement the following interfaces in an efficient manner.
 addRange(int left, int right) Adds the half-open interval [left, right), tracking every real number in that interval.  Adding an interval that partially overlaps with currently tracked numbers should add any numbers in the interval [left, right) that are not already tracked.
 queryRange(int left, int right) Returns true if and only if every real number in the interval [left, right)
@@ -10643,7 +10643,7 @@ Note:
 The length of source is in the range [1, 100].
 The length of source[i] is in the range [0, 80].
 Every open block comment is eventually closed.
-There are no single-quote, double-quote, or control characters in the source code.",String,"/problems/mini-parser/,/problems/ternary-expression-parser/"
+There are no single-quote, double-quote, or control characters in the source code.",Strings,"/problems/mini-parser/,/problems/ternary-expression-parser/"
 Find Pivot Index,Easy,"Given an array of integers nums, write a method that returns the ""pivot"" index of this array.
 We define the pivot index as the index where the sum of the numbers to the left of the index is equal to the sum of the numbers to the right of the index.
 If no such index exists, we should return -1. If there are multiple pivot indexes, you should return the left-most pivot index.
@@ -10762,7 +10762,7 @@ Output: [1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 15, 22]
 
 
 Note:
-The boundaries of each input argument are 1 <= left <= right <= 10000.",Math,/problems/perfect-number/
+The boundaries of each input argument are 1 <= left <= right <= 10000.",Mathematics,/problems/perfect-number/
 My Calendar I,Medium,"Implement a MyCalendar class to store your events. A new event can be added if adding the event will not cause a double booking.
 Your class will have the method, book(int start, int end). Formally, this represents a booking on the half open interval [start, end), the range of real numbers x such that start <= x < end.
 A double booking happens when two events have some non-empty intersection (ie., there is some time that is common to both events.)
@@ -10809,7 +10809,7 @@ There are 3104860382 different non-empty palindromic subsequences, which is 1048
 
 Note:
 The length of S will be in the range [1, 1000].
-Each character S[i] will be in the set {'a', 'b', 'c', 'd'}.","String,Dynamic Programming",/problems/longest-palindromic-subsequence/
+Each character S[i] will be in the set {'a', 'b', 'c', 'd'}.","Strings,Dynamic Programming",/problems/longest-palindromic-subsequence/
 My Calendar II,Medium,"Implement a MyCalendarTwo class to store your events. A new event can be added if adding the event will not cause a triple booking.
 Your class will have one method, book(int start, int end). Formally, this represents a booking on the half open interval [start, end), the range of real numbers x such that start <= x < end.
 A triple booking happens when three events have some non-empty intersection (ie., there is some time that is common to all 3 events.)
@@ -10982,7 +10982,7 @@ Explanation: Variable names can contain digits after the first character.
 Note:
 The given string expression is well formatted: There are no leading or trailing spaces, there is only a single space separating different components of the string, and no space between adjacent parentheses.  The expression is guaranteed to be legal and evaluate to an integer.
 The length of expression is at most 2000.  (It is also non-empty, as that would not be a legal expression.)
-The answer and all intermediate calculations of that answer are guaranteed to fit in a 32-bit integer.",String,"/problems/ternary-expression-parser/,/problems/number-of-atoms/,/problems/basic-calculator-iv/"
+The answer and all intermediate calculations of that answer are guaranteed to fit in a 32-bit integer.",Strings,"/problems/ternary-expression-parser/,/problems/number-of-atoms/,/problems/basic-calculator-iv/"
 Monotone Increasing Digits,Medium,"Given a non-negative integer N, find the largest number that is less than or equal to N with monotone increasing digits.
 
 (Recall that an integer has monotone increasing digits if and only if each pair of adjacent digits x and y satisfy x <= y.)
@@ -11003,7 +11003,7 @@ Output: 299
 
 
 Note:
-N is an integer in the range [0, 10^9].",Greedy,/problems/remove-k-digits/
+N is an integer in the range [0, 10^9].",Greedy Algorithms,/problems/remove-k-digits/
 Daily Temperatures,Medium,"Given a list of daily temperatures T, return a list such that, for each day in the input, tells you how many days you would have to wait until a warmer temperature.  If there is no future day for which this is possible, put 0 instead.
 
 For example, given the list of temperatures T = [73, 74, 75, 71, 69, 72, 76, 73], your output should be [1, 1, 4, 2, 1, 1, 0, 0].
@@ -11326,7 +11326,7 @@ Note:
 
 n will be in the range [1, 4].
 k will be in the range [1, 10].
-k^n will be at most 4096.","Math,Depth-first Search",
+k^n will be at most 4096.","Mathematics,Depth-first Search",
 Reach a Number,Easy,"You are standing at position 0 on an infinite number line.  There is a goal at position target.
 
 On each move, you can either go left or right.  During the n-th move (starting from 1), you take n steps.
@@ -11351,7 +11351,7 @@ On the third move we step from -1 to 2.
 
 
 Note:
-target will be a non-zero integer in the range [-10^9, 10^9].",Math,
+target will be a non-zero integer in the range [-10^9, 10^9].",Mathematics,
 Pyramid Transition Matrix,Medium,"We are stacking blocks to form a pyramid. Each block has a color which is a one letter string.
 We are allowed to place any color block C on top of two adjacent blocks of colors A and B, if and only if ABC is an allowed triple.
 We start with a bottom row of bottom, represented as a single string. We also start with a list of allowed triples allowed. Each allowed triple is represented as a string of length 3.
@@ -11405,7 +11405,7 @@ An example of a minimum sized set is {1, 2, 3, 4, 5}.
 Note:
 intervals will have length in range [1, 3000].
 intervals[i] will have length 2, representing some integer interval.
-intervals[i][j] will be an integer in [0, 10^8].",Greedy,
+intervals[i][j] will be an integer in [0, 10^8].",Greedy Algorithms,
 Special Binary String,Hard,"Special binary strings are binary strings with the following two properties:
 
 The number of 0's is equal to the number of 1's.
@@ -11425,7 +11425,7 @@ This is the lexicographically largest string possible after some number of swaps
 
 Note:
 S has length at most 50.
-S is guaranteed to be a special binary string as defined above.","String,Recursion",/problems/valid-parenthesis-string/
+S is guaranteed to be a special binary string as defined above.","Strings,Recursion",/problems/valid-parenthesis-string/
 Prime Number of Set Bits in Binary Representation,Easy,"Given two integers L and R, find the count of numbers in the range [L, R] (inclusive) having a prime number of set bits in their binary representation.
 
 (Recall that the number of set bits an integer has is the number of 1s present when written in binary.  For example, 21 written in binary is 10101 which has 3 set bits.  Also, 1 is not a prime.)
@@ -11464,7 +11464,7 @@ A partition like ""ababcbacadefegde"", ""hijhklij"" is incorrect, because it spl
 
 Note:
 S will have length in range [1, 500].
-S will consist of lowercase letters ('a' to 'z') only.","Two Pointers,Greedy",/problems/merge-intervals/
+S will consist of lowercase letters ('a' to 'z') only.","Two Pointers,Greedy Algorithms",/problems/merge-intervals/
 Largest Plus Sign,Medium,"In a 2D grid from (0, 0) to (N-1, N-1), every cell contains a 1, except those cells in the given list mines which are 0.  What is the largest axis-aligned plus sign of 1s contained in the grid?  Return the order of the plus sign.  If there is none, return 0.
 
 An ""axis-aligned plus sign of 1s of order k"" has some center grid[x][y] = 1 along with 4 arms of length k-1 going up, down, left, and right, and made of 1s.  This is demonstrated in the diagrams below.  Note that there could be 0s or 1s beyond the arms of the plus sign, only the relevant area of the plus sign is checked for 1s.
@@ -11533,7 +11533,7 @@ Explanation: All couples are already seated side by side.
 Note:
 
  len(row) is even and in the range of [4, 60].
- row is guaranteed to be a permutation of 0...len(row)-1.","Greedy,Union Find,Graph","/problems/first-missing-positive/,/problems/missing-number/,/problems/k-similar-strings/"
+ row is guaranteed to be a permutation of 0...len(row)-1.","Greedy Algorithms,Union Find,Graph","/problems/first-missing-positive/,/problems/missing-number/,/problems/k-similar-strings/"
 Toeplitz Matrix,Easy,"A matrix is Toeplitz if every diagonal from top-left to bottom-right has the same element.
 Now given an M x N matrix, return True if and only if the matrix is Toeplitz.
  
@@ -11584,7 +11584,7 @@ Output: """"
 
 Note:
 
-S will consist of lowercase letters and have length in range [1, 500].","String,Heap,Greedy,Sort","/problems/rearrange-string-k-distance-apart/,/problems/task-scheduler/"
+S will consist of lowercase letters and have length in range [1, 500].","Strings,Heap,Greedy Algorithms,Sort","/problems/rearrange-string-k-distance-apart/,/problems/task-scheduler/"
 Max Chunks To Make Sorted II,Hard,"This question is the same as ""Max Chunks to Make Sorted"" except the integers of the given array are not necessarily distinct, the input array could be up to length 2000, and the elements could be up to 10**8.
 
 Given an array arr of integers (not necessarily distinct), we split the array into some number of ""chunks"" (partitions), and individually sort each chunk.  After concatenating them, the result equals the sorted array.
@@ -11666,7 +11666,7 @@ Output: [""-1*a*a*b*b"",""2*a*a*b*c"",""-1*a*a*c*c"",""1*a*b*b*b"",""-1*a*b*b*c"
 Note:
 
 expression will have length in range [1, 250].
-evalvars, evalints will have equal lengths in range [0, 100].","Hash Table,String,Stack","/problems/parse-lisp-expression/,/problems/basic-calculator-iii/"
+evalvars, evalints will have equal lengths in range [0, 100].","Hash Table,Strings,Stack","/problems/parse-lisp-expression/,/problems/basic-calculator-iii/"
 Jewels and Stones,Easy,"You're given strings J representing the types of stones that are jewels, and S representing the stones you have.  Each character in S is a type of stone you have.  You want to know how many of the stones you have are also jewels.
 The letters in J are guaranteed distinct, and all characters in J and S are letters. Letters are case sensitive, so ""a"" is considered a different type of stone from ""A"".
 Example 1:
@@ -11730,7 +11730,7 @@ Note:
 
 A will be a permutation of [0, 1, ..., A.length - 1].
 A will have length in range [1, 5000].
-The time limit for this problem has been reduced.","Array,Math",
+The time limit for this problem has been reduced.","Array,Mathematics",
 Swap Adjacent in LR String,Medium,"In a string composed of 'L', 'R', and 'X' characters, like ""RXXLRXRXL"", a move consists of either replacing one occurrence of ""XL"" with ""LX"", or replacing one occurrence of ""RX"" with ""XR"". Given the starting string start and the ending string end, return True if and only if there exists a sequence of moves to transform one string to the other.
 Example:
 Input: start = ""RXXLRXRXL"", end = ""XRLXXRRLX""
@@ -11822,7 +11822,7 @@ Output: True
 
 Note:
 
-sx, sy, tx, ty will all be integers in the range [1, 10^9].",Math,
+sx, sy, tx, ty will all be integers in the range [1, 10^9].",Mathematics,
 Rabbits in Forest,Medium,"In a forest, each rabbit has some color. Some subset of rabbits (possibly all of them) tell you how many other rabbits have the same color as them. Those answers are placed in an array.
 Return the minimum number of rabbits that could be in the forest.
 Examples:
@@ -11844,7 +11844,7 @@ Output: 0
 Note:
 
 answers will have length at most 1000.
-Each answers[i] will be an integer in the range [0, 999].","Hash Table,Math",
+Each answers[i] will be an integer in the range [0, 999].","Hash Table,Mathematics",
 Transform to Chessboard,Hard,"An N x N board contains only 0s and 1s. In each move, you can swap any 2 rows with each other, or any 2 columns with each other.
 What is the minimum number of moves to transform the board into a ""chessboard"" - a board where no 0s and no 1s are 4-directionally adjacent? If the task is impossible, return -1.
 Examples:
@@ -11879,7 +11879,7 @@ No matter what sequence of moves you make, you cannot end with a valid chessboar
 Note:
 
 board will have the same number of rows and columns, a number in the range [2, 30].
-board[i][j] will be only 0s or 1s.","Array,Math",
+board[i][j] will be only 0s or 1s.","Array,Mathematics",
 Minimum Distance Between BST Nodes,Easy,"Given a Binary Search Tree (BST) with the root node root, return the minimum difference between the values of any two different nodes in the tree.
 Example :
 Input: root = [4,2,6,1,3,null,null]
@@ -12008,7 +12008,7 @@ Note that 1 and 10 are not good numbers, since they remain unchanged after rotat
 
 Note:
 
-N  will be in range [1, 10000].",String,
+N  will be in range [1, 10000].",Strings,
 Escape The Ghosts,Medium,"You are playing a simplified Pacman game. You start at the point (0, 0), and your destination is (target[0], target[1]). There are several ghosts on the map, the i-th ghost starts at (ghosts[i][0], ghosts[i][1]).
 Each turn, you and all ghosts simultaneously *may* move in one of 4 cardinal directions: north, east, west, or south, going from the previous point to a new point 1 unit of distance away.
 You escape if and only if you can reach the target before any ghost reaches you (for any given moves the ghosts may take.)  If you reach any square (including the target) at the same time as a ghost, it doesn't count as an escape.
@@ -12040,7 +12040,7 @@ The ghost can reach the target at the same time as you.
 Note:
 
 All points have coordinates with absolute value <= 10000.
-The number of ghosts will not exceed 100.",Math,
+The number of ghosts will not exceed 100.",Mathematics,
 Domino and Tromino Tiling,Medium,"We have two types of tiles: a 2x1 domino shape, and an ""L"" tromino shape. These shapes may be rotated.
 XX  <- domino
 
@@ -12076,7 +12076,7 @@ Note:
 
 S has length at most 26, and no character is repeated in S.
 T has length at most 200.
-S and T consist of lowercase letters only.",String,
+S and T consist of lowercase letters only.",Strings,
 Number of Matching Subsequences,Medium,"Given string S and a dictionary of words words, find the number of words[i] that is a subsequence of S.
 Example :
 Input: 
@@ -12138,7 +12138,7 @@ Output: true
 Note:
 
 board is a length-3 array of strings, where each string board[i] has length 3.
-Each board[i][j] is a character in the set {"" "", ""X"", ""O""}.","Math,Recursion",/problems/design-tic-tac-toe/
+Each board[i][j] is a character in the set {"" "", ""X"", ""O""}.","Mathematics,Recursion",/problems/design-tic-tac-toe/
 Number of Subarrays with Bounded Maximum,Medium,"We are given an array A of positive integers, and two positive integers L and R (L <= R).
 Return the number of (contiguous, non-empty) subarrays such that the value of the maximum array element in that subarray is at least L and at most R.
 Example :
@@ -12306,7 +12306,7 @@ Note:
 
 The length of words will be at most 100.
 Each words[i] will have length in range [1, 12].
-words[i] will only consist of lowercase letters.",String,
+words[i] will only consist of lowercase letters.",Strings,
 Split Array With Same Average,Hard,"In a given integer array A, we must move every element of A to either list B or list C. (B and C initially start empty.)
 Return true if and only if after such a move, it is possible that the average value of B is equal to the average value of C, and B and C are both non-empty.
 Example :
@@ -12318,7 +12318,7 @@ Explanation: We can split the array into [1,4,5,8] and [2,3,6,7], and both of th
 Note:
 
 The length of A will be in the range [1, 30].
-A[i] will be in the range of [0, 10000].",Math,
+A[i] will be in the range of [0, 10000].",Mathematics,
 Number of Lines To Write String,Easy,"We are to write the letters of a given string S, from left to right into lines. Each line has maximum width 100 units, and if writing a letter would cause the width of the line to exceed 100 units, it is written on the next line. We are given an array widths, an array where widths[0] is the width of 'a', widths[1] is the width of 'b', ..., and widths[25] is the width of 'z'.
 Now answer two questions: how many lines have at least one character from S, and what is the width used by the last such line? Return your answer as an integer list of length 2.
  
@@ -12421,7 +12421,7 @@ Notes:
 0 <= len(S) <= 100.
 0 <= len(words) <= 100.
 0 <= len(words[i]) <= 100.
-S and all words in words consist only of lowercase letters",String,
+S and all words in words consist only of lowercase letters",Strings,
 Chalkboard XOR Game,Hard,"We are given non-negative integers nums[i] which are written on a chalkboard.  Alice and Bob take turns erasing exactly one number from the chalkboard, with Alice starting first.  If erasing a number causes the bitwise XOR of all the elements of the chalkboard to become 0, then that player loses.  (Also, we'll say the bitwise XOR of one element is that element itself, and the bitwise XOR of no elements is 0.)
 Also, if any player starts their turn with the bitwise XOR of all the elements of the chalkboard equal to 0, then that player wins.
 Return True if and only if Alice wins the game, assuming both players play optimally.
@@ -12437,7 +12437,7 @@ If Alice erases 2 first, now nums becomes [1, 1]. The bitwise XOR of all the ele
 Notes: 
 
 1 <= N <= 1000. 
-0 <= nums[i] <= 2^16.",Math,
+0 <= nums[i] <= 2^16.",Mathematics,
 Subdomain Visit Count,Easy,"A website domain like ""discuss.leetcode.com"" consists of various subdomains. At the top level, we have ""com"", at the next level, we have ""leetcode.com"", and at the lowest level, ""discuss.leetcode.com"". When we visit a domain like ""discuss.leetcode.com"", we will also visit the parent domains ""leetcode.com"" and ""com"" implicitly.
 Now, call a ""count-paired domain"" to be a count (representing the number of visits this domain received), followed by a space, followed by the address. An example of a count-paired domain might be ""9001 discuss.leetcode.com"".
 We are given a list cpdomains of count-paired domains. We would like a list of count-paired domains, (in the same format as the input, and in any order), that explicitly counts the number of visits to each subdomain.
@@ -12479,7 +12479,7 @@ Notes:
 3 <= points.length <= 50.
 No points will be duplicated.
  -50 <= points[i][j] <= 50.
-Answers within 10^-6 of the true value will be accepted as correct.",Math,/problems/largest-perimeter-triangle/
+Answers within 10^-6 of the true value will be accepted as correct.",Mathematics,/problems/largest-perimeter-triangle/
 Largest Sum of Averages,Medium,"We partition a row of numbers A into at most K adjacent (non-empty) groups, then our score is the sum of the average of each group. What is the largest score we can achieve?
 Note that our partition must use every number in A, and that scores are not necessarily integers.
 Example:
@@ -12573,7 +12573,7 @@ Explanation:
 Note: 
 
 4 <= S.length <= 12.
-S[0] = ""("", S[S.length - 1] = "")"", and the other elements in S are digits.",String,
+S[0] = ""("", S[S.length - 1] = "")"", and the other elements in S are digits.",Strings,
 Linked List Components,Medium,"We are given head, the head node of a linked list containing unique integer values.
 We are also given the list G, a subset of the values in the linked list.
 Return the number of connected components in G, where two values are connected if they appear consecutively in the linked list.
@@ -12649,7 +12649,7 @@ Note:
 The answer is unique, and written in lowercase (even if its occurrences in paragraph may have uppercase symbols, and even if it is a proper noun.)
 paragraph only consists of letters, spaces, or the punctuation symbols !?',;.
 There are no hyphens or hyphenated words.
-Words only consist of letters, never apostrophes or other punctuation symbols.",String,
+Words only consist of letters, never apostrophes or other punctuation symbols.",Strings,
 Short Encoding of Words,Medium,"Given a list of words, we may encode it by writing a reference string S and a list of indexes A.
 For example, if the list of words is [""time"", ""me"", ""bell""], we can write it as S = ""time#bell#"" and indexes = [0, 2, 5].
 Then for each index, we will recover the word by reading from the reference string from that index until we reach a ""#"" character.
@@ -12737,7 +12737,7 @@ Output: ""heTmaa uickqmaaa rownbmaaaa oxfmaaaaa umpedjmaaaaaa overmaaaaaaa hetma
 Notes:
 
 S contains only uppercase, lowercase and spaces. Exactly one space between each word.
-1 <= S.length <= 150.",String,
+1 <= S.length <= 150.",Strings,
 Friends Of Appropriate Ages,Medium,"Some people will make friend requests. The list of their ages is given and ages[i] is the age of the ith person. 
 Person A will NOT friend request person B (B != A) if any of the following conditions are true:
 
@@ -12835,7 +12835,7 @@ Example 3:
 Input: 15
 Output: 4
 Explanation: 15 = 15 = 8 + 7 = 4 + 5 + 6 = 1 + 2 + 3 + 4 + 5
-Note: 1 <= N <= 10 ^ 9.",Math,
+Note: 1 <= N <= 10 ^ 9.",Mathematics,
 Positions of Large Groups,Easy,"In a string S of lowercase letters, these letters form consecutive groups of the same character.
 For example, a string like S = ""abbxxxxzyy"" has the groups ""a"", ""bb"", ""xxxx"", ""z"" and ""yy"".
 Call a group large if it has 3 or more characters.  We would like the starting and ending positions of every large group.
@@ -12901,7 +12901,7 @@ Notes:
 
 S.length <= 40.
 Emails have length at least 8.
-Phone numbers have length at least 10.",String,
+Phone numbers have length at least 10.",Strings,
 Flipping an Image,Easy,"Given a binary matrix A, we want to flip the image horizontally, then invert it, and return the resulting image.
 To flip an image horizontally means that each row of the image is reversed.  For example, flipping [1, 1, 0] horizontally results in [0, 1, 1].
 To invert an image means that each 0 is replaced by 1, and each 1 is replaced by 0. For example, inverting [0, 1, 1] results in [1, 0, 0].
@@ -12942,7 +12942,7 @@ Notes:
 
 0 <= indexes.length = sources.length = targets.length <= 100
 0 < indexes[i] < S.length <= 1000
-All characters in given inputs are lowercase letters.",String,
+All characters in given inputs are lowercase letters.",Strings,
 Sum of Distances in Tree,Hard,"An undirected, connected tree with N nodes labelled 0...N-1 and N-1 edges are given.
 The ith edge connects nodes edges[i][0] and edges[i][1] together.
 Return a list ans, where ans[i] is the sum of the distances between node i and all other nodes.
@@ -12991,7 +12991,7 @@ Output: false
 Notes:
 
 Both rectangles rec1 and rec2 are lists of 4 integers.
-All coordinates in rectangles will be between -10^9 and 10^9.",Math,/problems/rectangle-area/
+All coordinates in rectangles will be between -10^9 and 10^9.",Mathematics,/problems/rectangle-area/
 New 21 Game,Medium,"Alice plays the following game, loosely based on the card game ""21"".
 Alice starts with 0 points, and draws numbers while she has less than K points.  During each draw, she gains an integer number of points randomly from the range [1, W], where W is an integer.  Each draw is independent and the outcomes have equal probabilities.
 Alice stops drawing numbers when she gets K or more points.  What is the probability that she has N or less points?
@@ -13139,7 +13139,7 @@ Explanation: The output [11, 0, 11, 11] would also be accepted.
 Note: 
 
 1 <= S.length <= 200
-S contains only digits.","String,Backtracking,Greedy","/problems/additive-number/,/problems/fibonacci-number/"
+S contains only digits.","Strings,Backtracking,Greedy Algorithms","/problems/additive-number/,/problems/fibonacci-number/"
 Guess the Word,Hard,"This problem is an interactive problem new to the LeetCode platform.
 We are given a word list of unique words, each word is 6 letters long, and one word in this list is chosen as secret.
 You may call master.guess(word) to guess a word.  The guessed word should have type string and must be from the original list with 6 lowercase letters.
@@ -13278,7 +13278,7 @@ After shifting the first 3 letters of S by 9, we have ""rpl"", the answer.
 Note:
 
 1 <= S.length = shifts.length <= 20000
-0 <= shifts[i] <= 10 ^ 9",String,
+0 <= shifts[i] <= 10 ^ 9",Strings,
 Maximize Distance to Closest Person,Easy,"In a row of seats, 1 represents a person sitting in that seat, and 0 represents that the seat is empty. 
 There is at least one empty seat, and at least one person sitting.
 Alex wants to sit in the seat such that the distance between him and the closest person to him is maximized. 
@@ -13481,7 +13481,7 @@ Output: 6
 Note:
 
 S is a balanced parentheses string, containing only ( and ).
-2 <= S.length <= 50","String,Stack",
+2 <= S.length <= 50","Strings,Stack",
 Minimum Cost to Hire K Workers,Hard,"There are N workers.  The i-th worker has a quality[i] and a minimum wage expectation wage[i].
 Now we want to hire exactly K workers to form a paid group.  When hiring a group of K workers, we must pay them according to the following rules:
 
@@ -13525,7 +13525,7 @@ Explanation: The ray meets receptor 2 the first time it gets reflected back to t
 Note:
 
 1 <= p <= 1000
-0 <= q <= p",Math,
+0 <= q <= p",Mathematics,
 Buddy Strings,Easy,"Given two strings A and B of lowercase letters, return true if and only if we can swap two letters in A so that the result equals B.
  
 Example 1:
@@ -13558,7 +13558,7 @@ Note:
 
 0 <= A.length <= 20000
 0 <= B.length <= 20000
-A and B consist only of lowercase letters.",String,
+A and B consist only of lowercase letters.",Strings,
 Lemonade Change,Easy,"At a lemonade stand, each lemonade costs $5. 
 Customers are standing in a queue to buy from you, and order one at a time (in the order specified by bills).
 Each customer will only buy one lemonade and pay with either a $5, $10, or $20 bill.  You must provide the correct change to each customer, so that the net transaction is that the customer pays $5.
@@ -13599,7 +13599,7 @@ Since not every customer received correct change, the answer is false.
 Note:
 
 0 <= bills.length <= 10000
-bills[i] will be either 5, 10, or 20.",Greedy,
+bills[i] will be either 5, 10, or 20.",Greedy Algorithms,
 Score After Flipping Matrix,Medium,"We have a two dimensional matrix A where each value is 0 or 1.
 A move consists of choosing any row or column, and toggling each value in that row or column: changing all 0s to 1s, and all 1s to 0s.
 After making any number of moves, every row of this matrix is interpreted as a binary number, and the score of the matrix is the sum of these numbers.
@@ -13619,7 +13619,7 @@ Note:
 
 1 <= A.length <= 20
 1 <= A[0].length <= 20
-A[i][j] is 0 or 1.",Greedy,
+A[i][j] is 0 or 1.",Greedy Algorithms,
 Shortest Subarray with Sum at Least K,Hard,"Return the length of the shortest, non-empty, contiguous subarray of A with sum at least K.
 If there is no non-empty subarray with sum at least K, return -1.
  
@@ -13746,7 +13746,7 @@ Output: 101
 Note:
 
 1 <= N <= 10^8
-The answer is guaranteed to exist and be less than 2 * 10^8.",Math,
+The answer is guaranteed to exist and be less than 2 * 10^8.",Mathematics,
 Transpose Matrix,Easy,"Given a matrix A, return the transpose of A.
 The transpose of a matrix is the matrix flipped over it's main diagonal, switching the row and column indices of the matrix.
  
@@ -13815,7 +13815,7 @@ There aren't any consecutive pairs of 1's in the binary representation of 8, so 
 
 Note:
 
-1 <= N <= 10^9",Math,
+1 <= N <= 10^9",Mathematics,
 Reordered Power of 2,Medium,"Starting with a positive integer N, we reorder the digits in any order (including the original order) such that the leading digit is not zero.
 Return true if and only if we can do this in a way such that the resulting number is a power of 2.
  
@@ -13849,7 +13849,7 @@ Output: true
  
 Note:
 
-1 <= N <= 10^9",Math,
+1 <= N <= 10^9",Mathematics,
 Advantage Shuffle,Medium,"Given two arrays A and B of equal size, the advantage of A with respect to B is the number of indices i for which A[i] > B[i].
 Return any permutation of A that maximizes its advantage with respect to B.
  
@@ -13868,7 +13868,7 @@ Note:
 
 1 <= A.length = B.length <= 10000
 0 <= A[i] <= 10^9
-0 <= B[i] <= 10^9","Array,Greedy",
+0 <= B[i] <= 10^9","Array,Greedy Algorithms",
 Minimum Number of Refueling Stops,Hard,"A car travels from a starting position to a destination which is target miles east of the starting position.
 Along the way, there are gas stations.  Each station[i] represents a gas station that is station[i][0] miles east of the starting position, and has station[i][1] liters of gas.
 The car starts with an infinite tank of gas, which initially has startFuel liters of fuel in it.  It uses 1 liter of gas per 1 mile that it drives.
@@ -13973,7 +13973,7 @@ Note:
 0 <= obstacles.length <= 10000
 -30000 <= obstacle[i][0] <= 30000
 -30000 <= obstacle[i][1] <= 30000
-The answer is guaranteed to be less than 2 ^ 31.",Greedy,
+The answer is guaranteed to be less than 2 ^ 31.",Greedy Algorithms,
 Koko Eating Bananas,Medium,"Koko loves to eat bananas.  There are N piles of bananas, the i-th pile has piles[i] bananas.  The guards have gone and will come back in H hours.
 Koko can decide her bananas-per-hour eating speed of K.  Each hour, she chooses some pile of bananas, and eats K bananas from that pile.  If the pile has less than K bananas, she eats all of them instead, and won't eat any more bananas during this hour.
 Koko likes to eat slowly, but still wants to finish eating all the bananas before the guards come back.
@@ -14044,7 +14044,7 @@ Note:
 2 <= piles.length <= 500
 piles.length is even.
 1 <= piles[i] <= 500
-sum(piles) is odd.","Math,Dynamic Programming,Minimax",
+sum(piles) is odd.","Mathematics,Dynamic Programming,Minimax",
 Nth Magical Number,Hard,"A positive integer is magical if it is divisible by either A or B.
 Return the N-th magical number.  Since the answer may be very large, return it modulo 10^9 + 7.
  
@@ -14075,7 +14075,7 @@ Note:
 
 1 <= N <= 10^9
 2 <= A <= 40000
-2 <= B <= 40000","Math,Binary Search",
+2 <= B <= 40000","Mathematics,Binary Search",
 Profitable Schemes,Hard,"There are G people in a gang, and a list of various crimes they could commit.
 The i-th crime generates a profit[i] and requires group[i] gang members to participate.
 If a gang member participates in one crime, that member can't participate in another crime.
@@ -14167,7 +14167,7 @@ Explanation: 4 boats (3), (3), (4), (5)
 Note:
 
 1 <= people.length <= 50000
-1 <= people[i] <= limit <= 30000","Two Pointers,Greedy",
+1 <= people[i] <= limit <= 30000","Two Pointers,Greedy Algorithms",
 Reachable Nodes In Subdivided Graph,Hard,"Starting with an undirected graph (the ""original graph"") with nodes from 0 to N-1, subdivisions are made to some of the edges.
 The graph is given as follows: edges[k] is a list of integer pairs (i, j, n) such that (i, j) is an edge of the original graph,
 and n is the total number of new nodes on that edge. 
@@ -14279,7 +14279,7 @@ Output: 21
 Note:
 
 1 <= grid.length = grid[0].length <= 50
-0 <= grid[i][j] <= 50",Math,
+0 <= grid[i][j] <= 50",Mathematics,
 Uncommon Words from Two Sentences,Easy,"We are given two sentences A and B.  (A sentence is a string of space separated words.  Each word consists only of lowercase letters.)
 A word is uncommon if it appears exactly once in one of the sentences, and does not appear in the other sentence.
 Return a list of all uncommon words. 
@@ -14331,7 +14331,7 @@ Note:
 1 <= R <= 100
 1 <= C <= 100
 0 <= r0 < R
-0 <= c0 < C",Math,
+0 <= c0 < C",Mathematics,
 Possible Bipartition,Medium,"Given a set of N people (numbered 1, 2, ..., N), we would like to split everyone into two groups of any size.
 Each person may dislike some other people, and they should not go into the same group. 
 Formally, if dislikes[i] = [a, b], it means it is not allowed to put the people numbered a and b into the same group.
@@ -14400,7 +14400,7 @@ Output: 4
 Note:
 
 1 <= K <= 100
-1 <= N <= 10000","Math,Binary Search,Dynamic Programming",
+1 <= N <= 10000","Mathematics,Binary Search,Dynamic Programming",
 Fair Candy Swap,Easy,"Alice and Bob have candy bars of different sizes: A[i] is the size of the i-th bar of candy that Alice has, and B[j] is the size of the j-th bar of candy that Bob has.
 Since they are friends, they would like to exchange one candy bar each so that after the exchange, they both have the same total amount of candy.  (The total amount of candy a person has is the sum of the sizes of candy bars they have.)
 Return an integer array ans where ans[0] is the size of the candy bar that Alice must exchange, and ans[1] is the size of the candy bar that Bob must exchange.
@@ -14466,7 +14466,7 @@ since a and b map to the same letter.
 Note:
 
 1 <= words.length <= 50
-1 <= pattern.length = words[i].length <= 20",String,
+1 <= pattern.length = words[i].length <= 20",Strings,
 Sum of Subsequence Widths,Hard,"Given an array of integers A, consider all non-empty subsequences of A.
 For any sequence S, let the width of S be the difference between the maximum and minimum element of S.
 Return the sum of the widths of all subsequences of A. 
@@ -14485,7 +14485,7 @@ The sum of these widths is 6.
 Note:
 
 1 <= A.length <= 20000
-1 <= A[i] <= 20000","Array,Math",
+1 <= A[i] <= 20000","Array,Mathematics",
 Surface Area of 3D Shapes,Easy,"On a N * N grid, we place some 1 * 1 * 1 cubes.
 Each value v = grid[i][j] represents a tower of v cubes placed on top of grid cell (i, j).
 Return the total surface area of the resulting shapes.
@@ -14527,7 +14527,7 @@ Output: 46
 Note:
 
 1 <= N <= 50
-0 <= grid[i][j] <= 50","Math,Geometry",
+0 <= grid[i][j] <= 50","Mathematics,Geometry",
 Groups of Special-Equivalent Strings,Easy,"You are given an array A of strings.
 Two strings S and T are special-equivalent if after any number of moves, S == T.
 A move consists of choosing two indices i and j with i % 2 == j % 2, and swapping S[i] with S[j].
@@ -14566,7 +14566,7 @@ Note:
 1 <= A.length <= 1000
 1 <= A[i].length <= 20
 All A[i] have the same length.
-All A[i] consist of only lowercase letters.",String,
+All A[i] consist of only lowercase letters.",Strings,
 All Possible Full Binary Trees,Medium,"A full binary tree is a binary tree where each node has exactly 0 or 2 children.
 Return a list of all possible full binary trees with N nodes.  Each element of the answer is the root node of one possible tree.
 Each node of each tree in the answer must have node.val = 0.
@@ -14751,7 +14751,7 @@ In the second move, we move the 3rd character (""c"") to the end, obtaining the 
 Note:
 
 1 <= K <= S.length <= 1000
-S consists of lowercase letters only.","Math,String",
+S consists of lowercase letters only.","Mathematics,Strings",
 RLE Iterator,Medium,"Write an iterator that iterates through a run-length encoded sequence.
 The iterator is initialized by RLEIterator(int[] A), where A is a run-length encoding of some sequence.  More specifically, for all even i, A[i] tells us the number of times that the non-negative integer value A[i+1] is repeated in the sequence.
 The iterator supports one function: next(int n), which exhausts the next n elements (n >= 1) and returns the last element exhausted in this way.  If there is no element left to exhaust, next returns -1 instead.
@@ -14835,7 +14835,7 @@ In total, this is 29523 integers that can be written using the digits of D.
 Note:
 
 D is a subset of digits '1'-'9' in sorted order.
-1 <= N <= 10^9","Math,Dynamic Programming",
+1 <= N <= 10^9","Mathematics,Dynamic Programming",
 Valid Permutations for DI Sequence,Hard,"We are given S, a length n string of characters from the set {'D', 'I'}. (These letters stand for ""decreasing"" and ""increasing"".)
 A valid permutation is a permutation P[0], P[1], ..., P[n] of integers {0, 1, ..., n}, such that for all i:
 
@@ -14932,7 +14932,7 @@ Note:
 1 <= len(L) <= 18
 1 <= len(R) <= 18
 L and R are strings representing integers in the range [1, 10^18).
-int(L) <= int(R)",Math,
+int(L) <= int(R)",Mathematics,
 Sum of Subarray Minimums,Medium,"Given an array of integers A, find the sum of min(B), where B ranges over every (contiguous) subarray of A.
 Since the answer may be large, return the answer modulo 10^9 + 7.
  
@@ -14975,7 +14975,7 @@ Note:
 
 1 <= A.length <= 10000
 0 <= A[i] <= 10000
-0 <= K <= 10000",Math,
+0 <= K <= 10000",Mathematics,
 Snakes and Ladders,Medium,"On an N x N board, the numbers from 1 to N*N are written boustrophedonically starting from the bottom left of the board, and alternating direction each row.  For example, for a 6 x 6 board, the numbers are written as follows:
 
 
@@ -15044,7 +15044,7 @@ Note:
 
 1 <= A.length <= 10000
 0 <= A[i] <= 10000
-0 <= K <= 10000","Math,Greedy",
+0 <= K <= 10000","Mathematics,Greedy Algorithms",
 Online Election,Medium,"In an election, the i-th vote was cast for persons[i] at time times[i].
 Now, we would like to implement the following query function: TopVotedCandidate.q(int t) will return the number of the person that was leading the election at time t.  
 Votes cast at time t will count towards our query.  In the case of a tie, the most recent vote (among tied candidates) wins.
@@ -15160,7 +15160,7 @@ Explanation: Possible partition [1,1],[2,2],[2,2]
 Note:
 
 1 <= deck.length <= 10000
-0 <= deck[i] < 10000","Array,Math",
+0 <= deck[i] < 10000","Array,Mathematics",
 Partition Array into Disjoint Intervals,Medium,"Given an array A, partition it into two (contiguous) subarrays left and right so that:
 
 Every element in left is less than or equal to every element in right.
@@ -15225,7 +15225,7 @@ Note:
 1 <= A.length, B.length <= 10000
 1 <= A[i].length, B[i].length <= 10
 A[i] and B[i] consist only of lowercase letters.
-All words in A[i] are unique: there isn't i != j with A[i] == A[j].",String,
+All words in A[i] are unique: there isn't i != j with A[i] == A[j].",Strings,
 Reverse Only Letters,Easy,"Given a string S, return the ""reversed"" string where all characters that are not a letter stay in the same place, and all letters reverse their positions.
  
 
@@ -15257,7 +15257,7 @@ Note:
 
 S.length <= 100
 33 <= S[i].ASCIIcode <= 122 
-S doesn't contain \ or """,String,
+S doesn't contain \ or """,Strings,
 Maximum Sum Circular Subarray,Medium,"Given a circular array C of integers represented by A, find the maximum possible sum of a non-empty subarray of C.
 Here, a circular array means the end of the array connects to the beginning of the array.  (Formally, C[i] = A[i] when 0 <= i < A.length, and C[i+A.length] = C[i] when i >= 0.)
 Also, a subarray may only include each element of the fixed buffer A at most once.  (Formally, for a subarray C[i], C[i+1], ..., C[j], there does not exist i <= k1, k2 <= j with k1 % A.length = k2 % A.length.)
@@ -15390,7 +15390,7 @@ Output: 4
 Note:
 
 S.length <= 1000
-S only consists of '(' and ')' characters.","Stack,Greedy",
+S only consists of '(' and ')' characters.","Stack,Greedy Algorithms",
 Sort Array By Parity II,Easy,"Given an array A of non-negative integers, half of the integers in A are odd, and half of the integers are even.
 Sort the array so that whenever A[i] is odd, i is odd; and whenever A[i] is even, i is even.
 You may return any answer array that satisfies this condition.
@@ -15496,7 +15496,7 @@ Note:
 
 name.length <= 1000
 typed.length <= 1000
-The characters of name and typed are lowercase letters.","Two Pointers,String",
+The characters of name and typed are lowercase letters.","Two Pointers,Strings",
 Flip String to Monotone Increasing,Medium,"A string of '0's and '1's is monotone increasing if it consists of some number of '0's (possibly 0), followed by some number of '1's (also possibly 0.)
 We are given a string S of '0's and '1's, and we may flip any '0' to a '1' or a '1' to a '0'.
 Return the minimum number of flips to make S monotone increasing.
@@ -15548,7 +15548,7 @@ Output: [-1,-1]
 Note:
 
 3 <= A.length <= 30000
-A[i] == 0 or A[i] == 1","Math,Binary Search,Greedy",
+A[i] == 0 or A[i] == 1","Mathematics,Binary Search,Greedy Algorithms",
 Minimize Malware Spread II,Hard,"(This problem is the same as Minimize Malware Spread, with the differences bolded.)
 In a network of nodes, each node i is directly connected to another node j if and only if graph[i][j] = 1.
 Some nodes initial are initially infected by malware.  Whenever two nodes are directly connected and at least one of those two nodes is infected by malware, both nodes will be infected by malware.  This spread of malware will continue until no more nodes can be infected in this manner.
@@ -15601,7 +15601,7 @@ Note:
 1 <= emails.length <= 100
 Each emails[i] contains exactly one '@' character.
 All local and domain names are non-empty.
-Local names do not start with a '+' character.",String,
+Local names do not start with a '+' character.",Strings,
 Binary Subarrays With Sum,Medium,"In an array A of 0s and 1s, how many non-empty subarrays have sum S?
  
 Example 1:
@@ -15750,7 +15750,7 @@ Note:
 
 
 1 <= stamp.length <= target.length <= 1000
-stamp and target only contain lowercase letters.","String,Greedy",
+stamp and target only contain lowercase letters.","Strings,Greedy Algorithms",
 Reorder Data in Log Files,Easy,"You have an array of logs.  Each log is a space delimited string of words.
 For each log, the first word in each log is an alphanumeric identifier.  Then, either:
 
@@ -15770,7 +15770,7 @@ Constraints:
 
 0 <= logs.length <= 100
 3 <= logs[i].length <= 100
-logs[i] is guaranteed to have an identifier, and a word after the identifier.",String,
+logs[i] is guaranteed to have an identifier, and a word after the identifier.",Strings,
 Range Sum of BST,Easy,"Given the root node of a binary search tree, return the sum of values of all nodes with value between L and R (inclusive).
 The binary search tree is guaranteed to have unique values.
  
@@ -15895,7 +15895,7 @@ Output: [3,2,0,1]
 Note:
 
 1 <= S.length <= 10000
-S only contains characters ""I"" or ""D"".",Math,
+S only contains characters ""I"" or ""D"".",Mathematics,
 Find the Shortest Superstring,Hard,"Given an array A of strings, find any smallest string that contains each string in A as a substring.
 We may assume that no string in A is substring of another string in A.
  
@@ -15946,7 +15946,7 @@ Explanation: D = {0, 1, 2}
 Note:
 
 1 <= A.length <= 100
-1 <= A[i].length <= 1000",Greedy,
+1 <= A[i].length <= 1000",Greedy Algorithms,
 Minimum Increment to Make Array Unique,Medium,"Given an array of integers A, a move consists of choosing any A[i], and incrementing it by 1.
 Return the least number of moves to make every value in A unique.
  
@@ -16045,7 +16045,7 @@ Note:
 
 tokens.length <= 1000
 0 <= tokens[i] < 10000
-0 <= P < 10000",Greedy,
+0 <= P < 10000",Greedy Algorithms,
 Largest Time for Given Digits,Easy,"Given an array of 4 digits, return the largest 24 hour time that can be made.
 The smallest 24 hour time is 00:00, and the largest is 23:59.  Starting from 00:00, a time is larger if more time has elapsed since midnight.
 Return the answer as a string of length 5.  If no valid time can be made, return an empty string.
@@ -16064,7 +16064,7 @@ Output: """"
 Note:
 
 A.length == 4
-0 <= A[i] <= 9",Math,
+0 <= A[i] <= 9",Mathematics,
 Reveal Cards In Increasing Order,Medium,"In a deck of cards, every card has a unique integer.  You can order the deck in any order you want.
 Initially, all the cards start face down (unrevealed) in one deck.
 Now, you do the following steps repeatedly, until all cards are revealed:
@@ -16144,7 +16144,7 @@ Output: 8
 Note:
 
 1 <= A.length <= 20000
-1 <= A[i] <= 100000","Math,Union Find",
+1 <= A[i] <= 100000","Mathematics,Union Find",
 Verifying an Alien Dictionary,Easy,"In an alien language, surprisingly they also use english lowercase letters, but possibly in a different order. The order of the alphabet is some permutation of lowercase letters.
 Given a sequence of words written in the alien language, and the order of the alphabet, return true if and only if the given words are sorted lexicographicaly in this alien language.
  
@@ -16253,7 +16253,7 @@ We have to delete every column.
 Note:
 
 1 <= A.length <= 100
-1 <= A[i].length <= 100",Greedy,
+1 <= A[i].length <= 100",Greedy Algorithms,
 Tallest Billboard,Hard,"You are installing a billboard and want it to have the largest height.  The billboard will have two steel supports, one on each side.  Each steel support must be an equal height.
 You have a collection of rods which can be welded together.  For example, if you have rods of lengths 1, 2, and 3, you can weld them together to make a support of length 6.
 Return the largest possible height of your billboard installation.  If you cannot support the billboard, return 0.
@@ -16549,7 +16549,7 @@ Note:
 0 <= points[i][0] <= 40000
 0 <= points[i][1] <= 40000
 All points are distinct.
-Answers within 10^-5 of the actual value will be accepted as correct.","Math,Geometry",
+Answers within 10^-5 of the actual value will be accepted as correct.","Mathematics,Geometry",
 Least Operators to Express Number,Hard,"Given a single positive integer x, we will write an expression of the form x (op1) x (op2) x (op3) x ... where each operator op1, op2, etc. is either addition, subtraction, multiplication, or division (+, -, *, or /).  For example, with x = 3, we might write 3 * 3 / 3 + 3 - 3 which is a value of 3.
 When writing such an expression, we adhere to the following conventions:
 
@@ -16584,7 +16584,7 @@ Explanation: 100 * 100 * 100 * 100.  The expression contains 3 operations.
 Note:
 
 2 <= x <= 100
-1 <= target <= 2 * 10^8","Math,Dynamic Programming",
+1 <= target <= 2 * 10^8","Mathematics,Dynamic Programming",
 Univalued Binary Tree,Easy,"A binary tree is univalued if every node in the tree has the same value.
 Return true if and only if the given tree is univalued.
  
@@ -16643,7 +16643,7 @@ Note:
 1 <= queries.length <= 5000
 1 <= wordlist[i].length <= 7
 1 <= queries[i].length <= 7
-All strings in wordlist and queries consist only of english letters.","Hash Table,String",
+All strings in wordlist and queries consist only of english letters.","Hash Table,Strings",
 Numbers With Same Consecutive Differences,Medium,"Return all non-negative integers of length N such that the absolute difference between every two consecutive digits is K.
 Note that every number in the answer must not have leading zeros except for the number 0 itself. For example, 01 has one leading zero and is invalid, but 0 is valid.
 You may return the answer in any order.
@@ -16742,7 +16742,7 @@ Note:
 
 1 <= x <= 100
 1 <= y <= 100
-0 <= bound <= 10^6","Hash Table,Math",
+0 <= bound <= 10^6","Hash Table,Mathematics",
 Flip Binary Tree To Match Preorder Traversal,Medium,"Given a binary tree with N nodes, each node has a different value from {1, ..., N}.
 A node in this binary tree can be flipped by swapping the left child and the right child of that node.
 Consider the sequence of N values reported by a preorder traversal starting from the root.  Call such a sequence of N values the voyage of the tree.
@@ -16811,7 +16811,7 @@ Each part consists only of digits.
 The <IntegerPart> will not begin with 2 or more zeros.  (There is no other restriction on the digits of each part.)
 1 <= <IntegerPart>.length <= 4 
 0 <= <NonRepeatingPart>.length <= 4 
-1 <= <RepeatingPart>.length <= 4",Math,
+1 <= <RepeatingPart>.length <= 4",Mathematics,
 K Closest Points to Origin,Medium,"We have a list of points on the plane.  Find the K closest points to the origin (0, 0).
 (Here, the distance between two points on a plane is the Euclidean distance.)
 You may return the answer in any order.  The answer is guaranteed to be unique (except for the order that it is in.)
@@ -16938,7 +16938,7 @@ Output: 8
 Note:
 
 3 <= A.length <= 10000
-1 <= A[i] <= 10^6","Math,Sort",/problems/largest-triangle-area/
+1 <= A[i] <= 10^6","Mathematics,Sort",/problems/largest-triangle-area/
 Squares of a Sorted Array,Easy,"Given an array of integers A sorted in non-decreasing order, return an array of the squares of each number, also in sorted non-decreasing order.
  
 
@@ -17196,7 +17196,7 @@ Note:
 
 0 <= A <= 100
 0 <= B <= 100
-It is guaranteed such an S exists for the given A and B.",Greedy,
+It is guaranteed such an S exists for the given A and B.",Greedy Algorithms,
 Sum of Even Numbers After Queries,Easy,"We have an array A of integers, and an array queries of queries.
 For the i-th query val = queries[i][0], index = queries[i][1], we add val to A[index].  Then, the answer to the i-th query is the sum of the even values of A.
 (Here, the given index = queries[i][1] is a 0-based index, and each query permanently modifies the array A.)
@@ -17413,7 +17413,7 @@ Explanation: Use decrement operations 1023 times.
 Note:
 
 1 <= X <= 10^9
-1 <= Y <= 10^9","Math,Greedy",/problems/2-keys-keyboard/
+1 <= Y <= 10^9","Mathematics,Greedy Algorithms",/problems/2-keys-keyboard/
 Subarrays with K Different Integers,Hard,"Given an array A of positive integers, call a (contiguous, not necessarily distinct) subarray of A good if the number of different integers in that subarray is exactly K.
 (For example, [1,2,3,1,2] has 3 different integers: 1, 2, and 3.)
 Return the number of good subarrays of A.
@@ -17524,7 +17524,7 @@ Flip A[5],A[6],A[7]: A becomes [1,1,1,1,1,1,1,1]
 Note:
 
 1 <= A.length <= 30000
-1 <= K <= A.length","Greedy,Sliding Window",/problems/bulb-switcher/
+1 <= K <= A.length","Greedy Algorithms,Sliding Window",/problems/bulb-switcher/
 Number of Squareful Arrays,Hard,"Given an array A of non-negative integers, the array is squareful if for every pair of adjacent elements, their sum is a perfect square.
 Return the number of permutations of A that are squareful.  Two permutations A1 and A2 differ if and only if there is some index i such that A1[i] != A2[i].
  
@@ -17542,7 +17542,7 @@ Output: 1
 Note:
 
 1 <= A.length <= 12
-0 <= A[i] <= 1e9","Math,Backtracking,Graph",/problems/permutations-ii/
+0 <= A[i] <= 1e9","Mathematics,Backtracking,Graph",/problems/permutations-ii/
 Find the Town Judge,Easy,"In a town, there are N people labelled from 1 to N.  There is a rumor that one of these people is secretly the town judge.
 If the town judge exists, then:
 
@@ -17782,7 +17782,7 @@ Output: false
 Note:
 
 1 <= S.length <= 20000
-S[i] is 'a', 'b', or 'c'","String,Stack",/problems/valid-parentheses/
+S[i] is 'a', 'b', or 'c'","Strings,Stack",/problems/valid-parentheses/
 Max Consecutive Ones III,Medium,"Given an array A of 0s and 1s, we may change up to K values from 0 to 1.
 Return the length of the longest (contiguous) subarray that contains only 1s. 
  
@@ -17834,7 +17834,7 @@ Note:
 
 1 <= A.length <= 10000
 1 <= K <= 10000
--100 <= A[i] <= 100",Greedy,
+-100 <= A[i] <= 100",Greedy Algorithms,
 Clumsy Factorial,Medium,"Normally, the factorial of a positive integer n is the product of all positive integers less than or equal to n.  For example, factorial(10) = 10 * 9 * 8 * 7 * 6 * 5 * 4 * 3 * 2 * 1.
 We instead make a clumsy factorial: using the integers in decreasing order, we swap out the multiply operations for a fixed rotation of operations: multiply (*), divide (/), add (+) and subtract (-) in this order.
 For example, clumsy(10) = 10 * 9 / 8 + 7 - 6 * 5 / 4 + 3 - 2 * 1.  However, these operations are still applied using the usual order of operations of arithmetic: we do all multiplication and division steps before any addition or subtraction steps, and multiplication and division steps are processed left to right.
@@ -17855,7 +17855,7 @@ Explanation: 12 = 10 * 9 / 8 + 7 - 6 * 5 / 4 + 3 - 2 * 1
 Note:
 
 1 <= N <= 10000
--2^31 <= answer <= 2^31 - 1  (The answer is guaranteed to fit within a 32-bit integer.)",Math,
+-2^31 <= answer <= 2^31 - 1  (The answer is guaranteed to fit within a 32-bit integer.)",Mathematics,
 Minimum Domino Rotations For Equal Row,Medium,"In a row of dominoes, A[i] and B[i] represent the top and bottom halves of the i-th domino.  (A domino is a tile with two numbers from 1 to 6 - one on each half of the tile.)
 We may rotate the i-th domino, so that A[i] and B[i] swap values.
 Return the minimum number of rotations so that all the values in A are the same, or all the values in B are the same.
@@ -17879,7 +17879,7 @@ In this case, it is not possible to rotate the dominoes to make one row of value
 Note:
 
 1 <= A[i], B[i] <= 6
-2 <= A.length == B.length <= 20000","Array,Greedy",
+2 <= A.length == B.length <= 20000","Array,Greedy Algorithms",
 Construct Binary Search Tree from Preorder Traversal,Medium,"Return the root node of a binary search tree that matches the given preorder traversal.
 (Recall that a binary search tree is a binary tree where for every node, any descendant of node.left has a value < node.val, and any descendant of node.right has a value > node.val.  Also recall that a preorder traversal displays the value of the node first, then traverses node.left, then traverses node.right.)
  
@@ -17920,7 +17920,7 @@ Explanation: 10 is ""1010"" in binary, with complement ""0101"" in binary, which
  
 Note:
 
-0 <= N < 10^9",Math,
+0 <= N < 10^9",Mathematics,
 Pairs of Songs With Total Durations Divisible by 60,Easy,"In a list of songs, the i-th song has a duration of time[i] seconds. 
 Return the number of pairs of songs for which their total duration in seconds is divisible by 60.  Formally, we want the number of indices i < j with (time[i] + time[j]) % 60 == 0.
  
@@ -18007,7 +18007,7 @@ Output: 262
  
 Note:
 
-1 <= N <= 10^9","Math,Dynamic Programming",
+1 <= N <= 10^9","Mathematics,Dynamic Programming",
 Partition Array Into Three Parts With Equal Sum,Easy,"Given an array A of integers, return true if and only if we can partition the array into three non-empty parts with equal sums.
 Formally, we can partition the array if we can find indexes i+1 < j with (A[0] + A[1] + ... + A[i] == A[i+1] + A[i+2] + ... + A[j-1] == A[j] + A[j-1] + ... + A[A.length - 1])
  
@@ -18066,7 +18066,7 @@ Explanation: The smallest answer is N = 111, which has length 3.
  
 Note:
 
-1 <= K <= 10^5",Math,
+1 <= K <= 10^5",Mathematics,
 Binary String With Substrings Representing 1 To N,Medium,"Given a binary string S (a string consisting only of '0' and '1's) and a positive integer N, return true if and only if for every integer X from 1 to N, the binary representation of X is a substring of S.
  
 Example 1:
@@ -18081,7 +18081,7 @@ Output: false
 Note:
 
 1 <= S.length <= 1000
-1 <= N <= 10^9",String,
+1 <= N <= 10^9",Strings,
 Convert to Base -2,Medium,"Given a number N, return a string consisting of ""0""s and ""1""s that represents its value in base -2 (negative two).
 The returned string must have no leading zeroes, unless the string is ""0"".
  
@@ -18106,7 +18106,7 @@ Explantion: (-2) ^ 2 = 4
  
 Note:
 
-0 <= N <= 10^9",Math,
+0 <= N <= 10^9",Mathematics,
 Binary Prefix Divisible By 5,Easy,"Given an array A of 0s and 1s, consider N_i: the i-th subarray from A[0] to A[i] interpreted as a binary number (from most-significant-bit to least-significant-bit.)
 Return a list of booleans answer, where answer[i] is true if and only if N_i is divisible by 5.
 Example 1:
@@ -18260,7 +18260,7 @@ Note:
 1 <= queries.length <= 100
 1 <= queries[i].length <= 100
 1 <= pattern.length <= 100
-All strings consists only of lower and upper case English letters.","String,Trie",
+All strings consists only of lower and upper case English letters.","Strings,Trie",
 Video Stitching,Medium,"You are given a series of video clips from a sporting event that lasted T seconds.  These video clips can be overlapping with each other and have varied lengths.
 Each video clip clips[i] is an interval: it starts at time clips[i][0] and ends at time clips[i][1].  We can cut these clips into segments freely: for example, a clip [0, 7] can be cut into segments [0, 1] + [1, 3] + [3, 7].
 Return the minimum number of clips needed so that we can cut the clips into segments that cover the entire sporting event ([0, T]).  If the task is impossible, return -1.
@@ -18324,7 +18324,7 @@ Explanation: Alice chooses 1, Bob chooses 1, and Alice has no more moves.
  
 Note:
 
-1 <= N <= 1000","Math,Dynamic Programming",
+1 <= N <= 1000","Mathematics,Dynamic Programming",
 Maximum Difference Between Node and Ancestor,Medium,"Given the root of a binary tree, find the maximum value V for which there exists different nodes A and B where V = |A.val - B.val| and A is an ancestor of B.
 (A node A is an ancestor of B if either: any child of A is equal to B, or any child of A is an ancestor of B.)
  
@@ -18423,7 +18423,7 @@ Note:
 
 1 <= costs.length <= 100
 It is guaranteed that costs.length is even.
-1 <= costs[i][0], costs[i][1] <= 1000",Greedy,
+1 <= costs[i][0], costs[i][1] <= 1000",Greedy Algorithms,
 Matrix Cells in Distance Order,Easy,"We are given a matrix with R rows and C columns has cells with integer coordinates (r, c), where 0 <= r < R and 0 <= c < C.
 Additionally, we are given a cell in that matrix with coordinates (r0, c0).
 Return the coordinates of all cells in the matrix, sorted by their distance from (r0, c0) from smallest distance to largest distance.  Here, the distance between two cells (r1, c1) and (r2, c2) is the Manhattan distance, |r1 - r2| + |c1 - c2|.  (You may return the answer in any order that satisfies this condition.)
@@ -18653,7 +18653,7 @@ Note:
 
 points.length == 3
 points[i].length == 2
-0 <= points[i][j] <= 100",Math,
+0 <= points[i][j] <= 100",Mathematics,
 Binary Search Tree to Greater Sum Tree,Medium,"Given the root of a binary search tree with distinct values, modify it so that every node has a new value equal to the sum of the values of the original tree that are greater than or equal to node.val.
 As a reminder, a binary search tree is a tree that satisfies these constraints:
 
@@ -18674,7 +18674,7 @@ Note:
 
 The number of nodes in the tree is between 1 and 100.
 Each node will have value between 0 and 100.
-The given tree is a binary search tree.",Binary Search Tree,
+The given tree is a binary search tree.",Binary Search,
 Minimum Score Triangulation of Polygon,Medium,"Given N, consider a convex N-sided polygon with vertices labelled A[0], A[i], ..., A[N-1] in clockwise order.
 Suppose you triangulate the polygon into N-2 triangles.  For each triangle, the value of that triangle is the product of the labels of the vertices, and the total score of the triangulation is the sum of these values over all N-2 triangles in the triangulation.
 Return the smallest possible total score that you can achieve with some triangulation of the polygon.
@@ -18770,7 +18770,7 @@ The robot moves from (0, 0) -> (0, 1) -> (-1, 1) -> (-1, 0) -> (0, 0) -> ...
 Note:
 
 1 <= instructions.length <= 100
-instructions[i] is in {'G', 'L', 'R'}",Math,
+instructions[i] is in {'G', 'L', 'R'}",Mathematics,
 Flower Planting With No Adjacent,Easy,"You have N gardens, labelled 1 to N.  In each garden, you want to plant one of 4 types of flowers.
 paths[i] = [x, y] describes the existence of a bidirectional path from garden x to garden y.
 Also, there is no garden that has more than 3 paths coming into or leaving it.
@@ -18847,7 +18847,7 @@ we combine 1 and 1 to get 0 so the array converts to [1] then that's the value o
 Note:
 
 1 <= stones.length <= 30
-1 <= stones[i] <= 1000","Heap,Greedy",
+1 <= stones[i] <= 1000","Heap,Greedy Algorithms",
 Remove All Adjacent Duplicates In String,Easy,"Given a string S of lowercase letters, a duplicate removal consists of choosing two adjacent and equal letters, and removing them.
 We repeatedly make duplicate removals on S until we no longer can.
 Return the final string after all such duplicate removals have been made.  It is guaranteed the answer is unique.
@@ -18958,7 +18958,7 @@ Explanation: Swapping 1 and 3.
 Note:
 
 1 <= A.length <= 10000
-1 <= A[i] <= 10000","Array,Greedy",
+1 <= A[i] <= 10000","Array,Greedy Algorithms",
 Distant Barcodes,Medium,"In a warehouse, there is a row of barcodes, where the i-th barcode is barcodes[i].
 Rearrange the barcodes so that no two adjacent barcodes are equal.  You may return any answer, and it is guaranteed an answer exists.
  
@@ -18996,7 +18996,7 @@ Note:
 
 1 <= str1.length <= 1000
 1 <= str2.length <= 1000
-str1[i] and str2[i] are English uppercase letters.",String,
+str1[i] and str2[i] are English uppercase letters.",Strings,
 Flip Columns For Maximum Number of Equal Rows,Medium,"Given a matrix consisting of 0s and 1s, we may choose any number of columns in the matrix and flip every cell in that column.  Flipping a cell changes the value of that cell from 0 to 1 or from 1 to 0.
 Return the maximum number of rows that have all values equal after some number of flips.
  
@@ -19043,7 +19043,7 @@ Note:
 1 <= arr2.length <= 1000
 arr1 and arr2 have no leading zeros
 arr1[i] is 0 or 1
-arr2[i] is 0 or 1",Math,
+arr2[i] is 0 or 1",Mathematics,
 Number of Submatrices That Sum to Target,Hard,"Given a matrix, and a target, return the number of non-empty submatrices that sum to target.
 A submatrix x1, y1, x2, y2 is the set of all cells matrix[x][y] with x1 <= x <= x2 and y1 <= y <= y2.
 Two submatrices (x1, y1, x2, y2) and (x1', y1', x2', y2') are different if they have some coordinate that is different: for example, if x1 != x1'.
@@ -19158,7 +19158,7 @@ Output: ""letcod""
 Note:
 
 1 <= text.length <= 1000
-text consists of lowercase English letters.",String,
+text consists of lowercase English letters.",Strings,
 Duplicate Zeros,Easy,"Given a fixed length array arr of integers, duplicate each occurrence of zero, shifting the remaining elements to the right.
 Note that elements beyond the length of the original array are not written.
 Do the above modifications to the input array in place, do not return anything from your function.
@@ -19215,7 +19215,7 @@ Note:
 
 1 <= values.length == labels.length <= 20000
 0 <= values[i], labels[i] <= 20000
-1 <= num_wanted, use_limit <= values.length","Hash Table,Greedy",
+1 <= num_wanted, use_limit <= values.length","Hash Table,Greedy Algorithms",
 Shortest Path in Binary Matrix,Medium,"In an N by N square grid, each cell is either empty (0) or blocked (1).
 A clear path from top-left to bottom-right has length k if and only if it is composed of cells C_1, C_2, ..., C_k such that:
 
@@ -19284,7 +19284,7 @@ Constraints:
 count.length == 256
 1 <= sum(count) <= 10^9
 The mode of the sample that count represents is unique.
-Answers within 10^-5 of the true value will be accepted as correct.","Math,Two Pointers",
+Answers within 10^-5 of the true value will be accepted as correct.","Mathematics,Two Pointers",
 Car Pooling,Medium,"You are driving a vehicle that has capacity empty seats initially available for passengers.  The vehicle only drives east (ie. it cannot turn around and drive west.)
 Given a list of trips, trip[i] = [num_passengers, start_location, end_location] contains information about the i-th trip: the number of passengers that must be picked up, and the locations to pick them up and drop them off.  The locations are given as the number of kilometers due east from your vehicle's initial location.
 Return true if and only if it is possible to pick up and drop off all passengers for all the given trips. 
@@ -19325,7 +19325,7 @@ trips.length <= 1000
 trips[i].length == 3
 1 <= trips[i][0] <= 100
 0 <= trips[i][1] < trips[i][2] <= 1000
-1 <= capacity <= 100000",Greedy,/problems/meeting-rooms-ii/
+1 <= capacity <= 100000",Greedy Algorithms,/problems/meeting-rooms-ii/
 Find in Mountain Array,Hard,"(This problem is an interactive problem.)
 You may recall that an array A is a mountain array if and only if:
 
@@ -19408,7 +19408,7 @@ Constraints:
 
 1 <= expression.length <= 50
 expression[i] consists of '{', '}', ','or lowercase English letters.
-The given expression represents a set of words based on the grammar given in the description.",String,/problems/brace-expansion/
+The given expression represents a set of words based on the grammar given in the description.",Strings,/problems/brace-expansion/
 Distribute Candies to People,Easy,"We distribute some number of candies, to a row of n = num_people people in the following way:
 We then give 1 candy to the first person, 2 candies to the second person, and so on until we give n candies to the last person.
 Then, we go back to the start of the row, giving n + 1 candies to the first person, n + 2 candies to the second person, and so on until we give 2 * n candies to the last person.
@@ -19437,7 +19437,7 @@ On the fourth turn, ans[0] += 4, and the final array is [5,2,3].
 Constraints:
 
 1 <= candies <= 10^9
-1 <= num_people <= 1000",Math,
+1 <= num_people <= 1000",Mathematics,
 Path In Zigzag Labelled Binary Tree,Medium,"In an infinite binary tree where every node has two children, the nodes are labelled in row order.
 In the odd numbered rows (ie., the first, third, fifth,...), the labelling is left to right, while in the even numbered rows (second, fourth, sixth,...), the labelling is right to left.
 
@@ -19454,7 +19454,7 @@ Output: [1,2,6,10,26]
  
 Constraints:
 
-1 <= label <= 10^6","Math,Tree",
+1 <= label <= 10^6","Mathematics,Tree",
 Filling Bookcase Shelves,Medium,"We have a sequence of books: the i-th book has thickness books[i][0] and height books[i][1].
 We want to place these books in order onto bookcase shelves that have total width shelf_width.
 We choose some of the books to place on this shelf (such that the sum of their thickness is <= shelf_width), then build another level of shelf of the bookcase so that the total height of the bookcase has increased by the maximum height of the books we just put down.  We repeat this process until there are no more books to place.
@@ -19506,7 +19506,7 @@ Constraints:
 
 1 <= expression.length <= 20000
 expression[i] consists of characters in {'(', ')', '&', '|', '!', 't', 'f', ','}.
-expression is a valid expression representing a boolean, as given in the description.",String,
+expression is a valid expression representing a boolean, as given in the description.",Strings,
 Defanging an IP Address,Easy,"Given a valid (IPv4) IP address, return a defanged version of that IP address.
 A defanged IP address replaces every period ""."" with ""[.]"".
  
@@ -19520,7 +19520,7 @@ Output: ""255[.]100[.]50[.]0""
  
 Constraints:
 
-The given address is a valid IPv4 address.",String,
+The given address is a valid IPv4 address.",Strings,
 Corporate Flight Bookings,Medium,"There are n flights, and they are labeled from 1 to n.
 We have a list of flight bookings.  The i-th booking bookings[i] = [i, j, k] means that we booked k seats from flights labeled i to j inclusive.
 Return an array answer of length n, representing the number of seats booked on each flight in order of their label.
@@ -19534,7 +19534,7 @@ Constraints:
 
 1 <= bookings.length <= 20000
 1 <= bookings[i][0] <= bookings[i][1] <= n <= 20000
-1 <= bookings[i][2] <= 10000","Array,Math",
+1 <= bookings[i][2] <= 10000","Array,Mathematics",
 Delete Nodes And Return Forest,Medium,"Given the root of a binary tree, each node in the tree has a distinct value.
 After deleting all nodes with a value in to_delete, we are left with a forest (a disjoint union of trees).
 Return the roots of the trees in the remaining forest.  You may return the result in any order.
@@ -19580,7 +19580,7 @@ Output: [0,0,0,1,1,0,1,1]
  
 Constraints:
 
-1 <= seq.size <= 10000","Binary Search,Greedy",
+1 <= seq.size <= 10000","Binary Search,Greedy Algorithms",
 Print in Order,Easy,"Suppose we have a class:
 public class Foo {
   public void first() { print(""first""); }
@@ -19845,7 +19845,7 @@ Output: 20
 Constraints:
 
 2 <= arr1.length == arr2.length <= 40000
--10^6 <= arr1[i], arr2[i] <= 10^6","Math,Bit Manipulation",
+-10^6 <= arr1[i], arr2[i] <= 10^6","Mathematics,Bit Manipulation",
 N-th Tribonacci Number,Easy,"The Tribonacci sequence Tn is defined as follows: 
 T0 = 0, T1 = 1, T2 = 1, and Tn+3 = Tn + Tn+1 + Tn+2 for n >= 0.
 Given n, return the value of Tn.
@@ -19891,7 +19891,7 @@ Output: ""RR!DDRR!UUL!R!""
 Constraints:
 
 1 <= target.length <= 100
-target consists only of English lowercase letters.","Hash Table,String",
+target consists only of English lowercase letters.","Hash Table,Strings",
 Largest 1-Bordered Square,Medium,"Given a 2D grid of 0s and 1s, return the number of elements in the largest square subgrid that has all 1s on its border, or 0 if such a subgrid doesn't exist in the grid.
  
 Example 1:
@@ -20072,7 +20072,7 @@ Constraints:
 
 date.length == 10
 date[4] == date[7] == '-', and all other date[i]'s are digits
-date represents a calendar date between Jan 1st, 1900 and Dec 31, 2019.",Math,
+date represents a calendar date between Jan 1st, 1900 and Dec 31, 2019.",Mathematics,
 Number of Dice Rolls With Target Sum,Medium,"You have d dice, and each die has f faces numbered 1, 2, ..., f.
 Return the number of possible ways (out of fd total ways) modulo 10^9 + 7 to roll the dice so the sum of the face up numbers equals target.
  
@@ -20141,7 +20141,7 @@ Output: 1
 Constraints:
 
 1 <= text.length <= 20000
-text consist of lowercase English characters only.",String,
+text consist of lowercase English characters only.",Strings,
 Online Majority Element In Subarray,Hard,"Implementing the class MajorityChecker, which has the following API:
 
 MajorityChecker(int[] arr) constructs an instance of MajorityChecker with the given array arr;
@@ -20246,7 +20246,7 @@ Output: ""tcode""
 Note:
 
 1 <= s.length <= 4 * 10^5
-s contains only lowercase English letters.","String,Suffix Array",
+s contains only lowercase English letters.","Strings,Suffix Array",
 Invalid Transactions,Medium,"A transaction is possibly invalid if:
 
 the amount exceeds $1000, or;
@@ -20274,7 +20274,7 @@ transactions.length <= 1000
 Each transactions[i] takes the form ""{name},{time},{amount},{city}""
 Each {name} and {city} consist of lowercase English letters, and have lengths between 1 and 10.
 Each {time} consist of digits, and represent an integer between 0 and 1000.
-Each {amount} consist of digits, and represent an integer between 0 and 2000.","Array,String",
+Each {amount} consist of digits, and represent an integer between 0 and 2000.","Array,Strings",
 Compare Strings by Frequency of the Smallest Character,Easy,"Let's define a function f(s) over a non-empty string s, which calculates the frequency of the smallest character in s. For example, if s = ""dcce"" then f(s) = 2 because the smallest character is ""c"" and its frequency is 2.
 Now, given string arrays queries and words, return an integer array answer, where each answer[i] is the number of words such that f(queries[i]) < f(W), where W is a word in words.
  
@@ -20294,7 +20294,7 @@ Constraints:
 1 <= queries.length <= 2000
 1 <= words.length <= 2000
 1 <= queries[i].length, words[i].length <= 10
-queries[i][j], words[i][j] are English lowercase letters.","Array,String",
+queries[i][j], words[i][j] are English lowercase letters.","Array,Strings",
 Remove Zero Sum Consecutive Nodes from Linked List,Medium,"Given the head of a linked list, we repeatedly delete consecutive sequences of nodes that sum to 0 until there are no such sequences.
 After doing so, return the head of the final linked list.  You may return any such answer.
  
@@ -20389,7 +20389,7 @@ Output: 682289015
  
 Constraints:
 
-1 <= n <= 100",Math,
+1 <= n <= 100",Mathematics,
 Can Make Palindrome from Substring,Medium,"Given a string s, we make queries on substrings of s.
 For each query queries[i] = [left, right, k], we may rearrange the substring s[left], ..., s[right], and then choose up to k of them to replace with any lowercase English letter. 
 If the substring is possible to be a palindrome string after the operations above, the result of the query is true. Otherwise, the result is false.
@@ -20412,7 +20412,7 @@ Constraints:
 1 <= s.length, queries.length <= 10^5
 0 <= queries[i][0] <= queries[i][1] < s.length
 0 <= queries[i][2] <= s.length
-s only contains lowercase English letters.","Array,String",
+s only contains lowercase English letters.","Array,Strings",
 Number of Valid Words for Each Puzzle,Hard,"With respect to a given puzzle string, a word is valid if both the following conditions are satisfied:
 
 word contains the first letter of puzzle.
@@ -20595,7 +20595,7 @@ Output: 0
 Constraints:
 
 1 <= text.length <= 10^4
-text consists of lower case English letters only.","Hash Table,String",
+text consists of lower case English letters only.","Hash Table,Strings",
 Reverse Substrings Between Each Pair of Parentheses,Medium,"You are given a string s that consists of lower case English letters and brackets. 
 Reverse the strings in each pair of matching parentheses, starting from the innermost one.
 Your result should not contain any brackets.
@@ -20736,7 +20736,7 @@ Constraints:
 
 1 <= n, a, b, c <= 10^9
 1 <= a * b * c <= 10^18
-It's guaranteed that the result will be in range [1, 2 * 10^9]","Math,Binary Search",/problems/ugly-number-ii/
+It's guaranteed that the result will be in range [1, 2 * 10^9]","Mathematics,Binary Search",/problems/ugly-number-ii/
 Smallest String With Swaps,Medium,"You are given a string s, and an array of pairs of indices in the string pairs where pairs[i] = [a, b] indicates 2 indices(0-indexed) of the string.
 You can swap the characters at any pair of indices in the given pairs any number of times.
 Return the lexicographically smallest string that s can be changed to after using the swaps.
