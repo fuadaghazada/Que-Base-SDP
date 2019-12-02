@@ -29,7 +29,12 @@ def append_to_file(label, other_labels, question):
         if i != label:
            f=open("{}/data.txt".format(i), "a+",encoding="utf-8")
            f.write(f"__label__neg {question}\n") 
-                
+ 
+def switcher_for_leetcode(argument):
+    switcher = {
+        "Binary Search Tree" : "Binary Search",
+    }
+    return switcher.get(argument,argument)               
                 
 def switcher_for_hackerrank(argument): 
     switcher = { 
@@ -97,18 +102,22 @@ def fix_hackerrank_labels():
         i[3] = ','.join(labels_of_hackerrank)
     writer = csv.writer(open('hackerrank_dataset.csv', 'w', encoding="utf8", newline=''))
     writer.writerows(lines)
-            
-def anani_dagitim():
+
+def fix_hackerrank_labels():
+    
+def anani_dagitim(cs_question_csv):
     hack_labels = []
-    for index, row  in hackerrank_csv.iterrows():
+    for index, row  in cs_question_csv.iterrows():
+        print(index)
         labels_of_hackerrank = row[3]
-        labels_of_hackerrank = labels_of_hackerrank.split(",")
+        if not pd.isnull(labels_of_hackerrank):
+            labels_of_hackerrank = labels_of_hackerrank.split(",")
         
-        hack_labels += [i for i in labels_of_hackerrank if i not in hack_labels]
+            hack_labels += [i for i in labels_of_hackerrank if i not in hack_labels]
     
     print(hack_labels)
     klasoru_dagittim(hack_labels)
-    for index, row  in hackerrank_csv.iterrows():
+    for index, row  in cs_question_csv.iterrows():
         question = row[2]
         labels_of_hackerrank = row[3]
         
@@ -116,7 +125,7 @@ def anani_dagitim():
             labels_of_hackerrank = labels_of_hackerrank.split(",")
             
             for i in labels_of_hackerrank:
-                append_to_file(i, hack_labels, question)
+                append_to_file(i, list(set(hack_labels) - set(labels_of_hackerrank)), question)
         print(index)
         
         """
@@ -165,6 +174,6 @@ def anani_dagitim():
            
         """
         
-#anani_dagitim()
-fix_hackerrank_labels()
+anani_dagitim(hackerrank_csv)
+#fix_hackerrank_labels()
 print('')
