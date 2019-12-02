@@ -140,11 +140,15 @@ class CustomQueryGenerator:
         if not validation:
             self.error = True
 
-        if len(self.conditions) > 0 and not self.error:
+        if not self.error:
 
-            # Prepare the query
-            operator = f'${self.baseOp}'
-            self.query[operator] = self.conditions
+            if len(self.conditions) > 0:
+                # Prepare the query
+                operator = f'${self.baseOp}'
+                self.query[operator] = self.conditions
+            else:
+                self.query = {}
+
             return True, self.query
 
         return False, None
