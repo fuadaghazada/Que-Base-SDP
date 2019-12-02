@@ -18674,7 +18674,7 @@ Note:
 
 The number of nodes in the tree is between 1 and 100.
 Each node will have value between 0 and 100.
-The given tree is a binary search tree.",Binary Search Tree,
+The given tree is a binary search tree.",Binary Search,
 Minimum Score Triangulation of Polygon,Medium,"Given N, consider a convex N-sided polygon with vertices labelled A[0], A[i], ..., A[N-1] in clockwise order.
 Suppose you triangulate the polygon into N-2 triangles.  For each triangle, the value of that triangle is the product of the labels of the vertices, and the total score of the triangulation is the sum of these values over all N-2 triangles in the triangulation.
 Return the smallest possible total score that you can achieve with some triangulation of the polygon.

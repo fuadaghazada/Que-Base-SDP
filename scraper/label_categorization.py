@@ -93,18 +93,16 @@ def switcher_for_hackerrank(argument):
     }
     return switcher.get(argument, argument) 
 
-def fix_hackerrank_labels():
-    r = csv.reader(open('hackerrank_dataset.csv', encoding="utf8")) # Here your csv file
+def fix_hackerrank_labels(csv_name, switcher):
+    r = csv.reader(open(csv_name, encoding="utf8")) # Here your csv file
     lines = list(r)
     for i in lines:
         labels_of_hackerrank = i[3].split(",")
-        labels_of_hackerrank = [w.replace(w, switcher_for_hackerrank(w)) for w in labels_of_hackerrank]
+        labels_of_hackerrank = [w.replace(w, switcher(w)) for w in labels_of_hackerrank]
         i[3] = ','.join(labels_of_hackerrank)
-    writer = csv.writer(open('hackerrank_dataset.csv', 'w', encoding="utf8", newline=''))
+    writer = csv.writer(open(csv_name, 'w', encoding="utf8", newline=''))
     writer.writerows(lines)
 
-def fix_hackerrank_labels():
-    
 def anani_dagitim(cs_question_csv):
     hack_labels = []
     for index, row  in cs_question_csv.iterrows():
@@ -174,6 +172,6 @@ def anani_dagitim(cs_question_csv):
            
         """
         
-anani_dagitim(hackerrank_csv)
-#fix_hackerrank_labels()
+#anani_dagitim(hackerrank_csv)
+fix_hackerrank_labels('leetcode_dataset.csv', switcher_for_leetcode)
 print('')
