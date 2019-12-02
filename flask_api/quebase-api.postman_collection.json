@@ -18,7 +18,7 @@
 					},
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzUyODUzNTcsImlhdCI6MTU3NTE5ODk1Nywic3ViIjoie1wiX2lkXCI6IFwiNWRkZDE0NzljODY1MTg2MGYyOGNiMWQzXCIsIFwiZmlyc3RuYW1lXCI6IFwiRnVhZFwiLCBcImxhc3RuYW1lXCI6IFwiQWdoYXphZGFcIiwgXCJ1c2VybmFtZVwiOiBcImZ1YWRhZ2hhemFkYVwiLCBcImVtYWlsXCI6IFwiZnVhZEBnbWFpbC5jb21cIn0ifQ.J6775UTejXU6XA9KKb-OmxXdkvdPHDgQ8IHmS5P8DEo",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzUzODMwNjUsImlhdCI6MTU3NTI5NjY2NSwic3ViIjoie1wiX2lkXCI6IFwiNWRkZDE0NzljODY1MTg2MGYyOGNiMWQzXCIsIFwiZmlyc3RuYW1lXCI6IFwiRnVhZFwiLCBcImxhc3RuYW1lXCI6IFwiQWdoYXphZGFcIiwgXCJ1c2VybmFtZVwiOiBcImZ1YWRhZ2hhemFkYVwiLCBcImVtYWlsXCI6IFwiZnVhZEBnbWFpbC5jb21cIiwgXCJmYXZvcml0ZVF1ZXN0aW9uc1wiOiBbXX0ifQ.Bj_uAPpoKZsvL_uzaFHZoR_TciiuaqwEWHTdKSulXbg",
 						"type": "text"
 					}
 				],
@@ -246,7 +246,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzUyODUzNTcsImlhdCI6MTU3NTE5ODk1Nywic3ViIjoie1wiX2lkXCI6IFwiNWRkZDE0NzljODY1MTg2MGYyOGNiMWQzXCIsIFwiZmlyc3RuYW1lXCI6IFwiRnVhZFwiLCBcImxhc3RuYW1lXCI6IFwiQWdoYXphZGFcIiwgXCJ1c2VybmFtZVwiOiBcImZ1YWRhZ2hhemFkYVwiLCBcImVtYWlsXCI6IFwiZnVhZEBnbWFpbC5jb21cIn0ifQ.J6775UTejXU6XA9KKb-OmxXdkvdPHDgQ8IHmS5P8DEo",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzUzODMwNjUsImlhdCI6MTU3NTI5NjY2NSwic3ViIjoie1wiX2lkXCI6IFwiNWRkZDE0NzljODY1MTg2MGYyOGNiMWQzXCIsIFwiZmlyc3RuYW1lXCI6IFwiRnVhZFwiLCBcImxhc3RuYW1lXCI6IFwiQWdoYXphZGFcIiwgXCJ1c2VybmFtZVwiOiBcImZ1YWRhZ2hhemFkYVwiLCBcImVtYWlsXCI6IFwiZnVhZEBnbWFpbC5jb21cIiwgXCJmYXZvcml0ZVF1ZXN0aW9uc1wiOiBbXX0ifQ.Bj_uAPpoKZsvL_uzaFHZoR_TciiuaqwEWHTdKSulXbg",
 						"type": "text"
 					},
 					{
@@ -257,7 +257,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"body\": \"\",\n\t\"source\": {\n\t\t\"reference\": \"\",\n\t\t\"university\": \"\",\n\t\t\"course\": \"Sociology\"\n\t},\n\t\"viewCount\": {\n\t\t\"comparisonOperator\": \"gte\",\n\t\t\"value\": -1\n\t},\n\t\"favCount\": {\n\t\t\"comparisonOperator\": \"gte\",\n\t\t\"value\": -1\n\t},\n\t\"entityTag\": {\n\t\t\"logicalOp\": \"or\",\n\t\t\"stringsToMatch\": []\n\t},\n\t\"topic\": {\n\t\t\"logicalOp\": \"and\",\n\t\t\"stringsToMatch\": []\n\t},\n\t\"category\": {\n\t\t\"logicalOp\": \"and\",\n\t\t\"stringsToMatch\": []\n\t},\n\t\"sort\": {\n\t\t\"attr\": \"_id\",\n\t\t\"order\": 1\n\t}\n}"
+					"raw": "{\n\t\"body\": \"\",\n\t\"source\": {\n\t\t\"reference\": \"\",\n\t\t\"university\": \"\",\n\t\t\"course\": \"\"\n\t},\n\t\"viewCount\": {\n\t\t\"comparisonOperator\": \"gte\",\n\t\t\"value\": -1\n\t},\n\t\"favCount\": {\n\t\t\"comparisonOperator\": \"gte\",\n\t\t\"value\": -1\n\t},\n\t\"entityTag\": {\n\t\t\"logicalOp\": \"or\",\n\t\t\"stringsToMatch\": []\n\t},\n\t\"topic\": {\n\t\t\"logicalOp\": \"and\",\n\t\t\"stringsToMatch\": []\n\t},\n\t\"category\": {\n\t\t\"logicalOp\": \"and\",\n\t\t\"stringsToMatch\": []\n\t},\n\t\"sort\": {\n\t\t\"attr\": \"viewCount\",\n\t\t\"order\": -1\n\t}\n}"
 				},
 				"url": {
 					"raw": "localhost:8000/questions/getQuestions",
@@ -323,6 +323,68 @@
 						{
 							"key": "id",
 							"value": "5ddd115dd591adc6e3cade6d"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Send friend request",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzUzOTY4ODEsImlhdCI6MTU3NTMxMDQ4MSwic3ViIjoie1wiX2lkXCI6IFwiNWRlNTU0NDRlZTI3Y2MzZTNmOWYyNTFlXCIsIFwiZmlyc3RuYW1lXCI6IFwiRXJheVwiLCBcImxhc3RuYW1lXCI6IFwiU2FoaW5cIiwgXCJ1c2VybmFtZVwiOiBcImVyYXlzYWhpblwiLCBcImVtYWlsXCI6IFwiZXJheUBnbWFpbC5jb21cIiwgXCJmYXZvcml0ZVF1ZXN0aW9uc1wiOiBbXSwgXCJmcmllbmRzXCI6IFtdfSJ9.vOsj3zf8yWZSOScqDAYcafm1-4JTzfsT1azwJLPhNX0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8000/users/addFriend?id=5de5544aee27cc3e3f9f2521",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"users",
+						"addFriend"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "5de5544aee27cc3e3f9f2521"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Accept friend request",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzUzOTY5NjksImlhdCI6MTU3NTMxMDU2OSwic3ViIjoie1wiX2lkXCI6IFwiNWRlNTU0NGFlZTI3Y2MzZTNmOWYyNTIxXCIsIFwiZmlyc3RuYW1lXCI6IFwiRnVhZFwiLCBcImxhc3RuYW1lXCI6IFwiQWdoYXphZGFcIiwgXCJ1c2VybmFtZVwiOiBcImZ1YWRhZ2hhemFkYVwiLCBcImVtYWlsXCI6IFwiZnVhZEBnbWFpbC5jb21cIiwgXCJmYXZvcml0ZVF1ZXN0aW9uc1wiOiBbXSwgXCJmcmllbmRzXCI6IFtdLCBcImZyaWVuZHNXYWl0TGlzdFwiOiBbXCI1ZGU1NTQ0NGVlMjdjYzNlM2Y5ZjI1MWVcIl19In0.6kgEiMMHDsHtTj9liJ7sQ2u99frHaKex9KQnXujQ3EU",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8000/users/acceptFriend?id=5de55444ee27cc3e3f9f251e",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"users",
+						"acceptFriend"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "5de55444ee27cc3e3f9f251e"
 						}
 					]
 				}
