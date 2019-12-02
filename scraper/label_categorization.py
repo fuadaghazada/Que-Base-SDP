@@ -22,13 +22,16 @@ def klasoru_dagittim(labels):
         os.mkdir(i)
 def append_to_file(label, other_labels, question):
     txt = question.encode('utf-8')
-    #question_decoded = txt.decode('utf-8')
-    f=open("{}/data.txt".format(label), "a+",encoding="utf-8")
-    f.write(f"__label__pos {question}\n")
+    question_decoded = txt.decode('utf-8')
+    question_decoded = str(question_decoded).strip().replace('\n', ' ')
+    f=open("{}/data.txt".format(label), "a",encoding="utf-8")
+    pos_line = ["__label__pos", question_decoded]
+    neg_line = ["__label__neg", question_decoded]
+    f.write(' '.join(pos_line) + '\n')
     for i in other_labels:
         if i != label:
-           f=open("{}/data.txt".format(i), "a+",encoding="utf-8")
-           f.write(f"__label__neg {question}\n") 
+           f=open("{}/data.txt".format(i), "a",encoding="utf-8")
+           f.write(' '.join(neg_line) + '\n') 
  
 def switcher_for_leetcode(argument):
     switcher = {
@@ -121,9 +124,14 @@ def anani_dagitim(cs_question_csv):
         
         if not pd.isnull(labels_of_hackerrank) and not pd.isnull(question):
             labels_of_hackerrank = labels_of_hackerrank.split(",")
-            
+            count = 0
             for i in labels_of_hackerrank:
-                append_to_file(i, list(set(hack_labels) - set(labels_of_hackerrank)), question)
+                if count == 0:
+                    append_to_file(i, list(set(hack_labels) - set(labels_of_hackerrank)), question)
+                else:
+                    append_to_file(i, [], question)
+                count += 1
+            count = 0
         print(index)
         
         """
@@ -172,6 +180,6 @@ def anani_dagitim(cs_question_csv):
            
         """
         
-#anani_dagitim(hackerrank_csv)
-fix_hackerrank_labels('leetcode_dataset.csv', switcher_for_leetcode)
+anani_dagitim(leetcode_csv)
+#fix_hackerrank_labels('leetcode_dataset.csv', switcher_for_leetcode)
 print('')
