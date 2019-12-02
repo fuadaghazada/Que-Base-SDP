@@ -113,3 +113,32 @@ class User(Model):
     def find(query, sortingAttr = "_id", sortOrder = 1, pageNumber = 1):
 
         return Model.find(COLLECTION_NAME, query, sortingAttr, sortOrder, pageNumber)
+
+
+    '''
+        Adding/Removing the question to favorite questions
+
+        :param: questionId - the id of the question to be added
+    '''
+    def favoriteQuestion(self, questionId):
+
+        status, message = False, ""
+
+        curFavoriteQuestions = vars(self).get('favoriteQuestions')
+        curFavoriteQuestions  = list(curFavoriteQuestions) if curFavoriteQuestions else []
+
+        if questionId not in curFavoriteQuestions:
+            curFavoriteQuestions.append(questionId)
+            status = True
+            message = "Questions is added to the favorite list!"
+        else:
+            curFavoriteQuestions.remove(questionId)
+            status = False
+            message = "Questions is removed from the favorite list!"
+
+        setattr(self, 'favoriteQuestions', curFavoriteQuestions)
+
+        # Updating
+        self.update_one(vars(self))
+
+        return status, message

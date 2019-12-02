@@ -72,10 +72,10 @@ class CustomQueryGenerator:
             self.conditions.append(elemMatchquery)
 
 
-    def addSourceField(self, fieldValues):
+    def addSourceField(self, fields):
 
         # In the source object, there are the following fields
-        sourceFields = ["reference", "university", "course"]
+        sourceFields = fields.keys()
 
         # A flag indicating whether any filtering is done here
         # (If all sourceFields are empty strings, no filtering is needed and the flag remains "False")
@@ -88,11 +88,11 @@ class CustomQueryGenerator:
         for field in sourceFields:
 
             # If the field is not equal to empty string, add that field to the query
-            if fieldValues[field] != "":
+            if fields[field] != "":
 
                 name = "source." + field
                 sourceQuery[name] = {
-                    "$regex": fieldValues[field],
+                    "$regex": fields[field],
                     "$options": "i"
                 }
 

@@ -175,6 +175,30 @@ def getQuestions(user):
 
 
 '''
+    [POST] Favorite/disfavorite a question given its id
+'''
+
+@bluePrint.route("/favoriteQuestion", methods=["POST"])
+@isAuth(request)
+def favoriteQuestion(user):
+
+    # Question ID as parameter & userID from header
+    questionId = request.args.get('id')
+    userId = user["_id"]
+
+    # Getting the user adding the favorite questions to list
+    user = User({"_id": userId})
+    status, message = user.favoriteQuestion(questionId)
+
+    # Return the response
+    return jsonify({
+        'success': True,
+        'result': status,
+        'message': message
+    }), 200
+
+
+'''
     [GET] Getting a question according to its id
 '''
 
@@ -183,11 +207,11 @@ def getQuestions(user):
 def getQuestion(user):
 
     # ID as parameter
-    id = request.args.get('id')
+    questionId = request.args.get('id')
 
     result = None
     try:
-        result = Question({"_id": id}).data()
+        result = Question({"_id": questionId}).data()
     except Exception as e:
         print("NO SUCH QUESTION ID")
 
