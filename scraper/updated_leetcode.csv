@@ -3112,7 +3112,7 @@ Explanation: There are a total of 2 courses to take.
 Note:
 
 The input prerequisites is a graph represented by a list of edges, not adjacency matrices. Read more about how a graph is represented.
-You may assume that there are no duplicate edges in the input prerequisites.","Depth-first Search,Breadth-first Search,Graph,Topological Sort","/problems/course-schedule-ii/,/problems/graph-valid-tree/,/problems/minimum-height-trees/,/problems/course-schedule-iii/"
+You may assume that there are no duplicate edges in the input prerequisites.","Depth-first Search,Breadth-first Search,Graph","/problems/course-schedule-ii/,/problems/graph-valid-tree/,/problems/minimum-height-trees/,/problems/course-schedule-iii/"
 Implement Trie (Prefix Tree),Medium,"Implement a trie with insert, search, and startsWith methods.
 Example:
 Trie trie = new Trie();
@@ -3153,7 +3153,7 @@ Explanation: There are a total of 4 courses to take. To take course 3 you shoul
 Note:
 
 The input prerequisites is a graph represented by a list of edges, not adjacency matrices. Read more about how a graph is represented.
-You may assume that there are no duplicate edges in the input prerequisites.","Depth-first Search,Breadth-first Search,Graph,Topological Sort","/problems/course-schedule/,/problems/alien-dictionary/,/problems/minimum-height-trees/,/problems/sequence-reconstruction/,/problems/course-schedule-iii/"
+You may assume that there are no duplicate edges in the input prerequisites.","Depth-first Search,Breadth-first Search,Graph","/problems/course-schedule/,/problems/alien-dictionary/,/problems/minimum-height-trees/,/problems/sequence-reconstruction/,/problems/course-schedule-iii/"
 Add and Search Word - Data structure design,Medium,"Design a data structure that supports the following two operations:
 void addWord(word)
 bool search(word)
@@ -3256,7 +3256,7 @@ Notes:
 The number of buildings in any input list is guaranteed to be in the range [0, 10000].
 The input list is already sorted in ascending order by the left x position Li.
 The output list must be sorted by the x position.
-There must be no consecutive horizontal lines of equal height in the output skyline. For instance, [...[2 3], [4 5], [7 5], [11 5], [12 7]...] is not acceptable; the three lines of height 5 should be merged into one in the final output as such: [...[2 3], [4 5], [12 7], ...]","Divide and Conquer,Heap,Binary Indexed Tree,Segment Tree,Line Sweep",/problems/falling-squares/
+There must be no consecutive horizontal lines of equal height in the output skyline. For instance, [...[2 3], [4 5], [7 5], [11 5], [12 7]...] is not acceptable; the three lines of height 5 should be merged into one in the final output as such: [...[2 3], [4 5], [12 7], ...]","Divide and Conquer,Heap",/problems/falling-squares/
 Contains Duplicate II,Easy,"Given an array of integers and an integer k, find out whether there are two distinct indices i and j in the array such that nums[i] = nums[j] and the absolute difference between i and j is at most k.
 
 Example 1:
@@ -3286,7 +3286,7 @@ Output: true
 
 Example 3:
 Input: nums = [1,5,9,1,5,9], k = 2, t = 3
-Output: false","Sort,Ordered Map","/problems/contains-duplicate/,/problems/contains-duplicate-ii/"
+Output: false",Sort,"/problems/contains-duplicate/,/problems/contains-duplicate-ii/"
 Maximal Square,Medium,"Given a 2D binary matrix filled with 0's and 1's, find the largest square containing only 1's and return its area.
 Example:
 Input: 
@@ -3838,14 +3838,6 @@ Input: pattern = ""abba"", str = ""dog dog dog dog""
 Output: false
 Notes:
 You may assume pattern contains only lowercase letters, and str contains lowercase letters that may be separated by a single space.",Hash Table,"/problems/isomorphic-strings/,/problems/word-pattern-ii/"
-Nim Game,Easy,"You are playing the following Nim Game with your friend: There is a heap of stones on the table, each time one of you take turns to remove 1 to 3 stones. The one who removes the last stone will be the winner. You will take the first turn to remove the stones.
-Both of you are very clever and have optimal strategies for the game. Write a function to determine whether you can win the game given the number of stones in the heap.
-Example:
-Input: 4
-Output: false 
-Explanation: If there are 4 stones in the heap, then you will never win the game;
-             No matter 1, 2, or 3 stones you remove, the last stone will always be 
-             removed by your friend.","Brainteaser,Minimax",/problems/flip-game-ii/
 Find Median from Data Stream,Hard,"Median is the middle value in an ordered integer list. If the size of the list is even, there is no middle value. So the median is the mean of the two middle value.
 For example,
 
@@ -3986,19 +3978,6 @@ num consists only of digits '0'-'9'.
 
 Follow up:
 How would you handle overflow for very large input integers?",Backtracking,/problems/split-array-into-fibonacci-sequence/
-Range Sum Query - Mutable,Medium,"Given an integer array nums, find the sum of the elements between indices i and j (i ≤ j), inclusive.
-The update(i, val) function modifies nums by updating the element at index i to val.
-Example:
-Given nums = [1, 3, 5]
-
-sumRange(0, 2) -> 9
-update(1, 2)
-sumRange(0, 2) -> 8
-
-Note:
-
-The array is only modifiable by the update function.
-You may assume the number of calls to update and sumRange function is distributed evenly.","Binary Indexed Tree,Segment Tree","/problems/range-sum-query-immutable/,/problems/range-sum-query-2d-mutable/"
 Best Time to Buy and Sell Stock with Cooldown,Medium,"Say you have an array for which the ith element is the price of a given stock on day i.
 Design an algorithm to find the maximum profit. You may complete as many transactions as you like (ie, buy one and sell one share of the stock multiple times) with the following restrictions:
 
@@ -4073,7 +4052,7 @@ Explanation:
 To the right of 5 there are 2 smaller elements (2 and 1).
 To the right of 2 there is only 1 smaller element (1).
 To the right of 6 there is 1 smaller element (1).
-To the right of 1 there is 0 smaller element.","Binary Search,Divide and Conquer,Sort,Binary Indexed Tree,Segment Tree","/problems/count-of-range-sum/,/problems/queue-reconstruction-by-height/,/problems/reverse-pairs/"
+To the right of 1 there is 0 smaller element.","Binary Search,Divide and Conquer,Sort","/problems/count-of-range-sum/,/problems/queue-reconstruction-by-height/,/problems/reverse-pairs/"
 Remove Duplicate Letters,Hard,"Given a string which contains only lowercase letters, remove duplicate letters so that every letter appears once and only once. You must make sure your result is the smallest in lexicographical order among all possible results.
 Example 1:
 Input: ""bcabc""
@@ -4105,7 +4084,7 @@ After first round, the three bulbs are [on, on, on].
 After second round, the three bulbs are [on, off, on].
 After third round, the three bulbs are [on, off, off]. 
 
-So you should return 1, because there is only one bulb is on.","Math,Brainteaser","/problems/bulb-switcher-ii/,/problems/minimum-number-of-k-consecutive-bit-flips/"
+So you should return 1, because there is only one bulb is on.",Math,"/problems/bulb-switcher-ii/,/problems/minimum-number-of-k-consecutive-bit-flips/"
 Create Maximum Number,Hard,"Given two arrays of length m and n with digits 0-9 representing two numbers. Create the maximum number of length k <= m + n from digits of the two. The relative order of the digits from the same array must be preserved. Return an array of the k digits.
 Note: You should try to optimize your time and space complexity.
 Example 1:
@@ -4174,7 +4153,7 @@ A naive algorithm of O(n2) is trivial. You MUST do better than that.
 Example:
 Input: nums = [-2,5,-1], lower = -2, upper = 2,
 Output: 3 
-Explanation: The three ranges are : [0,0], [2,2], [0,2] and their respective sums are: -2, -1, 2.","Binary Search,Divide and Conquer,Sort,Binary Indexed Tree,Segment Tree","/problems/count-of-smaller-numbers-after-self/,/problems/reverse-pairs/"
+Explanation: The three ranges are : [0,0], [2,2], [0,2] and their respective sums are: -2, -1, 2.","Binary Search,Divide and Conquer,Sort","/problems/count-of-smaller-numbers-after-self/,/problems/reverse-pairs/"
 Odd Even Linked List,Medium,"Given a singly linked list, group all odd nodes together followed by the even nodes. Please note here we are talking about the node number and not the value in the nodes.
 You should try to do it in place. The program should run in O(1) space complexity and O(nodes) time complexity.
 Example 1:
@@ -4209,7 +4188,7 @@ Input: nums =
   [2,2,1]
 ] 
 Output: 4 
-Explanation: The longest increasing path is [3, 4, 5, 6]. Moving diagonally is not allowed.","Depth-first Search,Topological Sort,Memoization",
+Explanation: The longest increasing path is [3, 4, 5, 6]. Moving diagonally is not allowed.",Depth-first Search,
 Patching Array,Hard,"Given a sorted positive integer array nums and an integer n, add/patch elements to the array such that any number in range [1, n] inclusive can be formed by the sum of some elements in the array. Return the minimum number of patches required.
 Example 1:
 Input: nums = [1,3], n = 6
@@ -4464,7 +4443,7 @@ For example, suppose the integers from the data stream are 1, 3, 7, 2, 6, ..., t
 
  
 Follow up:
-What if there are lots of merges and the number of disjoint intervals are small compared to the data stream's size?","Binary Search,Ordered Map","/problems/summary-ranges/,/problems/find-right-interval/,/problems/range-module/"
+What if there are lots of merges and the number of disjoint intervals are small compared to the data stream's size?",Binary Search,"/problems/summary-ranges/,/problems/find-right-interval/,/problems/range-module/"
 Russian Doll Envelopes,Hard,"You have a number of envelopes with widths and heights given as a pair of integers (w, h). One envelope can fit into another if and only if both the width and height of one envelope is greater than the width and height of the other envelope.
 What is the maximum number of envelopes can you Russian doll? (put one inside other)
 Note:
@@ -4524,7 +4503,7 @@ Explanation: Because the sum of rectangle [[0, 1], [-2, 3]] is 2,
 Note:
 
 The rectangle inside the matrix must have an area > 0.
-What if the number of rows is much larger than the number of columns?","Binary Search,Dynamic Programming,Queue",
+What if the number of rows is much larger than the number of columns?","Binary Search,Dynamic Programming",
 Water and Jug Problem,Medium,"You are given two jugs with capacities x and y litres. There is an infinite amount of water supply available. You need to determine whether it is possible to measure exactly z litres using these two jugs.
 If z liters of water is measurable, you must have z liters of water contained within one or both buckets by the end.
 Operations allowed:
@@ -4627,7 +4606,7 @@ Game over. 8 is the number I picked.
 
 You end up paying $5 + $7 + $9 = $21.
 
-Given a particular n ≥ 1, find out how much money you need to have to guarantee a win.","Dynamic Programming,Minimax","/problems/flip-game-ii/,/problems/guess-number-higher-or-lower/,/problems/can-i-win/,/problems/find-k-closest-elements/"
+Given a particular n ≥ 1, find out how much money you need to have to guarantee a win.",Dynamic Programming,"/problems/flip-game-ii/,/problems/guess-number-higher-or-lower/,/problems/can-i-win/,/problems/find-k-closest-elements/"
 Wiggle Subsequence,Medium,"A sequence of numbers is called a wiggle sequence if the differences between successive numbers strictly alternate between positive and negative. The first difference (if one exists) may be either positive or negative. A sequence with fewer than two elements is trivially a wiggle sequence.
 For example, [1,7,4,9,2,5] is a wiggle sequence because the differences (6,-3,5,-7,3) are alternately positive and negative. In contrast, [1,4,7,2,5] and [1,7,4,5,5] are not wiggle sequences, the first because its first two differences are positive and the second because its last difference is zero.
 Given a sequence of integers, return the length of the longest subsequence that is a wiggle sequence. A subsequence is obtained by deleting some number of elements (eventually, also zero) from the original sequence, leaving the remaining elements in their original order.
@@ -4750,19 +4729,6 @@ collection.remove(1);
 
 // getRandom should return 1 and 2 both equally likely.
 collection.getRandom();","Array,Hash Table,Design",/problems/insert-delete-getrandom-o1/
-Linked List Random Node,Medium,"Given a singly linked list, return a random node's value from the linked list. Each node must have the same probability of being chosen.
-Follow up:
-What if the linked list is extremely large and its length is unknown to you? Could you solve this efficiently without using extra space?
-
-Example:
-// Init a singly linked list [1,2,3].
-ListNode head = new ListNode(1);
-head.next = new ListNode(2);
-head.next.next = new ListNode(3);
-Solution solution = new Solution(head);
-
-// getRandom() should return either 1, 2, or 3 randomly. Each element should have equal probability of returning.
-solution.getRandom();",Reservoir Sampling,/problems/random-pick-index/
 Ransom Note,Easy,"Given an arbitrary ransom note string and another string containing letters from all the magazines, write a function that will return true if the ransom 
 note can be constructed from the magazines ; otherwise, it will return false. 
 
@@ -4826,58 +4792,6 @@ e
 
 Explanation:
 'e' is the letter that was added.","Hash Table,Bit Manipulation",/problems/single-number/
-Perfect Rectangle,Hard,"Given N axis-aligned rectangles where N > 0, determine if they all together form an exact cover of a rectangular region.
-Each rectangle is represented as a bottom-left point and a top-right point. For example, a unit square is represented as [1,1,2,2]. (coordinate of bottom-left point is (1, 1) and top-right point is (2, 2)).
-
-Example 1:
-rectangles = [
-  [1,1,3,3],
-  [3,1,4,2],
-  [3,2,4,4],
-  [1,3,2,4],
-  [2,3,3,4]
-]
-
-Return true. All 5 rectangles together form an exact cover of a rectangular region.
-
- 
- 
-
-Example 2:
-rectangles = [
-  [1,1,2,3],
-  [1,3,2,4],
-  [3,1,4,2],
-  [3,2,4,4]
-]
-
-Return false. Because there is a gap between the two rectangular regions.
-
- 
- 
-
-Example 3:
-rectangles = [
-  [1,1,3,3],
-  [3,1,4,2],
-  [1,3,2,4],
-  [3,2,4,4]
-]
-
-Return false. Because there is a gap in the top center.
-
- 
- 
-
-Example 4:
-rectangles = [
-  [1,1,3,3],
-  [3,1,4,2],
-  [1,3,2,4],
-  [2,2,4,4]
-]
-
-Return false. Because two of the rectangles overlap with each other.",Line Sweep,
 Is Subsequence,Easy,"Given a string s and a string t, check if s is subsequence of t.
 
 
@@ -5001,18 +4915,6 @@ Explanation:
 7 -> 8 -> 4 -> 2 -> 1
 or
 7 -> 6 -> 3 -> 2 -> 1","Math,Bit Manipulation",
-Random Pick Index,Medium,"Given an array of integers with possible duplicates, randomly output the index of a given target number. You can assume that the given target number must exist in the array.
-Note:
-The array size can be very large. Solution that uses too much extra space will not pass the judge.
-Example:
-int[] nums = new int[] {1,2,3,3,3};
-Solution solution = new Solution(nums);
-
-// pick(3) should return either index 2, 3, or 4 randomly. Each index should have equal probability of returning.
-solution.pick(3);
-
-// pick(1) should return 0. Since in the array only nums[0] is equal to 1.
-solution.pick(1);",Reservoir Sampling,"/problems/linked-list-random-node/,/problems/random-pick-with-blacklist/,/problems/random-pick-with-weight/"
 Evaluate Division,Medium,"Equations are given in the format A / B = k, where A and B are variables represented as strings, and k is a real number (floating point number). Given some queries, return the answers. If the answer does not exist, return -1.0.
 Example:
 Given  a / b = 2.0, b / c = 3.0.
@@ -5954,7 +5856,7 @@ No matter which integer the first player choose, the first player will lose.
 The first player can choose an integer from 1 up to 10.
 If the first player choose 1, the second player can only choose integers from 2 up to 10.
 The second player will win by choosing 10 and get a total = 11, which is >= desiredTotal.
-Same with other integers chosen by the first player, the second player will always win.","Dynamic Programming,Minimax","/problems/flip-game-ii/,/problems/guess-number-higher-or-lower-ii/,/problems/predict-the-winner/"
+Same with other integers chosen by the first player, the second player will always win.",Dynamic Programming,"/problems/flip-game-ii/,/problems/guess-number-higher-or-lower-ii/,/problems/predict-the-winner/"
 Count The Repetitions,Hard,"Define S = [s,n] as the string S which consists of n connected strings s. For example, [""abc"", 3] =""abcabcabc"". 
 On the other hand, we define that string s1 can be obtained from string s2 if we can remove some characters from s2 such that it becomes s1. For example, “abc”  can be obtained from “abdbec” based on our definition, but it can not be obtained from “acbbe”.
 You are given two non-empty strings s1 and s2 (each at most 100 characters long) and two integers 0 ≤ n1 ≤ 106 and 1 ≤ n2 ≤ 106. Now consider the strings S1 and S2, where S1=[s1,n1] and S2=[s2,n2]. Find the maximum integer M such that [S2,M] can be obtained from S1.
@@ -6027,37 +5929,6 @@ Input: ""256.256.256.256""
 Output: ""Neither""
 
 Explanation: This is neither a IPv4 address nor a IPv6 address.",String,/problems/ip-to-cidr/
-Implement Rand10() Using Rand7(),Medium,"Given a function rand7 which generates a uniform random integer in the range 1 to 7, write a function rand10 which generates a uniform random integer in the range 1 to 10.
-Do NOT use system's Math.random().
-
-
- 
-
-Example 1:
-Input: 1
-Output: [7]
-
-
-Example 2:
-Input: 2
-Output: [8,4]
-
-
-Example 3:
-Input: 3
-Output: [8,1,10]
-
- 
-Note:
-
-rand7 is predefined.
-Each testcase has one argument: n, the number of times that rand10 is called.
-
- 
-Follow up:
-
-What is the expected value for the number of calls to rand7() function?
-Could you minimize the number of calls to rand7()?","Random,Rejection Sampling",
 Concatenated Words,Hard,"Given a list of words (without duplicates), please write a program that returns all concatenated words in the given list of words.
 A concatenated word is defined as a string that is comprised entirely of at least two shorter words in the given array.
 Example:
@@ -6194,7 +6065,7 @@ Input:
 Output: [null,[11.52438,-8.33273],[2.46992,-16.21705],[11.13430,-12.42337]]
 
 Explanation of Input Syntax:
-The input is two lists: the subroutines called and their arguments. Solution's constructor has three arguments, the radius, x-position of the center, and y-position of the center of the circle. randPoint has no arguments. Arguments are always wrapped with a list, even if there aren't any.","Math,Random,Rejection Sampling",/problems/random-point-in-non-overlapping-rectangles/
+The input is two lists: the subroutines called and their arguments. Solution's constructor has three arguments, the radius, x-position of the center, and y-position of the center of the circle. randPoint has no arguments. Arguments are always wrapped with a list, even if there aren't any.",Math,/problems/random-point-in-non-overlapping-rectangles/
 Sliding Window Median,Hard,"Median is the middle value in an ordered integer list. If the size of the list is even, there is no middle value. So the median is the mean of the two middle value.
 Examples: 
 [2,3,4] , the median is 3
@@ -6268,7 +6139,7 @@ Note:
 
 1 <= length of the array <= 20. 
 Any scores in the given array are non-negative integers and will not exceed 10,000,000.
-If the scores of both players are equal, then player 1 is still the winner.","Dynamic Programming,Minimax",/problems/can-i-win/
+If the scores of both players are equal, then player 1 is still the winner.",Dynamic Programming,/problems/can-i-win/
 Zuma Game,Hard,"Think about Zuma Game. You have a row of balls on the table, colored red(R), yellow(Y), blue(B), green(G), and white(W). You also have several balls in your hand.
 
 Each time, you may choose a ball in your hand, and insert it into the row (including the leftmost place and rightmost place). Then, if there is a group of 3 or more balls in the same color touching, remove these balls. Keep doing this until no more balls can be removed.
@@ -6324,7 +6195,7 @@ Output: 3
 Note:
 
 The length of the given array will not exceed 50,000.
-All the numbers in the input array are in the range of 32-bit integer.","Binary Search,Divide and Conquer,Sort,Binary Indexed Tree,Segment Tree","/problems/count-of-smaller-numbers-after-self/,/problems/count-of-range-sum/"
+All the numbers in the input array are in the range of 32-bit integer.","Binary Search,Divide and Conquer,Sort","/problems/count-of-smaller-numbers-after-self/,/problems/count-of-range-sum/"
 Target Sum,Medium,"You are given a list of non-negative integers, a1, a2, ..., an, and a target, S. Now you have 2 symbols + and -. For each integer, you should choose one from + and - as its new symbol.
 
 Find out how many ways to assign symbols to make sum of integers equal to target S.  
@@ -6428,7 +6299,7 @@ Output:
 
 
 Explanation of Input Syntax:
-The input is two lists: the subroutines called and their arguments. Solution's constructor has one argument, the array of rectangles rects. pick has no arguments. Arguments are always wrapped with a list, even if there aren't any.","Binary Search,Random","/problems/random-pick-with-weight/,/problems/generate-random-point-in-a-circle/"
+The input is two lists: the subroutines called and their arguments. Solution's constructor has one argument, the array of rectangles rects. pick has no arguments. Arguments are always wrapped with a list, even if there aren't any.",Binary Search,"/problems/random-pick-with-weight/,/problems/generate-random-point-in-a-circle/"
 Keyboard Row,Easy,"Given a List of words, return the words that can be typed using letters of alphabet on only one row's of American keyboard like the image below.
  
 
@@ -6675,29 +6546,6 @@ Note:
 
 The range of n is [1, 10000].
 The range of dresses number in a super washing machine is [0, 1e5].","Math,Dynamic Programming",
-Random Flip Matrix,Medium,"You are given the number of rows n_rows and number of columns n_cols of a 2D binary matrix where all values are initially 0. Write a function flip which chooses a 0 value uniformly at random, changes it to 1, and then returns the position [row.id, col.id] of that value. Also, write a function reset which sets all values back to 0. Try to minimize the number of calls to system's Math.random() and optimize the time and space complexity.
-Note:
-
-1 <= n_rows, n_cols <= 10000
-0 <= row.id < n_rows and 0 <= col.id < n_cols
-flip will not be called when the matrix has no 0 values left.
-the total number of calls to flip and reset will not exceed 1000.
-
-Example 1:
-Input: 
-[""Solution"",""flip"",""flip"",""flip"",""flip""]
-[[2,3],[],[],[],[]]
-Output: [null,[0,1],[1,2],[1,0],[1,1]]
-
-
-Example 2:
-Input: 
-[""Solution"",""flip"",""flip"",""reset"",""flip""]
-[[1,2],[],[],[],[]]
-Output: [null,[0,0],[0,1],null,[0,0]]
-
-Explanation of Input Syntax:
-The input is two lists: the subroutines called and their arguments. Solution's constructor has two arguments, n_rows and n_cols. flip and reset have no arguments. Arguments are always wrapped with a list, even if there aren't any.",Random,
 Detect Capital,Easy,"Given a word, you need to judge whether the usage of capitals in it is right or not.
 We define the usage of capitals in a word to be right when one of the following cases holds:
 
@@ -6860,7 +6708,7 @@ Input:
 Output: [null,0,1,1,1,0]
 
 Explanation of Input Syntax:
-The input is two lists: the subroutines called and their arguments. Solution's constructor has one argument, the array w. pickIndex has no arguments. Arguments are always wrapped with a list, even if there aren't any.","Binary Search,Random","/problems/random-pick-index/,/problems/random-pick-with-blacklist/,/problems/random-point-in-non-overlapping-rectangles/"
+The input is two lists: the subroutines called and their arguments. Solution's constructor has one argument, the array w. pickIndex has no arguments. Arguments are always wrapped with a list, even if there aren't any.",Binary Search,"/problems/random-pick-index/,/problems/random-pick-with-blacklist/,/problems/random-point-in-non-overlapping-rectangles/"
 Minesweeper,Medium,"Let's play the minesweeper game (Wikipedia, online game)!
 You are given a 2D char matrix representing the game board. 'M' represents an unrevealed mine, 'E' represents an unrevealed empty square, 'B' represents a revealed blank square that has no adjacent (above, below, left, right, and all 4 diagonals) mines, digit ('1' to '8') represents how many mines are adjacent to this revealed square, and finally 'X' represents a revealed mine.
 Now given the next click position (row and column indices) among all the unrevealed squares ('M' or 'E'), return the board after revealing this position according to the following rules:
@@ -7456,30 +7304,6 @@ Note:
 
 The length of given words won't exceed 500.
 Characters in given words can only be lower-case letters.",String,"/problems/edit-distance/,/problems/minimum-ascii-delete-sum-for-two-strings/,/problems/longest-common-subsequence/"
-Erect the Fence,Hard,"There are some trees, where each tree is represented by (x,y) coordinate in a two-dimensional garden. Your job is to fence the entire garden using the minimum length of rope as it is expensive. The garden is well fenced only if all the trees are enclosed. Your task is to help find the coordinates of trees which are exactly located on the fence perimeter.
- 
-Example 1:
-Input: [[1,1],[2,2],[2,0],[2,4],[3,3],[4,2]]
-Output: [[1,1],[2,0],[4,2],[3,3],[2,4]]
-Explanation:
-
-
-Example 2:
-Input: [[1,2],[2,2],[4,2]]
-Output: [[1,2],[2,2],[4,2]]
-Explanation:
-
-Even you only have trees in a line, you need to use rope to enclose them. 
-
- 
-Note:
-
-All trees should be enclosed together. You cannot cut the rope to enclose trees that will separate them in more than one group.
-All input integers will range from 0 to 100.
-The garden has at least one tree.
-All coordinates are distinct.
-Input points have NO order. No order required for output.
-input types have been changed on April 15, 2019. Please reset to default code definition to get new method signature.",Geometry,
 N-ary Tree Preorder Traversal,Easy,"Given an n-ary tree, return the preorder traversal of its nodes' values.
 For example, given a 3-ary tree:
  
@@ -7803,7 +7627,7 @@ Explanation: A -> B -> idle -> A -> B -> idle -> A -> B.
 Note:
 
 The number of tasks is in the range [1, 10000].
-The integer n is in the range [0, 100].","Array,Greedy,Queue","/problems/rearrange-string-k-distance-apart/,/problems/reorganize-string/"
+The integer n is in the range [0, 100].","Array,Greedy","/problems/rearrange-string-k-distance-apart/,/problems/reorganize-string/"
 Design Circular Queue,Medium,"Design your implementation of the circular queue. The circular queue is a linear data structure in which the operations are performed based on FIFO (First In First Out) principle and the last position is connected back to the first position to make a circle. It is also called ""Ring Buffer"".
 One of the benefits of the circular queue is that we can make use of the spaces in front of the queue. In a normal queue, once the queue becomes full, we cannot insert the next element even if there is a space in front of the queue. But using the circular queue, we can use the space to store new values.
 Your implementation should support following operations:
@@ -7835,7 +7659,7 @@ Note:
 
 All values will be in the range of [0, 1000].
 The number of operations will be in the range of [1, 1000].
-Please do not use the built-in Queue library.","Design,Queue",/problems/design-circular-deque/
+Please do not use the built-in Queue library.",Design,/problems/design-circular-deque/
 Add One Row to Tree,Medium,"Given the root of a binary tree, then value v and depth d, you need to add a row of nodes with value v at the given depth d. The root node is at depth 1. 
 The adding rule is: given a positive integer depth d, for each NOT null tree nodes N in depth d-1, create two tree nodes with value v as N's left subtree root and right subtree root. And N's original left subtree should be the left subtree of the new left subtree root, its original right subtree should be the right subtree of the new right subtree root. If depth d is 1 that means there is no depth d-1 at all, then create a tree node with value v as the new root of the whole original tree, and the original tree is the new root's left subtree.
 Example 1:
@@ -8144,7 +7968,7 @@ Note:
 
 All values will be in the range of [0, 1000].
 The number of operations will be in the range of [1, 1000].
-Please do not use the built-in Deque library.","Design,Queue",/problems/design-circular-queue/
+Please do not use the built-in Deque library.",Design,/problems/design-circular-queue/
 Maximum Average Subarray I,Easy,"Given an array consisting of n integers, find the contiguous subarray of given length k that has the maximum average value. And you need to output the maximum average value.
 Example 1:
 Input: [1,12,-5,-6,50,3], k = 4
@@ -9040,7 +8864,7 @@ Input:
 
 Output: 2
  
-Note: The given binary tree has not more than 10000 nodes. The height of the tree is not more than 1000.","Tree,Recursion","/problems/binary-tree-maximum-path-sum/,/problems/count-univalue-subtrees/,/problems/path-sum-iii/"
+Note: The given binary tree has not more than 10000 nodes. The height of the tree is not more than 1000.",Tree,"/problems/binary-tree-maximum-path-sum/,/problems/count-univalue-subtrees/,/problems/path-sum-iii/"
 Knight Probability in Chessboard,Medium,"On an NxN chessboard, a knight starts at the r-th row and c-th column and attempts to make exactly K moves. The rows and columns are 0 indexed, so the top-left square is (0, 0), and the bottom-right square is (N-1, N-1).
 A chess knight has 8 possible moves it can make, as illustrated below. Each move is two squares in a cardinal direction, then one square in an orthogonal direction.
  
@@ -9243,36 +9067,7 @@ Explanation: It's possible to divide it into 4 subsets (5), (1, 4), (2,3), (2,3)
 Note:
 
 1 <= k <= len(nums) <= 16.
-0 < nums[i] < 10000.","Dynamic Programming,Recursion",/problems/partition-equal-subset-sum/
-Falling Squares,Hard,"On an infinite number line (x-axis), we drop given squares in the order they are given.
-The i-th square dropped (positions[i] = (left, side_length)) is a square with the left-most point being positions[i][0] and sidelength positions[i][1].
-The square is dropped with the bottom edge parallel to the number line, and from a higher height than all currently landed squares. We wait for each square to stick before dropping the next.
-The squares are infinitely sticky on their bottom edge, and will remain fixed to any positive length surface they touch (either the number line or another square). Squares dropped adjacent to each other will not stick together prematurely.
- 
-
-Return a list ans of heights. Each height ans[i] represents the current highest height of any square we have dropped, after dropping squares represented by positions[0], positions[1], ..., positions[i].
-Example 1:
-Input: [[1, 2], [2, 3], [6, 1]]
-Output: [2, 5, 5]
-Explanation:
-
-After the first drop of positions[0] = [1, 2]: _aa _aa ------- The maximum height of any square is 2.
-After the second drop of positions[1] = [2, 3]: __aaa __aaa __aaa _aa__ _aa__ -------------- The maximum height of any square is 5. The larger square stays on top of the smaller square despite where its center of gravity is, because squares are infinitely sticky on their bottom edge.
-After the third drop of positions[1] = [6, 1]: __aaa __aaa __aaa _aa _aa___a -------------- The maximum height of any square is still 5. Thus, we return an answer of [2, 5, 5].
- 
- 
-
-Example 2:
-Input: [[100, 100], [200, 100]]
-Output: [100, 100]
-Explanation: Adjacent squares don't get stuck prematurely - only their bottom edge can stick to surfaces.
-
- 
-Note:
-
-1 <= positions.length <= 1000.
-1 <= positions[i][0] <= 10^8.
-1 <= positions[i][1] <= 10^6.","Segment Tree,Ordered Map",/problems/the-skyline-problem/
+0 < nums[i] < 10000.",Dynamic Programming,/problems/partition-equal-subset-sum/
 Search in a Binary Search Tree,Easy,"Given the root node of a binary search tree (BST) and a value. You need to find the node in the BST that the node's value equals the given value. Return the subtree rooted with that node. If such node doesn't exist, you should return NULL.
 For example, 
 Given the tree:
@@ -9472,7 +9267,7 @@ Input:
 Output: [null,1,3,1]
 
 Explanation of Input Syntax:
-The input is two lists: the subroutines called and their arguments. Solution's constructor has two arguments, N and the blacklist B. pick has no arguments. Arguments are always wrapped with a list, even if there aren't any.","Hash Table,Binary Search,Sort,Random","/problems/random-pick-index/,/problems/random-pick-with-weight/"
+The input is two lists: the subroutines called and their arguments. Solution's constructor has two arguments, N and the blacklist B. pick has no arguments. Arguments are always wrapped with a list, even if there aren't any.","Hash Table,Binary Search,Sort","/problems/random-pick-index/,/problems/random-pick-with-weight/"
 Minimum ASCII Delete Sum for Two Strings,Medium,"Given two strings s1, s2, find the lowest ASCII sum of deleted characters to make two strings equal.
 Example 1:
 Input: s1 = ""sea"", s2 = ""eat""
@@ -9521,25 +9316,6 @@ Note:
 0 < prices.length <= 50000.
 0 < prices[i] < 50000.
 0 <= fee < 50000.","Array,Dynamic Programming,Greedy",/problems/best-time-to-buy-and-sell-stock-ii/
-Range Module,Hard,"A Range Module is a module that tracks ranges of numbers. Your task is to design and implement the following interfaces in an efficient manner.
-addRange(int left, int right) Adds the half-open interval [left, right), tracking every real number in that interval.  Adding an interval that partially overlaps with currently tracked numbers should add any numbers in the interval [left, right) that are not already tracked.
-queryRange(int left, int right) Returns true if and only if every real number in the interval [left, right)
- is currently being tracked.
-removeRange(int left, int right) Stops tracking every real number currently being tracked in the interval [left, right).
-Example 1:
-addRange(10, 20): null
-removeRange(14, 16): null
-queryRange(10, 14): true (Every number in [10, 14) is being tracked)
-queryRange(13, 15): false (Numbers like 14, 14.03, 14.17 in [13, 15) are not being tracked)
-queryRange(16, 17): true (The number 16 in [16, 17) is still being tracked, despite the remove operation)
-
-
-Note:
-A half open interval [left, right) denotes all real numbers left <= x < right.
-0 < left < right < 10^9 in all calls to addRange, queryRange, removeRange.
-The total number of calls to addRange in a single test case is at most 1000.
-The total number of calls to queryRange in a single test case is at most 5000.
-The total number of calls to removeRange in a single test case is at most 1000.","Segment Tree,Ordered Map","/problems/merge-intervals/,/problems/insert-interval/,/problems/data-stream-as-disjoint-intervals/"
 1-bit and 2-bit Characters,Easy,"We have two special characters. The first character can be represented by one bit 0. The second character can be represented by two bits (10 or 11).  
 Now given a string represented by several bits. Return whether the last character must be a one-bit character or not. The given string will always end with a zero.
 Example 1:
@@ -9797,7 +9573,7 @@ The count of elements are {'K': 4, 'N': 2, 'O': 14, 'S': 4}.
 Note:
 All atom names consist of lowercase letters, except for the first character which is uppercase.
 The length of formula will be in the range [1, 1000].
-formula will only consist of letters, digits, and round parentheses, and is a valid formula as defined in the problem.","Hash Table,Stack,Recursion","/problems/decode-string/,/problems/encode-string-with-shortest-length/,/problems/parse-lisp-expression/"
+formula will only consist of letters, digits, and round parentheses, and is a valid formula as defined in the problem.","Hash Table,Stack","/problems/decode-string/,/problems/encode-string-with-shortest-length/,/problems/parse-lisp-expression/"
 Self Dividing Numbers,Easy,"A self-dividing number is a number that is divisible by every digit it contains.
 
 For example, 128 is a self-dividing number because 128 % 1 == 0, 128 % 2 == 0, and 128 % 8 == 0.
@@ -9861,56 +9637,6 @@ There are 3104860382 different non-empty palindromic subsequences, which is 1048
 Note:
 The length of S will be in the range [1, 1000].
 Each character S[i] will be in the set {'a', 'b', 'c', 'd'}.","String,Dynamic Programming",/problems/longest-palindromic-subsequence/
-My Calendar II,Medium,"Implement a MyCalendarTwo class to store your events. A new event can be added if adding the event will not cause a triple booking.
-Your class will have one method, book(int start, int end). Formally, this represents a booking on the half open interval [start, end), the range of real numbers x such that start <= x < end.
-A triple booking happens when three events have some non-empty intersection (ie., there is some time that is common to all 3 events.)
-For each call to the method MyCalendar.book, return true if the event can be added to the calendar successfully without causing a triple booking. Otherwise, return false and do not add the event to the calendar.
-Your class will be called like this: MyCalendar cal = new MyCalendar(); MyCalendar.book(start, end)
-Example 1:
-MyCalendar();
-MyCalendar.book(10, 20); // returns true
-MyCalendar.book(50, 60); // returns true
-MyCalendar.book(10, 40); // returns true
-MyCalendar.book(5, 15); // returns false
-MyCalendar.book(5, 10); // returns true
-MyCalendar.book(25, 55); // returns true
-Explanation: 
-The first two events can be booked.  The third event can be double booked.
-The fourth event (5, 15) can't be booked, because it would result in a triple booking.
-The fifth event (5, 10) can be booked, as it does not use time 10 which is already double booked.
-The sixth event (25, 55) can be booked, as the time in [25, 40) will be double booked with the third event;
-the time [40, 50) will be single booked, and the time [50, 55) will be double booked with the second event.
-
- 
-Note:
-
-The number of calls to MyCalendar.book per test case will be at most 1000.
-In calls to MyCalendar.book(start, end), start and end are integers in the range [0, 10^9].",Ordered Map,"/problems/my-calendar-i/,/problems/my-calendar-iii/"
-My Calendar III,Hard,"Implement a MyCalendarThree class to store your events. A new event can always be added.
-Your class will have one method, book(int start, int end). Formally, this represents a booking on the half open interval [start, end), the range of real numbers x such that start <= x < end.
-A K-booking happens when K events have some non-empty intersection (ie., there is some time that is common to all K events.)
-For each call to the method MyCalendar.book, return an integer K representing the largest integer such that there exists a K-booking in the calendar.
-Your class will be called like this: MyCalendarThree cal = new MyCalendarThree(); MyCalendarThree.book(start, end)
-Example 1:
-MyCalendarThree();
-MyCalendarThree.book(10, 20); // returns 1
-MyCalendarThree.book(50, 60); // returns 1
-MyCalendarThree.book(10, 40); // returns 2
-MyCalendarThree.book(5, 15); // returns 3
-MyCalendarThree.book(5, 10); // returns 3
-MyCalendarThree.book(25, 55); // returns 3
-Explanation: 
-The first two events can be booked and are disjoint, so the maximum K-booking is a 1-booking.
-The third event [10, 40) intersects the first event, and the maximum K-booking is a 2-booking.
-The remaining events cause the maximum K-booking to be only a 3-booking.
-Note that the last event locally causes a 2-booking, but the answer is still 3 because
-eg. [10, 20), [10, 40), and [5, 15) are still triple booked.
-
- 
-Note:
-
-The number of calls to MyCalendarThree.book per test case will be at most 400.
-In calls to MyCalendarThree.book(start, end), start and end are integers in the range [0, 10^9].","Segment Tree,Ordered Map","/problems/my-calendar-i/,/problems/my-calendar-ii/"
 Flood Fill,Easy,"An image is represented by a 2-D array of integers, each integer representing the pixel value of the image (from 0 to 65535).
 
 Given a coordinate (sr, sc) representing the starting pixel (row and column) of the flood fill, and a pixel value newColor, ""flood fill"" the image.
@@ -10476,7 +10202,7 @@ This is the lexicographically largest string possible after some number of swaps
 
 Note:
 S has length at most 50.
-S is guaranteed to be a special binary string as defined above.","String,Recursion",/problems/valid-parenthesis-string/
+S is guaranteed to be a special binary string as defined above.",String,/problems/valid-parenthesis-string/
 Prime Number of Set Bits in Binary Representation,Easy,"Given two integers L and R, find the count of numbers in the range [L, R] (inclusive) having a prime number of set bits in their binary representation.
 
 (Recall that the number of set bits an integer has is the number of 1s present when written in binary.  For example, 21 written in binary is 10101 which has 3 set bits.  Also, 1 is not a prime.)
@@ -10782,22 +10508,6 @@ Note:
 A will be a permutation of [0, 1, ..., A.length - 1].
 A will have length in range [1, 5000].
 The time limit for this problem has been reduced.","Array,Math",
-Swap Adjacent in LR String,Medium,"In a string composed of 'L', 'R', and 'X' characters, like ""RXXLRXRXL"", a move consists of either replacing one occurrence of ""XL"" with ""LX"", or replacing one occurrence of ""RX"" with ""XR"". Given the starting string start and the ending string end, return True if and only if there exists a sequence of moves to transform one string to the other.
-Example:
-Input: start = ""RXXLRXRXL"", end = ""XRLXXRRLX""
-Output: True
-Explanation:
-We can transform start to end following these steps:
-RXXLRXRXL ->
-XRXLRXRXL ->
-XRLXRXRXL ->
-XRLXXRRXL ->
-XRLXXRRLX
-
-Note:
-
-1 <= len(start) = len(end) <= 10000.
-Both start and end will only consist of characters in {'L', 'R', 'X'}.",Brainteaser,
 Swim in Rising Water,Hard,"On an N x N grid, each square grid[i][j] represents the elevation at that point (i,j).
 Now rain starts to fall. At time t, the depth of the water everywhere is t. You can swim from a square to another 4-directionally adjacent square if and only if the elevation of both squares individually are at most t. You can swim infinite distance in zero time. Of course, you must stay within the boundaries of the grid during your swim.
 You start at the top left square (0, 0). What is the least time until you can reach the bottom right square (N-1, N-1)?
@@ -10828,31 +10538,6 @@ Note:
 
 2 <= N <= 50.
 grid[i][j] is a permutation of [0, ..., N*N - 1].","Binary Search,Heap,Depth-first Search,Union Find",
-K-th Symbol in Grammar,Medium,"On the first row, we write a 0. Now in every subsequent row, we look at the previous row and replace each occurrence of 0 with 01, and each occurrence of 1 with 10.
-Given row N and index K, return the K-th indexed symbol in row N. (The values of K are 1-indexed.) (1 indexed).
-Examples:
-Input: N = 1, K = 1
-Output: 0
-
-Input: N = 2, K = 1
-Output: 0
-
-Input: N = 2, K = 2
-Output: 1
-
-Input: N = 4, K = 5
-Output: 1
-
-Explanation:
-row 1: 0
-row 2: 01
-row 3: 0110
-row 4: 01101001
-
-Note:
-
-N will be an integer in the range [1, 30].
-K will be an integer in the range [1, 2^(N-1)].",Recursion,
 Reaching Points,Hard,"A move consists of taking a point (x, y) and transforming it to either (x, x+y) or (x+y, y).
 Given a starting point (sx, sy) and a target point (tx, ty), return True if and only if a sequence of moves exists to transform the point (sx, sy) to (tx, ty). Otherwise, return False.
 Examples:
@@ -10951,7 +10636,7 @@ while the minimum difference in this tree is 1, it occurs between node 1 and nod
 Note:
 
 The size of the BST will be between 2 and 100.
-The BST is always valid, each node's value is an integer, and each node's value is different.","Tree,Recursion",/problems/binary-tree-inorder-traversal/
+The BST is always valid, each node's value is an integer, and each node's value is different.",Tree,/problems/binary-tree-inorder-traversal/
 Letter Case Permutation,Easy,"Given a string S, we can transform every letter individually to be lowercase or uppercase to create another string.  Return a list of all possible strings we could create.
 Examples:
 Input: S = ""a1b2""
@@ -11189,7 +10874,7 @@ Output: true
 Note:
 
 board is a length-3 array of strings, where each string board[i] has length 3.
-Each board[i][j] is a character in the set {"" "", ""X"", ""O""}.","Math,Recursion",/problems/design-tic-tac-toe/
+Each board[i][j] is a character in the set {"" "", ""X"", ""O""}.",Math,/problems/design-tic-tac-toe/
 Number of Subarrays with Bounded Maximum,Medium,"We are given an array A of positive integers, and two positive integers L and R (L <= R).
 Return the number of (contiguous, non-empty) subarrays such that the value of the maximum array element in that subarray is at least L and at most R.
 Example :
@@ -11995,26 +11680,6 @@ Note:
 
 1 <= S.length <= 200
 S contains only digits.","String,Backtracking,Greedy","/problems/additive-number/,/problems/fibonacci-number/"
-Guess the Word,Hard,"This problem is an interactive problem new to the LeetCode platform.
-We are given a word list of unique words, each word is 6 letters long, and one word in this list is chosen as secret.
-You may call master.guess(word) to guess a word.  The guessed word should have type string and must be from the original list with 6 lowercase letters.
-This function returns an integer type, representing the number of exact matches (value and position) of your guess to the secret word.  Also, if your guess is not in the given wordlist, it will return -1 instead.
-For each test case, you have 10 guesses to guess the word. At the end of any number of calls, if you have made 10 or less calls to master.guess and at least one of these guesses was the secret, you pass the testcase.
-Besides the example test case below, there will be 5 additional test cases, each with 100 words in the word list.  The letters of each word in those testcases were chosen independently at random from 'a' to 'z', such that every word in the given word lists is unique.
-Example 1:
-Input: secret = ""acckzz"", wordlist = [""acckzz"",""ccbazz"",""eiowzz"",""abcczz""]
-
-Explanation:
-
-master.guess(""aaaaaa"") returns -1, because ""aaaaaa"" is not in wordlist.
-master.guess(""acckzz"") returns 6, because ""acckzz"" is secret and has all 6 matches.
-master.guess(""ccbazz"") returns 3, because ""ccbazz"" has 3 matches.
-master.guess(""eiowzz"") returns 2, because ""eiowzz"" has 2 matches.
-master.guess(""abcczz"") returns 4, because ""abcczz"" has 4 matches.
-
-We made 5 calls to master.guess and one of them was the secret, so we pass the test case.
-
-Note:  Any solutions that attempt to circumvent the judge will result in disqualification.",Minimax,
 Backspace String Compare,Easy,"Given two strings S and T, return if they are equal when both are typed into empty text editors. # means a backspace character.
 
 Example 1:
@@ -12076,26 +11741,6 @@ Follow up:
 
 Can you solve it using only one pass?
 Can you solve it in O(1) space?",Two Pointers,
-Hand of Straights,Medium,"Alice has a hand of cards, given as an array of integers.
-Now she wants to rearrange the cards into groups so that each group is size W, and consists of W consecutive cards.
-Return true if and only if she can.
- 
-
-
-Example 1:
-Input: hand = [1,2,3,6,2,3,4,7,8], W = 3
-Output: true
-Explanation: Alice's hand can be rearranged as [1,2,3],[2,3,4],[6,7,8].
-Example 2:
-Input: hand = [1,2,3,4,5], W = 4
-Output: false
-Explanation: Alice's hand can't be rearranged into groups of 4.
- 
-Note:
-
-1 <= hand.length <= 10000
-0 <= hand[i] <= 10^9
-1 <= W <= hand.length",Ordered Map,
 Shortest Path Visiting All Nodes,Hard,"An undirected, connected graph of N nodes (labeled 0, 1, 2, ..., N-1) is given as graph.
 graph.length = N, and j != i is in the list graph[i] exactly once, if and only if nodes i and j are connected.
 Return the length of the shortest path that visits every node. You may start and stop at any node, you may revisit nodes multiple times, and you may reuse edges.
@@ -12158,25 +11803,6 @@ Note:
 
 1 <= seats.length <= 20000
 seats contains only 0s or 1s, at least one 0, and at least one 1.",Array,/problems/exam-room/
-Rectangle Area II,Hard,"We are given a list of (axis-aligned) rectangles.  Each rectangle[i] = [x1, y1, x2, y2] , where (x1, y1) are the coordinates of the bottom-left corner, and (x2, y2) are the coordinates of the top-right corner of the ith rectangle.
-Find the total area covered by all rectangles in the plane.  Since the answer may be too large, return it modulo 10^9 + 7.
-
-Example 1:
-Input: [[0,0,2,2],[1,0,2,3],[1,0,3,1]]
-Output: 6
-Explanation: As illustrated in the picture.
-
-Example 2:
-Input: [[0,0,1000000000,1000000000]]
-Output: 49
-Explanation: The answer is 10^18 modulo (10^9 + 7), which is (10^9)^2 = (-7)^2 = 49.
-
-Note:
-
-1 <= rectangles.length <= 200
-rectanges[i].length = 4
-0 <= rectangles[i][j] <= 10^9
-The total area covered by all rectangles will never exceed 2^63 - 1 and thus will fit in a 64-bit signed integer.","Segment Tree,Line Sweep",
 Loud and Rich,Medium,"In a group of N people (labelled 0, 1, 2, ..., N-1), each person has different amounts of money, and different levels of quietness.
 For convenience, we'll call the person with label x, simply ""person x"".
 We'll say that richer[i] = [x, y] if person x definitely has more money than person y.  Note that richer may only be a subset of valid observations.
@@ -12283,28 +11909,6 @@ Note:
 
 1 <= A.length == B.length <= 20
 A and B contain only lowercase letters from the set {'a', 'b', 'c', 'd', 'e', 'f'}","Breadth-first Search,Graph",/problems/couples-holding-hands/
-Exam Room,Medium,"In an exam room, there are N seats in a single row, numbered 0, 1, 2, ..., N-1.
-When a student enters the room, they must sit in the seat that maximizes the distance to the closest person.  If there are multiple such seats, they sit in the seat with the lowest number.  (Also, if no one is in the room, then the student sits at seat number 0.)
-Return a class ExamRoom(int N) that exposes two functions: ExamRoom.seat() returning an int representing what seat the student sat in, and ExamRoom.leave(int p) representing that the student in seat number p now leaves the room.  It is guaranteed that any calls to ExamRoom.leave(p) have a student sitting in seat p.
- 
-Example 1:
-Input: [""ExamRoom"",""seat"",""seat"",""seat"",""seat"",""leave"",""seat""], [[10],[],[],[],[],[4],[]]
-Output: [null,0,9,4,2,null,5]
-Explanation:
-ExamRoom(10) -> null
-seat() -> 0, no one is in the room, then the student sits at seat number 0.
-seat() -> 9, the student sits at the last seat number 9.
-seat() -> 4, the student sits at the last seat number 4.
-seat() -> 2, the student sits at the last seat number 2.
-leave(4) -> null
-seat() -> 5, the student sits at the last seat number 5.
-
-​​​​​​​
-Note:
-
-1 <= N <= 10^9
-ExamRoom.seat() and ExamRoom.leave() will be called at most 10^4 times across all test cases.
-Calls to ExamRoom.leave(p) are guaranteed to have a student currently sitting in seat number p.",Ordered Map,/problems/maximize-distance-to-closest-person/
 Score of Parentheses,Medium,"Given a balanced parentheses string S, compute the score of the string based on the following rule:
 
 () has score 1
@@ -12500,7 +12104,7 @@ Note:
 
 1 <= A.length <= 50000
 -10 ^ 5 <= A[i] <= 10 ^ 5
-1 <= K <= 10 ^ 9","Binary Search,Queue",
+1 <= K <= 10 ^ 9",Binary Search,
 All Nodes Distance K in Binary Tree,Medium,"We are given a binary tree (with root node root), a target node, and an integer value K.
 Return a list of the values of all nodes that have a distance K from the target node.  The answer can be returned in any order.
  
@@ -12899,7 +12503,7 @@ Note:
 2 <= piles.length <= 500
 piles.length is even.
 1 <= piles[i] <= 500
-sum(piles) is odd.","Math,Dynamic Programming,Minimax",
+sum(piles) is odd.","Math,Dynamic Programming",
 Nth Magical Number,Hard,"A positive integer is magical if it is divisible by either A or B.
 Return the N-th magical number.  Since the answer may be very large, return it modulo 10^9 + 7.
  
@@ -13382,7 +12986,7 @@ Output: 46
 Note:
 
 1 <= N <= 50
-0 <= grid[i][j] <= 50","Math,Geometry",
+0 <= grid[i][j] <= 50",Math,
 Groups of Special-Equivalent Strings,Easy,"You are given an array A of strings.
 Two strings S and T are special-equivalent if after any number of moves, S == T.
 A move consists of choosing two indices i and j with i % 2 == j % 2, and swapping S[i] with S[j].
@@ -13436,7 +13040,7 @@ Explanation:
  
 Note:
 
-1 <= N <= 20","Tree,Recursion",
+1 <= N <= 20",Tree,
 Maximum Frequency Stack,Hard,"Implement FreqStack, a class which simulates the operation of a stack-like data structure.
 FreqStack has two functions:
 
@@ -13953,7 +13557,7 @@ Note:
 
 3 <= graph.length <= 50
 It is guaranteed that graph[1] is non-empty.
-It is guaranteed that graph[2] contains a non-zero element.","Breadth-first Search,Minimax",
+It is guaranteed that graph[2] contains a non-zero element.",Breadth-first Search,
 X of a Kind in a Deck of Cards,Easy,"In a deck of cards, each card has an integer written on it.
 Return true if and only if you can choose X >= 2 such that it is possible to split the entire deck into 1 or more groups of cards, where:
 
@@ -14495,21 +14099,6 @@ Output: [3,1,2,5,4]
 Note:
 
 1 <= N <= 1000",Divide and Conquer,
-Number of Recent Calls,Easy,"Write a class RecentCounter to count recent requests.
-It has only one method: ping(int t), where t represents some time in milliseconds.
-Return the number of pings that have been made from 3000 milliseconds ago until now.
-Any ping with time in [t - 3000, t] will count, including the current ping.
-It is guaranteed that every call to ping uses a strictly larger value of t than before.
- 
-Example 1:
-Input: inputs = [""RecentCounter"",""ping"",""ping"",""ping"",""ping""], inputs = [[],[1],[100],[3001],[3002]]
-Output: [null,1,2,3,3]
- 
-Note:
-
-Each test case will have at most 10000 calls to ping.
-Each test case will call ping with strictly increasing values of t.
-Each call to ping will have 1 <= t <= 10^9.",Queue,
 Shortest Bridge,Medium,"In a given 2D binary array A, there are two islands.  (An island is a 4-directionally connected group of 1s not connected to any other 1s.)
 Now, we may change 0s to 1s so as to connect the two islands together to form 1 island.
 Return the smallest number of 0s that must be flipped.  (It is guaranteed that the answer is at least 1.)
@@ -14626,7 +14215,7 @@ Output: 23
 Note:
 
 The number of nodes in the tree is at most 10000.
-The final answer is guaranteed to be less than 2^31.","Tree,Recursion",
+The final answer is guaranteed to be less than 2^31.",Tree,
 Minimum Area Rectangle,Medium,"Given a set of points in the xy-plane, determine the minimum area of a rectangle formed from these points, with sides parallel to the x and y axes.
 If there isn't any rectangle, return 0.
  
@@ -15387,7 +14976,7 @@ Note:
 0 <= points[i][0] <= 40000
 0 <= points[i][1] <= 40000
 All points are distinct.
-Answers within 10^-5 of the actual value will be accepted as correct.","Math,Geometry",
+Answers within 10^-5 of the actual value will be accepted as correct.",Math,
 Least Operators to Express Number,Hard,"Given a single positive integer x, we will write an expression of the form x (op1) x (op2) x (op3) x ... where each operator op1, op2, etc. is either addition, subtraction, multiplication, or division (+, -, *, or /).  For example, with x = 3, we might write 3 * 3 / 3 + 3 - 3 which is a value of 3.
 When writing such an expression, we adhere to the following conventions:
 
@@ -15746,7 +15335,7 @@ We can reach the end from starting indexes 1, 2, and 4.
 Note:
 
 1 <= A.length <= 20000
-0 <= A[i] < 100000","Dynamic Programming,Stack,Ordered Map",
+0 <= A[i] < 100000","Dynamic Programming,Stack",
 Largest Perimeter Triangle,Easy,"Given an array A of positive lengths, return the largest perimeter of a triangle with non-zero area, formed from 3 of these lengths.
 If it is impossible to form any triangle of non-zero area, return 0.
  
@@ -17356,37 +16945,6 @@ Note:
 Words will only consist of lowercase English letters.
 Queries will only consist of lowercase English letters.
 The number of queries is at most 40000.",Trie,
-Moving Stones Until Consecutive,Easy,"Three stones are on a number line at positions a, b, and c.
-Each turn, you pick up a stone at an endpoint (ie., either the lowest or highest position stone), and move it to an unoccupied position between those endpoints.  Formally, let's say the stones are currently at positions x, y, z with x < y < z.  You pick up the stone at either position x or position z, and move that stone to an integer position k, with x < k < z and k != y.
-The game ends when you cannot make any more moves, ie. the stones are in consecutive positions.
-When the game ends, what is the minimum and maximum number of moves that you could have made?  Return the answer as an length 2 array: answer = [minimum_moves, maximum_moves]
- 
-Example 1:
-Input: a = 1, b = 2, c = 5
-Output: [1,2]
-Explanation: Move the stone from 5 to 3, or move the stone from 5 to 4 to 3.
-
-
-Example 2:
-Input: a = 4, b = 3, c = 2
-Output: [0,0]
-Explanation: We cannot make any moves.
-
-
-Example 3:
-Input: a = 3, b = 5, c = 1
-Output: [1,2]
-Explanation: Move the stone from 1 to 4; or move the stone from 1 to 2 to 4.
-
- 
-
-
-Note:
-
-1 <= a <= 100
-1 <= b <= 100
-1 <= c <= 100
-a != b, b != c, c != a",Brainteaser,
 Coloring A Border,Medium,"Given a 2-dimensional grid of integers, each value in the grid represents the color of the grid square at that location.
 Two squares belong to the same connected component if and only if they have the same color and are next to each other in any of the 4 directions.
 The border of a connected component is all the squares in the connected component that are either 4-directionally adjacent to a square not in the component, or on the boundary of the grid (the first or last row or column).
@@ -18582,26 +18140,6 @@ Constraints:
 
 2 <= arr1.length == arr2.length <= 40000
 -10^6 <= arr1[i], arr2[i] <= 10^6","Math,Bit Manipulation",
-N-th Tribonacci Number,Easy,"The Tribonacci sequence Tn is defined as follows: 
-T0 = 0, T1 = 1, T2 = 1, and Tn+3 = Tn + Tn+1 + Tn+2 for n >= 0.
-Given n, return the value of Tn.
- 
-Example 1:
-Input: n = 4
-Output: 4
-Explanation:
-T_3 = 0 + 1 + 1 = 2
-T_4 = 1 + 1 + 2 = 4
-
-Example 2:
-Input: n = 25
-Output: 1389537
-
- 
-Constraints:
-
-0 <= n <= 37
-The answer is guaranteed to fit within a 32-bit integer, ie. answer <= 2^31 - 1.",Recursion,"/problems/climbing-stairs/,/problems/fibonacci-number/"
 Alphabet Board Path,Medium,"On an alphabet board, we start at position (0, 0), corresponding to character board[0][0].
 Here, board = [""abcde"", ""fghij"", ""klmno"", ""pqrst"", ""uvwxy"", ""z""], as shown in the diagram below.
 
@@ -18783,7 +18321,7 @@ Explanation: We can split the string on ""(a)(a)(a)"".
 Constraints:
 
 text consists only of lowercase English characters.
-1 <= text.length <= 1000","Dynamic Programming,Rolling Hash",
+1 <= text.length <= 1000",Dynamic Programming,
 Day of the Year,Easy,"Given a string date representing a Gregorian calendar date formatted as YYYY-MM-DD, return the day number of the year.
  
 Example 1:
@@ -18903,7 +18441,7 @@ Constraints:
 1 <= arr[i] <= 20000
 For each query, 0 <= left <= right < len(arr)
 For each query, 2 * threshold > right - left + 1
-The number of queries is at most 10000","Array,Binary Search,Segment Tree",
+The number of queries is at most 10000","Array,Binary Search",
 Find Words That Can Be Formed by Characters,Easy,"You are given an array of strings words and a string chars.
 A string is good if it can be formed by characters from chars (each character can only be used once).
 Return the sum of lengths of all good strings in words.
@@ -18982,7 +18520,7 @@ Output: ""tcode""
 Note:
 
 1 <= s.length <= 4 * 10^5
-s contains only lowercase English letters.","String,Suffix Array",
+s contains only lowercase English letters.",String,
 Invalid Transactions,Medium,"A transaction is possibly invalid if:
 
 the amount exceeds $1000, or;
@@ -19478,4 +19016,4 @@ group.length == beforeItems.length == n
 0 <= beforeItems[i].length <= n-1
 0 <= beforeItems[i][j] <= n-1
 i != beforeItems[i][j]
-beforeItems[i] does not contain duplicates elements.","Depth-first Search,Graph,Topological Sort",
+beforeItems[i] does not contain duplicates elements.","Depth-first Search,Graph",
