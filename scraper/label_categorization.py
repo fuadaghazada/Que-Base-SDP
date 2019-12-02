@@ -10,7 +10,7 @@ import numpy as np
 import os
 import csv
 hackerrank_csv = pd.read_csv('hackerrank_dataset.csv', delimiter=',')
-leetcode_csv = pd.read_csv('leetcode_dataset.csv', delimiter=',', header = None)
+leetcode_csv = pd.read_csv('updated_leetcode.csv', delimiter=',', header = None)
 leetcode_labels = leetcode_csv[3]
 hackerrank_labels = hackerrank_csv["Tags"]
 
@@ -36,6 +36,10 @@ def append_to_file(label, other_labels, question):
 def switcher_for_leetcode(argument):
     switcher = {
         "Binary Search Tree" : "Binary Search",
+        "Math" : "Mathematics",
+        "String" : "Strings",
+        "Greedy" : "Greedy Algorithms",
+
     }
     return switcher.get(argument,argument)               
                 
@@ -132,54 +136,7 @@ def anani_dagitim(cs_question_csv):
                     append_to_file(i, [], question)
                 count += 1
             count = 0
-        print(index)
-        
-        """
-        question = data[2]
-        if not pd.isnull(question):
-            print(labels) 
-            
-            
-            line_array = line.split(",")
-            for elem in line_array:
-                if elem not in labels:
-                    labels[elem] = 1
-                else:
-                    labels[elem] += 1
-    for line in hackerrank_labels:
-        if not pd.isnull(line):
-            line_array = line.split(",")
-            for elem in line_array:
-                if elem not in labels:
-                    labels[elem] = 1
-                else:
-                    labels[elem] += 1
-                    """
-                    
-    """
-    for index, row in leetcode_csv.iterrows():
-        question = row[2]
-        labels_anan = row[3]
-        if not pd.isnull(labels_anan):
-
-            cat_arr = labels_anan.split(",")
-            labels_dict = dict((v, labels[v]) for v in cat_arr)
-            import operator
-            max_label = max(labels_dict.items(), key=operator.itemgetter(1))[0]
-            cat_arr = ["_label_" + i.replace(' ', '-') for i in cat_arr]
-            cat_arr.append(row[2])
-            with open("data.txt", 'a+') as f:
-                for element in cat_arr:
-                    element = str(element.encode('utf-8'))
-                    f.write(element[2:-1] + ' ')
-                #f.write("{} {}".format([str(i.encode('utf-8')) for i in cat_arr[:-1]], str(cat_arr[-1].encode('utf-8'))))
-                #f.write('\n')
-                f.write('\n')
-            print(cat_arr)
-
-           
-        """
-        
-anani_dagitim(leetcode_csv)
-#fix_hackerrank_labels('leetcode_dataset.csv', switcher_for_leetcode)
+        print(index)        
+#anani_dagitim(leetcode_csv)
+fix_hackerrank_labels('leetcode_dataset.csv', switcher_for_leetcode)
 print('')

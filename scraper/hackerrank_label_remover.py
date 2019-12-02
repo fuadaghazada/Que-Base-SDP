@@ -47,7 +47,7 @@ for index, row in df.iterrows():
         df_new =  df_new.append({'Title': row['Title'], 'Difficulty': row['Difficulty'],
                              'Question': row['Question'], 'Tags': ','.join(to_be_added_labels)}, ignore_index=True)
 
-#df_new.to_csv('updated_hackerrank.csv',  encoding='utf-8', index=False, header=False, sep=',')
+df_new.to_csv('updated_hackerrank.csv',  encoding='utf-8', index=False, sep=',')
 
 new_label_list = []
 for index, row in df_new.iterrows():

@@ -47,6 +47,6 @@ for index, row in df.iterrows():
         df_new =  df_new.append({'question_name': row['question_name'], 'level': row['level'],
                              'question': row['question'], 'label': ','.join(to_be_added_labels), 'path': row['path']}, ignore_index=True)
 
-df.to_csv('updated_leetcode.csv',  encoding='utf-8', index=False, header=False, sep=',')
+df_new.to_csv('updated_leetcode.csv',  encoding='utf-8', index=False, header=False, sep=',')
 
 print(label_list)
