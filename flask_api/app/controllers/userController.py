@@ -12,7 +12,7 @@ bluePrint = Blueprint('users', __name__, url_prefix='/users')
 
 @bluePrint.route("/getUser", methods=["GET"])
 @isAuth(request)
-def getQuestion(user):
+def getUser(user):
 
     # ID as parameter
     userId = request.args.get('id')
