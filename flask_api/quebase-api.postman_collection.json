@@ -421,6 +421,37 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Get Favorite Questions",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzU0OTQ3NjQsImlhdCI6MTU3NTQwODM2NCwic3ViIjoie1wiX2lkXCI6IFwiNWRlNTU0NGFlZTI3Y2MzZTNmOWYyNTIxXCIsIFwiZmlyc3RuYW1lXCI6IFwiRnVhZFwiLCBcImxhc3RuYW1lXCI6IFwiQWdoYXphZGFcIiwgXCJ1c2VybmFtZVwiOiBcImZ1YWRhZ2hhemFkYVwiLCBcImVtYWlsXCI6IFwiZnVhZEBnbWFpbC5jb21cIiwgXCJmYXZvcml0ZVF1ZXN0aW9uc1wiOiBbXSwgXCJmcmllbmRzXCI6IFtcIjVkZTU1NDQ0ZWUyN2NjM2UzZjlmMjUxZVwiXSwgXCJmcmllbmRzV2FpdExpc3RcIjogW119In0.RrGFEnK0OROSAY4axFwpnGlUeU4oxdLPTfDcymjutz8",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8000/users/favoriteQuestions?id=5de5544aee27cc3e3f9f2521",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"users",
+						"favoriteQuestions"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "5de5544aee27cc3e3f9f2521"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	],
 	"protocolProfileBehavior": {}
