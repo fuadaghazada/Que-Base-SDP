@@ -5,7 +5,7 @@ from flask import Blueprint
 from flask import jsonify
 from flask import request
 
-from app.models import User
+from app.models import User, Question
 from app.helpers.isAuth import isAuth
 
 # Blue print
@@ -285,6 +285,40 @@ def getWaitList(user):
     else:
         status = False
         message = "You cannot view the wait list (friend requests) of that user"
+
+    # Response
+    return jsonify({
+        "success": status,
+        "message": message,
+        "result": results
+    }), 200
+
+
+@bluePrint.route("/favoriteQuestions", methods=["GET"])
+@isAuth(request)
+def getFavoriteQuestions(user):
+    status, message = False, "Something went wrong"
+
+    # Get the id of the current user
+    currentUserId = ObjectId(user["_id"])
+
+    # Parameters
+    receivedId = request.args.get('id')
+    page = int(request.args.get('page')) if request.args.get('page') is not None else 1
+
+    results = []
+
+    # Get the user model
+    currentUserModel = User({"_id": currentUserId})
+    currentUser = currentUserModel.data()
+
+    # Get the wait list
+    curFavoriteQuestions = currentUser.get('favoriteQuestions')
+    curFavoriteQuestions = list(curFavoriteQuestions) if curFavoriteQuestions else []
+    results = Question.find({"_id": {"$in": curFavoriteQuestions}}, pageNumber = page)
+
+    status = True
+    message = "Favorite Questions of the user have been obtained"
 
     # Response
     return jsonify({
