@@ -185,3 +185,20 @@ def searchUsers(user):
         "success": True,
         "results": resultUsers
     })
+
+
+@bluePrint.route("/updateUser", methods=["POST"])
+@isAuth(request)
+def updateUser(user):
+
+    requestData = request.get_json()
+    currentUser = User({"_id": user["_id"]})
+    status, message = False, "Something went wrong"
+
+    if currentUser.update_one(requestData):
+        status, message = True, "Update successful"
+    # Response
+    return jsonify({
+        "success": status,
+        "message": message
+    }), 200

@@ -55,7 +55,7 @@ class User(Model):
         :param: updateValues - new values for update
     '''
     def update_one(self, updateValues):
-        super().update_one(updateValues, COLLECTION_NAME)
+        return super().update_one(updateValues, COLLECTION_NAME)
 
 
     '''
