@@ -203,6 +203,7 @@ def updateUser(user):
         "message": message
     }), 200
 
+
 @bluePrint.route("/friends", methods=["GET"])
 @isAuth(request)
 def getFriends(user):
