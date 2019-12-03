@@ -202,3 +202,92 @@ def updateUser(user):
         "success": status,
         "message": message
     }), 200
+
+@bluePrint.route("/friends", methods=["GET"])
+@isAuth(request)
+def getFriends(user):
+
+    status, message = False, "Something went wrong"
+
+    # Get the id of the current user
+    currentUserId = ObjectId(user["_id"])
+
+    # Parameters
+    otherUserId = request.args.get('id')  # id of the user whose friends are to be viewed
+    page = int(request.args.get('page')) if request.args.get('page') is not None else 1
+
+    # Get the corresponding user models
+    currentUserModel = User({"_id": currentUserId})
+    currentUser = currentUserModel.data()
+    otherUserModel = User({"_id": otherUserId})
+    otherUser = otherUserModel.data()
+
+    # Get the friend list of the current user
+    currentUserFriends = currentUser.get('friends')
+    currentUserFriends = list(currentUserFriends) if currentUserFriends else []
+
+    results = []
+
+    # To be able to view the friends of the other user, the current user and the other one must be friends
+    if ObjectId(otherUserId) in currentUserFriends or str(currentUserId) == otherUserId:
+
+        # Get the friend list of the other user (only their id's)
+        friendsIds = otherUser['friends']
+        results = User.find({"_id": {"$in": friendsIds}}, pageNumber = page)
+
+        status = True
+        message = "Friend list is returned succesfully"
+
+    # Otherwise, friends of the other user are not visible to our current user
+    else:
+        status = False
+        message = "To be able to view the friends of that user, you must be friends"
+
+    # Response
+    return jsonify({
+        "success": status,
+        "message": message,
+        "result": results
+    }), 200
+
+
+@bluePrint.route("/waitlist", methods=["GET"])
+@isAuth(request)
+def getWaitList(user):
+
+    status, message = False, "Something went wrong"
+
+    # Get the id of the current user
+    currentUserId = ObjectId(user["_id"])
+
+    # Parameters
+    receivedId = request.args.get('id')  # id of the user whose wait list (friend requests) are to be viewed
+    page = int(request.args.get('page')) if request.args.get('page') is not None else 1
+
+    results = []
+
+    # A user can only view his/her own wait list (friend requests)
+    if str(currentUserId) == receivedId:
+
+        # Get the user model
+        currentUserModel = User({"_id": currentUserId})
+        currentUser = currentUserModel.data()
+
+        # Get the wait list
+        curWaitlist = currentUser.get('friendsWaitList')
+        curWaitlist = list(curWaitlist) if curWaitlist else []
+        results = User.find({"_id": {"$in": curWaitlist}}, pageNumber = page)
+
+        status = True
+        message = "Wait list (friend requests) are retrieved successfully"
+
+    else:
+        status = False
+        message = "You cannot view the wait list (friend requests) of that user"
+
+    # Response
+    return jsonify({
+        "success": status,
+        "message": message,
+        "result": results
+    }), 200
