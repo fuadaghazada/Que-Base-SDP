@@ -13,6 +13,7 @@ class QuestionSchema(Schema):
     userId = fields.Str(required = False)
     viewCount = fields.Integer(required = False)
     favCount = fields.Integer(required = False)
+    label = fields.Str(required = False)                # TODO: Will be list/array
     filter = fields.Dict(required = False)
 
 

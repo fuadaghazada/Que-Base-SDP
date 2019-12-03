@@ -21,6 +21,8 @@ app.json_encoder = JSONEncoder
 cors = CORS(app)
 
 # Controllers
+app.register_blueprint(scQuestionBluePrint)
+app.register_blueprint(algoQuestionBluePrint)
 app.register_blueprint(questionBluePrint)
 app.register_blueprint(authBluePrint)
 app.register_blueprint(userBluePrint)
