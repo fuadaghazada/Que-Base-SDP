@@ -42,10 +42,18 @@ class Model():
                 for property in properties:
                     setattr(self, property, data[property])
 
+                setattr(self, "collectionName", collectionName)
+
     '''
         Getting the data from model object
     '''
     def data(self):
+
+        try:
+            delattr(self, 'collectionName')
+        except AttributeError as e:
+            print("No such attribute")
+
         return vars(self)
 
 

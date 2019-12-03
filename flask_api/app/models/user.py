@@ -115,29 +115,13 @@ class User(Model):
 
 
     '''
-        Adding/Removing the question to favorite questions
-
-        :param: questionId - the id of the question to be added
+        Getting the model data: user data (by deleting unnecessary attributes)
     '''
-    def favoriteQuestion(self, questionId):
+    def data(self):
 
-        status, message = False, ""
+        try:
+            delattr(self, 'password')
+        except AttributeError as e:
+            print("No such attribute")
 
-        curFavoriteQuestions = vars(self).get('favoriteQuestions')
-        curFavoriteQuestions  = list(curFavoriteQuestions) if curFavoriteQuestions else []
-
-        if questionId not in curFavoriteQuestions:
-            curFavoriteQuestions.append(questionId)
-            status = True
-            message = "Questions is added to the favorite list!"
-        else:
-            curFavoriteQuestions.remove(questionId)
-            status = False
-            message = "Questions is removed from the favorite list!"
-
-        setattr(self, 'favoriteQuestions', curFavoriteQuestions)
-
-        # Updating
-        self.update_one(vars(self))
-
-        return status, message
+        return super().data()

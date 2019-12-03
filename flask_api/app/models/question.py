@@ -3,9 +3,12 @@ from copy import deepcopy
 from app.models import Model
 from app.utils.db import getDb
 from app.utils.titleGeneration import generateTitleFromText
+from app.helpers.types import QuestionType
 from app.helpers.analyze import analyzeQuestion
 
-COLLECTION_NAME = "questions"
+
+ALG_COLLECTION_NAME = "algQuestions"
+SOC_COLLECTION_NAME = "questions"
 
 '''
     Model class for question
@@ -16,9 +19,12 @@ class Question(Model):
 
         :param: (string) question - the question with its properties
     '''
-    def __init__(self, question):
+    def __init__(self, question, type = QuestionType.SOC):
 
-        super().__init__(question, COLLECTION_NAME)
+        # Determining the collection name first
+        collectionName = SOC_COLLECTION_NAME if type == QuestionType.SOC else ALG_COLLECTION_NAME
+
+        super().__init__(question, collectionName)
 
         if vars(self) == {}:
             self.body = question['body']
@@ -27,6 +33,9 @@ class Question(Model):
             self.userId = question['userId'] if question.get('userId') else None
             self.viewCount = question['viewCount'] if question.get('viewCount') else 0
             self.favCount = question['favCount'] if question.get('favCount') else 0
+
+            self.type = type
+            self.collectionName = collectionName
 
 
     '''
@@ -43,7 +52,7 @@ class Question(Model):
             return False, "Question already exists"
         else:
             # Analyze
-            if analyze is True:
+            if analyze is True and self.type == QuestionType.SOC:
                 entity_tags, topics, categories = analyzeQuestion(self.body)
 
                 self.entity_tags = entity_tags
@@ -51,7 +60,7 @@ class Question(Model):
                 self.categories = categories
 
             # Insertion
-            db[COLLECTION_NAME].insert_one(vars(self))
+            db[self.collectionName].insert_one(self.data())
 
         return True, "Question is inserted"
 
@@ -62,7 +71,7 @@ class Question(Model):
         :param: updateValues - new values for update
     '''
     def update_one(self, updateValues):
-        super().update_one(updateValues, COLLECTION_NAME)
+        super().update_one(updateValues, self.collectionName)
 
 
     '''
@@ -73,7 +82,7 @@ class Question(Model):
     def check_exists(self):
         db = getDb()
 
-        existing = db[COLLECTION_NAME].find_one({"body": self.body})
+        existing = db[self.collectionName].find_one({"body": self.body})
 
         if existing is not None:
             return True
@@ -88,8 +97,23 @@ class Question(Model):
         :param: pageNumber - page number for pagination
     '''
     @staticmethod
-    def find(query, sortingAttr = "_id", sortOrder = 1, pageNumber = 1):
+    def find(query, sortingAttr = "_id", sortOrder = 1, pageNumber = 1, type = QuestionType.SOC):
         db = getDb()
-        db[COLLECTION_NAME].create_index([("body", "text")])
+        collectionName = SOC_COLLECTION_NAME if type == QuestionType.SOC else ALG_COLLECTION_NAME
 
-        return Model.find(COLLECTION_NAME, query, sortingAttr, sortOrder, pageNumber)
+        db[collectionName].create_index([("body", "text")])
+
+        return Model.find(collectionName, query, sortingAttr, sortOrder, pageNumber)
+
+
+    '''
+        Getting the model data: question data (by deleting unnecessary attributes)
+    '''
+    def data(self):
+
+        try:
+            delattr(self, 'type')
+        except AttributeError as e:
+            print("No such attribute")
+
+        return super().data()

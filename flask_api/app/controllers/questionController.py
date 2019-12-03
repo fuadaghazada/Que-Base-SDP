@@ -111,9 +111,30 @@ def favoriteQuestion(user):
     questionId = request.args.get('id')
     userId = user["_id"]
 
+    # Converting str into Object ID
+    questionId = ObjectId(questionId)
+
     # Getting the user adding the favorite questions to list
     user = User({"_id": userId})
-    status, message = user.favoriteQuestion(questionId)
+
+    status, message = False, ""
+
+    curFavoriteQuestions = user.data().get('favoriteQuestions')
+    curFavoriteQuestions  = list(curFavoriteQuestions) if curFavoriteQuestions else []
+
+    if questionId not in curFavoriteQuestions:
+        curFavoriteQuestions.append(questionId)
+        status = True
+        message = "Questions is added to the favorite list!"
+    else:
+        curFavoriteQuestions.remove(questionId)
+        status = False
+        message = "Questions is removed from the favorite list!"
+
+    setattr(user, 'favoriteQuestions', curFavoriteQuestions)
+
+    # Updating
+    user.update_one(user.data())
 
     # Return the response
     return jsonify({
@@ -139,6 +160,7 @@ def getQuestion(user):
         result = Question({"_id": questionId}).data()
     except Exception as e:
         print("NO SUCH QUESTION ID")
+        raise e
 
     status = result is not None
 
