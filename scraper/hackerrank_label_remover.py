@@ -40,7 +40,7 @@ for index, row in df.iterrows():
     labels = row['Tags'].split(',')
     to_be_added_labels = []
     for l in labels:
-        if label_dict[l] > 10:
+        if label_dict[l] > 30:
             to_be_added_labels.append(l)
 
     if len(to_be_added_labels) > 0:

@@ -239,7 +239,7 @@ If we sum everything except , our sum is .
 If we sum everything except , our sum is .
 If we sum everything except , our sum is .
 Hints: Beware of integer overflow! Use 64-bit Integer.
-Need help to get started? Try the Solve Me First problem","Algorithms,Easy,ad-hoc,Basic Programming,problem-solving,Core CS,General Programming"
+Need help to get started? Try the Solve Me First problem","Algorithms,Easy,Basic Programming,problem-solving,Core CS,General Programming"
 Birthday Cake Candles,Easy,"You are in charge of the cake for your niece's birthday and have decided the cake will have one candle for each year of her total age. When she blows out the candles, she’ll only be able to blow out the tallest ones. Your task is to find out how many candles she can successfully blow out. 
 For example, if your niece is turning  years old, and the cake will have  candles of height , , , , she will be able to blow out  candles successfully, since the tallest candles are of height  and there are  such candles.  
 Function Description
@@ -480,7 +480,7 @@ Thus, we print  as our answer.
 Sample Input 2
 Sample Output 2
 Explanation 2
-Lily only wants to give Ron  square of chocolate with an integer value of . Because the only square of chocolate in the bar satisfies this constraint, we print  as our answer.","Arrays,Basic Programming,problem-solving,Core CS,General Programming"
+Lily only wants to give Ron  square of chocolate with an integer value of . Because the only square of chocolate in the bar satisfies this constraint, we print  as our answer.","Basic Programming,problem-solving,Core CS,General Programming"
 Divisible Sum Pairs,Easy,"You are given an array of  integers, , and a positive integer, . Find and print the number of  pairs where  and  +  is divisible by .  
 For example,  and .  Our three pairs meeting the criteria are  and .  
 Function Description
@@ -814,7 +814,7 @@ Using 0-based indexing, if we make
 -> at a cost of  
 -> at a cost of 
 -> at a cost of ,  
-then the total cost will be .   ","Algorithms,Easy,Implementation,problem-solving,Core CS"
+then the total cost will be .   ","Algorithms,Easy,problem-solving,Core CS"
 Picking Numbers,Easy,"Given an array of integers, find and print the maximum number of integers you can select from the array such that the absolute difference between any two of the chosen integers is less than or equal to .  For example, if your array is , you can create two subarrays meeting the criterion:  and .  The maximum length subarray has  elements.
 Function Description 
 Complete the pickingNumbers function in the editor below.  It should return an integer that represents the length of the longest array that can be created.  
@@ -863,7 +863,7 @@ For  of the maximum score:
 
 
 Output Format
-Print  integers. The  integer should indicate Alice's rank after playing the  game. ","Sorting,Algorithms,Easy,Implementation,problem-solving,Core CS"
+Print  integers. The  integer should indicate Alice's rank after playing the  game. ","Algorithms,Easy,problem-solving,Core CS"
 The Hurdle Race,Easy,"Dan is playing a video game in which his character competes in a hurdle race.  Hurdles are of varying heights, and Dan has a maximum height he can jump.  There is a magic potion he can take that will increase his maximum height by  unit for each dose.  How many doses of the potion must he take to be able to jump all of the hurdles.
 Given an array of hurdle heights , and an initial maximum height Dan can jump,  , determine the minimum number of doses Dan must take to be able to clear all the hurdles in the race.  
 For example, if  and Dan can jump  unit high naturally, he must take  doses of potion to be able to jump all of the hurdles.  
@@ -920,7 +920,7 @@ Note: Recall that the width of each character is .
 Sample Input 1
 Sample Output 1
 Explanation 1
-The tallest letter in  is  at . The selection area for this word is .","Easy,ad-hoc,Implementation,Basic Programming,problem-solving,Core CS,General Programming"
+The tallest letter in  is  at . The selection area for this word is .","Easy,Basic Programming,problem-solving,Core CS,General Programming"
 Utopian Tree,Easy,"The Utopian Tree goes through 2 cycles of growth every year. Each spring, it doubles in height. Each summer, its height increases by 1 meter.
 Laura plants a Utopian Tree sapling with a height of 1 meter at the onset of spring. How tall will her tree be after  growth cycles?
 For example, if the number of growth cycles is , the calculations are as follows:
@@ -1029,7 +1029,7 @@ Day  is beautiful because the following evaluates to a whole number:
 Day  is not beautiful because the following doesn't evaluate to a whole number: 
 Day  is beautiful because the following evaluates to a whole number: 
 Day  is not beautiful because the following doesn't evaluate to a whole number: 
-Only two days,  and , in this interval are beautiful. Thus, we print  as our answer.","Easy,Implementation,Basic Programming,problem-solving,Core CS,General Programming"
+Only two days,  and , in this interval are beautiful. Thus, we print  as our answer.","Easy,Basic Programming,problem-solving,Core CS,General Programming"
 Viral Advertising,Easy,"HackerLand Enterprise is adopting a new viral advertising strategy. When they launch a new product, they advertise it to exactly  people on social media. 
 On the first day, half of those  people (i.e., ) like the advertisement and each shares it with  of their friends. At the beginning of the second day,  people receive the advertisement. 
 Each day,  of the recipients like the advertisement and will share it with  friends on the following day.  Assuming nobody receives the advertisement twice, determine how many people have liked the ad by the end of a given day, beginning with launch day as day .
@@ -1054,7 +1054,7 @@ Sample Output
 Explanation
 This example is depicted in the following diagram:  
 
- people liked the advertisement on the first day,  people liked the advertisement on the second day and  people liked the advertisement on the third day, so the answer is .","Easy,Implementation,Basic Programming,problem-solving,Core CS,General Programming"
+ people liked the advertisement on the first day,  people liked the advertisement on the second day and  people liked the advertisement on the third day, so the answer is .","Easy,Basic Programming,problem-solving,Core CS,General Programming"
 Save the Prisoner!,Easy,"A jail has a number of prisoners and a number of treats to pass out to them.  Their jailer decides the fairest way to divide the treats is to seat the prisoners around a circular table in sequentially numbered chairs.  A chair number will be drawn from a hat.  Beginning with the prisoner in that chair, one candy will be handed to each prisoner sequentially around the table until all have been distributed.
 The jailer is playing a little joke, though.  The last piece of candy looks like all the others, but it tastes awful.  Determine the chair number occupied by the prisoner who will receive that candy.
 For example, there are  prisoners and  pieces of candy.  The prisoners arrange themselves in seats numbered  to .  Let's suppose two is drawn from the hat.  Prisoners receive candy at positions .  The prisoner to be warned sits in chair number .  
@@ -1320,7 +1320,7 @@ Sample Output
 
 Explanation
 Test Case #00: In range ,  and  are the two square integers. 
-Test Case #01: In range , there are no square integers.  ","Algorithms,Easy,Implementation,Basic Programming,problem-solving,Core CS,General Programming"
+Test Case #01: In range , there are no square integers.  ","Algorithms,Easy,Basic Programming,problem-solving,Core CS,General Programming"
 Library Fine,Easy,"Your local library needs your help! Given the expected and actual return dates for a library book, create a program that calculates the fine (if any). The fee structure is as follows: 
 If the book is returned on or before the expected return date, no fine will be charged (i.e.: .
 If the book is returned after the expected return day but still within the same calendar month and year as the expected return date, . 
@@ -1427,7 +1427,7 @@ The sums of all permutations of two elements from  are:
 7 + 4 = 11
 2 + 4 = 6
 
-We see that only  will not ever sum to a multiple of .","Easy,ad-hoc,Basic Programming,problem-solving,Core CS,General Programming"
+We see that only  will not ever sum to a multiple of .","Easy,Basic Programming,problem-solving,Core CS,General Programming"
 Repeated String,Easy,"Lilah has a string, , of lowercase English letters that she repeated infinitely many times.
 Given an integer, , find and print the number of letter a's in the first  letters of Lilah's infinite string.
 a
@@ -1469,7 +1469,7 @@ Sample Output 1
 
 Explanation 1 
 Because all of the first  letters of the infinite string are a, we print  on a new line.
-a","Easy,Implementation,Basic Programming,problem-solving,Core CS,General Programming"
+a","Easy,Basic Programming,problem-solving,Core CS,General Programming"
 Jumping on the Clouds,Easy,"Emma is playing a new mobile game that starts with consecutively numbered clouds.  Some of the clouds are thunderheads and others are cumulus.  She can jump on any cumulus cloud having a number that is equal to the number of the current cloud plus  or .  She must avoid the thunderheads.  Determine the minimum number of jumps it will take Emma to jump from her starting postion to the last cloud.  It is always possible to win the game.  
 For each game, Emma will get an array of clouds numbered  if they are safe or  if they must be avoided.  For example,  indexed from .  The number on each cloud is its index in the list so she must avoid the clouds at indexes  and .  She could follow the following two paths:  or .  The first path takes  jumps while the second takes .
 Function Description 
@@ -1527,7 +1527,7 @@ Sample Output
 2   
 
 Explanation
-Array . If we delete  and , all of the elements in the resulting array, , will be equal. Deleting these  elements is minimal.  Our only other options would be to delete  elements to get an array of either  or .","Easy,Implementation,Basic Programming,problem-solving,Core CS,General Programming"
+Array . If we delete  and , all of the elements in the resulting array, , will be equal. Deleting these  elements is minimal.  Our only other options would be to delete  elements to get an array of either  or .","Easy,Basic Programming,problem-solving,Core CS,General Programming"
 Queen's Attack II,Medium,"You will be given a square chess board with one queen and a number of obstacles placed on it.  Determine how many squares the queen can attack.  
 A queen is standing on an  chessboard. The chess board's rows are numbered from  to , going from bottom to top.  Its columns are numbered from  to , going from left to right. Each square is referenced by a tuple, , describing the row, , and column, , where the square is located.
 The queen is standing at position .  In a single move, she can attack any square in any of the eight directions (left, right, up, down, and the four diagonals). In the diagram below, the green circles denote all the cells the queen can attack from : 
@@ -1575,7 +1575,7 @@ The number of squares she can attack from that position is .
 Sample Input 2
 Sample Output 2
 Explanation 2
-Since there is only one square, and the queen is on it, the queen can move 0 squares.","Algorithms,Medium,ad-hoc,problem-solving,Core CS"
+Since there is only one square, and the queen is on it, the queen can move 0 squares.","Algorithms,Medium,problem-solving,Core CS"
 ACM ICPC Team,Easy,"There are a number of people who will be attending ACM-ICPC World Finals. Each of them may be well versed in a number of topics. Given a list of topics known by each attendee, you must determine the maximum number of topics a 2-person team can know. Also find out how many ways a team can be formed to know that many topics.  Lists will be in the form of bit strings, where each string represents an attendee and each position in that string represents a field of knowledge, 1 if its a known field or 0 if not.
 For example, given three attendees' data as follows:
 10101
@@ -1734,7 +1734,7 @@ The diagram below depicts the matrix for the second query:
 No matter how many times we swap balls of type  and  between the two containers, we'll never end up with one container only containing type  and the other container only containing type . Thus, we print Impossible on a new line.
 Impossible
 Sample Input 1
-Sample Output 1","Sorting,Algorithms,Implementation,problem-solving,Core CS"
+Sample Output 1","Algorithms,problem-solving,Core CS"
 Encryption,Medium,"An English text needs to be encrypted using the following encryption scheme. 
 First, the spaces are removed from the text. Let  be the length of this text. 
 Then, characters are written into a grid, whose rows and columns have the following constraints:
@@ -1938,7 +1938,7 @@ Explanation
 Here, we have two options:
  and  are both , so .
  and  are both , so .
-The answer is .","Easy,ad-hoc,Basic Programming,problem-solving,Core CS,General Programming"
+The answer is .","Easy,Basic Programming,problem-solving,Core CS,General Programming"
 Halloween Sale,Easy,"You wish to buy video games from the famous online video game store Mist.
 Usually, all games are sold at the same price,  dollars. However, they are planning to have the seasonal Halloween Sale next month in which you can buy games at a cheaper price. Specifically, the first game you buy during the sale will be sold at  dollars, but every subsequent game you buy will be sold at exactly  dollars less than the cost of the previous one you bought. This will continue until the cost becomes less than or equal to  dollars, after which every game you buy will cost  dollars each.
 For example, if ,  and , then the following are the costs of the first  games you buy, in order:
@@ -2148,7 +2148,7 @@ Sample Output 1
 0
 
 Explanation 1
-In this sample,  so every city has space station and we print  as our answer.","Easy,ad-hoc,Basic Programming,problem-solving,Core CS,General Programming"
+In this sample,  so every city has space station and we print  as our answer.","Easy,Basic Programming,problem-solving,Core CS,General Programming"
 Fair Rations,Easy,"You are the benevolent ruler of Rankhacker Castle, and today you're distributing bread.  Your subjects are in a line, and some of them already have some loaves.  Times are hard and your castle's food stocks are dwindling, so you must distribute as few loaves as possible according to the following rules:
 Every time you give a loaf of bread to some person , you must also give a loaf of bread to the person immediately in front of or behind them in the line (i.e., persons  or ).    
 After all the bread is distributed, each person must have an even number of loaves.
@@ -2842,7 +2842,7 @@ The initial array of strings is . When we order each string by the real-world in
 
 We then print each value on a new line, from smallest to largest.
 Sample Input 1
-Sample Output 1","Sorting,Strings,Algorithms,Easy,Data Structures,Arrays,problem-solving,Core CS"
+Sample Output 1","Strings,Algorithms,Easy,Data Structures,problem-solving,Core CS"
 Super Reduced String,Easy,"Steve has a string of lowercase characters in range ascii[‘a’..’z’].  He wants to reduce the string to its shortest length by doing a series of operations.  In each operation he selects a pair of adjacent lowercase letters that match, and he deletes them.  For instance, the string aab could be shortened to b in one operation.  
 ascii[‘a’..’z’]
 aab
@@ -2876,7 +2876,7 @@ Sample Input 2
 Sample Output 2
 Explanation 2
 baab → bb → Empty String
-","Strings,Algorithms,Easy,ad-hoc,problem-solving,Core CS"
+","Strings,Algorithms,Easy,problem-solving,Core CS"
 Intro to Tutorial Challenges,Easy,"About Tutorial Challenges 
 Many of the challenges on HackerRank are difficult and assume that you already know the relevant algorithms. These tutorial challenges are different. They break down algorithmic concepts into smaller challenges so that you can learn the algorithm by solving them.  They are intended for those who already know some programming, however. You could be a student majoring in computer science, a self-taught programmer, or an experienced developer who wants an active algorithms review.  Here's a great place to learn by doing!
 The first series of challenges covers sorting. They are listed below:
@@ -2932,7 +2932,7 @@ Sample Output 0
 1
 
 Explanation 0 
-. The value  is the  element in the array, but its index is  since in this case, array indices start from  (see array definition under Input Format).","Sorting,Algorithms,Easy,problem-solving,Core CS"
+. The value  is the  element in the array, but its index is  since in this case, array indices start from  (see array definition under Input Format).","Algorithms,Easy,problem-solving,Core CS"
 CamelCase,Easy,"Alice wrote a sequence of words in CamelCase as a string of letters, , having the following properties:
 It is a concatenation of one or more words consisting of English letters.
 All letters in the first word are lowercase. 
@@ -3010,7 +3010,7 @@ In the nd line , so  is shifted one cell to the right.
 In the rd line , so  is shifted one cell to the right. 
 In the th line , so  is placed at position .  
 Next Challenge
-In the next Challenge, we will complete the insertion sort itself!","Sorting,Algorithms,Easy,problem-solving,Core CS"
+In the next Challenge, we will complete the insertion sort itself!","Algorithms,Easy,problem-solving,Core CS"
 Strong Password,Easy,"Louise joined a social networking site to stay in touch with her friends. The signup page required her to input a name and a password. However, the password must be strong. The website considers a password to be strong if it satisfies the following criteria:
 Its length is at least .  
 It contains at least one digit.  
@@ -3129,7 +3129,7 @@ Print
 Test position  against positions : no change. 
 Print  
 Test position  against positions , insert  at position  and move others to the right. 
-Print  ","Sorting,Algorithms,Easy,problem-solving,Core CS"
+Print  ","Algorithms,Easy,problem-solving,Core CS"
 Correctness and the Loop Invariant,Easy,"In the previous challenge, you wrote code to perform an Insertion Sort on an unsorted array. But how would you prove that the code is correct? I.e. how do you show that for any input your code will provide the right output?
 Loop Invariant 
 In computer science, you could prove it formally with a loop invariant, where you state that a desired property is maintained in your loop. Such a proof is broken down into the following parts:
@@ -3166,7 +3166,7 @@ Output the numbers in order, space-separated on one line.
 Sample Input
 Sample Output
 Explanation
-The corrected code returns the sorted array.  ","Sorting,Algorithms,Easy,problem-solving,Core CS"
+The corrected code returns the sorted array.  ","Algorithms,Easy,problem-solving,Core CS"
 Caesar Cipher,Easy,"Julius Caesar protected his confidential information by encrypting it using a cipher. Caesar's cipher shifts each letter by a number of letters.  If the shift takes you past the end of the alphabet, just rotate back to the front of the alphabet.  In the case of a rotation by 3, w, x, y and z would map to z, a, b and c.
 For example, the given cleartext  and the alphabet is rotated by .  The encrypted string is .  
 Note: The cipher only encrypts letters; symbols, such as -, remain unencrypted.  
@@ -3291,7 +3291,7 @@ Iteration   Array      Shifts
 4           1 1 2 2 3     1
 
 Total                     4
-","Sorting,Algorithms,Easy,problem-solving,Core CS"
+","Algorithms,Easy,problem-solving,Core CS"
 HackerRank in a String!,Easy,"We say that a string contains the word hackerrank if a subsequence of its characters spell the word hackerrank. For example, if string  it does contain hackerrank, but  does not.  In the second case, the second r is missing.  If we reorder the first string as , it no longer contains the subsequence due to ordering.
 hackerrank
 hackerrank
@@ -3389,7 +3389,7 @@ Pivot: .
 We then print the elements of , followed by , followed by , we get: 3 2 4 5 7.
 3 2 4 5 7
 You don't need to maintain ordering, so another valid solution would be 2 3 4 5 7.
-2 3 4 5 7","Sorting,Algorithms,Easy,problem-solving,Core CS"
+2 3 4 5 7","Algorithms,Easy,problem-solving,Core CS"
 Pangrams,Easy,"Roy wanted to increase his typing speed for programming contests.  His friend suggested that he type the sentence ""The quick brown fox jumps over the lazy dog"" repeatedly.  This sentence is known as a pangram because it contains every letter of the alphabet.
 After typing the sentence several times, Roy became bored with it so he started to look for other pangrams.
 Given a sentence, determine whether it is a pangram.  Ignore case.
@@ -3425,7 +3425,7 @@ not pangram
 not pangram
 Sample Explanation 0
 The string lacks an x.  
-x","Strings,Algorithms,Easy,Implementation,problem-solving,Core CS"
+x","Strings,Algorithms,Easy,problem-solving,Core CS"
 Weighted Uniform Strings,Easy,"A weighted string is a string of lowercase English letters where each letter has a weight.  Character weights are  to  from  to  as shown below:
 
 We define the following terms:  
@@ -3579,7 +3579,7 @@ Output the number of times every number from  through  appears in  as a list of 
 Sample Input
 Sample Output
 Explanation
-Each of the resulting values  represents the number of times  appeared in .","Sorting,Algorithms,Easy,problem-solving,Core CS"
+Each of the resulting values  represents the number of times  appeared in .","Algorithms,Easy,problem-solving,Core CS"
 Counting Sort 2,Easy,"Often, when a list is sorted, the elements being sorted are just keys to other values. For example, if you are sorting files by their size, the sizes need to stay connected to their respective files. You cannot just take the size numbers and output them in order, you need to output all the required file information.
 The counting sort is used if you just need to sort a list of integers.  Rather than using a comparison, you create an integer array whose index range covers the entire range of values in your array to sort.  Each time a value occurs in the original array, you increment the counter at that index.  At the end, run through your counting array, printing the value of each non-zero valued index that number of times.
 For example, consider an array .  All of the values are in the range , so create an array of zeroes, .  The results of each iteration follow:
@@ -3608,7 +3608,7 @@ Sample Output
  1 1 3 3 6 8 9 9 10 12 13 16 16 18 20 21 21 22 23 24 25 25 25 27 27 30 30 32 32 32 33 33 33 34 39 39 40 40 41 42 43 44 44 46 46 48 50 53 56 56 57 59 60 61 63 65 67 67 68 69 69 69 70 70 73 73 74 75 75 76 78 78 79 79 80 81 81 82 83 83 84 85 86 86 87 87 89 89 89 90 90 91 92 94 95 96 98 98 99 99 
 
 Explanation
-Once our counting array has been filled, loop from index  to the end, printing each  value  times.","Sorting,Algorithms,Easy,problem-solving,Core CS"
+Once our counting array has been filled, loop from index  to the end, printing each  value  times.","Algorithms,Easy,problem-solving,Core CS"
 Gemstones,Easy,"John has collected various rocks. Each rock has various minerals embeded in it.  Each type of mineral is designated by a lowercase letter in the range . There may be multiple occurrences of a mineral in a rock. A mineral is called a gemstone if it occurs at least once in each of the rocks in John's collection.
 Given a list of minerals embedded in each of John's rocks, display the number of types of gemstones he has in his collection.
 For example, the array of mineral composition strings .  The minerals  and  appear in each composite, so there are  gemstones.
@@ -3739,7 +3739,7 @@ Below is the list in the correct order. In the array at the bottom, strings from
 6 gh
 6 cd
 6 gh
-","Sorting,Algorithms,Medium,problem-solving,Core CS"
+","Algorithms,Medium,problem-solving,Core CS"
 Beautiful Binary String,Easy,"Alice has a binary string. She thinks a binary string is beautiful if and only if it doesn't contain the substring . 
 In one step, Alice can change a  to a  or vice versa. Count and print the minimum number of steps needed to make Alice see the string as beautiful.
 For example, if Alice's string is  she can change any one element and have a beautiful string.
@@ -3830,7 +3830,7 @@ Sample Output 2
 2 3 3 4 4 5
 
 Explanation 2 
-Here, the minimum difference will be 1. Valid pairs are (2, 3), (3, 4), and (4, 5). We print the elements of each pair, space-separated on a single line.","Sorting,Search,Algorithms,Easy,problem-solving,Core CS"
+Here, the minimum difference will be 1. Valid pairs are (2, 3), (3, 4), and (4, 5). We print the elements of each pair, space-separated on a single line.","Search,Algorithms,Easy,problem-solving,Core CS"
 The Love-Letter Mystery,Easy,"James found a love letter that his friend Harry has written to his girlfriend. James is a prankster, so he decides to meddle with the letter. He changes all the words in the letter into palindromes.   
 To do this, he follows two rules:  
 He can only reduce the value of a letter by , i.e. he can change d to c, but he cannot change c to d or d to b.  
@@ -3886,7 +3886,7 @@ Output one integer, the median.
 Sample Input 0
 Sample Output 0
 Explanation 0
-The sorted .  It's middle element is at .","Sorting,Search,Algorithms,Easy,problem-solving,Core CS"
+The sorted .  It's middle element is at .","Search,Algorithms,Easy,problem-solving,Core CS"
 Determining DNA Health,Hard,"DNA is a nucleic acid present in the bodies of living things. Each piece of DNA contains a number of genes, some of which are beneficial and increase the DNA's total health. Each gene has a health value, and the total health of a DNA is the sum of the health values of all the beneficial genes that occur as a substring in the DNA. We represent genes and DNA as non-empty strings of lowercase English alphabetic letters, and the same gene may appear multiple times as a susbtring of a DNA.
 Given the following:
 An array of beneficial gene strings, . Note that these gene sequences are not guaranteed to be distinct.
@@ -3960,7 +3960,7 @@ Explanation
 The first query is already sorted, therefore there's no need to shift any element. In the second case, it will proceed in the following way.
 Array: 2 1 3 1 2 -> 1 2 3 1 2 -> 1 1 2 3 2 -> 1 1 2 2 3
 Moves:   -        1       -    2         -  1            = 4
-","Sorting,Algorithms,Expert,problem-solving,Core CS"
+","Algorithms,Expert,problem-solving,Core CS"
 Palindrome Index,Easy,"Given a string of lowercase letters in the range ascii[a-z], determine a character that can be removed to make the string a palindrome.  There may be more than one solution, but any will do.  For example, if your string is ""bcbc"", you can either remove 'b' at index  or 'c' at index .  If the word is already a palindrome or there is no solution, return -1.  Otherwise, return the index of a character to remove.  
 Function Description 
 Complete the palindromeIndex function in the editor below.  It must return the index of the character to remove or .  
@@ -4119,7 +4119,7 @@ a
 b
 abc
 c
-We had to delete  characters to make both strings anagrams.","Strings,Algorithms,Easy,Implementation,problem-solving,Core CS"
+We had to delete  characters to make both strings anagrams.","Strings,Algorithms,Easy,problem-solving,Core CS"
 Lily's Homework,Medium,"Whenever George asks Lily to hang out, she's busy doing homework. George wants to help her finish it faster, but he's in over his head! Can you help George understand Lily's homework so she can hang out with him?
 Consider an array of  distinct integers, . George can swap any two elements of the array any number of times. An array is beautiful if the sum of  among  is minimal.
 Given the array , determine and return the minimum number of swaps that should be performed in order to make the array beautiful.
@@ -4150,7 +4150,7 @@ Sample Output
 2
 
 Explanation
-Let's define array  to be the beautiful reordering of .  The sum of the absolute values of differences between its adjacent elements is minimal among all permutations and only two swaps ( with  and then  with ) were performed.","Sorting,Algorithms,Medium,problem-solving,Core CS"
+Let's define array  to be the beautiful reordering of .  The sum of the absolute values of differences between its adjacent elements is minimal among all permutations and only two swaps ( with  and then  with ) were performed.","Algorithms,Medium,problem-solving,Core CS"
 Game of Thrones - I,Easy,"Dothraki are planning an attack to usurp King Robert's throne. King Robert learns of this conspiracy from Raven and plans to lock the single door through which the enemy can enter his kingdom.
 
 But, to lock the door he needs a key that is an anagram of a palindrome.  He starts to go through his box of strings, checking to see if they can be rearranged into a palindrome.
@@ -4511,7 +4511,7 @@ Sample Output
 
 Explanation
 One optimal solution is to replace  with  resulting in . 
-The replaced substring has length .","Strings,Segment Tree,Algorithms,Medium,problem-solving,Core CS"
+The replaced substring has length .","Strings,Algorithms,Medium,problem-solving,Core CS"
 Morgan and a String,Expert,"Jack and Daniel are friends. Both of them like letters, especially upper-case ones. 
 They are cutting upper-case letters from newspapers, and each one of them has his collection of letters stored in a stack. 
 One beautiful day, Morgan visited Jack and Daniel. He saw their collections. He wondered what is the lexicographically minimal string made of those two collections. He can take a letter from a collection only when it is on the top of the stack.  Morgan wants to use all of the letters in their collections.  
@@ -4905,7 +4905,7 @@ Test 1:
  
  
 
-","Sorting,Dynamic Programming,Strings,Algorithms,Expert,Core CS"
+","Dynamic Programming,Strings,Algorithms,Expert,Core CS"
 Circular Palindromes,Advanced,"A palindrome is a string that reads the same from left to right as it does from right to left.
 Given a string, , of  lowercase English letters, we define a -length rotation as cutting the first  characters from the beginning of  and appending them to the end of . For each , there are  possible -length rotations (where ). See the Explanation section for examples.
 Given  and , find all  -length rotations of ; for each rotated string, , print the maximum possible length of any palindromic substring of  on a new line.
@@ -5465,7 +5465,7 @@ Sample Output
 
 Explanation
  
-In the diagram above, the yellow cells denote the first train track, green denotes the second, and blue denotes the third. Lampposts can be placed in any of the nine red cells.","Easy,Implementation,Greedy Algorithms,Basic Programming,problem-solving,Core CS,General Programming"
+In the diagram above, the yellow cells denote the first train track, green denotes the second, and blue denotes the third. Lampposts can be placed in any of the nine red cells.","Easy,Greedy Algorithms,Basic Programming,problem-solving,Core CS,General Programming"
 Ice Cream Parlor,Easy,"Sunny and Johnny like to pool their money and go to the ice cream parlor.  Johnny never buys the same flavor that Sunny does.  The only other rule they have is that they spend all of their money.
 Given a list of prices for the flavors of ice cream, select the two that will cost all of the money they have.  
 For example, they have  to spend and there are flavors costing .  The two flavors costing  and  meet the criteria.  Using -based indexing, they are at indices  and .  
@@ -6279,7 +6279,7 @@ Explanation 1
 There are  queries:
 When we sort the subarray ranging from index  to index , we get . 
 When we sort the subarray of  from index  to index , we get .
-Having performed all of the queries, we print the element at index , which is .","Sorting,Algorithms,Medium,Core CS"
+Having performed all of the queries, we print the element at index , which is .","Algorithms,Medium,Core CS"
 Distant Pairs,Expert,"We take a line segment of length  on a one-dimensional plane and bend it to create a circle with circumference  that's indexed from  to . For example, if :
 
 We denote a pair of points,  and , as . We then plot  pairs of points (meaning a total of  individual points) at various indices along the circle's circumference. We define the distance  between points  and  in pair  as .
@@ -6309,7 +6309,7 @@ Sample Output 1
 Explanation 1
 In the diagram below, we have four individual points located at three indices:
 
-Because two of the points overlap, the minimum distance between the two pairs of points is . Thus, we print  as our answer.","Search,Segment Tree,Algorithms,Expert,Core CS"
+Because two of the points overlap, the minimum distance between the two pairs of points is . Thus, we print  as our answer.","Search,Algorithms,Expert,Core CS"
 King Richard's Knights,Hard,"King Richard is leading a troop of  knights into battle! Being very organized, he labels his knights  and arranges them in an  square formation, demonstrated below:
 
 Before the battle begins, he wants to test how well his knights follow instructions. He issues  drill commands, where each command follows the format ai bi di and is executed like so:
@@ -8582,7 +8582,7 @@ Sample Output
 5  
 5  
 5
-","Graph Algorithms,Segment Tree,Tree,Algorithms,Expert,Core CS"
+","Graph Algorithms,Tree,Algorithms,Expert,Core CS"
 Tree Splitting,Advanced,"Given a tree with vertices numbered from  to . You need to process  queries. Each query represents a vertex number encoded in the following way:
 Queries are encoded in the following way: Let,  be the  query and  be the answer for the  query where  and  is always . Then vertex .
 We are assure that  is between  and , and hasn't been removed before. 
@@ -8876,7 +8876,7 @@ The smallest absolute difference is .
 Sample Input 2
 Sample Output 2
 Explanation 2
-The minimum absolute difference is .","Sorting,Algorithms,Easy,Data Structures,problem-solving,Core CS"
+The minimum absolute difference is .","Algorithms,Easy,Data Structures,problem-solving,Core CS"
 Marc's Cakewalk,Easy,"Marc loves cupcakes, but he also likes to stay fit. Each cupcake has a calorie count, and Marc can walk a distance to expend those calories.  If Marc has eaten  cupcakes so far, after eating a cupcake with  calories he must walk at least   miles to maintain his weight.
 For example, if he eats  cupcakes with calorie counts in the following order: , the miles he will need to walk are .  This is not the minimum, though, so we need to test other orders of consumption.  In this case, our minimum miles is calculated as .
 Given the individual calorie counts for each of the cupcakes, determine the minimum number of miles Marc must walk to maintain his weight. Note that he can eat the cupcakes in any order.  
@@ -8903,7 +8903,7 @@ We then print the final value of , which is , as our answer.
 Sample Input 1
 Sample Output 1
 Explanation 1
-","Sorting,Algorithms,Easy,Greedy Algorithms,Arrays,problem-solving,Core CS"
+","Algorithms,Easy,Greedy Algorithms,problem-solving,Core CS"
 Grid Challenge,Easy,"Given a square grid of characters in the range ascii[a-z], rearrange elements of each row alphabetically, ascending.  Determine if the columns are also in ascending alphabetical order, top to bottom.  Return YES if they are or NO if they are not.
 YES
 NO
@@ -8991,7 +8991,7 @@ Sample Output
 29
 
 Explanation
-There are  contests. Of these contests,  are important and she cannot lose more than  of them. Lena maximizes her luck if she wins the  important contest (where ) and loses all of the other five contests for a total luck balance of .","Sorting,Algorithms,Easy,Greedy Algorithms,problem-solving,Core CS"
+There are  contests. Of these contests,  are important and she cannot lose more than  of them. Lena maximizes her luck if she wins the  important contest (where ) and loses all of the other five contests for a total luck balance of .","Algorithms,Easy,Greedy Algorithms,problem-solving,Core CS"
 Maximum Perimeter Triangle,Easy,"Given an array of stick lengths, use  of them to construct a non-degenerate triange with the maximum possible perimeter. Print the lengths of its sides as  space-separated integers in non-decreasing order.
 If there are several valid triangles having the maximum perimeter: 
 Choose the one with the longest maximum side. 
@@ -9221,7 +9221,7 @@ Sample Output
 4
 
 Explanation
-He can buy only  toys at most. These toys have the following prices: .","Algorithms,Sorting,Algorithms,Easy,Greedy Algorithms,problem-solving,Core CS"
+He can buy only  toys at most. These toys have the following prices: .","Algorithms,Algorithms,Easy,Greedy Algorithms,problem-solving,Core CS"
 Greedy Florist,Medium,"A group of friends want to buy a bouquet of flowers.  The florist wants to maximize his number of new customers and the money he makes.  To do this, he decides he'll multiply the price of each flower by the number of that customer's previously purchased flowers plus .  The first flower will be original price, , the next will be  and so on.  
 Given the size of the group of friends, the number of flowers they want to purchase and the original prices of the flowers, determine the minimum cost to purchase all of the flowers.
 For example, if there are  friends that want to buy  flowers that cost  each will buy one of the flowers priced  at the original price.  Having each purchased  flower, the first flower in the list, , will now cost .  The total cost will be .  
@@ -9354,7 +9354,7 @@ When we order these by ascending fulfillment time, we get:
 : customer .
 We print the ordered numbers in the bulleted listed above as 4 2 5 1 3. 
 4 2 5 1 3
-Note: While not demonstrated in these sample cases, recall that any orders fulfilled at the same time must be listed by ascending order number.","Sorting,Algorithms,Easy,Greedy Algorithms,problem-solving,Core CS"
+Note: While not demonstrated in these sample cases, recall that any orders fulfilled at the same time must be listed by ascending order number.","Algorithms,Easy,Greedy Algorithms,problem-solving,Core CS"
 Permuting Two Arrays,Easy,"Consider two -element arrays of integers,  and . You want to permute them into some  and  such that the relation  holds for all  where . For example, if , , and , a valid  satisfying our relation would be  and ,  and .
 You are given  queries consisting of , , and . For each query, print YES on a new line if some permutation ,  satisfying the relation above exists.  Otherwise, print NO.  
 YES
@@ -9409,7 +9409,7 @@ Thus, we print YES on a new line.
 Thus, we print YES on a new line. 
 YES
 , , and . To permute  and  into a valid  and , we would need at least three numbers in  to be greater than ; as this is not the case, we print NO on a new line.
-NO","Sorting,Algorithms,Easy,Greedy Algorithms,Arrays,problem-solving,Core CS"
+NO","Algorithms,Easy,Greedy Algorithms,problem-solving,Core CS"
 Cutting Boards,Hard,"Alice gives Bob a board composed of  wooden squares and asks him to find the minimum cost of breaking the board back down into its individual squares. To break the board down, Bob must make cuts along its horizontal and vertical lines. 
 To reduce the board to squares, Bob makes horizontal and vertical cuts across the entire board.  Each cut has a given cost,  or  for each cut along a row or column across one board, so the cost of a cut must be multiplied by the number of segments it crosses.  The cost of cutting the whole board down into  squares is the sum of the costs of each successive cut.   
 Can you help Bob find the minimum cost?  The number may be large, so print the value modulo .
@@ -9777,7 +9777,7 @@ Team  attacks  The fighter with strength  can kill the fighter with strength . N
 Team  attacks  The fighter with strength  can kill one fighter with strength . Now, , and .
 Team  attacks  The fighter with strength  can kill one fighter with strength . Now, , and .
 Team  attacks  The fighter with strength  can kill the last fighter with strength . Now, , and .
-After this last attack, all of Team 's fighters would be dead. Thus, we print  as team  would win that fight.","Mathematics,Algorithms,Implementation,Expert,Core CS"
+After this last attack, all of Team 's fighters would be dead. Thus, we print  as team  would win that fight.","Mathematics,Algorithms,Expert,Core CS"
 Lena Sort,Medium,"Lena developed a sorting algorithm described by the following pseudocode:
 We consider a comparison to be any time some  is compared with . 
 You must solve  queries where each query  consists of some  and . For each query, construct an array of  distinct elements in the inclusive range between  and  that will be sorted by  in exactly  comparisons, then print each respective element of the unsorted array as a single line of  space-separated integers; if no such array exists, print -1 instead.
@@ -9829,7 +9829,7 @@ One array with  elements is . When we run  on it, we compare  with  and  for a t
 We sorted  in  comparisons and , so we print 2 1 3 on a new line.
 One array with  elements is . When we run  on it, we compare  with  and  for a total of  comparisons. We're then left with  and , so we stop sorting.
 We sorted  in  comparisons and , so we print 2 1 3 on a new line.
-2 1 3","Algorithms,Medium,ad-hoc,Core CS"
+2 1 3","Algorithms,Medium,Core CS"
 The Coin Change Problem,Medium,"You are working at the cash counter at a fun-fair, and you have different types of coins available to you in infinite quantities. The value of each coin is already given. Can you determine the number of ways of making change for a particular number of units using the given types of coins? 
 For example, if you have  types of coins, and the value of each type is given as  respectively, you can make change for  units in three ways: 
 , , and .
@@ -10123,7 +10123,7 @@ Sample Input
 Sample Output
 
 Explanation
-Refer to the diagram in the challenge statement. ","Dynamic Programming,Algorithms,Medium,Arrays,Core CS"
+Refer to the diagram in the challenge statement. ","Dynamic Programming,Algorithms,Medium,Core CS"
 Bonetrousle,Medium,"Here's a humerus joke:
 Why did Papyrus the skeleton go to the store by himself? Because he had no body to go with him!
 Did you like it? Don't worry, I've got a ton more. A skele-ton.
@@ -10176,7 +10176,7 @@ He wants to buy exactly  boxes of spaghetti and have a total number of  sticks. 
 Papyrus can buy the -stick, -stick, and -stick boxes for the total of  sticks. Note that this is not the only valid solution; other valid solutions are acceptable. 
 He wants to buy exactly  boxes of spaghetti and have a total number of  sticks. Because the store only has three boxes in stock containing , , and  sticks of spaghetti, it's not possible for Papyrus to buy  sticks of spaghetti as buying all three boxes would only yield  sticks (which is less than the  that he wanted to purchase). Thus, we print -1 on a new line.
 -1
-The third and fourth trips to the store both contain the same values (, , ).  This illustrates that there may be multiple solutions for any given trip to the store and any valid solution is acceptable. ","Medium,Implementation,Basic Programming,problem-solving,Core CS,General Programming"
+The third and fourth trips to the store both contain the same values (, , ).  This illustrates that there may be multiple solutions for any given trip to the store and any valid solution is acceptable. ","Medium,Basic Programming,problem-solving,Core CS,General Programming"
 Kingdom Division,Medium,"King Arthur has a large kingdom that can be represented as a tree, where nodes correspond to cities and edges correspond to the roads between cities. The kingdom has a total of  cities numbered from  to . 
 The King wants to divide his kingdom between his two children, Reggie and Betty, by giving each of them  or more cities; however, they don't get along so he must divide the kingdom in such a way that they will not invade each other's cities. The first sibling will invade the second sibling's city if the second sibling has no other cities directly connected to it. For example, consider the kingdom configurations below:
 
@@ -10355,7 +10355,7 @@ Sample Output 1
 NO 
 
 Explanation 1 
-A segment tree with three nodes would consist of a root, a left child, and a right child. Because all three numbers in this array are the same and the leaves of the segment tree must be  distinct integers, it's not possible to reconstruct the original array.","Segment Tree,Algorithms,Hard,Core CS"
+A segment tree with three nodes would consist of a root, a left child, and a right child. Because all three numbers in this array are the same and the leaves of the segment tree must be  distinct integers, it's not possible to reconstruct the original array.","Algorithms,Hard,Core CS"
 Abbreviation,Medium,"You can perform the following operations on the string, :  
 Capitalize zero or more of 's lowercase letters.
 Delete all of the remaining lowercase letters in .
@@ -10861,7 +10861,7 @@ We print the result of  as our answer.
 Sample 1
 In this example, our tree looks like this:
 
-We calculate and sum the distances between nodes in the same manner as Sample 0 above, and print the result of our , which is .","Dynamic Programming,Algorithms,Medium,Implementation,Core CS"
+We calculate and sum the distances between nodes in the same manner as Sample 0 above, and print the result of our , which is .","Dynamic Programming,Algorithms,Medium,Core CS"
 Summing Pieces,Medium,"Consider an array, , of length . We can split  into contiguous segments called pieces and store them as another array, . For example, if , we have the following arrays of pieces:
  contains three -element pieces.
  contains two pieces, one having  elements and the other having  element.
@@ -12355,7 +12355,7 @@ Ma5termind kills the  enemy at the  level, takes all his bullets and moves to th
 Ma5termind kills the  enemy at the  level, takes all his bullets and moves to the next level.
 So this way Ma5termind can successfully finish this game with only  bullet in hand before the start of the game.
 NOTE: 
-There can be more than one way of getting the optimal answer but that does not matter in our case, because we need to answer the minimum number of bullets required.","Sorting,Dynamic Programming,Algorithms,Hard,Core CS"
+There can be more than one way of getting the optimal answer but that does not matter in our case, because we need to answer the minimum number of bullets required.","Dynamic Programming,Algorithms,Hard,Core CS"
 Clues on a Binary Path,Hard,"Logan and Veronica live in Neptune, which has  houses and  bidirectional roads connecting them. Each road has an assigned value, , where , and each house is numbered with a distinct integer from  to .
 Logan and Veronica are looking for clues and need to find the number of different paths of length  from house number . Each path is characterized by a binary sequence of length , where each integer  in the path is the value of  for the  edge in the path. Two paths are different if the binary sequences characterizing these paths are distinct. Note that they may need to visit the same house several times or use the same road several times to find all possible paths.
 Given a map of Neptune, help Logan and Veronica find and print the number of different paths of length  from house number  to the other houses in Neptune.
@@ -12548,7 +12548,7 @@ The diagram below depicts the submatrices for each of the  questions in green:
 
 For the submatrix between  and , the set of integers is . The number of distinct integers is .
 For the submatrix between  and , the set of integers is . The number of distinct integers is .
-For the submatrix between  and , the set of integers is . The number of distinct integers is .","Sorting,Dynamic Programming,Algorithms,Mathematics,Core CS"
+For the submatrix between  and , the set of integers is . The number of distinct integers is .","Dynamic Programming,Algorithms,Mathematics,Core CS"
 Fairy Chess,Advanced,"Let's play Fairy Chess!
 You have an  chessboard. An -leaper is a chess piece which can move from some square  to some square  if ; however, its movements are restricted to up (), down (), left (), and right () within the confines of the chessboard, meaning that diagonal moves are not allowed. In addition, the leaper cannot leap to any square that is occupied by a pawn.
 Given the layout of the chessboard, can you determine the number of ways a leaper can move  times within the chessboard?
@@ -14686,7 +14686,7 @@ C = A + B = 00001 + 11111 = 100000, so get_c[5] = 1
 from the above computation get_c[1] = 0
 set_b 2 0 sets 11111 to 11011
 C = A + B = 00001 + 11011 = 011100, so get_c[5]  = 0
-The output is hence concatenation of 1, 0 and 0  = 100","Bit,Segment Tree,Algorithms,Expert,problem-solving,Core CS"
+The output is hence concatenation of 1, 0 and 0  = 100","Bit,Algorithms,Expert,problem-solving,Core CS"
 XOR key,Advanced,"Xorq has invented an encryption algorithm which uses bitwise XOR operations extensively. This encryption algorithm uses a sequence of non-negative integers  as its key. To implement this algorithm efficiently, Xorq needs to find maximum value of  for given integers ,  and , such that, . Help Xorq implement this function.  
 For example, , ,  and .  We test each  for all values of  between  and  inclusive:
 j   x[j]    x[j]^4
@@ -14756,7 +14756,7 @@ Sample Output
 Explanation
 Given , we perform the following  queries:
 If we change  to , then we get  and .
-In this query, .","Bit,Algorithms,Implementation,Hard,Core CS"
+In this query, .","Bit,Algorithms,Hard,Core CS"
 XOR Subsequences,Advanced,"Consider an array, , of  integers (). 
 We take all consecutive subsequences of integers from the array that satisfy the following:
 
@@ -14879,7 +14879,7 @@ DDDAD
 AADDA
 ADADA
 DDDDA
-","Mathematics,Bit,ad-hoc,Hard,Core CS"
+","Mathematics,Bit,Hard,Core CS"
 The Power Sum,Medium,"Find the number of ways that a given integer, , can be expressed as the sum of the  powers of unique, natural numbers. 
 For example, if  and , we have to find all combinations of unique squares adding up to .  The only solution is  .  
 Function Description
@@ -14909,7 +14909,7 @@ Sample Input 2
 Sample Output 2
 Explanation 2
  can be expressed as the sum of the cubes of . 
-. There is no other way to express  as the sum of cubes.  ","Algorithms,Recursion,Easy,problem-solving,Core CS"
+. There is no other way to express  as the sum of cubes.  ","Algorithms,Easy,problem-solving,Core CS"
 Crossword Puzzle,Medium,"A  Crossword grid is provided to you, along with a set of words (or names of places) which need to be filled into the grid.  Cells are marked either + or -.  Cells marked with a - are to be filled with the word list.  
 +
 -
@@ -14934,7 +14934,7 @@ Sample Output 0
 Sample Input 1
 Sample Output 1
 Sample Input 2
-Sample Output 2","Algorithms,Recursion,Medium,problem-solving,Core CS"
+Sample Output 2","Algorithms,Medium,problem-solving,Core CS"
 Recursive Digit Sum,Medium,"We define super digit of an integer  using the following rules:  
 Given an integer, we need to find the super digit of the integer.
 If  has only  digit, then its super digit is .   
@@ -14979,7 +14979,7 @@ super_digit(P) = super_digit(123123123)
                = super_digit(1+8)
                = super_digit(9)
                = 9
-","Algorithms,Recursion,Medium,problem-solving,Core CS"
+","Algorithms,Medium,problem-solving,Core CS"
 Simplified Chess Engine,Medium,"Chess is a very popular game played by hundreds of millions of people. Nowadays, we have chess engines such as Stockfish and Komodo to help us analyze games. These engines are very powerful pieces of well-developed software that use intelligent ideas and algorithms to analyze positions and sequences of moves, as well as find tactical ideas. Consider the following simplified version of chess:
 Board: It's played on a  board between two players named Black and White. 
 Pieces and Movement: 
@@ -15020,7 +15020,7 @@ Explanation 0
 We play  games of simplified chess, where the initial piece layout is as follows:
 
 White is the next to move, and they can win the game in  move by taking their Knight to  and capturing Black's Queen. Because it took  move to win and , we print YES on a new line.
-YES","Algorithms,Recursion,Medium,Core CS"
+YES","Algorithms,Medium,Core CS"
 Password Cracker,Medium,"There are N users registered on a website CuteKittens.com. Each of them has a unique password represented by pass[1], pass[2], ..., pass[N]. As this a very lovely site, many people want to access those awesomely cute pics of the kittens. But the adamant admin does not want the site to be available to the general public, so only those people who have passwords can access it.
 Yu, being an awesome hacker finds a loophole in the password verification system. A string which is a concatenation of one or more passwords, in any order, is also accepted by the password verification system. Any password can appear  or more times in that string. Given access to each of the  passwords, and also have a string loginAttempt$ string can be created by concatenating password strings, it is accepted.
 For example, if there are 3 users with , then some of the valid combinations are abra , kaabra , kadabraka , kadabraabra  and so on.  Supplying abra ka dabra, concatenated, passes authentication.
@@ -15076,7 +15076,7 @@ Sample Case #02: There are two ways to create loginAttempt (""abcd""). Both pass
 pass[2] = ""abcd""
 pass[1] + pass[3] = ""ab cd""
 Sample Input 1
-Sample Output 1","Algorithms,Recursion,Medium,problem-solving,Core CS,Dynamic Programming"
+Sample Output 1","Algorithms,Medium,problem-solving,Core CS,Dynamic Programming"
 Arithmetic Expressions,Hard,"5-year-old Shinchan had just started learning mathematics. Meanwhile, one of his studious classmates, Kazama, had already written a basic calculator which supports only three operations on integers: multiplication , addition , and subtraction .  Since he had just learned about these operations, he didn't know about operator precedence, and so, in his calculator, all operators had the same precedence and were left-associative.
 As always, Shinchan started to irritate him with his silly questions. He gave Kazama a list of  integers and asked him to insert one of the above operators between each pair of consecutive integers such that the result obtained after feeding the resulting expression in Kazama's calculator is divisible by . At his core, Shinchan is actually a good guy, so he only gave lists of integers for which an answer exists.  
 Can you help Kazama create the required expression? If multiple solutions exist, print any one of them.   
@@ -15100,7 +15100,7 @@ Solution 2: , which is also divisible by .
 Sample Input 1
 Sample Output 1
 Explanation 1
- which is divisible by .","Algorithms,Recursion,Hard,Core CS"
+ which is divisible by .","Algorithms,Hard,Core CS"
 " Stone Division, Revisited",Medium,"You have a pile of  stones that you want to split into multiple piles, as well as a set, , of  distinct integers. We define a move as follows:
 First, choose a pile of stones. Let's say that the chosen pile contains  stones. 
 Next, look for some  such that  and  is divisible by  (i.e.,  is a factor of ); if such an  exists, you can split the pile into  equal smaller piles.
@@ -15136,7 +15136,7 @@ Repeat the previous move again on another pile of size  to get:
 
 Repeat the move again on the last pile of size  to get: 
 
-As there are no more available moves, we print  (the number of moves) on a new line.","Dynamic Programming,Algorithms,Recursion,Medium,Core CS"
+As there are no more available moves, we print  (the number of moves) on a new line.","Dynamic Programming,Algorithms,Medium,Core CS"
 K Factorization,Hard,"At the time when Pythagoreanism was prevalent, people were also focused on different ways to factorize a number. In one class, Pythagoras asked his disciples to solve one such problem, Reverse Factorization. They were given a set of integer, , and an integer . They need to find the a way to reach , starting from , and at each step multiplying current value by any element of . But soon they realised that there may exist more than one way to reach . So they decided to find a way in which number of states are least. All of sudden they started on this new problem. People solved it and then started shouting their answer. CRAP!!!. There still exists multiple answers. So finally after much consideration, they settled on the lexicographically smallest series among those solutions which contains the least number of states.
 For example, if  and  then following ways exists  
 Here (a) is not the minimal state, as it has  states in total. While (b) and (c) are contenders for answer, both having 3 states, (c) is lexicographically smaller than (b) so it is the answer. In this case you have to print 1 3 12. If there exists no way to reach  print -1.   
@@ -15189,7 +15189,7 @@ States          =>  Multiplication operation
  1   9  36  72  =>      (x9, x4, x2)
 
 As series 1 2 8 72 is lexicographically smallest, it is the answer.
-1 2 8 72","Algorithms,Recursion,Hard,Core CS"
+1 2 8 72","Algorithms,Hard,Core CS"
 Bowling Pins,Hard,"Bowling is a sport in which a player rolls a bowling ball towards a group of pins, the target being to knock down the pins at the end of a lane.
 In this challenge, the rules of the game are slightly modified. Now, there are a given number of pins, and the pins are arranged in a horizontal line instead of a triangular formation. Two players have to play this game, taking alternate turns. Whoever knocks down the last pin(s) will be declared the winner.  
 You are playing this game with your friend, and both of you have become proficient at it. You can knock down any single pin, or any two adjacent pins at one throw of a bowling ball, however, these are the only moves that you can perform. Some moves have already been played. Suddenly, you realize that it is possible to determine whether this game can be won or not, assuming optimal play. And luckily it's your turn right now.  
@@ -15236,7 +15236,7 @@ Test Case 1: As the  pins are not adjacent, they can't be knocked down in a sing
 Test Case 2: You can knock down both pins in a single turn.
 Test Case 3: You can knock down one or two pins from either side. Your friend can just copy your move on the other side and will be able to get the last move, hence win the game.
 Test Case 4: You can knock the middle pin, thus resulting in the configuration IIXII for your friend. Now, this configuration is the same as the previous test case. The difference is that now it is your friend's turn and you can copy his shot on the other side.    
-IIXII","Algorithms,Recursion,Medium,Core CS"
+IIXII","Algorithms,Medium,Core CS"
 Simplified Chess Engine II,Hard,"Chess is a very popular game played by hundreds of millions of people. Nowadays, we have chess engines such as Stockfish and Komodo to help us analyze games. These engines are very powerful pieces of well-developed software that use intelligent ideas and algorithms to analyze positions and sequences of moves, as well as to find tactical ideas. Consider the following simplified version of chess:
 Board: 
 It's played on a  board between two players named Black and White.
@@ -15304,7 +15304,7 @@ Explanation 0
 We play the following  game of simplified chess:
 
 White wins by moving their Pawn to  and capturing Black's Queen, so we print YES on a new line.
-YES","Algorithms,Recursion,Game Theory,Core CS"
+YES","Algorithms,Game Theory,Core CS"
 Repetitive K-Sums,Advanced,"Alice thinks of a non-decreasing sequence of non-negative integers and wants Bob to guess it by providing him the set of all its K-sums with repetitions. 
 What is this? Let the sequence be {A[1], A[2], ..., A[N]} and K be some positive integer that both Alice and Bob know. Alice gives Bob the set of all possible values that can be genereated by this - A[i1] + A[i2] + ... + A[iK], where 1 ≤ i1 ≤ i2 ≤ ... ≤ iK ≤ N. She can provide the values generated in any order she wishes to. Bob's task is to restore the initial sequence.
 Consider an example. Let N = 3 and K = 2. The sequence is {A[1], A[2], A[3]}. The sequence of its 2-sums with repetitions is {A[1] + A[1], A[1] + A[2], A[1] + A[3], A[2] + A[2], A[2] + A[3], A[3] + A[3]}. But its elements could be provided in any order. For example any permutation of {2, 3, 4, 4, 5, 6} corresponds to the sequence {1, 2, 3}.
@@ -15332,7 +15332,7 @@ S[1] = 3 * A[1]. Hence A[1] = S[1] / 3 = 3 / 3 = 1.
 Sample case #01: Since 6 + 6 = 12, 6 + 28 = 34, 28 + 28 =
 56, then Alice indeed could think of the sequence {6, 28}.
 Sample case #02: It corresponds to the example in the problem
-statement.","Algorithms,Recursion,Expert,Core CS"
+statement.","Algorithms,Expert,Core CS"
 Game of Stones,Easy,"Two players called  and  are playing a game with a starting number of stones. Player  always plays first, and the two players move in alternating turns. The game's rules are as follows:
 In a single move, a player can remove either , , or  stones from the game board. 
 If a player is unable to make a move, that player loses the game.
@@ -15933,7 +15933,7 @@ As all  moves have been made, the game ends. 's score is  points and 's score is
 Test Case 1: , 
 Because both players will only make  move and all possible point values are , the players will end the game with equal scores. Thus, we print  on a new line.
 Test Case 1: ,  
-Because both players will only make  move and all the possible point values for  are greater than all the possible point values for ,  will win the game. Thus, we print  on a new line.","Game Theory,Algorithms,Medium,Greedy Algorithms,Sorting,Game Theory,Core CS"
+Because both players will only make  move and all the possible point values for  are greater than all the possible point values for ,  will win the game. Thus, we print  on a new line.","Game Theory,Algorithms,Medium,Greedy Algorithms,Game Theory,Core CS"
 Stone Division,Hard,"Consider the following game:
 There are two players, First and Second, sitting in front of a pile of  stones. First always plays first.
 There is a set, , of  distinct integers defined as .
@@ -16813,7 +16813,7 @@ Sample Output
 Explanation
 In this case let the first box contain only red balls, the second box only blue balls, and the third box only green balls. 
 So from the first box 1 blue ball should be moved to the second box and 1 green ball should be moved to the third box. 
-From the second box 1 red ball should be moved to the first box and 1 green ball should be moved to the third box. Likewise for the third row. So the number of operations is 6.","Core CS,Implementation"
+From the second box 1 red ball should be moved to the first box and 1 green ball should be moved to the third box. Likewise for the third row. So the number of operations is 6.",Core CS
 XOR Strings,Easy,"In this challenge, the task is to debug the existing code to successfully execute all provided test files.
 Given two strings consisting of digits 0 and 1 only, find the XOR of the two strings.
 To know more about XOR Click Here
@@ -16837,24 +16837,6 @@ Sample Output
 
 Explanation
 The XOR of the two strings  and  is .",Core CS
-Zig Zag Sequence,Medium,"In this challenge, the task is to debug the existing code to successfully execute all provided test files.
-Given an array of  distinct integers, transform the array into a zig zag sequence by permuting the array elements. A sequence will be called a zig zag sequence if the first  elements in the sequence are in increasing order and the last  elements are in decreasing order, where . You need to find the lexicographically smallest zig zag sequence of the given array.
-For example let's say .  Now if we permute the array as , the result is a zig zag sequence.
-Debug the given function findZigZagSequence to return the appropriate zig zag sequence for the given input array.
-findZigZagSequence
-Note: You can modify at most three lines in the given code and you cannot add or remove lines to the code.
-To restore the original code in the editor, create a new buffer by clicking on the top left icon in the editor.
-Input Format
-The first line contains  the number of test cases. The first line of each test case contains an integer , denoting the number of array elements. 
-The next line of the test case contains  elements of array .
-Constraints
- 
- ( is always odd) 
- 
-Output Format
-For each test cases, print the elements of the transformed zig zag sequence in a single line.
-Sample Input 0
-Sample Output 0","ad-hoc,Implementation"
 Smart Number,Easy,"In this challenge, the task is to debug the existing code to successfully execute all provided test files.
 A number is called a smart number if it has an odd number of factors. Given some numbers, find whether they are smart numbers or not.
 Debug the given function is_smart_number to correctly check if a given number is a smart number. 
@@ -16897,7 +16879,7 @@ Constraints
 
 
 Output Format
-Print all  integers in  in reverse order as a single line of space-separated integers.","Algorithms,Data Structures,Arrays,Core CS"
+Print all  integers in  in reverse order as a single line of space-separated integers.","Algorithms,Data Structures,Core CS"
 2D Array - DS,Easy,"Given a  2D Array, : 
 1 1 1 0 0 0
 0 1 0 0 0 0
@@ -16961,7 +16943,7 @@ The hourglass with the maximum sum () is:
 2 4 4
   2
 1 2 4
-","Algorithms,Easy,Data Structures,Arrays,problem-solving,Core CS"
+","Algorithms,Easy,Data Structures,problem-solving,Core CS"
 Dynamic Array,Easy,"Create a list, , of  empty sequences, where each sequence is indexed from  to . The elements within each of the  sequences also use -indexing.
 Create an integer, , and initialize it to .
 The  types of queries that can be performed on your list of sequences () are described below:
@@ -17040,7 +17022,7 @@ Query 4: Assign the value at index  of sequence  to , print .
  = [5, 3] 
  = [7]  
 3
-","Algorithms,Data Structures,Arrays,Core CS"
+","Algorithms,Data Structures,Core CS"
 Left Rotation,Easy,"A left rotation operation on an array of size  shifts each of the array's elements  unit to the left. For example, if  left rotations are performed on array , then the array would become .
 Given an array of  integers and a number, , perform  left rotations on the array. Then print the updated array as a single line of space-separated integers.
 Input Format
@@ -17064,7 +17046,7 @@ When we perform  left rotations, the array undergoes the following sequence of c
 
 
 Thus, we print the array's final state as a single line of space-separated values, which is 5 1 2 3 4.
-5 1 2 3 4","Algorithms,Data Structures,Arrays,Core CS"
+5 1 2 3 4","Algorithms,Data Structures,Core CS"
 Sparse Arrays,Medium,"There is a collection of input strings and a collection of query strings.  For each query string, determine how many times it occurs in the list of input strings.  
 For example, given input  and , we find  instances of ',  of '' and  of ''.  For each query, we add an element to our return array, .  
 Function Description
@@ -17082,7 +17064,7 @@ Constraints
  
  . 
 Output Format
-Return an integer array of the results of all queries in order.    ","Algorithms,Medium,Data Structures,Arrays,problem-solving,Core CS"
+Return an integer array of the results of all queries in order.    ","Algorithms,Medium,Data Structures,problem-solving,Core CS"
 Array Manipulation,Hard,"Starting with a 1-indexed array of zeros and a list of operations, for each operation add a value to each of the array element between two given indices, inclusive.  Once all operations have been performed, return the maximum value in your array.  
 For example, the length of your array of zeros .  Your list of queries is as follows:  
 Add the values of  between the indices  and  inclusive:
@@ -17140,7 +17122,7 @@ Sample Output
 13
 
 Explanation
-There are two elements in the linked list. They are represented as 16 -> 13 -> NULL. So, the printLinkedList function should print 16 and 13 each in a new line.","Algorithms,Linked Lists,Data Structures,Core CS"
+There are two elements in the linked list. They are represented as 16 -> 13 -> NULL. So, the printLinkedList function should print 16 and 13 each in a new line.","Algorithms,Data Structures,Core CS"
 Insert a Node at the Tail of a Linked List,Easy,"This challenge is part of a tutorial track by MyCodeSchool and is accompanied by a video lesson.
 You are given the pointer to the head node of a linked list and an integer to add to the list. Create a new node with the given integer. Insert this node at the tail of the linked list and return the head node of the linked list formed after inserting this new node. The given head pointer may be null, meaning that the initial list is empty.
 Input Format
@@ -17177,7 +17159,7 @@ First the linked list is NULL. After inserting 141, the list is 141 -> NULL.
 After inserting 302, the list is 141 -> 302 -> NULL. 
 After inserting 164, the list is 141 -> 302 -> 164 -> NULL. 
 After inserting 530, the list is 141 -> 302 -> 164 -> 530 -> NULL.
-After inserting 474, the list is 141 -> 302 -> 164 -> 530 -> 474 -> NULL, which is the final list.","Algorithms,Linked Lists,Data Structures,Core CS"
+After inserting 474, the list is 141 -> 302 -> 164 -> 530 -> 474 -> NULL, which is the final list.","Algorithms,Data Structures,Core CS"
 Insert a node at the head of a linked list,Easy,"This challenge is part of a tutorial track by MyCodeSchool and is accompanied by a video lesson. 
 You’re given the pointer to the head node of a linked list and an integer to add to the list. Create a new node with the given integer, insert this node at the head of the linked list and return the new head node. The head pointer given may be null meaning that the initial list is empty.
 Input Format
@@ -17214,7 +17196,7 @@ Intially the list in NULL. After inserting 383, the list is 383 -> NULL.
 After inserting 484, the list is 484 -> 383 -> NULL. 
 After inserting 392, the list is 392 -> 484 -> 383 -> NULL. 
 After inserting 975, the list is 975 -> 392 -> 484 -> 383 -> NULL. 
-After inserting 321, the list is 321 -> 975 -> 392 -> 484 -> 383 -> NULL.  ","Algorithms,Linked Lists,Data Structures,Core CS"
+After inserting 321, the list is 321 -> 975 -> 392 -> 484 -> 383 -> NULL.  ","Algorithms,Data Structures,Core CS"
 Insert a node at a specific position in a linked list,Easy,"This challenge is part of a tutorial track by MyCodeSchool and is accompanied by a video lesson.
 You’re given the pointer to the head node of a linked list, an integer to add to the list and the position at which the integer must be inserted. Create a new node with the given integer, insert this node at the desired position and return the head node.  
 A position of 0 indicates head, a position of 1 indicates one node away from the head and so on. The head pointer given may be null meaning that the initial list is empty.  
@@ -17250,7 +17232,7 @@ Sample Output
 Explanation
 The initial linked list is 16 13 7. We have to insert  at the position  which currently has  in it. The updated linked list will be 16 13 1 7
 16 13 7
-16 13 1 7","Algorithms,Linked Lists,Easy,Data Structures,problem-solving,Core CS"
+16 13 1 7","Algorithms,Easy,Data Structures,problem-solving,Core CS"
 Delete a Node,Easy,"This challenge is part of a tutorial track by MyCodeSchool and is accompanied by a video lesson.
 You’re given the pointer to the head node of a linked list and the position of a node to delete. Delete the node at the given position and return the head node. A position of 0 indicates head, a position of 1 indicates one node away from the head and so on. The list may become empty after you delete the node.
 Input Format
@@ -17285,7 +17267,7 @@ Sample Output
 Explanation
 The given linked list is 20->6->2->19->7->4->15->9. We have to delete the node at position 3, which is 19. After deleting that node, the updated linked list is: 20->6->2->7->4->15->9
 20->6->2->19->7->4->15->9
-20->6->2->7->4->15->9","Algorithms,Linked Lists,Data Structures,Core CS"
+20->6->2->7->4->15->9","Algorithms,Data Structures,Core CS"
 Print in Reverse,Easy,"This challenge is part of a tutorial track by MyCodeSchool and is accompanied by a video lesson.
 You are given the pointer to the head node of a linked list and you need to print all its elements in reverse order from tail to head, one element per line. The head pointer may be null meaning that the list is empty - in that case, do not print anything!
 Input Format
@@ -17344,7 +17326,7 @@ The third linked list has  elements: 5 -> 1 -> 18 -> 3 -> 13. Printing this in r
 7 -> 3 -> 9
 9 -> 3 -> 7
 5 -> 1 -> 18 -> 3 -> 13
-13 -> 3 -> 18 -> 1 -> 5","Algorithms,Linked Lists,Data Structures,Core CS"
+13 -> 3 -> 18 -> 1 -> 5","Algorithms,Data Structures,Core CS"
 Reverse a linked list,Easy,"This challenge is part of a tutorial track by MyCodeSchool and is accompanied by a video lesson.
 You’re given the pointer to the head node of a linked list. Change the next pointers of the nodes so that their order is reversed. The head pointer given may be null meaning that the initial list is empty.
 next
@@ -17380,7 +17362,7 @@ Sample Output
 
 Explanation
 The initial linked list is: 1 -> 2 -> 3 -> 4 -> 5 -> NULL
-The reversed linked list is: 5 -> 4 -> 3 -> 2 -> 1 -> NULL","Algorithms,Linked Lists,Data Structures,Core CS"
+The reversed linked list is: 5 -> 4 -> 3 -> 2 -> 1 -> NULL","Algorithms,Data Structures,Core CS"
 Compare two linked lists,Easy,"This challenge is part of a tutorial track by MyCodeSchool
 You’re given the pointer to the head nodes of two linked lists. Compare the data in the nodes of the linked lists to check if they are equal. The lists are equal only if they have the same number of nodes and corresponding nodes contain the same data. Either head pointer given may be null meaning that the corresponding list is empty.
 Input Format
@@ -17423,7 +17405,7 @@ Sample Output
 
 Explanation
 In the first case, linked lists are: 1 -> 2 -> NULL and 1 -> NULL
-In the second case, linked lists are: 1 -> 2 -> NULL and 1 -> 2 -> NULL","Algorithms,Linked Lists,Data Structures,Core CS"
+In the second case, linked lists are: 1 -> 2 -> NULL and 1 -> 2 -> NULL","Algorithms,Data Structures,Core CS"
 Merge two sorted linked lists,Easy,"This challenge is part of a tutorial track by MyCodeSchool
 You’re given the pointer to the head nodes of two sorted linked lists. The data in both lists will be sorted in ascending order. Change the next pointers to obtain a single, merged linked list which also has data in ascending order. Either head pointer given may be null meaning that the corresponding list is empty.
 next
@@ -17463,7 +17445,7 @@ Sample Output
 Explanation
 The first linked list is: 1 -> 2 -> 3 -> NULL
 The second linked list is: 3 -> 4 -> NULL
-Hence, the merged linked list is: 1 -> 2 -> 3 -> 3 -> 4 -> NULL","Algorithms,Linked Lists,Data Structures,Core CS"
+Hence, the merged linked list is: 1 -> 2 -> 3 -> 3 -> 4 -> NULL","Algorithms,Data Structures,Core CS"
 Get Node Value,Easy,"This challenge is part of a tutorial track by MyCodeSchool
 You’re given the pointer to the head node of a linked list and a specific position. Counting backwards from the tail node of the linked list, get the value of the node at the given position. A position of 0 corresponds to the tail, 1 corresponds to the node before the tail and so on.
 Input Format
@@ -17502,7 +17484,7 @@ Sample Output
 
 Explanation
 In first case, there is one element in linked list with value 1. Hence, last element is 1.
-In second case, there are 3 elements with values 3, 2 and 1 (3 -> 2 -> 1). Hence, element with position of 2 from tail is 3.","Algorithms,Linked Lists,Data Structures,Core CS"
+In second case, there are 3 elements with values 3, 2 and 1 (3 -> 2 -> 1). Hence, element with position of 2 from tail is 3.","Algorithms,Data Structures,Core CS"
 Delete duplicate-value nodes from a sorted linked list,Easy,"This challenge is part of a tutorial track by MyCodeSchool
 You're given the pointer to the head node of a sorted linked list, where the data in the nodes is in ascending order. Delete as few nodes as possible so that the list does not contain any value more than once. The given head pointer may be null indicating that the list is empty.
 Input Format
@@ -17537,7 +17519,7 @@ Sample Output
 
 Explanation
 The initial linked list is: 1 -> 2 -> 2 -> 3 -> 4 -> NULL
-The final linked list is: 1 -> 2 -> 3 -> 4 -> NULL","Algorithms,Linked Lists,Data Structures,Core CS"
+The final linked list is: 1 -> 2 -> 3 -> 4 -> NULL","Algorithms,Data Structures,Core CS"
 Cycle Detection,Medium,"A linked list is said to contain a cycle if any node is visited more than once while traversing the list. 
 Complete the function provided for you in your editor. It has one parameter: a pointer to a Node object named  that points to the head of a linked list. Your function must return a boolean denoting whether or not there is a cycle in the list. If there is a cycle, return true; otherwise, return false.
 Note: If the list is empty,  will be null.
@@ -17556,7 +17538,7 @@ Sample Output
 
 Explanation
 The first list has no cycle, so we return false and the hidden code checker prints  to stdout.
-The second list has a cycle, so we return true and the hidden code checker prints  to stdout.","Algorithms,Linked Lists,Data Structures,Core CS"
+The second list has a cycle, so we return true and the hidden code checker prints  to stdout.","Algorithms,Data Structures,Core CS"
 Find Merge Point of Two Lists,Easy,"This challenge is part of a tutorial track by MyCodeSchool
 Given pointers to the head nodes of  linked lists that merge together at some point, find the Node where the two lists merge. It is guaranteed that the two head Nodes will be different, and neither will be NULL.
 In the diagram below, the two lists converge at Node x:
@@ -17602,7 +17584,7 @@ Sample Output
 
 Explanation
 Test Case 0: As demonstrated in the diagram above, the merge Node's data field contains the integer . 
-Test Case 1: As demonstrated in the diagram above, the merge Node's data field contains the integer .","Algorithms,Linked Lists,Easy,Data Structures,problem-solving,Core CS"
+Test Case 1: As demonstrated in the diagram above, the merge Node's data field contains the integer .","Algorithms,Easy,Data Structures,problem-solving,Core CS"
 Inserting a Node Into a Sorted Doubly Linked List,Easy,"Given a reference to the head of a doubly-linked list and an integer, , create a new DoublyLinkedListNode object having data value  and insert it into a sorted linked list while maintaining the sort.
 Function Description
 Complete the sortedInsert function in the editor below. It must return a reference to the head of your modified DoublyLinkedList.
@@ -17638,7 +17620,7 @@ Sample Output
 
 Explanation
 The initial doubly linked list is:  . 
-The doubly linked list after insertion is: ","Algorithms,Linked Lists,Easy,Data Structures,problem-solving,Core CS"
+The doubly linked list after insertion is: ","Algorithms,Easy,Data Structures,problem-solving,Core CS"
 Reverse a doubly linked list,Easy,"This challenge is part of a tutorial track by MyCodeSchool
 You’re given the pointer to the head node of a doubly linked list. Reverse the order of the nodes in the list. The head node might be NULL to indicate that the list is empty.  Change the next and prev pointers of all the nodes so that the direction of the list is reversed. Return a reference to the head node of the reversed list. 
 Function Description
@@ -17669,7 +17651,7 @@ Sample Output
 
 Explanation
 The initial doubly linked list is:  
-The reversed doubly linked list is:  ","Algorithms,Linked Lists,Easy,Data Structures,problem-solving,Core CS"
+The reversed doubly linked list is:  ","Algorithms,Easy,Data Structures,problem-solving,Core CS"
 Tree: Preorder Traversal,Easy,"Complete the preOrder function in your editor below, which has  parameter: a pointer to the root of a binary tree. It must print the values in the tree's preorder traversal as a single line of space-separated values.  
 Input Format
 Our hidden tester code passes the root node of a binary tree to your preOrder function.
@@ -18204,7 +18186,7 @@ Thus  must be true and  must be true for every . All numbers should be printed w
 Sample Input 0
 Sample Output 0
 Explanation 0
-Segment  belongs to level  of the square-ten tree.","Tree,Algorithms,Data Structures,ad-hoc,Core CS"
+Segment  belongs to level  of the square-ten tree.","Tree,Algorithms,Data Structures,Core CS"
 Balanced Forest,Hard,"Greg has a tree of nodes containing integer data.  He wants to insert a node with some non-zero integer value somewhere into the tree.  His goal is to be able to cut two edges and have the values of each of the three new trees sum to the same amount.  This is called a balanced forest.  Being frugal, the data value he inserts should be minimal.  Determine the minimal amount that a new node can have to allow creation of a balanced forest.  If it's not possible to create a balanced forest, return -1.
 For example, you are given node values  and .  It is the following tree:  
  
@@ -18547,7 +18529,7 @@ Sample Input
 Sample Output
 26
 91
-","Algorithms,Data Structures,Stacks,Stacks,Core CS"
+","Algorithms,Data Structures,Core CS"
 Queue using Two Stacks,Medium,"A queue is an abstract data type that maintains the order in which elements were added to it, allowing the oldest elements to be removed from the front and new elements to be added to the rear. This is called a First-In-First-Out (FIFO) data structure because the first element added to the queue (i.e., the one that has been waiting the longest) is always the first one to be removed.
 A basic queue has the following operations:
 Enqueue: add a new element to the end of the queue.
@@ -18697,7 +18679,7 @@ The string {[(])} is not balanced because the brackets enclosed by the matched p
 [(])
 The string {{[[(())]]}} meets both criteria for being a balanced string, so we print YES on a new line.  
 {{[[(())]]}}
-YES","Algorithms,Medium,Data Structures,Stacks,Stacks,problem-solving,Core CS"
+YES","Algorithms,Medium,Data Structures,problem-solving,Core CS"
 Castle on the Grid,Medium,"You are given a square grid with some cells open (.) and some blocked (X).  Your playing piece can move along any row or column until it reaches the edge of the grid or a blocked cell.  Given a grid, a start and an end position, determine the number of moves it will take to get to the end position.  
 For example, you are given a grid with sides  described as follows:
 ...
@@ -18889,7 +18871,7 @@ As a result, the stacks undergo the following change in height:
 
 
 
-All three stacks now have . Thus, we print  as our answer.","Algorithms,Data Structures,Greedy Algorithms,Stacks,Core CS"
+All three stacks now have . Thus, we print  as our answer.","Algorithms,Data Structures,Greedy Algorithms,Core CS"
 Minimum Average Waiting Time,Hard,"Tieu owns a pizza restaurant and he manages it in his own way.  While in a normal restaurant, a customer is served by following the first-come, first-served rule, Tieu simply minimizes the average waiting time of his customers. So he gets to decide who is served first, regardless of how sooner or later a person comes. 
 Different kinds of pizzas take different amounts of time to cook. Also, once he starts cooking a pizza, he cannot cook another pizza until the first pizza is completely cooked. Let's say we have three customers who come at time t=0, t=1, & t=2 respectively, and the time needed to cook their pizzas is 3, 9, & 6 respectively. If Tieu applies first-come, first-served rule, then the waiting time of three customers is 3, 11, & 16  respectively. The average waiting time in this case is (3 + 11 + 16) / 3 = 10. This is not an optimized solution. After serving the first customer at time t=3, Tieu can choose to serve the third customer. In that case, the waiting time will be 3, 7, & 17 respectively. Hence the average waiting time is (3 + 7 + 17) / 3 = 9.
 Help Tieu achieve the minimum average waiting time. For the sake of simplicity, just find the integer part of the minimum average waiting time.
@@ -18982,7 +18964,7 @@ The two stacks initially look like this:
 
 The image below depicts the integers Nick should choose to remove from the stacks. We print  as our answer, because that is the maximum number of integers that can be removed from the two stacks without the sum exceeding .
 
-(There can be multiple ways to remove the integers from the stack, the image shows just one of them.)","Algorithms,Medium,Data Structures,Stacks,Core CS"
+(There can be multiple ways to remove the integers from the stack, the image shows just one of them.)","Algorithms,Medium,Data Structures,Core CS"
 Largest Rectangle ,Medium,"Skyline Real Estate Developers is planning to demolish a number of old, unoccupied buildings and construct a shopping mall in their place. Your task is to find the largest solid area in which the mall can be constructed.
 There are a number of buildings in a certain two-dimensional landscape. Each building has a height, given by . If you join  adjacent buildings, they will form a solid rectangle of area .  
 For example, the heights array .  A rectangle of height  and length  can be constructed within the boundaries.  The area formed is .  
@@ -19008,7 +18990,7 @@ Sample Output
 
 Explanation
 An illustration of the test case follows. 
-","Algorithms,Medium,Data Structures,Stacks,problem-solving,Core CS"
+","Algorithms,Medium,Data Structures,problem-solving,Core CS"
 Queries with Fixed Length,Hard,"Consider an -integer sequence, . We perform a query on  by using an integer, , to calculate the result of the following expression:
 
 
@@ -19076,7 +19058,7 @@ Explanation
 :  
 :  
 :  
-...etc.  ","Sorting,Algorithms,Data Structures,Hard,Core CS"
+...etc.  ","Algorithms,Data Structures,Hard,Core CS"
 Simple Text Editor,Medium,"In this challenge, you must implement a simple text editor. Initially, your editor contains an empty string, . You must perform  operations of the following  types:
 append  - Append string  to the end of .
 delete   - Delete the last  characters of .
@@ -19123,7 +19105,7 @@ y
 Undo the last update to , making  empty again (i.e., ).
 Undo the next to last update to  (the deletion of the last  characters), making .
 Print the  character on a new line. Currently, the  character is a.
-a","Algorithms,Data Structures,Stacks,Stacks,Core CS"
+a","Algorithms,Data Structures,Core CS"
 Poisonous Plants,Hard,"There are a number of plants in a garden. Each of these plants has been treated with some amount of pesticide. After each day, if any plant has more pesticide than the plant on its left, being weaker than the left one, it dies.  
 You are given the initial values of the pesticide in each of the plants. Print the number of days after which no plant dies, i.e. the time after which there are no plants with more pesticide content than the plant to their left.  
 For example, pesticide levels .  Using a -indexed array, day  plants  and  die leaving .  On day , plant  of the current array dies leaving .  As there is no plant with a higher concentration of pesticide than the one to its left, plants stop dying after day .  
@@ -19154,7 +19136,7 @@ After the 1st day, 4 plants remain as plants 3, 5, and 6 die.
 Plants = {(6,1), (5,2), (4,4), (9,7)}  
 After the 2nd day, 3 plants survive as plant 7 dies.
 Plants = {(6,1), (5,2), (4,4)}  
-After the 2nd day the plants stop dying.","Algorithms,Data Structures,Stacks,Hard,Stacks,problem-solving,Core CS"
+After the 2nd day the plants stop dying.","Algorithms,Data Structures,Hard,problem-solving,Core CS"
 AND xor OR,Hard,"Given an array  of  distinct elements. Let  and  be the smallest and the next smallest element in the interval  where .  
 .  
 where , are the bitwise operators ,  and  respectively. 
@@ -19176,7 +19158,7 @@ Sample Output
 
 Explanation
 Consider the interval  the result will be maximum. 
-","Algorithms,Data Structures,Stacks,Core CS"
+","Algorithms,Data Structures,Core CS"
 Waiter,Medium,"You are a waiter at a party.
 There are  stacked plates on pile .
 Each plate has a number written on it.
@@ -19217,7 +19199,7 @@ After  iteration:
  = []<-TOP
  = [4, 4]<- TOP
  = [3, 3, 9]<-TOP 
-We should output numbers in  first from top to bottom, and then output numbers in  from top to bottom.","Algorithms,Data Structures,Stacks,Stacks,Core CS"
+We should output numbers in  first from top to bottom, and then output numbers in  from top to bottom.","Algorithms,Data Structures,Core CS"
 Contacts,Medium,"We're going to make our own Contacts application! The application must perform two types of operations:
 add name, where  is a string denoting a contact name. This must store  as a new contact in the application.  
 add name
@@ -19318,7 +19300,7 @@ Constraints
 Subtasks
  for  of the maximum score.
 Output Format
-Print an integer denoting the ID number, , where Meera should start collecting the drawings such that a maximal number of students can complete their drawings. If there are multiple such IDs, select the smallest one.","Segment Tree,Algorithms,Medium,Data Structures,Core CS"
+Print an integer denoting the ID number, , where Meera should start collecting the drawings such that a maximal number of students can complete their drawings. If there are multiple such IDs, select the smallest one.","Algorithms,Medium,Data Structures,Core CS"
 Cube Summation,Hard,"Chinese Version
 Russian Version
 You are given a 3-D Matrix in which each block contains 0 initially. The first block is defined by the coordinate (1,1,1) and the last block is defined by the coordinate (N,N,N). There are two types of queries.
@@ -19576,7 +19558,7 @@ We perform the following  queries:
 1 0 1 1:  and we need to perform  shift operations on each character from index  to index . After performing these shifts, .  
 1 0 1 1
 2 0 2:  and we want to find the palindromic subsets of substring . There are three valid subsets that form palindromic strings (, , and ), so we print the result of  on a new line.
-2 0 2","Segment Tree,Algorithms,Data Structures,Hard,Core CS,Advanced Data Structures"
+2 0 2","Algorithms,Data Structures,Hard,Core CS,Advanced Data Structures"
 Counting On a Tree,Expert,"Taylor loves trees, and this new challenge has him stumped!
 Consider a tree, , consisting of  nodes. Each node is numbered from  to , and each node  has an integer, , attached to it. 
 A query on tree  takes the form w x y z. To process a query, you must print the count of ordered pairs of integers  such that the following four conditions are all satisfied: 
@@ -19632,7 +19614,7 @@ Find the number of valid ordered pairs where  is in the path from node  to node 
 Find the number of valid ordered pairs where  is in the path from node  to node  and  is in the path from node  to node . One such pair, , exists, so we print .
 Find the number of valid ordered pairs where  is in the path from node  to node  and  is in the path from node  to node . Three such pairs, , , and  exist, so we print .
 Find the number of valid ordered pairs where  is in the path from node  to node  and  is in the path from node  to node . Two such pairs,  and , exist, so we print .  
-Find the number of valid ordered pairs where  is in the path from node  to node  and  is in the path from node  to node . No such pair exists, so we print .","Segment Tree,Tree,Algorithms,Expert,Core CS"
+Find the number of valid ordered pairs where  is in the path from node  to node  and  is in the path from node  to node . No such pair exists, so we print .","Tree,Algorithms,Expert,Core CS"
 Polynomial Division,Hard,"Consider a sequence, , and a polynomial of degree  defined as . You must perform  queries on the sequence, where each query is one of the following two types:
 1 i x: Replace  with .
 1 i x
@@ -19723,7 +19705,7 @@ The maximum value occurs at  as shown below.
 Sample Input 1
 Sample Output 1
 Explanation 1
-The maximum value occurs at .","Tree,Segment Tree,Data Structures,Hard,Core CS"
+The maximum value occurs at .","Tree,Data Structures,Hard,Core CS"
 Self-Driving Bus,Advanced,"Treeland is a country with  cities and  roads. There is exactly one path between any two cities.  
 The ruler of Treeland wants to implement a self-driving bus system and asks tree-loving Alex to plan the bus routes. Alex decides that each route must contain a subset of connected cities; a subset of cities is connected if the following two conditions are true:
 There is a path between every pair of cities which belongs to the subset.
@@ -19922,7 +19904,7 @@ There are  palindromic substrings of . Let's list them in lexicographical order 
 ,  
 ,  
 ,  
- doesn't exist, so we print  for .  ","Sorting,Algorithms,Core CS,Advanced Data Structures"
+ doesn't exist, so we print  for .  ","Algorithms,Core CS,Advanced Data Structures"
 Lazy White Falcon,Hard,"White Falcon just solved the data structure problem below using heavy-light decomposition. Can you help her find a new solution that doesn't require implementing any fancy techniques? 
 There are  types of query operations that can be performed on a tree:
 1 u x: Assign  as the value of node .
@@ -20360,7 +20342,7 @@ First testcase: His trip starts on day 2 at restaurant 2 located at . He gains  
 Second testcase: His trip starts on day 1 at restaurant 1. Then his actions on day 2, 3 and 4 will be go to restaurant 2, stay at restaurant 2 and go to restaurant 4 respectively. The happiness of this optimal trip is equal to  15.
 15
 Third testcase: It's not worth to start the trip from any of the restaurant since he will only have negative happiness. That's why he should stay at home and 0 should be printed. 
-0","Segment Tree,Algorithms,Data Structures,Core CS,Advanced Data Structures"
+0","Algorithms,Data Structures,Core CS,Advanced Data Structures"
 Roy and alpha-beta trees,Hard,"Roy has taken a liking to the Binary Search Trees(BST). He is interested in knowing the number of ways an array  of  integers can be arranged to form a BST. Thus, he tries a few combinations, and notes down the numbers at the odd levels and the numbers at the even levels. 
 You're given two values, alpha and beta. Can you calculate the sum of Liking of all possible BST's that can be formed from an array of  integers? Liking of each BST is defined as follows 
 (sum of numbers on even levels * alpha) - (sum of numbers on odd levels * beta)
@@ -20571,7 +20553,7 @@ For the second query, we consider only the first sequence =>
 First difference is =>  
 Second difference is =>  This is a constant and hence the output is 2 8
 1 1 1 1
-2 8","Search,Tree,Segment Tree,Algorithms,Data Structures,Core CS,Advanced Data Structures"
+2 8","Search,Tree,Algorithms,Data Structures,Core CS,Advanced Data Structures"
 Coolguy and Two Subsequences,Advanced,"Coolguy gives you a simple problem. Given a -indexed array, , containing  elements, what will  be after this pseudocode is implemented and executed? Print .
 //f(a, b) is a function that returns the minimum element in interval [a, b]
 
@@ -20605,7 +20587,7 @@ Explanation
 
 
  
-We then sum these numbers () and print , which is .","Segment Tree,Algorithms,Data Structures,Core CS,Advanced Data Structures"
+We then sum these numbers () and print , which is .","Algorithms,Data Structures,Core CS,Advanced Data Structures"
 White Falcon And Tree,Hard,"White Falcon has a tree with  nodes. Each node contains a linear function. Let's denote by  the linear function contained in the node .  
 Let's denote the path from node  to node  like this: , where  and , and  and  are connected.  
 White Falcon also has  queries. They are in the following format:  
@@ -21455,7 +21437,7 @@ Each of the  permutations has distance . We choose the fifth one (because ), and
 3 1 2
 For  and : 
 The maximal distance in the list of permutations of integers from  to  is , and the only permutations having that distance are  and . We choose the second one (because ), and print 3 1 4 2 on a new line.
-3 1 4 2","Algorithms,Data Structures,Implementation,Core CS,Advanced Data Structures"
+3 1 4 2","Algorithms,Data Structures,Core CS,Advanced Data Structures"
 Company Retreat,Advanced,"The LRT Company has  employees. Each employee has a unique ID number from  to , where the director's ID is number . Every employee in the company has exactly one immediate supervisor — except the director, who has no supervisor. The company's employee hierarchy forms a tree of employee IDs that's rooted at employee number  (the director).
 The director decides to have a retreat lasting  days. Each day, the employees will be assigned to different groups for team building exercises. Groups are constructed in the following way:
 An employee can invite their immediate supervisor (the director has no supervisor and, thus, doesn't invite anyone). If employee  is invited by employee , then  and  are considered to be in the same group.
@@ -21544,7 +21526,7 @@ The fourth operation is 3 0 9, so we print the minimum value of  for , which is 
 3 0 9
 The fifth operation is 4 0 9, so we print the sum of  for , which is the result of .
 4 0 9
-... and so on.","Segment Tree,Algorithms,Data Structures,Expert,Core CS,Advanced Data Structures"
+... and so on.","Algorithms,Data Structures,Expert,Core CS,Advanced Data Structures"
 Max Transform,Expert,"Transforming data into some other data is typical of a programming job. This problem is about a particular kind of transformation which we'll call the max transform.
 Let  be a zero-indexed array of integers. For , let  denote the subarray of  from index  to index , inclusive.
 Let's define the max transform of  as the array obtained by the following procedure:
@@ -21579,46 +21561,4 @@ Explanation 0
 In the sample case, we have:
 
 
-Therefore, the sum of the elements of  is .  ","Data Structures,Expert,Stacks,Core CS"
-Array and Queries,Hard,"Given an array, you are asked to perform a number of queries and divide the array into what are called, beautiful subsequences. 
-The array  has length . A function   is defined to be a minimal possible , such that it's possible to divide array  into  beautiful subsequences. Note that each element of an array should belong to exactly one subsequence, and subsequence does not necessarily need to be consecutive.   
-A subsequence  with length  is called beautiful if and only if:  
- or  
-Let  be a sorted version of . It must hold that  for every  
-For instance, if ,  would be . Because, you can divide  into  beautiful subsequences either like  and  or like  and .  
-You have to answer  queries. Each query is of the type:  
- : you need to change a value of  to , i.e. . Here  is .  
-After each query, for the value of , lets denote that value as , where  indicates the  query.  
-You need to find  modulo .
-Input Format
-The first line contains a single integer , representing the length of array . 
-The next line contains the array  given as space-separated integers. 
-The next line contains a single integer , representing the number of queries. 
-Each of the  lines contain two integers  and , which is described above.  
-Constraints
- 
- 
- 
- 
-Output Format
-Print the required answer in one line.  
-Sample Input 0
-Sample Output 0
-Explanation 0
-The initial array  is  
-After  query the array becomes  this can be divided into  subsequences as ,  and .  
-After  query the array becomes  this can be divided into  subsequences as , ,  and .
-
-Hence, calculating  we get 
-
-
-Sample Input 1
-Sample Output 1
-Explanation 1
-The initial array  is  
-After  query the array becomes  this can be divided into  subsequence as .  
-After  query the array becomes  this can be divided into  subsequence as .  
-After  query the array becomes  this can be divided into  subsequences as  and .  
-Hence, calculating  we get 
-
-",Arrays
+Therefore, the sum of the elements of  is .  ","Data Structures,Expert,Core CS"

@@ -36,7 +36,7 @@ def anani_dagitim(cs_question_csv):
             labels_of_hackerrank = [i.replace(" ", "-") for i in labels_of_hackerrank]
             labels_underscored = ["__label__{}".format(i) for i in labels_of_hackerrank]
             compact_question_line = [" ".join(labels_underscored), question_decoded]
-            f=open("datafinal.txt", "a+",encoding="utf-8")
+            f=open("datafinal_leetcode.txt", "a+",encoding="utf-8")
             f.write(' '.join(compact_question_line) + '\n') 
         print(index)        
-anani_dagitim(hackerrank_csv)
+anani_dagitim(leetcode_csv)
