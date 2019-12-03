@@ -36,6 +36,31 @@ const getUser = (id) => {
         .catch(err => console.log(err));
 };
 
+/**
+ *  [POST]
+ */
+
+const updateUser = (data) => {
+
+    // Preparing the request URL
+    let requestURL = `${USERS_API_URL}/updateUser`;
+    // Headers
+    const headers = {...{'Content-Type': 'application/json'}, ...getHeaders.auth()};
+
+    // Sending POST request
+    return axios({
+        method: 'post',
+        headers: headers,
+        url: requestURL,
+        data: data
+    })
+        .then(response => {
+
+            return response.data;
+        })
+        .catch(err => console.log(err));
+};
+
 
 
 
@@ -44,5 +69,6 @@ const getUser = (id) => {
  */
 
 export default {
-    getUser: getUser
+    getUser: getUser,
+    updateUser: updateUser
 };
