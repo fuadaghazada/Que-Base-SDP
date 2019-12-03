@@ -8,23 +8,9 @@ Created on Fri Nov 29 19:03:52 2019
 import pandas as pd
 
 hackerrank_csv = pd.read_csv('eleven_labels_updated_hackerrank.csv', delimiter=',')
-leetcode_csv = pd.read_csv('updated_leetcode.csv', delimiter=',', header = None)
-
-def append_to_file(label, other_labels, question):
-    txt = question.encode('utf-8')
-    question_decoded = txt.decode('utf-8')
-    question_decoded = str(question_decoded).strip().replace('\n', ' ')
-    f=open("{}/data.txt".format(label), "a",encoding="utf-8")
-    pos_line = ["__label__pos", question_decoded]
-    neg_line = ["__label__neg", question_decoded]
-    f.write(' '.join(pos_line) + '\n')
-    for i in other_labels:
-        if i != label:
-           f=open("{}/data.txt".format(i), "a",encoding="utf-8")
-           f.write(' '.join(neg_line) + '\n') 
- 
+leetcode_csv = pd.read_csv('updated_leetcode.csv', delimiter=',', header = None) 
     
-def anani_dagitim(cs_question_csv):
+def extract_label(cs_question_csv):
     for index, row  in cs_question_csv.iterrows():
         question = row[2]
         labels_of_hackerrank = row[3]
@@ -39,4 +25,4 @@ def anani_dagitim(cs_question_csv):
             f=open("datafinal_leetcode.txt", "a+",encoding="utf-8")
             f.write(' '.join(compact_question_line) + '\n') 
         print(index)        
-anani_dagitim(leetcode_csv)
+extract_label(leetcode_csv)
