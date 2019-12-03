@@ -125,3 +125,63 @@ def acceptFriendRequest(user):
         "success": status,
         "message": message
     }), 200
+
+
+@bluePrint.route("/searchUser", methods=["GET"])
+@isAuth(request)
+def searchUsers(user):
+
+    # Current user data
+    currentUser = User({"_id": user["_id"]}).data()
+    currentUserId = currentUser.get("_id")
+    currentUserWaitlist = currentUser.get("friendsWaitList") if currentUser.get("friendsWaitList") else []
+    currentUserFriends = currentUser.get("friends") if currentUser.get("friends") else []
+
+    # Parameters
+    page = int(request.args.get('page')) if request.args.get('page') is not None else 1
+    searchUsername = request.args.get('username')
+
+    results = User.find({"$and": [{"username": {"$regex": f"^{searchUsername}", "$options": "i"}}, {"username": {"$ne": currentUser["username"]}}]}, pageNumber = page)
+
+    # All condititons
+    resultUsers = []
+    for searchUser in results["data"]:
+
+        # Search user data
+        searchUserId = searchUser.get("_id")
+        searchUsername = searchUser.get("username")
+        searchUserWaitlist = searchUser.get("friendsWaitList") if searchUser.get("friendsWaitList") else []
+        searchUserFriends = searchUser.get("friends") if searchUser.get("friends") else []
+
+        """
+            CASE 1: Search user is in our friend list
+            CASE 2: Search user has sent friend request to us (in our waitlist)
+            CASE 3: We have sent him/her friend requets (we are in his/her waitlist)
+            CASE 4: We are not related
+
+            Note: userState will be related to case numbers
+        """
+
+        userState = 4
+        message = f"You have no connection with {searchUsername}"
+        resultUser = {"data": searchUser}
+
+        if searchUserId in currentUserFriends:
+            userState = 1
+            message = f"You are friends with {searchUsername}"
+        elif searchUserId in currentUserWaitlist:
+            userState = 2
+            message = f"{searchUsername} has sent friend request to you"
+        elif currentUserId in searchUserWaitlist:
+            userState = 3
+            message = f"You have sent friend request to {searchUsername}"
+
+        resultUser["state"] = userState
+        resultUser["message"] = message
+        resultUsers.append(resultUser)
+
+    # Response
+    return jsonify({
+        "success": True,
+        "results": resultUsers
+    })
