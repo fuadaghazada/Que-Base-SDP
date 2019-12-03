@@ -15097,9 +15097,6 @@ aacghgh
 
 Explanation 
 aab is prefix of aabcde. So set is BAD SET and it fails at string aabcde.","Data Structures,Data Structures"
- Data Structures MCQ 1,Hard,,Data Structures
- Data Structures MCQ 2,Hard,,Data Structures
- Data Structures MCQ 3,Hard,,Data Structures
 Kindergarten Adventures,Medium,"Meera teaches a class of  students, and every day in her classroom is an adventure. Today is drawing day!
 The students are sitting around a round table, and they are numbered from  to  in the clockwise direction. This means that the students are numbered , and students  and  are sitting next to each other.
 After letting the students draw for a certain period of time, Meera starts collecting their work to ensure she has time to review all the drawings before the end of the day. However, some of her students aren't finished drawing! Each student  needs  extra minutes to complete their drawing. 
