@@ -57,7 +57,7 @@ class User(Model):
     def update_one(self, updateValues):
 
         temp = deepcopy(updateValues)
-        if updateValues['password'] != vars(self)['password']:
+        if updateValues.get('password') != vars(self).get('password'):
             temp['password'] = hashPassword(temp['password'])
 
         return super().update_one(temp, COLLECTION_NAME)

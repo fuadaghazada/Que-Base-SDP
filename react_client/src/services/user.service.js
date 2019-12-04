@@ -123,7 +123,7 @@ const getWaitList = (page = null, id) => {
 
 const getFavoriteQuestions = (page = null, id) => {
 
-    let requestURL = `${USERS_API_URL}/getFavoriteQuestions`;
+    let requestURL = `${USERS_API_URL}/favoriteQuestions`;
 
     if (id && typeof(id) === 'string')
         requestURL += `?id=${id}`;

@@ -4,8 +4,6 @@ import QuestionContainer from "./QuestionContainer";
 
 import questionServices from "../../services/question.service";
 import userServices from "../../services/user.service";
-import UserPreview from '../UserPreview';
-
 
 
 /***
@@ -230,7 +228,7 @@ class FilterQuestions extends Component {
             console.log(response)
 
             this.setState({userName: response['user']['username']})
-            
+
         })
         .catch(err => {
             console.log(err);
@@ -321,7 +319,7 @@ class FilterQuestions extends Component {
 
                     {/* Submit */}
                     <button type="submit">Filter</button>
-                    
+
 
                 </form>
                 <button onClick={this.tryUser}>current User</button>
@@ -329,7 +327,6 @@ class FilterQuestions extends Component {
                 <p> {this.state.userName} </p>
                 {/* Results */}
                 {this.state.data && <QuestionContainer questions={this.state.data} page={this.state.page} handleRequest={this.handleRequest}/>}
-
             </div>
         );
     }

@@ -12,6 +12,7 @@ const NavBar = () => {
             <Link to='/'>Home</Link>
             <Link to='/uploadQuestion'>Upload Question</Link>
             <Link to='/filterQuestions'>Filter Questions</Link>
+            <Link to='/userDetails'>User Details</Link>
             <SignOut />
         </div>
     );

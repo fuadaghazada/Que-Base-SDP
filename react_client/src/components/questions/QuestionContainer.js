@@ -28,7 +28,7 @@ class QuestionContainer extends Component {
         }
     }
 
-    
+
     /**
      *  Rendering the question previews
      */
