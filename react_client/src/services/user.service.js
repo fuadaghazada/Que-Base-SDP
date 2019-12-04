@@ -126,5 +126,7 @@ const getWaitList = (page = null, id) => {
 
 export default {
     getUser: getUser,
-    updateUser: updateUser
+    updateUser: updateUser,
+    getFriends: getFriends,
+    getWaitList: getWaitList
 };
