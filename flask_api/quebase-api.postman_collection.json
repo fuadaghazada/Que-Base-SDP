@@ -1,7 +1,7 @@
 {
 	"info": {
-		"_postman_id": "26c0e5ff-3d86-4c07-b3a5-91688b7f1113",
-		"name": "quebase-api",
+		"_postman_id": "f3764dcc-c21e-44df-998e-f458195a86c8",
+		"name": "quebase-api copy",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -447,6 +447,93 @@
 						{
 							"key": "id",
 							"value": "5de5544aee27cc3e3f9f2521"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Friends",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/users/friends?id=5de69fe6b12a8f448b3fb4d5&page=1",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"users",
+						"friends"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "5de69fe6b12a8f448b3fb4d5"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Wait List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/users/waitlist?id=5de6a6cf8a2cffb73f7281c1&page=1",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"users",
+						"waitlist"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "5de6a6cf8a2cffb73f7281c1"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User Questions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/questions/userQuestions?id=5de6abd61676fbeb00812ede&page=1",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"questions",
+						"userQuestions"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "5de6abd61676fbeb00812ede"
+						},
+						{
+							"key": "page",
+							"value": "1"
 						}
 					]
 				}
