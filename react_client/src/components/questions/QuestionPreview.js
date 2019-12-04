@@ -5,7 +5,7 @@ import React from 'react';
 */
 
 const QuestionPreview = (props) => {
-
+    
     const {title, viewCount} = props['data'];
 
     return (

@@ -151,7 +151,7 @@ const getFavoriteQuestions = (page = null, id) => {
 
 const searchUsers = (page = null, username) => {
 
-    let requestURL = `${USERS_API_URL}/searchUsers`;
+    let requestURL = `${USERS_API_URL}/searchUser`;
 
     if (username && typeof(username) === 'string')
         requestURL += `?username=${username}`;
@@ -177,7 +177,7 @@ const searchUsers = (page = null, username) => {
  *  [POST]
  */
 
-const acceptFriendRequest = (data, id) => {
+const acceptFriendRequest = (id) => {
 
     // Preparing the request URL
     let requestURL = `${USERS_API_URL}/acceptFriend`;
@@ -192,8 +192,7 @@ const acceptFriendRequest = (data, id) => {
     return axios({
         method: 'post',
         headers: headers,
-        url: requestURL,
-        data: data
+        url: requestURL
     })
         .then(response => {
 
@@ -206,7 +205,7 @@ const acceptFriendRequest = (data, id) => {
  *  [POST]
  */
 
-const sendFriendRequest = (data, id) => {
+const sendFriendRequest = (id) => {
 
     // Preparing the request URL
     let requestURL = `${USERS_API_URL}/addFriend`;
@@ -221,8 +220,7 @@ const sendFriendRequest = (data, id) => {
     return axios({
         method: 'post',
         headers: headers,
-        url: requestURL,
-        data: data
+        url: requestURL
     })
         .then(response => {
 
