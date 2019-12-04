@@ -121,6 +121,61 @@ const getUserQuestions = (id, page = null) => {
 };
 
 
+/**
+ *  [POST]
+ */
+
+const favoriteQuestion = (data, id) => {
+
+    // Preparing the request URL
+    let requestURL = `${QUESTIONS_API_URL}/favoriteQuestion`;
+
+    if (id && typeof(id) === 'string')
+        requestURL += `?id=${id}`;
+
+    // Headers
+    const headers = {...{'Content-Type': 'application/json'}, ...getHeaders.auth()};
+
+    // Sending POST request
+    return axios({
+        method: 'post',
+        headers: headers,
+        url: requestURL,
+        data: data
+    })
+        .then(response => {
+
+            return response.data;
+        })
+        .catch(err => console.log(err));
+};
+
+/**
+ *  [POST]
+ */
+
+const postInsertQuestion = (data) => {
+
+    // Preparing the request URL
+    let requestURL = `${QUESTIONS_API_URL}/insertQuestion`;
+
+    // Headers
+    const headers = {...{'Content-Type': 'application/json'}, ...getHeaders.auth()};
+
+    // Sending POST request
+    return axios({
+        method: 'post',
+        headers: headers,
+        url: requestURL,
+        data: data
+    })
+        .then(response => {
+
+            return response.data;
+        })
+        .catch(err => console.log(err));
+};
+
 
 
 /**
@@ -131,5 +186,7 @@ export default {
     findSimilarQuestions: findSimilarQuestions,
     getQuestions: getQuestions,
     getQuestion: getQuestion,
-    getUserQuestions: getUserQuestions
+    getUserQuestions: getUserQuestions,
+    favoriteQuestion: favoriteQuestion,
+    postInsertQuestion: postInsertQuestion
 };

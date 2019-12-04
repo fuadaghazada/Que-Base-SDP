@@ -55,7 +55,12 @@ class User(Model):
         :param: updateValues - new values for update
     '''
     def update_one(self, updateValues):
-        return super().update_one(updateValues, COLLECTION_NAME)
+
+        temp = deepcopy(updateValues)
+        if updateValues['password'] != vars(self)['password']:
+            temp['password'] = hashPassword(temp['password'])
+
+        return super().update_one(temp, COLLECTION_NAME)
 
 
     '''
