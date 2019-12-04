@@ -61,6 +61,62 @@ const updateUser = (data) => {
         .catch(err => console.log(err));
 };
 
+/**
+ *  [GET]
+ */
+
+const getFriends = (page = null, id) => {
+
+    let requestURL = `${USERS_API_URL}/getFriends`;
+
+    if (id && typeof(id) === 'string')
+        requestURL += `?id=${id}`;
+
+    if (page && typeof(page) === 'number')
+        requestURL += `&page=${page}`;
+
+    // Headers
+    const headers = {...{'Content-Type': 'application/json'}, ...getHeaders.auth()};
+
+    return axios({
+        method: 'get',
+        headers: headers,
+        url: requestURL
+    })
+        .then(response => {
+            return response.data;
+        })
+        .catch(err => console.log(err));
+};
+
+/**
+ *  [GET]
+ */
+
+const getWaitList = (page = null, id) => {
+
+    let requestURL = `${USERS_API_URL}/getWaitList`;
+
+    if (id && typeof(id) === 'string')
+        requestURL += `?id=${id}`;
+
+    if (page && typeof(page) === 'number')
+        requestURL += `&page=${page}`;
+
+    // Headers
+    const headers = {...{'Content-Type': 'application/json'}, ...getHeaders.auth()};
+
+    return axios({
+        method: 'get',
+        headers: headers,
+        url: requestURL
+    })
+        .then(response => {
+            return response.data;
+        })
+        .catch(err => console.log(err));
+};
+
 
 
 
