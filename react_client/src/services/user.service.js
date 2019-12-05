@@ -67,7 +67,7 @@ const updateUser = (data) => {
 
 const getFriends = (page = null, id) => {
 
-    let requestURL = `${USERS_API_URL}/getFriends`;
+    let requestURL = `${USERS_API_URL}/friends`;
 
     if (id && typeof(id) === 'string')
         requestURL += `?id=${id}`;

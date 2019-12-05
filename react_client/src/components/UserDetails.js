@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 import authServices from '../services/auth.service';
 import userServices from '../services/user.service';
 import QuestionContainer from "./questions/QuestionContainer";
+import UserContainer from "./UserContainer";
 
 
 /***
@@ -18,6 +19,7 @@ class UserDetails extends Component {
 
             userData: null,
             favoriteQuestions: null,
+            friends: null,
 
             isLoading: false,
             error: null,
@@ -85,6 +87,30 @@ class UserDetails extends Component {
         }
     };
 
+    getFriends = (page = 1) => {
+
+        if (this.state.userData) {
+
+            const userId = this.state.userData['_id'];
+
+            // Request
+            this.setState({isLoading: true})
+            userServices.getFriends(page, userId)
+                .then(response => {
+
+                    if (response['success']) {
+                        this.setState({
+                            friends: response.result,
+                            isLoading: false
+                        })
+                    }
+                })
+                .catch(err => {
+                    console.log(err);
+                })
+        }
+    };
+
     render(){
 
         if (this.state.userData) {
@@ -99,7 +125,8 @@ class UserDetails extends Component {
 
                     <button onClick={this.getQuestions}>Get favorite Questions</button>
                     {this.state.favoriteQuestions && <QuestionContainer questions={this.state.favoriteQuestions} page={this.state.page} handleRequest={this.getQuestions}/>}
-
+                    <button onClick={this.getFriends}>Get Friends</button>
+                    {this.state.friends && <UserContainer users={this.state.friends} page={this.state.page} handleRequest={this.getFriends}/>}
 
                 </div>
 
