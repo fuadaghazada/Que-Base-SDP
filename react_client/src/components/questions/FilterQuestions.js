@@ -4,6 +4,7 @@ import QuestionContainer from "./QuestionContainer";
 
 import questionServices from "../../services/question.service";
 import userServices from "../../services/user.service";
+import { Link } from 'react-router-dom';
 
 
 /***
@@ -323,7 +324,12 @@ class FilterQuestions extends Component {
 
                 </form>
                 <button onClick={this.tryUser}>current User</button>
-
+                <Link to={{
+                pathname: '/questionDetails',
+                 state: {
+                questionId: "5ddff1e88ef807c6da0d5b90"
+                }
+                }}>Go to Question</Link>
                 <p> {this.state.userName} </p>
                 {/* Results */}
                 {this.state.data && <QuestionContainer questions={this.state.data} page={this.state.page} handleRequest={this.handleRequest}/>}

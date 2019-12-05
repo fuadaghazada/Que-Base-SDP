@@ -8,6 +8,7 @@ import Home from "./components/Home";
 import UploadQuestion from "./components/questions/UploadQuestion";
 import FilterQuestions from "./components/questions/FilterQuestions";
 import UserDetails from "./components/UserDetails";
+import QuestionDetails from "./components/questions/QuestionDetails";
 
 /***
  *  Application interface
@@ -26,6 +27,7 @@ const App = () => {
         <PrivateRoute path={'/uploadQuestion'} component={UploadQuestion} />
         <PrivateRoute path={'/filterQuestions'} component={FilterQuestions} />
         <PrivateRoute path={'/userDetails'} component={UserDetails} />
+        <PrivateRoute path={'/questionDetails'} component={QuestionDetails} />
 
       </Router>
   );
