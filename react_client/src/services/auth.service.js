@@ -73,8 +73,10 @@ const getUser = () => {
 
         try {
             const decodedUser = jwt_decode(userToken);
-
-            if (new Date().getTime() < decodedUser.exp) {
+            const date = new Date();
+            const dateNow = date.getTime() / 1000;
+            
+            if (decodedUser.exp < dateNow) {
                 localStorage.removeItem('userToken');
                 return null;
             }
