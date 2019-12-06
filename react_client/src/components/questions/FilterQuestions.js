@@ -124,7 +124,7 @@ class FilterQuestions extends Component {
         this.setState(prevState => ({
             [name]: {
                 ...prevState[name],
-                value: value
+                value: parseInt(value)
             }
         }));
     };
@@ -200,6 +200,8 @@ class FilterQuestions extends Component {
         // Data body for request
         const data = this.state;
 
+        console.log(data);
+
         delete data.error;
         delete data.data;
         delete data.isLoading;
@@ -220,20 +222,6 @@ class FilterQuestions extends Component {
             .catch(err => {
                 console.log(err);
             });
-    };
-
-    tryUser = () => {
-
-        userServices.getUser("5ddfad1aa3343b262dcaf0a3")
-        .then(response => {
-            console.log(response)
-
-            this.setState({userName: response['user']['username']})
-
-        })
-        .catch(err => {
-            console.log(err);
-        });
     };
 
     render() {
@@ -321,16 +309,8 @@ class FilterQuestions extends Component {
                     {/* Submit */}
                     <button type="submit">Filter</button>
 
-
                 </form>
-                <button onClick={this.tryUser}>current User</button>
-                <Link to={{
-                pathname: '/questionDetails',
-                 state: {
-                questionId: "5ddff1e88ef807c6da0d5b90"
-                }
-                }}>Go to Question</Link>
-                <p> {this.state.userName} </p>
+
                 {/* Results */}
                 {this.state.data && <QuestionContainer questions={this.state.data} page={this.state.page} handleRequest={this.handleRequest}/>}
             </div>

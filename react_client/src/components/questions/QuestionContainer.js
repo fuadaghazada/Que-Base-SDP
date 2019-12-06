@@ -1,7 +1,14 @@
 import React, { Component } from 'react';
-import QuestionPreview from "./QuestionPreview";
+import {
+    Container,
+    Typography,
+    Button,
+    ButtonGroup
+} from '@material-ui/core';
 
+import QuestionPreview from "./QuestionPreview";
 import pagination from '../../utils/pagination';
+
 
 /***
  *  Filter questions component
@@ -37,7 +44,7 @@ class QuestionContainer extends Component {
         const data = this.props['questions']['data'];
 
         if (data.length === 0)
-            return <p>No results</p>;
+            return <Typography variant={"h5"}>No results</Typography>;
 
         return data.map(question => (
             <QuestionPreview
@@ -75,32 +82,39 @@ class QuestionContainer extends Component {
         return pageNumbers.map(number => {
 
             if (number) {
-                return <button
+                return <Button
                             key={number}
                             value={number}
                             onClick={() => this.updatePageNumber(number)}
                         >
                             {number}
-                        </button>
+                        </Button>
             }
-            return <button key={number}>...</button>
+            return <Button key={number}>...</Button>
         })
     };
 
     render() {
         if (this.state.hasData) {
             return (
-                <div>
 
-                    <h1>Questions</h1>
+                <Container maxWidth={"md"}>
+
+                    {/* Header */}
+                    <Typography variant={"h2"}>Questions</Typography>
+
+                    {/* Question Previews */}
                     {this.renderQuestionPreviews()}
-                    {this.renderPaginationLinks()}
-                </div>
+
+                    {/* Pagination Buttons */}
+                    <ButtonGroup size="small" aria-label="small outlined button group">
+                        {this.renderPaginationLinks()}
+                    </ButtonGroup>
+                </Container>
             );
         }
 
-        return <div></div>
-
+        return null;
     }
 
 }

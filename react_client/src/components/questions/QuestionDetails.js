@@ -23,17 +23,7 @@ class QuestionDetails extends Component {
     componentDidMount() {
 
         try {
-
-            
-            const questionId = this.props['location']['state']['questionId'];
-            console.log(questionId)
-             
-            //else {
-                //const user = authServices.getUser();
-                //const userData = user['user']['sub'];
-               // const userDataJson = JSON.parse(userData)
-               // userId = userDataJson['_id'];
-           // }
+            const questionId = this.props.match.params.id;
 
             this.setState({isLoading: true});
             questionServices.getQuestion(questionId)
@@ -42,7 +32,7 @@ class QuestionDetails extends Component {
                     if (response['success']) {
                         this.setState({
                             isLoading: false,
-                            questionData: response.question
+                            questionData: response['question']
                         });
                     }
                 })
@@ -69,7 +59,6 @@ class QuestionDetails extends Component {
                     <p>{body}</p>
                     <p>Course: {source.course} University: {source.university} </p>
                 </div>
-
             )
         }
 

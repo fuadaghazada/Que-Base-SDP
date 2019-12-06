@@ -27,7 +27,7 @@ const App = () => {
         <PrivateRoute path={'/uploadQuestion'} component={UploadQuestion} />
         <PrivateRoute path={'/filterQuestions'} component={FilterQuestions} />
         <PrivateRoute path={'/userDetails'} component={UserDetails} />
-        <PrivateRoute path={'/questionDetails'} component={QuestionDetails} />
+        <PrivateRoute path={'/questionDetails/:id'} component={QuestionDetails} />
 
       </Router>
   );
