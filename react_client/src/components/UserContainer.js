@@ -1,43 +1,29 @@
-import React, { Component } from 'react';
+import React from 'react';
+import {Typography} from "@material-ui/core";
+
+import CustomContainer from './custom/CustomContainer';
 import UserPreview from "./UserPreview";
 
-import pagination from '../utils/pagination';
 
-/***
- *  Filter questions component
+/**
+ *  User Container
  */
 
-class UserContainer extends Component {
+const UserContainer = (props) => {
 
-    /**
-     *  Constructor
-     */
-
-    constructor(props) {
-        super(props);
-        this.state = {
-
-            hasData: false,
-            numberOfPages: null,
-        };
-    }
-
-    componentDidMount() {
-        if (this.props['users'] && this.props['handleRequest'] ) {
-            this.setState({hasData: true})
-        }
-    }
-
+    const {users, handleRequest, page} = props;
+    const numberOfPages = users['numberOfPages'];
 
     /**
      *  Rendering the question previews
      */
 
-    renderUserPreviews = () => {
-        const data = this.props['users']['data'];
+    const renderUserPreviews = () => {
+
+        const data = users['data'];
 
         if (data.length === 0)
-            return <p>No results</p>;
+            return <Typography variant={"h5"}>No results</Typography>;
 
         return data.map(user => (
             <UserPreview
@@ -47,63 +33,17 @@ class UserContainer extends Component {
         ))
     };
 
-
-    /**
-     *  Updating the page - updating the data according to it
-     *
-     *  @param number - page number
-     */
-
-    updatePageNumber = (number) => {
-
-        const handleRequest = this.props['handleRequest'];
-        handleRequest(number);
-    };
-
-
-    /**
-     *  Rendering the pagination buttons/links
-     */
-
-    renderPaginationLinks = () => {
-
-        const currentPage = this.props['page'];
-        const numberOfPages =  this.props['users']['numberOfPages'];
-        const pageNumbers = pagination.generatePaginationList(numberOfPages, currentPage);
-
-        // Creating buttons from page numbers
-        return pageNumbers.map(number => {
-
-            if (number) {
-                return <button
-                            key={number}
-                            value={number}
-                            onClick={() => this.updatePageNumber(number)}
-                        >
-                            {number}
-                        </button>
-            }
-            return <button key={number}>...</button>
-        })
-    };
-
-    render() {
-        if (this.state.hasData) {
-            return (
-                <div>
-
-                    <h1>Users</h1>
-                    {this.renderUserPreviews()}
-                    {this.renderPaginationLinks()}
-                </div>
-            );
-        }
-
-        return <div></div>
-
-    }
-
-}
+    // Returning the render stuff
+    return (
+        <CustomContainer header={"Users"}
+                         page={page}
+                         numberOfPages={numberOfPages}
+                         handleRequest={handleRequest}
+                         renderPreviews={renderUserPreviews}
+        >
+        </CustomContainer>
+    );
+};
 
 // Exporting the component
 export default UserContainer

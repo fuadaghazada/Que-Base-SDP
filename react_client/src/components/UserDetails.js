@@ -2,8 +2,9 @@ import React, {Component} from 'react';
 
 import authServices from '../services/auth.service';
 import userServices from '../services/user.service';
-import QuestionContainer from "./questions/QuestionContainer";
+
 import UserContainer from "./UserContainer";
+import QuestionContainer from "./questions/QuestionContainer";
 
 
 /***
@@ -124,10 +125,10 @@ class UserDetails extends Component {
                     <h2>{email}</h2>
 
                     <button onClick={this.getQuestions}>Get favorite Questions</button>
-                    {this.state.favoriteQuestions && <QuestionContainer questions={this.state.favoriteQuestions} page={this.state.page} handleRequest={this.getQuestions}/>}
+                    {this.state.favoriteQuestions && <QuestionContainer questions={this.state.favoriteQuestions} page={this.state.page} handleRequest={this.handleRequest}/>}
+
                     <button onClick={this.getFriends}>Get Friends</button>
                     {this.state.friends && <UserContainer users={this.state.friends} page={this.state.page} handleRequest={this.getFriends}/>}
-
                 </div>
 
             )
