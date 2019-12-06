@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import {
@@ -54,3 +55,25 @@ const QuestionPreview = (props) => {
 export default QuestionPreview;
 
 
+=======
+import React from 'react';
+
+/**
+    Question Preview (functional component)
+*/
+
+const QuestionPreview = (props) => {
+    
+    const {title, viewCount} = props['data'];
+
+    return (
+        <div>
+            <h2>{title}</h2>
+            <p>Views: {viewCount}</p>
+        </div>
+    );
+};
+
+// Exporting the component
+export default QuestionPreview;
+>>>>>>> Stashed changes
