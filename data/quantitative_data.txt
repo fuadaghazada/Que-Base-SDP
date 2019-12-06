@@ -1,0 +1,12 @@
+raw data:
+leetcode- 959 39 labels
+hackerrank-563 133 labels
+
+After preprocessing(delete labels with less than 50 instances leetcode, 30 for hackerrank):
+leetcode- 751 10 labels
+hackerrank-442 11 labels
+5 common labels(Tree, DP, Greedy, Math, String)
+
+%80 train/%20 test
+
+1000 epoch merged data: 52.7 pre, 38.4 recall
