@@ -26,7 +26,7 @@ const App = () => {
         <PrivateRoute path={'/'} component={Home} exact />
         <PrivateRoute path={'/uploadQuestion'} component={UploadQuestion} />
         <PrivateRoute path={'/filterQuestions'} component={FilterQuestions} />
-        <PrivateRoute path={'/userDetails'} component={UserDetails} />
+        <PrivateRoute path={'/userDetails/:id?'} component={UserDetails} />
         <PrivateRoute path={'/questionDetails/:id'} component={QuestionDetails} />
 
       </Router>

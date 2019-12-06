@@ -31,11 +31,9 @@ class UserDetails extends Component {
     componentDidMount() {
 
         try {
-
             let userId;
-
-            if (this.props['userId']) {
-                userId = this.props['userId'];
+            if (this.props.match.params.id) {                
+                userId = this.props.match.params.id;
 
             } else {
                 const user = authServices.getUser();
