@@ -125,7 +125,7 @@ class UserDetails extends Component {
                     <h2>{email}</h2>
 
                     <button onClick={this.getQuestions}>Get favorite Questions</button>
-                    {this.state.favoriteQuestions && <QuestionContainer questions={this.state.favoriteQuestions} page={this.state.page} handleRequest={this.handleRequest}/>}
+                    {this.state.favoriteQuestions && <QuestionContainer questions={this.state.favoriteQuestions} page={this.state.page} handleRequest={this.getQuestions}/>}
 
                     <button onClick={this.getFriends}>Get Friends</button>
                     {this.state.friends && <UserContainer users={this.state.friends} page={this.state.page} handleRequest={this.getFriends}/>}

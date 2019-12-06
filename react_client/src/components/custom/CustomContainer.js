@@ -23,10 +23,6 @@ const CustomContainer = (props) => {
      *  @param number - page number
      */
 
-    const updatePageNumber = (number) => {
-        handleRequest(number);
-    };
-
 
     /**
      *  Rendering the pagination buttons/links
@@ -43,7 +39,7 @@ const CustomContainer = (props) => {
                 return <Button
                             key={number}
                             value={number}
-                            onClick={() => updatePageNumber(number)}
+                            onClick={() => handleRequest(number)}
                         >
                             {number}
                         </Button>
