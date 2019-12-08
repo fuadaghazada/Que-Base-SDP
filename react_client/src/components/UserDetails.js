@@ -5,9 +5,12 @@ import userServices from '../services/user.service';
 
 import UserContainer from "./UserContainer";
 import QuestionContainer from "./questions/QuestionContainer";
+import Paper from '@material-ui/core/Paper';
+import Tabs from '@material-ui/core/Tabs';
+import Tab from '@material-ui/core/Tab';
 
 
-/***
+/*
  *  User details
  */
 
@@ -21,6 +24,12 @@ class UserDetails extends Component {
             userData: null,
             favoriteQuestions: null,
             friends: null,
+            container: null,
+
+            username: "",
+            firstname: "",
+            lastname: "",
+            email: "",
 
             isLoading: false,
             error: null,
@@ -110,23 +119,54 @@ class UserDetails extends Component {
         }
     };
 
+    showDetails = (event, newValue) => {
+        console.log(newValue);
+        if(newValue === 0)
+        {
+            const {username, firstname, lastname, email} = this.state.userData;
+            this.setState({friends: null, favoriteQuestions: null})
+            this.setState({username: username, firstname: firstname, lastname: lastname, email: email})
+
+        }
+        if(newValue === 1)
+        {
+            this.setState({friends: null, username: null, firstname: null, lastname: null, email: null})
+            this.getQuestions()
+        }
+        if(newValue === 2)
+        {
+            this.setState({favoriteQuestions: null, username: null, firstname: null, lastname: null, email: null})
+            this.getFriends()
+        }
+        
+    }
+
     render(){
 
         if (this.state.userData) {
 
-            const {username, firstname, lastname, email} = this.state.userData;
-
             return (
                 <div>
-                    <h1>{firstname} {lastname}</h1>
-                    <h2>{username}</h2>
-                    <h2>{email}</h2>
-
-                    <button onClick={this.getQuestions}>Get favorite Questions</button>
+                    
+                    <Tabs
+                        indicatorColor="primary"
+                        textColor="primary"
+                        aria-label="disabled tabs example"
+                        onChange = {this.showDetails}
+                      >
+                        <Tab label="Overview" />
+                        <Tab label="Friends" />
+                        <Tab label="Favorite Questions" />
+                        {this.state.container}
+                      </Tabs>    
+                    <h1>{this.state.firstname} {this.state.lastname}</h1>
+                    <h2>{this.state.username}</h2>
+                    <h2>{this.state.email}</h2>                
                     {this.state.favoriteQuestions && <QuestionContainer questions={this.state.favoriteQuestions} page={this.state.page} handleRequest={this.getQuestions}/>}
-
-                    <button onClick={this.getFriends}>Get Friends</button>
                     {this.state.friends && <UserContainer users={this.state.friends} page={this.state.page} handleRequest={this.getFriends}/>}
+                    <Paper square>
+                      
+                    </Paper>
                 </div>
 
             )
