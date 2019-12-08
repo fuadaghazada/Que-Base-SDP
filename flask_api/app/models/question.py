@@ -102,7 +102,6 @@ class Question(Model):
     def find(query, sortingAttr = "_id", sortOrder = 1, pageNumber = 1, type = QuestionType.SOC):
         db = getDb()
         collectionName = getCollectionName(type)
-
         db[collectionName].create_index([("body", "text")])
 
         return Model.find(collectionName, query, sortingAttr, sortOrder, pageNumber)

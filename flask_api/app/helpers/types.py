@@ -24,3 +24,19 @@ def getCollectionName(type = QuestionType.SOC):
         collectionName = ALGO_COLLECTION_NAME
 
     return collectionName
+
+'''
+    Getting the type from the sent request
+'''
+def getTypeFromRequest(request):
+
+    type = request.args.get('type')
+
+    if type and type == "1":
+        type = QuestionType.ALGO
+    elif type and type == "0":
+        type = QuestionType.SOC
+    else:
+        type = QuestionType.SOC
+
+    return type

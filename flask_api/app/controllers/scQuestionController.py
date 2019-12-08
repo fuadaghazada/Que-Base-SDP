@@ -76,6 +76,13 @@ def getSimilarQuestions(user):
         # Filtering process
         filterData, message = createFilterQuery(filtering)
 
+        if not filterData:
+            # Failed
+            return jsonify({
+                'success': False,
+                "message": message
+            })
+
     # Result questions
     results = searchedQuestion.get(threshold, pageNumber=page, filterData=filterData)
     questions = results["data"]

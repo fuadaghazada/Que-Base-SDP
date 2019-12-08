@@ -15,14 +15,22 @@ def createFilterQuery(attr, type = QuestionType.SOC):
     query.addNumberComparisonField('favCount', attr['favCount'])
     query.addSourceField(attr['source'])
 
-    if type == QuestionType.SOC:
-        query.addElemMatchFields('entity_tags', attr['entityTag'])
-        query.addElemMatchFields('topics', attr['topic'])
-        query.addElemMatchFields('categories', attr['category'])
+    # SOC filters
+    try:
+        if type == QuestionType.SOC:
+            query.addElemMatchFields('entity_tags', attr['entityTag'])
+            query.addElemMatchFields('topics', attr['topic'])
+            query.addElemMatchFields('categories', attr['category'])
+    except Exception as e:
+        raise e
 
-    elif type == QuestionType.ALGO:
-        query.addStringField('level', attr['level'])
-        query.addElemMatchFields('labels', attr['labels'])
+    # ALGO filters
+    try:
+        if type == QuestionType.ALGO:
+            query.addStringField('level', attr['level'])
+            # query.addLabelField('labels', attr['labels'])
+    except Exception as e:
+        raise e
 
     sortingProperties = attr['sort']
     sortingAttr = sortingProperties['attr']

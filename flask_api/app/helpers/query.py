@@ -72,6 +72,11 @@ class CustomQueryGenerator:
             self.conditions.append(elemMatchquery)
 
 
+    def addLabelField(self, label):
+        elemMatchQuery = {"labels": {"$elemMatch": {"$eq": label}}}
+        self.conditions.append(elemMatchQuery)
+
+
     def addSourceField(self, fields):
 
         # In the source object, there are the following fields

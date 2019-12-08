@@ -559,7 +559,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"body\": \"There are 𝑁 cities in the country of Numbata, numbered from 1 to 𝑁. Currently, there is no road connecting them. Therefore, each of these 𝑁 cities proposes a road candidate to be constructed. City 𝑖 likes to connect with city 𝐴𝑖, so city 𝑖 proposes to add a direct bidirectional road connecting city 𝑖 and city 𝐴𝑖. It is guaranteed that no two cities like to connect with each other. In other words, there is no pair of integers 𝑖 and 𝑗 where 𝐴𝑖=𝑗 and 𝐴𝑗=𝑖. It is also guaranteed that any pair of cities are connected by a sequence of road proposals. In other words, if all proposed roads are constructed, then any pair of cities are connected by a sequence of constructed road. City 𝑖 also prefers the road to be constructed using a specific material. Each material can be represented by an integer (for example, 0 for asphalt, 1 for wood, etc.). The material that can be used for the road connecting city 𝑖 and city 𝐴𝑖 is represented by an array 𝐵𝑖 containing 𝑀𝑖 integers: [(𝐵𝑖)1,(𝐵𝑖)2,…,(𝐵𝑖)𝑀𝑖]. This means that the road connecting city 𝑖 and city 𝐴𝑖 can be constructed with either of the material in 𝐵𝑖.There are 𝐾 workers to construct the roads. Each worker is only familiar with one material, thus can only construct a road with a specific material. In particular, the 𝑖𝑡ℎ worker can only construct a road with material 𝐶𝑖. Each worker can only construct at most one road. You want to assign each worker to construct a road such that any pair of cities are connected by a sequence of constructed road.\"\n}",
+					"raw": "{\n\t\"body\": \"There are 𝑁 cities in the country of Numbata, numbered from 1 to 𝑁. Currently, there is no road connecting them. Therefore, each of these 𝑁 cities proposes a road candidate to be constructed. City 𝑖 likes to connect with city 𝐴𝑖, so city 𝑖 proposes to add a direct bidirectional road connecting city 𝑖 and city 𝐴𝑖. It is guaranteed that no two cities like to connect with each other. In other words, there is no pair of integers 𝑖 and 𝑗 where 𝐴𝑖=𝑗 and 𝐴𝑗=𝑖. It is also guaranteed that any pair of cities are connected by a sequence of road proposals. In other words, if all proposed roads are constructed, then any pair of cities are connected by a sequence of constructed road. City 𝑖 also prefers the road to be constructed using a specific material. Each material can be represented by an integer (for example, 0 for asphalt, 1 for wood, etc.). The material that can be used for the road connecting city 𝑖 and city 𝐴𝑖 is represented by an array 𝐵𝑖 containing 𝑀𝑖 integers: [(𝐵𝑖)1,(𝐵𝑖)2,…,(𝐵𝑖)𝑀𝑖]. This means that the road connecting city 𝑖 and city 𝐴𝑖 can be constructed with either of the material in 𝐵𝑖.There are 𝐾 workers to construct the roads. Each worker is only familiar with one material, thus can only construct a road with a specific material. In particular, the 𝑖𝑡ℎ worker can only construct a road with material 𝐶𝑖. Each worker can only construct at most one road. You want to assign each worker to construct a road such that any pair of cities are connected by a sequence of constructed road.\",\n\t\n\t\"filter\": {\n\t\t\"body\": \"\",\n\t\t\"source\": {\n\t\t\t\"reference\": \"\"\n\t\t},\n\t\t\"viewCount\": {\n\t\t\t\"comparisonOperator\": \"gte\",\n\t\t\t\"value\": -1\n\t\t},\n\t\t\"favCount\": {\n\t\t\t\"comparisonOperator\": \"gte\",\n\t\t\t\"value\": -1\n\t\t},\n\t\t\"level\": \"\",\n\t\t\"labels\": [],\n\t\t\"sort\": {\n\t\t\t\"attr\": \"\",\n\t\t\t\"order\": 1\n\t\t}\n\t}\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -599,7 +599,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"filename\": \"final_hackerrank.csv\",\n\t\"source\": {\n\t\t\"reference\": \"Hackerrank\"\n\t}\n}",
+					"raw": "{\n\t\"filename\": \"final_leetcode.csv\",\n\t\"source\": {\n\t\t\"reference\": \"Leetcode\"\n\t}\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -615,6 +615,52 @@
 					"path": [
 						"admin",
 						"insertAlgoQuestion"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find Similiar Questions Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzUzODMwNjUsImlhdCI6MTU3NTI5NjY2NSwic3ViIjoie1wiX2lkXCI6IFwiNWRkZDE0NzljODY1MTg2MGYyOGNiMWQzXCIsIFwiZmlyc3RuYW1lXCI6IFwiRnVhZFwiLCBcImxhc3RuYW1lXCI6IFwiQWdoYXphZGFcIiwgXCJ1c2VybmFtZVwiOiBcImZ1YWRhZ2hhemFkYVwiLCBcImVtYWlsXCI6IFwiZnVhZEBnbWFpbC5jb21cIiwgXCJmYXZvcml0ZVF1ZXN0aW9uc1wiOiBbXX0ifQ.Bj_uAPpoKZsvL_uzaFHZoR_TciiuaqwEWHTdKSulXbg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"body\": \"Society brings about acceptance of basic norms through techniques and strategies for preventing deviant human behavior. This process is termed a. stigmatization. b. labeling. c. law. d. social control\",\n\t\n\t\n\t\"filter\": {\n\t\t\"body\": \"Milgram\",\n\t\t\"source\": {\n\t\t\t\"reference\": \"\",\n\t\t\t\"university\": \"\",\n\t\t\t\"course\": \"\"\n\t\t},\n\t\t\"viewCount\": {\n\t\t\t\"comparisonOperator\": \"gte\",\n\t\t\t\"value\": -1\n\t\t},\n\t\t\"favCount\": {\n\t\t\t\"comparisonOperator\": \"gte\",\n\t\t\t\"value\": -1\n\t\t},\n\t\t\"entityTag\": {\n\t\t\t\"logicalOp\": \"or\",\n\t\t\t\"stringsToMatch\": []\n\t\t},\n\t\t\"topic\": {\n\t\t\t\"logicalOp\": \"and\",\n\t\t\t\"stringsToMatch\": []\n\t\t},\n\t\t\"category\": {\n\t\t\t\"logicalOp\": \"and\",\n\t\t\t\"stringsToMatch\": []\n\t\t},\n\t\t\"sort\": {\n\t\t\t\"attr\": \"_id\",\n\t\t\t\"order\": 1\n\t\t}\n\t}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/scQuestions/findSimilarQuestions?page=1",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"scQuestions",
+						"findSimilarQuestions"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						}
 					]
 				}
 			},

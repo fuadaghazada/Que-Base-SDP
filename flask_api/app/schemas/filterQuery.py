@@ -1,5 +1,7 @@
 from marshmallow import Schema, fields, validate
 
+from app.helpers.types import QuestionType
+
 '''
     Schema for filter queries
 '''
@@ -9,11 +11,14 @@ class FilterQuerySchema(Schema):
     source = fields.Dict(required = True)
     viewCount = fields.Dict(required = True)
     favCount = fields.Dict(required = True)
-    entityTag = fields.Dict(required = True)
-    topic = fields.Dict(required = True)
-    category = fields.Dict(required = True)
     sort = fields.Dict(required = True)
 
+    entityTag = fields.Dict(required = False)
+    topic = fields.Dict(required = False)
+    category = fields.Dict(required = False)
+
+    labels = fields.List(fields.String(), required = False)
+    level = fields.Str(required = False)
 
 '''
 	Validating the filter query using the schema above
