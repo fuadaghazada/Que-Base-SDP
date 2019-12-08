@@ -1,4 +1,5 @@
 import sys
+import pandas as pd
 
 SPLITTER = "!!!"
 
@@ -17,6 +18,32 @@ def readQuestions(filename):
 
         return questions
 
+    except Exception as e:
+        raise
+        return []
+
+
+'''
+    Read the programming questions from csv file
+
+    :param: (str) filename: the given csv file
+'''
+def readProgrammingQuestions(filename):
+
+    try:
+        # Loading
+        df = pd.read_csv(f'../algo_questions/{filename}', header = None)
+        if len(df.columns) > 4:
+            df.drop(df.columns[4], axis = 1, inplace = True)
+        df.columns = ["title", "level", "body", "labels"]
+
+        questions = list(map(lambda res: {'title': res[1]['title'],
+                                          'body': res[1]['body'],
+                                          'level': res[1]['level'],
+                                          'labels': res[1]['labels'].split(',')
+                                         }, df.iterrows()))
+        return questions
+        
     except Exception as e:
         raise
         return []

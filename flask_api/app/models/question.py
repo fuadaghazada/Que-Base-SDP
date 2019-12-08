@@ -5,10 +5,8 @@ from app.utils.db import getDb
 from app.utils.titleGeneration import generateTitleFromText
 from app.helpers.types import QuestionType
 from app.helpers.analyze import analyzeQuestion
+from app.helpers.types import getCollectionName
 
-
-ALG_COLLECTION_NAME = "algQuestions"
-SOC_COLLECTION_NAME = "questions"
 
 '''
     Model class for question
@@ -22,7 +20,7 @@ class Question(Model):
     def __init__(self, question, type = QuestionType.SOC):
 
         # Determining the collection name first
-        collectionName = SOC_COLLECTION_NAME if type == QuestionType.SOC else ALG_COLLECTION_NAME
+        collectionName = getCollectionName(type)
 
         super().__init__(question, collectionName)
 
@@ -33,6 +31,10 @@ class Question(Model):
             self.userId = question['userId'] if question.get('userId') else None
             self.viewCount = question['viewCount'] if question.get('viewCount') else 0
             self.favCount = question['favCount'] if question.get('favCount') else 0
+
+            if type == QuestionType.ALGO:
+                self.labels = question['labels'] if question.get('labels') else []
+                self.level = question['level'] if question.get('level') else None
 
             self.type = type
             self.collectionName = collectionName
@@ -99,7 +101,7 @@ class Question(Model):
     @staticmethod
     def find(query, sortingAttr = "_id", sortOrder = 1, pageNumber = 1, type = QuestionType.SOC):
         db = getDb()
-        collectionName = SOC_COLLECTION_NAME if type == QuestionType.SOC else ALG_COLLECTION_NAME
+        collectionName = getCollectionName(type)
 
         db[collectionName].create_index([("body", "text")])
 
