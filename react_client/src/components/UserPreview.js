@@ -43,7 +43,7 @@ function generateColor(str) {
 
 const UserPreview = (props) => {
 
-    console.log(props['data'])
+    // console.log(props['data'])
     const {username, _id} = props['data'];
     const useStyles = makeStyles({
         card: {

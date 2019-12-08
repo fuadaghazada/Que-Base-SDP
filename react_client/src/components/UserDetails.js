@@ -8,6 +8,9 @@ import QuestionContainer from "./questions/QuestionContainer";
 import Paper from '@material-ui/core/Paper';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
+import FaceIcon from '@material-ui/icons/Face';
+import FavoriteIcon from '@material-ui/icons/Favorite';
+import PeopleIcon from '@material-ui/icons/People';
 
 
 /*
@@ -24,7 +27,11 @@ class UserDetails extends Component {
             userData: null,
             favoriteQuestions: null,
             friends: null,
-            container: null,
+
+            selectedTab: 0,
+            showOverview: true,
+            showFavQuestions: false,
+            showFriends: false,
 
             username: "",
             firstname: "",
@@ -120,53 +127,49 @@ class UserDetails extends Component {
     };
 
     showDetails = (event, newValue) => {
-        console.log(newValue);
-        if(newValue === 0)
-        {
-            const {username, firstname, lastname, email} = this.state.userData;
-            this.setState({friends: null, favoriteQuestions: null})
-            this.setState({username: username, firstname: firstname, lastname: lastname, email: email})
-
+        
+        this.setState({selectedTab: newValue});
+        
+        // Display the overview of the user
+        if (newValue === 0) {
+            this.setState({showOverview: true, showFavQuestions: false, showFriends: false})
         }
-        if(newValue === 1)
-        {
-            this.setState({friends: null, username: null, firstname: null, lastname: null, email: null})
+        // Display the favorite questions of the user
+        else if (newValue === 1) {
+            this.setState({showOverview: false, showFavQuestions: true, showFriends: false})
             this.getQuestions()
         }
-        if(newValue === 2)
-        {
-            this.setState({favoriteQuestions: null, username: null, firstname: null, lastname: null, email: null})
+        // Display the friends of the user
+        else if (newValue === 2) {
+            this.setState({showOverview: false, showFavQuestions: false, showFriends: true})
             this.getFriends()
-        }
-        
+        }  
     }
 
     render(){
 
         if (this.state.userData) {
-
+            const {username, firstname, lastname, email} = this.state.userData;
             return (
                 <div>
                     
                     <Tabs
                         indicatorColor="primary"
                         textColor="primary"
-                        aria-label="disabled tabs example"
+                        aria-label="profile page tabs"
                         onChange = {this.showDetails}
-                      >
-                        <Tab label="Overview" />
-                        <Tab label="Friends" />
-                        <Tab label="Favorite Questions" />
-                        {this.state.container}
-                      </Tabs>    
-                    <h1>{this.state.firstname} {this.state.lastname}</h1>
-                    <h2>{this.state.username}</h2>
-                    <h2>{this.state.email}</h2>                
-                    {this.state.favoriteQuestions && <QuestionContainer questions={this.state.favoriteQuestions} page={this.state.page} handleRequest={this.getQuestions}/>}
-                    {this.state.friends && <UserContainer users={this.state.friends} page={this.state.page} handleRequest={this.getFriends}/>}
-                    <Paper square>
-                      
-                    </Paper>
+                        value = {this.state.selectedTab}
+                    >
+                        <Tab icon={<FaceIcon />} label="Overview" />
+                        <Tab icon={<FavoriteIcon />} label="Favorite Questions" />
+                        <Tab icon={<PeopleIcon />} label="Friends" />
+                    </Tabs>
+
+                    <h1>{this.state.showOverview && firstname} {this.state.showOverview && lastname}</h1>
+                    <h2>{this.state.showOverview && username}</h2>
+                    <h2>{this.state.showOverview && email}</h2>  
+                    {this.state.showFavQuestions && this.state.favoriteQuestions && <QuestionContainer questions={this.state.favoriteQuestions} page={this.state.page} handleRequest={this.getQuestions}/>}
+                    {this.state.showFriends && this.state.friends && <UserContainer users={this.state.friends} page={this.state.page} handleRequest={this.getFriends}/>}
                 </div>
 
             )
