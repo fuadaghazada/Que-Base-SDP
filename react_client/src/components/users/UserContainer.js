@@ -1,7 +1,7 @@
 import React from 'react';
 import {Typography} from "@material-ui/core";
 
-import CustomContainer from './custom/CustomContainer';
+import CustomContainer from '../custom/CustomContainer';
 import UserPreview from "./UserPreview";
 
 

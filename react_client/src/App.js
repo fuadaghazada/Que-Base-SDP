@@ -7,7 +7,7 @@ import SignUp from './components/auth/Registration';
 import Home from "./components/Home";
 import UploadQuestion from "./components/questions/UploadQuestion";
 import FilterQuestions from "./components/questions/FilterQuestions";
-import UserDetails from "./components/UserDetails";
+import UserDetails from "./components/users/UserDetails";
 import QuestionDetails from "./components/questions/QuestionDetails";
 
 /***

@@ -15,7 +15,7 @@ import {
  */
 const useStyles = makeStyles({
     card: {
-        maxWidth: 700,
+        width: "100%",
     }
 });
 
@@ -36,10 +36,10 @@ const QuestionPreview = (props) => {
                 {/* Card content */}
                 <CardContent>
                     <Grid container direction="row">
-                        <Grid container item xs={8} >
+                        <Grid container item md={8} >
                             <Typography component={"h2"}>{title}</Typography>
                         </Grid>
-                        <Grid container item xs={4} justify={"flex-end"}>
+                        <Grid container item md={4} justify={"flex-end"}>
                             <Typography component={"p"}>Views: {viewCount}</Typography>
                         </Grid>
                         <Link href={`/questionDetails/${_id}`}>View Question</Link>

@@ -1,16 +1,16 @@
 import React, {Component} from 'react';
 
-import authServices from '../services/auth.service';
-import userServices from '../services/user.service';
+import authServices from '../../services/auth.service';
+import userServices from '../../services/user.service';
 
 import UserContainer from "./UserContainer";
-import QuestionContainer from "./questions/QuestionContainer";
-import Paper from '@material-ui/core/Paper';
+import QuestionContainer from "../questions/QuestionContainer";
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import FaceIcon from '@material-ui/icons/Face';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import PeopleIcon from '@material-ui/icons/People';
+import UserOverview from "./UserOverview";
 
 
 /*
@@ -33,11 +33,6 @@ class UserDetails extends Component {
             showFavQuestions: false,
             showFriends: false,
 
-            username: "",
-            firstname: "",
-            lastname: "",
-            email: "",
-
             isLoading: false,
             error: null,
             page: 1
@@ -48,7 +43,7 @@ class UserDetails extends Component {
 
         try {
             let userId;
-            if (this.props.match.params.id) {                
+            if (this.props.match.params.id) {
                 userId = this.props.match.params.id;
 
             } else {
@@ -127,9 +122,9 @@ class UserDetails extends Component {
     };
 
     showDetails = (event, newValue) => {
-        
+
         this.setState({selectedTab: newValue});
-        
+
         // Display the overview of the user
         if (newValue === 0) {
             this.setState({showOverview: true, showFavQuestions: false, showFriends: false})
@@ -143,16 +138,16 @@ class UserDetails extends Component {
         else if (newValue === 2) {
             this.setState({showOverview: false, showFavQuestions: false, showFriends: true})
             this.getFriends()
-        }  
-    }
+        }
+    };
 
     render(){
 
         if (this.state.userData) {
-            const {username, firstname, lastname, email} = this.state.userData;
+
             return (
                 <div>
-                    
+
                     <Tabs
                         indicatorColor="primary"
                         textColor="primary"
@@ -165,9 +160,7 @@ class UserDetails extends Component {
                         <Tab icon={<PeopleIcon />} label="Friends" />
                     </Tabs>
 
-                    <h1>{this.state.showOverview && firstname} {this.state.showOverview && lastname}</h1>
-                    <h2>{this.state.showOverview && username}</h2>
-                    <h2>{this.state.showOverview && email}</h2>  
+                    {this.state.showOverview && <UserOverview userData={this.state.userData}/> }
                     {this.state.showFavQuestions && this.state.favoriteQuestions && <QuestionContainer questions={this.state.favoriteQuestions} page={this.state.page} handleRequest={this.getQuestions}/>}
                     {this.state.showFriends && this.state.friends && <UserContainer users={this.state.friends} page={this.state.page} handleRequest={this.getFriends}/>}
                 </div>
