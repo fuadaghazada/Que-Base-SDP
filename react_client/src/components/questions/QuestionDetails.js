@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import questionServices from '../../services/question.service';
+import { Container } from '@material-ui/core';
+import QuestionDisplay from './QuestionDisplay';
 
 
 /***
@@ -52,13 +54,9 @@ class QuestionDetails extends Component {
             const {body, title, viewCount, favCount, source, userId} = this.state.questionData;
 
             return (
-                <div>
-                    <h1>{title}</h1>
-                    <h2>{viewCount}</h2>
-                    <h2>{favCount}</h2>
-                    <p>{body}</p>
-                    <p>Course: {source.course} University: {source.university} </p>
-                </div>
+                <Container maxWidth = {"md"}>
+                    <QuestionDisplay questionData={this.state.questionData}/>
+                </Container>
             )
         }
 
