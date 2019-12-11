@@ -108,12 +108,12 @@ class Filtering extends Component {
     handleValue = (e) => {
 
         const name = e.target.name;
-        const value = e.target.value;
+        const value = parseInt(e.target.value);
 
         this.setState(prevState => ({
             [name]: {
                 ...prevState[name],
-                value: parseInt(value)
+                value: -1 ? isNaN(value) : value
             }
         }));
     };
@@ -211,7 +211,7 @@ class Filtering extends Component {
                             <Grid item md={6}>
                                 <TextField type="number" label="View Count" placeholder="View Count" name="viewCount" onChange={this.handleValue} fullWidth={true}/>
                                 <Select
-                                    value={"gte"}
+                                    value={this.state.viewCount.comparisonOperator}
                                     name={"viewCount"}
                                     onChange={this.handleComparisonOp}
                                 >
@@ -224,7 +224,7 @@ class Filtering extends Component {
                             <Grid item md={6}>
                                 <TextField type="number" label="Favorite Count" placeholder="Favorite Count" name="favCount" onChange={this.handleValue} fullWidth={true}/>
                                 <Select
-                                    value={"gte"}
+                                    value={this.state.favCount.comparisonOperator}
                                     name={"favCount"}
                                     onChange={this.handleComparisonOp}
                                 >
@@ -237,7 +237,7 @@ class Filtering extends Component {
                             <Grid item md={4}>
                                 <TextField label="Keywords" placeholder="Keywords" name="entityTag" onChange={this.handleArrayFields} fullWidth={true}/>
                                 <Select
-                                    value={"or"}
+                                    value={this.state.entityTag.logicalOp}
                                     name={"entityTag"}
                                     onChange={this.handleLogicalOp}
                                 >
@@ -250,7 +250,7 @@ class Filtering extends Component {
                             <Grid item md={4}>
                                 <TextField label="Topics" placeholder="Topics" name="topic" onChange={this.handleArrayFields} fullWidth={true}/>
                                 <Select
-                                    value={"or"}
+                                    value={this.state.topic.logicalOp}
                                     name={"topic"}
                                     onChange={this.handleLogicalOp}
                                 >
@@ -263,7 +263,7 @@ class Filtering extends Component {
                             <Grid item md={4}>
                                 <TextField label="Categories" placeholder="Categories" name="category" onChange={this.handleArrayFields} fullWidth={true}/>
                                 <Select
-                                    value={"or"}
+                                    value={this.state.category.logicalOp}
                                     name={"category"}
                                     onChange={this.handleLogicalOp}
                                 >
