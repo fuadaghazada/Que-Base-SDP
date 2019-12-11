@@ -11,7 +11,7 @@ import UserPreview from "./UserPreview";
 
 const UserContainer = (props) => {
 
-    const {users, handleRequest, page} = props;
+    const {users, handleRequest, page, header} = props;
     const numberOfPages = users['numberOfPages'];
 
     /**
@@ -35,7 +35,7 @@ const UserContainer = (props) => {
 
     // Returning the render stuff
     return (
-        <CustomContainer header={"Users"}
+        <CustomContainer header={!header ? "Users" : header}
                          page={page}
                          numberOfPages={numberOfPages}
                          handleRequest={handleRequest}

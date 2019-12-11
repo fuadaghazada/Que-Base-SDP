@@ -2,6 +2,7 @@ import React from 'react';
 import { Typography, Paper, Grid, Fab, Box } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import FavoriteIcon from '@material-ui/icons/Favorite';
+import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 
 const useStyles = makeStyles(theme => ({
       questionBody: {
@@ -22,11 +23,7 @@ const QuestionDisplay = (props) => {
 
     const classes = useStyles();
     const { title, body, viewCount, favCount, source } = props.questionData;
-
-    const favor = () => {
-        const {favoriteQuestion} = props;
-        favoriteQuestion();
-    };
+    const { isFavorite, favoriteQuestion } = props;
 
     return (
         <div>
@@ -50,8 +47,8 @@ const QuestionDisplay = (props) => {
                     <Typography variant={"subtitle1"}>University: {source.university}</Typography>
                     <Typography variant={"subtitle1"}>Reference: {source.reference}</Typography>
                 </Box>
-                <Fab className={classes.button} color="secondary" aria-label="favorite" onClick={favor}>
-                    <FavoriteIcon />
+                <Fab className={classes.button} color="secondary" aria-label="favorite" onClick={favoriteQuestion}>
+                    {!isFavorite ? <FavoriteIcon /> : <FavoriteBorderIcon />}
                 </Fab>
             </Grid>
 

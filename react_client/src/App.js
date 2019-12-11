@@ -9,6 +9,7 @@ import UploadQuestion from "./components/questions/UploadQuestion";
 import FilterQuestions from "./components/questions/FilterQuestions";
 import UserDetails from "./components/users/UserDetails";
 import QuestionDetails from "./components/questions/QuestionDetails";
+import FriendRequests from "./components/users/FriendRequests";
 
 /***
  *  Application interface
@@ -28,6 +29,7 @@ const App = () => {
         <PrivateRoute path={'/filterQuestions'} component={FilterQuestions} />
         <PrivateRoute path={'/userDetails/:id?'} component={UserDetails} />
         <PrivateRoute path={'/questionDetails/:id'} component={QuestionDetails} />
+        <PrivateRoute path={'/friendRequests'} component={FriendRequests} />
 
       </Router>
   );

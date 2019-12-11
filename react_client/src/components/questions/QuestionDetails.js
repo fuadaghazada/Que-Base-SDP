@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import { Container } from '@material-ui/core';
 
 import QuestionDisplay from './QuestionDisplay';
 import NavBar from "../NavBar";
@@ -18,6 +17,7 @@ class QuestionDetails extends Component {
         this.state = {
 
             questionData: null,
+            isFavorite: false,
 
             isLoading: false,
             error: null
@@ -36,7 +36,8 @@ class QuestionDetails extends Component {
                     if (response['success']) {
                         this.setState({
                             isLoading: false,
-                            questionData: response['question']
+                            questionData: response['question'],
+                            isFavorite: response['favorite']
                         });
                     }
                 })
@@ -57,7 +58,7 @@ class QuestionDetails extends Component {
             questionServices.favoriteQuestion(questionId)
                 .then(response => {
                     if (response['success']) {
-                        console.log(response['message']);
+                        this.setState({isFavorite: response['result']})
                     }
                 })
         } catch (e) {
@@ -70,9 +71,7 @@ class QuestionDetails extends Component {
         return (
             <div>
                 <NavBar/>
-                <Container maxWidth = {"md"}>
-                    {this.state.questionData && <QuestionDisplay questionData={this.state.questionData} favoriteQuestion={this.favoriteQuestion}/>}
-                </Container>
+                {this.state.questionData && <QuestionDisplay questionData={this.state.questionData} favoriteQuestion={this.favoriteQuestion} isFavorite={this.state.isFavorite}/>}
             </div>
         )
     }

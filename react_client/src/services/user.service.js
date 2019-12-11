@@ -95,7 +95,7 @@ const getFriends = (page = null, id) => {
 
 const getWaitList = (page = null, id) => {
 
-    let requestURL = `${USERS_API_URL}/getWaitList`;
+    let requestURL = `${USERS_API_URL}/waitlist`;
 
     if (id && typeof(id) === 'string')
         requestURL += `?id=${id}`;

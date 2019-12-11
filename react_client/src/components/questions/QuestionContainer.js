@@ -11,7 +11,7 @@ import QuestionPreview from "../questions/QuestionPreview";
 
 const QuestionContainer = (props) => {
 
-    const {questions, handleRequest, page} = props;
+    const {questions, handleRequest, page, header} = props;
     const numberOfPages = questions['numberOfPages'];
 
     /**
@@ -35,7 +35,7 @@ const QuestionContainer = (props) => {
 
     // Returning the render stuff
     return (
-        <CustomContainer header={"Questions"}
+        <CustomContainer header={!header ? "Questions" : header}
                          page={page}
                          numberOfPages={numberOfPages}
                          handleRequest={handleRequest}

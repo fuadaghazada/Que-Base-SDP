@@ -80,7 +80,7 @@ class UserDetails extends Component {
             const userId = this.state.userData['_id'];
 
             // Request
-            this.setState({isLoading: true})
+            this.setState({isLoading: true});
             userServices.getFavoriteQuestions(page, userId)
                 .then(response => {
 

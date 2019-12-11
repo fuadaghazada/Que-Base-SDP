@@ -5,6 +5,7 @@ import FilterListIcon from '@material-ui/icons/FilterList';
 import PersonIcon from '@material-ui/icons/Person';
 import HomeIcon from '@material-ui/icons/Home';
 import PublishIcon from '@material-ui/icons/Publish';
+import NotificationsIcon from '@material-ui/icons/Notifications';
 import {AppBar, Toolbar, Link, Typography} from '@material-ui/core';
 
 import SignOut from "./auth/SignOut";
@@ -55,6 +56,11 @@ const NavBar = () => {
             <Link  href='/userDetails' className={styles.item}>
                 <PersonIcon />
                 <Typography>User Details</Typography>
+            </Link>
+
+            <Link  href='/friendRequests' className={styles.item}>
+                <NotificationsIcon />
+                <Typography>Friend Requests</Typography>
             </Link>
 
             <SignOut/>

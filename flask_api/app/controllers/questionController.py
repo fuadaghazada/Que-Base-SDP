@@ -145,6 +145,32 @@ def favoriteQuestion(user):
 
 
 '''
+    [GET] Getting if the question is in the favorite list of the logged user
+'''
+
+@bluePrint.route("/isFavorite", methods=["GET"])
+@isAuth(request)
+def isFavoriteQuestion(user):
+
+    result = False
+
+    # ID as parameter
+    questionId = request.args.get('id')
+
+    userId = user["_id"]
+    user = User({"_id": userId})
+
+    # Favorite questions of the user
+    favoriteQuestions = user.data().get('favoriteQuestions')
+    result = ObjectId(questionId) in favoriteQuestions
+
+    # Response
+    return jsonify({
+        'success': True,
+        'result': result
+    })
+
+'''
     [GET] Getting a question according to its id
 '''
 
@@ -155,6 +181,9 @@ def getQuestion(user):
     # ID as parameter
     questionId = request.args.get('id')
 
+    userId = user["_id"]
+    user = User({"_id": userId})
+
     result = None
     try:
         result = Question({"_id": questionId}).data()
@@ -162,13 +191,19 @@ def getQuestion(user):
         print("NO SUCH QUESTION ID")
         raise e
 
+    # Favorite questions of the user
+    favoriteQuestions = user.data().get('favoriteQuestions')
+    isFavorite = ObjectId(questionId) in favoriteQuestions
+
     status = result is not None
 
     # Return the response
     return jsonify({
         'success': status,
-        "question": result
+        "question": result,
+        "favorite": isFavorite
     }), 200
+
 
 @bluePrint.route("/userQuestions", methods=["GET"])
 @isAuth(request)

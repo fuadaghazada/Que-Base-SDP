@@ -148,6 +148,35 @@ const favoriteQuestion = (id) => {
         .catch(err => console.log(err));
 };
 
+
+/**
+ *  [GET]
+ */
+
+const isMyFavorite = (questionId) => {
+
+    // Preparing the request URL
+    let requestURL = `${QUESTIONS_API_URL}/isFavorite`;
+
+    if (questionId && typeof(id) === 'string')
+        requestURL += `?id=${questionId}`;
+
+    // Headers
+    const headers = {...{'Content-Type': 'application/json'}, ...getHeaders.auth()};
+
+    // Sending POST request
+    return axios({
+        method: 'get',
+        headers: headers,
+        url: requestURL
+    })
+        .then(response => {
+            return response.data;
+        })
+        .catch(err => console.log(err));
+};
+
+
 /**
  *  [POST]
  */
@@ -186,5 +215,6 @@ export default {
     getQuestion: getQuestion,
     getUserQuestions: getUserQuestions,
     favoriteQuestion: favoriteQuestion,
-    postInsertQuestion: postInsertQuestion
+    postInsertQuestion: postInsertQuestion,
+    isMyFavorite: isMyFavorite
 };
