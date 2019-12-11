@@ -177,112 +177,112 @@ class Filtering extends Component {
 
     render() {
         return (
-            <div>
-                <Container maxWidth={"md"}>
-                    {/* Header */}
-                    <Typography variant={"h2"}>Filter Questions</Typography>
 
-                    {/* Filter Form */}
-                    <form onSubmit={this.handleSubmit}>
+            <Container maxWidth={"md"}>
+                {/* Header */}
+                <Typography variant={"h2"}>Filter Questions</Typography>
 
-                        <Grid container spacing={5}>
+                {/* Filter Form */}
+                <form onSubmit={this.handleSubmit}>
 
-                            {/* Body */}
-                            <Grid item md={12}>
-                                <TextField label="Question body" placeholder="Text" name="body" onChange={this.handleChange} fullWidth={true}/>
-                            </Grid>
+                    <Grid container spacing={5}>
 
-                            {/* Reference */}
-                            <Grid item md={4}>
-                                <TextField label="Reference" placeholder="Reference" name="reference" onChange={this.handleSource} fullWidth={true}/>
-                            </Grid>
-
-                            {/* University */}
-                            <Grid item md={4}>
-                                <TextField label="University" placeholder="University" name="university" onChange={this.handleSource} fullWidth={true}/>
-                            </Grid>
-
-                            {/* Course */}
-                            <Grid item md={4}>
-                                <TextField label="Course" placeholder="Course" name="course" onChange={this.handleSource} fullWidth={true}/>
-                            </Grid>
-
-                            {/* View Count */}
-                            <Grid item md={6}>
-                                <TextField type="number" label="View Count" placeholder="View Count" name="viewCount" onChange={this.handleValue} fullWidth={true}/>
-                                <Select
-                                    value={this.state.viewCount.comparisonOperator}
-                                    name={"viewCount"}
-                                    onChange={this.handleComparisonOp}
-                                >
-                                    <MenuItem value="gte">GTE</MenuItem>
-                                    <MenuItem value="lte">LTE</MenuItem>
-                                </Select>
-                            </Grid>
-
-                            {/* Fav Count */}
-                            <Grid item md={6}>
-                                <TextField type="number" label="Favorite Count" placeholder="Favorite Count" name="favCount" onChange={this.handleValue} fullWidth={true}/>
-                                <Select
-                                    value={this.state.favCount.comparisonOperator}
-                                    name={"favCount"}
-                                    onChange={this.handleComparisonOp}
-                                >
-                                    <MenuItem value="gte">GTE</MenuItem>
-                                    <MenuItem value="lte">LTE</MenuItem>
-                                </Select>
-                            </Grid>
-
-                            {/* Entity Tags */}
-                            <Grid item md={4}>
-                                <TextField label="Keywords" placeholder="Keywords" name="entityTag" onChange={this.handleArrayFields} fullWidth={true}/>
-                                <Select
-                                    value={this.state.entityTag.logicalOp}
-                                    name={"entityTag"}
-                                    onChange={this.handleLogicalOp}
-                                >
-                                    <MenuItem value="or">Or</MenuItem>
-                                    <MenuItem value="and">And</MenuItem>
-                                </Select>
-                            </Grid>
-
-                            {/* Topics */}
-                            <Grid item md={4}>
-                                <TextField label="Topics" placeholder="Topics" name="topic" onChange={this.handleArrayFields} fullWidth={true}/>
-                                <Select
-                                    value={this.state.topic.logicalOp}
-                                    name={"topic"}
-                                    onChange={this.handleLogicalOp}
-                                >
-                                    <MenuItem value="or">Or</MenuItem>
-                                    <MenuItem value="and">And</MenuItem>
-                                </Select>
-                            </Grid>
-
-                            {/* Categories */}
-                            <Grid item md={4}>
-                                <TextField label="Categories" placeholder="Categories" name="category" onChange={this.handleArrayFields} fullWidth={true}/>
-                                <Select
-                                    value={this.state.category.logicalOp}
-                                    name={"category"}
-                                    onChange={this.handleLogicalOp}
-                                >
-                                    <MenuItem value="or">Or</MenuItem>
-                                    <MenuItem value="and">And</MenuItem>
-                                </Select>
-                            </Grid>
-
-                            {/* Submit */}
-                            <Grid item md={12}>
-                                <Button variant="contained" type="submit" fullWidth={true}>Filter</Button>
-                            </Grid>
-
+                        {/* Body */}
+                        <Grid item md={12}>
+                            <TextField label="Question body" placeholder="Text" name="body" onChange={this.handleChange} fullWidth={true}/>
                         </Grid>
-                    </form>
-                    {/* End of filter form */}
 
-                </Container>
-            </div>
+                        {/* Reference */}
+                        <Grid item md={4}>
+                            <TextField label="Reference" placeholder="Reference" name="reference" onChange={this.handleSource} fullWidth={true}/>
+                        </Grid>
+
+                        {/* University */}
+                        <Grid item md={4}>
+                            <TextField label="University" placeholder="University" name="university" onChange={this.handleSource} fullWidth={true}/>
+                        </Grid>
+
+                        {/* Course */}
+                        <Grid item md={4}>
+                            <TextField label="Course" placeholder="Course" name="course" onChange={this.handleSource} fullWidth={true}/>
+                        </Grid>
+
+                        {/* View Count */}
+                        <Grid item md={6}>
+                            <TextField type="number" label="View Count" placeholder="View Count" name="viewCount" onChange={this.handleValue} fullWidth={true}/>
+                            <Select
+                                value={this.state.viewCount.comparisonOperator}
+                                name={"viewCount"}
+                                onChange={this.handleComparisonOp}
+                            >
+                                <MenuItem value="gte">GTE</MenuItem>
+                                <MenuItem value="lte">LTE</MenuItem>
+                            </Select>
+                        </Grid>
+
+                        {/* Fav Count */}
+                        <Grid item md={6}>
+                            <TextField type="number" label="Favorite Count" placeholder="Favorite Count" name="favCount" onChange={this.handleValue} fullWidth={true}/>
+                            <Select
+                                value={this.state.favCount.comparisonOperator}
+                                name={"favCount"}
+                                onChange={this.handleComparisonOp}
+                            >
+                                <MenuItem value="gte">GTE</MenuItem>
+                                <MenuItem value="lte">LTE</MenuItem>
+                            </Select>
+                        </Grid>
+
+                        {/* Entity Tags */}
+                        <Grid item md={4}>
+                            <TextField label="Keywords" placeholder="Keywords" name="entityTag" onChange={this.handleArrayFields} fullWidth={true}/>
+                            <Select
+                                value={this.state.entityTag.logicalOp}
+                                name={"entityTag"}
+                                onChange={this.handleLogicalOp}
+                            >
+                                <MenuItem value="or">Or</MenuItem>
+                                <MenuItem value="and">And</MenuItem>
+                            </Select>
+                        </Grid>
+
+                        {/* Topics */}
+                        <Grid item md={4}>
+                            <TextField label="Topics" placeholder="Topics" name="topic" onChange={this.handleArrayFields} fullWidth={true}/>
+                            <Select
+                                value={this.state.topic.logicalOp}
+                                name={"topic"}
+                                onChange={this.handleLogicalOp}
+                            >
+                                <MenuItem value="or">Or</MenuItem>
+                                <MenuItem value="and">And</MenuItem>
+                            </Select>
+                        </Grid>
+
+                        {/* Categories */}
+                        <Grid item md={4}>
+                            <TextField label="Categories" placeholder="Categories" name="category" onChange={this.handleArrayFields} fullWidth={true}/>
+                            <Select
+                                value={this.state.category.logicalOp}
+                                name={"category"}
+                                onChange={this.handleLogicalOp}
+                            >
+                                <MenuItem value="or">Or</MenuItem>
+                                <MenuItem value="and">And</MenuItem>
+                            </Select>
+                        </Grid>
+
+                        {/* Submit */}
+                        <Grid item md={12}>
+                            <Button variant="contained" type="submit" fullWidth={true}>Filter</Button>
+                        </Grid>
+
+                    </Grid>
+                </form>
+                {/* End of filter form */}
+
+            </Container>
+
         );
     }
 }

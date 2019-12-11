@@ -5,7 +5,7 @@ import FilterListIcon from '@material-ui/icons/FilterList';
 import PersonIcon from '@material-ui/icons/Person';
 import HomeIcon from '@material-ui/icons/Home';
 import PublishIcon from '@material-ui/icons/Publish';
-import {Grid, AppBar, Toolbar, Link, Typography} from '@material-ui/core';
+import {AppBar, Toolbar, Link, Typography} from '@material-ui/core';
 
 import SignOut from "./auth/SignOut";
 
@@ -14,7 +14,7 @@ import SignOut from "./auth/SignOut";
 const useStyles = makeStyles( theme => ({
     root: {
         padding: "10px",
-        margin: 0
+        marginBottom: "50px"
     },
     item: {
         color: "white",

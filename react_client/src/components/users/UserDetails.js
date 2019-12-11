@@ -10,6 +10,7 @@ import FaceIcon from '@material-ui/icons/Face';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import PeopleIcon from '@material-ui/icons/People';
 import UserOverview from "./UserOverview";
+import NavBar from "../NavBar";
 
 
 /*
@@ -145,24 +146,26 @@ class UserDetails extends Component {
         if (this.state.userData) {
 
             return (
-                <Container maxWidth={"md"}>
-                    <Tabs
-                        indicatorColor="primary"
-                        textColor="primary"
-                        aria-label="profile page tabs"
-                        onChange = {this.showDetails}
-                        value = {this.state.selectedTab}
-                    >
-                        <Tab icon={<FaceIcon />} label="Overview" />
-                        <Tab icon={<FavoriteIcon />} label="Favorite Questions" />
-                        <Tab icon={<PeopleIcon />} label="Friends" />
-                    </Tabs>
+                <div>
+                    <NavBar/>
+                    <Container maxWidth={"md"}>
+                        <Tabs
+                            indicatorColor="primary"
+                            textColor="primary"
+                            aria-label="profile page tabs"
+                            onChange = {this.showDetails}
+                            value = {this.state.selectedTab}
+                        >
+                            <Tab icon={<FaceIcon />} label="Overview" />
+                            <Tab icon={<FavoriteIcon />} label="Favorite Questions" />
+                            <Tab icon={<PeopleIcon />} label="Friends" />
+                        </Tabs>
 
-                    {this.state.showOverview && <UserOverview userData={this.state.userData}/> }
-                    {this.state.showFavQuestions && this.state.favoriteQuestions && <QuestionContainer questions={this.state.favoriteQuestions} page={this.state.page} handleRequest={this.getQuestions}/>}
-                    {this.state.showFriends && this.state.friends && <UserContainer users={this.state.friends} page={this.state.page} handleRequest={this.getFriends}/>}
-                </Container>
-
+                        {this.state.showOverview && <UserOverview userData={this.state.userData}/> }
+                        {this.state.showFavQuestions && this.state.favoriteQuestions && <QuestionContainer questions={this.state.favoriteQuestions} page={this.state.page} handleRequest={this.getQuestions}/>}
+                        {this.state.showFriends && this.state.friends && <UserContainer users={this.state.friends} page={this.state.page} handleRequest={this.getFriends}/>}
+                    </Container>
+                </div>
             )
         }
 

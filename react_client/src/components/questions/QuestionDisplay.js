@@ -23,6 +23,11 @@ const QuestionDisplay = (props) => {
     const classes = useStyles();
     const { title, body, viewCount, favCount, source } = props.questionData;
 
+    const favor = () => {
+        const {favoriteQuestion} = props;
+        favoriteQuestion();
+    };
+
     return (
         <div>
             <Typography variant={"h4"}>{title}</Typography>
@@ -45,7 +50,7 @@ const QuestionDisplay = (props) => {
                     <Typography variant={"subtitle1"}>University: {source.university}</Typography>
                     <Typography variant={"subtitle1"}>Reference: {source.reference}</Typography>
                 </Box>
-                <Fab className={classes.button} color="secondary" aria-label="favorite">
+                <Fab className={classes.button} color="secondary" aria-label="favorite" onClick={favor}>
                     <FavoriteIcon />
                 </Fab>
             </Grid>

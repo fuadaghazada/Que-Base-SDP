@@ -125,7 +125,7 @@ const getUserQuestions = (id, page = null) => {
  *  [POST]
  */
 
-const favoriteQuestion = (data, id) => {
+const favoriteQuestion = (id) => {
 
     // Preparing the request URL
     let requestURL = `${QUESTIONS_API_URL}/favoriteQuestion`;
@@ -140,11 +140,9 @@ const favoriteQuestion = (data, id) => {
     return axios({
         method: 'post',
         headers: headers,
-        url: requestURL,
-        data: data
+        url: requestURL
     })
         .then(response => {
-
             return response.data;
         })
         .catch(err => console.log(err));

@@ -1,8 +1,10 @@
 import React, {Component} from 'react';
-import questionServices from '../../services/question.service';
 import { Container } from '@material-ui/core';
-import QuestionDisplay from './QuestionDisplay';
 
+import QuestionDisplay from './QuestionDisplay';
+import NavBar from "../NavBar";
+
+import questionServices from '../../services/question.service';
 
 /***
  *  Question details
@@ -47,20 +49,32 @@ class QuestionDetails extends Component {
         }
     }
 
+    favoriteQuestion = () => {
+
+        try {
+            const questionId = this.props.match.params.id;
+
+            questionServices.favoriteQuestion(questionId)
+                .then(response => {
+                    if (response['success']) {
+                        console.log(response['message']);
+                    }
+                })
+        } catch (e) {
+            console.log(e);
+        }
+    };
+
     render(){
 
-        if (this.state.questionData) {
-
-            const {body, title, viewCount, favCount, source, userId} = this.state.questionData;
-
-            return (
+        return (
+            <div>
+                <NavBar/>
                 <Container maxWidth = {"md"}>
-                    <QuestionDisplay questionData={this.state.questionData}/>
+                    {this.state.questionData && <QuestionDisplay questionData={this.state.questionData} favoriteQuestion={this.favoriteQuestion}/>}
                 </Container>
-            )
-        }
-
-        return null;
+            </div>
+        )
     }
 }
 

@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import { Redirect } from "react-router-dom";
 
+import {Button} from '@material-ui/core';
+import ExitToAppIcon from '@material-ui/icons/ExitToApp';
+
 import authServices from '../../services/auth.service';
 
 /***
@@ -44,7 +47,7 @@ class SignOut extends Component {
         }
 
         return (
-            <button onClick={this.handleSubmit}>Sign Out</button>
+            <Button onClick={this.handleSubmit} style={{color: "white"}}><ExitToAppIcon/></Button>
         );
     }
 }
