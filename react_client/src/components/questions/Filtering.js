@@ -113,7 +113,7 @@ class Filtering extends Component {
         this.setState(prevState => ({
             [name]: {
                 ...prevState[name],
-                value: -1 ? isNaN(value) : value
+                value: isNaN(value) ? -1 : value
             }
         }));
     };
