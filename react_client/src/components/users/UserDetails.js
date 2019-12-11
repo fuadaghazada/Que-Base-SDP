@@ -5,8 +5,7 @@ import userServices from '../../services/user.service';
 
 import UserContainer from "./UserContainer";
 import QuestionContainer from "../questions/QuestionContainer";
-import Tabs from '@material-ui/core/Tabs';
-import Tab from '@material-ui/core/Tab';
+import {Tabs, Tab, Container} from '@material-ui/core';
 import FaceIcon from '@material-ui/icons/Face';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import PeopleIcon from '@material-ui/icons/People';
@@ -146,8 +145,7 @@ class UserDetails extends Component {
         if (this.state.userData) {
 
             return (
-                <div>
-
+                <Container maxWidth={"md"}>
                     <Tabs
                         indicatorColor="primary"
                         textColor="primary"
@@ -163,7 +161,7 @@ class UserDetails extends Component {
                     {this.state.showOverview && <UserOverview userData={this.state.userData}/> }
                     {this.state.showFavQuestions && this.state.favoriteQuestions && <QuestionContainer questions={this.state.favoriteQuestions} page={this.state.page} handleRequest={this.getQuestions}/>}
                     {this.state.showFriends && this.state.friends && <UserContainer users={this.state.friends} page={this.state.page} handleRequest={this.getFriends}/>}
-                </div>
+                </Container>
 
             )
         }
