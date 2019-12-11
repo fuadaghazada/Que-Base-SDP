@@ -204,6 +204,37 @@ const postInsertQuestion = (data) => {
 };
 
 
+/**
+ *  [GET]
+ */
+
+const getMostViewedQuestions = (page = null, threshold = null) => {
+
+    // Preparing the request URL
+    let requestURL = `${QUESTIONS_API_URL}/mostViewed`;
+
+    if (page && typeof(page) === 'number')
+        requestURL += `?page=${page}`;
+
+    if (threshold && typeof(threshold) === 'number')
+        requestURL += `&threshold=${threshold}`;
+
+    // Headers
+    const headers = {...{'Content-Type': 'application/json'}, ...getHeaders.auth()};
+
+    // Sending POST request
+    return axios({
+        method: 'get',
+        headers: headers,
+        url: requestURL,
+    })
+        .then(response => {
+
+            return response.data;
+        })
+        .catch(err => console.log(err));
+};
+
 
 /**
  *  Exporting the services
@@ -216,5 +247,6 @@ export default {
     getUserQuestions: getUserQuestions,
     favoriteQuestion: favoriteQuestion,
     postInsertQuestion: postInsertQuestion,
-    isMyFavorite: isMyFavorite
+    isMyFavorite: isMyFavorite,
+    getMostViewedQuestions: getMostViewedQuestions
 };

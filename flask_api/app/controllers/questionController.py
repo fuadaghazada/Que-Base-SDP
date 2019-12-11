@@ -244,3 +244,22 @@ def getUserQuestions(user):
         "message": message,
         "result": results
     }), 200
+
+
+@bluePrint.route("/mostViewed", methods=["GET"])
+@isAuth(request)
+def getMostViewedQuestions(user):
+
+    # Parameters
+    page = int(request.args.get('page')) if request.args.get('page') is not None else 1
+    threshold = int(request.args.get('threshold')) if request.args.get('threshold') is not None else 0
+
+    sortingAttr = 'viewCount'
+    sortOrder = -1
+    results = Question.find({"viewCount": {"$gt": threshold}}, sortingAttr, sortOrder, page)
+
+    # Response
+    return jsonify({
+        "success": True,
+        "result": results
+    }), 200
