@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
 import NavBar from "../NavBar";
-
 import questionServices from "../../services/question.service";
 import QuestionContainer from "./QuestionContainer";
-
+import { makeStyles } from '@material-ui/core/styles';
+import TextField from '@material-ui/core/TextField';
+import Grid from '@material-ui/core/Grid';
+import Typography from '@material-ui/core/Typography';
+import Slider from '@material-ui/core/Slider';
+import Input from '@material-ui/core/Input';
+import Button from '@material-ui/core/Button';
 
 /***
  *  Upload question component
@@ -18,7 +23,7 @@ class UploadQuestion extends Component {
     constructor(props) {
         super(props);
         this.state = {
-
+            newValue: 0,
             body: "",
 
             title: "",
@@ -31,10 +36,39 @@ class UploadQuestion extends Component {
             isLoading: false,
             data: null,
             page: 1,
-            error: null
+            error: null,
+            classes: null
         }
     }
+    componentDidMount() {
+   
+        this.setState({classes: makeStyles({   // DOESN'T WORK FOR SOME REASON...
+            root: {
+              width: 250,
+            },
+            input: {
+              width: 42,
+            },
+          })})
 
+    }
+
+    handleSliderChange = (event, newValue) => {
+    this.setState({newValue: newValue})
+    };
+
+    handleInputChange = event => {
+        this.setState({newValue: (event.target.value === '' ? '' : Number(event.target.value))});
+    };
+
+    handleBlur = () => {
+        if (this.state.newValue < 0) {
+          this.setState({newValue: 0});
+        } else if (this.state.newValue > 100) {
+          this.setState({newValue: 100});
+
+        }
+      };
     /**
      *  Handling the change in the form elements and assigning them to states
      *
@@ -59,6 +93,38 @@ class UploadQuestion extends Component {
                 reference: this.state.reference,
                 course: this.state.course,
                 university: this.state.university
+            },
+            filter: {
+                "body": "",
+                "source": {
+                    "reference": "",
+                    "university": "",
+                    "course": ""
+                },
+                "viewCount": {
+                    "comparisonOperator": "gte",
+                    "value": -1
+                },
+                "favCount": {
+                    "comparisonOperator": "gte",
+                    "value": -1
+                },
+                "entityTag": {
+                    "logicalOp": "or",
+                    "stringsToMatch": []
+                },
+                "topic": {
+                    "logicalOp": "and",
+                    "stringsToMatch": []
+                },
+                "category": {
+                    "logicalOp": "and",
+                    "stringsToMatch": []
+                },
+                "sort": {
+                    "attr": "_id",
+                    "order": 1
+                }
             }
         };
 
@@ -93,22 +159,59 @@ class UploadQuestion extends Component {
         return (
             <div>
                 <NavBar />
-                <h1>Upload a question</h1>
-
+                <Typography variant="h4" gutterBottom>
+                    Upload a Question:
+                </Typography>
+                
                 <form onChange={this.handleChange} onSubmit={this.handleSubmit}>
 
                     {/* Body */}
-                    <label htmlFor="body">Question Text</label>
-                    <textarea name="body"></textarea>
-
-                    {/* Threshold slider */}
-                    <label htmlFor="threshold">Threshold</label>
-                    <input type="range" min="40" max="100" name="threshold"/>
+                    <TextField
+                        id="outlined-multiline-static"
+                        label="Question Text"
+                        multiline
+                        rows="4"
+                        placeholder="Enter your question here"
+                        variant="outlined"
+                        name="body"
+                    />
+                    <Typography variant="overline" display="block" gutterBottom>
+                        Pick Similarity Rate:
+                    </Typography>
+                    <Grid container spacing={2} alignItems="center" maxWidth="sm">
+                    
+                        {/* Threshold slider */}
+                        <Grid item sm={3}>
+                            <Slider
+                                name="threshold"
+                                value={typeof this.state.newValue === 'number' ? this.state.newValue : 0}
+                                onChange={this.handleSliderChange}
+                                aria-labelledby="input-slider"
+                            />
+                        </Grid>
+                        <Grid item>
+                            <Input
+                                    value={this.state.newValue}
+                                    margin="dense"
+                                    onChange={this.handleInputChange}
+                                    onBlur={this.handleBlur}
+                                    inputProps={{
+                                    step: 1,
+                                    min: 0,
+                                    max: 100,
+                                    type: 'number',
+                                    'aria-labelledby': 'input-slider',
+                                        }}
+                            />
+                        </Grid>
+                    </Grid>
 
                     {/* Check for insert */}
 
                     {/* Submit */}
-                    <button type="submit">Upload</button>
+                    <Button type="submit" variant="contained" color="primary">
+                        Upload
+                    </Button>
 
                 </form>
 
