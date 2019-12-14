@@ -168,7 +168,7 @@ class UserDetails extends Component {
 
                         {this.state.showOverview && <UserOverview userData={this.state.userData}/> }
                         {this.state.showFavQuestions && this.state.favoriteQuestions && <QuestionContainer questions={this.state.favoriteQuestions} page={this.state.page} handleRequest={this.getQuestions}/>}
-                        {this.state.showFriends && this.state.friends && <UserContainer users={this.state.friends} page={this.state.page} handleRequest={this.getFriends}/>}
+                        {this.state.showFriends && this.state.friends && <UserContainer users={this.state.friends} page={this.state.page} handleRequest={this.getFriends} header={"Friends"}/>}
                     </Container>
                 </div>
             )
