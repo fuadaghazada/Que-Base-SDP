@@ -274,7 +274,7 @@ class Filtering extends Component {
 
                         {/* Submit */}
                         <Grid item md={12}>
-                            <Button variant="contained" type="submit" fullWidth={true}>Filter</Button>
+                            <Button variant="contained" type="submit" fullWidth={true} color={"primary"}>Filter</Button>
                         </Grid>
 
                     </Grid>

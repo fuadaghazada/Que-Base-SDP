@@ -144,7 +144,8 @@ def searchUsers(user):
     results = User.find({"$and": [{"username": {"$regex": f"^{searchUsername}", "$options": "i"}}, {"username": {"$ne": currentUser["username"]}}]}, pageNumber = page)
 
     # All condititons
-    resultUsers = []
+    resultUsers = deepcopy(results)
+    resultUsers['data'] = []
     for searchUser in results["data"]:
 
         # Search user data
@@ -164,7 +165,7 @@ def searchUsers(user):
 
         userState = 4
         message = f"You have no connection with {searchUsername}"
-        resultUser = {"data": searchUser}
+        resultUser = deepcopy(searchUser)
 
         if searchUserId in currentUserFriends:
             userState = 1
@@ -178,7 +179,7 @@ def searchUsers(user):
 
         resultUser["state"] = userState
         resultUser["message"] = message
-        resultUsers.append(resultUser)
+        resultUsers['data'].append(resultUser)
 
     # Response
     return jsonify({

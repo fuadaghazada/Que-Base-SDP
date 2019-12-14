@@ -1,5 +1,5 @@
 import React from 'react';
-import { Typography, Paper, Grid, Fab, Box } from '@material-ui/core';
+import { Container, Typography, Paper, Grid, Fab, Box } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
@@ -25,8 +25,18 @@ const QuestionDisplay = (props) => {
     const { title, body, viewCount, favCount, source } = props.questionData;
     const { isFavorite, favoriteQuestion } = props;
 
+    let course = "---";
+    let university = "---";
+    let reference = "---";
+
+    try {
+        course = source.course;
+        university = source.university;
+        reference = source.reference;
+    } catch (err) {console.log("No property")}
+
     return (
-        <div>
+        <Container maxWidth={"md"}>
             <Typography variant={"h4"}>{title}</Typography>
 
             <Paper className={classes.questionBody}>
@@ -43,16 +53,16 @@ const QuestionDisplay = (props) => {
                     <Typography className={classes.stat} variant={"subtitle1"}>Favorite count: {favCount}</Typography>
                 </Box>
                 <Box>
-                    <Typography variant={"subtitle1"}>Course: {source.course}</Typography>
-                    <Typography variant={"subtitle1"}>University: {source.university}</Typography>
-                    <Typography variant={"subtitle1"}>Reference: {source.reference}</Typography>
+                    <Typography variant={"subtitle1"}>Course: {course}</Typography>
+                    <Typography variant={"subtitle1"}>University: {university}</Typography>
+                    <Typography variant={"subtitle1"}>Reference: {reference}</Typography>
                 </Box>
                 <Fab className={classes.button} color="secondary" aria-label="favorite" onClick={favoriteQuestion}>
                     {!isFavorite ? <FavoriteIcon /> : <FavoriteBorderIcon />}
                 </Fab>
             </Grid>
 
-        </div>
+        </Container>
     )
 };
 

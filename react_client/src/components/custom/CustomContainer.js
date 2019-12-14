@@ -53,7 +53,7 @@ const CustomContainer = (props) => {
         <Container maxWidth={"md"}>
 
             {/* Header */}
-            <Typography variant={"h2"}>{header}</Typography>
+            <Typography variant={"h2"} gutterBottom>{header}</Typography>
 
             {/* Question Previews */}
             {renderPreviews()}

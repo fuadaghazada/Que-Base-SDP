@@ -5,7 +5,7 @@ import userServices from '../../services/user.service';
 
 import UserContainer from "./UserContainer";
 import QuestionContainer from "../questions/QuestionContainer";
-import {Tabs, Tab, Container} from '@material-ui/core';
+import {Tabs, Tab, Container, Typography} from '@material-ui/core';
 import FaceIcon from '@material-ui/icons/Face';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import PeopleIcon from '@material-ui/icons/People';
@@ -149,6 +149,11 @@ class UserDetails extends Component {
                 <div>
                     <NavBar/>
                     <Container maxWidth={"md"}>
+
+                        {/* Header */}
+                        <Typography variant="h2" gutterBottom>User Details</Typography>
+
+                        {/* Tabs */}
                         <Tabs
                             indicatorColor="primary"
                             textColor="primary"

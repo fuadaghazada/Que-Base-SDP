@@ -5,11 +5,12 @@ import PrivateRoute from './components/custom/PrivateRoute'
 import Login from './components/auth/Login';
 import SignUp from './components/auth/Registration';
 import Home from "./components/Home";
-import UploadQuestion from "./components/questions/UploadQuestion";
+import FindQuestion from "./components/questions/FindQuestion";
 import FilterQuestions from "./components/questions/FilterQuestions";
 import UserDetails from "./components/users/UserDetails";
 import QuestionDetails from "./components/questions/QuestionDetails";
 import FriendRequests from "./components/users/FriendRequests";
+import UserSearchResult from "./components/users/UserSearchResult";
 
 /***
  *  Application interface
@@ -25,11 +26,12 @@ const App = () => {
 
         {/* Private Routes */}
         <PrivateRoute path={'/'} component={Home} exact />
-        <PrivateRoute path={'/uploadQuestion'} component={UploadQuestion} />
+        <PrivateRoute path={'/findQuestion'} component={FindQuestion} />
         <PrivateRoute path={'/filterQuestions'} component={FilterQuestions} />
         <PrivateRoute path={'/userDetails/:id?'} component={UserDetails} />
         <PrivateRoute path={'/questionDetails/:id'} component={QuestionDetails} />
         <PrivateRoute path={'/friendRequests'} component={FriendRequests} />
+        <PrivateRoute path={'/searchUsers/:username'} component={UserSearchResult} />
 
       </Router>
   );
