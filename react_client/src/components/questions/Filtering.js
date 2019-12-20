@@ -46,7 +46,8 @@ class Filtering extends Component {
             sort: {
                 attr: "_id",
                 order: 1
-            }
+            },
+            label: ""
         }
     }
 
@@ -270,6 +271,10 @@ class Filtering extends Component {
                                 <MenuItem value="or">Or</MenuItem>
                                 <MenuItem value="and">And</MenuItem>
                             </Select>
+                        </Grid>
+
+                        <Grid item md={12}>
+                            <TextField label="Label" placeholder="Label (programming)" name="label" onChange={this.handleChange} fullWidth={true}/>
                         </Grid>
 
                         {/* Submit */}

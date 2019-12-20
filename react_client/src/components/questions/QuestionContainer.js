@@ -11,7 +11,7 @@ import QuestionPreview from "../questions/QuestionPreview";
 
 const QuestionContainer = (props) => {
 
-    const {questions, handleRequest, page, header} = props;
+    const {questions, handleRequest, page, header, styles} = props;
     const numberOfPages = questions['numberOfPages'];
 
     /**
@@ -25,7 +25,7 @@ const QuestionContainer = (props) => {
         if (data.length === 0)
             return <Typography variant={"h5"}>No results</Typography>;
 
-        return data.map(question => (
+        return data.reverse().map(question => (
             <QuestionPreview
                 key={question['_id']}
                 data={question}
@@ -40,6 +40,7 @@ const QuestionContainer = (props) => {
                          numberOfPages={numberOfPages}
                          handleRequest={handleRequest}
                          renderPreviews={renderQuestionPreviews}
+                         styles={styles}
         >
         </CustomContainer>
     );

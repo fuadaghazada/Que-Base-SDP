@@ -85,6 +85,9 @@ class SearchedQuestion():
             questionsIds = list(map(lambda x: x['questionId'], filterThreshold))
             similarityRates = list(map(lambda x: x['similarityRate'], filterThreshold))
 
+            if len(questionsIds) == 0:
+                return {"data": []}
+
             # Generatin query
             finalQuery = None
             queryGen = CustomQueryGenerator()
@@ -105,6 +108,8 @@ class SearchedQuestion():
                     finalQuery = mergedQueryDict
                 else:
                     finalQuery = queryDict
+            else:
+                finalQuery = queryDict
 
             # Sending final query
             results = Question.find(finalQuery, pageNumber=pageNumber)

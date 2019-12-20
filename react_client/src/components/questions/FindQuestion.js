@@ -1,12 +1,25 @@
 import React, { Component } from 'react';
-import { Container, TextField, Grid, Typography, Slider, Input, Button, FormControlLabel, Checkbox } from '@material-ui/core';
+import { Element, scroller } from 'react-scroll';
+import {
+    Container,
+    TextField,
+    Grid,
+    Typography,
+    Slider,
+    Input,
+    Button,
+    FormControlLabel,
+    Checkbox,
+    Select, MenuItem
+} from '@material-ui/core';
+
+
 
 import questionServices from "../../services/question.service";
 
 import NavBar from "../NavBar";
 import QuestionContainer from "./QuestionContainer";
 import InsertQuestion from "./InsertQuestion";
-
 
 
 /***
@@ -26,6 +39,7 @@ class FindQuestion extends Component {
 
             threshold: 60,
             save: false,
+            type: "soc",
 
             // Component states
             isLoading: false,
@@ -35,6 +49,7 @@ class FindQuestion extends Component {
         };
 
         this.insertContainer = React.createRef();
+
     }
 
     handleCheckbox = name => event => {
@@ -78,19 +93,39 @@ class FindQuestion extends Component {
             body: this.state.body
         };
 
-        questionServices.findSimilarQuestions(data, page, this.state.threshold)
-            .then(response => {
+        // Social-Science
+        if (this.state.type === "soc") {
+            questionServices.findSimilarQuestions(data, page, this.state.threshold)
+                .then(response => {
 
-                this.setState({
-                    isLoading: false,
-                    data: response['questions'],
-                    page: page
-                });
+                    this.setState({
+                        isLoading: false,
+                        data: response['questions'],
+                        page: page
+                    });
 
-            })
-            .catch(err => {
-                console.log(err);
-            })
+                })
+                .catch(err => {
+                    console.log(err);
+                })
+        }
+
+        // Programming
+        else if (this.state.type === "prog") {
+            questionServices.findSimilarAlgoQuestions(data, page)
+                .then(response => {
+
+                    this.setState({
+                        isLoading: false,
+                        data: response['questions'],
+                        page: page
+                    });
+
+                })
+                .catch(err => {
+                    console.log(err);
+                })
+        }
     };
 
     /**
@@ -107,8 +142,14 @@ class FindQuestion extends Component {
             this.insertContainer.current.handleInsert(this.state.body);
         }
 
+        this.handleRequest();
 
-        this.handleRequest()
+        scroller.scrollTo('questions', {
+            duration: 1000,
+            delay: 100,
+            smooth: true,
+            offset: 50,
+        })
     };
 
     render() {
@@ -135,14 +176,42 @@ class FindQuestion extends Component {
                             fullWidth={true}
                         />
 
-                        <Typography variant="overline" display="block" gutterBottom>
-                            Pick Similarity Rate:
-                        </Typography>
+                        {/* Type */}
+                        <Grid container spacing={2} maxwidth="md">
+                            {/* Label */}
+                            <Grid item md={4}>
+                                <Typography variant="overline" display="block" gutterBottom>
+                                    Question Type
+                                </Typography>
+                            </Grid>
 
-                        <Grid container spacing={2} alignItems="center" maxwidth="md">
+                            {/* Combo box */}
+                            <Grid item md={8}>
+                                <Select
+                                    value={this.state.type}
+                                    name={"type"}
+                                    onChange={this.handleChange}
+                                    fullWidth={true}
+                                >
+                                    <MenuItem value="soc">Social-Science</MenuItem>
+                                    <MenuItem value="prog">Programming</MenuItem>
+                                </Select>
+                            </Grid>
+                        </Grid>
 
-                            {/* Threshold slider */}
-                            <Grid item md={7}>
+
+                        {/* Threshold */}
+                        {this.state.type === "soc" &&
+                        <Grid container spacing={2} maxwidth="md">
+                            {/* Label */}
+                            <Grid item md={4}>
+                                <Typography variant="overline" display="block" gutterBottom>
+                                    Pick Similarity Rate
+                                </Typography>
+                            </Grid>
+
+                            {/*  Slider  */}
+                            <Grid item md={6}>
                                 <Slider
                                     name="threshold"
                                     value={typeof this.state.threshold === 'number' ? this.state.threshold : 0}
@@ -151,6 +220,7 @@ class FindQuestion extends Component {
                                     min={40}
                                 />
                             </Grid>
+
                             {/* Threshold Number Input */}
                             <Grid item md={2}>
                                 <Input
@@ -170,31 +240,33 @@ class FindQuestion extends Component {
                                     }}
                                 />
                             </Grid>
-                            {/* Check for insert */}
-                            <Grid item md={3}>
-                                <FormControlLabel
-                                    control={
-                                        <Checkbox
-                                            checked={this.state.save}
-                                            onChange={this.handleCheckbox('save')}
-                                            color="primary"
-                                        />
-                                    }
-                                    label="Save question?"
-                                />
-                            </Grid>
                         </Grid>
+                        }
+
+                        {/* Save? */}
+                        <FormControlLabel
+                            control={
+                                <Checkbox
+                                    checked={this.state.save}
+                                    onChange={this.handleCheckbox('save')}
+                                    color="primary"
+                                />
+                            }
+                            label="Save question?"
+                        />
+
 
                         {/* Insert container */}
                         {this.state.save && <InsertQuestion bodyExists={true} ref={this.insertContainer}/>}
 
                         {/* Submit */}
                         <Button type="submit" variant="contained" color="primary" fullWidth={true}>Find</Button>
-
                     </form>
 
                     {/* Results */}
-                    {this.state.data && <QuestionContainer questions={this.state.data} page={this.state.page} handleRequest={this.handleRequest}/>}
+                    <Element name={"questions"} className={"questions"}>
+                        {this.state.data && <QuestionContainer questions={this.state.data} page={this.state.page} handleRequest={this.handleRequest} styles={{marginTop: "100px"}}/>}
+                    </Element>
                 </Container>
 
             </div>

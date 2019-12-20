@@ -16,13 +16,45 @@ const QUESTIONS_API_URL = "http://localhost:8000/questions";     // TODO: This s
 const findSimilarQuestions = (data, page = null, threshold = null) => {
 
     // Preparing the request URL
-    let requestURL = `${QUESTIONS_API_URL}/findSimilarQuestions`;
+    let main_url = QUESTIONS_API_URL.replace('questions', 'scQuestions');
+    let requestURL = `${main_url}/findSimilarQuestions`;
 
     if (page && typeof(page) === 'number')
         requestURL += `?page=${page}`;
 
     if (threshold && typeof(threshold) === 'number')
         requestURL += `&threshold=${threshold}`;
+
+    // Headers
+    const headers = {...{'Content-Type': 'application/json'}, ...getHeaders.auth()};
+
+    // Sending POST request
+    return axios({
+        method: 'post',
+        headers: headers,
+        url: requestURL,
+        data: data
+    })
+        .then(response => {
+
+            return response.data;
+        })
+        .catch(err => console.log(err));
+};
+
+
+/**
+ *  [POST] Find Similar Questions
+ */
+
+const findSimilarAlgoQuestions = (data, page = null) => {
+
+    // Preparing the request URL
+    let main_url = QUESTIONS_API_URL.replace('questions', 'algoQuestions');
+    let requestURL = `${main_url}/findSimilarQuestions`;
+
+    if (page && typeof(page) === 'number')
+        requestURL += `?page=${page}`;
 
     // Headers
     const headers = {...{'Content-Type': 'application/json'}, ...getHeaders.auth()};
@@ -71,6 +103,11 @@ const getQuestions = (data, page = null) => {
         .catch(err => console.log(err));
 };
 
+
+/**
+ *  [GET]
+ */
+
 const getQuestion = (id) => {
 
     // Preparing the request URL
@@ -93,6 +130,11 @@ const getQuestion = (id) => {
         })
         .catch(err => console.log(err));
 };
+
+
+/**
+ *  [GET]
+ */
 
 const getUserQuestions = (id, page = null) => {
 
@@ -242,6 +284,7 @@ const getMostViewedQuestions = (page = null, threshold = null) => {
 
 export default {
     findSimilarQuestions: findSimilarQuestions,
+    findSimilarAlgoQuestions: findSimilarAlgoQuestions,
     getQuestions: getQuestions,
     getQuestion: getQuestion,
     getUserQuestions: getUserQuestions,

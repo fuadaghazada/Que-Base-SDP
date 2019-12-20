@@ -6,6 +6,7 @@ from app.helpers.types import QuestionType
 
 '''
 def createFilterQuery(attr, type = QuestionType.SOC):
+
     # Empty
     query = CustomQueryGenerator()
 
@@ -27,8 +28,8 @@ def createFilterQuery(attr, type = QuestionType.SOC):
     # ALGO filters
     try:
         if type == QuestionType.ALGO:
-            query.addStringField('level', attr['level'])
-            # query.addLabelField('labels', attr['labels'])
+            query.addStringField('label', attr['label'])
+
     except Exception as e:
         raise e
 

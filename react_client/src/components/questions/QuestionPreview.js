@@ -26,7 +26,7 @@ const useStyles = makeStyles({
 
 const QuestionPreview = (props) => {
 
-    const {_id, title, viewCount} = props['data'];
+    const {_id, title, viewCount, labels, similarityRate} = props['data'];
     const classes = useStyles();
 
     return (
@@ -39,7 +39,11 @@ const QuestionPreview = (props) => {
                         <Grid container item md={8} >
                             <Typography component={"h2"}>{title}</Typography>
                         </Grid>
-                        <Grid container item md={4} justify={"flex-end"}>
+                        <Grid container item md={2}>
+                            {labels && <Typography component={"p"}><strong>Labels:</strong> {labels.toString()}</Typography>}
+                            {similarityRate && <Typography component={"p"}>Similarity rate: {similarityRate} %</Typography>}
+                        </Grid>
+                        <Grid container item md={2} justify={"flex-end"}>
                             <Typography component={"p"}>Views: {viewCount}</Typography>
                         </Grid>
                         <Link href={`/questionDetails/${_id}`}>View Question</Link>

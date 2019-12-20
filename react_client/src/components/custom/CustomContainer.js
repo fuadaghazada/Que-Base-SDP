@@ -15,7 +15,7 @@ import pagination from '../../utils/pagination';
 
 const CustomContainer = (props) => {
 
-    const { header, renderPreviews, page, numberOfPages, handleRequest } = props;
+    const { header, renderPreviews, page, numberOfPages, handleRequest, styles } = props;
 
     /**
      *  Updating the page - updating the data according to it
@@ -50,7 +50,7 @@ const CustomContainer = (props) => {
 
     return (
 
-        <Container maxWidth={"md"}>
+        <Container maxWidth={"md"} style={{...styles, marginTop: "50px"}}>
 
             {/* Header */}
             <Typography variant={"h2"} gutterBottom>{header}</Typography>

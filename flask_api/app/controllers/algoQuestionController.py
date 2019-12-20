@@ -89,5 +89,5 @@ def getSimilarQuestions(user):
     # Return response
     return jsonify({
         'success': True,
-        'results': results
+        'questions': results
     })

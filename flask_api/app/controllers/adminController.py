@@ -94,6 +94,7 @@ def postInsertAlgoQuestion():
 
         for question in questions:
             status, msg = Question(question, type = QuestionType.ALGO).insert_one()
+            questionObj["body"] = question['body']
 
             if not status:
                 Question({"body": question['body']}, type = QuestionType.ALGO).update_one(questionObj)

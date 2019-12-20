@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Element, scroller } from 'react-scroll';
 
 import NavBar from "../NavBar";
 import QuestionContainer from "./QuestionContainer";
@@ -58,6 +59,13 @@ class FilterQuestions extends Component {
             .catch(err => {
                 console.log(err);
             });
+
+        scroller.scrollTo('questions', {
+            duration: 1000,
+            delay: 100,
+            smooth: true,
+            offset: 50,
+        })
     };
 
     render() {
@@ -68,7 +76,9 @@ class FilterQuestions extends Component {
                 <Filtering handleRequest={this.handleRequest} page={this.state.page}/>
 
                 {/* Results */}
-                {this.state.data && <QuestionContainer questions={this.state.data} page={this.state.page} handleRequest={this.handleRequest}/>}
+                <Element name={"questions"} className={"questions"}>
+                    {this.state.data && <QuestionContainer questions={this.state.data} page={this.state.page} handleRequest={this.handleRequest} styles={{marginTop: "100px"}}/>}
+                </Element>
             </div>
         );
     }

@@ -1,6 +1,6 @@
 from enum import Enum
 
-ALGO_COLLECTION_NAME = "algQuestions"
+ALGO_COLLECTION_NAME = "questions"
 SOC_COLLECTION_NAME = "questions"
 
 '''

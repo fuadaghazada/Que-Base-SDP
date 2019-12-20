@@ -17,7 +17,7 @@ class FilterQuerySchema(Schema):
     topic = fields.Dict(required = False)
     category = fields.Dict(required = False)
 
-    labels = fields.List(fields.String(), required = False)
+    label = fields.Str(required = False)
     level = fields.Str(required = False)
 
 '''

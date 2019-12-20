@@ -114,7 +114,7 @@ class Registration extends Component {
             return <Redirect to={'/'}/>
         }
         return (
-            <Container component="main" maxWidth="xs">
+            <Container component="main" maxWidth="xs" style={{marginTop: "200px"}}>
                 <CssBaseline />
                 <form onChange={this.handleChange} onSubmit={this.handleSubmit} method="post">
                     <div className={this.state.useStyles.paper}>

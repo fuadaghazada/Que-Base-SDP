@@ -95,7 +95,7 @@ class InsertQuestion extends Component {
                 }
 
                 <Grid item md={12}>
-                    <TextField label="Title" placeholder="Text" name="title" onChange={this.handleChange} fullWidth={true}/>
+                    <TextField label="Title" placeholder="Text" name="title" onChange={this.handleChange} fullWidth={true} required={true}/>
                 </Grid>
 
                 {/* Reference */}

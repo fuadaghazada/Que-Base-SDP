@@ -22,7 +22,7 @@ const useStyles = makeStyles(theme => ({
 const QuestionDisplay = (props) => {
 
     const classes = useStyles();
-    const { title, body, viewCount, favCount, source } = props.questionData;
+    const { title, body, viewCount, favCount, source, labels } = props.questionData;
     const { isFavorite, favoriteQuestion } = props;
 
     let course = "---";
@@ -51,6 +51,7 @@ const QuestionDisplay = (props) => {
                 <Box>
                     <Typography className={classes.stat} variant={"subtitle1"}>View count: {viewCount}</Typography>
                     <Typography className={classes.stat} variant={"subtitle1"}>Favorite count: {favCount}</Typography>
+                    {labels && <Typography component={"p"}> Labels: {labels} %</Typography>}
                 </Box>
                 <Box>
                     <Typography variant={"subtitle1"}>Course: {course}</Typography>
