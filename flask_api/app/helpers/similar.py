@@ -67,12 +67,6 @@ def findSimilarQuestions(questionBody):
             del foundQuestions[i]['question']['topics']
             del foundQuestions[i]['question']['categories']
 
-
-        from pprint import pprint
-        print("\n\n\n\n")
-        pprint(foundQuestions)
-        print("\n\n\n\n")
-
         return foundQuestions
 
     except Exception as e:
