@@ -25,7 +25,7 @@ const QuestionContainer = (props) => {
         if (data.length === 0)
             return <Typography variant={"h5"}>No results</Typography>;
 
-        return data.reverse().map(question => (
+        return data.map(question => (
             <QuestionPreview
                 key={question['_id']}
                 data={question}

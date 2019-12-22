@@ -84,9 +84,9 @@ def getSimilarQuestions(user):
             })
 
     # Result questions
-    results = searchedQuestion.get(threshold, pageNumber=page, filterData=filterData)
+    results = searchedQuestion.get(threshold, pageNumber = page, filterData = filterData)
     questions = results["data"]
-    questions.sort(key = lambda x: x['similarityRate'])
+    questions.sort(key = lambda x: x['similarityRate'], reverse = True)
 
     # Updating the results in dict
     results["data"] = questions

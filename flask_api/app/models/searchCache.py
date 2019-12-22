@@ -112,7 +112,7 @@ class SearchedQuestion():
                 finalQuery = queryDict
 
             # Sending final query
-            results = Question.find(finalQuery, pageNumber=pageNumber)
+            results = Question.find(finalQuery, pageNumber = pageNumber)
             questions = list(results["data"])
 
             # Adding the similarity rates to the result

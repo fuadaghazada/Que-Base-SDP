@@ -49,6 +49,7 @@ const UserPreview = (props) => {
     const useStyles = makeStyles({
         card: {
             width: '100%',
+            marginBottom: "5px"
         },
         color: {
             color: '#fff',

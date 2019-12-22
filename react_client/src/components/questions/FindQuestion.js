@@ -174,6 +174,7 @@ class FindQuestion extends Component {
                             variant="outlined"
                             name="body"
                             fullWidth={true}
+                            value={this.state.body}
                         />
 
                         {/* Type */}

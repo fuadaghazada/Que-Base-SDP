@@ -1,4 +1,7 @@
+from copy import deepcopy
+
 import fasttext as ft
+from sklearn.metrics.pairwise import cosine_similarity
 
 from bson.objectid import ObjectId
 
@@ -42,7 +45,7 @@ def getSimilarQuestions(user):
 
     # Loading the model and predicting + some processing
     model = ft.load_model(ALGO_MODEL_PATH)
-    result = model.predict(questionBody)
+    result = model.predict(questionBody.replace('\n', ' '))
     label, reliabilty = result
     label = label[0] if len(label) > 0 else None
     label = label.replace('__label__', '').replace('-', ' ')
@@ -85,9 +88,26 @@ def getSimilarQuestions(user):
 
     # Requesting the query
     results = Question.find(queryDict, sortingAttr = sortingAttr, sortOrder = sortOrder, pageNumber = page, type = QuestionType.ALGO)
+    resultsWithRates = deepcopy(results)
+
+    # Sorting according to confidence level
+    questionBodyVector = model.get_sentence_vector(str(questionBody).replace('\n', ' '))
+    questionBodyVector = questionBodyVector.reshape(1, questionBodyVector.shape[0])
+
+    for i, result in enumerate(results['data']):
+
+        bodyVector = model.get_sentence_vector(result['body'].replace('\n', ' '))
+        bodyVector = bodyVector.reshape(1, bodyVector.shape[0])
+
+        cosSimilarity = cosine_similarity(questionBodyVector, bodyVector)[0, 0]
+        cosSimilarity = round(cosSimilarity, 3)
+        resultsWithRates['data'][i]['confidenceRate'] = str(cosSimilarity)
+
+    # Adding the confidence rate to the data instances in the list
+    resultsWithRates['data'] = sorted(resultsWithRates['data'], key = lambda x: x['confidenceRate'], reverse = True)
 
     # Return response
     return jsonify({
         'success': True,
-        'questions': results
+        'questions': resultsWithRates
     })
