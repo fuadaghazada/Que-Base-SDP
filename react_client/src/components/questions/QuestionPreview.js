@@ -16,6 +16,7 @@ import {
 const useStyles = makeStyles({
     card: {
         width: "100%",
+        marginBottom: "5px"
     }
 });
 
@@ -26,7 +27,7 @@ const useStyles = makeStyles({
 
 const QuestionPreview = (props) => {
 
-    const {_id, title, viewCount, labels, similarityRate} = props['data'];
+    const {_id, title, viewCount, labels, similarityRate, confidenceRate} = props['data'];
     const classes = useStyles();
 
     return (
@@ -36,13 +37,18 @@ const QuestionPreview = (props) => {
                 {/* Card content */}
                 <CardContent>
                     <Grid container direction="row">
-                        <Grid container item md={8} >
+                        <Grid container item md={5} >
                             <Typography component={"h2"}>{title}</Typography>
                         </Grid>
-                        <Grid container item md={2}>
+                        <Grid container item md={3}>
                             {labels && <Typography component={"p"}><strong>Labels:</strong> {labels.toString()}</Typography>}
-                            {similarityRate && <Typography component={"p"}>Similarity rate: {similarityRate} %</Typography>}
                         </Grid>
+
+                        <Grid container item md={2}>
+                            {similarityRate && <Typography component={"p"}><strong>Similarity rate:</strong> {similarityRate} %</Typography>}
+                            {confidenceRate && <Typography component={"p"}><strong>Confidence rate:</strong> {confidenceRate}</Typography>}
+                        </Grid>
+
                         <Grid container item md={2} justify={"flex-end"}>
                             <Typography component={"p"}>Views: {viewCount}</Typography>
                         </Grid>
