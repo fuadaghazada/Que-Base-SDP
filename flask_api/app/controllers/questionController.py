@@ -10,6 +10,7 @@ from app.schemas import validateQuestion, validateFilterQuery
 
 from app.helpers.isAuth import isAuth
 from app.helpers.filter import createFilterQuery
+from app.helpers.types import QuestionType
 
 
 # Blue print
@@ -27,6 +28,10 @@ def postInsertQuestion(user):
     requestData = request.get_json()
     validation = validateQuestion(requestData)
 
+    # Parameters
+    type = int(request.args.get('type')) if request.args.get('type') else 0
+    type = QuestionType.SOC if type == 0 else QuestionType.ALGO
+
     # Invalid
     if validation['success'] is False:
         return jsonify(validation)
@@ -34,7 +39,7 @@ def postInsertQuestion(user):
     try:
         # Inserting
         requestData['userId'] = user["_id"]
-        status, msg = Question(requestData).insert_one()
+        status, msg = Question(requestData, type = type).insert_one()
 
         # Response obj
         response = {

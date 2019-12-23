@@ -258,10 +258,10 @@ class FindQuestion extends Component {
 
 
                         {/* Insert container */}
-                        {this.state.save && <InsertQuestion bodyExists={true} ref={this.insertContainer}/>}
+                        {this.state.save && <InsertQuestion bodyExists={true} ref={this.insertContainer} type={this.state.type} />}
 
                         {/* Submit */}
-                        <Button type="submit" variant="contained" color="primary" fullWidth={true}>Find</Button>
+                        <Button type="submit" variant="contained" color="primary" fullWidth={true} style={{marginTop: "20px"}}>Find</Button>
                     </form>
 
                     {/* Results */}

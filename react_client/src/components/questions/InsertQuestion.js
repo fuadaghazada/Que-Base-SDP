@@ -38,7 +38,12 @@ class InsertQuestion extends Component {
         if (e.target.value !== '') {
             this.setState({[e.target.name]: e.target.value})
         } else {
-            this.setState({[e.target.name]: null})
+            if (e.target.name === "level") {
+                delete this.state[e.target.name];
+                this.setState(this.state);
+            } else {
+                this.setState({[e.target.name]: undefined})
+            }
         }
     };
 
@@ -58,6 +63,33 @@ class InsertQuestion extends Component {
                 [name]: value
             }
         }));
+    };
+
+
+    /**
+     *  Handling change for labels
+     *
+     *  @param e: input event
+     */
+
+    handleArrayFields = (e) => {
+        const name = e.target.name;
+        const value = e.target.value;
+
+        if (name === "labels" && value === "") {
+            delete this.state[e.target.name];
+            this.setState(this.state);
+
+        } else {
+            const fields = value.split(',').map(el => el.trim()).filter(el => el !== "");
+
+            this.setState(prevState => ({
+                [name]: {
+                    ...prevState[name],
+                    stringsToMatch: fields
+                }
+            }));
+        }
     };
 
     /**
@@ -83,6 +115,10 @@ class InsertQuestion extends Component {
     };
 
     render() {
+
+        let { type } = this.props;
+        type = (type) ? type : "soc";
+
         return (
 
             <Grid container spacing={5}>
@@ -112,6 +148,21 @@ class InsertQuestion extends Component {
                 <Grid item md={4}>
                     <TextField label="Course" placeholder="Course" name="course" onChange={this.handleSource} fullWidth={true}/>
                 </Grid>
+
+                {/* Labels */}
+                {type !== "soc" &&
+                <Grid item md={6}>
+                    <TextField label="Labels" placeholder="Labels" name="labels" onChange={this.handleArrayFields} fullWidth={true} required={true}/>
+                </Grid>
+                }
+
+                {/* Level */}
+                {type !== "soc" &&
+                <Grid item md={6}>
+                    <TextField label="Level" placeholder="Level" name="level" onChange={this.handleChange} fullWidth={true}/>
+                </Grid>
+
+                }
             </Grid>
 
         );
