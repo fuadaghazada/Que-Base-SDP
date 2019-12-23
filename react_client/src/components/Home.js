@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import NavBar from "./NavBar";
 
 import questionServices from '../services/question.service';
+import postServices from '../services/post.service';
+
 import QuestionContainer from "./questions/QuestionContainer";
 
 /**
@@ -15,19 +17,22 @@ class Home extends Component {
         this.state = {
 
             questionData: null,
+            userFeedData: null,
 
             isLoading: false,
             error: null,
-            page: 1,
+            pageMVQ: 1,
+            pageFeed: 1,
             threshold: 0
         }
     }
 
     componentDidMount() {
-        this.handleRequest(this.state.page);
+        this.handleRequestMVQ(this.state.pageMVQ);
+        this.handleRequestFeed(this.state.pageFeed);
     }
 
-    handleRequest = (page = 1) =>{
+    handleRequestMVQ = (page = 1) =>{
 
         this.setState({isLoading: true});
         questionServices.getMostViewedQuestions(page, this.state.threshold)
@@ -44,7 +49,25 @@ class Home extends Component {
             .catch(err => {
                 console.log(err);
             })
+    };
 
+    handleRequestFeed = (page = 1) =>{
+
+        this.setState({isLoading: true});
+        postServices.getPosts(page)
+            .then(response => {
+
+                if (response['success']) {
+
+                    this.setState({
+                        isLoading: false,
+                        userFeedData: response['result']
+                    })
+                }
+            })
+            .catch(err => {
+                console.log(err);
+            })
     };
 
     render() {
@@ -52,8 +75,8 @@ class Home extends Component {
             <div>
                 <NavBar />
                 {this.state.questionData && <QuestionContainer questions={this.state.questionData}
-                                                               page={this.state.page}
-                                                               handleRequest={this.handleRequest}
+                                                               page={this.state.pageMVQ}
+                                                               handleRequest={this.handleRequestMVQ}
                                                                header={"Most viewed questions"}
                 />}
             </div>

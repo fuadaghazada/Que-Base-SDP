@@ -28,6 +28,7 @@ class User(Model):
             self.password = hashPassword(userObj["password"])
             self.favoriteQuestions = []
             self.friends = []
+            self.feedList = []
 
 
     '''
@@ -130,3 +131,24 @@ class User(Model):
             print("No such attribute")
 
         return super().data()
+
+
+    '''
+        Adding user feed
+    '''
+    def addFeed(self, postId):
+
+        feedList = None
+        try:
+            feedList = getattr(self, 'feedList')
+        except Exception as e:
+            pass
+
+        feedList = feedList if feedList else []
+
+        feedList.append(postId)
+        setattr(self, 'feedList', feedList)
+
+        self.update_one(vars(self))
+
+        return True

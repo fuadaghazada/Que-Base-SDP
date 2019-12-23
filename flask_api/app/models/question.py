@@ -62,9 +62,10 @@ class Question(Model):
                 self.categories = categories
 
             # Insertion
-            db[self.collectionName].insert_one(self.data())
+            result = db[self.collectionName].insert_one(self.data())
+            questionId = result.inserted_id
 
-        return True, "Question is inserted"
+        return True, "Question is inserted", questionId
 
 
     '''
@@ -73,7 +74,7 @@ class Question(Model):
         :param: updateValues - new values for update
     '''
     def update_one(self, updateValues):
-        super().update_one(updateValues, self.collectionName)
+        super().update_one(updateValues, "questions")   # TODO: Hard coded
 
 
     '''

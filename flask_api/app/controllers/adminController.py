@@ -44,7 +44,7 @@ def postInsertQuestion():
         for question in questions:
             questionObj["body"] = question
 
-            status, msg = Question(questionObj).insert_one()
+            status, msg, id = Question(questionObj).insert_one()
 
             if not status:
                 Question({"body": question}).update_one(questionObj)
@@ -93,7 +93,7 @@ def postInsertAlgoQuestion():
         questions = readProgrammingQuestions(filename)
 
         for question in questions:
-            status, msg = Question(question, type = QuestionType.ALGO).insert_one()
+            status, msg, id = Question(question, type = QuestionType.ALGO).insert_one()
             questionObj["body"] = question['body']
 
             if not status:

@@ -50,6 +50,10 @@ class QuestionDetails extends Component {
         }
     }
 
+    handleRequest = () => {
+
+    };
+
     favoriteQuestion = () => {
 
         try {
@@ -58,7 +62,10 @@ class QuestionDetails extends Component {
             questionServices.favoriteQuestion(questionId)
                 .then(response => {
                     if (response['success']) {
-                        this.setState({isFavorite: response['result']})
+                        this.setState({
+                            isFavorite: response['result'],
+                            questionData: response['question'],
+                        })
                     }
                 })
         } catch (e) {
@@ -67,7 +74,6 @@ class QuestionDetails extends Component {
     };
 
     render(){
-
         return (
             <div>
                 <NavBar/>

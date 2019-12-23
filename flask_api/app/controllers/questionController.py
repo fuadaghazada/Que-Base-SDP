@@ -4,9 +4,9 @@ from flask import Blueprint
 from flask import jsonify
 from flask import request
 
-from app.models import Question, User
+from app.models import Question, User, Post
 
-from app.schemas import validateQuestion, validateFilterQuery
+from app.schemas import validateQuestion, validateFilterQuery, validatePost
 
 from app.helpers.isAuth import isAuth
 from app.helpers.filter import createFilterQuery
@@ -39,7 +39,8 @@ def postInsertQuestion(user):
     try:
         # Inserting
         requestData['userId'] = user["_id"]
-        status, msg = Question(requestData, type = type).insert_one()
+        userData = User({"_id": ObjectId(user['_id'])}).data()
+        status, msg, questionId = Question(requestData, type = type).insert_one()
 
         # Response obj
         response = {
@@ -50,6 +51,24 @@ def postInsertQuestion(user):
         # Checking the status of insertion
         if status is True:
             response["question"] = requestData
+
+        username = userData['username']
+        message = f"{username} uploaded a question"
+
+        # Creating & inserting a post
+        postObj = {
+            "userId": str(user["_id"]),
+            "message": message,
+            "questionId": str(questionId)
+        }
+        validation = validatePost(postObj)
+
+        # Invalid
+        if validation['success'] is False:
+            return jsonify(validation)
+
+        post = Post(postObj)
+        post.insert_one()
 
         # Response
         return jsonify(response), 200
@@ -121,6 +140,7 @@ def favoriteQuestion(user):
 
     # Getting the user adding the favorite questions to list
     user = User({"_id": userId})
+    username = user.data()['username']
 
     status, message = False, ""
 
@@ -129,16 +149,31 @@ def favoriteQuestion(user):
 
     question = Question({"_id": questionId})
     if questionId not in curFavoriteQuestions:
-
         question.updateFavCount()
         curFavoriteQuestions.append(questionId)
         status = True
-        message = "Questions is added to the favorite list!"
+        message = f"{username} favorited a question"
+
+        # Creating & inserting a post
+        postObj = {
+            "userId": userId,
+            "message": message,
+            "questionId": str(questionId)
+        }
+        validation = validatePost(postObj)
+
+        # Invalid
+        if validation['success'] is False:
+            return jsonify(validation)
+
+        post = Post(postObj)
+        post.insert_one()
+
     else:
         question.updateFavCount(False)
         curFavoriteQuestions.remove(questionId)
         status = False
-        message = "Questions is removed from the favorite list!"
+        message = f"{username} unfavorited a question"
 
     setattr(user, 'favoriteQuestions', curFavoriteQuestions)
 
@@ -149,7 +184,8 @@ def favoriteQuestion(user):
     return jsonify({
         'success': True,
         'result': status,
-        'message': message
+        'message': message,
+        'question': question.data()
     }), 200
 
 
@@ -196,7 +232,6 @@ def getQuestion(user):
     result = None
     try:
         question = Question({"_id": questionId})
-        print(question)
         question.incrementViewCount()
         result = question.data()
     except Exception as e:
