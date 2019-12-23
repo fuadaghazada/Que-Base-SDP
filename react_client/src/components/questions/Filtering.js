@@ -32,22 +32,29 @@ class Filtering extends Component {
                 value: -1
             },
             entityTag: {
-                logicalOp: "or",
+                logicalOp: "and",
                 stringsToMatch: []
             },
             topic: {
-                logicalOp: "or",
+                logicalOp: "and",
                 stringsToMatch: []
             },
             category: {
-                logicalOp: "or",
+                logicalOp: "and",
+                stringsToMatch: []
+            },
+            label: {
+                logicalOp: "and",
+                stringsToMatch: []
+            },
+            level: {
+                logicalOp: "and",
                 stringsToMatch: []
             },
             sort: {
                 attr: "_id",
                 order: 1
-            },
-            label: ""
+            }
         }
     }
 
@@ -193,6 +200,8 @@ class Filtering extends Component {
                             <TextField label="Question body" placeholder="Text" name="body" onChange={this.handleChange} fullWidth={true}/>
                         </Grid>
 
+                        {/* Sources */}
+
                         {/* Reference */}
                         <Grid item md={4}>
                             <TextField label="Reference" placeholder="Reference" name="reference" onChange={this.handleSource} fullWidth={true}/>
@@ -208,7 +217,10 @@ class Filtering extends Component {
                             <TextField label="Course" placeholder="Course" name="course" onChange={this.handleSource} fullWidth={true}/>
                         </Grid>
 
-                        {/* View Count */}
+
+                        {/* Counts */}
+
+                        {/* View count */}
                         <Grid item md={6}>
                             <TextField type="number" label="View Count" placeholder="View Count" name="viewCount" onChange={this.handleValue} fullWidth={true}/>
                             <Select
@@ -233,6 +245,9 @@ class Filtering extends Component {
                                 <MenuItem value="lte">LTE</MenuItem>
                             </Select>
                         </Grid>
+
+
+                        {/* SOC filter fields */}
 
                         {/* Entity Tags */}
                         <Grid item md={4}>
@@ -273,8 +288,33 @@ class Filtering extends Component {
                             </Select>
                         </Grid>
 
-                        <Grid item md={12}>
-                            <TextField label="Label" placeholder="Label (programming)" name="label" onChange={this.handleChange} fullWidth={true}/>
+
+                        {/* Algo filters */}
+
+                        {/* Labels */}
+                        <Grid item md={6}>
+                            <TextField label="Label" placeholder="Label (programming)" name="label" onChange={this.handleArrayFields} fullWidth={true}/>
+                            <Select
+                                value={this.state.label.logicalOp}
+                                name={"label"}
+                                onChange={this.handleLogicalOp}
+                            >
+                                <MenuItem value="or">Or</MenuItem>
+                                <MenuItem value="and">And</MenuItem>
+                            </Select>
+                        </Grid>
+
+                        {/* Levels */}
+                        <Grid item md={6}>
+                            <TextField label="Level" placeholder="Level (programming)" name="level" onChange={this.handleArrayFields} fullWidth={true}/>
+                            <Select
+                                value={this.state.level.logicalOp}
+                                name={"level"}
+                                onChange={this.handleLogicalOp}
+                            >
+                                <MenuItem value="or">Or</MenuItem>
+                                <MenuItem value="and">And</MenuItem>
+                            </Select>
                         </Grid>
 
                         {/* Submit */}

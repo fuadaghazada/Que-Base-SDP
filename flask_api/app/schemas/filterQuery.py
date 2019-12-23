@@ -13,12 +13,12 @@ class FilterQuerySchema(Schema):
     favCount = fields.Dict(required = True)
     sort = fields.Dict(required = True)
 
-    entityTag = fields.Dict(required = False)
-    topic = fields.Dict(required = False)
-    category = fields.Dict(required = False)
+    entityTag = fields.Dict(required = True)
+    topic = fields.Dict(required = True)
+    category = fields.Dict(required = True)
 
-    label = fields.Str(required = False)
-    level = fields.Str(required = False)
+    label = fields.Dict(required = True)
+    level = fields.Dict(required = True)
 
 '''
 	Validating the filter query using the schema above

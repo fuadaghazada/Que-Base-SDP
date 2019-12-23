@@ -59,7 +59,7 @@ const CustomContainer = (props) => {
             {renderPreviews()}
 
             {/* Pagination Buttons */}
-            <ButtonGroup size="small" aria-label="small outlined button group">
+            <ButtonGroup size="small" aria-label="small outlined button group" style={{display: 'flex', justifyContent: 'center'}}>
                 {renderPaginationLinks()}
             </ButtonGroup>
 

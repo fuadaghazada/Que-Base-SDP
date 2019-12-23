@@ -33,7 +33,7 @@ class CustomQueryGenerator:
 
     def addNumberComparisonField(self, fieldName, comparisonSpecs):
 
-        comparisonOperator = comparisonSpecs['comparisonOperator']  # one of "lt", "lte", gt", "gte" or "eq"
+        comparisonOperator = comparisonSpecs['comparisonOperator'] 
 
         # Checking the operator
         validation = checkOperator(comparisonOperator, type = "comparison")
@@ -72,9 +72,46 @@ class CustomQueryGenerator:
             self.conditions.append(elemMatchquery)
 
 
-    def addLabelField(self, label):
-        elemMatchQuery = {"labels": {"$elemMatch": {"$eq": label}}}
-        self.conditions.append(elemMatchQuery)
+    def addElemMatchFields1(self, fieldName, fieldValues):
+
+        logicalOp = fieldValues.get('logicalOp') if fieldValues.get('logicalOp') else "and"
+        stringsToMatch = fieldValues['stringsToMatch']
+
+        # Checking the operator
+        validation = checkOperator(logicalOp, type = "logical")
+        if not validation:
+            self.error = True
+            return
+
+        elemMatchquery = {f"${logicalOp}": []}
+        for string in stringsToMatch:
+            elemMatchquery[f"${logicalOp}"].append({fieldName: { "$elemMatch": { "$regex": string, "$options": "i"}}})
+
+        if len(stringsToMatch) == 0:
+            return
+        else:
+            self.conditions.append(elemMatchquery)
+
+
+    def addLevelField(self, fieldValues):
+
+        logicalOp = fieldValues.get('logicalOp') if fieldValues.get('logicalOp') else "and"
+        stringsToMatch = fieldValues['stringsToMatch']
+
+        # Checking the operator
+        validation = checkOperator(logicalOp, type = "logical")
+        if not validation:
+            self.error = True
+            return
+
+        query = {f"${logicalOp}": []}
+        for string in stringsToMatch:
+            query[f"${logicalOp}"].append({"level": {"$regex": string, "$options": "i"}})
+
+        if len(stringsToMatch) == 0:
+            return
+        else:
+            self.conditions.append(query)
 
 
     def addSourceField(self, fields):

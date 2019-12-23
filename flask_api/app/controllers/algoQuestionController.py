@@ -52,7 +52,7 @@ def getSimilarQuestions(user):
 
     # Generating the query
     query = CustomQueryGenerator()
-    query.addLabelField(label)
+    query.addElemMatchFields1('labels', {"stringsToMatch": [label]})
     queryStatus, queryDict = query.getCompleteQuery()
 
     # Query check
@@ -74,7 +74,7 @@ def getSimilarQuestions(user):
             return jsonify(validation)
 
         # Filtering process
-        filterData, message = createFilterQuery(filtering, QuestionType.ALGO)
+        filterData, message = createFilterQuery(filtering)
 
         if not filterData:
             # Failed

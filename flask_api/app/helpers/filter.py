@@ -16,22 +16,12 @@ def createFilterQuery(attr, type = QuestionType.SOC):
     query.addNumberComparisonField('favCount', attr['favCount'])
     query.addSourceField(attr['source'])
 
-    # SOC filters
-    try:
-        if type == QuestionType.SOC:
-            query.addElemMatchFields('entity_tags', attr['entityTag'])
-            query.addElemMatchFields('topics', attr['topic'])
-            query.addElemMatchFields('categories', attr['category'])
-    except Exception as e:
-        raise e
+    query.addElemMatchFields('entity_tags', attr['entityTag'])
+    query.addElemMatchFields('topics', attr['topic'])
+    query.addElemMatchFields('categories', attr['category'])
 
-    # ALGO filters
-    try:
-        if type == QuestionType.ALGO:
-            query.addStringField('label', attr['label'])
-
-    except Exception as e:
-        raise e
+    query.addElemMatchFields1('labels', attr['label'])
+    query.addLevelField(attr['level'])
 
     sortingProperties = attr['sort']
     sortingAttr = sortingProperties['attr']
@@ -39,6 +29,10 @@ def createFilterQuery(attr, type = QuestionType.SOC):
 
     # Get the final query
     queryStatus, queryDict = query.getCompleteQuery()
+
+    from pprint import pprint
+
+    pprint(queryDict)
 
     if queryStatus:
         return (queryDict, sortingAttr, sortOrder), "Query is generated"

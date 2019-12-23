@@ -6,7 +6,8 @@ import {
     CardActionArea,
     CardContent,
     Link,
-    Grid
+    Grid,
+    Button
 } from '@material-ui/core';
 import Avatar from '@material-ui/core/Avatar';
 
@@ -19,7 +20,7 @@ import color from '../../utils/color';
 const UserPreview = (props) => {
 
     // console.log(props['data'])
-    const {username, _id} = props['data'];
+    const {username, _id, state} = props['data'];
     const useStyles = makeStyles({
         card: {
             width: '100%',
@@ -44,16 +45,37 @@ const UserPreview = (props) => {
                         <Grid container item md={2} >
                             <Avatar className={classes.color}>{username[0].toUpperCase()}</Avatar>
                         </Grid>
-                        <Grid container item md={10} >
+                        <Grid container item md={8} >
                             <Link href={`/userDetails/${_id}`}><Typography className={classes.font}>{username}</Typography></Link>
+                        </Grid>
+                        <Grid container item md={2} >
+                            {state && generateUserState(state)}
                         </Grid>
                     </Grid>
                 </CardContent>
             </CardActionArea>
         </Card>
-
-
     );
+};
+
+
+/**
+ *  Generating state from the user
+ */
+const generateUserState = state => {
+
+    switch (state) {
+        case 1:
+            return <Typography variant={"p"}><i>Your friend</i></Typography>;
+        case 2:
+            return <Typography variant={"p"}><i>Has sent your friend request</i></Typography>;
+        case 3:
+            return <Typography variant={"p"}><i>Requested</i></Typography>;
+        case 4:
+            return <Button>Send Friend Request</Button>
+        default:
+            return null
+    }
 };
 
 // Exporting the component
