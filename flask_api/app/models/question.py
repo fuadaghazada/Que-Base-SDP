@@ -118,3 +118,18 @@ class Question(Model):
             print("No such attribute")
 
         return super().data()
+
+
+    def incrementViewCount(self):
+
+        self.viewCount = self.viewCount + 1
+        self.update_one(vars(self))
+
+
+    def updateFavCount(self, increment=True):
+
+        if increment:
+            self.favCount = self.favCount + 1
+        else:
+            self.favCount = self.favCount - 1
+        self.update_one(vars(self))

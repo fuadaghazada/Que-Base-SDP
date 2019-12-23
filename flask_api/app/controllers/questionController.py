@@ -127,11 +127,15 @@ def favoriteQuestion(user):
     curFavoriteQuestions = user.data().get('favoriteQuestions')
     curFavoriteQuestions  = list(curFavoriteQuestions) if curFavoriteQuestions else []
 
+    question = Question({"_id": questionId})
     if questionId not in curFavoriteQuestions:
+
+        question.updateFavCount()
         curFavoriteQuestions.append(questionId)
         status = True
         message = "Questions is added to the favorite list!"
     else:
+        question.updateFavCount(False)
         curFavoriteQuestions.remove(questionId)
         status = False
         message = "Questions is removed from the favorite list!"
@@ -191,7 +195,10 @@ def getQuestion(user):
 
     result = None
     try:
-        result = Question({"_id": questionId}).data()
+        question = Question({"_id": questionId})
+        print(question)
+        question.incrementViewCount()
+        result = question.data()
     except Exception as e:
         print("NO SUCH QUESTION ID")
         raise e
