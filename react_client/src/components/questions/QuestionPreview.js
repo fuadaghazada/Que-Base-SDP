@@ -45,7 +45,7 @@ const QuestionPreview = (props) => {
                         </Grid>
 
                         <Grid container item md={2}>
-                            {similarityRate && <Typography component={"p"}><strong>Similarity rate:</strong> {similarityRate} %</Typography>}
+                            {similarityRate && <Typography component={"p"}><strong>Similarity %:</strong> {similarityRate}</Typography>}
                             {confidenceRate && <Typography component={"p"}><strong>Confidence rate:</strong> {confidenceRate}</Typography>}
                         </Grid>
 
