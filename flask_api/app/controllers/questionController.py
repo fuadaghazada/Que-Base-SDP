@@ -44,6 +44,8 @@ def postInsertQuestion(user):
         userData = User({"_id": ObjectId(user['_id'])}).data()
         status, msg, questionId = Question(requestData, type = type).insert_one()
 
+        question = Question({"_id": questionId}).data()
+
         # Response obj
         response = {
             "success": status,
@@ -61,7 +63,8 @@ def postInsertQuestion(user):
         postObj = {
             "userId": str(user["_id"]),
             "message": message,
-            "questionId": str(questionId)
+            "questionId": str(questionId),
+            "questionTitle": str(question['title'])
         }
         validation = validatePost(postObj)
 
@@ -160,7 +163,8 @@ def favoriteQuestion(user):
         postObj = {
             "userId": userId,
             "message": message,
-            "questionId": str(questionId)
+            "questionId": str(questionId),
+            "questionTitle": str(question.data()['title'])
         }
         validation = validatePost(postObj)
 

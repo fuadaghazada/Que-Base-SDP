@@ -1,7 +1,7 @@
 from marshmallow import Schema, fields, validate
 
 '''
-    Question schema for validation 
+    Question schema for validation
 '''
 
 class QuestionSchema(Schema):

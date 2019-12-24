@@ -10,6 +10,7 @@ class PostSchema(Schema):
     userId = fields.Str(required = True)
     message = fields.Str(required = True)
     questionId = fields.Str(required = False)
+    questionTitle = fields.Str(required = True)
 
 
 '''

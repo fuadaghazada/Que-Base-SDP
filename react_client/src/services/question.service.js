@@ -223,10 +223,13 @@ const isMyFavorite = (questionId) => {
  *  [POST]
  */
 
-const postInsertQuestion = (data) => {
+const postInsertQuestion = (data, type = 0) => {
 
     // Preparing the request URL
     let requestURL = `${QUESTIONS_API_URL}/insertQuestion`;
+
+    if (type !== 0)
+        requestURL += `?type=${type}`;
 
     // Headers
     const headers = {...{'Content-Type': 'application/json'}, ...getHeaders.auth()};
