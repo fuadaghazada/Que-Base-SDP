@@ -139,7 +139,8 @@ class FindQuestion extends Component {
 
         // Save process..
         if (this.state.save) {
-            this.insertContainer.current.handleInsert(this.state.body);
+            const type = (this.state.type === "soc") ? 0 : 1;
+            this.insertContainer.current.handleInsert(this.state.body, type);
         }
 
         this.handleRequest();

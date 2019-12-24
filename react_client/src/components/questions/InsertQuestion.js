@@ -83,12 +83,9 @@ class InsertQuestion extends Component {
         } else {
             const fields = value.split(',').map(el => el.trim()).filter(el => el !== "");
 
-            this.setState(prevState => ({
-                [name]: {
-                    ...prevState[name],
-                    stringsToMatch: fields
-                }
-            }));
+            this.setState({
+                [name]: fields
+            });
         }
     };
 
@@ -98,13 +95,13 @@ class InsertQuestion extends Component {
      *  @param questionBody: input event
      */
 
-    handleInsert = (questionBody) => {
+    handleInsert = (questionBody, type = 0) => {
 
         // Data to be inserted
         const data = this.state;
         data['body'] = questionBody;
 
-        questionServices.postInsertQuestion(data)
+        questionServices.postInsertQuestion(data, type)
             .then(response => {
                 if (response)
                     console.log(response['message']);
