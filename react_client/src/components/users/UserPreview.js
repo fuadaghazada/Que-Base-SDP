@@ -10,8 +10,12 @@ import {
     Button
 } from '@material-ui/core';
 import Avatar from '@material-ui/core/Avatar';
+import PersonAddIcon from '@material-ui/icons/PersonAdd';
+import PeopleIcon from '@material-ui/icons/People';
+
 
 import color from '../../utils/color';
+import userServices from '../../services/user.service';
 
 /**
     User Preview (functional component)
@@ -49,7 +53,7 @@ const UserPreview = (props) => {
                             <Link href={`/userDetails/${_id}`}><Typography className={classes.font}>{username}</Typography></Link>
                         </Grid>
                         <Grid container item md={2} >
-                            {state && generateUserState(state)}
+                            {state && generateUserState(state, _id)}
                         </Grid>
                     </Grid>
                 </CardContent>
@@ -59,20 +63,42 @@ const UserPreview = (props) => {
 };
 
 
+const sendFriendRequest = (id) => {
+    userServices.sendFriendRequest(id)
+        .then(response => {
+            console.log(response.data)
+        })
+        .catch(err => {
+            console.log(err);
+        })
+};
+
+
+const acceptFriendRequest = (id) => {
+    userServices.acceptFriendRequest(id)
+        .then(response => {
+            console.log(response.data)
+        })
+        .catch(err => {
+            console.log(err);
+        })
+};
+
+
 /**
  *  Generating state from the user
  */
-const generateUserState = state => {
+const generateUserState = (state, id) => {
 
     switch (state) {
         case 1:
-            return <Typography variant={"p"}><i>Your friend</i></Typography>;
+            return <Typography variant={"body1"}><i>Your friend</i></Typography>;
         case 2:
-            return <Typography variant={"p"}><i>Has sent your friend request</i></Typography>;
+            return <Button onClick={() => acceptFriendRequest(id)}><PeopleIcon /></Button>;
         case 3:
-            return <Typography variant={"p"}><i>Requested</i></Typography>;
+            return <Typography variant={"body1"}><i>Requested</i></Typography>;
         case 4:
-            return <Button>Send Friend Request</Button>
+            return <Button onClick={() => sendFriendRequest(id)}><PersonAddIcon /></Button>
         default:
             return null
     }

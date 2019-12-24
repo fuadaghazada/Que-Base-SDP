@@ -101,6 +101,7 @@ class Registration extends Component {
                     this.setState({ redirect: true });
                 } else {
                     this.setState({ error: response.message });
+                    alert(this.state.error);
                 }
             })
             .catch(err => {
@@ -214,8 +215,6 @@ class Registration extends Component {
                         </Grid>
                         </form>
                     </div>
-                    {/* Error */}
-                    {(this.state.error) && alert(this.state.error)}
                 </form>
 
             </Container>

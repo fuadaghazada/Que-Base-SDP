@@ -11,7 +11,7 @@ import UserPreview from "./UserPreview";
 
 const UserContainer = (props) => {
 
-    const {users, handleRequest, page, header, styles} = props;
+    const {users, handleRequest, page, header, styles, state} = props;
     const numberOfPages = users['numberOfPages'];
 
     /**
@@ -25,12 +25,19 @@ const UserContainer = (props) => {
         if (data.length === 0)
             return <Typography variant={"h5"}>No results</Typography>;
 
-        return data.map(user => (
-            <UserPreview
-                key={user['_id']}
-                data={user}
-            />
-        ))
+
+
+        return data.map(user => {
+            if (state)
+                user['state'] = state;
+
+            return (
+                <UserPreview
+                    key={user['_id']}
+                    data={user}
+                />
+            )
+        })
     };
 
     // Returning the render stuff

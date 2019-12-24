@@ -56,7 +56,7 @@ const VideoContainer = (props) => {
         return videos.map((video, i) => {
            return (
                <div className={styles.videoContainer}>
-                   <Typography variant={"p"} className={styles.text}>{video['title']}</Typography>
+                   <Typography variant={"body1"} className={styles.text}>{video['title']}</Typography>
                    <YouTube
                        videoId={video['id']}
                        className={styles.element}

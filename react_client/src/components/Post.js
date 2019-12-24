@@ -22,7 +22,6 @@ const Post = (props) => {
     const {_id, message, questionId, timestamp} = props['data'];
     const date = dateFormat(new Date(timestamp), "mmm d HH:MM")
 
-
     const useStyles = makeStyles({
         card: {
             width: '100%',

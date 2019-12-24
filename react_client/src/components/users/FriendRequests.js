@@ -65,6 +65,7 @@ class FriendRequests extends Component {
                                                     page={this.state.page}
                                                     handleRequest={this.handleRequest}
                                                     header={"Friend Requests"}
+                                                    state={2}
                 />}
             </div>
         )
