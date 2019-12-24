@@ -20,7 +20,9 @@ class Filtering extends Component {
             source: {
                 reference: "",
                 university: "",
-                course: ""
+                course: "",
+                textbook: "",
+                exam: ""
             },
 
             viewCount: {
@@ -217,6 +219,15 @@ class Filtering extends Component {
                             <TextField label="Course" placeholder="Course" name="course" onChange={this.handleSource} fullWidth={true}/>
                         </Grid>
 
+                        {/* Textbook */}
+                        <Grid item md={6}>
+                            <TextField label="Textbook" placeholder="Textbook" name="textbook" onChange={this.handleSource} fullWidth={true}/>
+                        </Grid>
+
+                        {/* Exam */}
+                        <Grid item md={6}>
+                            <TextField label="Exam" placeholder="Exam" name="exam" onChange={this.handleSource} fullWidth={true}/>
+                        </Grid>
 
                         {/* Counts */}
 

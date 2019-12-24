@@ -29,11 +29,15 @@ const QuestionDisplay = (props) => {
     let course = "---";
     let university = "---";
     let reference = "---";
+    let textbook = "---";
+    let exam = "---";
 
     try {
         course = source.course;
         university = source.university;
         reference = source.reference;
+        textbook = source.textbook;
+        exam = source.exam;
     } catch (err) {console.log("No property")}
 
     return (
@@ -55,9 +59,11 @@ const QuestionDisplay = (props) => {
                     {labels && <Typography component={"p"}> Labels: {labels} %</Typography>}
                 </Box>
                 <Box>
-                    <Typography variant={"subtitle1"}>Course: {course}</Typography>
-                    <Typography variant={"subtitle1"}>University: {university}</Typography>
-                    <Typography variant={"subtitle1"}>Reference: {reference}</Typography>
+                    {course && <Typography variant={"subtitle1"}>Course: {course}</Typography>}
+                    {university && <Typography variant={"subtitle1"}>University: {university}</Typography>}
+                    {reference && <Typography variant={"subtitle1"}>Reference: {reference}</Typography>}
+                    {textbook && <Typography variant={"subtitle1"}>Textbook: {textbook}</Typography>}
+                    {exam && <Typography variant={"subtitle1"}>Exam: {exam}</Typography>}
                 </Box>
                 <Fab className={classes.button} color="secondary" aria-label="favorite" onClick={favoriteQuestion}>
                     {!isFavorite ? <FavoriteIcon /> : <FavoriteBorderIcon />}
