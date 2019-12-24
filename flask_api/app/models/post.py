@@ -24,7 +24,7 @@ class Post(Model):
             self.message = postObj["message"]
             self.timestamp = datetime.utcnow() + timedelta(hours = 3)
             self.questionId = ObjectId(postObj.get('questionId')) if postObj.get('questionId') else None
-
+            self.questionTitle = postObj.get('questionTitle') if postObj.get('questionTitle') else None
 
     '''
         Inserting into db

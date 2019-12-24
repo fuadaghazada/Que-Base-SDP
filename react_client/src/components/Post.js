@@ -10,6 +10,7 @@ import {
 } from '@material-ui/core';
 
 import color from '../utils/color';
+import Avatar from "@material-ui/core/Avatar";
 
 const dateFormat = require('dateformat');
 
@@ -19,7 +20,7 @@ const dateFormat = require('dateformat');
 
 const Post = (props) => {
 
-    const {_id, message, questionId, timestamp, userId} = props['data'];
+    const {message, questionId, timestamp, userId, questionTitle} = props['data'];
     const date = dateFormat(new Date(timestamp), "mmm d HH:MM")
     const username = message.split(" ")[0];
     const remainingMessage = message.replace(username, " ");
@@ -27,7 +28,8 @@ const Post = (props) => {
     const useStyles = makeStyles({
         card: {
             width: '100%',
-            padding: "20px"
+            padding: "20px",
+            marginBottom: "5px"
         },
         color: {
             color: '#fff',
@@ -45,7 +47,10 @@ const Post = (props) => {
             <CardActionArea>
                 <CardContent>
                     <Grid container direction="row" alignItems='center'>
-                        <Grid container item md={11} spacing={2} >
+                        <Grid container item md={2} >
+                            <Avatar className={classes.color}>{username[0].toUpperCase()}</Avatar>
+                        </Grid>
+                        <Grid container item md={10} spacing={2} >
                             <Typography className={classes.font}><Link href={`/userDetails/${userId}`}>{username}</Link>{remainingMessage}</Typography>
                         </Grid>
                     </Grid>
@@ -53,7 +58,7 @@ const Post = (props) => {
                 <CardContent>
                     <Grid container direction="row">
                         <Grid container item md={8} >
-                            {/*<Typography component={"h2"}>{title}</Typography>*/}
+                            <Typography component={"h2"}>{questionTitle}</Typography>
                         </Grid>
                         <Grid container item md={2}>
                             {/*{labels && <Typography component={"p"}><strong>Labels:</strong> {labels.toString()}</Typography>}*/}
