@@ -51,7 +51,7 @@ class Question(Model):
 
         # Check if the same question exists
         if self.check_exists():
-            return False, "Question already exists"
+            return False, "Question already exists", None
         else:
             # Analyze
             if analyze is True and self.type == QuestionType.SOC:
