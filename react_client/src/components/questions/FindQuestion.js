@@ -44,6 +44,7 @@ class FindQuestion extends Component {
             // Component states
             isLoading: false,
             data: null,
+            label: null,
             page: 1,
             error: null
         };
@@ -118,7 +119,8 @@ class FindQuestion extends Component {
                     this.setState({
                         isLoading: false,
                         data: response['questions'],
-                        page: page
+                        page: page,
+                        label: response['label']
                     });
 
                 })
@@ -267,6 +269,7 @@ class FindQuestion extends Component {
 
                     {/* Results */}
                     <Element name={"questions"} className={"questions"}>
+                        {this.state.label && <p>Predicted label: {this.state.label}</p>}
                         {this.state.data && <QuestionContainer questions={this.state.data} page={this.state.page} handleRequest={this.handleRequest} styles={{marginTop: "100px"}}/>}
                     </Element>
                 </Container>

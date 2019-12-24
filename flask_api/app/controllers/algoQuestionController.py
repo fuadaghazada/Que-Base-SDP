@@ -49,6 +49,7 @@ def getSimilarQuestions(user):
     label, reliabilty = result
     label = label[0] if len(label) > 0 else None
     label = label.replace('__label__', '').replace('-', ' ')
+    reliabilty = round(float(reliabilty[0]), 3)
 
     # Generating the query
     query = CustomQueryGenerator()
@@ -109,5 +110,7 @@ def getSimilarQuestions(user):
     # Return response
     return jsonify({
         'success': True,
-        'questions': resultsWithRates
+        'questions': resultsWithRates,
+        'label': label,
+        'confidence_rate': reliabilty
     })
