@@ -218,7 +218,7 @@ class FindQuestion extends Component {
                                     value={typeof this.state.threshold === 'number' ? this.state.threshold : 0}
                                     onChange={this.handleSliderChange}
                                     aria-labelledby="input-slider"
-                                    min={40}
+                                    min={5}
                                 />
                             </Grid>
 
@@ -233,7 +233,7 @@ class FindQuestion extends Component {
                                     fullWidth={true}
                                     inputProps={{
                                         step: 1,
-                                        min: 40,
+                                        min: 5,
                                         max: 100,
                                         value: this.state.threshold,
                                         type: 'number',

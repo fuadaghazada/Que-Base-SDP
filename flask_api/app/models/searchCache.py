@@ -4,6 +4,7 @@ from datetime import datetime, timedelta
 from .question import Question
 from app.utils.db import getDb
 from app.helpers.query import CustomQueryGenerator
+from app.helpers.constant import LIMIT
 
 
 COLLECTION_NAME = "searchedQuestions"
@@ -91,7 +92,7 @@ class SearchedQuestion():
             # Generatin query
             finalQuery = None
             queryGen = CustomQueryGenerator()
-            queryGen.addIdFields(questionsIds)
+            queryGen.addIdFields(questionsIds[(pageNumber * LIMIT) - LIMIT: pageNumber * LIMIT])
             status, queryDict = queryGen.getCompleteQuery()
 
             if not status:
@@ -111,9 +112,14 @@ class SearchedQuestion():
             else:
                 finalQuery = queryDict
 
+            numberOfPages = len(questionsIds) // LIMIT
+            print(numberOfPages)
+
             # Sending final query
-            results = Question.find(finalQuery, pageNumber = pageNumber)
+            results = Question.find(finalQuery, pageNumber = 1, numberOfPages = numberOfPages)
             questions = list(results["data"])
+
+            print("value", results['numberOfPages'])
 
             # Adding the similarity rates to the result
             for i in range(len(questions)):

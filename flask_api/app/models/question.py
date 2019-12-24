@@ -100,12 +100,12 @@ class Question(Model):
         :param: pageNumber - page number for pagination
     '''
     @staticmethod
-    def find(query, sortingAttr = "_id", sortOrder = 1, pageNumber = 1, type = QuestionType.SOC):
+    def find(query, sortingAttr = "_id", sortOrder = 1, pageNumber = 1, type = QuestionType.SOC, numberOfPages = None):
         db = getDb()
         collectionName = getCollectionName(type)
         db[collectionName].create_index([("body", "text")])
 
-        return Model.find(collectionName, query, sortingAttr, sortOrder, pageNumber)
+        return Model.find(collectionName, query, sortingAttr, sortOrder, pageNumber, numberOfPages = numberOfPages)
 
 
     '''

@@ -168,6 +168,30 @@ class Filtering extends Component {
         }));
     };
 
+    handleSortAttr = (e) => {
+
+        const value = e.target.value;
+
+        this.setState(prevState => ({
+            sort: {
+                ...prevState["sort"],
+                attr: value
+            }
+        }));
+
+    };
+
+    handleSortOrder = (e) => {
+
+        const value = e.target.value;
+        this.setState(prevState => ({
+            sort: {
+                ...prevState["sort"],
+                order: parseInt(value)
+            }
+        }));
+    };
+
     /**
      *  Handling the submit action
      *
@@ -325,6 +349,31 @@ class Filtering extends Component {
                             >
                                 <MenuItem value="or">Or</MenuItem>
                                 <MenuItem value="and">And</MenuItem>
+                            </Select>
+                        </Grid>
+
+                        {/* Sort Attr */}
+                        <Grid item md={6}>
+                            <Select
+                                value={this.state.sort.attr}
+                                name={"sort"}
+                                onChange={this.handleSortAttr}
+                            >
+                                <MenuItem value="_id">Default</MenuItem>
+                                <MenuItem value="favCount">Favorite count</MenuItem>
+                                <MenuItem value="viewCount">View count</MenuItem>
+                            </Select>
+                        </Grid>
+
+                        {/* Sort Attr */}
+                        <Grid item md={6}>
+                            <Select
+                                value={this.state.sort.order + ""}
+                                name={"sort"}
+                                onChange={this.handleSortOrder}
+                            >
+                                <MenuItem value="-1">Descending</MenuItem>
+                                <MenuItem value="1">Ascending</MenuItem>
                             </Select>
                         </Grid>
 

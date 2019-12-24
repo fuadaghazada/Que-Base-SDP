@@ -67,7 +67,7 @@ class Model():
         :param: pageNumber - page number for pagination
     '''
     @staticmethod
-    def find(collectionName, query, sortingAttr = "_id", sortOrder = 1, pageNumber = 1):
+    def find(collectionName, query, sortingAttr = "_id", sortOrder = 1, pageNumber = 1, numberOfPages=None):
         db = getDb()
 
         # Getting the question with the parameters: pagination and sort
@@ -82,9 +82,14 @@ class Model():
         except Exception as e:
             pass
 
-        count = cursor.count()
-        results = cursor.skip(offset).limit(LIMIT)
-        numberOfPages = math.ceil(count / LIMIT)
+        print(numberOfPages)
+
+        if numberOfPages is None:
+            count = cursor.count()
+            results = cursor.skip(offset).limit(LIMIT)
+            numberOfPages = math.ceil(count / LIMIT)
+        else:
+            results = cursor
 
         return {
             "data": list(results),
