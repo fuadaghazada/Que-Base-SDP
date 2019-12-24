@@ -12,6 +12,8 @@ from app.helpers.isAuth import isAuth
 from app.helpers.filter import createFilterQuery
 from app.helpers.types import QuestionType
 
+from app.utils.youtubeSearch import searchByKey
+
 
 # Blue print
 bluePrint = Blueprint('questions', __name__, url_prefix='/questions')
@@ -241,6 +243,18 @@ def getQuestion(user):
     # Favorite questions of the user
     favoriteQuestions = user.data().get('favoriteQuestions')
     isFavorite = ObjectId(questionId) in favoriteQuestions
+
+    # YouTube search
+    youtubeResults = []
+    try:
+        searchKey = f"{result['title']} {result['source']['reference']} solution"
+        youtubeResults = searchByKey(searchKey, 5)
+        youtubeVideos = youtubeResults.get('videos')
+        youtubeVideos.reverse()
+        result['youtubeVideos'] = youtubeVideos
+
+    except Exception as e:
+        print("NO YOUTUBE VIDEO IS FOUND")
 
     status = result is not None
 

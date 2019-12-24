@@ -65,8 +65,7 @@ const CustomContainer = (props) => {
 
         </Container>
     );
-
-}
+};
 
 // Exporting the component
 export default CustomContainer

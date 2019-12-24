@@ -8,10 +8,10 @@ import {
     Link,
     Grid
 } from '@material-ui/core';
-import Avatar from '@material-ui/core/Avatar';
 
 import color from '../utils/color';
 
+const dateFormat = require('dateformat');
 
 /**
     User Preview (functional component)
@@ -19,15 +19,18 @@ import color from '../utils/color';
 
 const Post = (props) => {
 
-    // console.log(props['data'])
-    const {username, _id, title, viewCount, labels} = props['data'];
+    const {_id, message, questionId, timestamp} = props['data'];
+    const date = dateFormat(new Date(timestamp), "mmm d HH:MM")
+
+
     const useStyles = makeStyles({
         card: {
             width: '100%',
+            padding: "20px"
         },
         color: {
             color: '#fff',
-            backgroundColor: color.generateColor(username)[500],
+            backgroundColor: color.generateColor(message)[500],
           },
         font: {
             fontSize: 22,
@@ -41,26 +44,23 @@ const Post = (props) => {
             <CardActionArea>
                 <CardContent>
                     <Grid container direction="row" alignItems='center'>
-                        <Grid container item md={1} >
-                            <Avatar className={classes.color}>{username[0].toUpperCase()}</Avatar>
-                        </Grid>
                         <Grid container item md={11} spacing={2} >
-                            <Typography className={classes.font}><Link href={`/userDetails/${_id}`}>{username + " "}</Link>{" favorited a question"}</Typography>
+                            <Typography className={classes.font}>{message}</Typography>
                         </Grid>
                     </Grid>
                 </CardContent>
                 <CardContent>
                     <Grid container direction="row">
                         <Grid container item md={8} >
-                            <Typography component={"h2"}>{title}</Typography>
+                            {/*<Typography component={"h2"}>{title}</Typography>*/}
                         </Grid>
                         <Grid container item md={2}>
-                            {labels && <Typography component={"p"}><strong>Labels:</strong> {labels.toString()}</Typography>}
+                            {/*{labels && <Typography component={"p"}><strong>Labels:</strong> {labels.toString()}</Typography>}*/}
                         </Grid>
                         <Grid container item md={2} justify={"flex-end"}>
-                            <Typography component={"p"}>Views: {viewCount}</Typography>
+                            <Typography component={"p"}>{date}</Typography>
                         </Grid>
-                        <Link href={`/questionDetails/${_id}`}>View Question</Link>
+                        <Link href={`/questionDetails/${questionId}`}>View Question</Link>
                     </Grid>
                 </CardContent>
             </CardActionArea>

@@ -3,6 +3,7 @@ import { Container, Typography, Paper, Grid, Fab, Box } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
+import VideoContainer from "../VideoContainer";
 
 const useStyles = makeStyles(theme => ({
       questionBody: {
@@ -22,7 +23,7 @@ const useStyles = makeStyles(theme => ({
 const QuestionDisplay = (props) => {
 
     const classes = useStyles();
-    const { title, body, viewCount, favCount, source, labels } = props.questionData;
+    const { title, body, viewCount, favCount, source, labels, youtubeVideos } = props.questionData;
     const { isFavorite, favoriteQuestion } = props;
 
     let course = "---";
@@ -62,6 +63,9 @@ const QuestionDisplay = (props) => {
                     {!isFavorite ? <FavoriteIcon /> : <FavoriteBorderIcon />}
                 </Fab>
             </Grid>
+
+            {/*  Video  */}
+            <VideoContainer videoData={youtubeVideos}/>
 
         </Container>
     )

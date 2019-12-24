@@ -5,6 +5,7 @@ import questionServices from '../services/question.service';
 import postServices from '../services/post.service';
 
 import QuestionContainer from "./questions/QuestionContainer";
+import PostContainer from "./PostContainer";
 
 /**
     Home Component
@@ -74,11 +75,21 @@ class Home extends Component {
         return (
             <div>
                 <NavBar />
+
+                {/* Feed */}
+                {this.state.userFeedData && <PostContainer posts={this.state.userFeedData}
+                                                           page={this.state.pageFeed}
+                                                           handleRequest={this.handleRequestFeed}
+                                                           header={"Feed"}
+                />}
+
+                {/* Most Viewed Questions */}
                 {this.state.questionData && <QuestionContainer questions={this.state.questionData}
                                                                page={this.state.pageMVQ}
                                                                handleRequest={this.handleRequestMVQ}
                                                                header={"Most viewed questions"}
                 />}
+
             </div>
         );
     }
