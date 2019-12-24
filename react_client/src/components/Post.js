@@ -19,8 +19,10 @@ const dateFormat = require('dateformat');
 
 const Post = (props) => {
 
-    const {_id, message, questionId, timestamp} = props['data'];
+    const {_id, message, questionId, timestamp, userId} = props['data'];
     const date = dateFormat(new Date(timestamp), "mmm d HH:MM")
+    const username = message.split(" ")[0];
+    const remainingMessage = message.replace(username, " ");
 
     const useStyles = makeStyles({
         card: {
@@ -44,7 +46,7 @@ const Post = (props) => {
                 <CardContent>
                     <Grid container direction="row" alignItems='center'>
                         <Grid container item md={11} spacing={2} >
-                            <Typography className={classes.font}>{message}</Typography>
+                            <Typography className={classes.font}><Link href={`/userDetails/${userId}`}>{username}</Link>{remainingMessage}</Typography>
                         </Grid>
                     </Grid>
                 </CardContent>
