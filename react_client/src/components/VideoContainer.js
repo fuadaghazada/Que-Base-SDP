@@ -50,7 +50,7 @@ const VideoContainer = (props) => {
 
         const size = videos.length;
         if (size === 0) {
-            return <Typography variant={"p"} className={styles.text}>{"No videos found"}</Typography>
+            return <Typography variant={"body1"} className={styles.text}>{"No videos found"}</Typography>
         }
 
         return videos.map((video, i) => {

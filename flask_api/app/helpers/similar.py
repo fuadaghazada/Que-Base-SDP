@@ -27,8 +27,10 @@ def findSimilarQuestions(questionBody):
         for topic in topics:
             query["$or"].append({"topics": {
                 "$elemMatch": {
-                    "label": topic["label"],
-                    "score": {"$gte": 0}
+                    "label": {
+                        "$regex": topic["label"],
+                        "$options": "i"
+                    }
                 }
             }})
 
@@ -37,7 +39,7 @@ def findSimilarQuestions(questionBody):
             return None
 
         # Results after checking topic similarity
-        questionsFromSimilarTopic = Question.find(query).get("data")
+        questionsFromSimilarTopic = Question.findGeneric(query)
 
         # Query returns None
         if not questionsFromSimilarTopic:

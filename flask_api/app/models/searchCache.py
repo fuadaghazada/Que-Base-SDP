@@ -118,7 +118,7 @@ class SearchedQuestion():
             # Adding the similarity rates to the result
             for i in range(len(questions)):
                 idx = questionsIds.index(questions[i]['_id'])
-                questions[idx]['similarityRate'] = similarityRates[i]
+                questions[i]['similarityRate'] = similarityRates[idx]
 
             # Updating the questions in the dict
             results["data"] = questions

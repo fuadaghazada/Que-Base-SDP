@@ -245,16 +245,17 @@ def getQuestion(user):
     isFavorite = ObjectId(questionId) in favoriteQuestions
 
     # YouTube search
-    youtubeResults = []
-    try:
-        searchKey = f"{result['title']} {result['source']['reference']} solution"
-        youtubeResults = searchByKey(searchKey, 5)
-        youtubeVideos = youtubeResults.get('videos')
-        youtubeVideos.reverse()
-        result['youtubeVideos'] = youtubeVideos
+    if result and result.get('labels'):
+        youtubeResults = []
+        try:
+            searchKey = f"{result['title']} {result['source']['reference']} solution"
+            youtubeResults = searchByKey(searchKey, 5)
+            youtubeVideos = youtubeResults.get('videos')
+            youtubeVideos.reverse()
+            result['youtubeVideos'] = youtubeVideos
 
-    except Exception as e:
-        print("NO YOUTUBE VIDEO IS FOUND")
+        except Exception as e:
+            print("NO YOUTUBE VIDEO IS FOUND")
 
     status = result is not None
 

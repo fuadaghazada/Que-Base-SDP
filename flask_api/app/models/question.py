@@ -134,3 +134,20 @@ class Question(Model):
         else:
             self.favCount = self.favCount - 1
         self.update_one(vars(self))
+
+
+    @staticmethod
+    def findGeneric(query, type = QuestionType.SOC):
+        db = getDb()
+        collectionName = getCollectionName(type)
+        results = db[collectionName].find(query)
+
+        return list(results)
+
+    @staticmethod
+    def aggregate(query, type = QuestionType.SOC):
+        db = getDb()
+        collectionName = getCollectionName(type)
+        results = db[collectionName].aggregate(query)
+
+        return list(results)
