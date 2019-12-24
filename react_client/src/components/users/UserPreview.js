@@ -23,7 +23,6 @@ import userServices from '../../services/user.service';
 
 const UserPreview = (props) => {
 
-    // console.log(props['data'])
     const {username, _id, state} = props['data'];
     const useStyles = makeStyles({
         card: {
@@ -66,7 +65,8 @@ const UserPreview = (props) => {
 const sendFriendRequest = (id) => {
     userServices.sendFriendRequest(id)
         .then(response => {
-            console.log(response.data)
+            console.log(response.data);
+            window.location.reload();
         })
         .catch(err => {
             console.log(err);
@@ -77,7 +77,8 @@ const sendFriendRequest = (id) => {
 const acceptFriendRequest = (id) => {
     userServices.acceptFriendRequest(id)
         .then(response => {
-            console.log(response.data)
+            console.log(response.data);
+            window.location.reload();
         })
         .catch(err => {
             console.log(err);

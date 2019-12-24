@@ -1,5 +1,5 @@
 from bson.objectid import ObjectId
-from datetime import datetime
+from datetime import datetime, timedelta
 
 from app.models import Model, User
 from app.utils.db import getDb
@@ -22,7 +22,7 @@ class Post(Model):
         if vars(self) == {}:
             self.userId = ObjectId(postObj["userId"])
             self.message = postObj["message"]
-            self.timestamp = datetime.utcnow()
+            self.timestamp = datetime.utcnow() + timedelta(hours = 3)
             self.questionId = ObjectId(postObj.get('questionId')) if postObj.get('questionId') else None
 
 
