@@ -52,7 +52,7 @@ const QuestionPreview = (props) => {
                         <Grid container item md={2} justify={"flex-end"}>
                             <Typography component={"p"}>Views: {viewCount}</Typography>
                         </Grid>
-                        <Link href={`/questionDetails/${_id}`}>View Question</Link>
+                        <Link href={`/questionDetails/${_id}`} target="_blank">View Question</Link>
                     </Grid>
                 </CardContent>
             </CardActionArea>
