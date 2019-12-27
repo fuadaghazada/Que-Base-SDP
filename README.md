@@ -8,11 +8,11 @@ Que-Base is a web-based application that uses natural language processing (NLP) 
 ---
 
 ## Team members
-* Adahan Yalçınkaya
-* Alper Kağan Kayalı
-* Eray Şahin
-* Fuad Aghazada
-* Kazım Ayberk Tecimer
+* [Adahan Yalçınkaya](https://github.com/adahan96)
+* [Alper Kağan Kayalı](https://github.com/alperkagankayali)
+* [Eray Şahin](https://github.com/eraysahin)
+* [Fuad Aghazada](https://github.com/fuadaghazada)
+* [Kazım Ayberk Tecimer](https://github.com/ayberktecimer)
 
 ---
 
